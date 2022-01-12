@@ -1,5 +1,5 @@
 %---PACKAGES----------------------------------------
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,8pt]{article}
 
 \usepackage{import}
 \import{Packages/}{custom_packages.tex}
@@ -15,17 +15,17 @@
 
 \maketitle
 
+\vspace{2cm}
+
 \tableofcontents
   
 \pagebreak
 
-%\nocite{*}
+\nocite{*}
 
 \section{A String Theory Realization of Special Unitary Quivers in Three Dimensions}
 
     \subsection{Introduction}
-
-    \subsection{Stückelberg Mechanism in String Theory}
 
     \subsection{General Strategy}
 
@@ -38,11 +38,86 @@
 
 \section{Vocabulary}
 
-\begin{itemize}
-    \item \emph{orbifold}
-    \item \emph{$K3$}
-    \item 
-\end{itemize}
+    \begin{itemize}
+        \item \emph{Calabi-Yau compactification} : we impose $\mN=1$ supersymmetry in four dimensions. This is completely independent from string theory, it is an exterior requirement. This low-energy supersymmetry requirement constrains the six-dimensional space for compactification to be a Calabi-Yau threefold.
+        \item \emph{brane world paradigm} : paradigm in which our world is a slice in the ten-dimensional spacetime of type II superstring theory. In other words, we let the four-dimensional worldvolume  of the D3-brane carry the requisite gauge theory while the bulk contains gravity. As far as the brane is concerned, the six Calabi-Yau transverse dimensions can then to be modeled by non-compact affine varieties. This relaxation greatly simplifies the study because affine variety that are locally Calabi-Yau space are far easier to understand than the compact manifolds that are glued together. An important fact is that the only smooth locally Calabi-Yau threefold is $\C^3$ so we are inevitably lead to the study of singular Calabi-Yau varieties. In summary, the D-brane resides transversely to a singular non-compact Calabi-Yau threefold. On the D-brane worldvolume, lives some low-energy effective theory of an $\mN=1$ extension of the standard model.
+        \item \emph{quiver} : oriented graph where loops and multiple edges between two given vertices are allowed.
+        \item \emph{orbifold} : generalization of manifolds that allows for quotients.
+        \item \emph{orientifold} : generalization of orbifold that allows for orientation reversal of the string.
+        \item \emph{singularity blowup} : geometric transformation which replaces a subspace of a given space with all the directions pointing out of that subspace (birational geometry, algebraic geometry).
+        \item \emph{ALE space} : asymptotically locally euclidean spaces are solutions to the euclidean Einstein equations which is a blow up of an ADE-orbifold singularity $\C^2/\Gamma$ for finite subgroup $\Gamma\hookrightarrow\SU(2)$.
+    \end{itemize}
 
+\section{Stückelberg Mechanism}
+
+    \subsection{In QFT}
+
+        The \emph{Stückelberg mechanism} (or \emph{affine Higgs mechanism}) is a version of the Higgs mechanism where $\mu^2\to-\infty$ (infinitely deep Mexican hat) the product of the Higgs mass and the charge stays fixed. The mass of the Higgs $m_H=\sqrt{2}\mu$ boson is proportional to $\mu$ so it becomes infinitely massive and the Higgs decouples. The vector mass, however, is $m_V\equiv e\phi_0$ ($\phi_0\equiv\mu/\sqrt{\lambda}$) and stays finite.
+
+        The interpretation is that when a $\U(1)$ gauge field does not require quantized charges, it is possible to keep only the angular part of the Higgs oscillations, and discard the radial part. Writing the Higgs field as $\phi(x)=\rho(x)e^{i\theta(x)}$, the angular part of the Higgs field $\theta$ has the following gauge transformation law:
+        \begin{align}
+            \theta &\mapsto \theta+e\alpha,\\
+            A_\mu &\mapsto A_\mu+\p_\mu\alpha.
+        \end{align}
+        The covariant derivative for the angle is $D_\mu\theta=\p_\mu\theta-m_VA_\mu$. One can check that it actually transforms like $\theta$.
+
+        The \emph{Stückelberg action}\index{Stückelberg action}
+        \begin{align}
+            S_{\text{Stück}}[\theta,A] &\equiv \int\d^4x\left[-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+\frac{1}{2}D_\mu\theta D^\mu\theta\right]\\
+            &= \int\d^4x\left[ -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+\frac{1}{2}(\p^\mu\theta+mA^\mu)(\p_\mu\theta+mA_\mu) \right]
+        \end{align}
+        describes a massive spin-1 field $A_\mu$ as an $\U(1)$ Yang-Mills theory coupled to a real scalar field $\theta$. However, this is not exactly the usual $\U(1)$ gauge theory: to have arbitrarily small charges requires that the $\U(1)$ is not $(S^1,\cdot)$, but rather $(\R,+)$.Its element can still be represented by $e^{i\phi}$ but the identification $\phi\sim\phi+2\pi k$ ($k\in\Z$) is not imposed. The usual $\U(1)$ is therefore called \emph{compact $\U(1)$}\index{compact $\U(1)$} and the $\U(1)$ that we use in this case is called \emph{non-compact $\U(1)$}\index{non-compact $\U(1)$}. It is still legitimate to call this group $\U(1)$ because the Lie algebra is still $\mathfrak{u}(1)$. They only different by their global topology. The field $\theta$ transforms as an affine representation of the gauge group, not a linear representation as it is usually the case. Among the allowed gauge groups, only non-compact $\U(1)$ admits affine representations, and the $\U(1)$ of electromagnetism is experimentally known to be compact, since charge quantization holds to extremely high accuracy.
+
+        By making a gauge transformation to set $\theta=0$, the gauge freedom in the action is eliminated and the action becomes the one of a massive vector field:
+        \begin{equation}
+            S_{\text{Stück}}[0,A] = \int\d^4x\left[ -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+m^2_VA_\mu A^\mu \right].
+        \end{equation}
+
+        \begin{result}
+            The Stückelberg mechanism is a version of the Higgs mechanism where the vacuum expectation value $\mu$ goes to infinity and the charge of the Higgs field goes to zero in such a way that their product stays fixed so the Higgs becomes infinitely massive and decouples but the mass of the vector field stays finite. Technically, it consists in trading the usual compact $\U(1)$ (topology $S^1$) with  a non-compact $\U(1)$ (topology of $\R$). Non-compactness implies that the charge is not quantized anymore.
+        \end{result}
+
+    \subsection{In String Theory}
+
+        
+
+\section{McKay Correspondence}
+
+    The \emph{McKay correspondence}\index{McKay correspondence} is a subtle correspondence between the theory of finite subgroups of $\SU(2)$, the corresponding orbifold singularities (du Val singularities) and that of simple Lie groups falling into the ADE classification.
+
+    \begin{table}[H]
+        \centering
+        {\small
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline \rowcolor{tablecolor1}
+            Dynkin diagram & Platonic solid & \begin{tabular}{@{}c@{}}finite sub- \\ groups of $\SO(3)$\end{tabular} & \begin{tabular}{@{}c@{}}finite sub- \\ groups of $\SU(2)$\end{tabular} & simple Lie group \\ \hline\hline \rowcolor{tablecolor2}
+            $A_{n\geq1}$ & & $\Z_{n+1}$ & $\Z_{n+1}$ & $\SU(n+1)$ \\ \hline \rowcolor{tablecolor2}
+            $D_{n\geq 4}$ & dihedronn, hosohedron & $D_{2(n-2)}$ & $2D_{2(n-2)}$ & $\SO(2n),\Spin(2n)$ \\ \hline \rowcolor{tablecolor2}
+            $E_6$ & tetrahedron & $T$ & $2T$ & $E_6$ \\ \hline \rowcolor{tablecolor2}
+            $E_7$ & cube, octahedron & $O$ & $2O$ & $E_7$ \\ \hline \rowcolor{tablecolor2}
+            $E_8$ & dodecahedron, icosahedron & $I$ & $2I$ & $E_8$ \\ \hline
+        \end{tabular}}
+        \caption{McKay correspondence. $T$ denotes the tetrahedral group, $O$ the octahedral group, $I$ the icosaedral group and the ``2'' in font of a group denotes the binary version of the latter.}
+    \end{table}
+    Recall that $A_3=D_3$.
+
+    The correspondence may be understood at different level:
+    \begin{itemize}
+        \item \textbf{McKay quivers:} the original correspondence is the observation that the McKay quiver associated to the orbifold singularity $\C$$2\square G$ of a finite subgroup of $\SU(2)$ $G\subset\SU(2)$ happens to be an extended Dynkin quiver, hence happens to be an extended Dynkin diagram of the kind that also arises in the ADE-classification of simple Lie groups.
+        \item \textbf{Equivariant K-theory:}(?)
+        \item  \textbf{Seiberg-Witten theory:} under the interpretation of K-theory-classes as D-brane charges, the K-theoretic McKay correspondence of Gonzalez-Sprinberg \& Verdier 83 identifies wrapped brane charges of the desingularized space with fractional brane charges at the singularity.
+
+        This leads to a further (currently non-rigorous) explanation of the McKay correspondence in terms of the dual worldvolume quantum field theories on these branes, which are $\mN=2$ quiver gauge theories: The moduli space of scalar fields of these theories has two ``branches'', called the Higgs branch and the Coulomb branch, and the idea is that depending on which of the branches the vacuum state of the theory is in, it describes the brane as being either on the ADE singularity or on its resolution, but since it's the same quantum field theory in both cases, these two situations are actually suitably equivalent.
+    \end{itemize}
+
+    
+
+     
+
+   
+
+\pagebreak
+
+\printbibliography
 
 \end{document}

@@ -16,5 +16,78 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{he2004lectures}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a4fd5a8285710d8bd6688b748c7cc5fd}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yang-Hui},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{fullhash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{bibnamehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{authorbibnamehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{authornamehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{authorfullhash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \field{labelalpha}{He04}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{title}{Lectures on D-branes, Gauge Theories and Calabi-Yau Singularities}
+      \field{year}{2004}
+      \true{nocite}
+      \verb{eprint}
+      \verb hep-th/0408142
+      \endverb
+    \endentry
+    \entry{2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=873c062c06187265e2ae4660d0992560}{%
+           family={Collinucci},
+           familyi={C\bibinitperiod},
+           given={Andrés},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8937136637ea647b3ca9842077cd2b7d}{%
+           family={Valandro},
+           familyi={V\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{bf70cd910ea0644a2cd1db5704ad2d37}
+      \strng{fullhash}{bf70cd910ea0644a2cd1db5704ad2d37}
+      \strng{bibnamehash}{bf70cd910ea0644a2cd1db5704ad2d37}
+      \strng{authorbibnamehash}{bf70cd910ea0644a2cd1db5704ad2d37}
+      \strng{authornamehash}{bf70cd910ea0644a2cd1db5704ad2d37}
+      \strng{authorfullhash}{bf70cd910ea0644a2cd1db5704ad2d37}
+      \field{labelalpha}{CV20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1029-8479}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{A string theory realization of special unitary quivers in 3 dimensions}
+      \field{volume}{2020}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/jhep11(2020)157
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
