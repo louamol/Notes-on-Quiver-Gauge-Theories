@@ -1,17 +1,17 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[62] biber:340> INFO - === Wed Jan 12, 2022, 20:15:56
-[73] Biber.pm:415> INFO - Reading 'main.bcf'
-[133] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[146] Biber.pm:4340> INFO - Processing section 0
-[154] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[156] bibtex.pm:1689> INFO - LaTeX decoding ...
-[160] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
-[184] Utils.pm:395> WARN - legacy month field 'Nov' in entry '2020' is not an integer - this will probably not sort properly.
-[228] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[228] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[228] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[228] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[230] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[231] bbl.pm:757> INFO - Output to main.bbl
-[231] Biber.pm:128> INFO - WARNINGS: 1
+[68] biber:340> INFO - === Wed Feb 16, 2022, 11:14:31
+[79] Biber.pm:415> INFO - Reading 'main.bcf'
+[134] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[144] Biber.pm:4340> INFO - Processing section 0
+[152] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[152] bibtex.pm:1689> INFO - LaTeX decoding ...
+[156] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[176] Utils.pm:395> WARN - legacy month field 'Nov' in entry '2020' is not an integer - this will probably not sort properly.
+[189] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[189] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[189] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[189] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[190] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[192] bbl.pm:757> INFO - Output to main.bbl
+[192] Biber.pm:128> INFO - WARNINGS: 1

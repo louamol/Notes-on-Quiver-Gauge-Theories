@@ -1,18 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}A String Theory Realization of Special Unitary Quivers in Three Dimensions}{2}{section.1}%
+\contentsline {section}{\numberline {1}The supersymmetric sigma model}{2}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Type IIA}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.1}Generalities}{2}{subsection.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Type IIB}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}On ALE space}{2}{subsection.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Vocabulary}{3}{appendix.A}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Stückelberg Mechanism}{4}{appendix.B}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.1}In QFT}{4}{subsection.B.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.2}In String Theory}{4}{subsection.B.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}McKay Correspondence}{4}{appendix.C}%
+\contentsline {section}{\numberline {A}Notations and conventions}{3}{appendix.A}%

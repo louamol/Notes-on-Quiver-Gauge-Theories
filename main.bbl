@@ -87,6 +87,34 @@
       \verb 10.1007/jhep11(2020)157
       \endverb
     \endentry
+    \entry{lindström2012supersymmetric}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a62e7ffc76ae0fdd3fcbc43740369ddd}{%
+           family={Lindström},
+           familyi={L\bibinitperiod},
+           given={Ulf},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
+      \strng{fullhash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
+      \strng{bibnamehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
+      \strng{authorbibnamehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
+      \strng{authornamehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
+      \strng{authorfullhash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
+      \field{labelalpha}{Lin12}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{title}{Supersymmetric Sigma Model geometry}
+      \field{year}{2012}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1207.1241
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
