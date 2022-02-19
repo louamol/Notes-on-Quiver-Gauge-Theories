@@ -1,10 +1,14 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}The supersymmetric sigma model}{2}{section.1}%
+\contentsline {section}{\numberline {1}The brane-world paradigm}{2}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Generalities}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}The simplest case : $S=\mathbb {C}^3$}{2}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}On ALE space}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {2.1}Generalities}{2}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Notations and conventions}{3}{appendix.A}%
+\contentsline {subsection}{\numberline {2.2}Matter content}{3}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Calabi-Yau orbifolds and crepant resolutions}{4}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Markers}{5}{defn.A.1}%

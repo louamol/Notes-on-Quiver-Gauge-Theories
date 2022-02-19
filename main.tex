@@ -5,61 +5,101 @@
 \import{Packages/}{custom_packages.tex}
 \import{Packages/}{custom_macros.tex}
 
-\title{Notes on Quiver Gauge Theories}
+\title{\textbf{Notes on Quiver Gauge Theories}}
 \author{Louan Mol\\ \textit{Université Libre de Bruxelles}}
+\date{}
 
 % DOCUMENT -----------------------------
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    
+    \maketitle
 
-\vspace{2cm}
+    \thispagestyle{empty}
 
-\begin{abstract}
-    Notes on quiver gauge theories.
-\end{abstract}
+    \vspace{2cm}
+
+    \begin{abstract}
+        Notes on quiver gauge theories.
+    \end{abstract}
+
+    \vfill
+
+    \hfill Last updated on \today.
+    
+\end{titlepage}
+  
+\pagebreak
 
 \tableofcontents
 
-\vfill
-
-Last updated on \today.
-  
 \pagebreak
 
 \nocite{*}
 
-\section{The supersymmetric sigma model}
+\section{The brane-world paradigm}
+
+    We consider our world to be a slice in the ten-dimensional spacetime of type II superstring theory, i.e. the worldvolume of a D$3$-brane. More precisely we consider a stack of $n$ $D$3-branes carrying a $\U(n)$ gauge group. The spacetime is therefore not necessarily $\R^{1,9}$ but of the form
+    \begin{equation*}
+        M = \R^{1,3}\times M^{(6)}.
+    \end{equation*}
+    This is the so called \emph{brane-world paradigm}. 
+    
+    Independently from string theory, we can require to have $\mN=1$ supersymmetry in four dimensions. This constrains six-dimensional space of compactification $M^{(6)}$ to be compact, complex, Kähler and to have $\SU(3)$ Holonomy. In other words, $M^{(6)}$ must be a Calabi-Yau threefold. If we let the worldvolume of the D$3$-branes carry the requisite gauge theory while the bulk contains gravity, we can relax the compactness condition an study non-compact threefolds\footnote{Intuitively, this can be understood as a Kaluza-Klein compactification where we take the size of the compact dimensions to infinity. The four-dimensional gravity coupling constant being inversely proportional to this quantity, there is no gravity in this limit.}. In other words, $M^{(6)}$ is an affine variety that localy models a Calabi-Yau threefold. This makes the analysis much simpler and therefore also serves as an argument to ignore gravity on the brane. Thus we have four dimensional- D$3$-branes on which there is a $\U(n)$ gauge group and transverse to which gravity propagates.
+
+    The only smooth Calabi-Yau threefold being $\C^3$, we are lead to consider singular Calabi-Yau manifolds or, more precisely, Calabi-Yau orbifolds that we usually denote $S\equiv M^{(6)}$ String theory being a theory of extended objects, it is well-defined in such singularities. We will see that this singular structure of the geometry will break $\U(n)$ into products of gauge groups.
+    
+    From the point of view of the orbifold, the D$3$-brane is a point. Consequently, there is a crucial relationship between the D$3$-brane worldvolume theory and the Calabi-Yau singularity: the former parametrizes the latter. In other words, the classical vacuum of the gauge theory should be, in explicit coordinates, the defining equation of $S$.
+
+    Mathematically, this brane-world paradigm is the realization of branes as supports of vector bundles (sheaf). Gauge theories on branes are intimately related to algebraic constructions of stable bundles. In particular, D-brane gauge theories manifest as a natural description of symplectic quotients and their resolutions in geometric invariant theory.
+
+    To summarize in more mathematical terms, our D-brane, together with the stable vector bundle (sheaf) supported thereupon, resolves the transverse Calabi-Yau orbifold which is the vacuum for the gauge theory on the worldvolume as a GIT quotient.
+
+\section{The simplest case : $S=\C^3$}
 
     \subsection{Generalities}
 
-        A supersymmetric non-linear sigma model is a theory of maps
-        \begin{equation*}
-            \Phi:\Sigma^{(D,\mN)}\to\T
-        \end{equation*}
-        where $\Sigma^{(D|\mN)}$ is the superspace, i.e. a supermanifold\footnote{Recall that a super vector space $V$ is a $\Z_2$-graded vector space. It can always be decomposed in $V=V^0\oplus V^1$, $V^0$ being its even part and $V^1$ its odd part. Denoting by $\R^{m|n}$ the super vector space with even part $\R^m$ and odd part $\R^n$, a super manifold of dimension $m|n$ is a manifold with base space $\R^{m|n}$.} of dimension $D|\mN$ and $\T$ the target space. They are scalar superfields. Let $z=(\xi,\theta)$ be coordinates on the superspace. If $\T$ is a super manifold of dimensions $n|\mN$, we can write $\Phi=(\Phi^1,\dots,\Phi^n)$ and view $\Phi^i$ ($i=1,\dots,n$) as coordinates on $\T$. The action is given by
+        Let us consider the simplest non-compact Calabi-Yau threefold: $S=\C^3$. In this case, the spacetime is simply flat space $\R^{1,9}=\R^{1,3}\times\R^6$ with a choice a complex structure on $\R^6$. As mentioned above, the worldvolume theory has a $\U(n)$ gauge group. Type IIB superstring theory is a ten-dimensional $\mN=2$ theory so it has $32$ supercharges. The presence of the breaks the Lorentz symmetry of $\R^{1,9}$ as
         \begin{equation}
-            S[\Phi]=-\frac{1}{2}\int\d^Dx~D^2(g_{ij}(\Phi)D^a\Phi^iD_a\Phi^j)
+            \SO(1,9)\to\SO(1,3)\times\SO(6),
         \end{equation}
-        where $g$ is a riemannian metric on $\T$, $\alpha=1,\dots,D-1$, $D^2\equiv D^\alpha D_\alpha = \eta^{\alpha\beta}D_\alpha D_\beta$ and
-        \begin{equation*}
-            D^I_\alpha\equiv 
-        \end{equation*}
-        with $I=1,\dots,\mN$.
+        whereby breaking half of the supersymmetries and we are left with $16$ supercharges for the worldvolume theory. In four dimensions, this corresponds to $\mN=4$. We have therefore $\mN=4$ $\U(n)$ SCFT gauge theory on the worldvolume.
 
-    \subsection{On ALE space}
+        Note that the D$3$-brane will warp the flat space metric to that of $AdS_5\times S^5$ and the bulk geometry is not strictly $\C^3$. However, as stated above, we are only concerned with the local gauge theory and not with gravitational back-reaction, therefore it sufices to consider $S$ as $\C^3$.
+
+    \subsection{Matter content}
+
+
 
 
 \pagebreak
 \appendix
 
-\section{Notations and conventions}
+\section{Calabi-Yau orbifolds and crepant resolutions}
 
+    Simply put, as \emph{Calabi-Yau manifold} is a Kähler manifold with trivial canonical bundle or, equivalently, with a Kähler metric whose global holonomy is contained in $SU(n)$. A \emph{Calabi-Yau orbifold} is the quotient of a smooth Calabi-Yau manifold by a discrete group action which generically has fixed points. From a geometrical perspective we can try to resolve the orbifold singularity. A resolution $(X,\pi)$ of $\C^n/\Gamma$ is a non-singular complex manifold $X$ of dimension $n$ with a proper biholomorphic map 
+    \begin{equation}
+        \pi:X\to\C^n/\Gamma
+    \end{equation}
+    that induces a biholomorphism between dense open sets. 
+    \begin{defn}
+        A resolution $(X,\pi)$ of $\C^n/\Gamma$ is called a \emph{crepant resolution}\index{resolution!crepant}\footnote{For a resolution of singularities we can define a notion of discrepancy. A crepant resolution is a resolution
+        without discrepancy.} if the canonical bundles of $X$ and $\C^n/\Gamma$ are isomorphic, i.e.
+        \begin{equation*}
+            K_X\cong\pi^*(K_{\C^n/\Gamma}).
+        \end{equation*}
+    \end{defn}
+    Since Calabi-Yau manifolds have trivial canonical bundle, to obtain a Calabi-Yau structure on $X$ one must choose a crepant resolutions of singularities.
 
-     
-
+    It turns out that the amount of information we know about a crepant resolution of singularities of $\C^n/\Gamma$ depends dramatically on the dimension $n$ of the orbifold. For $n=3$, a crepant resolution always exists but it is not unique; they are related by flops. However all the crepant resolutions have the same Euler and Betti numbers: the \emph{stringy} Betti and Hodge numbers of the orbifold.
    
+
+\pagebreak
+
+\listofmarker
+\addcontentsline{toc}{chapter}{\listmarkername}
 
 \pagebreak
 

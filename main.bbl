@@ -47,6 +47,120 @@
       \verb hep-th/0408142
       \endverb
     \endentry
+    \entry{douglas1996dbranes}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=0f2db3278f121a9a7533e911cf947c2c}{%
+           family={Douglas},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=8105bf12d343cff53cbe9468c8d06f70}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d39ab4237decd67b581c085053bc278}
+      \strng{fullhash}{2d39ab4237decd67b581c085053bc278}
+      \strng{bibnamehash}{2d39ab4237decd67b581c085053bc278}
+      \strng{authorbibnamehash}{2d39ab4237decd67b581c085053bc278}
+      \strng{authornamehash}{2d39ab4237decd67b581c085053bc278}
+      \strng{authorfullhash}{2d39ab4237decd67b581c085053bc278}
+      \field{labelalpha}{DM96}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{title}{D-branes, Quivers, and ALE Instantons}
+      \field{year}{1996}
+      \true{nocite}
+      \verb{eprint}
+      \verb hep-th/9603167
+      \endverb
+    \endentry
+    \entry{PhysRevD.55.6382}{article}{}
+      \name{author}{2}{}{%
+        {{hash=52fc317640fe25c8fe5137dfe135ecd4}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Clifford\bibnamedelima V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=e9b5a686901f974e970aa5603429ac99}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{1410f0973a0a12d9fbe14121b8d047a4}
+      \strng{fullhash}{1410f0973a0a12d9fbe14121b8d047a4}
+      \strng{bibnamehash}{1410f0973a0a12d9fbe14121b8d047a4}
+      \strng{authorbibnamehash}{1410f0973a0a12d9fbe14121b8d047a4}
+      \strng{authornamehash}{1410f0973a0a12d9fbe14121b8d047a4}
+      \strng{authorfullhash}{1410f0973a0a12d9fbe14121b8d047a4}
+      \field{labelalpha}{JM97}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{10}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{5}
+      \field{title}{Aspects of type IIB theory on asymptotically locally Euclidean spaces}
+      \field{volume}{55}
+      \field{year}{1997}
+      \true{nocite}
+      \field{pages}{6382\bibrangedash 6393}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.55.6382
+      \endverb
+    \endentry
+    \entry{1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=993e682e6ad8b4fa0d15e8628711a5ac}{%
+           family={Kachru},
+           familyi={K\bibinitperiod},
+           given={Shamit},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9473e33006567a757dcf265e7cbcdfbf}{%
+           family={Silverstein},
+           familyi={S\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{44297e33535e8cd1aa927ea98528b83f}
+      \strng{fullhash}{44297e33535e8cd1aa927ea98528b83f}
+      \strng{bibnamehash}{44297e33535e8cd1aa927ea98528b83f}
+      \strng{authorbibnamehash}{44297e33535e8cd1aa927ea98528b83f}
+      \strng{authornamehash}{44297e33535e8cd1aa927ea98528b83f}
+      \strng{authorfullhash}{44297e33535e8cd1aa927ea98528b83f}
+      \field{labelalpha}{KS98}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{6}
+      \field{number}{22}
+      \field{title}{4D Conformal Field Theories and Strings on Orbifolds}
+      \field{volume}{80}
+      \field{year}{1998}
+      \true{nocite}
+      \field{pages}{4855\bibrangedash 4858}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/physrevlett.80.4855
+      \endverb
+    \endentry
     \entry{2020}{article}{}
       \name{author}{2}{}{%
         {{hash=873c062c06187265e2ae4660d0992560}{%
@@ -71,8 +185,8 @@
       \strng{authornamehash}{bf70cd910ea0644a2cd1db5704ad2d37}
       \strng{authorfullhash}{bf70cd910ea0644a2cd1db5704ad2d37}
       \field{labelalpha}{CV20}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -102,8 +216,8 @@
       \strng{authornamehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \strng{authorfullhash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \field{labelalpha}{Lin12}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -113,6 +227,122 @@
       \true{nocite}
       \verb{eprint}
       \verb 1207.1241
+      \endverb
+    \endentry
+    \entry{Hitchin:1986ea}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b0ce41cd6a541ff8bdad6c086632436d}{%
+           family={Hitchin},
+           familyi={H\bibinitperiod},
+           given={Nigel\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=da9410a29acea48c88bf7c747f710ee3}{%
+           family={Karlhede},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=25d40b1e3f25f29cf0f76471e198b903}{%
+           family={Lindstrom},
+           familyi={L\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{hash=5e4da49226a429ad89181601f1f38506}{%
+           family={Rocek},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4640af9ccbe04a3006a13ca7cd8b0a2}
+      \strng{fullhash}{5ccad494fd894b0988427c00b9b2f3f8}
+      \strng{bibnamehash}{e4640af9ccbe04a3006a13ca7cd8b0a2}
+      \strng{authorbibnamehash}{e4640af9ccbe04a3006a13ca7cd8b0a2}
+      \strng{authornamehash}{e4640af9ccbe04a3006a13ca7cd8b0a2}
+      \strng{authorfullhash}{5ccad494fd894b0988427c00b9b2f3f8}
+      \field{labelalpha}{Hit+87}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Commun. Math. Phys.}
+      \field{title}{{Hyperkahler Metrics and Supersymmetry}}
+      \field{volume}{108}
+      \field{year}{1987}
+      \true{nocite}
+      \field{pages}{535}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/BF01214418
+      \endverb
+    \endentry
+    \entry{10.2307/1194988}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f2f9c2cfc454187a960d2079e10faa50}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=affcb29edeb238d6962cdb20968b019d}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Yuguang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3ee412512e002c2e49427521305a0544}{%
+           family={Tam},
+           familyi={T\bibinitperiod},
+           given={Luen-Fai},
+           giveni={L\bibinithyphendelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{80b5dafe7fb6cde0f17924adefb0f0d8}
+      \strng{fullhash}{80b5dafe7fb6cde0f17924adefb0f0d8}
+      \strng{bibnamehash}{80b5dafe7fb6cde0f17924adefb0f0d8}
+      \strng{authorbibnamehash}{80b5dafe7fb6cde0f17924adefb0f0d8}
+      \strng{authornamehash}{80b5dafe7fb6cde0f17924adefb0f0d8}
+      \strng{authorfullhash}{80b5dafe7fb6cde0f17924adefb0f0d8}
+      \field{labelalpha}{NST03}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00029947}
+      \field{journaltitle}{Transactions of the American Mathematical Society}
+      \field{number}{5}
+      \field{title}{Ricci Flatness of Asymptotically Locally Euclidean Metrics}
+      \field{volume}{355}
+      \field{year}{2003}
+      \true{nocite}
+      \field{pages}{1933\bibrangedash 1959}
+      \range{pages}{27}
+    \endentry
+    \entry{bertolinisusy}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3c971bce1e85d768517bf7a062f488d9}{%
+           family={Bertolini},
+           familyi={B\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{fullhash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{bibnamehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{authorbibnamehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{authornamehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{authorfullhash}{3c971bce1e85d768517bf7a062f488d9}
+      \field{labelalpha}{Ber21}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Supersymmetry}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://people.sissa.it/~bertmat/teaching.htm
+      \endverb
+      \verb{url}
+      \verb https://people.sissa.it/~bertmat/teaching.htm
       \endverb
     \endentry
   \enddatalist
