@@ -3,12 +3,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}The brane-world paradigm}{2}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}The simplest case : $S=\mathbb {C}^3$}{2}{section.2}%
+\contentsline {section}{\numberline {2}The simplest case: $S=\mathbb {C}^3$}{3}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Generalities}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.1}Generalities}{3}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Matter content}{3}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Calabi-Yau orbifolds and crepant resolutions}{4}{appendix.A}%
+\contentsline {section}{\numberline {3}Projection to daughter theories}{4}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Markers}{5}{defn.A.1}%
+\contentsline {subsection}{\numberline {3.1}Representation theory point of view}{5}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Reminder on $D=4,\mathcal {N}=4$ SYM theory}{6}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Calabi-Yau manifolds, orbifolds and crepant resolutions}{6}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Markers}{8}{defn.B.1}%
