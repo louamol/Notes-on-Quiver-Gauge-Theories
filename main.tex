@@ -111,30 +111,38 @@
     \end{itemize}
 
     For now, we are interested with $\mN=1$ theories so we consider $\Gamma\subset\SU(3)$ with the action
-    \begin{equation*}
+    \begin{equation}
         \cdot:\left(
         \begin{array}{ccc}
             \Gamma\times\C^3 & \longrightarrow & \C^3 \\
             (\gamma,z) & \longmapsto & \gamma\cdot z
         \end{array}
         \right)
-    \end{equation*}
+    \end{equation}
     is the representation of $\Gamma$ coming from the fundamental representation of $\SU(3)$, so $\cdot$ is just the matrix product. We can see that the origin is alays a fixed point so this action is never free. Since $\C^3$ is a smooth manifold, this makes $\C^3/\Gamma$ an orbifold.
 
     Note that if $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$\marker.
 
     The prescription is straihgt-forward: we can use the elements $\gamma\in\Gamma$ to project out that states that are not $\Gamma$-invariant. That is, only the the fields such that
     \begin{align}
-        \gamma A_\mu \gamma^{-1} &= A_\mu,\\
-        R(\gamma)\gamma \psi_{IJ} \gamma^{-1} &= \psi_{IJ},\\
-        R(\gamma)\gamma \phi_{IJ} \gamma^{-1} &= \phi_{IJ}
+        \gamma A_\mu \gamma^{-1} &= A_\mu,\label{eq:proj1}\\
+        R(\gamma)\gamma \psi_{IJ} \gamma^{-1} &= \psi_{IJ}\label{eq:proj2},\\
+        R(\gamma)\gamma \phi_{IJ} \gamma^{-1} &= \phi_{IJ}\label{eq:proj3}
     \end{align}
     are ketp in the spectrum. Note that the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
 
     \subsection{Representation theory point of view}
 
-        Let $\{\br_i\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary.
-
+        Let $\{(\rho_i,\br_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a unitary representation of $\Gamma$ on $\C^n$, we denote it $(\rho,\C^n)$. Since $\rho(\gamma)\in\GL(n,\C)$, there is a natural representation of $\Gamma$ on $\GL(n,\C)=\Hom(\C^n,\C^n)$ that we can define from $\rho$:
+        \begin{equation}
+            \rho_{\Hom}(\gamma):\left(
+            \begin{array}{ccc}
+                GL(n,\C) & \longrightarrow & \GL(n,\C) \\
+                M & \longmapsto & \rho(\gamma)U\rho(\gamma)^{-1}
+            \end{array}
+            \right).
+        \end{equation}
+        Actually, one can show that if $M$ is anti-hermician, then $\rho(\gamma) M\rho(\gamma)^{-1}$ is also anti-hermician. In other words, the representation $(\rho_\Hom,\GL(n,\C))$ restricted to $\mathfrak{u}(n)\subset\GL(n,\C)$ is still a representation. We denote it by $(\rho,\mathfrak{u}(n))$. We use this representation in the expression \eqref{eq:proj1}-\eqref{eq:proj1}. It is now clear that the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group. Or, more precisely, that the resulting gauge group is the group that has $\mathfrak{u}(n)^\Gamma$ for Lie algebra.
 
     \begin{table}[H]
         \centering
