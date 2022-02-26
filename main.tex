@@ -80,20 +80,25 @@
 
         As discussed in appendix \ref{sec:N4SCFT}, there is only one $D=4,\mN=4$ SCFT theory, up to a choice of gauge group. In our case, we consider the gauge group $G=\U(n)$. The theory has an $\SU(4)_R$ R-symmetry group (transverse rotation group of the D$3$brane) and there are $3n^2$ chiral scalar superfields $\Phi_{IJ}$ and $n^2$ vector superfields. More precisely, if we remove the auxiliary fields, matter content is the following:
         \begin{itemize}
-            \item gauge field $A_\mu$ which are singlets of $\SU(4)_R$. They can be seen as as $A_\mu\in\Hom(\C^n,\C^n)$.
+            \item gauge field $A_\mu$ which are singlets of $\SU(4)_R$.
             \item Weyl fermions $\psi^{\alpha}_{IJ}$ ($I,J=1,\dots,n,\alpha=1,\dots,4$) transforming under the adjoint representation of $\U(n)$ and under the representation $\boldsymbol{4}$ (fundamental) of $\SU(4)_R$:
             \begin{align}
                 \psi^\alpha & \mapsto U \psi^\alpha U^\dagger ,\qquad U\in\U(n),\\
                 \psi_{IJ} & \mapsto R\psi_{IJ},\qquad R\in\SU(4)_R.
             \end{align}
-            In other words, we have $\psi\in\boldsymbol{4}\otimes\Hom(\C^n,\C^n)$.
             \item complex scalar fields $\phi^{m}_{IJ}$ ($m=1,\dots,6$) transforming under the adjoint representation of $\U(n)$ and under the two-times anti-symmettric representation of $\SU(4)_R$ which is nothing but the representation $\boldsymbol{6}$ (fundamental) of $\SO(6)_R$ (recall that $\SU(4)\cong\SO(6)$). They are the superpartners of the fermions:
             \begin{align}
                 \phi^m & \mapsto U \phi^m U^\dagger ,\qquad U\in\U(n),\\
                 \phi_{IJ} & \mapsto R\phi_{IJ},\qquad R\in\SO(6)_R.
             \end{align}
-            In other words, we have $\phi\in\boldsymbol{6}\otimes\Hom(\C^n,\C^n)$.
         \end{itemize}
+        Note that the gauge group $G=\U(n)$ can also be seen as the group of isometries from the metric space $\C^n$ to itself, i.e. $G=\Hom(\C^n,C^n)$. From this point of view, the different fields can be seen as follows:
+        \begin{align}
+            A_\mu&\in\Hom(\C^n,\C^n),\\
+            \psi&\in\boldsymbol{4}\otimes\Hom(\C^n,\C^n),\\
+            \phi&\in\boldsymbol{6}\otimes\Hom(\C^n,\C^n).
+        \end{align}
+
         Since $U(n)$ is Lie group of dimension $n^2$, its adjoint representation is of dimension $n^2$ and there are therefore $n^2$ scalars and $n^2$ Weyl fermions, as anticipated with our index notation.
 
 
@@ -119,7 +124,7 @@
         \end{array}
         \right)
     \end{equation}
-    is the representation of $\Gamma$ coming from the fundamental representation of $\SU(3)$, so $\cdot$ is just the matrix product. We can see that the origin is alays a fixed point so this action is never free. Since $\C^3$ is a smooth manifold, this makes $\C^3/\Gamma$ an orbifold.
+    is the representation of $\Gamma$ coming from the fundamental representation of $\SU(3)$, so $\cdot$ is just the matrix product. We can see that the origin is alays a fixed point so this action is never free. Since $\C^3$ is a smooth manifold, this makes $\C^3/\Gamma$ an orbifold. Note this case naturally includes the case $\Gamma\subset\SU(2)$ too, just not the case $\Gamma\in\SO(6)$.
 
     Note that if $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$\marker.
 
@@ -131,18 +136,82 @@
     \end{align}
     are ketp in the spectrum. Note that the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
 
-    \subsection{Representation theory point of view}
+    \subsection{Representation theory and quivers}
 
-        Let $\{(\rho_i,\br_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a unitary representation of $\Gamma$ on $\C^n$, we denote it $(\rho,\C^n)$. Since $\rho(\gamma)\in\GL(n,\C)$, there is a natural representation of $\Gamma$ on $\GL(n,\C)=\Hom(\C^n,\C^n)$ that we can define from $\rho$:
+        Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^n$, we denote it $(\rho,\C^n)$ and take it unitary. In that case, $\rho(\gamma)\in\U(n)$ and therefore $\rho(\gamma)\omega\rho(\gamma)^{-1}\in\mathfrak{u}(n)$ for any $\omega\in\mathfrak{u}(n)$. In other words, we can construct a representation of $\Gamma$ on $\mathfrak{u}(n)$ from the representation $(\rho,\C^n)$:
         \begin{equation}
-            \rho_{\Hom}(\gamma):\left(
+            \Ad:\left(
             \begin{array}{ccc}
-                GL(n,\C) & \longrightarrow & \GL(n,\C) \\
-                M & \longmapsto & \rho(\gamma)U\rho(\gamma)^{-1}
+                \Gamma & \longrightarrow & \GL(\mathfrak{u}(n))) \\
+                \gamma & \longmapsto & \Ad_\gamma
+            \end{array}
+            \right)
+        \end{equation}
+        with
+        \begin{equation}
+            \Ad_\gamma:\left(
+            \begin{array}{ccc}
+                \mathfrak{u}(n) & \longrightarrow & \mathfrak{u}(n) \\
+                \omega & \longmapsto & \Ad_\gamma(\omega)\equiv\rho(\gamma)\omega\rho(\gamma)^{-1}
             \end{array}
             \right).
         \end{equation}
-        Actually, one can show that if $M$ is anti-hermician, then $\rho(\gamma) M\rho(\gamma)^{-1}$ is also anti-hermician. In other words, the representation $(\rho_\Hom,\GL(n,\C))$ restricted to $\mathfrak{u}(n)\subset\GL(n,\C)$ is still a representation. We denote it by $(\rho,\mathfrak{u}(n))$. We use this representation in the expression \eqref{eq:proj1}-\eqref{eq:proj1}. It is now clear that the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group. Or, more precisely, that the resulting gauge group is the group that has $\mathfrak{u}(n)^\Gamma$ for Lie algebra.
+        Note that even though this representation looks like the adjoint representation, it is not, because it not on the Lie algebra of $\Gamma$. We use this representation in the expression \eqref{eq:proj1}-\eqref{eq:proj3}.
+
+        We can decompose $(\rho,\C^n)$ as follows:
+        \begin{equation}
+            (\rho,\C^n)=\bigoplus_{i\in I}  (\boldsymbol{1}^{N_i}\otimes\rho_i,\C^{N_i}\otimes V_i)
+        \end{equation}
+        were $N_i$ are integer multiplicities and $\boldsymbol{1}$ is the trivial representation, so $\Gamma$ acts trivially on the $\C^{N_i}$. We have $\sum_iN_i\dim(\rho_i)=n$. 
+        
+        After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, that is $\Hom(\C^n\C^n)^\Gamma$. That is, we only keep that subspaces of that transform trivially. We use the superscript $\Gamma$ to indicate that we only keep the trivial representations in the decomposition. First, we can see that by Schur lemma \marker
+        \begin{equation}
+            (V_i\otimes V^*_j)^\Gamma=\delta_{ij}
+        \end{equation}
+        
+        Now since $\Hom(\C^n,\C^n)=\C^n\otimes(\C^n)^*$, we can see that
+        \begin{align}
+            \Hom(\C^n,\C^n)^\Gamma &= (\C^n\otimes(\C^n)^*)^\Gamma\\
+            &= \bigoplus_{i,j\in I} \left((\C^{N_i}\otimes V_i)\otimes(\C^{N_j}\otimes V_j)^*\right)^\Gamma\\
+            &= \bigoplus_{i,j\in I} \left(\C^{N_i}\otimes(\C^{N_j})^*\otimes V_i\otimes V^*_j\right)^\Gamma\\
+            &= \bigoplus_{i,j\in I} \left(\C^{N_i}\otimes(\C^{N_j})^*\right)^\Gamma\otimes\left(V_i\otimes V^*_j\right)^\Gamma\\
+            &= \bigoplus_{i\in I}\C^{N_i}\otimes(\C^{N_i})^*
+        \end{align}
+        so the daughter gauge group is
+        \begin{equation}
+            G_{\text{proj}} = \bigotimes_{i\in I}\U(N_i).
+        \end{equation}
+        Now it turns out that in the low energy effective field theory the $\U(1)$ factor of every $\U(N_i)$ decouples \marker so the resulting gauge group is in fact
+        \begin{equation}
+            G_{\text{proj}} = \bigotimes_{i\in I}\SU(N_i).
+        \end{equation}
+
+        For the matter fields, the reasonning is similar but we now wish to compute $(\mR\otimes\Hom(\C^n,\C^n))^\Gamma$ with $\mR=\boldsymbol{4},\boldsymbol{6}$:
+        \begin{align}
+            (\mR\otimes\Hom(\C^n,\C^n))^\Gamma &= \bigoplus_{i,j\in I} \left(\mR\otimes (\C^{N_i}\otimes V_i)\otimes(\C^{N_j}\otimes V_j)^*\right)^\Gamma\\
+            &= \bigoplus_{i,j\in I} \left(\C^{N_i}\otimes(\C^{N_j})^*\right)^\Gamma\otimes\left(V_i\otimes V^*_j\right)^\Gamma\\
+            &= \bigoplus_{i,j\in I}a^\mR_{ij}\left(\C^{N_i}\otimes(\C^{N_j})^*\right)
+        \end{align}
+        with
+        \begin{equation}
+            \mR\otimes\rho_i=\bigoplus_{j\in I}a^\mR_{ij}\rho_j\marker.
+        \end{equation}
+        Using the orthogonality of characters of irreducible non-equivalent representations, we get that
+        \begin{equation}
+            a^\mR_{ij} = \frac{1}{\abs{\Gamma}}\sum^r_{\gamma=1} r_\gamma\chi^\mR(\gamma)\chi^i(\gamma)\chi^j(\gamma)^*
+        \end{equation}
+        where $r_\gamma$ is the order of the conjugacy class containing $\gamma$ and $\chi^i$ is the character of $\rho_i$.
+
+        In the end, we can see that the matter fields become a total of $a^{\boldsymbol{4}}_{ij}$ bi-fundamental fermions and $a^{\boldsymbol{6}}_{ij}$ bi-fundamental bosons transforming as the $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\SU(N_i)\times\SU(N_j)$ under the products of gauge groups.
+
+        A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$.
+
+    \subsection{$\mN=2$} theories
+
+    \subsection{$\mN=1$} theories
+
+
+    \vspace{5cm}
 
     \begin{table}[H]
         \centering
