@@ -11,14 +11,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Projection to daughter theories}{4}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Representation theory and quivers}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Representation theory realization}{5}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}$\mathcal {N}=2$}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Field content, quivers and McKay graphs}{6}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}$\mathcal {N}=1$}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}$\mathcal {N}=2$ theories}{7}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Reminder on $D=4,\mathcal {N}=4$ SYM theory}{7}{appendix.A}%
+\contentsline {subsection}{\numberline {3.4}$\mathcal {N}=1$ theories}{7}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Calabi-Yau manifolds, orbifolds and crepant resolutions}{7}{appendix.B}%
+\contentsline {subsection}{\numberline {3.5}String theory realization}{7}{subsection.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Markers}{9}{defn.B.1}%
+\contentsline {section}{\numberline {A}Reminder on $D=4,\mathcal {N}=4$ SYM theory}{8}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Calabi-Yau manifolds, orbifolds and crepant resolutions}{8}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}The McKay correspondence}{9}{appendix.C}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Markers}{10}{table.caption.2}%

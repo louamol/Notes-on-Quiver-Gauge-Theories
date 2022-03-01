@@ -136,7 +136,7 @@
     \end{align}
     are ketp in the spectrum. Note that the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
 
-    \subsection{Representation theory and quivers}
+    \subsection{Representation theory realization}
 
         Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^n$, we denote it $(\rho,\C^n)$ and take it unitary. In that case, $\rho(\gamma)\in\U(n)$ and therefore $\rho(\gamma)\omega\rho(\gamma)^{-1}\in\mathfrak{u}(n)$ for any $\omega\in\mathfrak{u}(n)$. In other words, we can construct a representation of $\Gamma$ on $\mathfrak{u}(n)$ from the representation $(\rho,\C^n)$:
         \begin{equation}
@@ -190,11 +190,11 @@
         \begin{align}
             (\mR\otimes\Hom(\C^n,\C^n))^\Gamma &= \bigoplus_{i,j\in I} \left(\mR\otimes (\C^{N_i}\otimes V_i)\otimes(\C^{N_j}\otimes V_j)^*\right)^\Gamma\\
             &= \bigoplus_{i,j\in I} \left(\C^{N_i}\otimes(\C^{N_j})^*\right)^\Gamma\otimes\left(V_i\otimes V^*_j\right)^\Gamma\\
-            &= \bigoplus_{i,j\in I}a^\mR_{ij}\left(\C^{N_i}\otimes(\C^{N_j})^*\right)
+            &= \bigoplus_{i,j\in I}a^\mR_{ij}\left(\C^{N_i}\otimes(\C^{N_j})^*\right)\label{eq:resdecomp}
         \end{align}
         with
         \begin{equation}
-            \mR\otimes\rho_i=\bigoplus_{j\in I}a^\mR_{ij}\rho_j\marker.
+            \mR\otimes\rho_i=\bigoplus_{j\in I}a^\mR_{ij}\rho_j\marker.\label{eq:defaij}
         \end{equation}
         Using the orthogonality of characters of irreducible non-equivalent representations, we get that
         \begin{equation}
@@ -204,11 +204,30 @@
 
         In the end, we can see that the matter fields become a total of $a^{\boldsymbol{4}}_{ij}$ bi-fundamental fermions and $a^{\boldsymbol{6}}_{ij}$ bi-fundamental bosons transforming as the $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\SU(N_i)\times\SU(N_j)$ under the products of gauge groups.
 
-        A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$.
+    \subsection{Field content, quivers and McKay graphs}
 
-    \subsection{$\mN=2$} theories
+        A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$. In other words, from \eqref{eq:resdecomp}, the adjacency matrix of the fermions has elements $A_{ij}=a^{\boldsymbol{4}}$ and the one of the scalars has elements $A_{ij}=a^{\boldsymbol{6}}$.
 
-    \subsection{$\mN=1$} theories
+        On the other hand, given finite group $\Gamma$, a representation $(\rho_W,W)$ and a complete set of irreducible representations $\{(\rho_i,V_i)\}_{i\in I}$ of the latter, one can a McKay graph (or quiver) as follows:
+        \begin{enumerate}
+            \item Draw a vertex for every representation $(\rho_i,V_i)$.
+            \item For every representation $(\rho_i,V_i)$, compute the decomposition
+            \begin{equation*}
+                (\rho_W,V_W)\otimes(\rho_i,V_i)=\bigoplus_j (\rho_j,V_j)^{\oplus n_{ij}}
+            \end{equation*}
+            where $n_{ij}$ is the multiplicity of $(\rho_j,V_j)$ in the decomposition of $(\rho_W,V_W)\otimes(\rho_i,V_i)$.
+            \item For every $n_{ij}>0$, draw $n_{ij}$ arrows from the vertex of $(\rho_i,V_i)$ to the one of $(\rho_j,V_j)$.
+        \end{enumerate}
+        
+        From \eqref{eq:defaij} we see that $n_{ij}=a^{\mR}_{ij}$ and therefore that the matter quivers that we defined previously are exactly the McKay graph associated to the matter representation in question. Or, put differently, the matter content of the daughter theory is encapsulated in the McKay graphs of $\Gamma$ and with respect to $\mR$ with $\mR=\bs{4}$ for spinors and $\mR=\bs{6}$ for scalars. This very important point allows us to use known results on McKay graphs such as the McKay correspondence for example.
+
+    \subsection{$\mN=2$ theories}
+
+        Let us consider that $\Gamma$ is a finite subgroup of $\SU(2)\subset\SU(3)$. It naturally acts on $\C^3$ trough its fundamental representation $\bs{2}$ as $\bs{1}\oplus\bs{2}$ (only acts on 2 coordinates).
+
+    \subsection{$\mN=1$ theories}
+
+    \subsection{String theory realization}
 
 
     \vspace{5cm}
@@ -223,6 +242,7 @@
         $
         \caption{Worldvolume theory in terms of $S$.}
     \end{table}
+
 
 \pagebreak
 \appendix
@@ -273,6 +293,25 @@
     Since Calabi-Yau manifolds have trivial canonical bundle, to obtain a Calabi-Yau structure on $X$ one must choose a crepant resolutions of singularities.
 
     It turns out that the amount of information we know about a crepant resolution of singularities of $\C^n/\Gamma$ depends dramatically on the dimension $n$ of the orbifold. For $n=3$, a crepant resolution always exists but it is not unique; they are related by flops. However all the crepant resolutions have the same Euler and Betti numbers: the \emph{stringy} Betti and Hodge numbers of the orbifold.
+
+\section{The McKay correspondence}
+
+    The finite subgroups of $\SU(2)$ are the doubles covers of the finite subgroups of $\SO(3)$, which simply constitutes the symmetries of the Platonic solids. The groups fall into two infinite series, associated to the regular polygons, as well as three exceptional, associated with the 5 regular polyhedra: the tetrahedron (self-dual), the cube (and its dual octahedron), the icosahedron (and its dual dodecahedron).
+
+    \begin{table}[H]
+        \centering
+        {\footnotesize
+        \begin{tabular}{|cc|cll|}
+            \hline \rowcolor{tablecolor1}
+            Dynkin diagram & Lie algebra & $\Gamma\subset\SU(2)$ & Platonic solid & Variety \\ \rowcolor{tablecolor2} \hline\hline
+            $\tilde{A}_n$ & $\mathfrak{sl}(n+1,\C)$ & $2\mathcal{C}_{n+1}=\Z_{n+1}$ &  & $z^{n=1}+xy=0$ \\ \rowcolor{tablecolor2}
+            $\tilde{D}_n$ & $\mathfrak{so}(2n,\C)$ & $2\mathcal{D}_n$ & $n$-polygon & $z^2+x(y^2+x^n)=0$ \\ \rowcolor{tablecolor2}
+            $\tilde{E}_6$ & $\mathfrak{e}_6$ & $2\mathcal{T}$ & tetrahedron & $z^2+x^4+y^3=0$ \\ \rowcolor{tablecolor2}
+            $\tilde{E}_7$ & $\mathfrak{e}_7$ & $2\mathcal{O}$  & cube, octahedron & $z^2+x(y^3+x^2)=0$ \\ \rowcolor{tablecolor2}
+            $\tilde{E}_8$ & $\mathfrak{e}_8$ & $2\mathcal{I}$  & icosahedron, dodecahedron & $x^2+y^3+z^5=0$ \\ \hline
+        \end{tabular}}
+    \end{table}
+    
 
 \pagebreak
 
