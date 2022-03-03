@@ -11,15 +11,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Projection to daughter theories}{4}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Representation theory realization}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Generalities}{4}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Field content, quivers and McKay graphs}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Representation theory realization}{5}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}$\mathcal {N}=2$ theories}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Field content, quivers and McKay graphs}{6}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}$\mathcal {N}=1$ theories}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.4}$\mathcal {N}=2$ theories}{7}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}String theory realization}{7}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}$\mathcal {N}=1$ theories}{7}{subsection.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6}String theory realization}{7}{subsection.3.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Reminder on $D=4,\mathcal {N}=4$ SYM theory}{8}{appendix.A}%
 \defcounter {refsection}{0}\relax 
@@ -27,4 +29,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {C}The McKay correspondence}{9}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Markers}{10}{table.caption.2}%
+\contentsline {chapter}{List of Markers}{12}{table.caption.3}%
