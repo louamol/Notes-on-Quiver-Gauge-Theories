@@ -345,6 +345,47 @@
       \verb https://people.sissa.it/~bertmat/teaching.htm
       \endverb
     \endentry
+    \entry{1997}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b1824fbfcda4a6352151932d9518b215}{%
+           family={Hanany},
+           familyi={H\bibinitperiod},
+           given={Amihay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=499139cc4d3fda9ba3955fa766a07270}{%
+           family={Witten},
+           familyi={W\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{1c007296f0a5e9284c6593bdb9660dbd}
+      \strng{fullhash}{1c007296f0a5e9284c6593bdb9660dbd}
+      \strng{bibnamehash}{1c007296f0a5e9284c6593bdb9660dbd}
+      \strng{authorbibnamehash}{1c007296f0a5e9284c6593bdb9660dbd}
+      \strng{authornamehash}{1c007296f0a5e9284c6593bdb9660dbd}
+      \strng{authorfullhash}{1c007296f0a5e9284c6593bdb9660dbd}
+      \field{labelalpha}{HW97}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0550-3213}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{month}{5}
+      \field{number}{1–2}
+      \field{title}{Type IIB superstrings, BPS monopoles, and three-dimensional gauge dynamics}
+      \field{volume}{492}
+      \field{year}{1997}
+      \true{nocite}
+      \field{pages}{152\bibrangedash 190}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1016/s0550-3213(97)80030-2
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

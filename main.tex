@@ -41,13 +41,13 @@
 
 \section{The brane-world paradigm}
 
-    We consider our world to be a slice in the ten-dimensional spacetime of type II superstring theory, i.e. the worldvolume of a D$3$-brane. More precisely, we consider a stack of $n$ $D$3-branes iin order to have a $\U(n)$ gauge group. The spacetime is therefore not necessarily $\R^{1,9}$ but of the more general form
+    We consider our world to be a slice in the ten-dimensional spacetime of type II superstring theory, i.e. the worldvolume of a D$3$-brane. More precisely, we consider a stack of $n$ D$3$-branes in order to have a $\U(n)$ gauge group. The spacetime is therefore not necessarily $\R^{1,9}$ but of the more general form
     \begin{equation*}
         M = \R^{1,3}\times M^{(6)}.
     \end{equation*}
     This is the so-called \emph{brane-world paradigm}.
     
-    Independently from string theory, we can require to have $\mN=1$ supersymmetry in four dimensions. This constrains $M^{(6)}$ to be compact, complex, Kähler and to have $\SU(3)$ holonomy. Namely, $M^{(6)}$ must be a Calabi-Yau threefold. Requireing $\mN=1$ supersymmetry is equivalent too asking that that the configuration resulting from compactification has at least one Killing spinor (covariantly constant spinor). This constant spinor then defines a residual supersymmetry by contracting with the local supersymmetry current. On real $6$-folds, spinors transform under $\SO(6)$. We are therefore looking for the biggest subgroup of $\SO(6)$ that leaves a component invariant of the spinor invariant (in that case the spinor $(1,0,0,0)$ is covariantly conserved). Using the fact that $\SO(6)\cong\SU(4)$, can clearly see that this subgroup is $\SU(3)$. Our transverse space must therefore have $\SU(3)$ holonomy such that the parallel transport of of the spinor $(1,0,0,0)$ under any closed loop is a lower $\SU(3)$ rotation.
+    Independently from string theory, we can require to have $\mN=1$ supersymmetry in four dimensions. This constrains $M^{(6)}$ to be compact, complex, Kähler and to have $\SU(3)$ holonomy. Namely, $M^{(6)}$ must be a Calabi-Yau threefold. Requireing $\mN=1$ supersymmetry is equivalent too asking that that the configuration resulting from compactification has at least one Killing spinor (covariantly constant spinor). This constant spinor then defines a residual supersymmetry by contracting with the local supersymmetry current. On real $6$-folds, spinors transform under $\SO(6)$. We are therefore looking for the biggest subgroup of $\SO(6)$ that leaves a component of the spinor invariant. In that case the spinor $(1,0,0,0)$ is covariantly conserved, i.e. is a Killing spinor. Using the fact that $\SO(6)\cong\SU(4)$, can clearly see that this subgroup is $\SU(3)$. Our transverse space must therefore have $\SU(3)$ holonomy such that the parallel transport of the spinor $(1,0,0,0)$ under any closed loop is a lower $\SU(3)$ rotation.
     
     If we let the worldvolume of the D$3$-branes carry the requisite gauge theory while the bulk contains gravity, we can relax the compactness condition and study non-compact threefolds. In other words, $M^{(6)}$ is an affine variety that localy models a Calabi-Yau threefold. Intuitively, this can be understood as a Kaluza-Klein compactification where we take the size of the compact dimensions to infinity. The four-dimensional gravity coupling constant being inversely proportional to this quantity, there is no gravity in this limit. This makes the analysis much simpler and therefore also serves as an argument to ignore gravity in the worldvolume theory. Thus far, we have $n$ D$3$-branes on which there is a $\U(n)$ gauge group and transverse to which gravity propagates.
 
@@ -72,7 +72,7 @@
         \begin{equation}
             \SO(1,9)\to\SO(1,3)\times\SO(6),
         \end{equation}
-        whereby breaking half of the supersymmetries. We are thus left with $16$ supercharges. In four dimensions, this corresponds to $\mN=4$. The worldvolume theory for $S=\C^3$ is therefore $D=4\mN=4$ $\U(n)$ SCFT gauge theory. This worldvolume theory, obtained in the non-singular case $S=\C^3$, is called the \emph{parent theory}.
+        whereby breaking half of the supersymmetries. We are thus left with $16$ supercharges. In four dimensions, this corresponds to $\mN=4$. The worldvolume theory for $S=\C^3$ is therefore $D=4,\mN=4$ $\U(n)$ SCFT gauge theory. This worldvolume theory, obtained in the non-singular case $S=\C^3$, is called the \emph{parent theory}.
 
         Note that the D$3$-brane will warp the flat space metric to that of $AdS_5\times S^5$ and the bulk geometry is not strictly $\C^3$. However, as stated above, we are only concerned with the local gauge theory and not with gravitational back-reaction, therefore it suffices to consider $S$ as $\C^3$.
 
@@ -161,10 +161,11 @@
         Note that even though this representation looks like the adjoint representation, it is not, because it not on the Lie algebra of $\Gamma$. We use this representation in the expression \eqref{eq:proj1}-\eqref{eq:proj3}.
 
         We can decompose $(\rho,\C^n)$ as follows:
-        \begin{equation}
-            (\rho,\C^n)=\bigoplus_{i\in I}  (\boldsymbol{1}^{N_i}\otimes\rho_i,\C^{N_i}\otimes V_i)
-        \end{equation}
-        were $N_i$ are integer multiplicities and $\boldsymbol{1}$ is the trivial representation, so $\Gamma$ acts trivially on the $\C^{N_i}$. We have $\sum_iN_i\dim(\rho_i)=n$. 
+        \begin{align}
+            (\rho,\C^n) &= \bigoplus_{i\in I}~(\rho_i,V_i)^{N_i} \\
+            &= \bigoplus_{i\in I}~(\boldsymbol{1}^{N_i}\otimes\rho_i,\C^{N_i}\otimes V_i) \label{eq:decomp:line2}
+        \end{align}
+        were $N_i$ are integer multiplicities ($(\rho_i,V_i)^{N_i}\equiv(\rho_i,V_i)^{\oplus N_i}$) and $\boldsymbol{1}$ is the trivial representation, so $\Gamma$ acts trivially on the $\C^{N_i}$. We have $\sum_iN_i\dim(\rho_i)=n$. The rewritting \eqref{eq:decomp:line2} will be useful later on.
         
         After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, that is $\Hom(\C^n\C^n)^\Gamma$. That is, we only keep that subspaces of that transform trivially. We use the superscript $\Gamma$ to indicate that we only keep the trivial representations in the decomposition. First, we can see that by Schur lemma \marker
         \begin{equation}
@@ -231,6 +232,26 @@
 
     \subsection{String theory realization}
 
+    \subsection{$\Z_n$}
+
+        We discuss a type II theory with a subsector of D$p$-branes for a given $p$ ($p=0,2,4,6,8$ for type IIA and $p=-1,1,3,5,7,9$ for type IIB).This sector is determined by a choice of representation $(\rho^{(p)},V^{(p)})$ of $\Z_n$. Recall the the irreducible representations of $\Z_n$ are given by $(\rho_k,V_k)$($k=0,\dots,n-1$) with $V_k=\C$ and $\rho_i(g)=\zeta^k_n$ where $g$ is the generator of $\Z_n$. The representation $\rho,V^{(p)}$ can be decomposed as
+        \begin{equation}
+            (\rho^{(p)},V^{p})=\bigoplus^{n-1}_{i=0}N^{(p)}_i(\rho_i,V_i).
+        \end{equation}
+        Since $\dim\rho_i=1$, $N^{(p)}\equiv\sum_i N^{(p)}_i = \dim V^{(p)}$. Following what we have found using general representation theory, the gauge group $\U(N^{(p)})$ is now broken to
+        \begin{equation}
+            G_{\text{proj}}=\bigotimes^{n-1}_{i=0}~\U(N^{(p)}_i).
+        \end{equation}
+        
+        
+        For the gauge field, we then need a bi-index notation: $A_{i\alpha_i;j\beta_j}$ with $i,j=A,\dots,n-1$ and $\alpha_i,\beta_i=1,\dots,N^{()p}_i$. We sometimes simply write $A_{i\alpha;j\beta}$. The gauge field transform on the adjoint representation of $G_{\text{proj}}$:
+        \begin{equation}
+            A_{i\alpha;i\beta}\to \rho_i(g)A_{i\alpha;j\beta}\rho_j(g)^{-1}=\zeta^i_nA_{i\alpha;j\beta}\zeta^{-j}_n=\zeta^{i-j}_nA_{i\alpha;j\beta}
+        \end{equation}
+        so we clearly see that only the components with $i=j$ are left invariant and that the gauge field has a block diagonal form. The block $i=j$ is an $N^{(p)}_i\times N^{(p)}_i$ block and transforms under $(\rho_i,V_i)^{N^{(p)}_i}$.
+
+        
+
 
     \vspace{5cm}
 
@@ -249,7 +270,7 @@
 \pagebreak
 \appendix
 
-\section{Reminder on $D=4,\mN=4$ SYM theory}\label{sec:N4SCFT}
+\section{Reminder on $D=4,\mN=4$ super Yang-Mills theory}\label{sec:N4SCFT}
         
     For $D=4,\mN=4$, there is one kind of supermultiplet, the vector multiplet. The decomposition of the $\mN = 4$ vector superfield in terms of $\mN = 1$ representations is as follows:
     \begin{equation}
@@ -274,319 +295,382 @@
         \textbf{$\boldsymbol{\mN=4}$ Yang-Mills theory.} There is only one $D=4,\mN=4$ Yang-Mills theory and it contains $3$ $\mN=1$ chiral scalar supermutliplet and $1$ $\mN=1$ vector supermultiplet (up to $g$ and $\tau$). This theory is conformal and can be recovered from dimensional reduction of $D=10,\mN=1$ Yang-Mills on $\mathbb{T}^6$.
     \end{result}
 
-
-
-\section{Calabi-Yau manifolds, orbifolds and crepant resolutions}
-
-    Simply put, as \emph{Calabi-Yau manifold} is a Kähler manifold with trivial canonical bundle or, equivalently, with a Kähler metric whose global holonomy is contained in $SU(n)$. Not that this is equivalent to having a trivial canonical bundle.
-
-     A \emph{Calabi-Yau orbifold} is the quotient of a smooth Calabi-Yau manifold by a discrete group action which generically has fixed points. From a geometrical perspective we can try to resolve the orbifold singularity. A resolution $(X,\pi)$ of $\C^n/\Gamma$ is a non-singular complex manifold $X$ of dimension $n$ with a proper biholomorphic map 
-    \begin{equation}
-        \pi:X\to\C^n/\Gamma
-    \end{equation}
-    that induces a biholomorphism between dense open sets. 
-    \begin{defn}
-        A resolution $(X,\pi)$ of $\C^n/\Gamma$ is called a \emph{crepant resolution}\index{resolution!crepant}\footnote{For a resolution of singularities we can define a notion of discrepancy. A crepant resolution is a resolution
-        without discrepancy.} if the canonical bundles of $X$ and $\C^n/\Gamma$ are isomorphic, i.e.
-        \begin{equation*}
-            K_X\cong\pi^*(K_{\C^n/\Gamma}).
-        \end{equation*}
-    \end{defn}
-    Since Calabi-Yau manifolds have trivial canonical bundle, to obtain a Calabi-Yau structure on $X$ one must choose a crepant resolutions of singularities.
-
-    It turns out that the amount of information we know about a crepant resolution of singularities of $\C^n/\Gamma$ depends dramatically on the dimension $n$ of the orbifold. For $n=3$, a crepant resolution always exists but it is not unique; they are related by flops. However all the crepant resolutions have the same Euler and Betti numbers: the \emph{stringy} Betti and Hodge numbers of the orbifold.
-
 \section{The McKay correspondence}
 
-    The finite subgroups of $\SU(2)$ are the doubles covers of the finite subgroups of $\SO(3)$, which simply constitutes the symmetries of the Platonic solids. The groups fall into two infinite series, associated to the regular polygons, as well as three exceptional, associated with the 5 regular polyhedra: the tetrahedron (self-dual), the cube (and its dual octahedron), the icosahedron (and its dual dodecahedron).
+    \subsection{Finite subgroups of $\SL(2,\C)$}
 
-    \begin{figure}[H]
-        \centering
-        \begin{tabular}{|c|c|l|}
-            \hline
-            \begin{tabular}{@{}c@{}}Simple \\ Lie algebra\end{tabular} & Simply laced & \begin{tabular}{@{}l@{}}Dynkin diagram \\ Extended Dybkin diagram\end{tabular} \\ \hline
-            $\mathfrak{sl}(n+1,\C),n\geq1$ & yes & 
-            \begin{tabular}{@{}l@{}} $A_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (2*1.25,0);
-                \draw (2*1.25,0) edge[dashed] (3*1.25,0);
-                \draw (3*1.25,0) edge (4*1.25,0);
-                \foreach \x in {0,1,2,3,4} {
-                \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
-                }
-                \end{tikzpicture}\quad($n$ nodes) \\[0.4cm] $\tilde{A}_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+        The first thing to recall is that every finite subgroup of $\SL(2,\C)$ is isomorphic to a subgroup of $\SU(2,\C)$ and vice-versa, so we equivalently talk about the subgroups of $\SU(2)$. The finite subgroups of $\SU(2)$, called the \emph{binary polyhedral groups}, are the doubles covers of the finite subgroups of $\SO(3)$ that are called \emph{polyhedral groups}. They simply constitutes the symmetries of the Platonic solids. The groups fall into two infinite series, associated to the regular polygons, as well as three exceptional, associated with the 5 regular polyhedra: the tetrahedron (self-dual), the cube (and its dual octahedron), the icosahedron (and its dual dodecahedron).
+
+        More precisely, the finite subgroups of $\SU(2)$ are
+        \begin{itemize}
+            \item $\Z_n$ : cyclic group of order $n$ ($n\geq2$) generated by
+            \begin{equation}
+                \begin{bmatrix}
+                    \zeta_m & 0\\
+                    0 & \zeta^{-1}_m
+                \end{bmatrix}
+            \end{equation}
+            \item $2\D_n$ : \emph{binary dihedral groups} of order $4n$ ($n\geq1$) generated by
+            \begin{equation}
+                A \equiv
+                \begin{bmatrix}
+                    \zeta_{2m} & 0\\
+                    0 & \zeta^{-1}_{2m}
+                \end{bmatrix}\quad \text{ and }
+                B \equiv 
+                \begin{bmatrix}
+                    0 & i\\
+                    i & 0
+                \end{bmatrix}
+            \end{equation}
+            \item $2\mathcal{T}$ : \emph{binary tetrahedral group} of order $24$ generated by $D_2$ and
+            \begin{equation}
+                C \equiv \frac{1}{\sqrt{2}}
+                \begin{bmatrix}
+                    \zeta_8 & \zeta^3_8\\
+                    \zeta_8 & \zeta^7_8
+                \end{bmatrix}
+            \end{equation}
+            \item $2\mathcal{O}$ : \emph{binary octahedral group} of order $48$ generated by $\mathcal{T}$ and
+            \begin{equation}
+                D \equiv 
+                \begin{bmatrix}
+                    \zeta^3_8 & 0\\
+                    0 & \zeta^5_8
+                \end{bmatrix}
+            \end{equation}
+            \item $2\mathcal{I}$ : \emph{binary icosahedral group} of order $120$ generated by
+            \begin{equation}
+                E \equiv -\frac{1}{\sqrt{5}}
+                \begin{bmatrix}
+                    \zeta^4_5-\zeta_5 & \zeta^2_5-\zeta^3_5\\
+                    \zeta^2_5-\zeta^3_5 & \zeta_5-\zeta^4_5
+                \end{bmatrix}\quad \text{ and }
+                F \equiv -\frac{1}{\sqrt{5}}
+                \begin{bmatrix}
+                    \zeta^2_5-\zeta^4_4 & \zeta^4_5-1\\
+                    1-\zeta_5 & \zeta^3_5-\zeta_5
+                \end{bmatrix}
+            \end{equation}
+        \end{itemize}
+        with $\zeta_m\equiv e^{i\frac{2\pi}{m}}$ such that $(\zeta_m)^m=1$.
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|c|l|l|l|}
+                \hline
+                $\Gamma\subset\SU(2)$ & Platonic solids & McKay graph & Variety \\ \hline
+                $\Z_n$ &  & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
                     \draw (0,0) edge (2*1.25,0);
                     \draw (2*1.25,0) edge[dashed] (3*1.25,0);
                     \draw (3*1.25,0) edge (4*1.25,0);
-                    \draw (0,0) edge (2*1.25,1);
-                    \draw (4*1.25,0) edge (2*1.25,1);
+                    \draw (0,0) edge (2*1.25,-1);
+                    \draw (4*1.25,0) edge (2*1.25,-1);
                     \foreach \x in {0,1,2,3,4} {
-                        \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                        \draw (1.25*\x,0) node[above]{$1$};
                     }
-                    \draw[fill=black] (1.25*2,1) circle[radius=0.15];
-                \end{tikzpicture}\quad($n+1$ nodes)\end{tabular} \\ \hline
-            $\mathfrak{so}(2n+1,\R),n\geq2$ & no & 
-            \begin{tabular}{@{}l@{}}$B_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (2*1.25,0);
-                \draw (2*1.25,0) edge[dashed] (3*1.25,0);
-                \draw (3*1.25+0.65-0.15,0.21) -- (3*1.25+0.65+0.15,0) -- (3*1.25+0.65-0.15,-0.21);
-                \draw (3*1.25,0.07) -- (4*1.25,0.07);
-                \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
-                \foreach \x in {0,1,2,3,4} {
-                \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
-                }
-                \end{tikzpicture}\quad (\marker nodes) \\[0.4cm] $\tilde{B}_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                    \draw (1.25,0) edge (2*1.25,0);
-                    \draw (0,0.7) edge (1.25,0);
-                    \draw (0,-0.7) edge (1.25,0);
+                    \draw[fill=black] (1.25*2,-1) circle[radius=0.15];
+                    \draw (1.25*2,-1) node[above]{$1$};
+                \end{tikzpicture}\quad($n$ nodes) & $z^{n}+xy=0$ \\ \hline
+                $2\mathcal{D}_n$ & $n$-polygon & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
+                    \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                    \draw (3*1.25,0) edge (4*1.25,0);
+                    \draw (4*1.25,0) edge (5*1.25,0);
+                    \draw (1.25,0) edge (1.25,-1.25);
+                    \draw (4*1.25,0) edge (4*1.25,-1.25);
+                    \foreach \x in {0,1,2,3,4,5} {
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    
+                    \draw[fill=black] (1.25,-1.25) circle[radius=0.15];
+                    \draw (1.25,-1.25) node[right]{$1$};
+                    \draw[fill=black] (4*1.25,-1.25) circle[radius=0.15];
+                    \draw (4*1.25,-1.25) node[right]{$1$};
+                    \draw (0,0) node[above]{$1$};
+                    \draw (1.25*5,0) node[above]{$1$};
+                    \draw (1.25*1,0) node[above]{$2$};
+                    \draw (1.25*2,0) node[above]{$2$};
+                    \draw (1.25*3,0) node[above]{$2$};
+                    \draw (1.25*4,0) node[above]{$2$};
+                \end{tikzpicture}\quad($n+3$ nodes) & $x^2+y^2z+z^{n-1}=0$ \\ \hline
+                $2\mathcal{T}$ & tetrahedron & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (4*1.25,0);
+                    \draw (2*1.25,0) edge (2*1.25,-2*1.25);
+                    \foreach \x in {0,1,2,3,4} {
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=black] (2*1.25,-1.25) circle[radius=0.15];
+                    \draw (2*1.25,-1.25) node[right]{$2$};
+                    \draw[fill=black] (2*1.25,-2*1.25) circle[radius=0.15];
+                    \draw (2*1.25,-2*1.25) node[right]{$1$};
+                    \draw (0,0) node[above]{$1$};
+                    \draw (1.25*4,0) node[above]{$1$};
+                    \draw (1.25*1,0) node[above]{$2$};
+                    \draw (1.25*2,0) node[above]{$3$};
+                    \draw (1.25*3,0) node[above]{$2$};
+                \end{tikzpicture}\quad($7$ nodes) & $x^2+y^3+z^4=0$ \\ \hline
+                $2\mathcal{O}$  & \begin{tabular}{@{}l@{}}cube \\ octahedron\end{tabular} & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (6*1.25,0);
+                    \draw (3*1.25,0) edge (3*1.25,-1.25);
+                    \foreach \x in {0,1,2,3,4,5,6} {
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=black] (3*1.25,-1.25) circle[radius=0.15];
+                    \draw (3*1.25,-1.25) node[right]{$2$};
+                    \draw (0,0) node[above]{$1$};
+                    \draw (1.25*1,0) node[above]{$2$};
+                    \draw (1.25*2,0) node[above]{$3$};
+                    \draw (1.25*3,0) node[above]{$4$};
+                    \draw (1.25*4,0) node[above]{$3$};
+                    \draw (1.25*5,0) node[above]{$2$};
+                    \draw (1.25*6,0) node[above]{$1$};
+                \end{tikzpicture}\quad($8$ nodes) & $x^2+y^3+yz^3=0$ \\ \hline
+                $2\mathcal{I}$  & \begin{tabular}{@{}l@{}}icosahedron \\ dodecahedron\end{tabular} & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (7*1.25,0);
+                    \draw (2*1.25,0) edge (2*1.25,-1.25);
+                    \foreach \x in {0,1,2,3,4,5,6,7} {
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=black] (2*1.25,-1.25) circle[radius=0.15];
+                    \draw (2*1.25,-1.25) node[right]{$3$};
+                    \draw (0,0) node[above]{$2$};
+                    \draw (1.25*1,0) node[above]{$4$};
+                    \draw (1.25*2,0) node[above]{$6$};
+                    \draw (1.25*3,0) node[above]{$5$};
+                    \draw (1.25*4,0) node[above]{$4$};
+                    \draw (1.25*5,0) node[above]{$3$};
+                    \draw (1.25*6,0) node[above]{$2$};
+                    \draw (1.25*7,0) node[above]{$1$};
+                \end{tikzpicture}\quad($9$ nodes) & $x^2+y^3+z^5=0$ \\ \hline
+            \end{tabular}
+            \caption{Binary polyhedral groups and their McKay graphs.Labels over the vertices are the dimension of the representation. We erase the arrow ends if they go in both directions and erase the label if it is
+            equal to $1$.}
+        \end{table}
+
+    \subsection{Simple Lie algebras}
+
+        \begin{figure}[H]
+            \centering
+            \begin{tabular}{|c|c|l|}
+                \hline
+                \begin{tabular}{@{}c@{}}Simple \\ Lie algebra\end{tabular} & Simply laced & \begin{tabular}{@{}l@{}}Dynkin diagram \\ Extended Dybkin diagram\end{tabular} \\ \hline
+                $\mathfrak{sl}(n+1,\C),n\geq1$ & yes & 
+                \begin{tabular}{@{}l@{}} $A_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
+                    \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                    \draw (3*1.25,0) edge (4*1.25,0);
+                    \foreach \x in {0,1,2,3,4} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \end{tikzpicture}\quad($n$ nodes) \\[0.4cm] $\tilde{A}_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (0,0) edge (2*1.25,0);
+                        \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                        \draw (3*1.25,0) edge (4*1.25,0);
+                        \draw (0,0) edge (2*1.25,1);
+                        \draw (4*1.25,0) edge (2*1.25,1);
+                        \foreach \x in {0,1,2,3,4} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (1.25*2,1) circle[radius=0.15];
+                    \end{tikzpicture}\quad($n+1$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{so}(2n+1,\R),n\geq2$ & no & 
+                \begin{tabular}{@{}l@{}}$B_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
                     \draw (2*1.25,0) edge[dashed] (3*1.25,0);
                     \draw (3*1.25+0.65-0.15,0.21) -- (3*1.25+0.65+0.15,0) -- (3*1.25+0.65-0.15,-0.21);
                     \draw (3*1.25,0.07) -- (4*1.25,0.07);
                     \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
-                    \foreach \x in {1,2,3,4} {
-                        \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    \foreach \x in {0,1,2,3,4} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
                     }
-                    \draw[fill=white] (0,0.7) circle[radius=0.15];
-                    \draw[fill=black] (0,-0.7) circle[radius=0.15];
-                \end{tikzpicture}\quad(\marker nodes)\end{tabular} \\ \hline
-            $\mathfrak{sp}(2n,\C),n\geq3$ & no & 
-            \begin{tabular}{@{}l@{}}$C_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,4pt) $)},scale=0.5]
-                \draw (0,0) edge (2*1.25,0);
-                \draw (2*1.25,0) edge[dashed] (3*1.25,0);
-                \draw (3*1.25+0.65+0.15,0.21) -- (3*1.25+0.65-0.15,0) -- (3*1.25+0.65+0.15,-0.21);
-                \draw (3*1.25,0.07) -- (4*1.25,0.07);
-                \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
-                \foreach \x in {0,1,2,3,4} {
-                \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
-                }
-                \end{tikzpicture}\quad (\marker nodes) \\[0.4cm] $\tilde{C}_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,4pt) $)},scale=0.5]
-                    \draw (0.65-0.15,0.21) -- (0.65+0.15,0) -- (0.65-0.15,-0.21);
-                    \draw (0,0.07) -- (1.25,0.07);
-                    \draw (0,-0.07) -- (1.25,-0.07);
-                    \draw (1.25,0) edge (2*1.25,0);
+                    \end{tikzpicture}\quad (\marker nodes) \\[0.4cm] $\tilde{B}_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (1.25,0) edge (2*1.25,0);
+                        \draw (0,0.7) edge (1.25,0);
+                        \draw (0,-0.7) edge (1.25,0);
+                        \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                        \draw (3*1.25+0.65-0.15,0.21) -- (3*1.25+0.65+0.15,0) -- (3*1.25+0.65-0.15,-0.21);
+                        \draw (3*1.25,0.07) -- (4*1.25,0.07);
+                        \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
+                        \foreach \x in {1,2,3,4} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=white] (0,0.7) circle[radius=0.15];
+                        \draw[fill=black] (0,-0.7) circle[radius=0.15];
+                    \end{tikzpicture}\quad(\marker nodes)\end{tabular} \\ \hline
+                $\mathfrak{sp}(2n,\C),n\geq3$ & no & 
+                \begin{tabular}{@{}l@{}}$C_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,4pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
                     \draw (2*1.25,0) edge[dashed] (3*1.25,0);
                     \draw (3*1.25+0.65+0.15,0.21) -- (3*1.25+0.65-0.15,0) -- (3*1.25+0.65+0.15,-0.21);
                     \draw (3*1.25,0.07) -- (4*1.25,0.07);
                     \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
-                    \foreach \x in {1,2,3,4} {
-                        \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    \foreach \x in {0,1,2,3,4} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
                     }
-                    \draw[fill=black] (0,0) circle[radius=0.15];
-                \end{tikzpicture}\quad(\marker nodes)\end{tabular} \\ \hline
-            $\mathfrak{so}(2n,\R),n\geq4$ & yes &
-            \begin{tabular}{@{}l@{}}$D_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (2*1.25,0);
-                \draw (2*1.25,0) edge[dashed] (3*1.25,0);
-                \draw (3*1.25,0) -- (4*1.25,0.7);
-                \draw (3*1.25,0) -- (4*1.25,-0.7); 
-                \foreach \x in {0,1,2,3} {
-                \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
-                }
-                \draw[fill=white] (1.25*4,0.7) circle[radius=0.15];
-                \draw[fill=white] (1.25*4,-0.7) circle[radius=0.15];
-                \end{tikzpicture}\quad($n$ nodes) \\[0.4cm] $\tilde{D}_n:\quad$  \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                    \draw (0,0.7) edge (1.25,0);
-                    \draw (0,-0.7) edge (1.25,0);
-                    \draw (1.25,0) edge (2*1.25,0);
+                    \end{tikzpicture}\quad (\marker nodes) \\[0.4cm] $\tilde{C}_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,4pt) $)},scale=0.5]
+                        \draw (0.65-0.15,0.21) -- (0.65+0.15,0) -- (0.65-0.15,-0.21);
+                        \draw (0,0.07) -- (1.25,0.07);
+                        \draw (0,-0.07) -- (1.25,-0.07);
+                        \draw (1.25,0) edge (2*1.25,0);
+                        \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                        \draw (3*1.25+0.65+0.15,0.21) -- (3*1.25+0.65-0.15,0) -- (3*1.25+0.65+0.15,-0.21);
+                        \draw (3*1.25,0.07) -- (4*1.25,0.07);
+                        \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
+                        \foreach \x in {1,2,3,4} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (0,0) circle[radius=0.15];
+                    \end{tikzpicture}\quad(\marker nodes)\end{tabular} \\ \hline
+                $\mathfrak{so}(2n,\R),n\geq4$ & yes &
+                \begin{tabular}{@{}l@{}}$D_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
                     \draw (2*1.25,0) edge[dashed] (3*1.25,0);
                     \draw (3*1.25,0) -- (4*1.25,0.7);
                     \draw (3*1.25,0) -- (4*1.25,-0.7); 
-                    \foreach \x in {1,2,3} {
-                        \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    \foreach \x in {0,1,2,3} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
                     }
-                    \draw[fill=white] (0,0.7) circle[radius=0.15];
-                    \draw[fill=black] (0,-0.7) circle[radius=0.15];
                     \draw[fill=white] (1.25*4,0.7) circle[radius=0.15];
                     \draw[fill=white] (1.25*4,-0.7) circle[radius=0.15];
-                \end{tikzpicture}\quad(\marker nodes)\end{tabular} \\ \hline
-            $\mathfrak{e}_6$ & yes &
-            \begin{tabular}{@{}l@{}}$E_6:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
-                \draw (0,0) edge (4*1.25,0);
-                \draw (2*1.25,0) edge (2*1.25,1.25);
-                \foreach \x in {0,1,2,3,4} {
-                \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
-                }
-                \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
-                \end{tikzpicture} \quad($6$ nodes) \\[0.4cm]  $\tilde{E}_6:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                    \end{tikzpicture}\quad($n$ nodes) \\[0.4cm] $\tilde{D}_n:\quad$  \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (0,0.7) edge (1.25,0);
+                        \draw (0,-0.7) edge (1.25,0);
+                        \draw (1.25,0) edge (2*1.25,0);
+                        \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                        \draw (3*1.25,0) -- (4*1.25,0.7);
+                        \draw (3*1.25,0) -- (4*1.25,-0.7); 
+                        \foreach \x in {1,2,3} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=white] (0,0.7) circle[radius=0.15];
+                        \draw[fill=black] (0,-0.7) circle[radius=0.15];
+                        \draw[fill=white] (1.25*4,0.7) circle[radius=0.15];
+                        \draw[fill=white] (1.25*4,-0.7) circle[radius=0.15];
+                    \end{tikzpicture}\quad(\marker nodes)\end{tabular} \\ \hline
+                $\mathfrak{e}_6$ & yes &
+                \begin{tabular}{@{}l@{}}$E_6:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
                     \draw (0,0) edge (4*1.25,0);
-                    \draw (2*1.25,0) edge (2*1.25,2*1.25);
+                    \draw (2*1.25,0) edge (2*1.25,1.25);
                     \foreach \x in {0,1,2,3,4} {
-                        \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
                     }
                     \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
-                    \draw[fill=black] (2*1.25,2*1.25) circle[radius=0.15];
-                \end{tikzpicture}\quad($6$ nodes)\end{tabular} \\ \hline
-            $\mathfrak{e}_7$ & yes & 
-            \begin{tabular}{@{}l@{}} $E_7:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
-                \draw (0,0) edge (5*1.25,0);
-                \draw (2*1.25,0) edge (2*1.25,1.25);
-                \foreach \x in {0,1,2,3,4,5} {
-                \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
-                }
-                \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
-                \end{tikzpicture} \quad($7$ nodes) \\[0.4cm] $\tilde{E}_7:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
-                    \draw (-1.25,0) edge (5*1.25,0);
+                    \end{tikzpicture} \quad($6$ nodes) \\[0.4cm]  $\tilde{E}_6:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                        \draw (0,0) edge (4*1.25,0);
+                        \draw (2*1.25,0) edge (2*1.25,2*1.25);
+                        \foreach \x in {0,1,2,3,4} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
+                        \draw[fill=black] (2*1.25,2*1.25) circle[radius=0.15];
+                    \end{tikzpicture}\quad($6$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{e}_7$ & yes & 
+                \begin{tabular}{@{}l@{}} $E_7:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                    \draw (0,0) edge (5*1.25,0);
                     \draw (2*1.25,0) edge (2*1.25,1.25);
                     \foreach \x in {0,1,2,3,4,5} {
-                        \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
                     }
-                    \draw[fill=black] (-1.25,0) circle[radius=0.15];
                     \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
-                \end{tikzpicture}\quad($8$ nodes)\end{tabular} \\ \hline
-            $\mathfrak{e}_8$ & yes & 
-            \begin{tabular}{@{}l@{}}$E_8:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
-                \draw (0,0) edge (6*1.25,0);
-                \draw (2*1.25,0) edge (2*1.25,1.25);
-                \foreach \x in {0,1,2,3,4,5,6} {
-                \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
-                }
-                \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
-                \end{tikzpicture} \quad($8$ nodes) \\[0.4cm] $\tilde{E}_8:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
-                    \draw (0,0) edge (7*1.25,0);
+                    \end{tikzpicture} \quad($7$ nodes) \\[0.4cm] $\tilde{E}_7:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                        \draw (-1.25,0) edge (5*1.25,0);
+                        \draw (2*1.25,0) edge (2*1.25,1.25);
+                        \foreach \x in {0,1,2,3,4,5} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (-1.25,0) circle[radius=0.15];
+                        \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
+                    \end{tikzpicture}\quad($8$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{e}_8$ & yes & 
+                \begin{tabular}{@{}l@{}}$E_8:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                    \draw (0,0) edge (6*1.25,0);
                     \draw (2*1.25,0) edge (2*1.25,1.25);
                     \foreach \x in {0,1,2,3,4,5,6} {
-                        \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
                     }
-                    \draw[fill=black] (7*1.25,0) circle[radius=0.15];
                     \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
-                \end{tikzpicture}\quad($9$ nodes)\end{tabular} \\ \hline
-            $\mathfrak{f}_4$ & no & 
-            \begin{tabular}{@{}l@{}}$F_4:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (1.25,0);
-                \draw (2*1.25,0) edge (3*1.25,0);
-                \draw (1*1.25+0.65-0.15,0.21) -- (1*1.25+0.65+0.15,0) -- (1*1.25+0.65-0.15,-0.21);
-                \draw (1*1.25,0.07) -- (2*1.25,0.07);
-                \draw (1*1.25,-0.07) -- (2*1.25,-0.07); 
-                \foreach \x in {0,1,2,3} {
-                \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
-                }
-                \end{tikzpicture} \quad($4$ nodes) \\[0.4cm] $\tilde{F}_4:\quad$  \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                    \draw (-1.25,0) edge (1.25,0);
+                    \end{tikzpicture} \quad($8$ nodes) \\[0.4cm] $\tilde{E}_8:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                        \draw (0,0) edge (7*1.25,0);
+                        \draw (2*1.25,0) edge (2*1.25,1.25);
+                        \foreach \x in {0,1,2,3,4,5,6} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (7*1.25,0) circle[radius=0.15];
+                        \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
+                    \end{tikzpicture}\quad($9$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{f}_4$ & no & 
+                \begin{tabular}{@{}l@{}}$F_4:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (1.25,0);
                     \draw (2*1.25,0) edge (3*1.25,0);
                     \draw (1*1.25+0.65-0.15,0.21) -- (1*1.25+0.65+0.15,0) -- (1*1.25+0.65-0.15,-0.21);
                     \draw (1*1.25,0.07) -- (2*1.25,0.07);
                     \draw (1*1.25,-0.07) -- (2*1.25,-0.07); 
                     \foreach \x in {0,1,2,3} {
-                        \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
                     }
-                    \draw[fill=black] (-1.25,0) circle[radius=0.15];
-                \end{tikzpicture}\quad($5$ nodes)\end{tabular} \\ \hline
-            $\mathfrak{g}_2$ & no & 
-            \begin{tabular}{@{}l@{}} $G_2:\quad$  \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (1.25,0);
-                \draw (0.65-0.15,0.21) -- (0.65+0.15,0) -- (0.65-0.15,-0.21);
-                \draw (0,0.11) -- (1.25,0.11);
-                \draw (0,-0.11) -- (1.25,-0.11); 
-                \foreach \x in {0,1} {
-                \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
-                }
-                \end{tikzpicture} \quad($2$ nodes) \\[0.4cm] $\tilde{G}_2:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                    \draw (-1.25,0) edge (1.25,0);
+                    \end{tikzpicture} \quad($4$ nodes) \\[0.4cm] $\tilde{F}_4:\quad$  \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (-1.25,0) edge (1.25,0);
+                        \draw (2*1.25,0) edge (3*1.25,0);
+                        \draw (1*1.25+0.65-0.15,0.21) -- (1*1.25+0.65+0.15,0) -- (1*1.25+0.65-0.15,-0.21);
+                        \draw (1*1.25,0.07) -- (2*1.25,0.07);
+                        \draw (1*1.25,-0.07) -- (2*1.25,-0.07); 
+                        \foreach \x in {0,1,2,3} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (-1.25,0) circle[radius=0.15];
+                    \end{tikzpicture}\quad($5$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{g}_2$ & no & 
+                \begin{tabular}{@{}l@{}} $G_2:\quad$  \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (1.25,0);
                     \draw (0.65-0.15,0.21) -- (0.65+0.15,0) -- (0.65-0.15,-0.21);
                     \draw (0,0.11) -- (1.25,0.11);
                     \draw (0,-0.11) -- (1.25,-0.11); 
                     \foreach \x in {0,1} {
-                        \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
                     }
-                    \draw[fill=black] (-1.25,0) circle[radius=0.15];
-                \end{tikzpicture}\quad($3$ nodes)\end{tabular} \\ \hline
-        \end{tabular}
-        \caption{Simple Lie algebras and their (extended) Dynkin diagrams.}
-    \end{figure}
-    
+                    \end{tikzpicture} \quad($2$ nodes) \\[0.4cm] $\tilde{G}_2:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (-1.25,0) edge (1.25,0);
+                        \draw (0.65-0.15,0.21) -- (0.65+0.15,0) -- (0.65-0.15,-0.21);
+                        \draw (0,0.11) -- (1.25,0.11);
+                        \draw (0,-0.11) -- (1.25,-0.11); 
+                        \foreach \x in {0,1} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (-1.25,0) circle[radius=0.15];
+                    \end{tikzpicture}\quad($3$ nodes)\end{tabular} \\ \hline
+            \end{tabular}
+            \caption{Simple Lie algebras and their (extended) Dynkin diagrams.}
+        \end{figure}
 
-    \begin{table}[H]
-        \centering
-        \begin{tabular}{|c|l|l|l|}
-            \hline
-            $\Gamma\subset\SU(2)$ & Platonic solids & McKay graph & Variety \\ \hline
-            $2\mathcal{C}_{n+1}=\Z_{n+1}$ &  & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (2*1.25,0);
-                \draw (2*1.25,0) edge[dashed] (3*1.25,0);
-                \draw (3*1.25,0) edge (4*1.25,0);
-                \draw (0,0) edge (2*1.25,-1);
-                \draw (4*1.25,0) edge (2*1.25,-1);
-                \foreach \x in {0,1,2,3,4} {
-                    \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
-                    \draw (1.25*\x,0) node[above]{$1$};
-                }
-                \draw[fill=black] (1.25*2,-1) circle[radius=0.15];
-                \draw (1.25*2,-1) node[above]{$1$};
-            \end{tikzpicture}\quad($n$ nodes) & $z^{n}+xy=0$ \\ \hline
-            $2\mathcal{D}_n$ & $n$-polygon & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (2*1.25,0);
-                \draw (2*1.25,0) edge[dashed] (3*1.25,0);
-                \draw (3*1.25,0) edge (4*1.25,0);
-                \draw (4*1.25,0) edge (5*1.25,0);
-                \draw (1.25,0) edge (1.25,-1.25);
-                \draw (4*1.25,0) edge (4*1.25,-1.25);
-                \foreach \x in {0,1,2,3,4,5} {
-                    \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
-                }
-                
-                \draw[fill=black] (1.25,-1.25) circle[radius=0.15];
-                \draw (1.25,-1.25) node[right]{$1$};
-                \draw[fill=black] (4*1.25,-1.25) circle[radius=0.15];
-                \draw (4*1.25,-1.25) node[right]{$1$};
-                \draw (0,0) node[above]{$1$};
-                \draw (1.25*5,0) node[above]{$1$};
-                \draw (1.25*1,0) node[above]{$2$};
-                \draw (1.25*2,0) node[above]{$2$};
-                \draw (1.25*3,0) node[above]{$2$};
-                \draw (1.25*4,0) node[above]{$2$};
-            \end{tikzpicture}\quad($n+3$ nodes) & $x^2+y^2z+z^{n-1}=0$ \\ \hline
-            $2\mathcal{T}$ & tetrahedron & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (4*1.25,0);
-                \draw (2*1.25,0) edge (2*1.25,-2*1.25);
-                \foreach \x in {0,1,2,3,4} {
-                    \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
-                }
-                \draw[fill=black] (2*1.25,-1.25) circle[radius=0.15];
-                \draw (2*1.25,-1.25) node[right]{$2$};
-                \draw[fill=black] (2*1.25,-2*1.25) circle[radius=0.15];
-                \draw (2*1.25,-2*1.25) node[right]{$1$};
-                \draw (0,0) node[above]{$1$};
-                \draw (1.25*4,0) node[above]{$1$};
-                \draw (1.25*1,0) node[above]{$2$};
-                \draw (1.25*2,0) node[above]{$3$};
-                \draw (1.25*3,0) node[above]{$2$};
-            \end{tikzpicture}\quad($7$ nodes) & $x^2+y^3+z^4=0$ \\ \hline
-            $2\mathcal{O}$  & \begin{tabular}{@{}l@{}}cube \\ octahedron\end{tabular} & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (6*1.25,0);
-                \draw (3*1.25,0) edge (3*1.25,-1.25);
-                \foreach \x in {0,1,2,3,4,5,6} {
-                    \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
-                }
-                \draw[fill=black] (3*1.25,-1.25) circle[radius=0.15];
-                \draw (3*1.25,-1.25) node[right]{$2$};
-                \draw (0,0) node[above]{$1$};
-                \draw (1.25*1,0) node[above]{$2$};
-                \draw (1.25*2,0) node[above]{$3$};
-                \draw (1.25*3,0) node[above]{$4$};
-                \draw (1.25*4,0) node[above]{$3$};
-                \draw (1.25*5,0) node[above]{$2$};
-                \draw (1.25*6,0) node[above]{$1$};
-            \end{tikzpicture}\quad($8$ nodes) & $x^2+y^3+yz^3=0$ \\ \hline
-            $2\mathcal{I}$  & \begin{tabular}{@{}l@{}}icosahedron \\ dodecahedron\end{tabular} & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
-                \draw (0,0) edge (7*1.25,0);
-                \draw (2*1.25,0) edge (2*1.25,-1.25);
-                \foreach \x in {0,1,2,3,4,5,6,7} {
-                    \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
-                }
-                \draw[fill=black] (2*1.25,-1.25) circle[radius=0.15];
-                \draw (2*1.25,-1.25) node[right]{$3$};
-                \draw (0,0) node[above]{$2$};
-                \draw (1.25*1,0) node[above]{$4$};
-                \draw (1.25*2,0) node[above]{$6$};
-                \draw (1.25*3,0) node[above]{$5$};
-                \draw (1.25*4,0) node[above]{$4$};
-                \draw (1.25*5,0) node[above]{$3$};
-                \draw (1.25*6,0) node[above]{$2$};
-                \draw (1.25*7,0) node[above]{$1$};
-            \end{tikzpicture}\quad($9$ nodes) & $x^2+y^3+z^5=0$ \\ \hline
-        \end{tabular}
-        \caption{Binary polyhedral groups and their McKay graphs.Labels over the vertices are the dimension of the representation. We erase the arrow ends if they go in both directions and erase the label if it is
-        equal to $1$.}
-    \end{table}
+    \subsection{Classical McKay correspondence}
+
+    \subsection{Geometrical McKay correspondence}
+
+\section{Calabi-Yau manifolds, orbifolds and crepant resolutions}
+
+    Simply put, a \emph{Calabi-Yau manifold} is a Kähler manifold with trivial canonical bundle or, equivalently, with a Kähler metric whose global holonomy is contained in $\SU(n)$. This is equivalent to having a trivial canonical bundle.
+
+    A \emph{Calabi-Yau orbifold} is the quotient of a smooth Calabi-Yau manifold by a discrete group action which generically has fixed points. From a algebraic geometry perspective we can try to resolve the orbifold singularity. A resolution $(X,\pi)$ of $\C^n/\Gamma$ is a non-singular complex manifold $X$ of dimension $n$ with a proper biholomorphic map 
+    \begin{equation}
+        \pi:X\to\C^n/\Gamma
+    \end{equation}
+    that induces a biholomorphism between dense open sets. A resolution $(X,\pi)$ of $\C^n/\Gamma$ is called a \emph{crepant resolution}\index{resolution!crepant}\footnote{For a resolution of singularities we can define a notion of discrepancy. A crepant resolution is a resolution
+        without discrepancy.} if the canonical bundles of $X$ and $\C^n/\Gamma$ are isomorphic, i.e.
+        \begin{equation*}
+            K_X\cong\pi^*(K_{\C^n/\Gamma}).
+        \end{equation*}
+    Since Calabi-Yau manifolds have trivial canonical bundle, to obtain a Calabi-Yau structure on $X$ one must choose a crepant resolutions of singularities.
+
+    It turns out that the amount of information we know about a crepant resolution of singularities of $\C^n/\Gamma$ depends dramatically on the dimension $n$ of the orbifold:
+    \begin{itemize}
+        \item $n=2$: a crepant always exists and is unique. Its topology is entirely described in terms of the finite group $\Gamma$ (via the McKay correspondence).
+        \item $n=3$: a crepant resolution always exists but it is not unique; they are related by flops. However all the crepant resolutions have the same Euler and Betti numbers: the \emph{stringy} Betti and Hodge numbers of the orbifold.
+        \item $n\geq4$: very little is known; crepant resolution ecists in rather special cases. Many singularity are terminal, which implies that they admit no crepant resolution.
+    \end{itemize}
+
+    
 
 \pagebreak
 

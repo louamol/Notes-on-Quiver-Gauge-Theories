@@ -23,10 +23,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.6}String theory realization}{7}{subsection.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Reminder on $D=4,\mathcal {N}=4$ SYM theory}{8}{appendix.A}%
+\contentsline {subsection}{\numberline {3.7}$\mathbb {Z}_n$}{7}{subsection.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Calabi-Yau manifolds, orbifolds and crepant resolutions}{8}{appendix.B}%
+\contentsline {section}{\numberline {A}Reminder on $D=4,\mathcal {N}=4$ super Yang-Mills theory}{9}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}The McKay correspondence}{9}{appendix.C}%
+\contentsline {section}{\numberline {B}The McKay correspondence}{9}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Markers}{12}{table.caption.3}%
+\contentsline {subsection}{\numberline {B.1}Finite subgroups of $\text {SL}(2,\mathbb {C})$}{9}{subsection.B.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.2}Simple Lie algebras}{11}{subsection.B.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.3}Classical McKay correspondence}{11}{subsection.B.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.4}Geometrical McKay correspondence}{11}{subsection.B.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Calabi-Yau manifolds, orbifolds and crepant resolutions}{11}{appendix.C}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Markers}{13}{equation.C.1}%
