@@ -78,30 +78,32 @@
 
     \subsection{Matter content}
 
-        As discussed in appendix \ref{sec:N4SCFT}, there is only one $D=4,\mN=4$ SCFT theory, up to a choice of gauge group. In our case, we consider the gauge group $G=\U(n)$. The theory has an $\SU(4)_R$ R-symmetry group (transverse rotation group of the D$3$brane) and there are $3n^2$ chiral scalar superfields $\Phi_{IJ}$ and $n^2$ vector superfields. More precisely, if we remove the auxiliary fields, matter content is the following:
+        As discussed in appendix \ref{sec:N4SCFT}, there is only one $D=4,\mN=4$ SCFT theory, up to a choice of gauge group. In our case, we consider the gauge group $G=\U(n)$. The theory has an $\SU(4)_R$ R-symmetry group (transverse rotation group of the D$3$brane) and there are $3n^2$ chiral scalar superfields $\Phi_{IJ}$ and $n^2$ vector superfields. The matter content of this $\mN=4$ gauge theory can be rewritten in terms of $\mN=1$ superfields as follows:
+        \begin{equation}
+            [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi_A = (\phi^A,\psi^A_\alpha,F^A).
+        \end{equation}
+        with $A=1,2,3$. In other words, after removing the auxiliary fields, the matter content is
         \begin{itemize}
-            \item gauge field $A_\mu$ which are singlets of $\SU(4)_R$.
-            \item Weyl fermions $\psi^{\alpha}_{IJ}$ ($I,J=1,\dots,n,\alpha=1,\dots,4$) transforming under the adjoint representation of $\U(n)$ and under the representation $\boldsymbol{4}$ (fundamental) of $\SU(4)_R$:
+            \item a $\U(n)$ gauge field $A_\mu$ which transforms as a singlets under $\SU(4)_R$.
+            \item $4$ Weyl fermions $\psi^{\alpha}$ ($\alpha=1,\dots,4$) that transform under the adjoint of $\U(n)$ and are mixed together under the representation $\boldsymbol{4}$ of $\SU(4)_R$. Each fermion $\psi^\alpha$ is an $n\times n$ matrix and we denote the component by $\psi^{\alpha}_{IJ}$ ($I,J=1,\dots,n$). Explicitely:
             \begin{align}
-                \psi^\alpha & \mapsto U \psi^\alpha U^\dagger ,\qquad U\in\U(n),\\
-                \psi_{IJ} & \mapsto R\psi_{IJ},\qquad R\in\SU(4)_R.
+                \text{Gauge transformation} &: \psi^\alpha \mapsto U \psi^\alpha U^\dagger ,\qquad U\in\U(n),\label{eq:transfpsi1}\\
+                \text{R-symmetry} &: \psi^\alpha\mapsto R\indices{^\alpha_\beta}\psi^\beta,\qquad R\in\SU(4)_R.\label{eq:transfpsi2}
             \end{align}
-            \item complex scalar fields $\phi^{m}_{IJ}$ ($m=1,\dots,6$) transforming under the adjoint representation of $\U(n)$ and under the two-times anti-symmettric representation of $\SU(4)_R$ which is nothing but the representation $\boldsymbol{6}$ (fundamental) of $\SO(6)_R$ (recall that $\SU(4)\cong\SO(6)$). They are the superpartners of the fermions:
+            Note that this gives us $4n^2$ Weyl fermions in total.
+            \item $6$ real scalar fields $\phi^{m}_{IJ}$ ($m=1,\dots,6$) transforming under the adjoint representation of $\U(n)$ and under the two-times anti-symmettric representation of $\SU(4)_R$. Each $\phi^m$ is therefore a $n\times n$ matrix with components $\phi^m_{IJ}$. Recall that $\SU(4)\cong\SO(6)$ sithe action of the R-symmetry can be seen as the $\boldsymbol{3}$ of $\SU(3)\subset\SU(4)_R$ acting on three complex scalars or equivalently as the $\boldsymbol{6}$ of $\SO(6)_R$ acting on $6$ real scalars. Explicitely:
             \begin{align}
-                \phi^m & \mapsto U \phi^m U^\dagger ,\qquad U\in\U(n),\\
-                \phi_{IJ} & \mapsto R\phi_{IJ},\qquad R\in\SO(6)_R.
+                \text{Gauge transformation} &= \phi^m \mapsto U \phi^m U^\dagger ,\qquad U\in\U(n),\label{eq:transfphi1}\\
+                \text{R-symmetry} &: \phi^m \mapsto R\indices{^m_n}\phi^n,\qquad R\in\SO(6)_R.\label{eq:transfphi2}
             \end{align}
+            Note that this gives $6n^2$ real scalars in total. They are the superpartners of the fermions\marker.
         \end{itemize}
-        Note that the gauge group $G=\U(n)$ can also be seen as the group of isometries from the metric space $\C^n$ to itself, i.e. $G=\Hom(\C^n,C^n)$. From this point of view, the different fields can be seen as follows:
+        Note that the gauge group $\U(n)$ can also be seen as the group of isometries the metric space $\C^n$ to itself, i.e. $\Hom(\C^n,C^n)$. From this point of view, the transformations \eqref{eq:transfpsi1}-\eqref{eq:transfphi2}can be summarized as
         \begin{align}
             A_\mu&\in\Hom(\C^n,\C^n),\\
             \psi&\in\boldsymbol{4}\otimes\Hom(\C^n,\C^n),\\
             \phi&\in\boldsymbol{6}\otimes\Hom(\C^n,\C^n).
         \end{align}
-
-        Since $U(n)$ is Lie group of dimension $n^2$, its adjoint representation is of dimension $n^2$ and there are therefore $n^2$ scalars and $n^2$ Weyl fermions, as anticipated with our index notation.
-
-
 
 
 \section{Projection to daughter theories}
@@ -232,25 +234,134 @@
 
     \subsection{String theory realization}
 
-    \subsection{$\Z_n$}
+        We discuss a type II theory with a subsector of D$p$-branes for a given $p$ ($p=0,2,4,6,8$ for type IIA and $p=-1,1,3,5,7,9$ for type IIB).
 
-        We discuss a type II theory with a subsector of D$p$-branes for a given $p$ ($p=0,2,4,6,8$ for type IIA and $p=-1,1,3,5,7,9$ for type IIB).This sector is determined by a choice of representation $(\rho^{(p)},V^{(p)})$ of $\Z_n$. Recall the the irreducible representations of $\Z_n$ are given by $(\rho_k,V_k)$($k=0,\dots,n-1$) with $V_k=\C$ and $\rho_i(g)=\zeta^k_n$ where $g$ is the generator of $\Z_n$. The representation $\rho,V^{(p)}$ can be decomposed as
-        \begin{equation}
-            (\rho^{(p)},V^{p})=\bigoplus^{n-1}_{i=0}N^{(p)}_i(\rho_i,V_i).
-        \end{equation}
-        Since $\dim\rho_i=1$, $N^{(p)}\equiv\sum_i N^{(p)}_i = \dim V^{(p)}$. Following what we have found using general representation theory, the gauge group $\U(N^{(p)})$ is now broken to
-        \begin{equation}
-            G_{\text{proj}}=\bigotimes^{n-1}_{i=0}~\U(N^{(p)}_i).
-        \end{equation}
-        
-        
-        For the gauge field, we then need a bi-index notation: $A_{i\alpha_i;j\beta_j}$ with $i,j=A,\dots,n-1$ and $\alpha_i,\beta_i=1,\dots,N^{()p}_i$. We sometimes simply write $A_{i\alpha;j\beta}$. The gauge field transform on the adjoint representation of $G_{\text{proj}}$:
-        \begin{equation}
-            A_{i\alpha;i\beta}\to \rho_i(g)A_{i\alpha;j\beta}\rho_j(g)^{-1}=\zeta^i_nA_{i\alpha;j\beta}\zeta^{-j}_n=\zeta^{i-j}_nA_{i\alpha;j\beta}
-        \end{equation}
-        so we clearly see that only the components with $i=j$ are left invariant and that the gauge field has a block diagonal form. The block $i=j$ is an $N^{(p)}_i\times N^{(p)}_i$ block and transforms under $(\rho_i,V_i)^{N^{(p)}_i}$.
+    \subsection{$S=\C^3/\Z_n$}
 
+       Let us consider the representation $(\rho,\C^n)$ of $\Z_n$. A complete set of irreducible representations of $\Z_n$ is given by $\{(\rho_k,V_k)\}_{k=1,\dots,n-1}$ with $V_k=\C$ and
+       \begin{equation}
+        \rho_i(g)=\zeta^k_n
+       \end{equation}
+       where $g$ is the generator of $\Z_n$. The representation $(\rho,V)$ can be decomposed as
+        \begin{equation}
+            (\rho,V)=\bigoplus^{n-1}_{i=0}N_i(\rho_i,V_i).
+        \end{equation}
+        In other words, it is equivalent to the representation
+        \begin{equation}
+            \rho(g)=
+            \begin{bmatrix}
+                1 & & & \cdots & & & 0 \\
+                 & \ddots & & & & & \\
+                 & & 1 & & & &  \\
+                \vdots & & & \ddots & & & \vdots \\
+                 & & & & \xi^{n-1}_n & & \\
+                 & & & & & \ddots & \\
+                0 & & & \cdots & & & \xi^{n-1}_n 
+            \end{bmatrix}
+            \hspace{-0.2cm}
+            \begin{tabular}{l}
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                     a_0\\ \ddots\\ a_0\ 
+                \end{matrix} 
+            }}\right\}N_0$\\
+            \vdots \\
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                    b_0\\ \ddots\\ b_0\ 
+                \end{matrix}
+            }} \right\}N_{n-1}$
+            \end{tabular}.\label{eq:reprrhoZn}
+        \end{equation}
+        Since $\dim\rho_i=1$, $N\equiv\sum_i N_i = \dim V$. 
         
+        The gauge field configurations that are left invariant under the action of $\Z_n$ are therefore the ones that satisfy
+        \begin{equation}
+            \rho(g)A_\mu\rho(g)^{-1}=A_\mu
+        \end{equation}
+        for all $g\in\Z_n$. The constrained is easily solved by using the bi-index notation $A_{\mu;i\alpha_i,j\beta_j}$ ($i,j=A,\dots,n-1,\alpha_i,\beta_i=1,\dots,N_i$) for the component of the gauge fields.From \eqref{eq:reprrhoZn}, we can see that
+        \begin{equation}
+            A_{\mu;i\alpha_i,i\beta_j}\mapsto \rho_i(g)A_{\mu;i\alpha_i,j\beta_j}\rho_j(g)^{-1}=\zeta^{i-j}_nA_{\mu;i\alpha_i,j\beta_j}.
+        \end{equation}
+        thus only the configurations with $A_{\mu;i\alpha_i,j\beta_j}=0$ if $i\neq j$ are invariant. The gauge field has therefore a block diagonal form:
+        \begin{equation}
+            A=
+            \begin{bmatrix}
+                A_{00} & & & \\
+                 & A_{11} & & \\
+                 & & \ddots & \\
+                 & & & 1_{n-1,n-1}
+            \end{bmatrix}
+        \end{equation}
+        with $A_{ij}\equiv (X_{i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}$. The block $A_{ii}$ transforms under $\Z_n$ as $(\rho_i,V_i)^{N_i}$.
+        Consequently, the gauge group is now broken to
+        \begin{equation}
+            G_{\text{proj}}=\bigotimes^{n-1}_{i=0}~\U(N_i),
+        \end{equation}
+        the biggest subgroup of $\U(n)$ that preserves those form of configurations.
+
+        Let us take
+        \begin{equation}
+            R(g)= \rho^{\oplus n}_0(g) = 
+            \begin{bmatrix}
+                \xi_n & \cdots & 0 \\
+                \cdots & \ddots & \vdots \\
+                0 & \cdots & \xi_n
+            \end{bmatrix}.
+        \end{equation}
+        The scalar field configurations that are left invariant satisfy
+        \begin{equation}
+            R(g)\indices{^m_n}\rho(g)\phi^n\rho(g)^{-1}=\phi^m
+        \end{equation}
+        for all $g\in\Z_n$. Using bi-index notations, this becomes
+        \begin{equation}
+            X^m_{i\alpha_i,j\beta_j}\mapsto  \xi_n\delta\indices{^m_n}\rho_i(g) X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \xi^{i-j+1}X^m_{i\alpha_i,j\beta_j}
+        \end{equation}
+        thus only the configurations with $X^n_{i\alpha_i,j\beta_j}=0$ if $i-j+1\neq0$ are left invariant. The scalar fields have a block off-diagonal form:
+        \begin{equation}
+            X=
+            \begin{bmatrix}
+                0 & X_{01} & 0 & \cdots & 0 \\
+                0 & 0 & X_{12} & \cdots & 0 \\
+                & & & \ddots & \\
+                X_{n-1,1} & 0 & & \cdots & 0
+            \end{bmatrix}
+        \end{equation}
+        with $X_{ij}\equiv (X_{i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}$. The block $X_{ij}$ is an $N_i\times N_j$ block and transforms under the representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\U(N_i)\times\U(N_j)$:
+        \begin{align*}
+            X_{i,i+1} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_j} \simeq \Hom(V_{i+1},V_i).
+        \end{align*}
+
+        \begin{figure}
+            \centering
+            \begin{tikzpicture}
+                \foreach \n in {0,...,5}{
+                    \draw[->,thick] ({-60*\n-4}:2)--({-60*(\n+1)+4}:2);
+                    \draw (30+60*\n:2.4) node{$3$};
+                }
+                \foreach \n in {-2,-1,0,1,2}{
+                    \draw ({-60*\n}:2) node{\textbullet};
+                }
+                \draw (0:2) node{$a$};
+            \end{tikzpicture}
+            \caption{Quiver of the $\Z_n$ daughter theory.}
+        \end{figure}
+
+
+
+
+        Finally, anomaly cancellation imposes that the number a fields transforming in $\textbf{N}_j$ is equal to the number of fields transforming in $\boldsymbol{\bar{\textbf{N}}}_j$. This results in a constrain on the $N_i$'s:
+        \begin{equation}
+            \marker .
+        \end{equation}
+        For $n=2$ or $n=3$ this implies that all $N_i$'s must be equal.
+
+    \subsection{$S=\C\times\C^2/\Z_n$}
+
+
+
+
+
 
 
     \vspace{5cm}
@@ -260,7 +371,9 @@
         $
         \begin{array}{ccc}
             S & \text{Gauge group} & \text{Matter content} \\ \hline
-            \C^3 & \U(n) & \Phi^{\boldsymbol{6}}_{IJ},\Psi^{\boldsymbol{4}}_{IJ}
+            \C^3 & \U(n) & \Phi^{\boldsymbol{6}}_{IJ},\Psi^{\boldsymbol{4}}_{IJ} \\
+            \C^3/\Z_n & & \\
+            \C\times\C^2/\Z_n & & 
         \end{array}
         $
         \caption{Worldvolume theory in terms of $S$.}
