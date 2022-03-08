@@ -47,7 +47,7 @@
     \end{equation*}
     This is the so-called \emph{brane-world paradigm}.
     
-    Independently from string theory, we ask to have $\mN=1$ supersymmetry for the $4$-dimensional worldvolume theory. This constrains the transverse space $M^{(6)}$ to be compact, complex, Kähler and to have $\SU(3)$ holonomy (see appendix \ref{sec:appCY}). Namely, $M^{(6)}$ must be a Calabi-Yau threefold.
+    Independently from string theory, we ask to have $\mN=1$ supersymmetry for the $4$-dimensional worldvolume theory. This constrains the transverse space $M^{(6)}$ to be compact, complex, Kähler and to have $\SU(3)$ holonomy, see appendix \ref{sec:appCY}. Namely, $M^{(6)}$ must be a Calabi-Yau threefold.
     
     If we let the worldvolume of the D$3$-branes carry the requisite gauge theory while the bulk contains gravity, we can relax the compactness condition and study non-compact threefolds. In other words, $M^{(6)}$ is taken to be an affine variety that localy models a Calabi-Yau threefold. Intuitively, this can be understood as a Kaluza-Klein compactification where we take the size of the compact dimensions to infinity. The four-dimensional gravity coupling constant being inversely proportional to this quantity, there is no gravity in this limit. This makes the analysis much simpler and therefore also serves as an argument to ignore gravity in the worldvolume theory. Thus far, we have $n$ D$3$-branes on which there is a $\U(n)$ gauge group and transverse to which gravity propagates.
 
@@ -72,7 +72,7 @@
         \begin{equation}
             \SO(1,9)\to\SO(1,3)\times\SO(6),
         \end{equation}
-        whereby breaking half of the supersymmetries (see appendix \ref{sec:appCY}). We are thus left with $16$ supercharges. In four dimensions, this corresponds to $\mN=4$. The worldvolume theory for $S=\C^3$ is therefore $D=4,\mN=4$ $\U(n)$ SCFT gauge theory. This worldvolume theory, obtained in the non-singular case $S=\C^3$, is called the \emph{parent theory}.
+        whereby breaking half of the supersymmetries, see appendix \ref{sec:appCY}. We are thus left with $16$ supercharges. In four dimensions, this corresponds to $\mN=4$. The worldvolume theory for $S=\C^3$ is therefore $D=4,\mN=4$ $\U(n)$ SCFT gauge theory. This worldvolume theory, obtained in the non-singular case $S=\C^3$, is called the \emph{parent theory}.
 
         Note that the D$3$-brane will warp the flat space metric to that of $AdS_5\times S^5$ and the bulk geometry is not strictly $\C^3$. However, as stated above, we are only concerned with the local gauge theory and not with gravitational back-reaction, therefore it suffices to consider $S$ as $\C^3$.
 
@@ -84,7 +84,11 @@
         \end{equation}
         with $A=1,2,3$. In other words, after removing the auxiliary fields, the matter content is
         \begin{itemize}
-            \item a $\U(n)$ gauge field $A_\mu$ which transforms as a singlets under $\SU(4)_R$.
+            \item a $\U(n)$ gauge field $A_\mu$ which transforms as a singlets under $\SU(4)_R$:
+            \begin{align}
+                \text{Gauge transformation} &: A_\mu\mapsto UA_\mu U^{-1}+U\p_\mu U^{-1},\qquad U\in\U(n)\label{eq:transfA1}\\
+                \text{R-symmetry} &: A_\mu\mapsto A_\mu.\label{eq:transfA2}
+            \end{align}
             \item $4$ Weyl fermions $\psi^{a}_\alpha\equiv(\lambda_\alpha,\psi^1_\alpha,\psi^2_\alpha,\psi^3_\alpha,)$ that transform under the adjoint of $\U(n)$ and are mixed together under the representation $\boldsymbol{4}$ of $\SU(4)_R$. This means that each fermion $\psi^a$ takes values in $\mathfrak{u}(n)$ and we denote the components by $\psi^a_{IJ}$ ($I,J=1,\dots,n$). Explicitely:
             \begin{align}
                 \text{Gauge transformation} &: \psi^a \mapsto U \psi^a U^\dagger ,\qquad U\in\U(n),\label{eq:transfpsi1}\\
@@ -98,11 +102,11 @@
             \end{align}
             Note that this gives $6n^2$ real scalars in total. They are the superpartners of the fermions\marker.
         \end{itemize}
-        Note that the gauge group $\U(n)$ can also be seen as the group of isometries the metric space $\C^n$ to itself, i.e. $\Hom(\C^n,C^n)$. From this point of view, the transformations \eqref{eq:transfpsi1}-\eqref{eq:transfphi2}can be summarized as
+        Note that the gauge group $\U(n)$ can also be seen as the group of isometries the metric space $\C^n$ to itself, i.e. $\Hom(\C^n,C^n)$. From this point of view, the transformations \eqref{eq:transfA1}-\eqref{eq:transfphi2}can be summarized as
         \begin{align}
-            A_\mu&\in\Hom(\C^n,\C^n),\\
-            \psi&\in\boldsymbol{4}\otimes\Hom(\C^n,\C^n),\\
-            X&\in\boldsymbol{6}\otimes\Hom(\C^n,\C^n).
+            A_\mu&\in\Hom(\C^n,\C^n),\label{eq:AHom}\\
+            \psi&\in\boldsymbol{4}\otimes\Hom(\C^n,\C^n),\label{eq:psiHom}\\
+            X&\in\boldsymbol{6}\otimes\Hom(\C^n,\C^n).\label{eq:phiHom}
         \end{align}
 
 
@@ -114,7 +118,7 @@
 
         We now wish to pick a discrete group $\Gamma$ and which acts non-trivially on $\R^6$. There are several possibilities:
         \begin{itemize}
-            \item $\Gamma\subset(\SU(4)\cong\SO(6))$ naturally acts on $\R^6$. This does not require a choice of complex structure. We get an $\mN=0$ theory.
+            \item $\Gamma\subset\SU(4)$ naturally acts on $\R^6$. This does not require a choice of complex structure. We get an $\mN=0$ theory.
             \item $\Gamma\subset\SU(3)$ naturally acts on $\C^3$, this also requires a choice of complex structure on $\R^6$. We get an $\mN=1$ theory.
             \item $\Gamma\subset\SU(2)$ naturally acts on the second factor of $\C\times\C^2$, so this requires a choice of complex structure on $\R^6$. We get an $\mN=2$ theory.
         \end{itemize}
@@ -130,7 +134,7 @@
         \end{equation}
         is the representation of $\Gamma$ coming from the fundamental representation of $\SU(3)$, so $\cdot$ is just the matrix product. We can see that the origin is alays a fixed point so this action is never free. Since $\C^3$ is a smooth manifold, this makes $\C^3/\Gamma$ an orbifold. Note this case naturally includes the case $\Gamma\subset\SU(2)$ too, just not the case $\Gamma\in\SO(6)$.
 
-        Note that if $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$\marker.
+        Note that if $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$ \marker, see appendix \ref{sec:CYcrepant}.
 
         The prescription is straihgt-forward: we can use the elements $\gamma\in\Gamma$ to project out that states that are not $\Gamma$-invariant. That is, only the the fields such that
         \begin{align}
@@ -138,15 +142,15 @@
             R(\gamma)\gamma \psi_{IJ} \gamma^{-1} &= \psi_{IJ}\label{eq:proj2},\\
             R(\gamma)\gamma X_{IJ} \gamma^{-1} &= X_{IJ}\label{eq:proj3}
         \end{align}
-        are kept in the spectrum. Note that the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
+        are kept in the spectrum. Note that the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$, according to \eqref{eq:AHom}-\eqref{eq:phiHom}. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
 
     \subsection{Representation theory realization}
 
-        Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^n$, we denote it $(\rho,\C^n)$ and take it unitary. In that case, $\rho(\gamma)\in\U(n)$ and therefore $\rho(\gamma)\omega\rho(\gamma)^{-1}\in\mathfrak{u}(n)$ for any $\omega\in\mathfrak{u}(n)$. In other words, we can construct a representation of $\Gamma$ on $\mathfrak{u}(n)$ from the representation $(\rho,\C^n)$:
+        Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^n$, we denote it $(\rho,\C^n)$ and also take it to be unitary. In that case, $\rho(\gamma)\in\U(n)$. One can show that $\rho(\gamma)\omega\rho(\gamma)^{-1}\in\mathfrak{u}(n)$ for any $\omega\in\mathfrak{u}(n)$. In other words, we can construct a representation of $\Gamma$ on $\mathfrak{u}(n)$ from the representation $(\rho,\C^n)$:
         \begin{equation}
             \Ad:\left(
             \begin{array}{ccc}
-                \Gamma & \longrightarrow & \GL(\mathfrak{u}(n))) \\
+                \Gamma & \longrightarrow & \GL(\mathfrak{u}(n)) \\
                 \gamma & \longmapsto & \Ad_\gamma
             \end{array}
             \right)
@@ -169,7 +173,7 @@
         \end{align}
         were $N_i$ are integer multiplicities ($(\rho_i,V_i)^{N_i}\equiv(\rho_i,V_i)^{\oplus N_i}$) and $\boldsymbol{1}$ is the trivial representation, so $\Gamma$ acts trivially on the $\C^{N_i}$. We have $\sum_iN_i\dim(\rho_i)=n$. The rewritting \eqref{eq:decomp:line2} will be useful later on.
         
-        After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, that is $\Hom(\C^n\C^n)^\Gamma$. That is, we only keep that subspaces of that transform trivially. We use the superscript $\Gamma$ to indicate that we only keep the trivial representations in the decomposition. First, we can see that by Schur lemma \marker
+        After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, that is $\Hom(\C^n,\C^n)^\Gamma$. We use the superscript $\Gamma$ to indicate that we only keep the trivial representations in the decomposition, that is, we only keep that subspaces of that transform trivially. First, we can see that by Schur's lemma \marker
         \begin{equation}
             (V_i\otimes V^*_j)^\Gamma=\delta_{ij}
         \end{equation}
@@ -311,7 +315,7 @@
         \end{equation}
         The scalar field configurations that are left invariant satisfy
         \begin{equation}
-            R(g)\indices{^m_n}\rho(g)\phi^n\rho(g)^{-1}=\phi^m
+            R(g)\indices{^m_n}\rho(g)X^n\rho(g)^{-1}=X^m
         \end{equation}
         for all $g\in\Z_n$. Using bi-index notations, this becomes
         \begin{equation}
@@ -835,7 +839,7 @@
 
     \subsection{Geometrical McKay correspondence}
 
-\section{Calabi-Yau manifolds, orbifolds and crepant resolutions}
+\section{Calabi-Yau manifolds, orbifolds and crepant resolutions}\label{sec:CYcrepant}
 
     Simply put, a \emph{Calabi-Yau manifold} is a Kähler manifold with trivial canonical bundle or, equivalently, with a Kähler metric whose global holonomy is contained in $\SU(n)$. This is equivalent to having a trivial canonical bundle.
 

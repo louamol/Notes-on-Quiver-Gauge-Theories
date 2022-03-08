@@ -1,23 +1,23 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[59] biber:340> INFO - === Tue Mar  8, 2022, 19:17:47
+[59] biber:340> INFO - === Tue Mar  8, 2022, 19:27:39
 [70] Biber.pm:415> INFO - Reading 'main.bcf'
 [126] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[137] Biber.pm:4340> INFO - Processing section 0
-[145] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[136] Biber.pm:4340> INFO - Processing section 0
+[144] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
 [145] bibtex.pm:1689> INFO - LaTeX decoding ...
-[162] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
-[162] Utils.pm:395> WARN - Duplicate entry key: '1998' in file 'bibliography.bib', skipping ...
-[163] Utils.pm:395> WARN - Duplicate entry key: 'lindström2012supersymmetric' in file 'bibliography.bib', skipping ...
-[163] Utils.pm:395> WARN - Duplicate entry key: 'bertolinisusy' in file 'bibliography.bib', skipping ...
+[159] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[160] Utils.pm:395> WARN - Duplicate entry key: '1998' in file 'bibliography.bib', skipping ...
+[160] Utils.pm:395> WARN - Duplicate entry key: 'lindström2012supersymmetric' in file 'bibliography.bib', skipping ...
+[160] Utils.pm:395> WARN - Duplicate entry key: 'bertolinisusy' in file 'bibliography.bib', skipping ...
+[185] Utils.pm:395> WARN - legacy month field 'May' in entry 'PhysRevD.55.6382' is not an integer - this will probably not sort properly.
+[192] Utils.pm:395> WARN - legacy month field 'Nov' in entry '2020' is not an integer - this will probably not sort properly.
 [201] Utils.pm:395> WARN - legacy month field 'May' in entry '1997' is not an integer - this will probably not sort properly.
-[204] Utils.pm:395> WARN - legacy month field 'Nov' in entry '2020' is not an integer - this will probably not sort properly.
-[217] Utils.pm:395> WARN - legacy month field 'May' in entry 'PhysRevD.55.6382' is not an integer - this will probably not sort properly.
-[222] Utils.pm:395> WARN - legacy month field 'Jun' in entry '1998' is not an integer - this will probably not sort properly.
-[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[237] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[237] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[245] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[250] bbl.pm:757> INFO - Output to main.bbl
-[250] Biber.pm:128> INFO - WARNINGS: 7
+[207] Utils.pm:395> WARN - legacy month field 'Jun' in entry '1998' is not an integer - this will probably not sort properly.
+[232] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[233] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[233] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[233] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[241] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[246] bbl.pm:757> INFO - Output to main.bbl
+[246] Biber.pm:128> INFO - WARNINGS: 7
