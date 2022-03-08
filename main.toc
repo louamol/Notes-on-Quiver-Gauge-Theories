@@ -27,18 +27,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.8}$S=\mathbb {C}\times \mathbb {C}^2/\mathbb {Z}_n$}{9}{subsection.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Reminder on $D=4,\mathcal {N}=4$ super Yang-Mills theory}{10}{appendix.A}%
+\contentsline {section}{\numberline {A}$\mathcal {N}=4$ super Yang-Mills theory in four dimensions}{10}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}The McKay correspondence}{10}{appendix.B}%
+\contentsline {subsection}{\numberline {A.1}Superconformal group $\text {SU}(2,2|4)$ and its representations}{10}{subsection.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.1}Finite subgroups of $\text {SL}(2,\mathbb {C})$}{10}{subsection.B.1}%
+\contentsline {subsection}{\numberline {A.2}Matter content}{10}{subsection.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.2}Simple Lie algebras}{12}{subsection.B.2}%
+\contentsline {subsection}{\numberline {A.3}Dynamical phases}{11}{subsection.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3}Classical McKay correspondence}{12}{subsection.B.3}%
+\contentsline {section}{\numberline {B}Calabi-Yau compactification}{11}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.4}Geometrical McKay correspondence}{12}{subsection.B.4}%
+\contentsline {section}{\numberline {C}Properties of D-branes in type II theories}{12}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Calabi-Yau manifolds, orbifolds and crepant resolutions}{12}{appendix.C}%
+\contentsline {section}{\numberline {D}The McKay correspondence}{13}{appendix.D}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Markers}{14}{equation.C.1}%
+\contentsline {subsection}{\numberline {D.1}Finite subgroups of $\text {SL}(2,\mathbb {C})$}{13}{subsection.D.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {D.2}Simple Lie algebras}{15}{subsection.D.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {D.3}Classical McKay correspondence}{15}{subsection.D.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {D.4}Geometrical McKay correspondence}{15}{subsection.D.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {E}Calabi-Yau manifolds, orbifolds and crepant resolutions}{15}{appendix.E}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Markers}{17}{equation.E.1}%

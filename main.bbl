@@ -386,6 +386,70 @@
       \verb 10.1016/s0550-3213(97)80030-2
       \endverb
     \endentry
+    \entry{Argurio:1998cp}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=96430ff77e7aea5fff33cb800561a10e}{%
+           family={Argurio},
+           familyi={A\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Brussels U.}%
+      }
+      \strng{namehash}{96430ff77e7aea5fff33cb800561a10e}
+      \strng{fullhash}{96430ff77e7aea5fff33cb800561a10e}
+      \strng{bibnamehash}{96430ff77e7aea5fff33cb800561a10e}
+      \strng{authorbibnamehash}{96430ff77e7aea5fff33cb800561a10e}
+      \strng{authornamehash}{96430ff77e7aea5fff33cb800561a10e}
+      \strng{authorfullhash}{96430ff77e7aea5fff33cb800561a10e}
+      \field{labelalpha}{Arg98}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Brane physics in M theory}}
+      \field{type}{phdthesis}
+      \field{year}{1998}
+      \true{nocite}
+      \verb{eprint}
+      \verb hep-th/9807171
+      \endverb
+    \endentry
+    \entry{dhoker2002supersymmetric}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=0ad8a371060061f5e701113e4b6935da}{%
+           family={D'Hoker},
+           familyi={D\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=348aa23db5930a35e2df349d8bc6b630}{%
+           family={Freedman},
+           familyi={F\bibinitperiod},
+           given={Daniel\bibnamedelima Z.},
+           giveni={D\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{55b0867b2b1ed3c9d193b2aeb7100113}
+      \strng{fullhash}{55b0867b2b1ed3c9d193b2aeb7100113}
+      \strng{bibnamehash}{55b0867b2b1ed3c9d193b2aeb7100113}
+      \strng{authorbibnamehash}{55b0867b2b1ed3c9d193b2aeb7100113}
+      \strng{authornamehash}{55b0867b2b1ed3c9d193b2aeb7100113}
+      \strng{authorfullhash}{55b0867b2b1ed3c9d193b2aeb7100113}
+      \field{labelalpha}{DF02}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{title}{Supersymmetric Gauge Theories and the AdS/CFT Correspondence}
+      \field{year}{2002}
+      \true{nocite}
+      \verb{eprint}
+      \verb hep-th/0201253
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
