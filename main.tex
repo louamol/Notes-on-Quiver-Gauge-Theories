@@ -78,7 +78,7 @@
 
     \subsection{Matter content}
 
-        As discussed in appendix \ref{sec:N4SCFT}, there is only one $D=4,\mN=4$ SCFT theory, up to a choice of gauge group $G$. In our case, $G=\U(n)$. The isometry group o the transverse space $\R^6$ is $\SO(6)\cong\SU(R)$. These global symmetries \marker of worldvolume theory lead to the R-symmetry group $\SU(4)_R$. The only $\mN=4$ supermutliplet can be rewritten in terms of $\mN=1$ supermultiplets as follows:
+        As discussed in appendix \ref{sec:N4SCFT}, there is only one $D=4,\mN=4$ SCFT theory, up to a choice of gauge group $G$. In our case, $G=\U(n)$. The isometry group of the transverse space $\R^6$ is $\SO(6)\cong\SU(4)$. It is a global symmetry of the field theory since the field living on the branes are to be interpreted as its tranverse oscillations. These global symmetries of worldvolume theory lead to the R-symmetry group $\SU(4)_R$. The only $\mN=4$ supermutliplet can be rewritten in terms of $\mN=1$ supermultiplets as follows:
         \begin{equation}
             [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi_A = (\phi^A,\psi^A_\alpha,F^A).
         \end{equation}
@@ -95,7 +95,7 @@
                 \text{R-symmetry} &: \psi^a\mapsto R\indices{^a_b}\psi^b,\qquad R\in\SU(4)_R.\label{eq:transfpsi2}
             \end{align}
             Note that this gives us $4n^2$ Weyl fermions in total.
-            \item $3$ complex scalar fields $\phi^A$ transforming under the adjoint representation of $\U(n)$ and under the two-times anti-symmettric representation of $\SU(4)_R$. This means that each $\phi^A$ takes values in $\mathfrak{u}(n)$ and we denote the components by $\phi^A_{IJ}$. Recall that $\SU(4)\cong\SO(6)$ so the action of the R-symmetry can be seen as the $\boldsymbol{3}$ of $\SU(3)\subset\SU(4)_R$ acting on three complex scalars $\phi^1$ or equivalently as the $\boldsymbol{6}$ of $\SO(6)_R$ acting on $6$ real scalars $X^m$, the real and imaginary parts of the $\phi^A$. Explicitely:
+            \item $3$ complex scalar fields $\phi^A$ transforming under the adjoint representation of $\U(n)$ and under the two-times anti-symmettric representation of $\SU(4)_R$. This means that each $\phi^A$ takes values in $\mathfrak{u}(n)$ and we denote the components by $\phi^A_{IJ}$. Recall that $\SU(4)\cong\SO(6)$ so the action of the R-symmetry can be seen as the $\boldsymbol{3}$ of $\SU(3)\subset\SU(4)_R$ acting on three complex scalars $\phi^1$ or equivalently as the $\boldsymbol{6}$ of $\SO(6)_R$ acting on $6$ real scalars $X^m$, the real and imaginary parts of the $\phi^A$. They are interpreted as the oscillations of the branes in the transverse space. Explicitely:
             \begin{align}
                 \text{Gauge transformation} &: X^m \mapsto U X^m U^\dagger ,\qquad U\in\U(n),\label{eq:transfphi1}\\
                 \text{R-symmetry} &: X^m \mapsto R\indices{^m_n}X^n,\qquad R\in\SO(6)_R.\label{eq:transfphi2}
@@ -138,33 +138,30 @@
 
         The prescription is straihgt-forward: we can use the elements $\gamma\in\Gamma$ to project out that states that are not $\Gamma$-invariant. That is, only the the fields such that
         \begin{align}
-            \gamma A_\mu \gamma^{-1} &= A_\mu,\label{eq:proj1}\\
-            R(\gamma)\gamma \psi_{IJ} \gamma^{-1} &= \psi_{IJ}\label{eq:proj2},\\
-            R(\gamma)\gamma X_{IJ} \gamma^{-1} &= X_{IJ}\label{eq:proj3}
+            \rho(\gamma) A_\mu \rho(\gamma)^{-1} &= A_\mu,\label{eq:proj1}\\
+            R(\gamma)\rho(\gamma) \psi_{IJ} \rho_{\mathfrak{u}}(\gamma)^{-1} &= \psi_{IJ}\label{eq:proj2},\\
+            R(\gamma)\rho(\gamma) X_{IJ} \rho(\gamma)^{-1} &= X_{IJ}\label{eq:proj3}
         \end{align}
-        are kept in the spectrum. Note that the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$, according to \eqref{eq:AHom}-\eqref{eq:phiHom}. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
+        are kept in the spectrum, where $\rho$ is a unitary representation of $\Gamma$ on $\C^n$ and $R=\boldsymbol{4},\boldsymbol{6}$. This will be discussed in detail in the next section.  Note that the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$, in agreement with \eqref{eq:AHom}-\eqref{eq:phiHom}. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
 
     \subsection{Representation theory realization}
 
-        Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^n$, we denote it $(\rho,\C^n)$ and also take it to be unitary. In that case, $\rho(\gamma)\in\U(n)$. One can show that $\rho(\gamma)\omega\rho(\gamma)^{-1}\in\mathfrak{u}(n)$ for any $\omega\in\mathfrak{u}(n)$. In other words, we can construct a representation of $\Gamma$ on $\mathfrak{u}(n)$ from the representation $(\rho,\C^n)$:
+        Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^n$, we denote it $(\rho,\C^n)$ and also take it to be unitary. In that case, $\rho(\gamma)\in\U(n)$. This is what we mean by ``the embedding of $\Gamma$ in $\U(n)$''. The adjoint representation of $\U(n)$ defined as
         \begin{equation}
             \Ad:\left(
             \begin{array}{ccc}
-                \Gamma & \longrightarrow & \GL(\mathfrak{u}(n)) \\
-                \gamma & \longmapsto & \Ad_\gamma
+                U(n) & \longrightarrow & \GL(\mathfrak{u}(n)) \\
+                U & \longmapsto & \Ad_U
             \end{array}
-            \right)
-        \end{equation}
-        with
-        \begin{equation}
-            \Ad_\gamma:\left(
+            \right),\qquad
+            \Ad_U:\left(
             \begin{array}{ccc}
                 \mathfrak{u}(n) & \longrightarrow & \mathfrak{u}(n) \\
-                \omega & \longmapsto & \Ad_\gamma(\omega)\equiv\rho(\gamma)\omega\rho(\gamma)^{-1}
+                \omega & \longmapsto & \Ad_U(\omega)\equiv U\omega U^{-1}
             \end{array}
-            \right).
+            \right),
         \end{equation}
-        Note that even though this representation looks like the adjoint representation, it is not, because it not on the Lie algebra of $\Gamma$. We use this representation in the expression \eqref{eq:proj1}-\eqref{eq:proj3}.
+        now allows us to act with $\Gamma$ on $\mathfrak{u}(n)$. We use this representation in the expression \eqref{eq:proj1}-\eqref{eq:proj3}. Recall that the adjoint representations is well defined since for all $\omega\in\mathfrak{u}(n)$ and $U\in\U(n)$, $U\omega U^{-1}\in\mathfrak{u}(n)$.
 
         We can decompose $(\rho,\C^n)$ as follows:
         \begin{align}
@@ -173,12 +170,12 @@
         \end{align}
         were $N_i$ are integer multiplicities ($(\rho_i,V_i)^{N_i}\equiv(\rho_i,V_i)^{\oplus N_i}$) and $\boldsymbol{1}$ is the trivial representation, so $\Gamma$ acts trivially on the $\C^{N_i}$. We have $\sum_iN_i\dim(\rho_i)=n$. The rewritting \eqref{eq:decomp:line2} will be useful later on.
         
-        After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, that is $\Hom(\C^n,\C^n)^\Gamma$. We use the superscript $\Gamma$ to indicate that we only keep the trivial representations in the decomposition, that is, we only keep that subspaces of that transform trivially. First, we can see that by Schur's lemma \marker
+        After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, that is $\Hom(\C^n,\C^n)^\Gamma$. We use the superscript $\Gamma$ to indicate that we only keep the trivial representations in the decomposition, that is, we only keep that subspaces that transform trivially. First, we can see that by Schur's lemma \marker
         \begin{equation}
             (V_i\otimes V^*_j)^\Gamma=\delta_{ij}
         \end{equation}
         
-        Now since $\Hom(\C^n,\C^n)=\C^n\otimes(\C^n)^*$, we can see that
+        Now since $\Hom(\C^n,\C^n)=\C^n\otimes(\C^n)^*$, we get
         \begin{align}
             \Hom(\C^n,\C^n)^\Gamma &= (\C^n\otimes(\C^n)^*)^\Gamma\\
             &= \bigoplus_{i,j\in I} \left((\C^{N_i}\otimes V_i)\otimes(\C^{N_j}\otimes V_j)^*\right)^\Gamma\\
@@ -195,29 +192,34 @@
             G_{\text{proj}} = \bigotimes_{i\in I}\SU(N_i).
         \end{equation}
 
-        For the matter fields, the reasonning is similar but we now wish to compute $(\mR\otimes\Hom(\C^n,\C^n))^\Gamma$ with $\mR=\boldsymbol{4},\boldsymbol{6}$:
+        For the matter fields, the reasoning is similar but we now have to take into account the R-symmetry. Let $\boldsymbol{4}\equiv(\rho_{\boldsymbol{4}},V_{\boldsymbol{4}})$ be the fundamental representation of $\SU(4)_R$ and $\boldsymbol{6}\equiv(\rho_{\boldsymbol{6}},V_{\boldsymbol{6}})$ be the fundamental representation of $\SO(6)_R$. Wish to compute $(V_\mR\otimes\Hom(\C^n,\C^n))^\Gamma$ with $\mR=\boldsymbol{4},\boldsymbol{6}$:
         \begin{align}
-            (\mR\otimes\Hom(\C^n,\C^n))^\Gamma &= \bigoplus_{i,j\in I} \left(\mR\otimes (\C^{N_i}\otimes V_i)\otimes(\C^{N_j}\otimes V_j)^*\right)^\Gamma\\
-            &= \bigoplus_{i,j\in I} \left(\C^{N_i}\otimes(\C^{N_j})^*\right)^\Gamma\otimes\left(V_i\otimes V^*_j\right)^\Gamma\\
+            (V_\mR\otimes\Hom(\C^n,\C^n))^\Gamma &= \bigoplus_{i,j\in I} \left(V_\mR\otimes (\C^{N_i}\otimes V_i)\otimes(\C^{N_j}\otimes V_j)^*\right)^\Gamma\\
+            &= \bigoplus_{i,j\in I} \left(V_\mR\otimes\C^{N_i}\otimes(\C^{N_j})^*\right)^\Gamma\otimes\left(V_i\otimes V^*_j\right)^\Gamma\\
             &= \bigoplus_{i,j\in I}a^\mR_{ij}\left(\C^{N_i}\otimes(\C^{N_j})^*\right)\label{eq:resdecomp}
         \end{align}
         with
         \begin{equation}
-            \mR\otimes\rho_i=\bigoplus_{j\in I}a^\mR_{ij}\rho_j\marker.\label{eq:defaij}
+            (\rho_\mR,V_\mR)\otimes(\rho_i,V_i)=\bigoplus_{j\in I}a^\mR_{ij}(\rho_j,V_j).\label{eq:defaij}
         \end{equation}
-        Using the orthogonality of characters of irreducible non-equivalent representations, we get that
+        This expression makes sense because $(\rho_\mR,V_\mR)$ is a representation of $\SU(4)$ so it is in particular a representation of $\SU(3)$ and therefore also in particular a representation of $\Gamma$.
+
+        Using the orthogonality of characters of irreducible non-equivalent representations, we obtain the explicit expression of the coefficient $a^\mR_{ij}$:
         \begin{equation}
             a^\mR_{ij} = \frac{1}{\abs{\Gamma}}\sum^r_{\gamma=1} r_\gamma\chi^\mR(\gamma)\chi^i(\gamma)\chi^j(\gamma)^*
         \end{equation}
         where $r_\gamma$ is the order of the conjugacy class containing $\gamma$ and $\chi^i$ is the character of $\rho_i$.
 
-        In the end, we can see that the matter fields become a total of $a^{\boldsymbol{4}}_{ij}$ bi-fundamental fermions and $a^{\boldsymbol{6}}_{ij}$ bi-fundamental bosons transforming as the $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\SU(N_i)\times\SU(N_j)$ under the products of gauge groups.
+        In the end, we can see that:
+        \begin{result}
+            In the daughter theory, the matter fields become a total of $a^{\boldsymbol{4}}_{ij}$ bi-fundamental fermions and $a^{\boldsymbol{6}}_{ij}$ bi-fundamental bosons transforming as the $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\SU(N_i)\times\SU(N_j)$ under the products of gauge groups.
+        \end{result}
 
     \subsection{Field content, quivers and McKay graphs}
 
-        A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$. In other words, from \eqref{eq:resdecomp}, the adjacency matrix of the fermions has elements $A_{ij}=a^{\boldsymbol{4}}$ and the one of the scalars has elements $A_{ij}=a^{\boldsymbol{6}}$.
+        A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$. In other words, from \eqref{eq:resdecomp}, the adjacency matrix of the fermions has elements $A_{ij}=a^{\boldsymbol{4}}_{ij}$ and the one of the scalars has elements $A_{ij}=a^{\boldsymbol{6}}_{ij}$.
 
-        On the other hand, given finite group $\Gamma$, a representation $(\rho_W,W)$ and a complete set of irreducible representations $\{(\rho_i,V_i)\}_{i\in I}$ of the latter, one can a McKay graph (or quiver) as follows:
+        On the other hand, given finite group $\Gamma$, a representation $(\rho_W,W)$ and a complete set of irreducible representations $\{(\rho_i,V_i)\}_{i\in I}$ of the latter, one can construct a McKay graph (or quiver) as follows:
         \begin{enumerate}
             \item Draw a vertex for every representation $(\rho_i,V_i)$.
             \item For every representation $(\rho_i,V_i)$, compute the decomposition
@@ -283,7 +285,7 @@
         \begin{equation}
             \rho(g)A_\mu\rho(g)^{-1}=A_\mu
         \end{equation}
-        for all $g\in\Z_n$. The constrained is easily solved by using the bi-index notation $A_{\mu;i\alpha_i,j\beta_j}$ ($i,j=A,\dots,n-1,\alpha_i,\beta_i=1,\dots,N_i$) for the component of the gauge fields.From \eqref{eq:reprrhoZn}, we can see that
+        for all $g\in\Z_n$. The constrained is easily solved by using the bi-index notation $A_{\mu;i\alpha_i,j\beta_j}$ ($i,j=A,\dots,n-1,\alpha_i,\beta_i=1,\dots,N_i$) for the component of the gauge fields. From \eqref{eq:reprrhoZn}, we can see that
         \begin{equation}
             A_{\mu;i\alpha_i,i\beta_j}\mapsto \rho_i(g)A_{\mu;i\alpha_i,j\beta_j}\rho_j(g)^{-1}=\zeta^{i-j}_nA_{\mu;i\alpha_i,j\beta_j}.
         \end{equation}
@@ -297,30 +299,33 @@
                  & & & A_{n-1,n-1}
             \end{bmatrix}
         \end{equation}
-        with $A_{ij}\equiv (X_{i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}$. The block $A_{ii}$ transforms under $\Z_n$ as $(\rho_i,V_i)^{N_i}$.
+        with $A_{ij}\equiv (A_{i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}$. The block $A_{ii}$ transforms under $\Z_n$ as $(\rho_i,V_i)^{N_i}$.
         Consequently, the gauge group is now broken to
         \begin{equation}
-            G_{\text{proj}}=\bigotimes^{n-1}_{i=0}~\U(N_i),
+            G_{\text{proj}}=\prod^{n-1}_{i=0}~\U(N_i),
         \end{equation}
         the biggest subgroup of $\U(n)$ that preserves those form of configurations.
 
-        Let us take
+        We now take $n=3$.
+        
+        Let us study the scalars. $\Z_n$ acts on the three complex scalars through
         \begin{equation}
             R(g)= \rho^{\oplus n}_0(g) = 
             \begin{bmatrix}
-                \xi_n & \cdots & 0 \\
-                \cdots & \ddots & \vdots \\
-                0 & \cdots & \xi_n
+                \xi_3 & 0 & 0 \\
+                0 & \xi_3 & 0 \\
+                0 & 0 & \xi_3
             \end{bmatrix}.
         \end{equation}
         The scalar field configurations that are left invariant satisfy
         \begin{equation}
             R(g)\indices{^m_n}\rho(g)X^n\rho(g)^{-1}=X^m
         \end{equation}
-        for all $g\in\Z_n$. Using bi-index notations, this becomes
-        \begin{equation}
-            X^m_{i\alpha_i,j\beta_j}\mapsto  \xi_n\delta\indices{^m_n}\rho_i(g) X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \xi^{i-j+1}X^m_{i\alpha_i,j\beta_j}
-        \end{equation}
+        for all $g\in\Z_n$. Using the bi-index notations, this becomes
+        \begin{align}
+            X^m_{i\alpha_i,j\beta_j}\mapsto  \xi_n\delta\indices{^m_n}\rho_i(g) X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \xi^{i-j+1}X^m_{i\alpha_i,j\beta_j}\\
+            \bar{X}^m_{i\alpha_i,j\beta_j}\mapsto  \xi_n\delta\indices{^m_n}\rho_i(g) X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \xi^{i-j+1}X^m_{i\alpha_i,j\beta_j}
+        \end{align}
         thus only the configurations with $X^n_{i\alpha_i,j\beta_j}=0$ if $i-j+1\neq0$ are left invariant. The scalar fields have a block off-diagonal form:
         \begin{equation}
             X=
@@ -336,7 +341,7 @@
             X_{i,i+1} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_j} \simeq \Hom(V_{i+1},V_i).
         \end{align*}
 
-        \begin{figure}
+        \begin{figure}[H]
             \centering
             \begin{tikzpicture}
                 \foreach \n in {0,...,5}{
@@ -354,11 +359,11 @@
 
 
 
-        Finally, anomaly cancellation imposes that the number a fields transforming in $\textbf{N}_j$ is equal to the number of fields transforming in $\boldsymbol{\bar{\textbf{N}}}_j$. This results in a constrain on the $N_i$'s:
+        Finally, anomaly cancellation imposes that the number a fields transforming in $\textbf{N}_j$ is equal to the number of fields transforming in $\boldsymbol{\bar{\textbf{N}}}_j$, see appendix \eqref{sec:anomalies}. This results in a constrain on the $N_i$'s:
         \begin{equation}
             \marker .
         \end{equation}
-        For $n=2$ or $n=3$ this implies that all $N_i$'s must be equal.
+        For $n=3$ this implies that $N_0=N_1=N_2$.
 
     \subsection{$S=\C\times\C^2/\Z_n$}
 
@@ -373,11 +378,11 @@
     \begin{table}[H]
         \centering
         $
-        \begin{array}{ccc}
-            S & \text{Gauge group} & \text{Matter content} \\ \hline
-            \C^3 & \U(n) & \Phi^{\boldsymbol{6}}_{IJ},\Psi^{\boldsymbol{4}}_{IJ} \\
-            \C^3/\Z_n & & \\
-            \C\times\C^2/\Z_n & & 
+        \begin{array}{cccc}
+            S & \mN & \text{Gauge group} & \text{Matter content} \\ \hline
+            \C^3 & 4 & \U(n) & \Phi^{\boldsymbol{6}}_{IJ},\Psi^{\boldsymbol{4}}_{IJ} \\
+            \C^3/\Z_n & 1 & & \\
+            \C\times\C^2/\Z_n & 2 & & 
         \end{array}
         $
         \caption{Worldvolume theory in terms of $S$.}
@@ -386,6 +391,16 @@
 
 \pagebreak
 \appendix
+
+\section{Gauge anomaly}\label{sec:anomalies}
+
+    The \emph{anomaly degree} $A(\rho)$ of a representation $\rho$ is defined as
+    \begin{equation}
+        \frac{1}{2}\tr(T_a\{T_b,T_c\})=A(\rho)d_{abc}
+    \end{equation}
+    where $d_{abc}$ is an invariant symmetric tensor of the Lie algebra of $G$, independent of the representation. One can show that $A(\rho^*)=-A(\rho)$ so self dual representation have $A(\rho)=0$ in particular. The only simple Lie groups that allow for a complex non-self-conjugate representation are $\SU(n)$ with $n\geq3$. We can normalize $d_{abc}$ such that $A(\rho)=1$ for the fundamental $n$-dimensional representations.
+
+    Let us study a $\U(n)$ gauge theory with scalars and Weyl fermions
 
 \section{$\mN=4$ super Yang-Mills theory in four dimensions}\label{sec:N4SCFT}
 

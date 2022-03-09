@@ -15,7 +15,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Representation theory realization}{5}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Field content, quivers and McKay graphs}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Field content, quivers and McKay graphs}{7}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}$\mathcal {N}=2$ theories}{7}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
@@ -25,30 +25,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.7}$S=\mathbb {C}^3/\mathbb {Z}_n$}{7}{subsection.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.8}$S=\mathbb {C}\times \mathbb {C}^2/\mathbb {Z}_n$}{9}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.8}$S=\mathbb {C}\times \mathbb {C}^2/\mathbb {Z}_n$}{10}{subsection.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}$\mathcal {N}=4$ super Yang-Mills theory in four dimensions}{10}{appendix.A}%
+\contentsline {section}{\numberline {A}Gauge anomaly}{11}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1}Superconformal group $\text {SU}(2,2|4)$ and its representations}{10}{subsection.A.1}%
+\contentsline {section}{\numberline {B}$\mathcal {N}=4$ super Yang-Mills theory in four dimensions}{11}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2}Matter content}{10}{subsection.A.2}%
+\contentsline {subsection}{\numberline {B.1}Superconformal group $\text {SU}(2,2|4)$ and its representations}{11}{subsection.B.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3}Dynamical phases}{11}{subsection.A.3}%
+\contentsline {subsection}{\numberline {B.2}Matter content}{11}{subsection.B.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Calabi-Yau compactification}{11}{appendix.B}%
+\contentsline {subsection}{\numberline {B.3}Dynamical phases}{12}{subsection.B.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Properties of D-branes in type II theories}{12}{appendix.C}%
+\contentsline {section}{\numberline {C}Calabi-Yau compactification}{13}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}The McKay correspondence}{13}{appendix.D}%
+\contentsline {section}{\numberline {D}Properties of D-branes in type II theories}{13}{appendix.D}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.1}Finite subgroups of $\text {SL}(2,\mathbb {C})$}{13}{subsection.D.1}%
+\contentsline {section}{\numberline {E}The McKay correspondence}{14}{appendix.E}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.2}Simple Lie algebras}{15}{subsection.D.2}%
+\contentsline {subsection}{\numberline {E.1}Finite subgroups of $\text {SL}(2,\mathbb {C})$}{14}{subsection.E.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.3}Classical McKay correspondence}{15}{subsection.D.3}%
+\contentsline {subsection}{\numberline {E.2}Simple Lie algebras}{16}{subsection.E.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.4}Geometrical McKay correspondence}{15}{subsection.D.4}%
+\contentsline {subsection}{\numberline {E.3}Classical McKay correspondence}{16}{subsection.E.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E}Calabi-Yau manifolds, orbifolds and crepant resolutions}{15}{appendix.E}%
+\contentsline {subsection}{\numberline {E.4}Geometrical McKay correspondence}{16}{subsection.E.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Markers}{17}{equation.E.1}%
+\contentsline {section}{\numberline {F}Calabi-Yau manifolds, orbifolds and crepant resolutions}{16}{appendix.F}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Markers}{18}{equation.F.1}%
