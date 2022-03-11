@@ -9,20 +9,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {marker}{\numberline {5}}{6}{marker.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {6}}{9}{marker.6}%
+\contentsline {marker}{\numberline {6}}{12}{marker.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {7}}{10}{marker.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {8}}{11}{marker.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {9}}{11}{marker.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {10}}{16}{marker.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {11}}{16}{marker.11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {12}}{16}{marker.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {13}}{16}{marker.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {14}}{16}{marker.14}%
+\contentsline {marker}{\numberline {7}}{12}{marker.7}%
