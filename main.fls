@@ -2026,9 +2026,12 @@ INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm10.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm8.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm6.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm12.tfm
-INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm12.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm10.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm7.tfm
+INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm5.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0700.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0500.tfm
+INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm12.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0900.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/cm/cmr9.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/cm/cmmi9.tfm
@@ -2043,11 +2046,8 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx9.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm9.tfm
-INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm5.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/esvect/vect9.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/stix/stix-mathfrak.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0700.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0500.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm2488.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecbx2488.tfm
 INPUT ./main.mak
@@ -2145,5 +2145,7 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm1
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam7.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam7.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb

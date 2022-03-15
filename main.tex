@@ -238,7 +238,205 @@
 
     \subsection{$S=\C\times\C^2/\Z_n$}
 
-        
+        We start by considering a representation $(\rho,\C^N)$ of $\Z_n$. A complete set of irreducible representations of $\Z_n$ is given by $\{(\rho_k,V_k)\}_{k=0,\dots,n-1}$ with $V_k=\C$ and
+        \begin{equation}
+            \rho_i(g)=\zeta^k_n
+        \end{equation}
+        where $g$ is the generator of $\Z_n$. The representation $(\rho,V)$ can be decomposed as
+        \begin{equation}
+            (\rho,V)=\bigoplus^{n-1}_{i=0}N_i(\rho_i,V_i).
+        \end{equation}
+        In other words, it is equivalent to the representation
+        \begin{equation}
+            \rho(g)=
+            \begin{bmatrix}
+                1 & & & \cdots & & & 0 \\
+                & \ddots & & & & & \\
+                & & 1 & & & &  \\
+                \vdots & & & \ddots & & & \vdots \\
+                & & & & \zeta^{n-1}_n & & \\
+                & & & & & \ddots & \\
+                0 & & & \cdots & & & \zeta^{n-1}_n 
+            \end{bmatrix}
+            \hspace{-0.2cm}
+            \begin{tabular}{l}
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                    a_0\\ \ddots\\ a_0\ 
+                \end{matrix} 
+            }}\right\}N_0$\\
+            \vdots \\
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                    b_0\\ \ddots\\ b_0\ 
+                \end{matrix}
+            }} \right\}N_{n-1}$
+            \end{tabular}.\label{eq:reprrhoZn}
+        \end{equation}
+        Since $\dim\rho_i=1$, $\sum_i N_i=N$. 
+
+        The gauge field configurations that are left invariant under the action of $\Z_n$ are therefore the ones that satisfy
+        \begin{equation}
+            \rho(g)A_\mu\rho(g)^{-1}=A_\mu.
+        \end{equation}
+        Once again, we actually want this relation to be true for any element of $\Z_n$ but in this case it is invariant under any element of $\Z_n$ if and only if it is invariant under the generator $g$ of $\Z_n$. The constrained is easily solved by using the bi-index notation $A_{\mu;i\alpha_i,j\beta_j}$ ($i,j=A,\dots,n-1,\alpha_i,\beta_i=1,\dots,N_i$) for the component of the gauge fields. From \eqref{eq:reprrhoZn}, we can see that
+        \begin{equation}
+            A_{\mu;i\alpha_i,i\beta_j}\mapsto \rho_i(g)A_{\mu;i\alpha_i,j\beta_j}\rho_j(g)^{-1}=\zeta^{i-j}_nA_{\mu;i\alpha_i,j\beta_j}.
+        \end{equation}
+        thus only the configurations with $A_{\mu;i\alpha_i,j\beta_j}=0$ if $i\neq j$ are invariant. The gauge field has therefore a block diagonal form:
+        \begin{equation}
+            A_\mu=
+            \begin{bmatrix}
+                A_{\mu;00} & & & \\
+                & A_{\mu;11} & & \\
+                & & \ddots & \\
+                & & & A_{\mu;n-1,n-1}
+            \end{bmatrix}
+        \end{equation}
+        with $A_{\mu;ij}\equiv (A_{\mu;i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}$. The block $A_{ii}$ transforms under $\Z_n$ as $(\rho_i,V_i)^{N_i}$.
+        Consequently, the gauge group is now broken to
+        \begin{equation}
+            G_{\text{proj}}=\prod^{n-1}_{i=0}~\U(N_i),
+        \end{equation}
+        the biggest subgroup of $\U(N)$ that preserves those form of configurations.
+
+        For the scalar fields, we need to consider the action of the R-symmetry. The action of $\Z_n$ that we consider leaves the first component of $\C^3$ untouched so we take the action $\boldsymbol{1}\oplus\boldsymbol{2}$ where $\boldsymbol{2}$ is the usual action of $\Z_n$ on $\C^2$. In other words, 
+        \begin{equation}
+            R(g)=
+            \begin{bmatrix}
+                1 & 0 & 0 \\
+                0 & \zeta_n & 0 \\
+                0 & 0 & \zeta^{-1}_n
+            \end{bmatrix}.
+        \end{equation}
+        Or, equivalently, $R(g)\indices{^m_n}=\delta\indices{^m_n}A_n$ with $A_m=(1,1,\zeta_n,\zeta_n,\zeta^{-1}_n,\zeta^{-1}_n)$. According to \ref{eq:transfphi1}-\ref{eq:transfphi2}, the scalar field configurations that are left invariant satisfy
+        \begin{equation}
+            R(g)\indices{^m_n}\rho(g)X^n\rho(g)^{-1}=X^m
+        \end{equation}
+        for all $g\in\Z_n$. Using the bi-index notations, this becomes
+        \begin{align}
+            X^m_{i\alpha_i,j\beta_j}\mapsto  \delta\indices{^m_n}A_n\rho_i(g)X^m_{i\alpha_i,j\beta_j}\rho_j(g)^{-1}  = \delta\indices{^m_n}A_n\zeta^{i-j}_n X^m_{i\alpha_i,j\beta_j} =
+            \begin{cases}
+                \zeta^{i-j}_nX^m_{i\alpha_i,j\beta_j},\quad m=0,1\\
+                \zeta^{i-j+1}_nX^m_{i\alpha_i,j\beta_j},\quad m=2,3\\
+                \zeta^{i-j-1}_nX^m_{i\alpha_i,j\beta_j},\quad m=4,5\\
+            \end{cases}\\
+            \bar{X}^m_{i\alpha_i,j\beta_j}\mapsto \delta\indices{^m_n}\bar{A_n}\rho_i(g)\bar{X}^m_{i\alpha_i,j\beta_j}\rho_j(g)^{-1}  = \delta\indices{^m_n}\bar{A_n}\zeta^{i-j}_n X^m_{i\alpha_i,j\beta_j} =
+            \begin{cases}
+                \zeta^{i-j}_nX^m_{i\alpha_i,j\beta_j},\quad m=0,1\\
+                \zeta^{i-j-1}_nX^m_{i\alpha_i,j\beta_j},\quad m=2,3\\
+                \zeta^{i-j+1}_nX^m_{i\alpha_i,j\beta_j},\quad m=4,5\\
+            \end{cases}
+        \end{align}
+        thus only the configurations with $X^{0,1}_{i\alpha_i,j\beta_j}=0$ if $i-j\neq0$, $X^{2,3}_{i\alpha_i,j\beta_j}=0$ if $i-j+1\neq0$ and $X^{4,5}_{i\alpha_i,j\beta_j}=0$ if $i-j-1\neq0$ are left invariant (and similarly for the conjugated fields). The scalar fields $X$ have a the following forms:
+        {\small
+        \begin{align}
+            X^{0,1}&=
+            \begin{bmatrix}
+                X^{0,1}_{00} &  & 0 \\
+                 & \ddots & \\
+                0 & & X^{0,1}_{n-1,n-1}
+            \end{bmatrix},\\
+            X^{2,3}&=
+            \begin{bmatrix}
+                0 & X^{2,3}_{01} & & 0 \\
+                 & \ddots & \ddots & \\
+                 & & 0 & X^{2,3}_{n-2,n-1} \\
+                X^{2,3}_{n-1,0} & & & 0 
+            \end{bmatrix},\quad
+            X^{4,5}=
+            \begin{bmatrix}
+                0 & & & X^{4,5}_{0,n-1} \\
+                X^{4,5}_{10} & 0 & & \\
+                 & \ddots & \ddots  & \\
+                0 & & X^{4,5}_{n-1,n-2} & 0
+            \end{bmatrix},\\
+            \bar{X}^{0,1}&=
+            \begin{bmatrix}
+                \bar{X}^{0,1}_{00} &  & 0 \\
+                 & \ddots & \\
+                0 & & \bar{X}^{0,1}_{n-1,n-1}
+            \end{bmatrix},\\
+            \bar{X}^{2,3}&=
+            \begin{bmatrix}
+                0 & & & \bar{X}^{2,3}_{0,n-1} \\
+                \bar{X}^{2,3}_{10} & 0 & & \\
+                 & \ddots & \ddots  & \\
+                0 & & \bar{X}^{2,3}_{n-1,n-2} & 0
+            \end{bmatrix},\quad
+            \bar{X}^{4,5}=
+            \begin{bmatrix}
+                0 & \bar{X}^{4,5}_{01} & & 0 \\
+                 & \ddots & \ddots & \\
+                 & & 0 & \bar{X}^{4,5}_{n-2,n-1} \\
+                 \bar{X}^{4,5}_{n-1,0} & & & 0
+            \end{bmatrix}
+        \end{align}}
+        with the block notations
+        \begin{align*}
+            X^m_{ij}&\equiv (X^m_{i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}\\
+            \bar{X}^m_{ij}&\equiv (\bar{X}^m_{i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}.
+        \end{align*}
+        so $X^m_{ij}$ is an $N_i\times N_j$ block and transforms under the representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\U(N_i)\times\U(N_j)$:
+        \begin{align}
+            X^{0,1}_{i,i} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_i,V_i),\\
+            X^{2,3}_{i,i+1} &\in \boldsymbol{\textbf{N}_{i+1}}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_{i+1},V_i),\\
+            X^{4,5}_{i+1,i} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_{i+1}} \cong \Hom(V_i,V_{i+1}).
+        \end{align}
+        So the scalar fields are split up in three families depending on the way they transform under a gauge transformation.
+
+        Let us draw the quiver for the case $n=3$. We have $2\cdot 9=18$ real scalar fields in $9$ different representations:
+        \begin{align}
+            X^0_{00},X^1_{00}&\in(\boldsymbol{\textbf{N}_0},\boldsymbol{\bar{\textbf{N}}_0}),\quad
+            X^0_{11},X^1_{11}\in(\boldsymbol{\textbf{N}_1},\boldsymbol{\bar{\textbf{N}}_1}),\quad
+            X^0_{22},X^1_{22}\in(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_2}),\\
+            X^2_{01},X^3_{01}&\in(\boldsymbol{\textbf{N}_1},\boldsymbol{\bar{\textbf{N}}_0}),\quad
+            X^2_{12},X^3_{12}\in(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_1}),\quad
+            X^2_{20},X^3_{20}\in(\boldsymbol{\textbf{N}_0},\boldsymbol{\bar{\textbf{N}}_2}),\\
+            X^4_{10},X^5_{10}&\in(\boldsymbol{\textbf{N}_0},\boldsymbol{\bar{\textbf{N}}_1}),\quad
+            X^4_{21},X^5_{21}\in(\boldsymbol{\textbf{N}_1},\boldsymbol{\bar{\textbf{N}}_2}),\quad
+            X^4_{02},X^5_{02}\in(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_0}),
+        \end{align}
+        In every representation there are 2 real scalars, i.e. 1 complex scalars. They are each represented by an arrow between the right representations. The resulting quiver is given \ref{fig:2Z3quiver}.
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                \foreach \n in {0,...,2}{
+                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-20}:2) and ({120*\n+120-40}:2) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{$\blacktriangleright$};
+                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-30}:1.6) and ({120*\n+120-30}:1.6) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{$\blacktriangleleft$};
+                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n}:4) and ({120*\n-60}:4) .. ({120*\n-30}:2) node[midway,sloped,allow upside down]{$\blacktriangleright$};
+                    \draw[fill=black] ({120*\n-30}:2) circle[radius=0.15];
+                }
+                \draw (-10:2.2) node{$N_0$};
+                \draw (70:2.2) node{$N_1$};
+                \draw (190:2.2) node{$N_2$};
+            \end{tikzpicture}
+            \caption{Quiver of the $\C\times\C^2/\Z_3$ daughter theory.}
+            \label{fig:2Z3quiver}
+        \end{figure}
+        The adjacency matrix of this quiver is
+        \begin{equation}
+            A=
+            \begin{bmatrix}
+                1 & 1 & 1 \\
+                1 & 1 & 1 \\
+                1 & 1 & 1
+            \end{bmatrix}
+        \end{equation}
+        which is coherent with the fact that the coefficients of the McKay decompositions are
+        \begin{align}
+            \begin{split}
+                n_{00} &= 1,\quad n_{01} = 1,\qquad n_{02}=1,\\
+                n_{10} &= 1,\quad n_{11} = 1,\qquad n_{12}=1,\\
+                n_{20} &= 1,\quad n_{21} = 1,\qquad n_{22}=1.
+            \end{split}
+        \end{align}
+        It is easy to see how the construction of the the quiver generalizes for arbitrary $n$.
+
+        Finally, let us discuss the gauge anomaly cancellation. Our fields transform under the adjoint representation of $\SU(n)$, under the fundamentals of $\SU(N_i)$ and under the anti-fundamentals of $\SU(N_i)$. The adjoint representation being reel, it is self-conjugate and therefore do not contribute to the anomaly. Fundamentals and anti-fundamentals representations of $\SU(N_0)$, $\SU(N_1)$ and $\SU(N_2)$ have opposite contribution. Anomaly cancellation therefore imposes that the number a fields transforming in $\textbf{N}_j$ is equal to the number of fields transforming in $\boldsymbol{\bar{\textbf{N}}}_j$, see appendix \eqref{sec:anomalies}. In other words, the number of incoming and outgoing arrows must be equal vertex at each vertex. That is, $3N_0=3N_1,3N_1=3N_2$ and $3N_2=3N_0$. It implies that
+        %\begin{equation}
+        %    N_0=N_1=N_2.
+        %\end{equation}
 
 
 \section{$\mN=1$ daughter theories}
@@ -249,7 +447,7 @@
 
     \subsection{$S=\C^3/\Z_3$}
 
-        Let us consider the representation $(\rho,\C^N)$ of $\Z_3$. A complete set of irreducible representations of $\Z_3$ is given by $\{(\rho_k,V_k)\}_{k=0,1,2}$ with $V_k=\C$ and
+        Let us consider a representation $(\rho,\C^N)$ of $\Z_3$. A complete set of irreducible representations of $\Z_3$ is given by $\{(\rho_k,V_k)\}_{k=0,1,2}$ with $V_k=\C$ and
         \begin{equation}
             \rho_i(g)=\zeta^k_3
         \end{equation}
@@ -320,9 +518,9 @@
         \begin{equation}
             R(g)= \rho^{\oplus 3}_1(g) = \zeta_3\mathbbm{1}_3 =
             \begin{bmatrix}
-                \xi_3 & 0 & 0 \\
-                0 & \xi_3 & 0 \\
-                0 & 0 & \xi_3
+                \zeta_3 & 0 & 0 \\
+                0 & \zeta_3 & 0 \\
+                0 & 0 & \zeta_3
             \end{bmatrix}
         \end{equation}
         or, equivalently, on the real scalars as $R(g)=\zeta_3\mathbbm{1}_6$. The scalar field configurations that are left invariant satisfy
@@ -331,8 +529,8 @@
         \end{equation}
         for all $g\in\Z_n$. Using the bi-index notations, this becomes
         \begin{align}
-            X^m_{i\alpha_i,j\beta_j}\mapsto  \xi_n\delta\indices{^m_n}\rho_i(g) X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \xi^{i-j+1}X^m_{i\alpha_i,j\beta_j}\\
-            \bar{X}^m_{i\alpha_i,j\beta_j}\mapsto  \xi^{-1}_n\delta\indices{^m_n}\rho_i(g) X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \xi^{i-j-1}X^m_{i\alpha_i,j\beta_j}
+            X^m_{i\alpha_i,j\beta_j}\mapsto  \zeta_n\delta\indices{^m_n}\rho_i(g) X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \zeta^{i-j+1}_3X^m_{i\alpha_i,j\beta_j}\\
+            \bar{X}^m_{i\alpha_i,j\beta_j}\mapsto  \zeta^{-1}_3\delta\indices{^m_n}\rho_i(g) \bar{X}^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \zeta^{i-j-1}_3\bar{X}^m_{i\alpha_i,j\beta_j}
         \end{align}
         thus only the configurations with $X^n_{i\alpha_i,j\beta_j}=0$ if $i-j+1\neq0$ are left invariant and only the configurations with $\bar{X}^n_{i\alpha_i,j\beta_j}=0$ if $i-j-1\neq0$ are left invariant. The scalar fields $X$ have a block off-diagonal form:
         \begin{equation}
@@ -365,22 +563,21 @@
         \begin{equation}
             X^m_{01}\in(\boldsymbol{\textbf{N}_{1}},\boldsymbol{\bar{\textbf{N}}_0}),\quad
             X^m_{12}\in(\boldsymbol{\textbf{N}_{2}},\boldsymbol{\bar{\textbf{N}}_1}),\quad
-            X^m_{21}\in(\boldsymbol{\textbf{N}_{2}},\boldsymbol{\bar{\textbf{N}}_0}).
+            X^m_{20}\in(\boldsymbol{\textbf{N}_{0}},\boldsymbol{\bar{\textbf{N}}_2}).
         \end{equation}
         In every representation ($(\boldsymbol{\textbf{N}_1},\boldsymbol{\bar{\textbf{N}}_0}),(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_1})$ or $(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_0})$) there are six real scalars, i.e. 3 complex scalars. They are each represented by an arrow between the right representations, see fig. \ref{fig:Z3quiver}.
         \begin{figure}[H]
             \centering
             \begin{tikzpicture}
                 \foreach \n in {0,...,2}{
-                    \draw[very thick] ({-120*\n-30}:2)--({-120*(\n+1)-30}:2);
+                    \draw[very thick] ({-120*\n-30}:2)--({-120*(\n+1)-30}:2) node[midway,sloped,allow upside down]{$\blacktriangleright\blacktriangleright\blacktriangleright$};
                     \draw[fill=black] ({-120*\n-30}:2) circle[radius=0.15];
-                    \draw ({120*\n+30}:1) node[rotate={120*\n-60}]{$ \blacktriangleright\blacktriangleright\blacktriangleright$};
                 }
                 \draw (-30:2.45) node{$N_0$};
                 \draw (90:2.45) node{$N_1$};
                 \draw (210:2.45) node{$N_2$};
             \end{tikzpicture}
-            \caption{Quiver of the $\Z_3$ daughter theory.}
+            \caption{Quiver of the $\C^3/\Z_3$ daughter theory.}
             \label{fig:Z3quiver}
         \end{figure}
         The adjacency matrix of this quiver is
@@ -423,9 +620,9 @@
                 & \ddots & & & & & \\
                 & & 1 & & & &  \\
                 \vdots & & & \ddots & & & \vdots \\
-                & & & & \xi^{n-1}_n & & \\
+                & & & & \zeta^{n-1}_n & & \\
                 & & & & & \ddots & \\
-                0 & & & \cdots & & & \xi^{n-1}_n 
+                0 & & & \cdots & & & \zeta^{n-1}_n 
             \end{bmatrix}
             \hspace{-0.2cm}
             \begin{tabular}{l}
@@ -489,7 +686,7 @@
 
         Similarly to what we discussed at the end of the previous section, gauge anomaly cancellation imposes that the number of outgoing and ingoing arrows are the same at each vertex of the quiver. That is, 
         \begin{equation}
-            N_0
+            N_0=\marker.
         \end{equation}
 
 
@@ -497,19 +694,45 @@
 
 
 
-    \vspace{5cm}
+    \section{Summary of daughter theories}
 
     \begin{table}[H]
         \centering
+        {\small
         $
-        \begin{array}{cccc}
-            S & \mN & \text{Gauge group} & \text{Matter content} \\ \hline
-            \C^3 & 4 & \U(N) & \Phi^{\boldsymbol{6}}_{IJ},\Psi^{\boldsymbol{4}}_{IJ} \\
-            \C^3/\Z_n & 1 & & \\
-            \C\times\C^2/\Z_n & 2 & & 
+        \begin{array}{|c|c|c|l|c|c|}
+            \hline
+            S & \mN & \text{Gauge group} & \text{Field content} & \text{Quiver} & \begin{tabular}{@{}l@{}} \text{Gauge anomaly} \\ \text{constraint}  \end{tabular} \\ \hline
+            \C^3 & 4 & \U(N) & \begin{tabular}{@{}l@{}}$A_\mu\in\Hom(\C^n,\C^n)$  \\ $\phi\in\boldsymbol{6}\otimes\Hom(\C^n,\C^n)$ \\ $\psi\in\boldsymbol{4}\otimes\Hom(\C^n,\C^n)$ \end{tabular} & &  \\ \hline
+            \C\times\C^2/\Z_3 & 2 & & & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.4]
+                \foreach \n in {0,...,2}{
+                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-20}:2) and ({120*\n+120-40}:2) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{\tiny{$\blacktriangleright$}};
+                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-30}:1.6) and ({120*\n+120-30}:1.6) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{\tiny{$\blacktriangleleft$}};
+                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n}:4) and ({120*\n-60}:4) .. ({120*\n-30}:2) node[midway,sloped,allow upside down]{\tiny{$\blacktriangleright$}};
+                    \draw[fill=black] ({120*\n-30}:2) circle[radius=0.15];
+                }
+                \draw (0:2.2) node{$N_0$};
+                \draw (60:2.2) node{$N_1$};
+                \draw (180:2.2) node{$N_2$};
+            \end{tikzpicture} & \\ \hline
+            \C\times\C^2/\D_n & 2 & & & & \\ \hline
+            \C\times\C^2/\T & 2 & & & & \\ \hline
+            \C\times\C^2/\O & 2 & & & & \\ \hline
+            \C\times\C^2/\I & 2 & & & & \\ \hline
+            \C^3/\Z_3 & 1 & \U(N_0)\times\U(N_1)\times\U(N_2) & \begin{tabular}{@{}l@{}}$A_\mu\in\marker$ \\ $X^m_{01}\in\Hom(V_1,V_0)$ \\ $X^m_{12}\in\Hom(V_2,V_1)$ \\$ X^m_{20}\in\Hom(V_0,V_2)$ \\ $\psi\in\marker$\end{tabular} &
+            \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.4]
+                \foreach \n in {0,...,2}{
+                    \draw[very thick] ({-120*\n-30}:2)--({-120*(\n+1)-30}:2);
+                    \draw[fill=black] ({-120*\n-30}:2) circle[radius=0.15];
+                    \draw ({120*\n+30}:1) node[rotate={120*\n-60}]{\tiny{$ \blacktriangleright\blacktriangleright\blacktriangleright$}};
+                }
+                \draw (-30:2.7) node{$N_0$};
+                \draw (90:2.7) node{$N_1$};
+                \draw (210:2.7) node{$N_2$};
+            \end{tikzpicture} & N_0=N_1=N_2 \\ \hline
         \end{array}
-        $
-        \caption{Worldvolume theory in terms of $S$.}
+        $}
+        \caption{List of worldvolume theories for different transverse spaces.}
     \end{table}
 
 

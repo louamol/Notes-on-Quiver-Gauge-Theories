@@ -1,23 +1,23 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[59] biber:340> INFO - === Wed Mar  9, 2022, 18:54:40
-[71] Biber.pm:415> INFO - Reading 'main.bcf'
-[127] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[138] Biber.pm:4340> INFO - Processing section 0
-[146] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[147] bibtex.pm:1689> INFO - LaTeX decoding ...
-[161] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
-[162] Utils.pm:395> WARN - Duplicate entry key: '1998' in file 'bibliography.bib', skipping ...
-[163] Utils.pm:395> WARN - Duplicate entry key: 'lindström2012supersymmetric' in file 'bibliography.bib', skipping ...
-[163] Utils.pm:395> WARN - Duplicate entry key: 'bertolinisusy' in file 'bibliography.bib', skipping ...
-[195] Utils.pm:395> WARN - legacy month field 'May' in entry '1997' is not an integer - this will probably not sort properly.
-[210] Utils.pm:395> WARN - legacy month field 'Jun' in entry '1998' is not an integer - this will probably not sort properly.
-[220] Utils.pm:395> WARN - legacy month field 'May' in entry 'PhysRevD.55.6382' is not an integer - this will probably not sort properly.
-[224] Utils.pm:395> WARN - legacy month field 'Nov' in entry '2020' is not an integer - this will probably not sort properly.
-[238] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[238] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[238] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[238] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[247] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[252] bbl.pm:757> INFO - Output to main.bbl
-[253] Biber.pm:128> INFO - WARNINGS: 7
+[87] biber:340> INFO - === Tue Mar 15, 2022, 17:22:13
+[105] Biber.pm:415> INFO - Reading 'main.bcf'
+[173] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[184] Biber.pm:4340> INFO - Processing section 0
+[194] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[195] bibtex.pm:1689> INFO - LaTeX decoding ...
+[211] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[212] Utils.pm:395> WARN - Duplicate entry key: '1998' in file 'bibliography.bib', skipping ...
+[212] Utils.pm:395> WARN - Duplicate entry key: 'lindström2012supersymmetric' in file 'bibliography.bib', skipping ...
+[213] Utils.pm:395> WARN - Duplicate entry key: 'bertolinisusy' in file 'bibliography.bib', skipping ...
+[234] Utils.pm:395> WARN - legacy month field 'Nov' in entry '2020' is not an integer - this will probably not sort properly.
+[239] Utils.pm:395> WARN - legacy month field 'May' in entry 'PhysRevD.55.6382' is not an integer - this will probably not sort properly.
+[251] Utils.pm:395> WARN - legacy month field 'Jun' in entry '1998' is not an integer - this will probably not sort properly.
+[263] Utils.pm:395> WARN - legacy month field 'May' in entry '1997' is not an integer - this will probably not sort properly.
+[289] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[289] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[289] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[289] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[297] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[303] bbl.pm:757> INFO - Output to main.bbl
+[304] Biber.pm:128> INFO - WARNINGS: 7

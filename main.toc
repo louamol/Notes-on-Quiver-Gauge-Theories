@@ -21,46 +21,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}$S=\mathbb {C}\times \mathbb {C}^2/\mathbb {Z}_n$}{7}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}$\mathcal {N}=1$ daughter theories}{7}{section.5}%
+\contentsline {section}{\numberline {5}$\mathcal {N}=1$ daughter theories}{10}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}String theory realization}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}String theory realization}{10}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}$S=\mathbb {C}^3/\mathbb {Z}_3$}{7}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}$S=\mathbb {C}^3/\mathbb {Z}_3$}{11}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}$S=\mathbb {C}^3/\mathbb {Z}_n$}{10}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}$S=\mathbb {C}^3/\mathbb {Z}_n$}{13}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Gauge anomaly}{12}{appendix.A}%
+\contentsline {section}{\numberline {6}Summary of daughter theories}{14}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}$\mathcal {N}=4$ super Yang-Mills theory in four dimensions}{12}{appendix.B}%
+\contentsline {section}{\numberline {A}Gauge anomaly}{15}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.1}Superconformal group $\text {SU}(2,2|4)$ and its representations}{12}{subsection.B.1}%
+\contentsline {section}{\numberline {B}$\mathcal {N}=4$ super Yang-Mills theory in four dimensions}{15}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.2}Matter content}{12}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.1}Superconformal group $\text {SU}(2,2|4)$ and its representations}{15}{subsection.B.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3}Dynamical phases}{13}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.2}Matter content}{15}{subsection.B.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Calabi-Yau compactification}{14}{appendix.C}%
+\contentsline {subsection}{\numberline {B.3}Dynamical phases}{16}{subsection.B.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Properties of D-branes in type II theories}{14}{appendix.D}%
+\contentsline {section}{\numberline {C}Calabi-Yau compactification}{17}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E}Some finite subgroups}{15}{appendix.E}%
+\contentsline {section}{\numberline {D}Properties of D-branes in type II theories}{17}{appendix.D}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.1}Finite subgroups of $\text {SU}(2)$ and $\text {SL}(2,\mathbb {C})$}{15}{subsection.E.1}%
+\contentsline {section}{\numberline {E}Some finite subgroups}{18}{appendix.E}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {E.1.1}Finite subgroups}{15}{subsubsection.E.1.1}%
+\contentsline {subsection}{\numberline {E.1}Finite subgroups of $\text {SU}(2)$ and $\text {SL}(2,\mathbb {C})$}{18}{subsection.E.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {E.1.2}Irreducible representations}{16}{subsubsection.E.1.2}%
+\contentsline {subsubsection}{\numberline {E.1.1}Finite subgroups}{18}{subsubsection.E.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {E.1.3}Character tables}{16}{subsubsection.E.1.3}%
+\contentsline {subsubsection}{\numberline {E.1.2}Irreducible representations}{19}{subsubsection.E.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2}Finite subgroups of $\text {SU}(3)$}{18}{subsection.E.2}%
+\contentsline {subsubsection}{\numberline {E.1.3}Character tables}{19}{subsubsection.E.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {F}The McKay correspondence}{18}{appendix.F}%
+\contentsline {subsection}{\numberline {E.2}Finite subgroups of $\text {SU}(3)$}{21}{subsection.E.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.1}Classical correspondence}{18}{subsection.F.1}%
+\contentsline {section}{\numberline {F}The McKay correspondence}{21}{appendix.F}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.2}Geometrical McKay correspondence}{19}{subsection.F.2}%
+\contentsline {subsection}{\numberline {F.1}Classical correspondence}{21}{subsection.F.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {G}Calabi-Yau manifolds, orbifolds and crepant resolutions}{19}{appendix.G}%
+\contentsline {subsection}{\numberline {F.2}Geometrical McKay correspondence}{22}{subsection.F.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Markers}{21}{equation.G.1}%
+\contentsline {section}{\numberline {G}Calabi-Yau manifolds, orbifolds and crepant resolutions}{22}{appendix.G}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Markers}{24}{equation.G.1}%
