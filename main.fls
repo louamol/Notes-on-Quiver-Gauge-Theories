@@ -2015,9 +2015,6 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm5.t
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecbx0800.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecbx0600.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm7.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /home/louan/.miktex/texmfs/install/tex/latex/bbm/ubbm.fd
 INPUT /home/louan/.miktex/texmfs/install/tex/latex/bbm/ubbm.fd
 INPUT /home/louan/.miktex/texmfs/install/tex/latex/bbm/ubbm.fd
@@ -2025,13 +2022,16 @@ INPUT /home/louan/.miktex/texmfs/install/tex/latex/bbm/ubbm.fd
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm10.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm8.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm6.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm12.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm10.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm7.tfm
+INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm12.tfm
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm5.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0700.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0500.tfm
-INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm12.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0900.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/cm/cmr9.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/cm/cmmi9.tfm
