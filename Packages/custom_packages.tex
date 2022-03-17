@@ -4,10 +4,12 @@
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+
 % Page layout
 \usepackage{fullpage} % mise en page
 \usepackage{titlesec} % permet différent styles de titres
 \usepackage{fancyhdr} % page headers
+
 % Math symbols and fonts
 \usepackage{amsmath,amssymb,amsthm,amsfonts,amstext}%
 \usepackage{mathrsfs} % commande \mathscr
@@ -21,6 +23,7 @@
 \usepackage{empheq} % permet de faire des systèmes déquation avec acolade et numérotation
 \usepackage{physics} % ajoute des commandes pratiques pour dérivées, sin, ...
 \usepackage{tensor} % permet de mieux gérer les indices des tenseurs
+
 % Graphics, tikz, etc
 \usepackage{color}
 \usepackage{transparent}
@@ -32,6 +35,7 @@
 \usepackage{float} % permet de fixer les figures avec [H]
 \usepackage{graphicx}
 % Others
+
 \usepackage[backend=biber,sorting=none,style=alphabetic]{biblatex} % bilbiography
 \usepackage{hyperref} % hyperlinks
 \usepackage{footnote} % footnotes
@@ -58,6 +62,10 @@
 \usepackage{tocloft}
 \usepackage{parskip} % set parskip to non-zero value and parindent to zero, avoid underfull hbox errors
 \usepackage{titling}
+
+\usepackage{charter}
+%\usepackage{mathptmx}
+%\usepackage{newtxtext,newtxmath}
 
 \usetikzlibrary{arrows.meta}
 
@@ -130,14 +138,14 @@
 
 % Page layout
 
-%\pagestyle{headings}
-%\headheight = 12pt
-%\headsep = 25pt
+\pagestyle{headings}
+\headheight = 12pt
+\headsep = 25pt
 
-%\pagestyle{fancy}
-%\fancyhf{}
-%\lhead{\nouppercase\leftmark}
-%\rhead{\thepage}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\nouppercase\rightmark}
+\rhead{\thepage}
 
 \definecolor{gray75}{gray}{0.75}
 \newcommand{\hsp}{\hspace{20pt}}

@@ -141,7 +141,7 @@
             \end{array}
             \right)
         \end{equation}
-        is the representation of $\Gamma$ coming from the fundamental representation of $\SU(3)$, so $\cdot$ is just the matrix product. We can see that the origin is alays a fixed point so this action is never free. Since $\C^3$ is a smooth manifold, this makes $\C^3/\Gamma$ an orbifold. Note this case naturally includes the case $\Gamma\subset\SU(2)$ too, just not the case $\Gamma\in\SO(6)$.
+        is the representation of $\Gamma$ coming from the fundamental representation of $\SU(3)$, so $\cdot$ is just the matrix product. We can see that the origin is always a fixed point so this action is never free. Since $\C^3$ is a smooth manifold, this makes $\C^3/\Gamma$ an orbifold. Note this case naturally includes the case $\Gamma\subset\SU(2)$ too, just not the case $\Gamma\in\SO(6)$.
 
         Note that if $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$ \marker, see appendix \ref{sec:CYcrepant}.
 
@@ -394,7 +394,7 @@
                     \draw (90:2.45) node{$N_1$};
                     \draw (210:2.45) node{$N_2$};
                 \end{tikzpicture}
-                \caption{Scalar quiver of the $\C^3/\Z_3$ daughter theory.}
+                \caption{Quiver of the $\C^3/\Z_3$ daughter theory.}
                 \label{fig:Z3quiver}
             \end{figure}
             The adjacency matrix of this quiver is
@@ -602,7 +602,7 @@
                 \draw (70:2.2) node{$N_1$};
                 \draw (190:2.2) node{$N_2$};
             \end{tikzpicture}
-            \caption{Scalar quiver of the $\C\times\C^2/\Z_3$ daughter theory.}
+            \caption{Quiver of the $\C\times\C^2/\Z_3$ daughter theory.}
             \label{fig:2Z3quiver}
         \end{figure}
         It is easy to see how the construction of the the quiver generalizes for arbitrary $n$. The adjacency matrix is
@@ -636,10 +636,35 @@
         \begin{equation}
             \{(\rho_i,V_i)\}_{i=0,\dots,n+2}
         \end{equation}
-        with $V_i=\C$ for $i=0,\dots,3$ and $V_i=\C^2$ for $i=4,\dots,n+2$, so there are $4$ one-dimensional representations and $n-1$ two-dimensional representations. They are explicitely given in section \ref{sec:irrep}. Using the bi-index notations $A_{\mu;i\alpha_i,j\beta_j}$ with $i,j=0,\dots,n+2$ and $\alpha_i,\beta_j=0,\dots,\dim\rho_i\cdot N_i-1$, the invariant configurations must have $A_{\mu;ij}=0$ if $i\neq j$ and the blocks corresponding to two-dimensional representations must satisfy
-        \begin{align}
-            A_{\mu;4\alpha_i,4\beta_j}
-        \end{align}
+        with $V_i=\C$ for $i=0,\dots,3$ and $V_i=\C^2$ for $i=4,\dots,n+2$, so there are $4$ one-dimensional representations and $n-1$ two-dimensional representations. They are explicitely given in section \ref{sec:irrep}. Using the bi-index notations $A_{\mu;i\alpha_i,j\beta_j}$ with $i,j=0,\dots,n+2$ and $\alpha_i,\beta_j=0,\dots,\dim\rho_i\cdot N_i-1$, the invariant configurations must have $A_{\mu;ij}=0$ if $i\neq j$, i.e. it must have a diagonal block-form, wiht block of size $\N_i\times N_i$ for $i=0,\dots,3$ and of size $2N_i\times 2N_i$ for $i=4,\dots,n+1$. The blocks transforming under the $2$-dimensional representations must have the form
+        \begin{equation}
+            A_{\mu;ii}=
+            \begin{bmatrix}
+                A_{\mu;i0,i0} & A_{\mu;i0,i1} & \cdots & A_{\mu;i,0,i,2N_i-2} & A_{\mu;i,0,i,2N_i-1} \\ 
+                \mp A_{\mu;i0,i1} & A_{\mu;i0,i0} & \cdots & \mp A_{\mu;i,0,i,2N_i-1} & A_{\mu;i,0,i,2N_i-2} \\
+                \vdots & \cdots & \ddots & \vdots & \vdots \\
+                A_{\mu;i,2N_i-2,i,0} & A_{\mu;i,2N_i-2,i1} & \cdots & A_{\mu;i,2N_i-2,i,2N_i-2} & A_{\mu;i,2N_i-2,i,2N_i-1} \\ 
+                \mp A_{\mu;i,2N_i-2,i1} & A_{\mu;i,N_i-2,i,0} & \cdots & \mp  A_{\mu;i,2N_i-2,i,2N_i-1} & A_{\mu;i,2N_i-2,i,2N_i-2}
+            \end{bmatrix}
+        \end{equation}
+        so each block is composed of $N^2_i$ $2\times2$ matrices of the form
+        \begin{equation}
+            \begin{bmatrix}
+                A & B \\
+                \mp B & A
+            \end{bmatrix}.
+        \end{equation}
+        We take the ``$-$'' signs when $i$ is even and the ``$+$'' signs when $i$ is odd. This comes from the fact that the $2$-dimensional representations involve alternating signs.
+
+        R-symmetry acts on the three complex scalar fields as
+        \begin{equation}
+            R(A) =
+            \begin{matrix}
+                A
+            \end{matrix}
+        \end{equation}
+
+
 
 
 
@@ -800,7 +825,7 @@
         Conformal transformations and supersymmetries do not commute so the presence of conformal symmetry in addition to $\mN=4$ supersymmetry leads to an even larger group of symmetry known as the \emph{superconformal group}. In the $D=4,\mN=4$ case, the superconformal group is the super group\footnote{Supermanifold which is also a group with smooth product and inverse maps.} $\SU(2,2|4)$. The different component of the latter are
         \begin{itemize}
             \item \textbf{Conformal symmetries}: they form the 15-dimensional subgroup $\SO(2,4)$ and are generated by $P_\mu,M_{\mu\nu},K_\mu$ and $D$.
-            \item \textbf{R-symmetry}: they form the 15-dimensional subgroup $\SO(6)_R$ and are generated by $T^A$ ($A+1,\dot,15$).
+            \item \textbf{R-symmetry}: they form the 15-dimensional subgroup $\SO(6)_R$ and are generated by $T^A$ ($A=1,\dots,15$).
             \item \textbf{Poincaré supersymmetries}: they form the 16-dimensional sub group \marker and are generated by $Q^I_\alpha$ and $\bar{Q}^I_{\dalpha}$.
             \item \textbf{Conformal supersymmetries}: they form the 16-dimensional subgroup \marker and are generated by $S_{\alpha I}$ and $\bar{S}^{\dalpha I}$.
         \end{itemize}
@@ -811,7 +836,7 @@
         
         For $D=4,\mN=4$, there is one kind of supermultiplet, the vector multiplet. The decomposition of the $\mN = 4$ vector superfield in terms of $\mN = 1$ representations is as follows:
         \begin{equation}
-            [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi_A = (\phi^A,\psi^A_\alpha,F^A).
+            [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi^A = (\phi^A,\psi^A_\alpha,F^A).
         \end{equation}
         with $A=1,2,3$, i.e. in terms of one vector supermultiplet and three chiral scalar supermultiplets. The propagating degrees of freedom are therefore a vector field, six scalars and four gauginos.
         
@@ -900,7 +925,7 @@
 
             The first thing to recall is that every finite subgroup of $\SL(2,\C)$ is isomorphic to a subgroup of $\SU(2,\C)$ and vice-versa, so we equivalently talk about the subgroups of $\SU(2)$. The finite subgroups of $\SU(2)$, called the \emph{binary polyhedral groups}, are the doubles covers of the finite subgroups of $\SO(3)$ that are called \emph{polyhedral groups}. They simply constitutes the symmetries of the Platonic solids. The groups fall into two infinite series, associated to the regular polygons, as well as three exceptional, associated with the 5 regular polyhedra: the tetrahedron (self-dual), the cube (and its dual octahedron), the icosahedron (and its dual dodecahedron).
 
-            More precisely, the finite subgroups of $\SU(2)$ are
+            More precisely, the finite subgroups of $\SL(2,\C)$ are
             \begin{itemize}
                 \item $\Z_n$ : cyclic group of order $n$ ($n\geq2$) generated by
                 \begin{equation}
@@ -909,12 +934,12 @@
                         0 & \zeta^{-1}_m
                     \end{bmatrix}
                 \end{equation}
-                \item $2\D_n$ : \emph{binary dihedral groups} of order $4n$ ($n\geq1$) generated by
+                \item $2\D_n$ : \emph{binary dihedral groups} (also known as the \emph{dicyclic group}) of order $4n$ ($n\geq1$) generated by
                 \begin{equation}
                     A \equiv
                     \begin{bmatrix}
-                        \zeta_{2m} & 0\\
-                        0 & \zeta^{-1}_{2m}
+                        \zeta_{2n} & 0\\
+                        0 & \zeta^{-1}_{2n}
                     \end{bmatrix}\quad \text{ and }
                     B \equiv 
                     \begin{bmatrix}
@@ -922,6 +947,7 @@
                         i & 0
                     \end{bmatrix}
                 \end{equation}
+                One can show that $A^n=B^2$ and that $AB=BA^{-1}$ so that $\D_n=\{B^bA^a|0\leq b \leq 3, 0\leq a \leq n-1\}$. This rewriting of the most general element of the group will be useful. Note that $2\D_1=\Z_2$ and $2\D_2=\Z_4$.
                 \item $2\mathcal{T}$ : \emph{binary tetrahedral group} of order $24$ generated by $D_2$ and
                 \begin{equation}
                     C \equiv \frac{1}{\sqrt{2}}
@@ -1331,7 +1357,7 @@
                         }
                         \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
                         \draw[fill=black] (2*1.25,2*1.25) circle[radius=0.15];
-                    \end{tikzpicture}\quad($6$ nodes)\end{tabular} \\ \hline
+                    \end{tikzpicture}\quad($7$ nodes)\end{tabular} \\ \hline
                 $\mathfrak{e}_7$ & yes & 
                 \begin{tabular}{@{}l@{}} $E_7:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
                     \draw (0,0) edge (5*1.25,0);
@@ -1407,7 +1433,23 @@
                         \draw[fill=black] (-1.25,0) circle[radius=0.15];
                     \end{tikzpicture}\quad($3$ nodes)\end{tabular} \\ \hline
             \end{tabular}
-            \caption{Simple Lie algebras and their (extended) Dynkin diagrams.}
+            \caption{Simple Lie algebras and their (extended) Dynkin diagrams. The first four algebras are the classical simple Lie algebras and the last five are the excpetional simple Lie algebras.}
+        \end{figure}
+
+        Finally, we can see the following correspondence between the extended Dynkin diagrams and the McKay graphs.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                \begin{tabular}{@{}c@{}} Simply Lie \\ group \end{tabular} & \begin{tabular}{@{}c@{}} Simply laced \\ Lie algebra \end{tabular} & \begin{tabular}{@{}c@{}} Extended \\ Dybkin diagram \end{tabular} & \begin{tabular}{@{}c@{}} Finite subgroup \\ of $\SO(3)$ \end{tabular} & \begin{tabular}{@{}c@{}} Finite subgroup \\ of $\SU(2)$ \end{tabular} \\ \hline
+                $\SU(n+1)$ & $\mathfrak{sl}(n+1,\C)$ & $\tilde{A}_n$ & $\Z_{n+1}$ & $\Z_{n+1}$ \\ \hline
+                $\SO(2n),\Spin(2n)$ & $\mathfrak{so}(2,\R)$ & $\tilde{D}_n$ & $\D_{2(n-2)}$ & $2\D_{2(n-2)}$ \\ \hline
+                $E6$ & $\mathfrak{e}_6$ & $\tilde{E_6}$ &  $\T$ & $2\T$ \\ \hline
+                $E7$ & $\mathfrak{e}_7$ & $\tilde{E_7}$ & $\O$ & $2\O$ \\ \hline
+                $E8$ & $\mathfrak{e}_8$ & $\tilde{E_8}$ & $\I$ & $2\I$ \\ \hline
+            \end{tabular}
+            \caption{Classical McKay correspondence.}
         \end{figure}
 
     \subsection{Geometrical McKay correspondence}
