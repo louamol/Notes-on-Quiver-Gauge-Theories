@@ -62,16 +62,6 @@
     \begin{result}
         We consider $N$ D$3$-branes carrying a $\U(N)$ gauge group on various orbifolds of $\R^6$. Requiring $\mN=1$ supersymmetry for the worldvolume theory imposes that the transverse space must be a Calabi-Yau orbifold. Ignoring gravity for the worldvolume theory and if we want more interresting cases, we can actually consider the larger class of non-compact singular Calabi-Yau spaces.
     \end{result}
-
-    \subsection{More general context}
-
-        More generally speaking, we can consider a D$p$-brane in type II string theory (type IIA if $p$ is even and type IIB if $p$ is odd). The spacetime is then of the form
-        \begin{equation}
-            M = \R^{1,p}\times\R^{9-p}/\Gamma
-        \end{equation}
-        where $\Gamma$ is a discrete subgroup of $\Spin(9-p)$. If $\Gamma$ is a subgroup of a special holonomy group, we recover a somewhat generalized version of the paradigm that we discussed above. In this case the transverse space is a Calabi-Yau orbifold and some degree of supersymmetry is preserved. Note that the fermionic and bosonic quivers that coincides. If $\Gamma$ is not a subgroup os a special holonomy group, then the $(p+1)$-dimensional quiver gauge theory that we obtain in the low-energy limit is not supersymmetric. We then have different quivers for the fermions and the bosons, although with the same vertices, by definition.
-
-        One can also consider replacing the orbifold by a conifold by deforming singular algebraic description of the orbifold with a field into a family smooth surfaces. The total space is then the conifold.
     
 
 \section{The simplest case: $S=\C^3$}
@@ -159,7 +149,7 @@
         \begin{equation}
             \Ad:\left(
             \begin{array}{ccc}
-                U(n) & \longrightarrow & \GL(\mathfrak{u}(N)) \\
+                \U(n) & \longrightarrow & \GL(\mathfrak{u}(N)) \\
                 U & \longmapsto & \Ad_U
             \end{array}
             \right),\qquad
@@ -303,7 +293,10 @@
                 }} \right\}N_2$
                 \end{tabular}.\label{eq:reprrhoZn}
             \end{equation}
-            Since $\dim\rho_i=1$, $N_0+N_1+N_2=N$. 
+            Since $\dim\rho_i=1$, we have
+            \begin{equation}
+                N_0+N_1+N_2=N.\label{eq:sumNiZ3}
+            \end{equation} 
             
             The gauge field configurations that are left invariant under the action of $\Z_n$ are therefore the ones that satisfy
             \begin{equation}
@@ -382,7 +375,7 @@
                 X^m_{12}\in(\boldsymbol{\textbf{N}_{2}},\boldsymbol{\bar{\textbf{N}}_1}),\quad
                 X^m_{20}\in(\boldsymbol{\textbf{N}_{0}},\boldsymbol{\bar{\textbf{N}}_2}).
             \end{equation}
-            In each representation ($(\boldsymbol{\textbf{N}_1},\boldsymbol{\bar{\textbf{N}}_0}),(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_1})$ or $(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_0})$) there are six real scalars, i.e. 3 complex scalars. They are each represented by an arrow between the right representations, see fig. \ref{fig:Z3quiver}.
+            In each representation bi-fundamental representation there are six real scalars, i.e. 3 complex scalars. They are each represented by an arrow between the right representations, see fig. \ref{fig:Z3quiver}.
             \begin{figure}[H]
                 \centering
                 \begin{tikzpicture}[scale=0.8]
@@ -406,7 +399,7 @@
                     3 & 0 & 0
                 \end{bmatrix}
             \end{equation}
-            which is coherent with the fact that the coefficients of the McKay decompositions of $\boldsymbol{1}\oplus\boldsymbol{1}\oplus\boldsymbol{1}$ are
+            which is coherent with the fact that the coefficients of the McKay decomposition of $\rho_1\oplus\rho_1\oplus\rho_1$ are
             \begin{align}
                 \begin{split}
                     n_{00} &= 0,\quad n_{01} = 3\qquad n_{02}=0,\\
@@ -417,20 +410,17 @@
 
         \subsubsection{Gauge anomaly cancellation}
         
-            Finally, let us discuss the gauge anomaly cancellation. Our fields transform under the adjoint representation of $\SU(n)$, under the fundamentals of $\SU(N_i)$ and under the anti-fundamentals of $\SU(N_i)$. The adjoint representation being reel, it is self-conjugate and therefore do not contribute to the anomaly. Fundamentals and anti-fundamentals representations of $\SU(N_0)$, $\SU(N_1)$ and $\SU(N_2)$ have opposite contribution. Anomaly cancellation therefore imposes that the number a fields transforming in $\textbf{N}_j$ is equal to the number of fields transforming in $\boldsymbol{\bar{\textbf{N}}}_j$, see appendix \eqref{sec:anomalies}. From the diagram, we can see that there are
-            \begin{equation}
-                \dim(\SU(N_i)\times\bar{\SU(N_j)}) = (N^2_i-1)(N^2_j-1)
-            \end{equation}
-            fields transforming in the representation $(\boldsymbol{\textbf{N}}_i,\boldsymbol{\bar{\textbf{N}}}_j)$. Since the gauge group $G_{\text{proj}}$ here possesses three factors, or equivalently since the quiver possesses three vertices, there are three conditions:
+            Finally, let us discuss the gauge anomaly cancellation. Our fields transform under the adjoint representation of $\SU(n)$, under the fundamentals of $\SU(N_i)$ and under the anti-fundamentals of $\SU(N_i)$. The adjoint representation being reel, it is self-conjugate and therefore do not contribute to the anomaly. Fundamentals of $\SU(N_i)$ have a $+1$ contribution to the anomaly and anti-fundamentals of $\SU(N_i)$ have a $-1$ contribution to the anomaly. Anomaly cancellation therefore imposes that the contribution of the fundamental and of the anti-fundamental of $\SU(N_i)$ cancel each other for each $i=0,1,2$, see appendix \eqref{sec:anomalies}. The bi-fundamental representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ counts as $N_j$ fundamentals of $\SU(N_i)$ and as $N_i$ anti-fundamentals $\SU(N_j)$. We get the three following conditions:
             \begin{align}
-                \SU(N_0) &: (N^2_1-1)(N^2_0-2) = (N^2_0-1)(N^2_2-1),\\
-                \SU(N_1) &: (N^2_2-1)(N^2_1-2) = (N^2_1-1)(N^2_0-1),\\
-                \SU(N_2) &: (N^2_0-1)(N^2_2-2) = (N^1_2-1)(N^2_1-1).
+                \SU(N_0) &: N_2-N_1 = 0,\\
+                \SU(N_1) &: N_0-N_2 = 0,\\
+                \SU(N_2) &: N_1-N_0 = 0.
             \end{align}
-            This immediately implies that
+            which immediately imply
             \begin{equation}
                 N_0=N_1=N_2.
             \end{equation}
+            From \eqref{eq:sumNiZ3}, we get that $N_0=N_1=N_2=N/3$, meaning that that the daughter theory has quantum gauge symmetry if and only if the parent theory with has gauge group $\SU(N)$ where $N$ is a multiple of $3$. Or, in other words, if the number of D-branes is a multiple of $3$.
 
 \section{$\mN=2$ daughter theories}
 
@@ -624,10 +614,9 @@
         \end{align}
         
         Gauge anomaly cancellation now imposes that
-        \begin{align}
-            &(N^2_i-1)(N^2_{i+1}-1)+(N^2_i-1)(N^2_{i-1}-1)+(N^2_i-1)^2\\
-            &=(N^2_{i+1}-1)(N^2_i-1)+(N^2_{i-1}-1)(N^2_i-1)+(N^2_i-1)^2
-        \end{align}
+        \begin{equation}
+            N_{i-1}-N_{i-1}+N_{i+1}+N_{i+1}=0
+        \end{equation}
         for $i=0,\dots,n-1$. Those constrains are always satisfied so the the factors $N_i$ are arbitrary, as long as $\sum_iN_i=N$ of course.
 
     \subsection{$S=\C\times\C^2/\D_n$}
@@ -664,7 +653,11 @@
             \end{matrix}
         \end{equation}
 
+    \subsection{$S=\C\times\C^2/\T$}
 
+    \subsection{$S=\C\times\C^2/\mathcal{O}$}
+
+    \subsection{$S=\C\times\C^2/\I$}
 
 
 
@@ -807,6 +800,24 @@
     \end{table}
 
 
+\section{Generalizations}
+
+    Let us discuss the different ways our previous discussions can be generalized.
+
+    \subsection{$(p+1)$-dimensional quiver gauge theories}
+
+        First, we can generalize our initial brane-world paradigm and consider D$p$-branes in type II string theory (type IIA if $p$ is even and type IIB if $p$ is odd) instead of just D$3$-branes. The spacetime is then of the form
+        \begin{equation}
+            M = \R^{1,p}\times\R^{9-p}/\Gamma
+        \end{equation}
+        where $\Gamma$ is a discrete subgroup of $\Spin(9-p)$. If $\Gamma$ is a subgroup of a special holonomy group, we recover a somewhat generalized version of the paradigm that we discussed above. In this case the transverse space is a Calabi-Yau orbifold and some degree of supersymmetry is preserved. Note that the fermionic and bosonic quivers that coincides. If $\Gamma$ is not a subgroup os a special holonomy group, then the $(p+1)$-dimensional quiver gauge theory that we obtain in the low-energy limit is not supersymmetric. We then have different quivers for the fermions and the bosons, although with the same vertices, by definition.
+
+        One can also consider replacing the orbifold by a conifold by deforming singular algebraic description of the orbifold with a field into a family smooth surfaces. The total space is then the conifold.
+
+    \subsection{Projective representations and discrete torsion}
+
+    \subsection{Quiver gauge theories deformations and conifold}
+
 \pagebreak
 \appendix
 
@@ -947,7 +958,7 @@
                         i & 0
                     \end{bmatrix}
                 \end{equation}
-                One can show that $A^n=B^2$ and that $AB=BA^{-1}$ so that $\D_n=\{B^bA^a|0\leq b \leq 3, 0\leq a \leq n-1\}$. This rewriting of the most general element of the group will be useful. Note that $2\D_1=\Z_2$ and $2\D_2=\Z_4$.
+                One can show that $A^n=B^2$ and that $AB=BA^{-1}$ so that $2\D_n=\{B^bA^a|0\leq b \leq 3, 0\leq a \leq n-1\}$. This rewriting of the most general element of the group will be useful.
                 \item $2\mathcal{T}$ : \emph{binary tetrahedral group} of order $24$ generated by $D_2$ and
                 \begin{equation}
                     C \equiv \frac{1}{\sqrt{2}}
@@ -978,7 +989,7 @@
                     \end{bmatrix}
                 \end{equation}
             \end{itemize}
-            with $\zeta_m\equiv e^{i\frac{2\pi}{m}}$ such that $(\zeta_m)^m=1$.
+            with $\zeta_m\equiv e^{i\frac{2\pi}{m}}$ such that $(\zeta_m)^m=1$. Note that the orders are all divisible by $2$. This is because the center of $\SU(2)$ is $\Z_2$.
 
         \subsubsection{Irreducible representations}\label{sec:irrep}
 
@@ -1144,6 +1155,7 @@
         \begin{itemize}
             \item the finite subgroups of $\SU(2)$
         \end{itemize}
+        so there are $2$ infinite series and $5$ exceptional subgroups. Note that they are all divisible by $3$ because the center of $\SU(3)$ is $\Z_3$.
 
 \section{The McKay correspondence}
 
@@ -1475,6 +1487,8 @@
         \item $n=3$: a crepant resolution always exists but it is not unique; they are related by flops. However all the crepant resolutions have the same Euler and Betti numbers: the \emph{stringy} Betti and Hodge numbers of the orbifold.
         \item $n\geq4$: very little is known; crepant resolution ecists in rather special cases. Many singularity are terminal, which implies that they admit no crepant resolution.
     \end{itemize}
+
+\section{Toric and non-toric singularities}
 
     
 
