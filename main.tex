@@ -705,8 +705,9 @@
             \end{align*}
             For an arbitrary $n$, the total number of different representation is
             \begin{equation}
-                \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor = 
+                \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}+1\right\rfloor = \left\lfloor \frac{n}{3}\right\rfloor + \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor.
             \end{equation}
+            This expression can be simplified, see appendix \ref{app:compsum}.
         
         
         
@@ -1534,7 +1535,7 @@
 
 \section{Some derivations}
 
-    \subsection{}
+    \subsection{}\label{app:compsum}
 
         We want to compute the sum
         \begin{equation}
@@ -1562,8 +1563,16 @@
                 \sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor = \sum^{m-1}_{a=1}~\left\lfloor \frac{a}{2}\right\rfloor = 
                 \begin{cases}
                     \left(\frac{m}{2}-1\right)\frac{m}{2},\qquad\text{if $m$ is even}\\
-                    \frac{1}{2}\left( \frac{m^2}{2}-1 \right),\qquad\text{if $m$ is odd}
+                    \frac{(m-1)^2}{4},\qquad\text{if $m$ is odd}
                 \end{cases}.\label{eq:suma2floor}
+            \end{equation}
+            and
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{3a}{2}\right\rfloor = 
+                \begin{cases}
+                    \frac{m(3m-4)}{2},\qquad\text{if $m$ is even}\\
+                    \frac{(m-1)(3m-1)}{4},\qquad\text{if $m$ is odd}
+                \end{cases}.\label{eq:sum3a2floor}
             \end{equation}
             \item if $r=1$, then \eqref{eq:sumfloor} becomes
             \begin{equation}
@@ -1574,25 +1583,44 @@
                 \sum^{m-1}_{a=0}~\left\lfloor \frac{a+1}{2}\right\rfloor = \sum^{m}_{a=1}~\left\lfloor \frac{a}{2}\right\rfloor = 
                 \begin{cases}
                     \frac{m(m-1)}{4},\qquad\text{if $m$ is even}\\
-                    \frac{1}{2}\left( \frac{m^2}{2}-1 \right),\qquad\text{if $m$ is odd}
+                    \frac{m^2}{4},\qquad\text{if $m$ is odd}
                 \end{cases}
             \end{equation}
-            by \eqref{eq:suma2floor}.
+            by \eqref{eq:suma2floor} so
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a+\frac{1}{2}\right\rfloor=
+                \begin{cases}
+                    \frac{3m(m-1)}{2},\qquad\text{if $m$ is even}\\
+                    \frac{m(5m-4)}{4},\qquad\text{if $m$ is odd}
+                \end{cases}
+            \end{equation}
             \item if $r=2$, then \eqref{eq:sumfloor} becomes
             \begin{equation}
                 \sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a+1\right\rfloor = m+\sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a\right\rfloor.
             \end{equation}
-            and we already now the second term from the case $r=0$.
+            so
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a+1\right\rfloor=
+                \begin{cases}
+                    \frac{m(3m-2)}{2},\qquad\text{if $m$ is even}\\
+                    \frac{3m^2+1}{4},\qquad\text{if $m$ is odd}
+                \end{cases}
+            \end{equation}
+            from \eqref{eq:sum3a2floor}.
         \end{itemize}
         In the end, we get that
         \begin{equation}
-            \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor=
+            \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}+1\right\rfloor=
             \begin{cases}
-                ,\qquad\text{if $n=3m$ is even}\\
-                ,\qquad\text{if $n=3m+1$ is odd},\\
-                ,\qquad\text{if $n=3m+2$ is odd}
-            \end{cases}.
+                2k+\frac{2k(6k-4)}{2},\qquad\text{if $n=6k$}\\
+                2k+\frac{6k(2k-1)}{2},\qquad\text{if $n=6k+1$},\\
+                2k+\frac{2k(6k-2)}{2},\qquad\text{if $n=6k+2$},\\
+                (2k+1)+\frac{2k(6k+2)}{4},\qquad\text{if $n=6k+3$},\\
+                (2k+1)+\frac{(2k+1)(10k+4)}{4},\qquad\text{if $n=6k+4$},\\
+                (2k+1)+\frac{3(2k+1)^2+1}{4},\qquad\text{if $n=6k+5$}
+            \end{cases}\marker
         \end{equation}
+        using $m=2k$ if $m$ if even and $m=2k+1$ if $m$ is odd.
 
 \pagebreak
 
