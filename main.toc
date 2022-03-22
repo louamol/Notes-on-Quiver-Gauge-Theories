@@ -41,50 +41,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1}$S=\mathbb {C}^3/\mathbb {Z}_n$}{13}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Summary of daughter theories}{14}{section.6}%
+\contentsline {subsubsection}{\numberline {5.1.1}Actions of $\mathbb {Z}_n$ on $\mathbb {C}^3$}{13}{subsubsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Generalizations}{15}{section.7}%
+\contentsline {subsection}{\numberline {5.2}$S=\mathbb {C}^3/(\mathbb {Z}_m\times \mathbb {Z}_n)$}{15}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}$(p+1)$-dimensional quiver gauge theories}{15}{subsection.7.1}%
+\contentsline {section}{\numberline {6}Summary of daughter theories}{15}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Projective representations and discrete torsion}{15}{subsection.7.2}%
+\contentsline {section}{\numberline {7}Generalizations}{16}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Quiver gauge theories deformations and conifold}{15}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.1}$(p+1)$-dimensional quiver gauge theories}{16}{subsection.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Gauge anomaly}{16}{appendix.A}%
+\contentsline {subsection}{\numberline {7.2}Projective representations and discrete torsion}{16}{subsection.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Reminder on $\mathcal {N}=4$ super Yang-Mills theory in $D=4$}{16}{appendix.B}%
+\contentsline {subsection}{\numberline {7.3}Quiver gauge theories deformations and conifold}{16}{subsection.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.1}Superconformal group $\text {SU}(2,2|4)$ and its representations}{16}{subsection.B.1}%
+\contentsline {section}{\numberline {A}Gauge anomaly}{17}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.2}Matter content}{16}{subsection.B.2}%
+\contentsline {section}{\numberline {B}Reminder on $\mathcal {N}=4$ super Yang-Mills theory in $D=4$}{17}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.3}Dynamical phases}{17}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.1}Superconformal group $\text {SU}(2,2|4)$ and its representations}{17}{subsection.B.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Calabi-Yau compactification}{17}{appendix.C}%
+\contentsline {subsection}{\numberline {B.2}Matter content}{17}{subsection.B.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Properties of D-branes in type II theories}{17}{appendix.D}%
+\contentsline {subsection}{\numberline {B.3}Dynamical phases}{18}{subsection.B.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E}Some finite subgroups}{18}{appendix.E}%
+\contentsline {section}{\numberline {C}Calabi-Yau compactification}{18}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.1}Finite subgroups of $\text {SU}(2)$ and $\text {SL}(2,\mathbb {C})$}{18}{subsection.E.1}%
+\contentsline {section}{\numberline {D}Properties of D-branes in type II theories}{18}{appendix.D}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {E.1.1}Finite subgroups}{18}{subsubsection.E.1.1}%
+\contentsline {section}{\numberline {E}Some finite subgroups}{19}{appendix.E}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {E.1.2}Irreducible representations}{19}{subsubsection.E.1.2}%
+\contentsline {subsection}{\numberline {E.1}Finite subgroups of $\text {SU}(2)$ and $\text {SL}(2,\mathbb {C})$}{19}{subsection.E.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {E.1.3}Character tables}{20}{subsubsection.E.1.3}%
+\contentsline {subsubsection}{\numberline {E.1.1}Finite subgroups}{19}{subsubsection.E.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2}Finite subgroups of $\text {SU}(3)$}{21}{subsection.E.2}%
+\contentsline {subsubsection}{\numberline {E.1.2}Irreducible representations}{20}{subsubsection.E.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {F}The McKay correspondence}{22}{appendix.F}%
+\contentsline {subsubsection}{\numberline {E.1.3}Character tables}{21}{subsubsection.E.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.1}Classical correspondence}{22}{subsection.F.1}%
+\contentsline {subsection}{\numberline {E.2}Finite subgroups of $\text {SU}(3)$}{22}{subsection.E.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {F.2}Geometrical McKay correspondence}{24}{subsection.F.2}%
+\contentsline {section}{\numberline {F}The McKay correspondence}{23}{appendix.F}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {G}Calabi-Yau manifolds, orbifolds and crepant resolutions}{24}{appendix.G}%
+\contentsline {subsection}{\numberline {F.1}Classical correspondence}{23}{subsection.F.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {H}Toric and non-toric singularities}{24}{appendix.H}%
+\contentsline {subsection}{\numberline {F.2}Geometrical McKay correspondence}{25}{subsection.F.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Markers}{25}{appendix.H}%
+\contentsline {section}{\numberline {G}Calabi-Yau manifolds, orbifolds and crepant resolutions}{25}{appendix.G}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {H}Toric and non-toric singularities}{25}{appendix.H}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {I}Some derivations}{25}{appendix.I}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {I.1}}{25}{subsection.I.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Markers}{27}{equation.I.10}%

@@ -232,7 +232,7 @@
         From \eqref{eq:defaij} we see that $n_{ij}=a^{\mR}_{ij}$ and therefore that the matter quivers that we defined previously are exactly the McKay graph associated to the matter representation in question. Or, put differently, the matter content of the daughter theory is encapsulated in the McKay graphs of $\Gamma$ and with respect to $\mR$ with $\mR=\bs{4}$ for spinors and $\mR=\bs{6}$ for scalars. This very important point allows us to use known results on McKay graphs such as the McKay correspondence for example.
 
 
-    \subsection{A simple example: $S=\C^3/\Z_3$}
+    \subsection{A simple example: $S=\C^3/\Z_3$}\label{sec:C3Z3}
 
         We illustrate the previous discussion by the simple case where $\Gamma=\Z_3$ acts on $\C^2$ as
         \begin{equation}
@@ -668,7 +668,49 @@
 
     \subsection{$S=\C^3/\Z_n$}
 
-        Let us now consider the general case of $\Z_n$ acting on $\C^3$. The beginning the the reasoning is very similar to the case $n=3$. We start by considering a representation $(\rho,\C^N)$ of $\Z_n$. A complete set of irreducible representations of $\Z_n$ is given by $\{(\rho_k,V_k)\}_{k=0,\dots,n-1}$ with $V_k=\C$ and
+        Let us now consider the general case of $\Z_n$ acting on $\C^3$, i.e. we want to generalize the case that we treated in section \ref{sec:C3Z3}. 
+        
+        \subsubsection{Actions of $\Z_n$ on $\C^3$}
+        
+            The first thing to do is to specify a representation of $\Z_n$ on $\C^3$. Any representation $(R,\C^3)$ can be decomposed as
+            \begin{equation}
+                R=\bigoplus^{n-1}_{k=0} \rho^{\oplus n_k}_k
+            \end{equation}
+            and is therefore equivalent to a block-diagonal representation. So $R$ can be taken to be
+            \begin{equation}
+                R(g)=
+                \begin{bmatrix}
+                    \zeta^a_n & 0 & 0 \\
+                    0 & \zeta^b_n & 0 \\
+                    0 & 0 & \zeta^c_n
+                \end{bmatrix}\label{eq:reprZnC3}
+            \end{equation}
+            and unitary, with $a,b,c$ some arbitrary exponents. We denote the representation \eqref{eq:reprZnC3} by $(a,b,c)$.  Unitarity imposes that
+            \begin{equation}
+                (a+b+c)\mod n = 0.\label{eq:cdtabc}
+            \end{equation}
+            Note that swapping $a,b$ and $c$ will give equivalent representations so we can restrict ourselves to $a\leq b\leq c$. Furthermore, taking $a$ or $a+n$ gives the same representation and the same is true for $b$ and $c$, so we we can actually restrict ourselves to $0<a\leq b\leq c<n$. We can trade the strict inequalities and allow the values $0$ or $n$ if we want to consider trivial representations as well. In this case, we will find that at least one direction of $\C^3$ is left untouched, i.e. we are in the situation where the orbifold is actually $\C\times\C^2/\Z_n$, which we will not consider here.
+
+            The problem has now been reformulated as follows:
+            we are looking for all possible ordered triplets $(a,b,c)$ such that $0<a\leq b\leq c<n$ and \eqref{eq:cdtabc}. For $n=1$ and $n=2$, it is clear that this is not possible, the possibilities involve at least one trivial representation. For $n=3$, the only possibility is $(1,1,1)$, the one we used in \ref{sec:C3Z3}. What about bigger values of $n$? First, note that because of \eqref{eq:cdtabc}, the only two possibilities are that $a+b+c$ is equal to $n$ or $2n$. Since we can ignore the case were it is equal to $2n$ (redundant\marker), we find that the maximum value that $a$ can take is $\lfloor n/3\rfloor$, so $a=1,\dots,\lfloor n/3\rfloor$. $c$ can then be expressed in terms of $a$ and $b$ as $c=n-a-b$. The constraint $b\leq c$ then implies $b\leq (n-a)/2$, i.e. $b=a,\dots,\lfloor (n-a)/2\rfloor$. To summarize, the representations are all the representations of the form $(a,b,n-a-b)$ with $a=1,\dots,\lfloor n/3\rfloor$ and $b=a,\dots,\lfloor (n-a)/2\rfloor$. For small values, we get
+            \begin{align*}
+                \Z_1 &: \text{necessarily involves a trivial representation}\\
+                \Z_2 &: \text{necessarily involves a trivial representation}\\
+                \Z_3 &: (1,1,1)\\
+                \Z_4 &: (1,1,2)\\
+                \Z_5 &: (1,1,3),(1,2,2)\\
+                \Z_6 &: (1,1,4),(1,2,3),(2,2,2)\\
+                \Z_7 &: (1,1,5),(1,2,4),(1,3,3),(2,2,3)\\
+                &\vdots
+            \end{align*}
+            For an arbitrary $n$, the total number of different representation is
+            \begin{equation}
+                \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor = 
+            \end{equation}
+        
+        
+        
+        The beginning the the reasoning is very similar to the case $n=3$. We start by considering a representation $(\rho,\C^N)$ of $\Z_n$. A complete set of irreducible representations of $\Z_n$ is given by $\{(\rho_k,V_k)\}_{k=0,\dots,n-1}$ with $V_k=\C$ and
         \begin{equation}
             \rho_i(g)=\zeta^k_n
         \end{equation}
@@ -753,7 +795,7 @@
             N_0=\marker.
         \end{equation}
 
-
+    \subsection{$S=\C^3/(\Z_m\times\Z_n)$}
 
 
 
@@ -1490,7 +1532,67 @@
 
 \section{Toric and non-toric singularities}
 
-    
+\section{Some derivations}
+
+    \subsection{}
+
+        We want to compute the sum
+        \begin{equation}
+            \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor.
+        \end{equation}
+        Let us write $n\in\N$ as $n=3m+r$ with $r=0,1$ or $2$ and $m\in\N$. Regardless of $r$, we have $\lfloor n/3\rfloor=m$ and
+        \begin{equation}
+            \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor = \sum^{m}_{a=1}~\left\lfloor \frac{3}{2}(m-a)+\frac{r}{2}\right\rfloor = \sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a+\frac{r}{2}\right\rfloor.\label{eq:sumfloor}
+        \end{equation}
+        \begin{itemize}
+            \item if $r=0$, then \eqref{eq:sumfloor} becomes
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a\right\rfloor = \sum^{m-1}_{a=0}~a+\sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor = \frac{(m-1)m}{2}+\sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor.
+            \end{equation}
+            Now if $m$ is even, we have
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor = 2\sum^{\left\lfloor \frac{m-1}{2}\right\rfloor}_{a=0}~a = 2\sum^{\frac{m}{2}-1}_{a=0}~a = \left(\frac{m}{2}-1\right)\frac{m}{2}
+            \end{equation}
+            and if $m$ is odd,
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor = 2\sum^{\left\lfloor \frac{m-2}{2}\right\rfloor}_{a=0}~a+\left\lfloor \frac{m-1}{2}\right\rfloor = 2\sum^{ \frac{m-3}{2}}_{a=0}~a+\frac{m-1}{2} = \frac{1}{2}\left( \frac{m^2}{2}-1 \right)
+            \end{equation}
+            so
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor = \sum^{m-1}_{a=1}~\left\lfloor \frac{a}{2}\right\rfloor = 
+                \begin{cases}
+                    \left(\frac{m}{2}-1\right)\frac{m}{2},\qquad\text{if $m$ is even}\\
+                    \frac{1}{2}\left( \frac{m^2}{2}-1 \right),\qquad\text{if $m$ is odd}
+                \end{cases}.\label{eq:suma2floor}
+            \end{equation}
+            \item if $r=1$, then \eqref{eq:sumfloor} becomes
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a+\frac{1}{2}\right\rfloor = \sum^{m-1}_{a=0}~a+\sum^{m-1}_{a=0}~\left\lfloor \frac{a+1}{2}\right\rfloor = \frac{(m-1)m}{2}+\sum^{m-1}_{a=0}~\left\lfloor \frac{a+1}{2}\right\rfloor
+            \end{equation}
+            and
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{a+1}{2}\right\rfloor = \sum^{m}_{a=1}~\left\lfloor \frac{a}{2}\right\rfloor = 
+                \begin{cases}
+                    \frac{m(m-1)}{4},\qquad\text{if $m$ is even}\\
+                    \frac{1}{2}\left( \frac{m^2}{2}-1 \right),\qquad\text{if $m$ is odd}
+                \end{cases}
+            \end{equation}
+            by \eqref{eq:suma2floor}.
+            \item if $r=2$, then \eqref{eq:sumfloor} becomes
+            \begin{equation}
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a+1\right\rfloor = m+\sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a\right\rfloor.
+            \end{equation}
+            and we already now the second term from the case $r=0$.
+        \end{itemize}
+        In the end, we get that
+        \begin{equation}
+            \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor=
+            \begin{cases}
+                ,\qquad\text{if $n=3m$ is even}\\
+                ,\qquad\text{if $n=3m+1$ is odd},\\
+                ,\qquad\text{if $n=3m+2$ is odd}
+            \end{cases}.
+        \end{equation}
 
 \pagebreak
 
