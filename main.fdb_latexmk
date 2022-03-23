@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1648055798 "main.bcf" "main.bbl" "main" 1648055922
+["biber main"] 1648055798 "main.bcf" "main.bbl" "main" 1648059357
   "bibliography.bib" 1646754682 4510 0e1c55dcfcd66aa8543f303285af45eb ""
-  "main.bcf" 1648055922 106012 93a10aa11c413ae075e946dcca683dfa "pdflatex"
+  "main.bcf" 1648059356 106012 93a10aa11c413ae075e946dcca683dfa "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1648055919 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1648055922
+["pdflatex"] 1648059354 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1648059357
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1611436566 20028 83828bfc09cd7e155b44dbc196c7a2de ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm10.pk" 1640084905 6984 c7399502ef4f82a49d18336e2c5a5399 ""
   "/home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm10.tfm" 1609679797 560 39fd35b5e4a6aca3672660cc548ba860 ""
@@ -410,16 +410,16 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1623060370 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty" 1609679784 2275 d29aca6fd67823551cb07584e3681d5d ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-base.sty" 1609679784 20688 beaddf14d96104d4bf016523be5395c5 ""
-  "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" 1648055915 111630 d12725065e272aacd83f6c4232ce87c7 ""
+  "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" 1648059350 112201 3868334b059a0469493e82603794df66 ""
   "Packages/custom_macros.tex" 1647361180 5255 0b648409e7c8f7524cc23f55d9f560da ""
   "Packages/custom_packages.tex" 1648055798 5146 f602f19dc30cd28479e6ac4884933c64 ""
-  "main.aux" 1648055922 19396 fff26415b0bcb559a7620e79dc959e59 "pdflatex"
+  "main.aux" 1648059356 19546 97800d0e00828c0335e058bb63854401 "pdflatex"
   "main.bbl" 1648055799 16952 c7f38f2d8f2b6a13156323d1e93e2aed "biber main"
-  "main.mak" 1648055922 988 622a6fcc3d49ab5290df8a8fd98638d2 "pdflatex"
-  "main.out" 1648055922 8567 3b1fa88ef332d0f309f2db687c2208d9 "pdflatex"
-  "main.run.xml" 1648055922 2313 bf3e4322c3614feb21562dbefc98a9cd "pdflatex"
-  "main.tex" 1648055915 111630 d12725065e272aacd83f6c4232ce87c7 ""
-  "main.toc" 1648055922 6574 630d3187fad6b14c8af96d053aa734e1 "pdflatex"
+  "main.mak" 1648059356 1080 0a24e08bf58638a9df0ab380f8ad5c3a "pdflatex"
+  "main.out" 1648059356 8567 3b1fa88ef332d0f309f2db687c2208d9 "pdflatex"
+  "main.run.xml" 1648059356 2313 bf3e4322c3614feb21562dbefc98a9cd "pdflatex"
+  "main.tex" 1648059350 112201 3868334b059a0469493e82603794df66 ""
+  "main.toc" 1648059356 6574 630d3187fad6b14c8af96d053aa734e1 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
