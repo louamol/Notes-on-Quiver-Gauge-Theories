@@ -698,103 +698,164 @@
                 \Z_2 &: \text{necessarily involves a trivial representation}\\
                 \Z_3 &: (1,1,1)\\
                 \Z_4 &: (1,1,2)\\
-                \Z_5 &: (1,1,3),(1,2,2)\\
+                \Z_5 &: (1,1,3),(1,2,2)\label{reprZ5C3}\\
                 \Z_6 &: (1,1,4),(1,2,3),(2,2,2)\\
                 \Z_7 &: (1,1,5),(1,2,4),(1,3,3),(2,2,3)\\
                 &\vdots
             \end{align*}
             For an arbitrary $n$, the total number of different representation is
             \begin{equation}
-                \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}+1\right\rfloor = \left\lfloor \frac{n}{3}\right\rfloor + \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor.
+                \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}+1\right\rfloor = \begin{cases}
+                    3k^2,\qquad\text{if $n=6k$}\\
+                    3k^2+k,\qquad\text{if $n=6k+1$},\\
+                    3k^2+2k,\qquad\text{if $n=6k+2$},\\
+                    3k^2+3k+1,\qquad\text{if $n=6k+3$},\\
+                    3k^2+4k+1,\qquad\text{if $n=6k+4$},\\
+                    3k^2+5k+2,\qquad\text{if $n=6k+5$}
+                \end{cases}
             \end{equation}
-            This expression can be simplified, see appendix \ref{app:compsum}.
+            The details are presented in appendix \ref{app:compsum}.
+
+        \subsubsection{Example: $\Z_5$}
+
+            For $\Z_5$, we saw that there are two nonequivalent ways of acting on $\C^3$, see \eqref{reprZ5C3}. Let us first consider the action $(1,1,3)$
+            \begin{equation}
+                R(g)=
+                \begin{bmatrix}
+                    \zeta_5 & 0 & 0\\
+                    0 & \zeta_5 & 0\\
+                    0 & 0 & \zeta^3_5
+                \end{bmatrix}
+            \end{equation}
+            i.e. $R=\rho_1\oplus\rho_1\oplus\rho_3$.
+
+            For the gauge field, the reasoning is exactly the same than for $\Z_3$ and we get
+            \begin{equation}
+                A_\mu=
+                \begin{bmatrix}
+                    A_{\mu;00} & & \\
+                    & \ddots & \\
+                    & & A_{\mu;44}
+                \end{bmatrix}
+            \end{equation}
+            where each block $A_{\mu;ii}$ is of size $N_i\times N_i$. The projected gauge group is
+            \begin{equation}
+                G_{\text{proj}} = \U(N_0)\times\U(N_1)\times\U(N_2)\times\U(N_3)\times\U(N_4).
+            \end{equation}
+
+            The scalar fields transform as
+            \begin{equation}
+                X^m_{i\alpha_i,j\beta_j}\to R(g)\indices{^m_n}\rho_i(g)X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1}
+            \end{equation}
+            so the invariant configurations must satisfy
+            \begin{equation}
+                X^m_{i\alpha_i,j\beta_j} = R(g)\indices{^m_n}\zeta^{i-j}_4\rho_i(g)X^n_{i\alpha_i,j\beta_j} = 
+                \begin{cases}
+                    \zeta^{i-j+1}X^m_{i\alpha_i,j\beta_j},\quad\text{if } m=0,1,2,3\\
+                    \zeta^{i-j+3}X^m_{i\alpha_i,j\beta_j},\quad\text{if } m=4,5.
+                \end{cases}
+            \end{equation}
+            and are therefore of the form
+            \begin{equation}
+                X^m = 
+                \begin{bmatrix}
+                    0 & X^m_{01} & 0 & 0 & 0\\
+                    0 & 0 & X^m_{12} & 0 & 0\\
+                    0 & 0 & 0 & X^m_{23} & 0\\
+                    0 & 0 & 0 & 0 & X^m_{34}\\
+                    X^m_{40} & 0 & 0 & 0 & 0
+                \end{bmatrix}
+            \end{equation}
+            for $m=0,1,2,3$ and 
+            \begin{equation}
+                X^m = 
+                \begin{bmatrix}
+                    0 & 0 & 0 & X^m_{03} & 0\\
+                    0 & 0 & 0 & 0 & X^m_{14}\\
+                    X^m_{20} & 0 & 0 & 0 & 0\\
+                    0 & X^m_{31} & 0 & 0 & 0\\
+                    0 & 0 & X^m_{42} & 0 & 0
+                \end{bmatrix}
+            \end{equation}
+            for $m=4,5$.
+
+            Now if we choose the representation $(1,2,2)$, i.e.
+            \begin{equation}
+                R(g)=
+                \begin{bmatrix}
+                    \zeta_5 & 0 & 0\\
+                    0 & \zeta^2_5 & 0\\
+                    0 & 0 & \zeta^2_5
+                \end{bmatrix}
+            \end{equation}
+            we get instead that the invariant field configurations must satisfy
+            \begin{equation}
+                X^m_{i\alpha_i,j\beta_j} = R(g)\indices{^m_n}\zeta^{i-j}_4\rho_i(g)X^n_{i\alpha_i,j\beta_j} =
+                \begin{cases}
+                    \zeta^{i-j+1}X^m_{i\alpha_i,j\beta_j},\quad\text{if } m=0,1\\
+                    \zeta^{i-j+2}X^m_{i\alpha_i,j\beta_j},\quad\text{if } m=2,3,4,5.
+                \end{cases}
+            \end{equation}
+            and are therefore of the form
+            \begin{equation}
+                X^m = 
+                \begin{bmatrix}
+                    0 & X^m_{01} & 0 & 0 & 0\\
+                    0 & 0 & X^m_{12} & 0 & 0\\
+                    0 & 0 & 0 & X^m_{23} & 0\\
+                    0 & 0 & 0 & 0 & X^m_{34}\\
+                    X^m_{40} & 0 & 0 & 0 & 0
+                \end{bmatrix}
+            \end{equation}
+            for $m=0,1$ and 
+            \begin{equation}
+                X^m = 
+                \begin{bmatrix}
+                    0 & 0 &  X^m_{02} & 0 & 0\\
+                    0 & 0 & 0 &  X^m_{13} & 0\\
+                    0 & 0 & 0 & 0 &  X^m_{24}\\
+                    X^m_{30} & 0 & 0 & 0 & 0\\
+                    0 &  X^m_{41} & 0 & 0 & 0
+                \end{bmatrix}
+            \end{equation}
+            for $m=2,3,4,5$.
+
+            \begin{figure}
+                \centering
+                \begin{subfigure}[b]{0.3\textwidth}
+                    \centering
+                    \begin{tikzpicture}[scale=0.8]
+                        \foreach \n in {0,...,4}{
+                            \draw[very thick] (-72*\n:2) .. controls ({-72*(\n+1)+15}:3.5) and ({-72*(\n+1)-15}:3.5) .. ({-72*(\n+2)}:2) node[midway,sloped,allow upside down]{$\blacktriangleright$};
+                            \draw[very thick] ({-72*\n}:2) -- ({-72*(\n-1)}:2) node[midway,sloped,allow upside down]{$\blacktriangleleft\blacktriangleleft$};
+                            \draw[fill=black] (-72*\n:2) circle[radius=0.15];
+                            \draw (72*\n:1.5) node{$N_\n$};
+                        }
+                    \end{tikzpicture}
+                    \caption{$(1,1,3)$}
+                    \label{fig:y equals x}
+                \end{subfigure}
+                \hspace{2cm}
+                \begin{subfigure}[b]{0.3\textwidth}
+                    \centering
+                    \begin{tikzpicture}[scale=0.8]
+                        \foreach \n in {0,...,4}{
+                            \draw[very thick] (-72*\n:2) .. controls ({-72*(\n+1)+15}:3.5) and ({-72*(\n+1)-15}:3.5) .. ({-72*(\n+2)}:2) node[midway,sloped,allow upside down]{$\blacktriangleleft\blacktriangleleft$};
+                            \draw[very thick] ({-72*\n}:2) -- ({-72*(\n-1)}:2) node[midway,sloped,allow upside down]{$\blacktriangleright$};
+                            \draw[fill=black] (-72*\n:2) circle[radius=0.15];
+                            \draw (72*\n:1.5) node{$N_\n$};
+                        }
+                    \end{tikzpicture}
+                    \caption{$(1,2,2)$}
+                    \label{fig:three sin x}
+                \end{subfigure}
+                \caption{Quivers of the $\C^3/\Z_5$ daughter theories.}
+                \label{fig:three graphs}
+           \end{figure}
+
+
+
         
-        
-        
-        The beginning the the reasoning is very similar to the case $n=3$. We start by considering a representation $(\rho,\C^N)$ of $\Z_n$. A complete set of irreducible representations of $\Z_n$ is given by $\{(\rho_k,V_k)\}_{k=0,\dots,n-1}$ with $V_k=\C$ and
-        \begin{equation}
-            \rho_i(g)=\zeta^k_n
-        \end{equation}
-        where $g$ is the generator of $\Z_n$. The representation $(\rho,V)$ can be decomposed as
-        \begin{equation}
-            (\rho,V)=\bigoplus^{n-1}_{i=0}N_i(\rho_i,V_i).
-        \end{equation}
-        In other words, it is equivalent to the representation
-        \begin{equation}
-            \rho(g)=
-            \begin{bmatrix}
-                1 & & & \cdots & & & 0 \\
-                & \ddots & & & & & \\
-                & & 1 & & & &  \\
-                \vdots & & & \ddots & & & \vdots \\
-                & & & & \zeta^{n-1}_n & & \\
-                & & & & & \ddots & \\
-                0 & & & \cdots & & & \zeta^{n-1}_n 
-            \end{bmatrix}
-            \hspace{-0.2cm}
-            \begin{tabular}{l}
-            $\left.\lefteqn{\phantom{
-                \begin{matrix}
-                    a_0\\ \ddots\\ a_0\ 
-                \end{matrix} 
-            }}\right\}N_0$\\
-            \vdots \\
-            $\left.\lefteqn{\phantom{
-                \begin{matrix}
-                    b_0\\ \ddots\\ b_0\ 
-                \end{matrix}
-            }} \right\}N_{n-1}$
-            \end{tabular}.\label{eq:reprrhoZn}
-        \end{equation}
-        Since $\dim\rho_i=1$, $\sum_i N_i=N$. 
-        
-        The gauge field configurations that are left invariant under the action of $\Z_n$ are therefore the ones that satisfy
-        \begin{equation}
-            \rho(g)A_\mu\rho(g)^{-1}=A_\mu.
-        \end{equation}
-        Once again, we actually want this relation to be true for any element of $\Z_n$ but in this case it is invariant under any element of $\Z_n$ if and only if it is invariant under the generator $g$ of $\Z_n$. The constrained is easily solved by using the bi-index notation $A_{\mu;i\alpha_i,j\beta_j}$ ($i,j=A,\dots,n-1,\alpha_i,\beta_i=1,\dots,N_i$) for the component of the gauge fields. From \eqref{eq:reprrhoZn}, we can see that
-        \begin{equation}
-            A_{\mu;i\alpha_i,i\beta_j}\mapsto \rho_i(g)A_{\mu;i\alpha_i,j\beta_j}\rho_j(g)^{-1}=\zeta^{i-j}_nA_{\mu;i\alpha_i,j\beta_j}.
-        \end{equation}
-        thus only the configurations with $A_{\mu;i\alpha_i,j\beta_j}=0$ if $i\neq j$ are invariant. The gauge field has therefore a block diagonal form:
-        \begin{equation}
-            A_\mu=
-            \begin{bmatrix}
-                A_{\mu;00} & & & \\
-                & A_{\mu;11} & & \\
-                & & \ddots & \\
-                & & & A_{\mu;n-1,n-1}
-            \end{bmatrix}
-        \end{equation}
-        with $A_{\mu;ij}\equiv (A_{\mu;i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}$. The block $A_{ii}$ transforms under $\Z_n$ as $(\rho_i,V_i)^{N_i}$.
-        Consequently, the gauge group is now broken to
-        \begin{equation}
-            G_{\text{proj}}=\prod^{n-1}_{i=0}~\U(N_i),
-        \end{equation}
-        the biggest subgroup of $\U(N)$ that preserves those form of configurations.
-
-        %\begin{figure}[H]
-        %    \centering
-        %    \begin{tikzpicture}
-        %        \foreach \n in {0,...,5}{
-        %            \draw[->,thick] ({-60*\n-4}:2)--({-60*(\n+1)+4}:2);
-        %            \draw (30+60*\n:2.4) node{$3$};
-        %        }
-        %        \foreach \n in {-2,-1,0,1,2}{
-        %            \draw ({-60*\n}:2) node{\textbullet};
-        %        }
-        %        \draw (0:2) node{$a$};
-        %    \end{tikzpicture}
-        %    \caption{Quiver of the $\Z_n$ daughter theory.}
-        %\end{figure}
-
-
-
-
-        Similarly to what we discussed at the end of the previous section, gauge anomaly cancellation imposes that the number of outgoing and ingoing arrows are the same at each vertex of the quiver. That is, 
-        \begin{equation}
-            N_0=\marker.
-        \end{equation}
 
     \subsection{$S=\C^3/(\Z_m\times\Z_n)$}
 
@@ -1539,7 +1600,7 @@
 
         We want to compute the sum
         \begin{equation}
-            \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor.
+            \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}+1\right\rfloor = \left\lfloor \frac{n}{3}\right\rfloor + \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}\right\rfloor.
         \end{equation}
         Let us write $n\in\N$ as $n=3m+r$ with $r=0,1$ or $2$ and $m\in\N$. Regardless of $r$, we have $\lfloor n/3\rfloor=m$ and
         \begin{equation}
@@ -1556,11 +1617,11 @@
             \end{equation}
             and if $m$ is odd,
             \begin{equation}
-                \sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor = 2\sum^{\left\lfloor \frac{m-2}{2}\right\rfloor}_{a=0}~a+\left\lfloor \frac{m-1}{2}\right\rfloor = 2\sum^{ \frac{m-3}{2}}_{a=0}~a+\frac{m-1}{2} = \frac{1}{2}\left( \frac{m^2}{2}-1 \right)
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor = 2\sum^{\left\lfloor \frac{m-2}{2}\right\rfloor}_{a=0}~a+\left\lfloor \frac{m-1}{2}\right\rfloor = 2\sum^{ \frac{m-3}{2}}_{a=0}~a+\frac{m-1}{2} = \frac{(m-1)^2}{4}
             \end{equation}
             so
             \begin{equation}
-                \sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor = \sum^{m-1}_{a=1}~\left\lfloor \frac{a}{2}\right\rfloor = 
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor = 
                 \begin{cases}
                     \left(\frac{m}{2}-1\right)\frac{m}{2},\qquad\text{if $m$ is even}\\
                     \frac{(m-1)^2}{4},\qquad\text{if $m$ is odd}
@@ -1570,7 +1631,7 @@
             \begin{equation}
                 \sum^{m-1}_{a=0}~\left\lfloor \frac{3a}{2}\right\rfloor = 
                 \begin{cases}
-                    \frac{m(3m-4)}{2},\qquad\text{if $m$ is even}\\
+                    \frac{m(3m-4)}{4},\qquad\text{if $m$ is even}\\
                     \frac{(m-1)(3m-1)}{4},\qquad\text{if $m$ is odd}
                 \end{cases}.\label{eq:sum3a2floor}
             \end{equation}
@@ -1580,18 +1641,18 @@
             \end{equation}
             and
             \begin{equation}
-                \sum^{m-1}_{a=0}~\left\lfloor \frac{a+1}{2}\right\rfloor = \sum^{m}_{a=1}~\left\lfloor \frac{a}{2}\right\rfloor = 
+                \sum^{m-1}_{a=0}~\left\lfloor \frac{a+1}{2}\right\rfloor = \sum^{m}_{a=1}~\left\lfloor \frac{a}{2}\right\rfloor = \sum^{m}_{a=0}~\left\lfloor \frac{a}{2}\right\rfloor =  
                 \begin{cases}
-                    \frac{m(m-1)}{4},\qquad\text{if $m$ is even}\\
-                    \frac{m^2}{4},\qquad\text{if $m$ is odd}
+                    \frac{m^2}{4},\qquad\text{if $m$ is even}\\
+                    \frac{m^2-1}{4},\qquad\text{if $m$ is odd}
                 \end{cases}
             \end{equation}
             by \eqref{eq:suma2floor} so
             \begin{equation}
                 \sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a+\frac{1}{2}\right\rfloor=
                 \begin{cases}
-                    \frac{3m(m-1)}{2},\qquad\text{if $m$ is even}\\
-                    \frac{m(5m-4)}{4},\qquad\text{if $m$ is odd}
+                    \frac{m(3m-2)}{4},\qquad\text{if $m$ is even}\\
+                    \frac{3m^2-2m-1}{4},\qquad\text{if $m$ is odd}
                 \end{cases}
             \end{equation}
             \item if $r=2$, then \eqref{eq:sumfloor} becomes
@@ -1602,25 +1663,45 @@
             \begin{equation}
                 \sum^{m-1}_{a=0}~\left\lfloor \frac{3}{2}a+1\right\rfloor=
                 \begin{cases}
-                    \frac{m(3m-2)}{2},\qquad\text{if $m$ is even}\\
+                    \frac{3m^2}{4},\qquad\text{if $m$ is even}\\
                     \frac{3m^2+1}{4},\qquad\text{if $m$ is odd}
                 \end{cases}
             \end{equation}
             from \eqref{eq:sum3a2floor}.
         \end{itemize}
-        In the end, we get that
-        \begin{equation}
-            \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}+1\right\rfloor=
+        Finally, we can write $m=2k$ if $m$ if even and $m=2k+1$ if $m$ is odd in order to distinguish the six different cases. We get
+        \begin{align}
+            a(n)\equiv\sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}+1\right\rfloor&=
             \begin{cases}
-                2k+\frac{2k(6k-4)}{2},\qquad\text{if $n=6k$}\\
-                2k+\frac{6k(2k-1)}{2},\qquad\text{if $n=6k+1$},\\
-                2k+\frac{2k(6k-2)}{2},\qquad\text{if $n=6k+2$},\\
+                2k+\frac{2k(6k-4)}{4},\qquad\text{if $n=6k$}\\
+                2k+\frac{2k(6k-2)}{4},\qquad\text{if $n=6k+1$},\\
+                2k+\frac{12k^2}{4},\qquad\text{if $n=6k+2$},\\
                 (2k+1)+\frac{2k(6k+2)}{4},\qquad\text{if $n=6k+3$},\\
-                (2k+1)+\frac{(2k+1)(10k+4)}{4},\qquad\text{if $n=6k+4$},\\
+                (2k+1)+\frac{3(2k+1)^2-2(2k+1)-1}{4},\qquad\text{if $n=6k+4$},\\
                 (2k+1)+\frac{3(2k+1)^2+1}{4},\qquad\text{if $n=6k+5$}
-            \end{cases}\marker
+            \end{cases}\\
+            &=
+            \begin{cases}
+                3k^2,\qquad\text{if $n=6k$}\\
+                3k^2+k,\qquad\text{if $n=6k+1$},\\
+                3k^2+2k,\qquad\text{if $n=6k+2$},\\
+                3k^2+3k+1,\qquad\text{if $n=6k+3$},\\
+                3k^2+4k+1,\qquad\text{if $n=6k+4$},\\
+                3k^2+5k+2,\qquad\text{if $n=6k+5$}
+            \end{cases}.
+        \end{align}
+        Starting from $n=1$, the first value of this sequence is : $0,0,1,1,2,3,4,5,7,8,10,12,\dots$. Uppon  further analysis, this correspond to the sequence \href{https://oeis.org/A001399}{\textcolor{blue}{\underline{A001399}}}, that have several interpretations:
+        \begin{itemize}
+            \item the number of partitions of $n$ into at most 3 parts. This makes sense with our initial problem: finding all the $a,b,c$'s such that $a+b+c=n$,
+            \item the number of connected graphs with $3$ nodes and $n$ edges (where multiple edges between the same nodes are allowed),
+            \item the number of non-negative solutions to $b+2c+3d=n$,
+        \end{itemize}
+        as well as many others. Finally, we note that we can simply write
+        \begin{equation}
+            a(n)=\text{round}\left(\frac{n^2}{12}\right).
         \end{equation}
-        using $m=2k$ if $m$ if even and $m=2k+1$ if $m$ is odd.
+
+        
 
 \pagebreak
 
