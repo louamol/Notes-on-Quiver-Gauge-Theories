@@ -422,7 +422,7 @@
             \end{equation}
             From \eqref{eq:sumNiZ3}, we get that $N_0=N_1=N_2=N/3$, meaning that that the daughter theory has quantum gauge symmetry if and only if the parent theory with has gauge group $\SU(N)$ where $N$ is a multiple of $3$. Or, in other words, if the number of D-branes is a multiple of $3$.
 
-\section{$\mN=2$ daughter theories}
+\section{Orbifold constructions of $\mN=2$ daughter theories}
 
     %Let us consider that $\Gamma$ is a finite subgroup of $\SU(2)\subset\SU(3)$. It naturally acts on $\C^3$ trough its fundamental representation $\bs{2}$ as $\bs{1}\oplus\bs{2}$ (only acts on 2 coordinates).
 
@@ -653,18 +653,14 @@
             \end{matrix}
         \end{equation}
 
-    \subsection{$S=\C\times\C^2/\T$}
-
-    \subsection{$S=\C\times\C^2/\mathcal{O}$}
-
-    \subsection{$S=\C\times\C^2/\I$}
+    \subsection{$S=\C\times\C^2/\T,\mathcal{O},\I$}
 
 
 
 
 
 
-\section{$\mN=1$ daughter theories}
+\section{Orbifold constructions of $\mN=1$ daughter theories}
 
     \subsection{$S=\C^3/\Z_n$}
 
@@ -692,7 +688,11 @@
             Note that swapping $a,b$ and $c$ will give equivalent representations so we can restrict ourselves to $a\leq b\leq c$. Furthermore, taking $a$ or $a+n$ gives the same representation and the same is true for $b$ and $c$, so we we can actually restrict ourselves to $0<a\leq b\leq c<n$. We can trade the strict inequalities and allow the values $0$ or $n$ if we want to consider trivial representations as well. In this case, we will find that at least one direction of $\C^3$ is left untouched, i.e. we are in the situation where the orbifold is actually $\C\times\C^2/\Z_n$, which we will not consider here.
 
             The problem has now been reformulated as follows:
-            we are looking for all possible ordered triplets $(a,b,c)$ such that $0<a\leq b\leq c<n$ and \eqref{eq:cdtabc}. For $n=1$ and $n=2$, it is clear that this is not possible, the possibilities involve at least one trivial representation. For $n=3$, the only possibility is $(1,1,1)$, the one we used in \ref{sec:C3Z3}. What about bigger values of $n$? First, note that because of \eqref{eq:cdtabc}, the only two possibilities are that $a+b+c$ is equal to $n$ or $2n$. Since we can ignore the case were it is equal to $2n$ (redundant\marker), we find that the maximum value that $a$ can take is $\lfloor n/3\rfloor$, so $a=1,\dots,\lfloor n/3\rfloor$. $c$ can then be expressed in terms of $a$ and $b$ as $c=n-a-b$. The constraint $b\leq c$ then implies $b\leq (n-a)/2$, i.e. $b=a,\dots,\lfloor (n-a)/2\rfloor$. To summarize, the representations are all the representations of the form $(a,b,n-a-b)$ with $a=1,\dots,\lfloor n/3\rfloor$ and $b=a,\dots,\lfloor (n-a)/2\rfloor$. For small values, we get
+            we are looking for all possible ordered triplets $(a,b,c)$ such that $0<a\leq b\leq c<n$ and \eqref{eq:cdtabc}. For $n=1$ and $n=2$, it is clear that this is not possible, the possibilities involve at least one trivial representation. For $n=3$, the only possibility is $(1,1,1)$, the one we used in \ref{sec:C3Z3}. What about bigger values of $n$? First, note that because of \eqref{eq:cdtabc}, the only two possibilities are that $a+b+c$ is equal to $n$ or $2n$. Since we can ignore the case were it is equal to $2n$ (redundant\marker), we find that the maximum value that $a$ can take is $\lfloor n/3\rfloor$, so $a=1,\dots,\lfloor n/3\rfloor$. $c$ can then be expressed in terms of $a$ and $b$ as $c=n-a-b$. The constraint $b\leq c$ then implies $b\leq (n-a)/2$, i.e. $b=a,\dots,\lfloor (n-a)/2\rfloor$. To summarize, the representations are all the representations of the form
+            \begin{equation}
+                (a,b,n-a-b)
+            \end{equation}
+            with $a=1,\dots,\lfloor n/3\rfloor$ and $b=a,\dots,\lfloor (n-a)/2\rfloor$. For small values, we get
             \begin{align*}
                 \Z_1 &: \text{necessarily involves a trivial representation}\\
                 \Z_2 &: \text{necessarily involves a trivial representation}\\
@@ -867,16 +867,62 @@
                 \label{fig:three graphs}
            \end{figure}
 
+        \subsubsection{General $\Z_n$}
 
+           Let us now consider the general action
+           \begin{equation}
+                R(g)=
+                \begin{bmatrix}
+                    \zeta^a_n & 0 & 0\\
+                    0 & \zeta^b_n & 0\\
+                    0 & 0 & \zeta^c_n
+                \end{bmatrix}
+           \end{equation}
+           of $\Z_n$ on $\C^3$, where $(a,b,c)$ one of the representation that we studied before. In particular, recall that $a+b+c=n$. Following the same reasoning than before, we get that the gauge field of of the form
+           \begin{equation}
+               A_\mu=
+               \begin{bmatrix}
+                   A_{\mu;00} & & \\
+                   & \ddots & & \\
+                   & & A_{\mu;n-1,n-1}
+               \end{bmatrix}.
+           \end{equation}
 
+           Invariant scalar field configurations transform as
+           \begin{equation}
+               X^m_{i\alpha_i,j\beta_j}=
+               \begin{cases}
+                   \zeta^{i-j+a}_nX^m_{i\alpha_i,j\beta_j},\qquad \text{if }m=0,1\\
+                   \zeta^{i-j+b}_nX^m_{i\alpha_i,j\beta_j},\qquad \text{if }m=2,3\\
+                   \zeta^{i-j+c}_nX^m_{i\alpha_i,j\beta_j},\qquad \text{if }m=4,5
+               \end{cases}
+           \end{equation}
+           so
+           \begin{align}
+               X^{0,1}_{j-a,j} &\in (\boldsymbol{\textbf{N}_j},\boldsymbol{\bar{\textbf{N}}_{j-a}}),\\
+               X^{2,3}_{j-b,j} &\in (\boldsymbol{\textbf{N}_j},\boldsymbol{\bar{\textbf{N}}_{j-b}}),\\
+               X^{4,5}_{j-c,j} &\in (\boldsymbol{\textbf{N}_j},\boldsymbol{\bar{\textbf{N}}_{j-c}})
+           \end{align}
+           are the only possible non-vanishing components. This allows us to quickly draw all the possible quivers for a given $n$.
         
+    \subsection{$S=\C^3/\Delta(3n^2),\Delta(6n^2)$}
+
+    \subsection{$S=\C^3/\Sigma_{36\times 3},\Sigma_{60\times 3},\Sigma_{168\times 3},\Sigma_{216\times 3},\Sigma_{360\times 3}$}
+
 
     \subsection{$S=\C^3/(\Z_m\times\Z_n)$}
 
+           Let us now consider the following action of $\Z_m\times\Z_m$:
+           \begin{equation}
+                R(g_1,g_2)=
+               \begin{bmatrix}
+                   \xi_m & 0 & 0 \\
+                   0 & \xi_n & 0 \\
+                   0 & 0 & \xi^{-1}_m\xi^{-1}_n
+               \end{bmatrix}
+           \end{equation}
+           where $g_1$ and $g_2$ are the generating elements of $\Z_m$ and $\Z_n$ respectively.
 
-
-
-    \section{Summary of daughter theories}
 
     \begin{table}[H]
         \centering
@@ -917,8 +963,35 @@
         \caption{List of worldvolume theories for different transverse spaces.}
     \end{table}
 
+\section{Correspondence between gauge theory and singularity}
 
-\section{Generalizations}
+    Above, we presented all the possible orbifold constructions of supersymmetric quiver gauge theories in four dimensions. We started from quotienting the transverse space and we found the corresponding (supersymmetric) gauge theory. In other words, we started from the singularity a found the gauge theory. We can therefore consider that the orbifold singularities are understood. However, not all singularities are orbifold one, such as the conifold for example. We an then ask ourselves how to obtain the gauge theory for more general singularities than the orbifold ones. Is a general approach possible ? On the other hand, we can also study the converse question; is it possible to to obtain the singularity from the gauge theory? And if it is, how so? In general we will see that there is a bijection between the four-dimensional supersymmetric worldvolume gauge theory and the Calabi-Yau singularity. We now detail this bijection.
+
+    \subsection{From gauge theory to singularity: forward algorithm}
+
+        We start with the simplest question: how to recover the singularity from the gauge theory? We already mentioned that the vacuum parameter space of the scalar fields of the gauge theory is the so-called moduli space, denoted $\M$. Because our D$3$-brane is a point in the Calabi-Yau threefold, the vacuum moduli space $\M$ is the affine coordinates of the Calabi-Yau singularity $S$.
+
+
+
+        \subsubsection{$S=\C\times\C^2/\Z_n$}
+
+        \subsubsection{The conifold}
+
+    \subsection{From singularity to gauge theory: inverse algorithm}
+
+        Mathematically, a quiver gauge theory is a representation of a finite quiver with relations. The labels are $\{N_i\in\Z_+\}$, they correspond to the dimension of the vector space $\{V_i\}$. The gauge group is $\prod_i\SU(N_i)$. The gauge fields are self-adjoint arrows $\Hom(V_i,V_i)$ while the matter fields are bi-fundamentals fermions/bosons and are arrows $X_{ij}\in\Hom(V_j,V_i)$. For a quiver with adjacency matrix $a_{ij}$, the gauge anomaly cancellation condition can be generally expressed as
+        \begin{equation}
+            (a_{ij}-a_{ji})N_i=0.
+        \end{equation}
+        At last, there are some relations that arises the superpotential $W(\{X_{ij}\})$. The vacuum is the minima of the superpotential. In other words,
+        \begin{equation}
+            \pdv*{W}{X_{ij}}=0.
+        \end{equation}
+
+    
+    
+
+\section{Generalizations: beyond the orbifolds construction}
 
     Let us discuss the different ways our previous discussions can be generalized.
 
@@ -1606,7 +1679,21 @@
         \item $n\geq4$: very little is known; crepant resolution ecists in rather special cases. Many singularity are terminal, which implies that they admit no crepant resolution.
     \end{itemize}
 
+\section{Notions of graph theory}
+
+    \subsection{Quiver diagrams}
+
+    \subsection{Toric diagrams}
+
+    \subsection{Dimer diagrams}
+
+        A \emph{bipartite graph} is a graph such that all vertices can be couloured black or white such that any vertex of one color is only adjacent to vertices of the other color. A \emph{matching} is a subset of edges without common vertices. A mathcing is \emph{perfect} of every vertex is covered. The statistical mechanics of random perfect matchings is called a \emph{dimer model}. Ghe difference between any two closed perfect matching is a closed curve.
+
+        The \emph{dimer diagram} of a quiver gauge theory is a graph whose faces represent the gauge groups, the edges represent the bi-fundamental fields and the vertices represent the superpotentials.
+
 \section{Toric and non-toric singularities}
+
+    All abelian orbifolds are toric varities.
 
 \section{Some derivations}
 
@@ -1715,7 +1802,19 @@
             a(n)=\text{round}\left(\frac{n^2}{12}\right).
         \end{equation}
 
-        
+\section{References guide}
+
+\begin{itemize}
+    \item He: review: \cite{he2004lectures}, thesis: \cite{masterHe}
+    \item Orbifold construction for $\Gamma\subset\SU(2)$: type $A$ : \cite{douglas1996dbranes}, type $D$ and $E$: \cite{PhysRevD.55.6382}
+    \item Orbifold construction for $\Gamma\subset\SU(3)$:\cite{Hanany_1999}
+    \item Formalization of projection to daughter theories: \cite{vafa1998},\cite{silervstein1998}
+    \item On toric singularities: \cite{fulton1993introduction},\cite{oda1988convex}
+    \item Forward algorithm  for toric singularities: devlopments: \cite{FA1},\cite{FA2},\cite{FA3},\cite{FA4},\cite{FA5}, formalization: \cite{FA6},\cite{FA7},\cite{FA8}
+    \item Toric diagrams, dimer diagrams and Higgsing: \cite{Argurio_20081}
+    \item Fractional branes: \cite{Argurio_20082}
+    \item Quiver representations and quiver varities: \cite{kirillov2016quiver}
+\end{itemize}
 
 \pagebreak
 

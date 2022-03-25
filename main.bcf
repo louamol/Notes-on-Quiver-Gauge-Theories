@@ -2345,6 +2345,26 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="1">he2004lectures</bcf:citekey>
+    <bcf:citekey order="2">masterHe</bcf:citekey>
+    <bcf:citekey order="3">douglas1996dbranes</bcf:citekey>
+    <bcf:citekey order="4">PhysRevD.55.6382</bcf:citekey>
+    <bcf:citekey order="5">Hanany_1999</bcf:citekey>
+    <bcf:citekey order="6">vafa1998</bcf:citekey>
+    <bcf:citekey order="7">silervstein1998</bcf:citekey>
+    <bcf:citekey order="8">fulton1993introduction</bcf:citekey>
+    <bcf:citekey order="9">oda1988convex</bcf:citekey>
+    <bcf:citekey order="10">FA1</bcf:citekey>
+    <bcf:citekey order="11">FA2</bcf:citekey>
+    <bcf:citekey order="12">FA3</bcf:citekey>
+    <bcf:citekey order="13">FA4</bcf:citekey>
+    <bcf:citekey order="14">FA5</bcf:citekey>
+    <bcf:citekey order="15">FA6</bcf:citekey>
+    <bcf:citekey order="16">FA7</bcf:citekey>
+    <bcf:citekey order="17">FA8</bcf:citekey>
+    <bcf:citekey order="18">Argurio_20081</bcf:citekey>
+    <bcf:citekey order="19">Argurio_20082</bcf:citekey>
+    <bcf:citekey order="20">kirillov2016quiver</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

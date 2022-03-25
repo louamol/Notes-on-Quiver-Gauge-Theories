@@ -33,6 +33,7 @@
       \strng{authorbibnamehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
       \strng{authornamehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
       \strng{authorfullhash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \field{extraname}{1}
       \field{labelalpha}{He04}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -42,10 +43,45 @@
       \field{eprinttype}{arXiv}
       \field{title}{Lectures on D-branes, Gauge Theories and Calabi-Yau Singularities}
       \field{year}{2004}
-      \true{nocite}
       \verb{eprint}
       \verb hep-th/0408142
       \endverb
+    \endentry
+    \entry{masterHe}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a4fd5a8285710d8bd6688b748c7cc5fd}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yang-Hui},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{fullhash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{bibnamehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{authorbibnamehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{authornamehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \strng{authorfullhash}{a4fd5a8285710d8bd6688b748c7cc5fd}
+      \field{extraname}{2}
+      \field{labelalpha}{He02}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On Algebraic Singularities, Finite Graphs and D-Brane Gauge Theories: A String Theoretic Perspective}
+      \field{year}{2002}
+      \verb{doi}
+      \verb 10.48550/ARXIV.HEP-TH/0209230
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/hep-th/0209230
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/hep-th/0209230
+      \endverb
+      \keyw{High Energy Physics - Theory (hep-th),Algebraic Geometry (math.AG),FOS: Physical sciences,FOS: Physical sciences,FOS: Mathematics,FOS: Mathematics}
     \endentry
     \entry{douglas1996dbranes}{misc}{}
       \name{author}{2}{}{%
@@ -67,15 +103,14 @@
       \strng{authornamehash}{2d39ab4237decd67b581c085053bc278}
       \strng{authorfullhash}{2d39ab4237decd67b581c085053bc278}
       \field{labelalpha}{DM96}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
       \field{eprinttype}{arXiv}
       \field{title}{D-branes, Quivers, and ALE Instantons}
       \field{year}{1996}
-      \true{nocite}
       \verb{eprint}
       \verb hep-th/9603167
       \endverb
@@ -103,8 +138,8 @@
       \strng{authornamehash}{1410f0973a0a12d9fbe14121b8d047a4}
       \strng{authorfullhash}{1410f0973a0a12d9fbe14121b8d047a4}
       \field{labelalpha}{JM97}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{10}
@@ -113,14 +148,104 @@
       \field{title}{Aspects of type IIB theory on asymptotically locally Euclidean spaces}
       \field{volume}{55}
       \field{year}{1997}
-      \true{nocite}
       \field{pages}{6382\bibrangedash 6393}
       \range{pages}{12}
       \verb{doi}
       \verb 10.1103/PhysRevD.55.6382
       \endverb
     \endentry
-    \entry{1998}{article}{}
+    \entry{Hanany_1999}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b1824fbfcda4a6352151932d9518b215}{%
+           family={Hanany},
+           familyi={H\bibinitperiod},
+           given={Amihay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a4fd5a8285710d8bd6688b748c7cc5fd}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yang-Hui},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{8313b22ec75f880ac5049c17e4e28560}
+      \strng{fullhash}{8313b22ec75f880ac5049c17e4e28560}
+      \strng{bibnamehash}{8313b22ec75f880ac5049c17e4e28560}
+      \strng{authorbibnamehash}{8313b22ec75f880ac5049c17e4e28560}
+      \strng{authornamehash}{8313b22ec75f880ac5049c17e4e28560}
+      \strng{authorfullhash}{8313b22ec75f880ac5049c17e4e28560}
+      \field{labelalpha}{HH99}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{2}
+      \field{number}{02}
+      \field{title}{Non-abelian finite gauge theories}
+      \field{volume}{1999}
+      \field{year}{1999}
+      \field{pages}{013\bibrangedash 013}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1126-6708/1999/02/013
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088%2F1126-6708%2F1999%2F02%2F013
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088%2F1126-6708%2F1999%2F02%2F013
+      \endverb
+    \endentry
+    \entry{vafa1998}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7d46cd12a2852b2850e5ddce797958d5}{%
+           family={Lawrence},
+           familyi={L\bibinitperiod},
+           given={Albion},
+           giveni={A\bibinitperiod}}}%
+        {{hash=467c3ac0d32f6d02d2be50798af6a1af}{%
+           family={Nekrasov},
+           familyi={N\bibinitperiod},
+           given={Nikita},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9bb2a2ed1567f070b3932817dc57b53f}{%
+           family={Vafa},
+           familyi={V\bibinitperiod},
+           given={Cumrun},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{4601784a035f9c011701276652a0fce1}
+      \strng{fullhash}{4601784a035f9c011701276652a0fce1}
+      \strng{bibnamehash}{4601784a035f9c011701276652a0fce1}
+      \strng{authorbibnamehash}{4601784a035f9c011701276652a0fce1}
+      \strng{authornamehash}{4601784a035f9c011701276652a0fce1}
+      \strng{authorfullhash}{4601784a035f9c011701276652a0fce1}
+      \field{labelalpha}{LNV98}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0550-3213}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{month}{11}
+      \field{number}{1-3}
+      \field{title}{On conformal field theories in four dimensions}
+      \field{volume}{533}
+      \field{year}{1998}
+      \field{pages}{199\bibrangedash 209}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/s0550-3213(98)00495-7
+      \endverb
+    \endentry
+    \entry{silervstein1998}{article}{}
       \name{author}{2}{}{%
         {{hash=993e682e6ad8b4fa0d15e8628711a5ac}{%
            family={Kachru},
@@ -143,8 +268,8 @@
       \strng{authornamehash}{44297e33535e8cd1aa927ea98528b83f}
       \strng{authorfullhash}{44297e33535e8cd1aa927ea98528b83f}
       \field{labelalpha}{KS98}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1079-7114}
@@ -154,12 +279,588 @@
       \field{title}{4D Conformal Field Theories and Strings on Orbifolds}
       \field{volume}{80}
       \field{year}{1998}
-      \true{nocite}
       \field{pages}{4855\bibrangedash 4858}
       \range{pages}{4}
       \verb{doi}
       \verb 10.1103/physrevlett.80.4855
       \endverb
+    \endentry
+    \entry{fulton1993introduction}{book}{}
+      \name{author}{1}{}{%
+        {{hash=205bfcbd8ec5b58401ee1d5cbd94a5de}{%
+           family={Fulton},
+           familyi={F\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Princeton, N.J}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{205bfcbd8ec5b58401ee1d5cbd94a5de}
+      \strng{fullhash}{205bfcbd8ec5b58401ee1d5cbd94a5de}
+      \strng{bibnamehash}{205bfcbd8ec5b58401ee1d5cbd94a5de}
+      \strng{authorbibnamehash}{205bfcbd8ec5b58401ee1d5cbd94a5de}
+      \strng{authornamehash}{205bfcbd8ec5b58401ee1d5cbd94a5de}
+      \strng{authorfullhash}{205bfcbd8ec5b58401ee1d5cbd94a5de}
+      \field{labelalpha}{Ful93}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780691000497}
+      \field{title}{Introduction to toric varieties}
+      \field{year}{1993}
+    \endentry
+    \entry{oda1988convex}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f929c811e6529db9699b2f0f49e9a696}{%
+           family={Oda},
+           familyi={O\bibinitperiod},
+           given={Tadao},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f929c811e6529db9699b2f0f49e9a696}
+      \strng{fullhash}{f929c811e6529db9699b2f0f49e9a696}
+      \strng{bibnamehash}{f929c811e6529db9699b2f0f49e9a696}
+      \strng{authorbibnamehash}{f929c811e6529db9699b2f0f49e9a696}
+      \strng{authornamehash}{f929c811e6529db9699b2f0f49e9a696}
+      \strng{authorfullhash}{f929c811e6529db9699b2f0f49e9a696}
+      \field{labelalpha}{Oda88}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-642-72549-4}
+      \field{title}{Convex bodies and algebraic geometry : an introduction to the theory of toric varieties}
+      \field{year}{1988}
+    \endentry
+    \entry{FA1}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=12812d86d1593f7d3a5a6597a5050521}{%
+           family={Aspinwall},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{12812d86d1593f7d3a5a6597a5050521}
+      \strng{fullhash}{12812d86d1593f7d3a5a6597a5050521}
+      \strng{bibnamehash}{12812d86d1593f7d3a5a6597a5050521}
+      \strng{authorbibnamehash}{12812d86d1593f7d3a5a6597a5050521}
+      \strng{authornamehash}{12812d86d1593f7d3a5a6597a5050521}
+      \strng{authorfullhash}{12812d86d1593f7d3a5a6597a5050521}
+      \field{labelalpha}{Asp94}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Resolution of Orbifold Singularities in String Theory}
+      \field{year}{1994}
+      \verb{doi}
+      \verb 10.48550/ARXIV.HEP-TH/9403123
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/hep-th/9403123
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/hep-th/9403123
+      \endverb
+      \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
+    \entry{FA2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0f2db3278f121a9a7533e911cf947c2c}{%
+           family={Douglas},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=f9ab471cab211f7b7016e8b89352276b}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c68e15e8e0be16d793449aae3d582084}{%
+           family={Morrison},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{38d30723d8cffc87e234b0def9f4108c}
+      \strng{fullhash}{38d30723d8cffc87e234b0def9f4108c}
+      \strng{bibnamehash}{38d30723d8cffc87e234b0def9f4108c}
+      \strng{authorbibnamehash}{38d30723d8cffc87e234b0def9f4108c}
+      \strng{authornamehash}{38d30723d8cffc87e234b0def9f4108c}
+      \strng{authorfullhash}{38d30723d8cffc87e234b0def9f4108c}
+      \field{labelalpha}{DGM97}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{month}{11}
+      \field{number}{1-2}
+      \field{title}{Orbifold resolution by D-branes}
+      \field{volume}{506}
+      \field{year}{1997}
+      \field{pages}{84\bibrangedash 106}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1016/s0550-3213(97)00517-8
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016%2Fs0550-3213%2897%2900517-8
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016%2Fs0550-3213%2897%2900517-8
+      \endverb
+    \endentry
+    \entry{FA3}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c68e15e8e0be16d793449aae3d582084}{%
+           family={Morrison},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=bc09907c4a442df4d48803b9070ed68c}{%
+           family={Plesser},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi Ronen},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{db8594bedb3c00eaedf048accfaa8dd8}
+      \strng{fullhash}{db8594bedb3c00eaedf048accfaa8dd8}
+      \strng{bibnamehash}{db8594bedb3c00eaedf048accfaa8dd8}
+      \strng{authorbibnamehash}{db8594bedb3c00eaedf048accfaa8dd8}
+      \strng{authornamehash}{db8594bedb3c00eaedf048accfaa8dd8}
+      \strng{authorfullhash}{db8594bedb3c00eaedf048accfaa8dd8}
+      \field{labelalpha}{MP98}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Non-Spherical Horizons, I}
+      \field{year}{1998}
+      \verb{doi}
+      \verb 10.48550/ARXIV.HEP-TH/9810201
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/hep-th/9810201
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/hep-th/9810201
+      \endverb
+      \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
+    \entry{FA4}{article}{}
+      \name{author}{4}{}{%
+        {{hash=20f3ec41b19831ca77bc27ae9b596752}{%
+           family={Beasley},
+           familyi={B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f9ab471cab211f7b7016e8b89352276b}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b8fd5d1c5d7e1603afdae4244368433c}{%
+           family={Lazaroiu},
+           familyi={L\bibinitperiod},
+           given={C.I.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c23d114e722dd443d5551d512773d4e2}{%
+           family={Plesser},
+           familyi={P\bibinitperiod},
+           given={M.R.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{2f0b4153d51f5610cacdfcc92ef72560}
+      \strng{fullhash}{9c2294306abf37c042d9ad77c231a94e}
+      \strng{bibnamehash}{2f0b4153d51f5610cacdfcc92ef72560}
+      \strng{authorbibnamehash}{2f0b4153d51f5610cacdfcc92ef72560}
+      \strng{authornamehash}{2f0b4153d51f5610cacdfcc92ef72560}
+      \strng{authorfullhash}{9c2294306abf37c042d9ad77c231a94e}
+      \field{labelalpha}{Bea+00}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{month}{2}
+      \field{number}{3}
+      \field{title}{D3-branes on partial resolutions of abelian quotient singularities of Calabi{–}Yau threefolds}
+      \field{volume}{566}
+      \field{year}{2000}
+      \field{pages}{599\bibrangedash 641}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1016/s0550-3213(99)00646-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016%2Fs0550-3213%2899%2900646-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016%2Fs0550-3213%2899%2900646-x
+      \endverb
+    \endentry
+    \entry{FA5}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=2e42df224a5ed08b18ddf1829f09755d}{%
+           family={Diaconescu},
+           familyi={D\bibinitperiod},
+           given={Duiliu-Emanuel},
+           giveni={D\bibinithyphendelim E\bibinitperiod}}}%
+        {{hash=0f2db3278f121a9a7533e911cf947c2c}{%
+           family={Douglas},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{c103eaf4e1666706fccb7701d6394c80}
+      \strng{fullhash}{c103eaf4e1666706fccb7701d6394c80}
+      \strng{bibnamehash}{c103eaf4e1666706fccb7701d6394c80}
+      \strng{authorbibnamehash}{c103eaf4e1666706fccb7701d6394c80}
+      \strng{authornamehash}{c103eaf4e1666706fccb7701d6394c80}
+      \strng{authorfullhash}{c103eaf4e1666706fccb7701d6394c80}
+      \field{labelalpha}{DD00}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{D-branes on Stringy Calabi-Yau Manifolds}
+      \field{year}{2000}
+      \verb{doi}
+      \verb 10.48550/ARXIV.HEP-TH/0006224
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/hep-th/0006224
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/hep-th/0006224
+      \endverb
+      \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
+    \entry{FA6}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6fc087d94258de78b951a000f2ead9ae}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b1824fbfcda4a6352151932d9518b215}{%
+           family={Hanany},
+           familyi={H\bibinitperiod},
+           given={Amihay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a4fd5a8285710d8bd6688b748c7cc5fd}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yang-Hui},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{fullhash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{bibnamehash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{authorbibnamehash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{authornamehash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{authorfullhash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \field{extraname}{1}
+      \field{labelalpha}{FHH01}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{month}{2}
+      \field{number}{1-2}
+      \field{title}{D-brane gauge theories from toric singularities and toric duality}
+      \field{volume}{595}
+      \field{year}{2001}
+      \field{pages}{165\bibrangedash 200}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1016/s0550-3213(00)00699-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016%2Fs0550-3213%2800%2900699-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016%2Fs0550-3213%2800%2900699-4
+      \endverb
+    \endentry
+    \entry{FA7}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6fc087d94258de78b951a000f2ead9ae}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b1824fbfcda4a6352151932d9518b215}{%
+           family={Hanany},
+           familyi={H\bibinitperiod},
+           given={Amihay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a4fd5a8285710d8bd6688b748c7cc5fd}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yang-Hui},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{fullhash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{bibnamehash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{authorbibnamehash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{authornamehash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \strng{authorfullhash}{a6fedbdb375bac716c65bdbcc34762fa}
+      \field{extraname}{2}
+      \field{labelalpha}{FHH01}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{8}
+      \field{number}{08}
+      \field{title}{Phase structure of D-brane gauge theories and toric duality}
+      \field{volume}{2001}
+      \field{year}{2001}
+      \field{pages}{040\bibrangedash 040}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1126-6708/2001/08/040
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088%2F1126-6708%2F2001%2F08%2F040
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088%2F1126-6708%2F2001%2F08%2F040
+      \endverb
+    \endentry
+    \entry{FA8}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6fc087d94258de78b951a000f2ead9ae}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5b60eac92b0a7e1b5e1d1b6871e0bf01}{%
+           family={Franco},
+           familyi={F\bibinitperiod},
+           given={Sebastián},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b1824fbfcda4a6352151932d9518b215}{%
+           family={Hanany},
+           familyi={H\bibinitperiod},
+           given={Amihay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a4fd5a8285710d8bd6688b748c7cc5fd}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yang-Hui},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{f6d2a02cc7d3a6dae239627468d672bc}
+      \strng{fullhash}{8558db89ccf502b3c38873a250f574aa}
+      \strng{bibnamehash}{f6d2a02cc7d3a6dae239627468d672bc}
+      \strng{authorbibnamehash}{f6d2a02cc7d3a6dae239627468d672bc}
+      \strng{authornamehash}{f6d2a02cc7d3a6dae239627468d672bc}
+      \strng{authorfullhash}{8558db89ccf502b3c38873a250f574aa}
+      \field{labelalpha}{Fen+02}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Symmetries of Toric Duality}
+      \field{volume}{2002}
+      \field{year}{2002}
+      \field{pages}{076\bibrangedash 076}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1126-6708/2002/12/076
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088%2F1126-6708%2F2002%2F12%2F076
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088%2F1126-6708%2F2002%2F12%2F076
+      \endverb
+    \endentry
+    \entry{Argurio_20081}{article}{}
+      \name{author}{3}{}{%
+        {{hash=96430ff77e7aea5fff33cb800561a10e}{%
+           family={Argurio},
+           familyi={A\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ab7f577d78095d6d27894cc20e2021c2}{%
+           family={Ferretti},
+           familyi={F\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a19caf50a1cdd040b28957276c2e873c}{%
+           family={Petersson},
+           familyi={P\bibinitperiod},
+           given={Christoffer},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{c274d577eb643d742d3ebdb6a3077af5}
+      \strng{fullhash}{c274d577eb643d742d3ebdb6a3077af5}
+      \strng{bibnamehash}{c274d577eb643d742d3ebdb6a3077af5}
+      \strng{authorbibnamehash}{c274d577eb643d742d3ebdb6a3077af5}
+      \strng{authornamehash}{c274d577eb643d742d3ebdb6a3077af5}
+      \strng{authorfullhash}{c274d577eb643d742d3ebdb6a3077af5}
+      \field{labelalpha}{AFP08}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{7}
+      \field{number}{07}
+      \field{title}{Instantons and toric quiver gauge theories}
+      \field{volume}{2008}
+      \field{year}{2008}
+      \field{pages}{123\bibrangedash 123}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1126-6708/2008/07/123
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088%2F1126-6708%2F2008%2F07%2F123
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088%2F1126-6708%2F2008%2F07%2F123
+      \endverb
+    \endentry
+    \entry{Argurio_20082}{article}{}
+      \name{author}{5}{}{%
+        {{hash=96430ff77e7aea5fff33cb800561a10e}{%
+           family={Argurio},
+           familyi={A\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1711a050680ef42b227100bb27595f95}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3c971bce1e85d768517bf7a062f488d9}{%
+           family={Bertolini},
+           familyi={B\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6923e5654ab3b9cb8fbc4e7c86611b1e}{%
+           family={Closset},
+           familyi={C\bibinitperiod},
+           given={Cyril},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8600c03252314e4d19d5844aaca7ade7}{%
+           family={Cremonesi},
+           familyi={C\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society ({APS})}%
+      }
+      \strng{namehash}{a06b7dd3976716617ec602a513d6dbf5}
+      \strng{fullhash}{dbef7b08c340228a290ece7afafc16da}
+      \strng{bibnamehash}{a06b7dd3976716617ec602a513d6dbf5}
+      \strng{authorbibnamehash}{a06b7dd3976716617ec602a513d6dbf5}
+      \strng{authornamehash}{a06b7dd3976716617ec602a513d6dbf5}
+      \strng{authorfullhash}{dbef7b08c340228a290ece7afafc16da}
+      \field{labelalpha}{Arg+08}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{Gauge/gravity duality and the interplay of various fractional branes}
+      \field{volume}{78}
+      \field{year}{2008}
+      \verb{doi}
+      \verb 10.1103/physrevd.78.046008
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1103%2Fphysrevd.78.046008
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1103%2Fphysrevd.78.046008
+      \endverb
+    \endentry
+    \entry{kirillov2016quiver}{book}{}
+      \name{author}{1}{}{%
+        {{hash=28c5859f568975f174c8668976ed369d}{%
+           family={Kirillov},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Providence, Rhode Island}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{28c5859f568975f174c8668976ed369d}
+      \strng{fullhash}{28c5859f568975f174c8668976ed369d}
+      \strng{bibnamehash}{28c5859f568975f174c8668976ed369d}
+      \strng{authorbibnamehash}{28c5859f568975f174c8668976ed369d}
+      \strng{authornamehash}{28c5859f568975f174c8668976ed369d}
+      \strng{authorfullhash}{28c5859f568975f174c8668976ed369d}
+      \field{labelalpha}{Kir16}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4704-2307-0}
+      \field{title}{Quiver representations and quiver varieties}
+      \field{year}{2016}
     \endentry
     \entry{2020}{article}{}
       \name{author}{2}{}{%
@@ -185,8 +886,8 @@
       \strng{authornamehash}{bf70cd910ea0644a2cd1db5704ad2d37}
       \strng{authorfullhash}{bf70cd910ea0644a2cd1db5704ad2d37}
       \field{labelalpha}{CV20}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -216,8 +917,8 @@
       \strng{authornamehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \strng{authorfullhash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \field{labelalpha}{Lin12}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -259,8 +960,8 @@
       \strng{authornamehash}{e4640af9ccbe04a3006a13ca7cd8b0a2}
       \strng{authorfullhash}{5ccad494fd894b0988427c00b9b2f3f8}
       \field{labelalpha}{Hit+87}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Commun. Math. Phys.}
@@ -302,8 +1003,8 @@
       \strng{authornamehash}{80b5dafe7fb6cde0f17924adefb0f0d8}
       \strng{authorfullhash}{80b5dafe7fb6cde0f17924adefb0f0d8}
       \field{labelalpha}{NST03}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00029947}
@@ -331,8 +1032,8 @@
       \strng{authornamehash}{3c971bce1e85d768517bf7a062f488d9}
       \strng{authorfullhash}{3c971bce1e85d768517bf7a062f488d9}
       \field{labelalpha}{Ber21}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Introduction to Supersymmetry}
@@ -368,8 +1069,8 @@
       \strng{authornamehash}{1c007296f0a5e9284c6593bdb9660dbd}
       \strng{authorfullhash}{1c007296f0a5e9284c6593bdb9660dbd}
       \field{labelalpha}{HW97}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0550-3213}
@@ -404,8 +1105,8 @@
       \strng{authornamehash}{96430ff77e7aea5fff33cb800561a10e}
       \strng{authorfullhash}{96430ff77e7aea5fff33cb800561a10e}
       \field{labelalpha}{Arg98}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -437,8 +1138,8 @@
       \strng{authornamehash}{55b0867b2b1ed3c9d193b2aeb7100113}
       \strng{authorfullhash}{55b0867b2b1ed3c9d193b2aeb7100113}
       \field{labelalpha}{DF02}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
