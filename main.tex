@@ -672,23 +672,30 @@
             \begin{equation}
                 R=\bigoplus^{n-1}_{k=0} \rho^{\oplus n_k}_k
             \end{equation}
-            and is therefore equivalent to a block-diagonal representation. So $R$ can be taken to be
+            and is therefore equivalent to a block-diagonal representation. This implies that $\sum_kn_k=3$ so $R$ can always be written as
             \begin{equation}
-                R(g)=
+                R(g)= (\rho_a\oplus\rho_b\oplus\rho_c)(g)=
                 \begin{bmatrix}
                     \zeta^a_n & 0 & 0 \\
                     0 & \zeta^b_n & 0 \\
                     0 & 0 & \zeta^c_n
                 \end{bmatrix}\label{eq:reprZnC3}
             \end{equation}
-            and unitary, with $a,b,c$ some arbitrary exponents. We denote the representation \eqref{eq:reprZnC3} by $(a,b,c)$.  Unitarity imposes that
-            \begin{equation}
-                (a+b+c)\mod n = 0.\label{eq:cdtabc}
-            \end{equation}
-            Note that swapping $a,b$ and $c$ will give equivalent representations so we can restrict ourselves to $a\leq b\leq c$. Furthermore, taking $a$ or $a+n$ gives the same representation and the same is true for $b$ and $c$, so we we can actually restrict ourselves to $0<a\leq b\leq c<n$. We can trade the strict inequalities and allow the values $0$ or $n$ if we want to consider trivial representations as well. In this case, we will find that at least one direction of $\C^3$ is left untouched, i.e. we are in the situation where the orbifold is actually $\C\times\C^2/\Z_n$, which we will not consider here.
+            with $a,b,c$ some arbitrary exponents. We denote the representation \eqref{eq:reprZnC3} by $(a,b,c)$. Let us make a few remarks on these representations:
+            \begin{itemize}
+                \item Since we consider $\Z_n$ as a subgroup of $\SU(3)$, we must have
+                \begin{equation}
+                    (a+b+c)\mod n = 0\label{eq:cdtabc}
+                \end{equation}
+                such that $\det(R(g))=1$.
+                \item Taking $a$ or $a+n$ gives the same representation and the same is true for $b$ and $c$, so we we can actually restrict ourselves to $0<a,b,c<n$. We can trade the strict inequalities and allow the values $0$ or $n$ if we want to consider trivial representations as well. In this case, we will find that at least one direction of $\C^3$ is left untouched, i.e. we are in the situation where the orbifold is actually $\C\times\C^2/\Z_n$, which we will not consider here.
+                \item Permuting $a,b,c$ gives equivalent representations so we can take $a,b,c$ to be ordered, so $0<a\leq b\leq c<n$.
+            \end{itemize}
 
             The problem has now been reformulated as follows:
-            we are looking for all possible ordered triplets $(a,b,c)$ such that $0<a\leq b\leq c<n$ and \eqref{eq:cdtabc}. For $n=1$ and $n=2$, it is clear that this is not possible, the possibilities involve at least one trivial representation. For $n=3$, the only possibility is $(1,1,1)$, the one we used in \ref{sec:C3Z3}. What about bigger values of $n$? First, note that because of \eqref{eq:cdtabc}, the only two possibilities are that $a+b+c$ is equal to $n$ or $2n$. Since we can ignore the case were it is equal to $2n$ (redundant\marker), we find that the maximum value that $a$ can take is $\lfloor n/3\rfloor$, so $a=1,\dots,\lfloor n/3\rfloor$. $c$ can then be expressed in terms of $a$ and $b$ as $c=n-a-b$. The constraint $b\leq c$ then implies $b\leq (n-a)/2$, i.e. $b=a,\dots,\lfloor (n-a)/2\rfloor$. To summarize, the representations are all the representations of the form
+            we are looking for all possible ordered triplets $(a,b,c)$ such that $0<a\leq b\leq c<n$ and \eqref{eq:cdtabc}. For $n=1$ and $n=2$, it is clear that this is not possible, the possibilities involve at least one trivial representation. For $n=3$, the only possibility is $(1,1,1)$, the one we used in \ref{sec:C3Z3}. What about bigger values of $n$? First, note that $0<a\leq b\leq c<n$ implies that the maximum value of $a+b+c$ is $3n-1$. From equation \eqref{eq:cdtabc}, the only two possibilities are then $a+b+c=n$ or $a+b+c=2n$. What simplifies the analysis is that the second case can actually be ignored because it is already being taken care of by the first case. Let us explain that in more details: \marker
+            
+            Now that we have seen that the only possibility is $a+b+c=n$, we find that the maximum value that $a$ can take is $\lfloor n/3\rfloor$, so $a=1,\dots,\lfloor n/3\rfloor$. $c$ can then be expressed in terms of $a$ and $b$ as $c=n-a-b$. The constraint $b\leq c$ then implies $b\leq (n-a)/2$, i.e. $b=a,\dots,\lfloor (n-a)/2\rfloor$. To summarize, the representations are all the representations of the form
             \begin{equation}
                 (a,b,n-a-b)
             \end{equation}
@@ -914,23 +921,46 @@
 
         \subsubsection{Representations of $\Z_m\times\Z_n$}
 
-           Let us denote by $\{\mu_k\}_{k=0,\dots,m-1}$ and $\{\sigma_r\}_{r=0,\dots,n-1}$ two complete set of irreducible representation of $\Z_m$ and $\Z_n$ respectively, with
+           We consider the group $\Z_m\times\Z_n$ and we choose the order such that $m\leq n$.  Let us denote by $\{\mu_i\}_{i=0,\dots,m-1}$ and $\{\sigma_j\}_{j=0,\dots,n-1}$ two complete set of irreducible representation of $\Z_m$ and $\Z_n$ respectively, with
            \begin{align}
-               \mu_k(g_1)&=\zeta^k_m\\
-               \sigma_r(g_2)&=\zeta^r_n
+               \mu(g_1)&=\zeta^i_m\\
+               \sigma_j(g_2)&=\zeta^j_n
            \end{align}
-           where $g_1$ and $g_2$ are the generating elements of $\Z_m$ and $\Z_n$ respectively.
-
-           Let us now consider the following action of $\Z_m\times\Z_m$:
+           where $g_1$ and $g_2$ are the generating elements of $\Z_m$ and $\Z_n$ respectively. $\Z_m\times\Z_n$ is of order $mn$ and possesses the same number of equivalency classes (abelian). It has therefore $mnn$ irreducible representations. Since the group is abelian, they are all of dimension $1$. Let us denote by $\{T_k\}_{k=0,\dots,m+n-1}$ a complete set of irreducible representations. Since we have a product group, for any $k$ there exists indices $i(k)$ and $j(k)$ such that $T_k=\mu_{i(k)}\otimes\sigma_{j(k)}$. Let us denote by $\{T_{ij}\}_{i=0,\dots,m-1,j=0,\dots,n-1}$ a c the complete set of irreducible representations that we can construct from $\{\mu_i\}_{i=0,\dots,m-1}$ and $\{\sigma_j\}_{j=0,\dots,n-1}$, i.e.
            \begin{equation}
-                R(g_1,g_2)=
+               T_{ij}=\mu_i\otimes\sigma_j
+           \end{equation}
+           such that $T_{ij}(g_1,g_2)=\zeta^i_m\zeta^j_n$.
+
+           Any representation $R$ of $\Z_m\times\Z_n$ can be decomposed as
+           \begin{equation}
+               R=\bigoplus_{i,j}N_k T_{ij}=\bigoplus_{i,j}N_k(\mu_{i}\otimes\sigma_{j}).
+           \end{equation}
+           We must have $\sum_kN_k=3$. In other words, any representation of $\Z_m\times\Z_n$ on $\C^3$ is equivalent to
+           \begin{equation}
+                R(g_1,g_2)=[(\mu_{a}\otimes\sigma_{a'})\oplus(\mu_{b'}\otimes\sigma_{b'})\oplus(\mu_{c}\otimes\sigma_{c'})](g_1,g_2)=
                \begin{bmatrix}
-                   \xi_m & 0 & 0 \\
-                   0 & \xi_n & 0 \\
-                   0 & 0 & \xi^{-1}_m\xi^{-1}_n
+                   \xi^a_m\xi^{a'}_n & 0 & 0 \\
+                   0 & \xi^b_m\xi^{b'}_n & 0 \\
+                   0 & 0 & \xi^c_m\xi^{c'}_n
                \end{bmatrix}.
            \end{equation}
+           The determinant condition is
+           \begin{align}
+                \xi^{a+b+c}_m &= \xi^{-a'-b'-c'}_n\\
+               \Leftrightarrow (a+b+c)\mod m &= (a'+b'+c')\mod n
+           \end{align}
+
            
+
+           \begin{equation}
+            R(g_1,g_2)=
+           \begin{bmatrix}
+               \xi_m & 0 & 0 \\
+               0 & \xi_n & 0 \\
+               0 & 0 & \xi^{-1}_m\xi^{-1}_n
+           \end{bmatrix}.
+       \end{equation}
 
 
     \begin{table}[H]
