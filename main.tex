@@ -47,9 +47,9 @@
     \end{equation*}
     This is the so-called \emph{brane-world paradigm}. In particular, we will be interested in type IIB string theory because of its self-duality under S-duality\marker.
     
-    Independently from string theory, we ask to have $\mN=1$ supersymmetry for the $4$-dimensional worldvolume theory. This constrains the transverse space $M^{(6)}$ to be compact, complex, Kähler and to have $\SU(3)$ holonomy, see appendix \ref{sec:appCY}. Namely, $M^{(6)}$ must be a Calabi-Yau threefold.
+    Independently from string theory, we ask to have at least $\mN=1$ supersymmetry for the $4$-dimensional worldvolume theory, i.e. at least $4$ supercharges. This constrains the transverse space $M^{(6)}$ to be compact, complex, Kähler and to have $\SU(3)$ holonomy, see appendix \ref{sec:appCY}. Namely, $M^{(6)}$ must be a Calabi-Yau threefold.
     
-    If we let the worldvolume of the D$3$-branes carry the requisite gauge theory while the bulk contains gravity, we can relax the compactness condition and study non-compact threefolds. In other words, $M^{(6)}$ is taken to be an affine variety that localy models a Calabi-Yau threefold. Intuitively, this can be understood as a Kaluza-Klein compactification where we take the size of the compact dimensions to infinity. The four-dimensional gravity coupling constant being inversely proportional to this quantity, there is no gravity in this limit. This makes the analysis much simpler and therefore also serves as an argument to ignore gravity in the worldvolume theory. Thus far, we have $n$ D$3$-branes on which there is a $\U(N)$ gauge group and transverse to which gravity propagates.
+    If we let the worldvolume of the D$3$-branes carry the requisite gauge theory while the bulk contains gravity, we can relax the compactness condition and study non-compact threefolds. In other words, $M^{(6)}$ is taken to be an affine variety that locally models a Calabi-Yau threefold. Intuitively, this can be understood as a Kaluza-Klein compactification where we take the size of the compact dimensions to infinity. The four-dimensional gravity coupling constant being inversely proportional to this quantity, there is no gravity in this limit. This makes the analysis much simpler and therefore also serves as an argument to ignore gravity in the worldvolume theory. Consequently, we will mostly ignore gravity and not care about the metric of the spacetime, see the appendix \ref{app:spacetimegeom} for more details. Thus far, we have $n$ D$3$-branes on which there is a $\U(N)$ gauge group and transverse to which gravity propagates.
 
     The only smooth Calabi-Yau threefold is $\C^3$ so we are lead to consider singular Calabi-Yau manifolds or, more precisely, Calabi-Yau orbifolds. We usually denote $S\equiv M^{(6)}$ to remind us of the singular aspect. String theory being a theory of extended objects, it is well-defined on such singularities. We will see that this singular structure of the geometry will break $\U(N)$ into products of gauge groups.
     
@@ -366,6 +366,8 @@
                 \bar{X}^m_{i+1,i} &\in \boldsymbol{\textbf{N}_{i}}\otimes\boldsymbol{\bar{\textbf{N}}_{i+1}} \cong \Hom(V_{i},V_{i+1}).
             \end{align}
             Let us make an important observation: the form of the scalar fields are the same for every $m=0,\dots,5$. This can be traced back to the fact that $R(g)=\zeta_3\mathbbm{1}_6$ so the R-symmetry action of $\Z_n$ is the same for all $m$.
+
+            Let us now study the four Weyl fermions $\psi^a$. They 
 
         \subsubsection{Quiver}
 
@@ -1044,6 +1046,14 @@
 
         One can also consider replacing the orbifold by a conifold by deforming singular algebraic description of the orbifold with a field into a family smooth surfaces. The total space is then the conifold.
 
+        Recall that the degree of supersymmetry that is preserved by compactifying in a Calabi-Yau $n$-fold (having $\SU(n)$) is $2^{1-n}$. Starting from the $\mN=2$ 10-dimensional type IIB string theory with 32 supercharges, this means that
+        \begin{itemize}
+            \item if we compactify on a $1$-fold, we get $32$ supercharges in $8$ dimensions so $\mN=2$,
+            \item if we compactify on a $2$-fold, we get $16$ supercharges in $6$ dimensions so $\mN=2$,
+            \item if we compactify on a $3$-fold, we get $8$ supercharges in $4$ dimensions so $\mN=2$,
+            \item is we compactify on a $4$, we get $2$ supercharges in $2$ dimensions so $\mN=2$.
+        \end{itemize}
+
     \subsection{Projective representations and discrete torsion}
 
     \subsection{Quiver gauge theories deformations and conifold}
@@ -1079,7 +1089,7 @@
         \begin{equation}
             [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi^A = (\phi^A,\psi^A_\alpha,F^A).
         \end{equation}
-        with $A=1,2,3$, i.e. in terms of one vector supermultiplet and three chiral scalar supermultiplets. The propagating degrees of freedom are therefore a vector field, six scalars and four gauginos.
+        with $A=1,2,3$, i.e. in terms of one vector supermultiplet and three chiral scalar supermultiplets. The propagating degrees of freedom are therefore a vector field, three complex scalars and four gauginos.
         
         The Lagrangian is very much constrained by $\mN = 4$ supersymmetry. First, the chiral superfields $\Phi^A$ should transform in the adjoint representation of the gauge group $G$, since internal symmetries commute with supersymmetry. This means that all fields transform in the adjoint of $G$.
         
@@ -1733,6 +1743,20 @@
 \section{Toric and non-toric singularities}
 
     All abelian orbifolds are toric varities.
+
+\section{Spacetime geometry: ALE space and orbifolds}\label{app:spacetimegeom}
+
+    Asymptotically locally euclidean (ALE) spaces are a particularly interresting choice of string background to probe with branes for mainly four reasons
+    \begin{enumerate}[label=(\roman*)]
+        \item they are the resolution (blow-ups) of orbifolds
+        \item there are completelyclassified: they fall in the ADE classification
+        \item they only break half of the supersymmetry
+        \item they are non-compact therefore we can study them for self-dual type II theory\marker.
+    \end{enumerate}
+    Mathematically, an ALE space is complete riemannian $n$-manifold $M$ such that there exists a compact set $K\subset M$ such that $M\backslash K$ is diffeomorphic to $(\R^n\backslash B_0(R))/G$, where $R\in\R^+_0$ is a radius and $G\subset\O(n)$ a subgroup. Additionally, it is asked that the pulled back metric on $\R^n\backslash B_0(R)$ tends to the euclidean flat metric at infinity.
+
+    If one considers string theory an the orbifold $\R^4/\Gamma$ where $\Gamma$ is a finite sub group of $\SU(2)$, massless states appear from the twisted sector. They are precisely the moduli needed the deform the theory to the one with smooth spacetime, i.e. the resolution of the orbifold. In that sense, is said that the strings know about the metric ALE space and that it is said that strings resolve the singularity. The metric of the ALE space can be recovered if the lagrangian of the resulting field theory is explicitely know, such as for the Wess-Zumino-Witten model. However, it is often not the case.
+
 
 \section{Some derivations}
 

@@ -113,10 +113,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {I}Toric and non-toric singularities}{29}{appendix.I}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {J}Some derivations}{29}{appendix.J}%
+\contentsline {section}{\numberline {J}Spacetime geometry: ALE space and orbifolds}{29}{appendix.J}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {J.1}}{29}{subsection.J.1}%
+\contentsline {section}{\numberline {K}Some derivations}{29}{appendix.K}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {K}References guide}{30}{appendix.K}%
+\contentsline {subsection}{\numberline {K.1}}{29}{subsection.K.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Markers}{32}{appendix.K}%
+\contentsline {section}{\numberline {L}References guide}{31}{appendix.L}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Markers}{32}{appendix.L}%
