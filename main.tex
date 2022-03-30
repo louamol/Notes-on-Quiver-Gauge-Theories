@@ -39,40 +39,53 @@
 
 \nocite{*}
 
-\section{The brane-world paradigm}
+\section{Physical setup}
 
-    We consider our world to be a slice in the ten-dimensional spacetime of type II superstring theory, i.e. the worldvolume of a D$3$-brane. More precisely, we consider a stack of $N$ D$3$-branes in order to have a $\U(N)$ gauge group. The spacetime is therefore not necessarily $\R^{1,9}$ but of the more general form
-    \begin{equation*}
-        M = \R^{1,3}\times M^{(6)}.
-    \end{equation*}
-    This is the so-called \emph{brane-world paradigm}. In particular, we will be interested in type IIB string theory because of its self-duality under S-duality\marker.
+    \subsubsection*{Brane-world paradigm}
+
+        We consider our world to be a slice in the ten-dimensional spacetime of type II superstring theory, i.e. the worldvolume of a D$3$-brane. More precisely, we consider a stack of $N$ D$3$-branes in order to have a $\U(N)$ Chan-Paton factors resulting in a $\U(n)$ gauge group. To have D$3$-branes, we need to consider type IIB superstring theory. The spacetime is therefore not necessarily $\R^{1,9}$ but of the more general form
+        \begin{equation*}
+            M = \R^{1,3}\times M^{(6)}.
+        \end{equation*}
+        This is the so-called \emph{brane-world paradigm}. %In particular, we will be interested in type IIB string theory because of its self-duality under S-duality\marker.
+
+    \subsubsection*{Supersymmetry on the worldvolume: holonomy and Calabi-Yau compactification}
     
-    Independently from string theory, we ask to have at least $\mN=1$ supersymmetry for the $4$-dimensional worldvolume theory, i.e. at least $4$ supercharges. This constrains the transverse space $M^{(6)}$ to be compact, complex, Kähler and to have $\SU(3)$ holonomy, see appendix \ref{sec:appCY}. Namely, $M^{(6)}$ must be a Calabi-Yau threefold.
+        Independently from string theory, we can ask for the wolrdvolume theory to be supersymmetric. Preserving any degree of supersymmetry constrains the transverse space $M^{(6)}$ to be compact, complex, Kähler and to have $G\subset\SU(3)$ holonomy. Namely, $M^{(6)}$ must be a Calabi-Yau threefold.
+
+        Let us discuss the the holonomy part of the constrain in more details as it will play an important role in the following. We start from type IIB superstring theory which is $10$-dimensional and has $\mN=2$ supersymmetry so it possesses $32$ supercharges. As usual, they transform under the minimal spinor representation of the bulk Lorentz group, here $\SO(1,9)$. In ten dimensions this representation has $8$-dimensional (complex) which is why there are $\mN(8+8)=32$ supercharges: $8$ transforming in the $8$-dimensional minimal spinor representation and $8$ transforming in the $16$-dimensional conjugate minimal representation and whole thing two times since $\mN=2$. Let us now consider a four-dimensional field theory resulting from compactification of the transverse six-dimensional space. The number of supercharges that generate supersymmetries for this theory is the number of Killing spinor (covariantly constant spinor): each Killing spinor contracted with the local supersymmetry current generates a residual supersymmetry\marker. Now the link with holonomy: a generic curved six-dimensional manifold has $\O(6)$ holonomy and $\SO(6)$ if it is orientable. Since $\SO(6)\cong\SU(4)$, minimal spinors can be viewed as having four complex component and as transforming under $\SU(4)$. Indeed, minimal spinors in six dimensions have four complex components. In order to have one covariantly conserved spinor, we look for the biggest subgroup of $\SU(4)$ that leaves a component of the spinor invariant. This is clearly $\{e\}\times\SU(3)\subset\SU(4)$ that acts trivially on the first component. The spinor $(1,0,0,0)$ is then covariantly conserved. Our transverse space must therefore have $\SU(3)$ holonomy such that the parallel transport of the spinor $(1,0,0,0)$ under any closed loop is a lower $\SU(3)$ rotation. We conclude that if the transverse Calabi-Yau has $\SU(3)$ holonomy, the worldvolume theory has $\mN=1$ supersymmetry. The same reasoning can be used to obtain that $\SU(2)$ holonomy implies $\mN=2$ supersymmetry.
+
+    \subsubsection*{Non-compact transverse space}
     
-    If we let the worldvolume of the D$3$-branes carry the requisite gauge theory while the bulk contains gravity, we can relax the compactness condition and study non-compact threefolds. In other words, $M^{(6)}$ is taken to be an affine variety that locally models a Calabi-Yau threefold. Intuitively, this can be understood as a Kaluza-Klein compactification where we take the size of the compact dimensions to infinity. The four-dimensional gravity coupling constant being inversely proportional to this quantity, there is no gravity in this limit. This makes the analysis much simpler and therefore also serves as an argument to ignore gravity in the worldvolume theory. Consequently, we will mostly ignore gravity and not care about the metric of the spacetime, see the appendix \ref{app:spacetimegeom} for more details. Thus far, we have $n$ D$3$-branes on which there is a $\U(N)$ gauge group and transverse to which gravity propagates.
+        If we let the worldvolume of the D$3$-branes carry the requisite gauge theory while the bulk contains gravity, we can relax the compactness condition and study non-compact threefolds. In other words, $M^{(6)}$ is taken to be Calabi-Yau variety, instead of a Calabi-Yau manifold. A Calabi-Yau varitey is an affine variety that locally models a Calabi-Yau manifold, therefore allowing for singularities. 
+        
+        Using a non-compact transverse space can intuitively be understood as a Kaluza-Klein compactification where we take the size of the compact dimensions to infinity. The four-dimensional gravity coupling constant being inversely proportional to this quantity, there is no gravity in this limit. This makes the analysis much simpler and therefore also serves as an argument to ignore gravity in the worldvolume theory. Consequently, we will mostly ignore gravity and not care about the metric of the spacetime, see appendix \ref{app:spacetimegeom} for more details. Thus far, we have $N$ D$3$-branes on which there is a $\U(N)$ gauge group and transverse to which gravity propagates.
 
-    The only smooth Calabi-Yau threefold is $\C^3$ so we are lead to consider singular Calabi-Yau manifolds or, more precisely, Calabi-Yau orbifolds. We usually denote $S\equiv M^{(6)}$ to remind us of the singular aspect. String theory being a theory of extended objects, it is well-defined on such singularities. We will see that this singular structure of the geometry will break $\U(N)$ into products of gauge groups.
+    \subsubsection*{Singular transverse space}
+
+        The only smooth Calabi-Yau threefold is $\C^3$ so we are lead to consider singular Calabi-Yau varieties. We usually denote $S\equiv M^{(6)}$ to remind us of the singular aspect. String theory being a theory of extended objects, it is well-defined on such singularities. In a sense that will be clarified later, this singular structure of the geometry requires to ``project'' the theory. As a result, the gauge group $\U(N)$ will be broken down into products of smaller gauge groups. The simplest examples of singular Calabi-Yau varieties are Calabi-Yau orbifolds. We will mainly be interested these examples.
     
-    From the point of view of the orbifold, the D$3$-brane is a point. Consequently, there is a crucial relationship between the D$3$-brane worldvolume theory and the Calabi-Yau singularity: the former parametrizes the latter. In other words, the classical vacuum of the gauge theory should be, in explicit coordinates, the defining equation of $S$.
+        From the point of view of the orbifold, the D$3$-brane is a point. Consequently, the D$3$-branes parametrize the transverse space. This is the first clue of the crucial relationship between the worldvolume theory and the Calabi-Yau singularity. Eventually, we will see that the classical vacuum of the gauge theory should be, in explicit coordinates, the defining equation of $S$. This is precisely the opposite of the projection manipulation we mentioned above: recovering the transverse space from the gauge theory.
 
-    Mathematically, this brane-world paradigm is the realization of branes as supports of vector bundles (sheaf). Gauge theories on branes are intimately related to algebraic constructions of stable bundles, i.e. holomorphic or algebraic vector bundles that are stable in the sense of geometric invariant theory. In particular, D-brane gauge theories manifest as a natural description of symplectic quotients and their resolutions in geometric invariant theory.
+    \subsubsection*{Mathematical formulation}
 
-    To summarize in more mathematical terms, our D-branes, together with the stable vector bundle (sheaf) supported thereupon, resolves the transverse Calabi-Yau orbifold which is the vacuum for the gauge theory on the worldvolume as a GIT quotient \marker.
+        Mathematically, this brane-world paradigm is the realization of branes as supports of vector bundles (sheaf). Gauge theories on branes are intimately related to algebraic constructions of stable bundles, i.e. holomorphic or algebraic vector bundles that are stable in the sense of geometric invariant theory. In particular, D-brane gauge theories manifest as a natural description of symplectic quotients and their resolutions in geometric invariant theory.
 
-    \begin{result}
-        We consider $N$ D$3$-branes carrying a $\U(N)$ gauge group on various orbifolds of $\R^6$. Requiring $\mN=1$ supersymmetry for the worldvolume theory imposes that the transverse space must be a Calabi-Yau orbifold. Ignoring gravity for the worldvolume theory and if we want more interresting cases, we can actually consider the larger class of non-compact singular Calabi-Yau spaces.
-    \end{result}
-    
+        To summarize in more mathematical terms, our D-branes, together with the stable vector bundle (sheaf) supported thereupon, resolves the transverse Calabi-Yau orbifold which is the vacuum for the gauge theory on the worldvolume as a GIT quotient \marker.
+
+    \subsubsection*{Summary}
+
+        We summarize all the elements that we introduced here above: we consider $N$ D$3$-branes in type IIB superstring theory carrying a $\U(N)$ gauge group. The transverse space is take to be a non-compact singular Calabi-Yau variety.
 
 \section{The simplest case: $S=\C^3$}
 
     \subsection{Generalities}
 
-        Let us by studying the simplest configuration were the transverse Calabi-Yau space is non-singular, i.e. it is a proper smooth Calabi-Yau threefold. The only smooth Calabi-Yau threefold is $S=\C^3$. In this case, the spacetime is simply flat space $\R^{1,9}=\R^{1,3}\times\R^6$ with a choice a complex structure on $\R^6$. As mentioned above, the worldvolume theory has a $\U(N)$ gauge group. Type IIB superstring theory is a ten-dimensional $\mN=2$ theory so it has $32$ supercharges. The presence of the branes breaks the Lorentz symmetry of $\R^{1,9}$ as
+        We start by considering the simplest configuration were the transverse Calabi-Yau space is non-singular, i.e. it is a proper smooth Calabi-Yau threefold. As mentioned above, the only smooth Calabi-Yau threefold is $S=\C^3$. In this case, the spacetime is simply flat space $\R^{1,9}=\R^{1,3}\times\R^6$ with a choice a complex structure on $\R^6$. From the $\U(N)$ Chan-Paton factors, the worldvolume theory inherits from a $\U(N)$ gauge group. Type IIB superstring theory is a ten-dimensional $\mN=2$ theory so it has $32$ supercharges. The presence of the branes breaks the Lorentz symmetry of $\R^{1,9}$ as
         \begin{equation}
             \SO(1,9)\to\SO(1,3)\times\SO(6),
         \end{equation}
-        whereby breaking half of the supersymmetries, see appendix \ref{sec:appCY}. We are thus left with $16$ supercharges. In four dimensions, this corresponds to $\mN=4$. The worldvolume theory for $S=\C^3$ is therefore $D=4,\mN=4$ $\U(n)$ SCFT gauge theory. This worldvolume theory, obtained in the non-singular case $S=\C^3$, is called the \emph{parent theory}.
+        whereby breaking half of the supersymmetries, as we explained in the previous section. We are thus left with $16$ supercharges. In four dimensions, this corresponds to $\mN=4$. The worldvolume theory for $S=\C^3$ is therefore $D=4,\mN=4$ $\U(N)$ SCFT gauge theory. This worldvolume theory, obtained in the non-singular case $S=\C^3$, is called the \emph{parent theory}.
 
         Note that the D$3$-brane will warp the flat space metric to that of $AdS_5\times S^5$ and the bulk geometry is not strictly $\C^3$. However, as stated above, we are only concerned with the local gauge theory and not with gravitational back-reaction, therefore it suffices to consider $S$ as $\C^3$.
 
@@ -89,6 +102,7 @@
                 \text{Gauge transformation} &: A_\mu\mapsto UA_\mu U^{-1}+U\p_\mu U^{-1},\qquad U\in\U(N)\label{eq:transfA1}\\
                 \text{R-symmetry} &: A_\mu\mapsto A_\mu.\label{eq:transfA2}
             \end{align}
+            Note that the  usual term 
             \item $4$ Weyl fermions $\psi^{a}_\alpha\equiv(\lambda_\alpha,\psi^1_\alpha,\psi^2_\alpha,\psi^3_\alpha,)$ that transform under the adjoint of $\U(N)$ and are mixed together under the representation $\boldsymbol{4}$ of $\SU(4)_R$. This means that each fermion $\psi^a$ takes values in $\mathfrak{u}(N)$ and we denote the components by $\psi^a_{IJ}$ ($I,J=1,\dots,N$). Explicitely:
             \begin{align}
                 \text{Gauge transformation} &: \psi^a \mapsto U \psi^a U^\dagger ,\qquad U\in\U(N),\label{eq:transfpsi1}\\
@@ -1122,10 +1136,6 @@
         \begin{result}
             \textbf{$\boldsymbol{\mN=4}$ Yang-Mills theory.} There is only one $D=4,\mN=4$ Yang-Mills theory and it contains $3$ $\mN=1$ chiral scalar supermutliplet and $1$ $\mN=1$ vector supermultiplet (up to $g$ and $\tau$). This theory is conformal and can be recovered from dimensional reduction of $D=10,\mN=1$ Yang-Mills on $\mathbb{T}^6$.
         \end{result}
-
-\section{Calabi-Yau compactification}\label{sec:appCY}
-
-    Requireing $\mN=1$ supersymmetry is equivalent too asking that that the configuration resulting from compactification has at least one Killing spinor (covariantly constant spinor). This constant spinor then defines a residual supersymmetry by contracting with the local supersymmetry current. On real $6$-folds, spinors transform under $\SO(6)$. We are therefore looking for the biggest subgroup of $\SO(6)$ that leaves a component of the spinor invariant. In that case the spinor $(1,0,0,0)$ is covariantly conserved, i.e. is a Killing spinor. Using the fact that $\SO(6)\cong\SU(4)$, can clearly see that this subgroup is $\SU(3)$. Our transverse space must therefore have $\SU(3)$ holonomy such that the parallel transport of the spinor $(1,0,0,0)$ under any closed loop is a lower $\SU(3)$ rotation.
 
 \section{Properties of D-branes in type II theories}
 

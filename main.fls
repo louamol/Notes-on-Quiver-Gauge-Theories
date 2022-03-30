@@ -2021,6 +2021,8 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchb8t.vf
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8r.tfm
 OUTPUT main.toc
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchri8t.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchri8t.vf
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchri8r.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
@@ -2036,8 +2038,6 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/latex-fonts/lasyb10.tf
 INPUT /home/louan/.miktex/texmfs/data/fonts/tfm/public/esvect/vect10.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/stix/stix-mathfrak.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8t.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchri8t.vf
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchri8r.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchb8t.vf
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8r.tfm
 INPUT /home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
@@ -2047,10 +2047,10 @@ INPUT /home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm5.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8t.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8t.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchr8t.vf
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchr8r.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8t.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8t.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm7.tfm
