@@ -155,7 +155,7 @@
             R(\gamma)\rho(\gamma) \psi_{IJ} \rho_{\mathfrak{u}}(\gamma)^{-1} &= \psi_{IJ}\label{eq:proj2},\\
             R(\gamma)\rho(\gamma) X_{IJ} \rho(\gamma)^{-1} &= X_{IJ}\label{eq:proj3}
         \end{align}
-        are kept in the spectrum, where $\rho$ is a unitary representation of $\Gamma$ on $\C^N$ and $R=\boldsymbol{4},\boldsymbol{6}$. This will be discussed in detail in the next section.  Note that the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$, in agreement with \eqref{eq:AHom}-\eqref{eq:phiHom}. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
+        are kept in the spectrum, where $\rho$ is a unitary representation of $\Gamma$ on $\C^N$ and $R=\boldsymbol{4},\boldsymbol{6}$. Note that the term $U\p_\mu U^{-1}$ is absent from \ref{eq:proj1}. This comes from the fact that since $\Gamma$ is a finite group, the only smooth functions $x\mapsto\Gamma$ are the constant ones, so transformations of the gauge field under a finite subgroup of its gauge group cannot depend on $x$. This will be discussed in detail in the next section.  Note that the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$, in agreement with \eqref{eq:AHom}-\eqref{eq:phiHom}. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
 
     \subsection{Representation theory realization}
 
@@ -937,22 +937,38 @@
 
         \subsubsection{Representations of $\Z_m\times\Z_n$}
 
-           We consider the group $\Z_m\times\Z_n$ and we choose the order such that $m\leq n$.  Let us denote by $\{\mu_i\}_{i=0,\dots,m-1}$ and $\{\sigma_j\}_{j=0,\dots,n-1}$ two complete set of irreducible representation of $\Z_m$ and $\Z_n$ respectively, with
+           We consider the group $\Z_m\times\Z_n$. Let us denote by $\{\mu_i\}_{i=0,\dots,m-1}$ and $\{\sigma_j\}_{j=0,\dots,n-1}$ two complete set of irreducible representation of $\Z_m$ and $\Z_n$ respectively, with
            \begin{align}
                \mu(g_1)&=\zeta^i_m\\
                \sigma_j(g_2)&=\zeta^j_n
            \end{align}
-           where $g_1$ and $g_2$ are the generating elements of $\Z_m$ and $\Z_n$ respectively. $\Z_m\times\Z_n$ is of order $mn$ and possesses the same number of equivalency classes (abelian). It has therefore $mnn$ irreducible representations. Since the group is abelian, they are all of dimension $1$. Let us denote by $\{T_k\}_{k=0,\dots,m+n-1}$ a complete set of irreducible representations. Since we have a product group, for any $k$ there exists indices $i(k)$ and $j(k)$ such that $T_k=\mu_{i(k)}\otimes\sigma_{j(k)}$. Let us denote by $\{T_{ij}\}_{i=0,\dots,m-1,j=0,\dots,n-1}$ a c the complete set of irreducible representations that we can construct from $\{\mu_i\}_{i=0,\dots,m-1}$ and $\{\sigma_j\}_{j=0,\dots,n-1}$, i.e.
+           where $g_1$ and $g_2$ are the generating elements of $\Z_m$ and $\Z_n$ respectively. $\Z_m\times\Z_n$ is of order $mn$ and possesses the same number of equivalency classes (abelian). It has therefore $mn$ irreducible representations. Since the group is abelian, they are all of dimension $1$. Let us denote by $\{T_k\}_{k=0,\dots,m+n-1}$ a complete set of irreducible representations. Since we have a product group, for any $k$ there exists indices $i(k)$ and $j(k)$ such that $T_k=\mu_{i(k)}\otimes\sigma_{j(k)}$. We choose the indices $i(k)$ and $j(k)$ such that
+           \begin{align*}
+               T_0 &= \mu_0\otimes\mu_0,\\
+               T_1 &= \mu_0\otimes\mu_1,\\
+               T_2 &= \mu_0\otimes\mu_2,\\
+               &\vdots\\
+               T_{n-1} &= \mu_0\otimes\mu_{n-1},\\
+               T_n &= \mu_1\otimes\mu_0,\\
+               &\vdots\\
+               T_{2n-1} &= \mu_1\otimes\mu_{n-1},\\
+               &\vdots\\
+               T_{mn-1} &= \mu_{m-1}\otimes\mu_{n-1}.
+           \end{align*}
+           That is, we take
            \begin{equation}
-               T_{ij}=\mu_i\otimes\sigma_j
+               \begin{cases}
+                   i(k) &= \lfloor k/n\rfloor\\
+                   j(k) &= k\mod n
+               \end{cases}\qquad \Leftrightarrow \qquad k=i(k)n+j(k).
            \end{equation}
-           such that $T_{ij}(g_1,g_2)=\zeta^i_m\zeta^j_n$.
+           Note that this simply a dictionary between a line notation and a matrix notation and that it is indeed a bijection $k\Leftrightarrow i,j$. In this way, we can proceed to similar manipulations than before, were we used line notations. 
 
            Any representation $R$ of $\Z_m\times\Z_n$ can be decomposed as
            \begin{equation}
-               R=\bigoplus_{i,j}N_k T_{ij}=\bigoplus_{i,j}N_k(\mu_{i}\otimes\sigma_{j}).
+               R=\bigoplus_{i,j}N_k T_k=\bigoplus_{i,j}N_{ij}(\mu_{i}\otimes\sigma_{j})
            \end{equation}
-           We must have $\sum_kN_k=3$. In other words, any representation of $\Z_m\times\Z_n$ on $\C^3$ is equivalent to
+           with $N_k=N_{i(k)j(k)}$. We must have $\sum_kN_k=3$. In other words, any representation of $\Z_m\times\Z_n$ on $\C^3$ is equivalent to
            \begin{equation}
                 R(g_1,g_2)=[(\mu_{a}\otimes\sigma_{a'})\oplus(\mu_{b'}\otimes\sigma_{b'})\oplus(\mu_{c}\otimes\sigma_{c'})](g_1,g_2)=
                \begin{bmatrix}
@@ -977,6 +993,90 @@
                0 & 0 & \xi^{-1}_m\xi^{-1}_n
            \end{bmatrix}.
        \end{equation}
+
+    \subsubsection{Projection}
+
+        Let us start by the gauge field. We consider a unitary representation $(\rho,\C^N)$ of $\Z_m\times \Z_n$ on $\C^n$ and decompose it as
+        \begin{equation}
+            \rho=\bigoplus_{i,j}N_k T_k
+        \end{equation}
+        such that
+        \begin{equation}
+            \rho(g)=
+            \begin{bmatrix}
+                T_0(g) & & & \cdots & & & 0 \\
+                & \ddots & & & & & \\
+                & & T_0(g) & & & &  \\
+                \vdots & & & \ddots & & & \vdots \\
+                & & & & T_{mn-1}(g) & & \\
+                & & & & & \ddots & \\
+                0 & & & \cdots & & & T_{mn-1}(g) 
+            \end{bmatrix}
+            \hspace{-0.2cm}
+            \begin{tabular}{l}
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                    a_0\\ \ddots\\ a_0\ 
+                \end{matrix} 
+            }}\right\}N_0$\\
+            \vdots \\
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                    b_0\\ \ddots\\ b_0\ 
+                \end{matrix}
+            }} \right\}N_{mn-1}$
+            \end{tabular}.
+        \end{equation}
+
+        We can now use our usual bi-index notation $A_{\mu;k\alpha_k,l\beta_l}$ with $k,l=0,\dots mn-1$ and $\alpha_k,\beta_k=0,\dots,N_k$ but instead it is more convenient to come back to our matrix notation by writing the block $A_{\mu;k,l}$ as $A_{\mu;i(k)j(k),i(l)j(l)}$ that we simply denote by $A_{\mu;ij,i'j'}$ with $i,i'\in\{0,\dots,n-1\}$ and $j,j'\in\{0,\dots,n-1\}$. So for $m=2,n=3$ for example, the link between the two notations is
+        {\small
+        \begin{equation}
+            \begin{bmatrix}
+                A_{\mu;00} & A_{\mu;01} & A_{\mu;02} & A_{\mu;03} & A_{\mu;04} & A_{\mu;05} \\
+                A_{\mu;10} & A_{\mu;11} & A_{\mu;12} & A_{\mu;13} & A_{\mu;14} & A_{\mu;05} \\
+                A_{\mu;20} & A_{\mu;21} & A_{\mu;22} & A_{\mu;23} & A_{\mu;24} & A_{\mu;05} \\
+                A_{\mu;30} & A_{\mu;31} & A_{\mu;32} & A_{\mu;33} & A_{\mu;34} & A_{\mu;05} \\
+                A_{\mu;40} & A_{\mu;41} & A_{\mu;42} & A_{\mu;43} & A_{\mu;44} & A_{\mu;05} \\
+                A_{\mu;50} & A_{\mu;51} & A_{\mu;52} & A_{\mu;53} & A_{\mu;54} & A_{\mu;05}
+            \end{bmatrix}=
+            \begin{bmatrix}
+                \begin{bmatrix}
+                    A_{\mu;00,00} & A_{\mu;00,01} & A_{\mu;00,02}\\
+                    A_{\mu;01,00} & A_{\mu;01,01} & A_{\mu;01,02}\\
+                    A_{\mu;02,00} & A_{\mu;02,01} & A_{\mu;02,02}\\
+                \end{bmatrix}
+                \begin{bmatrix}
+                    A_{\mu;00,10} & A_{\mu;00,11} & A_{\mu;00,12}\\
+                    A_{\mu;01,10} & A_{\mu;01,11} & A_{\mu;01,12}\\
+                    A_{\mu;02,10} & A_{\mu;02,11} & A_{\mu;02,12}\\
+                \end{bmatrix}\\
+                \begin{bmatrix}
+                    A_{\mu;10,00} & A_{\mu;10,01} & A_{\mu;10,02}\\
+                    A_{\mu;11,00} & A_{\mu;11,01} & A_{\mu;11,02}\\
+                    A_{\mu;12,00} & A_{\mu;12,01} & A_{\mu;12,02}\\
+                \end{bmatrix}
+                \begin{bmatrix}
+                A_{\mu;10,10} & A_{\mu;10,11} & A_{\mu;10,12}\\
+                A_{\mu;11,10} & A_{\mu;11,11} & A_{\mu;11,12}\\
+                A_{\mu;12,10} & A_{\mu;12,11} & A_{\mu;12,12}\\
+            \end{bmatrix}
+            \end{bmatrix}
+        \end{equation}}
+        So instead of considering $A_\mu$ to be a single $mn\times mn$ matrix of element $A_{\mu;kl}$, where $A_{\mu;kl}$ are $N_k\times N_l$ matrices, we consider it as an $m\times m$ where each element $A_{\mu,ii'}$ (line $i$ column $i'$) is itself an $n\times n$ matrices with elements $A_{\mu;ij,i'j'}$ (line $j$ column $j'$), as shown above.
+
+        Using these notations, the gauge field transforms as
+        \begin{equation}
+            A_{\mu;ij,i'j'} \mapsto (\mu_i(g)\otimes\sigma_j(g))A_{\mu;ij,i'j'}(\mu_{i'}(g)\otimes\sigma_{j'}(g))^{-1} = \zeta^{i-i'}_m\zeta^{j'-j}_n A_{\mu;ij,i'j'}
+        \end{equation}
+        so invariant configurations can possess non-vanishing components $A_{\mu;ij,i'j'}$ only if
+        \begin{align}
+            \zeta^{i-i'}_m &= \zeta(j'-j)_n \\
+            \Leftrightarrow\quad (i-i')\mod m &= (j'-j)\mod n \\
+            \Leftrightarrow\quad j' &= j+\abs{i'-i}.
+        \end{align}
+        This means that the submatrices $A_{\mu;ii'}$ has an off-diagonal block form with offset $\abs{i'-i}$.
+
+        
 
 
     \begin{table}[H]
