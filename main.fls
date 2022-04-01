@@ -2084,9 +2084,11 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/stix/stix-mathfrak.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchri8t.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchri8t.vf
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchri8r.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchr8t.vf
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchr8r.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8t.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8t.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchr8t.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8t.tfm
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8t.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchr8t.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchr8t.vf
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchr8r.tfm
@@ -2131,10 +2133,10 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.p
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb
-INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
-INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -2185,8 +2187,6 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm7
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm7.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb
-INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam5.pfb
-INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam5.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb

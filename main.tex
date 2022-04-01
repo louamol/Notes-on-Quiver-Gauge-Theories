@@ -1029,7 +1029,7 @@
         \end{equation}
 
         We can now use our usual bi-index notation $A_{\mu;k\alpha_k,l\beta_l}$ with $k,l=0,\dots mn-1$ and $\alpha_k,\beta_k=0,\dots,N_k$ but instead it is more convenient to come back to our matrix notation by writing the block $A_{\mu;k,l}$ as $A_{\mu;i(k)j(k),i(l)j(l)}$ that we simply denote by $A_{\mu;ij,i'j'}$ with $i,i'\in\{0,\dots,n-1\}$ and $j,j'\in\{0,\dots,n-1\}$. So for $m=2,n=3$ for example, the link between the two notations is
-        {\small
+        {\tiny
         \begin{equation}
             \begin{bmatrix}
                 A_{\mu;00} & A_{\mu;01} & A_{\mu;02} & A_{\mu;03} & A_{\mu;04} & A_{\mu;05} \\
@@ -1076,47 +1076,64 @@
         \end{align}
         This means that the submatrices $A_{\mu;ii'}$ has an off-diagonal block form with offset $\abs{i'-i}$.
 
+        For the scalar fields, we have
+        \begin{align}
+            X^m_{ij,i'j'}&\mapsto R(g)\indices{^m_n}(\mu_i(g)\otimes\sigma_j(g))X^n_{ij,i'j'}(\mu_{i'}(g)\otimes\sigma_{j'}(g))^{-1}\\
+            &\quad =
+            \begin{cases}
+                \zeta^{i-i'+1}_m\zeta^{j-j'}_n X^m_{ij,i'j'},\qquad m=0,1\\
+                \zeta^{i-i'}_m\zeta^{j-j'+1}_n X^m_{ij,i'j'},\qquad m=2,3\\
+                \zeta^{i-i'-1}_m\zeta^{j-j'-1}_n X^m_{ij,i'j'},\qquad m=4,5.
+            \end{cases}
+        \end{align}
+        So a configuration is invariant if and inly if the only non-vanishing component satisfy
+        \begin{align}
+            m=0,1 &: (i-i'+1)\mod m = (j'-j)\mod n\\
+            m=2,3 &: (i-i')\mod m = (j'-j-1)\mod n\\
+            m=4,5 &: (i-i'-1)\mod m = (j'-j+1)\mod n.
+        \end{align}
+
         
 
 
-    \begin{table}[H]
-        \centering
-        {\small
-        $
-        \begin{array}{|c|c|c|l|c|c|}
-            \hline
-            S & \mN & \text{Gauge group} & \text{Field content} & \text{Quiver} & \begin{tabular}{@{}l@{}} \text{Gauge anomaly} \\ \text{constraint}  \end{tabular} \\ \hline
-            \C^3 & 4 & \U(N) & \begin{tabular}{@{}l@{}}$A_\mu\in\Hom(\C^n,\C^n)$  \\ $\phi\in\boldsymbol{6}\otimes\Hom(\C^n,\C^n)$ \\ $\psi\in\boldsymbol{4}\otimes\Hom(\C^n,\C^n)$ \end{tabular} & &  \\ \hline
-            \C\times\C^2/\Z_3 & 2 & & & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.4]
-                \foreach \n in {0,...,2}{
-                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-20}:2) and ({120*\n+120-40}:2) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{\tiny{$\blacktriangleright$}};
-                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-30}:1.6) and ({120*\n+120-30}:1.6) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{\tiny{$\blacktriangleleft$}};
-                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n}:4) and ({120*\n-60}:4) .. ({120*\n-30}:2) node[midway,sloped,allow upside down]{\tiny{$\blacktriangleright$}};
-                    \draw[fill=black] ({120*\n-30}:2) circle[radius=0.15];
-                }
-                \draw (0:2.2) node{$N_0$};
-                \draw (60:2.2) node{$N_1$};
-                \draw (180:2.2) node{$N_2$};
-            \end{tikzpicture} & \\ \hline
-            \C\times\C^2/\D_n & 2 & & & & \\ \hline
-            \C\times\C^2/\T & 2 & & & & \\ \hline
-            \C\times\C^2/\O & 2 & & & & \\ \hline
-            \C\times\C^2/\I & 2 & & & & \\ \hline
-            \C^3/\Z_3 & 1 & \U(N_0)\times\U(N_1)\times\U(N_2) & \begin{tabular}{@{}l@{}}$A_\mu\in\marker$ \\ $X^m_{01}\in\Hom(V_1,V_0)$ \\ $X^m_{12}\in\Hom(V_2,V_1)$ \\$ X^m_{20}\in\Hom(V_0,V_2)$ \\ $\psi\in\marker$\end{tabular} &
-            \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.4]
-                \foreach \n in {0,...,2}{
-                    \draw[very thick] ({-120*\n-30}:2)--({-120*(\n+1)-30}:2);
-                    \draw[fill=black] ({-120*\n-30}:2) circle[radius=0.15];
-                    \draw ({120*\n+30}:1) node[rotate={120*\n-60}]{\tiny{$ \blacktriangleright\blacktriangleright\blacktriangleright$}};
-                }
-                \draw (-30:2.7) node{$N_0$};
-                \draw (90:2.7) node{$N_1$};
-                \draw (210:2.7) node{$N_2$};
-            \end{tikzpicture} & N_0=N_1=N_2 \\ \hline
-        \end{array}
-        $}
-        \caption{List of worldvolume theories for different transverse spaces.}
-    \end{table}
+    %\begin{table}[H]
+    %    \centering
+    %    {\small
+    %    $
+    %    \begin{array}{|c|c|c|l|c|c|}
+    %        \hline
+    %        S & \mN & \text{Gauge group} & \text{Field content} & \text{Quiver} & \begin{tabular}{@{}l@{}} \text{Gauge anomaly} \\ \text{constraint}  \end{tabular} \\ \hline
+    %        \C^3 & 4 & \U(N) & \begin{tabular}{@{}l@{}}$A_\mu\in\Hom(\C^n,\C^n)$  \\ $\phi\in\boldsymbol{6}\otimes\Hom(\C^n,\C^n)$ \\ $\psi\in\boldsymbol{4}\otimes\Hom(\C^n,\C^n)$ \end{tabular} & &  \\ \hline
+    %        \C\times\C^2/\Z_3 & 2 & & & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.4]
+    %            \foreach \n in {0,...,2}{
+    %                \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-20}:2) and ({120*\n+120-40}:2) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{\tiny{$\blacktriangleright$}};
+    %                \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-30}:1.6) and ({120*\n+120-30}:1.6) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{\tiny{$\blacktriangleleft$}};
+    %                \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n}:4) and ({120*\n-60}:4) .. ({120*\n-30}:2) node[midway,sloped,allow upside down]{\tiny{$\blacktriangleright$}};
+    %                \draw[fill=black] ({120*\n-30}:2) circle[radius=0.15];
+    %            }
+    %            \draw (0:2.2) node{$N_0$};
+    %            \draw (60:2.2) node{$N_1$};
+    %            \draw (180:2.2) node{$N_2$};
+    %        \end{tikzpicture} & \\ \hline
+    %        \C\times\C^2/\D_n & 2 & & & & \\ \hline
+    %        \C\times\C^2/\T & 2 & & & & \\ \hline
+    %        \C\times\C^2/\O & 2 & & & & \\ \hline
+    %        \C\times\C^2/\I & 2 & & & & \\ \hline
+    %        \C^3/\Z_3 & 1 & \U(N_0)\times\U(N_1)\times\U(N_2) & \begin{tabular}{@{}l@{}}$A_\mu\in\marker$ \\ $X^m_{01}\in\Hom(V_1,V_0)$ \\ $X^m_{12}\in\Hom(V_2,V_1)$ \\$ X^m_{20}\in\Hom(V_0,V_2)$ \\ $\psi\in\marker$\end{tabular} &
+    %        \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.4]
+    %            \foreach \n in {0,...,2}{
+    %                \draw[very thick] ({-120*\n-30}:2)--({-120*(\n+1)-30}:2);
+    %                \draw[fill=black] ({-120*\n-30}:2) circle[radius=0.15];
+    %                \draw ({120*\n+30}:1) node[rotate={120*\n-60}]{\tiny{$ \blacktriangleright\blacktriangleright\blacktriangleright$}};
+    %            }
+    %            \draw (-30:2.7) node{$N_0$};
+    %            \draw (90:2.7) node{$N_1$};
+    %            \draw (210:2.7) node{$N_2$};
+    %        \end{tikzpicture} & N_0=N_1=N_2 \\ \hline
+    %    \end{array}
+    %    $}
+    %    \caption{List of worldvolume theories for different transverse spaces.}
+    %\end{table}
 
 \section{Correspondence between gauge theory and singularity}
 
@@ -1140,7 +1157,7 @@
         \end{equation}
         At last, there are some relations that arises the superpotential $W(\{X_{ij}\})$. The vacuum is the minima of the superpotential. In other words,
         \begin{equation}
-            \pdv*{W}{X_{ij}}=0.
+            \pdv{W}{X_{ij}}=0.
         \end{equation}
 
     
