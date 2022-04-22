@@ -1,10 +1,55 @@
-\section{Gauge anomaly}\label{sec:anomalies}
+\section{Supersymmetric Yang-Mills theory from D-branes}
 
-    The \emph{anomaly degree} $A(\rho)$ of a representation $\rho$ is defined as
+    The dynamics of D-branes is described by the Dirac-Born-Infeld action
     \begin{equation}
-        \frac{1}{2}\tr(T_a\{T_b,T_c\})=A(\rho)d_{abc}
+        S_{\text{DBI}}[X,F] = -\frac{T_p}{g_s}\int\d^{p+1}\sigma~\sqrt{-\det\limits_{0\leq a,b\leq p}(\eta_{ab}+\p_a X^m\p_b X_m+2\pi\alpha'F_{ab})}.
     \end{equation}
-    where $d_{abc}$ is an invariant symmetric tensor of the Lie algebra of $G$, independent of the representation. One can show that $A(\rho^*)=-A(\rho)$ so self dual representation have $A(\rho)=0$ in particular. The only simple Lie groups that allow for a complex non-self-conjugate representation are $\SU(n)$ with $n\geq3$. We can normalize $d_{abc}$ such that $A(\rho)=1$ for the fundamental $n$-dimensional representations.
+    The latter can be expended for slowly-varying ﬁelds, which is equivalent to passing to the ﬁeld theory limit $\alpha'\to0$. The resulting action is the action of a $\U(1)$ gauge theory in $p+1$ dimensions with $9-p$ real scalar fields. This action is exactly the same than the one we would obtain by dimensionally-reducing a pure $\U(1)$ Yang-Mills gauge theory in 10 spacetime dimensions with the identification
+    \begin{equation}
+        g_{\text{YM}}=g_sT^{-1}_p(2\pi\alpha')^{-2}=\frac{g_s}{\sqrt{\alpha'}}(2\pi\sqrt{\alpha'})^{p-1}.
+    \end{equation}
+
+    This construction can be generalized for multiple D-branes. It now results in a non-abelian theory. The general statement is the following:
+    \begin{result}
+        The low-energy dynamics of $N$ parallel, coicident D$p$-branes in flat space is described in static gauge by the dimensional reduction to $p+1$ dimensions of pure $10d$ $\mN=1$ supersymmetric Yang-Mills theory with gauge group $\U(N)$ in ten spacetime dimensions.
+    \end{result}
+    Recall that the $10$-dimensional action is given by
+    \begin{equation}
+        S_{\text{YM}} = \frac{1}{4g^2_{\text{YM}}}\int\d^{10}x~\left[ \tr(F_{\mu\nu}F^{\mu\nu})+2i\tr(\bar{\psi}\Gamma^\mu D_\mu\psi)\right],\label{eq:SYMaction}
+    \end{equation}
+    where $F_{\mu\nu}=\p_\mu A_\nu-\p_\nu A_\mu+i[A_\mu,A_\nu]$ is the non-abelian field strength of the $\U(N)$ gauge field $A_\mu$, $D_\mu=\p_\mu-i[A_\mu,\psi]$, $\Gamma^\mu$ are $16\times 16$ Dirac matrices \marker, and the $N\times N$ Hermitian fermion ﬁeld $\psi$ is a $16$-component Majorana-Weyl spinor of the Lorentz group $\SO(1,9)$ which transforms under the adjoint representation of the gauge group $\U(N)$. On-shell, there are eight on-shell bosonic, gauge ﬁeld degrees of freedom, and eight fermionic degrees of freedom, after imposition of the Dirac equation $\xout{D}\psi=\Gamma^\mu D_\mu\psi=0$. One can verify that this action is invariant under the supersymmetry transformations
+    \begin{align*}
+        \delta_\eps A_\mu &= \frac{i}{2}\bar{\eps}\Gamma_\mu\psi,\\
+        \delta_{\eps}\psi &= \frac{1}{2}F_{\mu\nu}[\Gamma^\mu,\Gamma^\nu]\eps,
+    \end{align*}
+    where $\eps$ is an Majorana-Weyl spinor.
+    
+    Using \eqref{eq:SYMaction}, we can construct a supersymmetric Yanf-Mills gauge theory in $p+1$ dimensions with $16$ independent supercharges by dimensional reduction: we take all fields to be independent of the coordinates $X^{p+1},\dots, X^9$, then the ten-dimensional gauge field $A_\mu$ splits into a $(p+1)$-dimensional $\U(N)$ gauge field $A_a$ plus $9-p$ Hermitian scalar fields $\Phi^m=X^m/2\pi\alpha'$ in the adjoint representation of $\U(N)$. The D$p$-brane action is thereby obtained from the dimensionality reduced field theory as
+    \begin{equation}
+        S_{\text{D}p} = -\frac{T_pg_s(2\pi\alpha')^2}{4}\int\d^{p+1}\sigma~\tr\left(F_{ab}F^{ab})+2D_a\Phi^m D^a\Phi_m+\sum_{m\neq n}[\Phi^m,\Phi^n]^2+\text{fermions}\right)\label{eq:SDp}
+    \end{equation}
+    where $a,b=0,\dots,p$, $m,n=p+1,\dots,9$. We do not explicitly display the fermionic contributions for the moment. In conclusion, the low-energy brane dynamics is described by a supersymmetric Yang-Mills theory on the D$p$-brane worldvolume which is dynamically coupled to the transverse, adjoint scalar ﬁelds $\Phi^m$.
+
+    The scalar potential is given by
+    \begin{equation}
+        V(\Phi)=\sum_{m\neq n}[\Phi^m,\Phi^n]^2.
+    \end{equation}
+    It is negative definite because $[\Phi^m,\Phi^n]^\dagger=[\Phi^n,\Phi^m]=-[\Phi^m,\Phi^n]$. A classical vacuum of the ﬁeld theory deﬁned by \eqref{eq:SDp} corresponds to a static solution of the equations of motion whereby the potential energy of the system is minimized. It is given by the field configurations which solve simultaneously the quations $F_{ab}=D_a\Phi^m=\psi^a=0$ and $V(\Phi)=0$. Since all term in $V(\Phi)$ have the same sign, the equation $V(\Phi)=0$ is equivalent to the equation $[\Phi^m,\Phi^n]=0$ for all $m,n$ and at each point in the $(p+1)$-dimensional worldvolume of the branes. This implies that the $N\times N$ hermitian matrix fields $\Phi^m$ are simultaneously diagonalizable by a gauge transformation, so that we may write
+    \begin{equation}
+        \Phi^m=U
+        \begin{bmatrix}
+            X^m_1 & & & 0 \\
+            & X^m_2 & & \\
+            & & \ddots & \\
+            0 & & & X^m_N
+        \end{bmatrix}U^{-1},\label{eq:diagPhi}
+    \end{equation}
+    the matrix $U$ is independent of $m$. The simultaneous,
+    real eigenvalues $X^m_i$ give the positions of the $N$ distinct D-branes in the $m$-th transverse direction. It follows that the moduli space of classical vacua for the $(p+1)$-dimensional ﬁeld theory \eqref{eq:SDp} is the quotient space $(\R^{9-p})^N/S_N$, where the factors of $\R$ correspond to the positions of the $N$ D$p$-branes in the $(9-p)$-dimensional transverse space, and $S_N$ is the symmetric group acting by permutations of the $N$ coordinates $X_i$. The group $S_N$ corresponds to the residual Weyl symmetry of the $\U(N)$ gauge group acting in \eqref{eq:diagPhi}. It represents the permutation symmetry of a system of $N$ \emph{indistinguishable} D-branes.
+
+    From \eqref{eq:SDp} one can easily deduce that the masses of the ﬁelds corresponding to the oﬀ-diagonal matrix elements are given precisely by the distances $\abs{x_i-x_j}$ between the corresponding branes. This description means that an interpretation of the D-brane conﬁguration in terms of classical geometry is only possible in the classical ground state of the system, whereby the matrices $\Phi^m$ are simultaneously diagonalizable and the positions of the individual D-branes may be described through their spectrum of eigenvalues. This gives a simple and natural dynamical mechanism for the appearence of ``non-commutative geometry'' at short distances, where the D-branes cease to have well-deﬁned positions according to classical geometry.
+
+    The end of this section has to be rewritten \marker.
 
 \section{Reminder on $\mN=4$ super Yang-Mills theory in $D=4$}\label{sec:N4SCFT}
 
@@ -59,6 +104,14 @@
         \begin{result}
             \textbf{$\boldsymbol{\mN=4}$ Yang-Mills theory.} There is only one $D=4,\mN=4$ Yang-Mills theory and it contains $3$ $\mN=1$ chiral scalar supermutliplet and $1$ $\mN=1$ vector supermultiplet (up to $g$ and $\tau$). This theory is conformal and can be recovered from dimensional reduction of $D=10,\mN=1$ Yang-Mills on $\mathbb{T}^6$.
         \end{result}
+
+\section{Gauge anomaly}\label{sec:anomalies}
+
+    The \emph{anomaly degree} $A(\rho)$ of a representation $\rho$ is defined as
+    \begin{equation}
+        \frac{1}{2}\tr(T_a\{T_b,T_c\})=A(\rho)d_{abc}
+    \end{equation}
+    where $d_{abc}$ is an invariant symmetric tensor of the Lie algebra of $G$, independent of the representation. One can show that $A(\rho^*)=-A(\rho)$ so self dual representation have $A(\rho)=0$ in particular. The only simple Lie groups that allow for a complex non-self-conjugate representation are $\SU(n)$ with $n\geq3$. We can normalize $d_{abc}$ such that $A(\rho)=1$ for the fundamental $n$-dimensional representations.
 
 \section{Properties of D-branes in type II theories}
 
@@ -671,9 +724,23 @@
         \item $n\geq4$: very little is known; crepant resolution ecists in rather special cases. Many singularity are terminal, which implies that they admit no crepant resolution.
     \end{itemize}
 
-\section{Notions of graph theory}
+\section{Elements of graph theory}
 
     \subsection{Quiver diagrams}
+
+        A \emph{quiver} $Q=(E,V,t,h)$ is a piece of combinatorial data where $E$ is a set of of edges, $V$ is a set of vertices, and $h,t:V\to E$ are two maps that respectively assign a head and a tail to every arrow. A \emph{morphism} $m=(m_V,m_E)$ between two quivers $(V,E,t,h)$ and $(V',E',t',h')$ consists in two maps
+        \begin{align}
+            m_V &: V\to V'\\
+            m_E &: E\to E'
+        \end{align}
+        such that $m_V\circ t = t'\circ m_E$ and $m_V\circ h = h'\circ m_E$.
+
+        The \emph{line graph} $L(G)$ of a graph $G$ is the graph such that
+        \begin{itemize}
+            \item each vertex of $L(G)$ represent a line of $G$
+            \item two vertices of $L(G)$ are adjacent if and only if their corresponding edges share a common endpoint in $G$.
+        \end{itemize}
+        In other words, it is the intersection graph of the edges of $G$, where each edge by the set of its two endpoints. Whitney graph isomorphism theorem states that two graphs are isomorphic if and only if their line graphs are isomorphic, with only one exception: $K_3$ and $K_{1,3}$.
 
     \subsection{Toric diagrams}
 
