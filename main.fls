@@ -2109,6 +2109,13 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchr8t.vf
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchr8r.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/vf/bitstrea/charter/bchb8t.vf
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/bitstrea/charter/bchb8r.tfm
+INPUT ./Pictures/youngslattice.png
+INPUT ./Pictures/youngslattice.png
+INPUT Pictures/youngslattice.png
+INPUT ./Pictures/youngslattice.png
+INPUT ./Pictures/youngslattice.png
+INPUT ./Pictures/youngslattice.png
+INPUT ./Pictures/youngslattice.png
 INPUT ./appendices.tex
 OUTPUT appendices.aux
 INPUT ./appendices.tex
