@@ -182,3 +182,7 @@
 \newcommand{\listmarkername}{List of Markers}
 \newlistof{marker}{mak}{\listmarkername}
 \newcommand{\marker}{\refstepcounter{marker}\textcolor{blue}{(*)}\addcontentsline{mak}{marker}{\protect\numberline{\themarker}}}
+
+% Clashes with mathptmx
+%\renewcommand{\mathbbm}{boldsylbol}
+%\renewcommand{\mathfrak}{boldsylbol}

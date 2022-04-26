@@ -67,33 +67,43 @@
 
     \subsection{Matter content}
         
-        For $D=4,\mN=4$, there is one kind of supermultiplet, the vector multiplet. The decomposition of the $\mN = 4$ vector superfield in terms of $\mN = 1$ representations is as follows:
+        For $D=4,\mN=4$, there is only one kind of supermultiplet, the vector multiplet. Therefore, from an $\mN=4$ perspective, the only $\mN=4$ is a pure SYM. For extended supersymmetry, is is easier to express it in terms of $\mN=1$ superfield on $\mN=1$ superspace instead of looking to construct a superspace for $\mN=4$. In this case, we can see that the $\mN = 4$ vector superfield can be expressed in terms of $\mN = 1$ representations as one vector supermultiplet and three chiral scalar supermultiplets:
         \begin{equation}
             [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi^A = (\phi^A,\psi^A_\alpha,F^A).
         \end{equation}
-        with $A=1,2,3$, i.e. in terms of one vector supermultiplet and three chiral scalar supermultiplets. The propagating degrees of freedom are therefore a vector field, three complex scalars and four gauginos.
+        with $A=1,2,3$ and
+        \begin{align}
+            \phi^A&=\phi^A_a T^a,\qquad \psi^A_\alpha=\psi^A_{\alpha,a}T^a,\qquad F^A=F^a_a T^a,\\
+            \lambda^A&=\lambda^A_a T^a,\qquad A^A_\mu=A^A_{\mu,a}T^a,\qquad D^A=F^a_a T^a,\\
+            V&=V_aT^a,\qquad \Phi^A=\Phi^A_aT^a,
+        \end{align}
+        where $T^a$ ($a=1,\dots,\dim G$) are the generators of $\mathfrak{g}$. The propagating degrees of freedom are therefore a vector field, three complex scalars and four gauginos. The Lagrangian is very much constrained by $\mN = 4$ supersymmetry. First, the chiral superfields $\Phi^A$ should transform in the adjoint representation of the gauge group $G$, since internal symmetries commute with supersymmetry. This means that all fields transform in the adjoint of $G$.
         
-        The Lagrangian is very much constrained by $\mN = 4$ supersymmetry. First, the chiral superfields $\Phi^A$ should transform in the adjoint representation of the gauge group $G$, since internal symmetries commute with supersymmetry. This means that all fields transform in the adjoint of $G$.
-        
-        Moreover, there is a large R-symmetry group, $\SU(4)_R$. The four Weyl fermions transform in the fundamental of $\SU(4)_R$, while the six real scalars in the two times anti-symmetric representation, which is nothing but the fundamental representation of $\SO(6)$. The auxiliary fields are singlets under the R-symmetry group. Using $\mN = 1$ superfield formalism the Lagrangian reads
+        Moreover, there is a large R-symmetry group\footnote{The fact that the scalar fields transform under the fundamental representation of $\SO(6)$, which is real, makes the R-symmetry group of the $\mN = 4$ theory being at most $\SU(4)$ and not $\U(4)$, in fact).}: $\SU(4)_R$. The four Weyl fermions transform in the fundamental of $\SU(4)_R$, while the six real scalars in the two times anti-symmetric representation, which is nothing but the fundamental representation of $\SO(6)$. The auxiliary fields are singlets under the R-symmetry group. Using $\mN = 1$ superfield formalism the Lagrangian reads
         \begin{align}
             \begin{split}
                 \L^{\mN=4}_{\text{SYM}} &= \frac{1}{32\pi}\Im \left(\tau\int\d^4x\tr(W^\alpha W_\alpha)\right)+\int\d^2\theta\d^2\bar{\theta}\tr\sum^3_{A=1}\bar{\Phi}^Ae^{2gV}\Phi^A\\
                 &\quad-\int\d^2\theta\sqrt{2g}\tr\Phi_1[\Phi_2,\Phi_3]+\text{h.c.}
             \end{split}\label{eq:N4lag}
         \end{align}
-        where the commutator in the third term appears for the same reason as for the $\mN = 2$ Lagrangian. Notice that the choice of a single $\mN = 1$ supersymmetry generator breaks the full $\SU(4)_R$ R-symmetry to $\SU(3)\times \U(1)_R$. The three chiral superfields transform in the $\boldsymbol{3}$ of $\SU(3)$ and have R-charge $R = 2/3$ under the $\U(1)_R$. It is an easy but tedious exercise to perform the integration in superspace and get an explicit expression in terms of fields. Finally, one can solve for the auxiliary fields and get an expression where only propagating degrees of freedom are present, and where $\SU(4)_R$ invariance is manifest (the fact that the scalar fields transform under the fundamental representation of $\SO(6)$, which is real, makes the R-symmetry group of the $\mN = 4$ theory being at most $\SU(4)$ and not $\U(4)$, in fact).
+        where as usual $W_\alpha=-\frac{1}{4}\bar{D}\bar{D}(e^{-V}D_\alpha e^V)$ is the gaugino superfield. This lagrangian is indeed invariant under the superPoincaré algebra and under the gauge transformations
+        \begin{align}
+            e^V &\to e^{i\bar{\Lambda}} e^V e^{-i\Lambda} \text{ (which implies that $W_\alpha \to e^{i\Lambda}W_\alpha e^{-i\Lambda}$)},\\
+            \Phi^A &\to e^{i\Lambda}\Phi^A.
+        \end{align}
+        The large $\SU(4)_R$ R-symmetry group forbids of having a superpotential. The commutator in the third term of \eqref{eq:N4lag} appears for the same reason as for the $\mN = 2$ Lagrangian. Notice that the choice of a single $\mN = 1$ supersymmetry generator breaks the full $\SU(4)_R$ R-symmetry to $\SU(3)\times \U(1)_R$. The three chiral superfields transform in the $\boldsymbol{3}$ of $\SU(3)$ and have R-charge $R = 2/3$ under the $\U(1)_R$. It is an easy but tedious exercise to perform the integration in superspace and get an explicit expression in terms of fields. Finally, one can solve for the auxiliary fields and get an expression where only propagating degrees of freedom are present, and where $\SU(4)_R$ invariance is manifest.
 
-    \subsection{Dynamical phases}
+    \subsection{Moduli space and dynamical phases}
 
         The scalar potential in \eqref{eq:N4lag} can be written in a rather compact form in terms of the six real scalars $X^i$ making up the three complex scalars $\phi^A$ and reads
         \begin{equation}
-            V = \frac{1}{2}g^2\tr\sum^6_{i,j=1}[X_i,X_j]^2.
+            V(X_1,\dots,X_6) = \frac{1}{2}g^2\tr\sum^6_{i,j=1}[X_i,X_j]^2.
         \end{equation}
         The positive definite behavior of the Cartan-Killing form on the compact gauge algebra $\g$ implies that each term in the sum is positive or zero. In other words, $V=0$ is equivalent to
         \begin{equation}
             [X^i,X^j]=0,\qquad i,j=1,\dots,6.
         \end{equation}
+        This means that the potential vanishes whenever the scalar fields belong to the Cartan subalgebra of the gauge group $G$. At a generic point of the moduli space, the gauge group is broken to $\U(1)^r$ where $r$ is the rank of $\mathfrak{g}$.
         This equations admit two classes of solutions:
         \begin{itemize}
             \item $\langle X^i\rangle=0$ for all $i=1,\dots,6$. This is the \emph{superconformal phase}. Neither the gauge symmetry nor the superconformal symmetry is broken. The physical states and operators are gauge invariant and transform under
@@ -724,31 +734,16 @@
         \item $n\geq4$: very little is known; crepant resolution ecists in rather special cases. Many singularity are terminal, which implies that they admit no crepant resolution.
     \end{itemize}
 
-\section{Elements of graph theory}
+\section{Graphs}
+    
+    A \emph{quiver} $Q=(E,V,t,h)$ is a piece of combinatorial data where $E$ is a set of of edges, $V$ is a set of vertices, and $h,t:V\to E$ are two maps that respectively assign a head and a tail to every arrow. A \emph{morphism} $m=(m_V,m_E)$ between two quivers $(V,E,t,h)$ and $(V',E',t',h')$ consists in two maps
+    \begin{align}
+        m_V &: V\to V'\\
+        m_E &: E\to E'
+    \end{align}
+    such that $m_V\circ t = t'\circ m_E$ and $m_V\circ h = h'\circ m_E$.
 
-    \subsection{Quiver diagrams}
-
-        A \emph{quiver} $Q=(E,V,t,h)$ is a piece of combinatorial data where $E$ is a set of of edges, $V$ is a set of vertices, and $h,t:V\to E$ are two maps that respectively assign a head and a tail to every arrow. A \emph{morphism} $m=(m_V,m_E)$ between two quivers $(V,E,t,h)$ and $(V',E',t',h')$ consists in two maps
-        \begin{align}
-            m_V &: V\to V'\\
-            m_E &: E\to E'
-        \end{align}
-        such that $m_V\circ t = t'\circ m_E$ and $m_V\circ h = h'\circ m_E$.
-
-        The \emph{line graph} $L(G)$ of a graph $G$ is the graph such that
-        \begin{itemize}
-            \item each vertex of $L(G)$ represent a line of $G$
-            \item two vertices of $L(G)$ are adjacent if and only if their corresponding edges share a common endpoint in $G$.
-        \end{itemize}
-        In other words, it is the intersection graph of the edges of $G$, where each edge by the set of its two endpoints. Whitney graph isomorphism theorem states that two graphs are isomorphic if and only if their line graphs are isomorphic, with only one exception: $K_3$ and $K_{1,3}$.
-
-    \subsection{Toric diagrams}
-
-    \subsection{Dimer diagrams}
-
-        A \emph{bipartite graph} is a graph such that all vertices can be couloured black or white such that any vertex of one color is only adjacent to vertices of the other color. A \emph{matching} is a subset of edges without common vertices. A mathcing is \emph{perfect} of every vertex is covered. The statistical mechanics of random perfect matchings is called a \emph{dimer model}. Ghe difference between any two closed perfect matching is a closed curve.
-
-        The \emph{dimer diagram} of a quiver gauge theory is a graph whose faces represent the gauge groups, the edges represent the bi-fundamental fields and the vertices represent the superpotentials.
+    The \emph{dimer diagram} of a quiver gauge theory is a graph whose faces represent the gauge groups, the edges represent the bi-fundamental fields and the vertices represent the superpotentials.
 
 \section{Toric and non-toric singularities}
 
