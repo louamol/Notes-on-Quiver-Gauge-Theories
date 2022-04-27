@@ -4,15 +4,19 @@
 
         We consider our world to be a slice in the ten-dimensional spacetime of type II superstring theory, i.e. the worldvolume of a D$3$-brane. More precisely, we consider a stack of $N$ D$3$-branes in order to have $\U(N)$ Chan-Paton factors resulting in a $\U(N)$ gauge group. To have D$3$-branes, we need to consider type IIB superstring theory. The spacetime is therefore not necessarily $\R^{1,9}$ but of the more general form
         \begin{equation*}
-            M = \R^{1,3}\times M^{(6)}.
+            M = \R^{1,3}\times M^{(6)}.\label{spacetimedecomp}
         \end{equation*}
         This is the so-called \emph{brane-world paradigm}. %In particular, we will be interested in type IIB string theory because of its self-duality under S-duality\marker.
 
-    \subsubsection*{Supersymmetry on the worldvolume: holonomy and Calabi-Yau compactification}
+    \subsubsection*{Supersymmetry and Calabi-Yau manifolds}
     
-        Independently from string theory, we can ask for the wolrdvolume theory to be supersymmetric. Preserving any degree of supersymmetry constrains the transverse space $M^{(6)}$ to be compact, complex, Kähler and to have $G\subset\SU(3)$ holonomy. Namely, $M^{(6)}$ must be a Calabi-Yau threefold.
+        Independently from string theory, we can ask for the wolrdvolume theory to be supersymmetric. We start from type IIB superstring theory which is $10$-dimensional and has $\mN=2$ supersymmetry so it possesses $32$ supercharges. As usual, they transform under the minimal spinor representation (MSR) of the bulk Lorentz group, here $\SO(1,9)$. In ten dimensions this representation is $8$-dimensional (complex) which is why there are $2(8+8)=32$ supercharges: $8$ transforming in the $8$-dimensional MSR and $8$ transforming in the $8$-dimensional conjugate MSR and whole thing times two since $\mN=2$. If we compactify type II string theory on $\R^{1,3}\times M^{(6)}$ where $M^{(6)}$ is any $6$-dimensional manifold, supersymmetry is broken. The reason for this is that the supercharges now have to transform under the MSR of $\SO(1,3)\times\H(M^{(6)})$\marker, where $\H(M^{(6)})$ is the holonomy group of $M^{6}$. Recall that a generic curved 6-dimensional manifold has $\O(6)$ holonomy and $\SO(6)$ if it is orientable. We only consider the later case. The supercharges must therefore transform under the MSR of $\SO(1,3)\times\SO(6)$. The MSR of $\SO(1,3)$ being $\boldsymbol{2}$ and the one of $\SO(6)$ being $\boldsymbol{4}$, we conclude that imposing the spacetime to have the form \eqref{spacetimedecomp} changes the representation under which the supercharges transform as follows:
+        \begin{equation}
+            \boldsymbol{8}\oplus\bar{\boldsymbol{8}}\to (\boldsymbol{2}_L,\boldsymbol{4})\oplus(\boldsymbol{2}_R,\bar{\boldsymbol{4}}).
+        \end{equation}
+        If we stop here, the residual supercharges might be ill-defined since making a tour around a loop in $M^{(6)}$ could result in anon-trivial rotation. To solve this problem, we need also to be more restrictive on the holonomy. In fact, it is precisely the holonomy of the transverse space that dictates the number of supersymmetries that are left. Let us now consider a four-dimensional field theory resulting from compactification of the transverse six-dimensional space. The number of supercharges that generate supersymmetries for this theory is the number of Killing spinor (covariantly constant spinor): each Killing spinor contracted with the local supersymmetry current generates a residual supersymmetry\marker. Now the link with holonomy: since $\SO(6)\cong\SU(4)$, minimal spinors can be viewed as having four complex component and as transforming under $\SU(4)$. Indeed, minimal spinors in six dimensions have four complex components. In order to have one covariantly conserved spinor, we look for the biggest subgroup of $\SU(4)$ that leaves a component of the spinor invariant. This is clearly $\{e\}\times\SU(3)\subset\SU(4)$ that acts trivially on the first component. The spinor $(1,0,0,0)$ is then covariantly conserved. Our transverse space must therefore have $\SU(3)$ holonomy such that the parallel transport of the spinor $(1,0,0,0)$ under any closed loop is a lower $\SU(3)$ rotation. We conclude that if the transverse Calabi-Yau has $\SU(3)$ holonomy, the worldvolume theory has $\mN=1$ supersymmetry. The same reasoning can be used to obtain that $\SU(2)$ holonomy implies $\mN=2$ supersymmetry.
 
-        Let us discuss the the holonomy part of the constrain in more details as it will play an important role in the following. We start from type IIB superstring theory which is $10$-dimensional and has $\mN=2$ supersymmetry so it possesses $32$ supercharges. As usual, they transform under the minimal spinor representation of the bulk Lorentz group, here $\SO(1,9)$. In ten dimensions this representation is $8$-dimensional (complex) which is why there are $2(8+8)=32$ supercharges: $8$ transforming in the $8$-dimensional minimal spinor representation and $8$ transforming in the $8$-dimensional conjugate minimal representation and whole thing times two since $\mN=2$. Let us now consider a four-dimensional field theory resulting from compactification of the transverse six-dimensional space. The number of supercharges that generate supersymmetries for this theory is the number of Killing spinor (covariantly constant spinor): each Killing spinor contracted with the local supersymmetry current generates a residual supersymmetry\marker. Now the link with holonomy: a generic curved six-dimensional manifold has $\O(6)$ holonomy and $\SO(6)$ if it is orientable. Since $\SO(6)\cong\SU(4)$, minimal spinors can be viewed as having four complex component and as transforming under $\SU(4)$. Indeed, minimal spinors in six dimensions have four complex components. In order to have one covariantly conserved spinor, we look for the biggest subgroup of $\SU(4)$ that leaves a component of the spinor invariant. This is clearly $\{e\}\times\SU(3)\subset\SU(4)$ that acts trivially on the first component. The spinor $(1,0,0,0)$ is then covariantly conserved. Our transverse space must therefore have $\SU(3)$ holonomy such that the parallel transport of the spinor $(1,0,0,0)$ under any closed loop is a lower $\SU(3)$ rotation. We conclude that if the transverse Calabi-Yau has $\SU(3)$ holonomy, the worldvolume theory has $\mN=1$ supersymmetry. The same reasoning can be used to obtain that $\SU(2)$ holonomy implies $\mN=2$ supersymmetry.
+        To conclude, preserving any degree of supersymmetry constrains the transverse space $M^{(6)}$ to be compact, complex, Kähler and to have $G\subset\SU(3)$ holonomy. Namely, $M^{(6)}$ must be a Calabi-Yau threefoldau manifolds are given in appendix \ref{sec:CY}.
 
     \subsubsection*{Non-compact transverse space}
     
@@ -115,7 +119,7 @@
         \end{equation}
         is the representation of $\Gamma$ coming from the fundamental representation of $\SU(3)$, so $\cdot$ is just the matrix product. We can see that the origin is always a fixed point so this action is never free. Since $\C^3$ is a smooth manifold, this makes $\C^3/\Gamma$ an orbifold. Note this case naturally includes the case $\Gamma\subset\SU(2)$ too (as $\SU(2)\subset\SU(3)$), just not the case $\Gamma\in\SO(6)$. When $\Gamma\subset\SU(2\subset\SU(3)$, it acts trivially on one component so we write $S=\C\times\C^2/\Gamma$.
 
-        If $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$ \marker, see appendix \ref{sec:CYcrepant}.
+        If $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$ \marker, see appendix \ref{sec:CY}.
 
         If the transverse space is $S=\C^3/\Gamma$, the field theory must be projected to a theory which also invariant under $\Gamma$, seen as a subgroup of the R-symmetry group. The prescription is straihgt-forward: we can use the elements $\gamma\in\Gamma$ to project out that states that are not $\Gamma$-invariant. That is, if $\rho$ is an embedding of $\Gamma$ in the gauge group $\U(N)$, only the the fields such that
         \begin{align}
@@ -437,7 +441,7 @@
         We will however mostly mostly consider $4$-dimensional quiver gauge theories, i.e. living on D$3$-branes.
     
 
-\section{Orbifold constructions of $\mN=2$ daughter theories}
+\section{$\mN=2$ daughter theories}\label{sec:N2QGT}
 
     %Let us consider that $\Gamma$ is a finite subgroup of $\SU(2)\subset\SU(3)$. It naturally acts on $\C^3$ trough its fundamental representation $\bs{2}$ as $\bs{1}\oplus\bs{2}$ (only acts on 2 coordinates).
 
@@ -679,7 +683,7 @@
 
 
 
-\section{Orbifold constructions of $\mN=1$ daughter theories}
+\section{$\mN=1$ daughter theories}
 
     \subsection{$S=\C^3/\Z_n$}
 
@@ -1118,13 +1122,18 @@
 
 \section{Correspondence between gauge theory and singularity}
 
-    Above, we presented all the possible orbifold constructions of supersymmetric quiver gauge theories in four dimensions. We started from quotienting the transverse space and we found the corresponding (supersymmetric) gauge theory. In other words, we started from the singularity a found the gauge theory. We can therefore consider that the orbifold singularities are understood. However, not all singularities are orbifold one, such as the conifold for example. We an then ask ourselves how to obtain the gauge theory for more general singularities than the orbifold ones. Is a general approach possible ? On the other hand, we can also study the converse question; is it possible to to obtain the singularity from the gauge theory? And if it is, how so? In general we will see that there is a bijection between the four-dimensional supersymmetric worldvolume gauge theory and the Calabi-Yau singularity. We now detail this bijection.
+    Above, we presented all the possible orbifold constructions of supersymmetric quiver gauge theories in four dimensions. We started from quotienting the transverse space and we found the corresponding (supersymmetric) gauge theory. In other words, we started from the singularity a found the gauge theory. We can therefore consider that the orbifold singularities are understood. However, not all singularities are orbifold one, such as the conifold for example. We can then ask ourselves how to obtain the gauge theory for more general singularities than the orbifold ones. Is a general approach possible ? On the other hand, we can also study the converse question; is it possible to to obtain the singularity from the gauge theory? And if it is, how so? In general we will see that there is a bijection between the four-dimensional supersymmetric worldvolume gauge theory and the Calabi-Yau singularity. We now detail this bijection.
 
     \subsection{From gauge theory to singularity: forward algorithm}
 
         We start with the simplest question: how to recover the singularity from the gauge theory? We already mentioned that the vacuum parameter space of the scalar fields of the gauge theory is the so-called moduli space, denoted $\M$. Because our D$3$-brane is a point in the Calabi-Yau threefold, the vacuum moduli space $\M$ is the affine coordinates of the Calabi-Yau singularity $S$.
 
+        For the ADE $\mN=2$ theories discussed in section \ref{sec:N2QGT}, by the Kronheimer-Nakajima construction \cite{Kronheimer1990}, the moduli space is a hyper-Kähler quotient. In general, the moduli space can be constructed as a \emph{quiver variety}, i.e. a variety constructed from the moduli space of quiver a quiver representation. More rpecisely, given the dimensions of the vector spaces assigned to every vertex, one can form a variety which characterizes all representations of that quiver with those specified dimensions, and consider stability conditions. Let us see some examples of this.
 
+        The anomaly free condition is
+        \begin{equation}
+            (a_{ij}-a_{ji})n_i=0\marker.
+        \end{equation}
 
         \subsubsection{$S=\C\times\C^2/\Z_n$}
 
@@ -1145,17 +1154,19 @@
 
     \subsection{Projective representations and discrete torsion}
 
-        Up untl now, and in particular in all of our computations in section \ref{sec:orbsing}, we considered ordinary representations, i.e. linear representations. We can however use a more general representations such as projective representations for example; representations $\rho$ of $\Gamma$ such that for all $\gamma_1,\gamma_2\in\Gamma$,
+        Up until now, and in particular in all of our computations in section \ref{sec:orbsing}, we only considered ordinary representations, i.e. linear representations. We can however use a more general representations such as projective representations for example. That is, representations $\rho$ of $\Gamma$ such that for all $\gamma_1,\gamma_2\in\Gamma$,
         \begin{equation}
             \rho(\gamma_1)\rho(\gamma_2)=A(g_1,g_2)\rho(\gamma_1\gamma_2)
         \end{equation}
-        for some factor $A(\gamma_1,\gamma_2)$. The $A(\gamma_1,\gamma_2)=1$ corresponding to linear representations. For consistency reasons, the factor $A(g_1,g_2)$ cannot be completely arbitrary and must a cocycle condition. As a result, the possibilities for $A(\gamma_1,\gamma_2)$ are classified by the second cohomology group $H^2(\Gamma,\C^*)$, also called \emph{discrete torsion}. There exists a projective representation if and only if the latter does not vanish.
+        for some factor $A(\gamma_1,\gamma_2)$. The $A(\gamma_1,\gamma_2)=1$ corresponding to linear representations. For consistency reasons, the factor $A(g_1,g_2)$ cannot be completely arbitrary and must a cocycle condition. As a result, the possibilities for $A(\gamma_1,\gamma_2)$ are classified by the second cohomology group $H^2(\Gamma,\C^*)$, also called \emph{discrete torsion}. There exists a projective representation if and only if the latter does not vanish. This new liberty, whenever admissible, provides new classes of quiver gauge theories that can be remarkably different from the ones we considered up until now, with no discrete torsion.
 
-        This new liberty, whenever admissible, provides new classes of quiver gauge theories that can be very different from the ones we considered, with no discrete torsion.
+        What happens is that if one turns on an NSNS B-fiels alors the worldvolume, then the moduli space is expected to a non-commutative version of a Calabi-Yau space. This haw the discrete torsion is physically realized. Another, and actually equivalent through T-duality, way of studying gauge theories is to consider D-branes streched between configurations of NS$5$-branes\footnote{D$5$-branes are charged under the Ramond-Ramond field whose quanta comes from the Ramond-Ramond sector but NS$5$-branes are charges under the Kalb-Ramonf field whose quanta comes fromthe Neveu-Schwarz. On the worldvolume of an NS$5$-brane (6-dimensional) propagates propagates a superstring, this called the \emph{little string}.}. This is the\emph{Hanany-Witten setup}.
+
+        The discrete tosrion also appears when writing the full open strin gpartition function that inclues the \emph{twisted sector}\footnote{The twisted sector is subspace of the full Hilbert space of string states in a particular theory over a (good) orbifold.} where there is ambiguity up to a phase factor. As a consequence from modular invariance, the latter must satisfy certain cocycle conditions. It is precisely the deiscrete torsion. Note that this has been found to be true only for the open string sector.
 
     \subsection{Quiver gauge theories deformations and conifold}
 
-        We can replace the orbifold by a conifold by deforming singular algebraic description of the orbifold with a field into a family smooth surfaces. The total space is then the conifold.
+        We can deforming the singular algebraic description of the orbifold with a field into a family smooth surfaces. The resulting total space is the \emph{conifold}.
 
 \part{Beyond orbifold singularities}
 

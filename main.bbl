@@ -35,8 +35,8 @@
       \strng{authorfullhash}{a4fd5a8285710d8bd6688b748c7cc5fd}
       \field{extraname}{1}
       \field{labelalpha}{He04}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -66,8 +66,8 @@
       \strng{authorfullhash}{a4fd5a8285710d8bd6688b748c7cc5fd}
       \field{extraname}{2}
       \field{labelalpha}{He02}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{On Algebraic Singularities, Finite Graphs and D-Brane Gauge Theories: A String Theoretic Perspective}
@@ -103,8 +103,8 @@
       \strng{authornamehash}{2d39ab4237decd67b581c085053bc278}
       \strng{authorfullhash}{2d39ab4237decd67b581c085053bc278}
       \field{labelalpha}{DM96}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -138,8 +138,8 @@
       \strng{authornamehash}{1410f0973a0a12d9fbe14121b8d047a4}
       \strng{authorfullhash}{1410f0973a0a12d9fbe14121b8d047a4}
       \field{labelalpha}{JM97}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{10}
@@ -178,8 +178,8 @@
       \strng{authornamehash}{8313b22ec75f880ac5049c17e4e28560}
       \strng{authorfullhash}{8313b22ec75f880ac5049c17e4e28560}
       \field{labelalpha}{HH99}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of High Energy Physics}
@@ -228,8 +228,8 @@
       \strng{authornamehash}{4601784a035f9c011701276652a0fce1}
       \strng{authorfullhash}{4601784a035f9c011701276652a0fce1}
       \field{labelalpha}{LNV98}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0550-3213}
@@ -268,8 +268,8 @@
       \strng{authornamehash}{44297e33535e8cd1aa927ea98528b83f}
       \strng{authorfullhash}{44297e33535e8cd1aa927ea98528b83f}
       \field{labelalpha}{KS98}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1079-7114}
@@ -283,6 +283,77 @@
       \range{pages}{4}
       \verb{doi}
       \verb 10.1103/physrevlett.80.4855
+      \endverb
+    \endentry
+    \entry{cox2011toric}{book}{}
+      \name{author}{3}{}{%
+        {{hash=3624aa6ea1de84f7c8662702f0c53f36}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={D.A.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=387444c241284784013406507c97e08e}{%
+           family={Little},
+           familyi={L\bibinitperiod},
+           given={J.B.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bd36c6076b13a78a0f908d4670a96cd6}{%
+           family={Schenck},
+           familyi={S\bibinitperiod},
+           given={H.K.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Soc.}%
+      }
+      \strng{namehash}{3c844c823cd646fc5e74833cbe3fa1b2}
+      \strng{fullhash}{3c844c823cd646fc5e74833cbe3fa1b2}
+      \strng{bibnamehash}{3c844c823cd646fc5e74833cbe3fa1b2}
+      \strng{authorbibnamehash}{3c844c823cd646fc5e74833cbe3fa1b2}
+      \strng{authornamehash}{3c844c823cd646fc5e74833cbe3fa1b2}
+      \strng{authorfullhash}{3c844c823cd646fc5e74833cbe3fa1b2}
+      \field{labelalpha}{CLS11}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780821884263}
+      \field{series}{Graduate studies in mathematics}
+      \field{title}{Toric Varieties}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://books.google.be/books?id=eXLGwYD4pmAC
+      \endverb
+      \verb{url}
+      \verb https://books.google.be/books?id=eXLGwYD4pmAC
+      \endverb
+    \endentry
+    \entry{torigeomandCY}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6923e5654ab3b9cb8fbc4e7c86611b1e}{%
+           family={Closset},
+           familyi={C\bibinitperiod},
+           given={Cyril},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{6923e5654ab3b9cb8fbc4e7c86611b1e}
+      \strng{fullhash}{6923e5654ab3b9cb8fbc4e7c86611b1e}
+      \strng{bibnamehash}{6923e5654ab3b9cb8fbc4e7c86611b1e}
+      \strng{authorbibnamehash}{6923e5654ab3b9cb8fbc4e7c86611b1e}
+      \strng{authornamehash}{6923e5654ab3b9cb8fbc4e7c86611b1e}
+      \strng{authorfullhash}{6923e5654ab3b9cb8fbc4e7c86611b1e}
+      \field{labelalpha}{Clo09}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Toric geometry and local Calabi-Yau varieties: An introduction to toric geometry (for physicists)}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.48550/ARXIV.0901.3695
       \endverb
     \endentry
     \entry{fulton1993introduction}{book}{}
@@ -306,8 +377,8 @@
       \strng{authornamehash}{205bfcbd8ec5b58401ee1d5cbd94a5de}
       \strng{authorfullhash}{205bfcbd8ec5b58401ee1d5cbd94a5de}
       \field{labelalpha}{Ful93}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780691000497}
@@ -335,8 +406,8 @@
       \strng{authornamehash}{f929c811e6529db9699b2f0f49e9a696}
       \strng{authorfullhash}{f929c811e6529db9699b2f0f49e9a696}
       \field{labelalpha}{Oda88}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-642-72549-4}
@@ -702,8 +773,8 @@
       \strng{authornamehash}{f6d2a02cc7d3a6dae239627468d672bc}
       \strng{authorfullhash}{8558db89ccf502b3c38873a250f574aa}
       \field{labelalpha}{Fen+02}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of High Energy Physics}
@@ -753,8 +824,8 @@
       \strng{authornamehash}{c274d577eb643d742d3ebdb6a3077af5}
       \strng{authorfullhash}{c274d577eb643d742d3ebdb6a3077af5}
       \field{labelalpha}{AFP08}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of High Energy Physics}
@@ -813,8 +884,8 @@
       \strng{authornamehash}{a06b7dd3976716617ec602a513d6dbf5}
       \strng{authorfullhash}{dbef7b08c340228a290ece7afafc16da}
       \field{labelalpha}{Arg+08}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review D}
@@ -862,6 +933,118 @@
       \field{title}{Quiver representations and quiver varieties}
       \field{year}{2016}
     \endentry
+    \entry{bertolinisusy}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3c971bce1e85d768517bf7a062f488d9}{%
+           family={Bertolini},
+           familyi={B\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{fullhash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{bibnamehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{authorbibnamehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{authornamehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{authorfullhash}{3c971bce1e85d768517bf7a062f488d9}
+      \field{labelalpha}{Ber21}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Supersymmetry}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://people.sissa.it/~bertmat/teaching.htm
+      \endverb
+      \verb{url}
+      \verb https://people.sissa.it/~bertmat/teaching.htm
+      \endverb
+    \endentry
+    \entry{DbranespartI}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0c157598f9d30600aa4ee197f910e9c5}{%
+           family={Di\bibnamedelima Vecchia},
+           familyi={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cc6b14423be20658f130e43d5a631555}{%
+           family={Liccardo},
+           familyi={L\bibinitperiod},
+           given={Antonella},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{fullhash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{bibnamehash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{authorbibnamehash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{authornamehash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{authorfullhash}{5b04c80ad62ea502657fc10fe34adedf}
+      \field{extraname}{1}
+      \field{labelalpha}{DL99}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{D branes in string theory,I}
+      \field{year}{1999}
+      \verb{doi}
+      \verb 10.48550/ARXIV.HEP-TH/9912161
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/hep-th/9912161
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/hep-th/9912161
+      \endverb
+      \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
+    \entry{DbranespartII}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0c157598f9d30600aa4ee197f910e9c5}{%
+           family={Di\bibnamedelima Vecchia},
+           familyi={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cc6b14423be20658f130e43d5a631555}{%
+           family={Liccardo},
+           familyi={L\bibinitperiod},
+           given={Antonella},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{fullhash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{bibnamehash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{authorbibnamehash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{authornamehash}{5b04c80ad62ea502657fc10fe34adedf}
+      \strng{authorfullhash}{5b04c80ad62ea502657fc10fe34adedf}
+      \field{extraname}{2}
+      \field{labelalpha}{DL99}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{D branes in string theory, II}
+      \field{year}{1999}
+      \verb{doi}
+      \verb 10.48550/ARXIV.HEP-TH/9912275
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/hep-th/9912275
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/hep-th/9912275
+      \endverb
+      \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
     \entry{2020}{article}{}
       \name{author}{2}{}{%
         {{hash=873c062c06187265e2ae4660d0992560}{%
@@ -886,8 +1069,8 @@
       \strng{authornamehash}{bf70cd910ea0644a2cd1db5704ad2d37}
       \strng{authorfullhash}{bf70cd910ea0644a2cd1db5704ad2d37}
       \field{labelalpha}{CV20}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -917,8 +1100,8 @@
       \strng{authornamehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \strng{authorfullhash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \field{labelalpha}{Lin12}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -960,8 +1143,8 @@
       \strng{authornamehash}{e4640af9ccbe04a3006a13ca7cd8b0a2}
       \strng{authorfullhash}{5ccad494fd894b0988427c00b9b2f3f8}
       \field{labelalpha}{Hit+87}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Commun. Math. Phys.}
@@ -1003,8 +1186,8 @@
       \strng{authornamehash}{80b5dafe7fb6cde0f17924adefb0f0d8}
       \strng{authorfullhash}{80b5dafe7fb6cde0f17924adefb0f0d8}
       \field{labelalpha}{NST03}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00029947}
@@ -1016,35 +1199,6 @@
       \true{nocite}
       \field{pages}{1933\bibrangedash 1959}
       \range{pages}{27}
-    \endentry
-    \entry{bertolinisusy}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=3c971bce1e85d768517bf7a062f488d9}{%
-           family={Bertolini},
-           familyi={B\bibinitperiod},
-           given={Matteo},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{3c971bce1e85d768517bf7a062f488d9}
-      \strng{fullhash}{3c971bce1e85d768517bf7a062f488d9}
-      \strng{bibnamehash}{3c971bce1e85d768517bf7a062f488d9}
-      \strng{authorbibnamehash}{3c971bce1e85d768517bf7a062f488d9}
-      \strng{authornamehash}{3c971bce1e85d768517bf7a062f488d9}
-      \strng{authorfullhash}{3c971bce1e85d768517bf7a062f488d9}
-      \field{labelalpha}{Ber21}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Introduction to Supersymmetry}
-      \field{year}{2021}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://people.sissa.it/~bertmat/teaching.htm
-      \endverb
-      \verb{url}
-      \verb https://people.sissa.it/~bertmat/teaching.htm
-      \endverb
     \endentry
     \entry{1997}{article}{}
       \name{author}{2}{}{%
@@ -1150,6 +1304,62 @@
       \verb{eprint}
       \verb hep-th/0201253
       \endverb
+    \endentry
+    \entry{lecturenotessoibelman}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5f6ae2187172f218b00ce9263261b400}{%
+           family={Soibelman},
+           familyi={S\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5f6ae2187172f218b00ce9263261b400}
+      \strng{fullhash}{5f6ae2187172f218b00ce9263261b400}
+      \strng{bibnamehash}{5f6ae2187172f218b00ce9263261b400}
+      \strng{authorbibnamehash}{5f6ae2187172f218b00ce9263261b400}
+      \strng{authornamehash}{5f6ae2187172f218b00ce9263261b400}
+      \strng{authorfullhash}{5f6ae2187172f218b00ce9263261b400}
+      \field{labelalpha}{Soi19}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lecture Notes on Quiver Representations and Moduli Problems in Algebraic Geometry}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.48550/ARXIV.1909.03509
+      \endverb
+    \endentry
+    \entry{Pasternak:2021iyv}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=9c71e8c09691c5a9ff7211e5a39f421b}{%
+           family={Pasternak},
+           familyi={P\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {U. Brussels, Brussels U.}%
+      }
+      \strng{namehash}{9c71e8c09691c5a9ff7211e5a39f421b}
+      \strng{fullhash}{9c71e8c09691c5a9ff7211e5a39f421b}
+      \strng{bibnamehash}{9c71e8c09691c5a9ff7211e5a39f421b}
+      \strng{authorbibnamehash}{9c71e8c09691c5a9ff7211e5a39f421b}
+      \strng{authornamehash}{9c71e8c09691c5a9ff7211e5a39f421b}
+      \strng{authorfullhash}{9c71e8c09691c5a9ff7211e5a39f421b}
+      \field{labelalpha}{Pas21}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Dimers, Orientifolds, and Dynamical Supersymmetry Breaking}}
+      \field{type}{phdthesis}
+      \field{year}{2021}
+      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection
