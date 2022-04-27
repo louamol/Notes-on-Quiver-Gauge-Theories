@@ -43,8 +43,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {marker}{\numberline {22}}{36}{marker.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {23}}{36}{marker.23}%
+\contentsline {marker}{\numberline {23}}{37}{marker.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {24}}{37}{marker.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {marker}{\numberline {25}}{39}{marker.25}%
+\contentsline {marker}{\numberline {24}}{39}{marker.24}%

@@ -145,9 +145,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {J.1}Fans and cones}{38}{subsection.J.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {J.2}Calabi-Yau and non-compactness conditions}{38}{subsection.J.2}%
+\contentsline {subsection}{\numberline {J.2}Calabi-Yau and non-compactness conditions}{39}{subsection.J.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {K}Graphs}{38}{appendix.K}%
+\contentsline {section}{\numberline {K}Graphs}{39}{appendix.K}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {L}Spacetime geometry: ALE space and orbifolds}{39}{appendix.L}%
 \defcounter {refsection}{0}\relax 
@@ -155,6 +155,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {M.1}}{39}{subsection.M.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {N}References guide}{41}{appendix.N}%
+\contentsline {section}{\numberline {N}References guide}{42}{appendix.N}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Markers}{42}{appendix.N}%
+\contentsline {section}{List of Markers}{43}{appendix.N}%

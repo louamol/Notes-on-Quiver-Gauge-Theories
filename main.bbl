@@ -1045,6 +1045,27 @@
       \endverb
       \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
     \endentry
+    \entry{brion}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=977541cb33450695440d60f54e12e144}{%
+           family={Brion},
+           familyi={B\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{977541cb33450695440d60f54e12e144}
+      \strng{fullhash}{977541cb33450695440d60f54e12e144}
+      \strng{bibnamehash}{977541cb33450695440d60f54e12e144}
+      \strng{authorbibnamehash}{977541cb33450695440d60f54e12e144}
+      \strng{authornamehash}{977541cb33450695440d60f54e12e144}
+      \strng{authorfullhash}{977541cb33450695440d60f54e12e144}
+      \field{labelalpha}{Bri}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Representations of quiver}
+    \endentry
     \entry{2020}{article}{}
       \name{author}{2}{}{%
         {{hash=873c062c06187265e2ae4660d0992560}{%
@@ -1292,8 +1313,8 @@
       \strng{authornamehash}{55b0867b2b1ed3c9d193b2aeb7100113}
       \strng{authorfullhash}{55b0867b2b1ed3c9d193b2aeb7100113}
       \field{labelalpha}{DF02}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
