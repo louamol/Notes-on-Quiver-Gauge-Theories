@@ -151,14 +151,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {J.2}Calabi-Yau and non-compactness conditions}{41}{subsection.J.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {K}Graphs}{41}{appendix.K}%
+\contentsline {section}{\numberline {K}Simplicial homology}{41}{appendix.K}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {L}Spacetime geometry: ALE space and orbifolds}{41}{appendix.L}%
+\contentsline {section}{\numberline {L}Graphs}{41}{appendix.L}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {M}Some derivations}{41}{appendix.M}%
+\contentsline {section}{\numberline {M}Spacetime geometry: ALE space and orbifolds}{41}{appendix.M}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {M.1}}{41}{subsection.M.1}%
+\contentsline {section}{\numberline {N}Some derivations}{41}{appendix.N}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {N}References guide}{44}{appendix.N}%
+\contentsline {subsection}{\numberline {N.1}}{41}{subsection.N.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Markers}{45}{appendix.N}%
+\contentsline {section}{\numberline {O}References guide}{44}{appendix.O}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Markers}{45}{appendix.O}%

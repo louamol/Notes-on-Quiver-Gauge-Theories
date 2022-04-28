@@ -252,7 +252,7 @@
 
             Let us consider a representation $(\rho,\C^N)$ of $\Z_3$. A complete set of irreducible representations of $\Z_3$ is given by $\{(\rho_k,V_k)\}_{k=0,1,2}$ with $V_k=\C$ and
             \begin{equation}
-                \rho_i(g)=\zeta^k_3
+                \rho_k(g)=\zeta^k_3
             \end{equation}
             where $g$ is the generator of $\Z_3$. The representation $(\rho,V)$ can be decomposed as
             \begin{equation}
@@ -296,11 +296,11 @@
                 N_0+N_1+N_2=N.\label{eq:sumNiZ3}
             \end{equation} 
             
-            The gauge field configurations that are left invariant under the action of $\Z_n$ are therefore the ones that satisfy
+            The gauge field configurations that are left invariant under the action of $\Z_3$ are therefore the ones that satisfy
             \begin{equation}
                 \rho(g)A_\mu\rho(g)^{-1}=A_\mu.\label{eq:AinvZ3}
             \end{equation}
-            We actually want this relation to be true for any element of $\Z_n$ but in this case it is invariant under any element of $\Z_n$ if and only if it is invariant under the generator $g$ of $\Z_3$, so we only need to impose \eqref{eq:AinvZ3}. The constrained is easily solved by using the bi-index notation $A_{\mu;i\alpha_i,j\beta_j}$ ($i,j=0,1,2,\alpha_i,\beta_i=1,\dots,N_i$) for the component of the gauge fields. From \eqref{eq:reprrhoZn}, we can see that
+            We actually want this relation to be true for any element of $\Z_n$ but in this case it is invariant under any element of $\Z_3$ if and only if it is invariant under the generator $g$ of $\Z_3$, so we only need to impose \eqref{eq:AinvZ3}. The constrained is easily solved by using the bi-index notation $A_{\mu;i\alpha_i,j\beta_j}$ ($i,j=0,1,2,\alpha_i,\beta_i=1,\dots,N_i$) for the component of the gauge fields. From \eqref{eq:reprrhoZn}, we can see that
             \begin{equation}
                 A_{\mu;i\alpha_i,i\beta_j}\mapsto \rho_i(g)A_{\mu;i\alpha_i,j\beta_j}\rho_j(g)^{-1}=\zeta^{i-j}_nA_{\mu;i\alpha_i,j\beta_j}.
             \end{equation}
@@ -316,7 +316,7 @@
             with $A_{\mu;ij}\equiv (A_{\mu;i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}$. The block $A_{ii}$ transforms under $\Z_3$ under $(\rho_i,V_i)^{N_i}$.
             Consequently, the gauge group is now broken to
             \begin{equation}
-                G_{\text{proj}}=\U(N_0)\times\U(N_1)\times\U(N_1),
+                G_{\text{proj}}=\U(N_0)\times\U(N_1)\times\U(N_2),
             \end{equation}
             the biggest subgroup of $\U(N)$ that preserves those form of configurations.
             
@@ -333,7 +333,7 @@
             \begin{equation}
                 R(g)\indices{^m_n}\rho(g)X^n\rho(g)^{-1}=X^m
             \end{equation}
-            for all $g\in\Z_n$. Using the bi-index notations, this becomes
+            for all $g\in\Z_3$. Using the bi-index notations, this becomes
             \begin{align}
                 X^m_{i\alpha_i,j\beta_j}\mapsto  \zeta_n\delta\indices{^m_n}\rho_i(g) X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \zeta^{i-j+1}_3X^m_{i\alpha_i,j\beta_j}\\
                 \bar{X}^m_{i\alpha_i,j\beta_j}\mapsto  \zeta^{-1}_3\delta\indices{^m_n}\rho_i(g) \bar{X}^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \zeta^{i-j-1}_3\bar{X}^m_{i\alpha_i,j\beta_j}
@@ -363,7 +363,7 @@
                 X^m_{i,i+1} &\in \boldsymbol{\textbf{N}_{i+1}}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_{i+1},V_i),\\
                 \bar{X}^m_{i+1,i} &\in \boldsymbol{\textbf{N}_{i}}\otimes\boldsymbol{\bar{\textbf{N}}_{i+1}} \cong \Hom(V_{i},V_{i+1}).
             \end{align}
-            Let us make an important observation: the form of the scalar fields are the same for every $m=0,\dots,5$. This can be traced back to the fact that $R(g)=\zeta_3\mathbbm{1}_6$ so the R-symmetry action of $\Z_n$ is the same for all $m$.
+            Let us make an important observation: the form of the scalar fields are the same for every $m=0,\dots,5$. This can be traced back to the fact that $R(g)=\zeta_3\mathbbm{1}_6$ so the R-symmetry action of $\Z_3$ is the same for all $m$.
 
             Let us now study the four Weyl fermions $\psi^a$.\marker
 
@@ -449,7 +449,7 @@
 
         We consider a representation $(\rho,\C^N)$ of $\Z_n$. We decompose it on the set of irreducible representations of $\Z_n$ as
         \begin{equation}
-            (\rho,V)=\bigoplus^{n-1}_{i=0}N_i(\rho_i,V_i).
+            (\rho,\C^n)=\bigoplus^{n-1}_{i=0}N_i(\rho_i,\C).
         \end{equation}
         In other words, it is equivalent to the representation
         \begin{equation}
@@ -646,7 +646,12 @@
         \begin{equation}
             \{(\rho_i,V_i)\}_{i=0,\dots,n+2}
         \end{equation}
-        with $V_i=\C$ for $i=0,\dots,3$ and $V_i=\C^2$ for $i=4,\dots,n+2$, so there are $4$ one-dimensional representations and $n-1$ two-dimensional representations. They are explicitely given in section \ref{sec:irrep}. Using the bi-index notations $A_{\mu;i\alpha_i,j\beta_j}$ with $i,j=0,\dots,n+2$ and $\alpha_i,\beta_j=0,\dots,\dim\rho_i\cdot N_i-1$, the invariant configurations must have $A_{\mu;ij}=0$ if $i\neq j$, i.e. it must have a diagonal block-form, wiht block of size $\N_i\times N_i$ for $i=0,\dots,3$ and of size $2N_i\times 2N_i$ for $i=4,\dots,n+1$. The blocks transforming under the $2$-dimensional representations must have the form
+        with $V_i=\C$ for $i=0,\dots,3$ and $V_i=\C^2$ for $i=4,\dots,n+2$, so there are $4$ one-dimensional representations and $n-1$ two-dimensional representations. They are explicitely given in section \ref{sec:irrep}. Any representation of $(\rho,\C^N)$ of $\D_n$ can be decomposed as
+        \begin{equation}
+            ()
+        \end{equation}
+        
+        Using the bi-index notations $A_{\mu;i\alpha_i,j\beta_j}$ with $i,j=0,\dots,n+2$ and $\alpha_i,\beta_j=0,\dots,N_i\dim\rho_i-1$, the invariant configurations must have $A_{\mu;ij}=0$ if $i\neq j$, i.e. it must have a diagonal block-form, wiht block of size $N_i\times N_i$ for $i=0,\dots,3$ and of size $2N_i\times 2N_i$ for $i=4,\dots,n+1$. The blocks transforming under the $2$-dimensional representations must have the form
         \begin{equation}
             A_{\mu;ii}=
             \begin{bmatrix}
