@@ -138,6 +138,26 @@
     
 }
 \makeatother
+
+\definecolor{DefinitionColor2}{rgb}{0.29,0.29,0.29}
+\makeatletter
+\newtheorem*{@details}{details}
+\newenvironment{details}
+{
+    \def\FrameCommand
+    {%
+        {\color{DefinitionColor2}\vrule width 0.2em}%
+        \hspace{0.em}%
+        \fboxsep=\FrameSep\colorbox{DefinitionColor2!7}%
+    }%
+    \MakeFramed{\hsize\hsize\advance\hsize-\width\FrameRestore}%
+}
+{%
+    \endMakeFramed
+    
+}
+\makeatother
+
 %\everymath{\displaystyle}
 
 % Page layout
