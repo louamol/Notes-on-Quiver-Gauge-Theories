@@ -1,3 +1,6 @@
+\part{Preliminary notions}
+
+
 \section{Physical setup}
 
     \subsubsection*{Brane-world paradigm}
@@ -41,6 +44,343 @@
     \subsubsection*{Summary}
 
         We consider $N$ D$3$-branes in type IIB superstring theory carrying a $\U(N)$ gauge group. The transverse space $S$ is taken to be a non-compact singular Calabi-Yau variety.
+
+\section{Supersymmetric Yang-Mills theories from D-branes}
+
+    The dynamics of D-branes is described by the Dirac-Born-Infeld action
+    \begin{equation}
+        S_{\text{DBI}}[X,F] = -\frac{T_p}{g_s}\int\d^{p+1}\sigma~\sqrt{-\det\limits_{0\leq a,b\leq p}(\eta_{ab}+\p_a X^m\p_b X_m+2\pi\alpha'F_{ab})}.
+    \end{equation}
+    The latter can be expended for slowly-varying ﬁelds, which is equivalent to passing to the ﬁeld theory limit $\alpha'\to0$. The resulting action is the action of a $\U(1)$ gauge theory in $p+1$ dimensions with $9-p$ real scalar fields. This action is exactly the same than the one we would obtain by dimensionally-reducing a pure $\U(1)$ Yang-Mills gauge theory in 10 spacetime dimensions with the identification
+    \begin{equation}
+        g_{\text{YM}}=g_sT^{-1}_p(2\pi\alpha')^{-2}=\frac{g_s}{\sqrt{\alpha'}}(2\pi\sqrt{\alpha'})^{p-1}.
+    \end{equation}
+
+    This construction can be generalized for multiple D-branes. It now results in a non-abelian theory. The general statement is the following:
+    \begin{result}
+        The low-energy dynamics of $N$ parallel, coicident D$p$-branes in flat space is described in static gauge by the dimensional reduction to $p+1$ dimensions of pure $10d$ $\mN=1$ supersymmetric Yang-Mills theory with gauge group $\U(N)$ in ten spacetime dimensions.
+    \end{result}
+    Recall that the $10$-dimensional action is given by
+    \begin{equation}
+        S_{\text{YM}} = \frac{1}{4g^2_{\text{YM}}}\int\d^{10}x~\left[ \tr(F_{\mu\nu}F^{\mu\nu})+2i\tr(\bar{\psi}\Gamma^\mu D_\mu\psi)\right],\label{eq:SYMaction}
+    \end{equation}
+    where $F_{\mu\nu}=\p_\mu A_\nu-\p_\nu A_\mu+i[A_\mu,A_\nu]$ is the non-abelian field strength of the $\U(N)$ gauge field $A_\mu$, $D_\mu=\p_\mu-i[A_\mu,\psi]$, $\Gamma^\mu$ are $16\times 16$ Dirac matrices \marker, and the $N\times N$ Hermitian fermion ﬁeld $\psi$ is a $16$-component Majorana-Weyl spinor of the Lorentz group $\SO(1,9)$ which transforms under the adjoint representation of the gauge group $\U(N)$. On-shell, there are eight on-shell bosonic, gauge ﬁeld degrees of freedom, and eight fermionic degrees of freedom, after imposition of the Dirac equation $\xout{D}\psi=\Gamma^\mu D_\mu\psi=0$. One can verify that this action is invariant under the supersymmetry transformations
+    \begin{align*}
+        \delta_\eps A_\mu &= \frac{i}{2}\bar{\eps}\Gamma_\mu\psi,\\
+        \delta_{\eps}\psi &= \frac{1}{2}F_{\mu\nu}[\Gamma^\mu,\Gamma^\nu]\eps,
+    \end{align*}
+    where $\eps$ is an Majorana-Weyl spinor.
+    
+    Using \eqref{eq:SYMaction}, we can construct a supersymmetric Yanf-Mills gauge theory in $p+1$ dimensions with $16$ independent supercharges by dimensional reduction: we take all fields to be independent of the coordinates $X^{p+1},\dots, X^9$, then the ten-dimensional gauge field $A_\mu$ splits into a $(p+1)$-dimensional $\U(N)$ gauge field $A_a$ plus $9-p$ Hermitian scalar fields $\Phi^m=X^m/2\pi\alpha'$ in the adjoint representation of $\U(N)$. The D$p$-brane action is thereby obtained from the dimensionality reduced field theory as
+    \begin{equation}
+        S_{\text{D}p} = -\frac{T_pg_s(2\pi\alpha')^2}{4}\int\d^{p+1}\sigma~\tr\left(F_{ab}F^{ab}+2D_a\Phi^m D^a\Phi_m+\sum_{m\neq n}[\Phi^m,\Phi^n]^2+\text{fermions}\right)\label{eq:SDp}
+    \end{equation}
+    where $a,b=0,\dots,p$, $m,n=p+1,\dots,9$. We do not explicitly display the fermionic contributions for the moment. In conclusion, the low-energy brane dynamics is described by a supersymmetric Yang-Mills theory on the D$p$-brane worldvolume which is dynamically coupled to the transverse, adjoint scalar ﬁelds $\Phi^m$.
+
+    The scalar potential is given by
+    \begin{equation}
+        V(\Phi)=\sum_{m\neq n}[\Phi^m,\Phi^n]^2.
+    \end{equation}
+    It is negative definite because $[\Phi^m,\Phi^n]^\dagger=[\Phi^n,\Phi^m]=-[\Phi^m,\Phi^n]$. A classical vacuum of the ﬁeld theory deﬁned by \eqref{eq:SDp} corresponds to a static solution of the equations of motion whereby the potential energy of the system is minimized. It is given by the field configurations which solve simultaneously the quations $F_{ab}=D_a\Phi^m=\psi^a=0$ and $V(\Phi)=0$. Since all term in $V(\Phi)$ have the same sign, the equation $V(\Phi)=0$ is equivalent to the equation $[\Phi^m,\Phi^n]=0$ for all $m,n$ and at each point in the $(p+1)$-dimensional worldvolume of the branes. This implies that the $N\times N$ hermitian matrix fields $\Phi^m$ are simultaneously diagonalizable by a gauge transformation, so that we may write
+    \begin{equation}
+        \Phi^m=U
+        \begin{bmatrix}
+            X^m_1 & & & 0 \\
+            & X^m_2 & & \\
+            & & \ddots & \\
+            0 & & & X^m_N
+        \end{bmatrix}U^{-1},\label{eq:diagPhi}
+    \end{equation}
+    the matrix $U$ is independent of $m$. The simultaneous,
+    real eigenvalues $X^m_i$ give the positions of the $N$ distinct D-branes in the $m$-th transverse direction. It follows that the moduli space of classical vacua for the $(p+1)$-dimensional ﬁeld theory \eqref{eq:SDp} is the quotient space $(\R^{9-p})^N/S_N$, where the factors of $\R$ correspond to the positions of the $N$ D$p$-branes in the $(9-p)$-dimensional transverse space, and $S_N$ is the symmetric group acting by permutations of the $N$ coordinates $X_i$. The group $S_N$ corresponds to the residual Weyl symmetry of the $\U(N)$ gauge group acting in \eqref{eq:diagPhi}. It represents the permutation symmetry of a system of $N$ \emph{indistinguishable} D-branes.
+
+    From \eqref{eq:SDp} one can easily deduce that the masses of the ﬁelds corresponding to the oﬀ-diagonal matrix elements are given precisely by the distances $\abs{x_i-x_j}$ between the corresponding branes. This description means that an interpretation of the D-brane conﬁguration in terms of classical geometry is only possible in the classical ground state of the system, whereby the matrices $\Phi^m$ are simultaneously diagonalizable and the positions of the individual D-branes may be described through their spectrum of eigenvalues. This gives a simple and natural dynamical mechanism for the appearence of ``non-commutative geometry'' at short distances, where the D-branes cease to have well-deﬁned positions according to classical geometry.
+
+    \textcolor{blue}{The end of this section has to be rewritten \marker.}
+    
+\section{$\mN=4$ super Yang-Mills theory in $D=4$}\label{sec:N4SCFT}
+
+    \subsection{Superconformal group $\SU(2,2|4)$ and its representations}
+
+        Conformal transformations and supersymmetries do not commute so the presence of conformal symmetry in addition to $\mN=4$ supersymmetry leads to an even larger group of symmetry known as the \emph{superconformal group}. In the $D=4,\mN=4$ case, the superconformal group is the super group\footnote{Supermanifold which is also a group with smooth product and inverse maps.} $\SU(2,2|4)$. The different component of the latter are
+        \begin{itemize}
+            \item \textbf{Conformal symmetries}: they form the 15-dimensional subgroup $\SO(2,4)$ and are generated by $P_\mu,M_{\mu\nu},K_\mu$ and $D$.
+            \item \textbf{R-symmetry}: they form the 15-dimensional subgroup $\SO(6)_R$ and are generated by $T^A$ ($A=1,\dots,15$).
+            \item \textbf{Poincaré supersymmetries}: they form the 16-dimensional sub group \marker and are generated by $Q^I_\alpha$ and $\bar{Q}^I_{\dalpha}$.
+            \item \textbf{Conformal supersymmetries}: they form the 16-dimensional subgroup \marker and are generated by $S_{\alpha I}$ and $\bar{S}^{\dalpha I}$.
+        \end{itemize}
+
+        Conformal invariance of this theory can be seen as a consequence of the non-renormalization theorems.
+
+    \subsection{Matter content}
+        
+        For $D=4,\mN=4$, there is only one kind of supermultiplet, the vector multiplet. Therefore, from an $\mN=4$ perspective, the only $\mN=4$ is a pure SYM. For extended supersymmetry, is is easier to express it in terms of $\mN=1$ superfield on $\mN=1$ superspace instead of looking to construct a superspace for $\mN=4$. In this case, we can see that the $\mN = 4$ vector superfield can be expressed in terms of $\mN = 1$ representations as one vector supermultiplet and three chiral scalar supermultiplets:
+        \begin{equation}
+            [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi^A = (\phi^A,\psi^A_\alpha,F^A).
+        \end{equation}
+        with $A=1,2,3$ and
+        \begin{align}
+            \phi^A&=\phi^A_a T^a,\qquad \psi^A_\alpha=\psi^A_{\alpha,a}T^a,\qquad F^A=F^a_a T^a,\\
+            \lambda^A&=\lambda^A_a T^a,\qquad A^A_\mu=A^A_{\mu,a}T^a,\qquad D^A=F^a_a T^a,\\
+            V&=V_aT^a,\qquad \Phi^A=\Phi^A_aT^a,
+        \end{align}
+        where $T^a$ ($a=1,\dots,\dim G$) are the generators of $\mathfrak{g}$. The propagating degrees of freedom are therefore a vector field, three complex scalars and four gauginos. The Lagrangian is very much constrained by $\mN = 4$ supersymmetry. First, the chiral superfields $\Phi^A$ should transform in the adjoint representation of the gauge group $G$, since internal symmetries commute with supersymmetry. This means that all fields transform in the adjoint of $G$.
+        
+        Moreover, there is a large R-symmetry group\footnote{The fact that the scalar fields transform under the fundamental representation of $\SO(6)$, which is real, makes the R-symmetry group of the $\mN = 4$ theory being at most $\SU(4)$ and not $\U(4)$, in fact).}: $\SU(4)_R$. The four Weyl fermions transform in the fundamental of $\SU(4)_R$, while the six real scalars in the two times anti-symmetric representation, which is nothing but the fundamental representation of $\SO(6)$. The auxiliary fields are singlets under the R-symmetry group. Using $\mN = 1$ superfield formalism the Lagrangian reads
+        \begin{align}
+            \begin{split}
+                \L^{\mN=4}_{\text{SYM}} &= \frac{1}{32\pi}\Im \left(\tau\int\d^4x\tr(W^\alpha W_\alpha)\right)+\int\d^2\theta\d^2\bar{\theta}\tr\sum^3_{A=1}\bar{\Phi}^Ae^{2gV}\Phi^A\\
+                &\quad-\int\d^2\theta\sqrt{2g}\tr\Phi_1[\Phi_2,\Phi_3]+\text{h.c.}
+            \end{split}\label{eq:N4lag}
+        \end{align}
+        where as usual $W_\alpha=-\frac{1}{4}\bar{D}\bar{D}(e^{-V}D_\alpha e^V)$ is the gaugino superfield. This lagrangian is indeed invariant under the superPoincaré algebra and under the gauge transformations
+        \begin{align}
+            e^V &\to e^{i\bar{\Lambda}} e^V e^{-i\Lambda} \text{ (which implies that $W_\alpha \to e^{i\Lambda}W_\alpha e^{-i\Lambda}$)},\\
+            \Phi^A &\to e^{i\Lambda}\Phi^A.
+        \end{align}
+        The large $\SU(4)_R$ R-symmetry group forbids of having a superpotential. The commutator in the third term of \eqref{eq:N4lag} appears for the same reason as for the $\mN = 2$ Lagrangian. Notice that the choice of a single $\mN = 1$ supersymmetry generator breaks the full $\SU(4)_R$ R-symmetry to $\SU(3)\times \U(1)_R$. The three chiral superfields transform in the $\boldsymbol{3}$ of $\SU(3)$ and have R-charge $R = 2/3$ under the $\U(1)_R$. It is an easy but tedious exercise to perform the integration in superspace and get an explicit expression in terms of fields. Finally, one can solve for the auxiliary fields and get an expression where only propagating degrees of freedom are present, and where $\SU(4)_R$ invariance is manifest.
+
+    \subsection{Moduli space and dynamical phases}
+
+        The scalar potential in \eqref{eq:N4lag} can be written in a rather compact form in terms of the six real scalars $X^i$ making up the three complex scalars $\phi^A$ and reads
+        \begin{equation}
+            V(X_1,\dots,X_6) = \frac{1}{2}g^2\tr\sum^6_{i,j=1}[X_i,X_j]^2.
+        \end{equation}
+        The positive definite behavior of the Cartan-Killing form on the compact gauge algebra $\g$ implies that each term in the sum is positive or zero. In other words, $V=0$ is equivalent to
+        \begin{equation}
+            [X^i,X^j]=0,\qquad i,j=1,\dots,6.
+        \end{equation}
+        This means that the potential vanishes whenever the scalar fields belong to the Cartan subalgebra of the gauge group $G$. At a generic point of the moduli space, the gauge group is broken to $\U(1)^r$ where $r$ is the rank of $\mathfrak{g}$.
+        This equations admit two classes of solutions:
+        \begin{itemize}
+            \item $\langle X^i\rangle=0$ for all $i=1,\dots,6$. This is the \emph{superconformal phase}. Neither the gauge symmetry nor the superconformal symmetry is broken. The physical states and operators are gauge invariant and transform under
+            unitary representations of $\SU(2,2|4)$.
+            \item  $\langle X^i\rangle\neq0$ for at least one $i$. This is the \emph{spontaneously broken Coulomb phase}. The gauge algebra $\g$ is going to be broken to $\U(1)^r$, where $r\equiv\rank\g$. The low energy behavior is then the one of $r$ copies of $\mN=4$ $\U(1)$ gauge theories. Superconformal symmetry is spontaneously broken since the non-zero VEV $\langle X^i\rangle$ sets a scale.
+        \end{itemize}
+
+        \begin{result}
+            \textbf{$\boldsymbol{\mN=4}$ Yang-Mills theory.} There is only one $D=4,\mN=4$ Yang-Mills theory and it contains $3$ $\mN=1$ chiral scalar supermutliplet and $1$ $\mN=1$ vector supermultiplet (up to $g$ and $\tau$). This theory is conformal and can be recovered from dimensional reduction of $D=10,\mN=1$ Yang-Mills on $\mathbb{T}^6$.
+        \end{result}
+    
+\section{Gauge anomaly}\label{sec:anomalies}
+    
+    The \emph{anomaly degree} $A(\rho)$ of a representation $\rho$ is defined as
+    \begin{equation}
+        \frac{1}{2}\tr(T_a\{T_b,T_c\})=A(\rho)d_{abc}
+    \end{equation}
+    where $d_{abc}$ is an invariant symmetric tensor of the Lie algebra of $G$, independent of the representation. One can show that $A(\rho^*)=-A(\rho)$ so self dual representation have $A(\rho)=0$ in particular. The only simple Lie groups that allow for a complex non-self-conjugate representation are $\SU(n)$ with $n\geq3$. We can normalize $d_{abc}$ such that $A(\rho)=1$ for the fundamental $n$-dimensional representations.
+    
+\section{Properties of D-branes in type II theories}
+
+    The minimal irreducible representation in 10 dimensions is a Majorana-Weyl representation of dimension 8. In type II theories, we have $\mN=(1,1)$ for IIA and $\mN=(2,0)$ for IIB. Because of the string origin of the generators, the two supersymmetry generators $\eps_L$ and $\eps_R$ (Majorana-Weyl spinors) satisfy
+    \begin{equation}
+        \eps_L=\Gamma_{11}\eps_L,\qquad \eps_R=\eta\Gamma_{11}\eps_R
+    \end{equation}
+    with $\eta=+1$ for IIB and $\eta=-1$ for IIA theory. For a D$p$-brane, the supersymmetry projections is the following:
+    \begin{equation}
+        \eps_L=\Gamma_0\dots\Gamma_p\eps_R.
+    \end{equation}
+    In other words, the supersymmetries with generators of the form
+    \begin{equation}
+        Q_\alpha+\Gamma_0\dots\Gamma_p\bar{Q}_{\dalpha}\label{eq:susypresved}
+    \end{equation}
+    are preserved by the D$p$-brane while the one with generators of the form
+    \begin{equation}
+        Q_\alpha-\Gamma_0\dots\Gamma_p\bar{Q}_{\dalpha}\label{eq:susybroken}
+    \end{equation}
+    are broken. They violate the boundary conditions. Since there is the same number of generators of the form \eqref{eq:susypresved} than of the form \eqref{eq:susybroken}, exactly haf of the supersymmetry is broken. The idea that one spacetime direction would break one supercharge could be reasonable if supersymmetries were transforming as vectors which not the case; supercharges transform as spinors. It would also be incompatible with the T-duality because two branes of different dimensions must have the same number of unbroken supercharges if there is a T-duality relating them: the number of unbroken supercharges is the same for all dual descriptions (a necessary condition for the equivalence). And indeed, in the correct theory, that's the case. Every type II D-brane breaks half of the supercharges.
+
+    To obtain the previous relations, we start by the ones from M-theory and compactify the 11th direction, getting type IIA theory. $\Gamma_{11}$ then plays the role of the chiral projector in 10 dimensions; the supersymmetry parameters are related by $\eps_L=\frac{1}{2}(1+\Gamma_{11})\eps$ and $\eps_R=\frac{1}{2}(1-\Gamma_{11})\eps$. The relations for type IIB theory are then obtained by T-duality. Under a T-duality over the $\hat{i}$ direction, the supersymmetry parameters transform as
+    \begin{align*}
+        \eps_L &\mapsto \eps_L,\\
+        \eps_R &\mapsto \Gamma_i\eps_R.
+    \end{align*}
+    The tension of a D$p$-brane is given by
+    \begin{equation}
+        T_{p} = \frac{1}{(2\pi)^pg_sl^{p+1}_s}.
+    \end{equation}
+    This completely fixes the Newton constant: the tension of electric-magnetic duals must satisfy:
+    \begin{equation}
+        T_pT_{D-p-4} = \frac{2\pi}{16\pi G_D}.
+    \end{equation}
+    In ten dimensions, this gives $G_{10}=8\pi^6g^2_sl^8_s$.
+
+    The dualities are defined as follows:
+    \begin{align*}
+        \text{S-duality} &: g_s\mapsto\frac{1}{g_s},\qquad l^2_s\mapsto g_sl^2_s,\\
+        \text{T-duality} &: R\mapsto\frac{l^2_s}{R},\qquad g\mapsto g_s\frac{l_s}{R}.
+    \end{align*}
+
+\section{Algebraic geometry}
+
+    \subsection{Singularities and resolutions}
+
+        A \emph{rational map} from a variety $X$ to another $Y$ is a morphism from a non-empty subset $U\subset X$ to $Y$. Recall that, by definition of the Zariski topology, a non-empty open subset is always dense. Concretely, a rational map can be written in coordinates using ration functions (quotient of polynomials). A \emph{birational map} is an invertible rational map. It induces an isomorphism between two non-empty open subsets. In this case, $X$ and $Y$ are said to be \emph{birationally equivalent}.
+
+        The \emph{resolution of a singularity} of an algebraic variety $V$ is a non-singular variety $W$ with a proper birational map $W\to V$. For varities over fields of characteristic $0$, it was proven (Hironaka, 1964) that \marker.
+
+\section{Quivers representations, path algebras, moduli spaces and quiver varieties}
+
+    \subsection{Quivers, path algebras and relations}
+
+        A quiver $Q$ is a finite directed graph where loops and multiple arrows between edges are allowed. More precisely, it is a piece of combinatorial data $(Q_0,Q_1,t,h)$ such that $Q_0$ is the set of vertice, $Q_0$ the set of arrows ahd $t,h:Q_1\to Q_0$ are the tail and head maps. We can define a notion of product of paths\footnote{Note that for every vertex we add a trivial loop.} and, provided with the formal sum, the paths form a ring. Given a field $k$ and an action of $k$ aver this ring, we form an algebra, called the \emph{path algebra} of $Q$ and denoted by $kQ$. It is clear that the path algebra of a quiver is finite-dimensional if and only if $Q$ has no non-trivial cycles.
+
+        To enforce commutativity of some squares inside a quiver, we can use the notion of relation. A \emph{relation} on a quiver $Q$ is a $k$-linear combination of paths from $Q$. More precisely, is a subsapce of $kQ$ spanned by linear combinations of paths having a common source and common target, and of length at least $2$. A \emph{quiver with relations} is a pair $(Q,I(R))$ where $I(R)\subseteq kQ$ is the (two-sided) ideal of the path algebra generated by $R$. The path algebra of $(Q,I)$ is $kQ/I(R)$. 
+        
+        \begin{examp*}
+            If $Q$ is the $r$-loop, then a relation is a subspace of $kQ = k\langle X_1,\dots,X_r\rangle$ spanned by linear combinations of words of length at least 2. For instance, all the commutators $X_iX_j-X_jX_i$, then the two elements of $kQ$ correspond to the same element in $kQ/I(R)$ if and only their difference is in $I(R)$. In this case, this means that they only differ by inverting the product of two variables in their expression. The resulting algebra is then the ``commutative version'' of $kQ$, which is nothing but than the polynomial algebra $k[X_1,\dots,X_r]$.
+        \end{examp*}
+
+    \subsection{Quiver representations}
+
+        A \emph{representation} of a quiver $Q$ over the field $k$ is an assignment to every vertex $i$ os a $k$-vector space $V_i$ and to every arrow $a$ a linear mapping $f_a=V_{t(a)}\to V_{h(a)}$ between the corresponding vector spaces to each arrow. A representation of a quiver with relations $(Q,R)$ has the same definition but with the additional requirement that the linear maps must preserve the relations\marker. Denoting $\alpha_i=\dim V_i$, $\alpha=(\alpha_i)\in\N^{Q_0}_0$ is the \emph{dimension vector} of the representation. Quiver representations are an effective combinatorial tool for organizing linear algebraic data. Not only are they naturally related to many algebraic objects such as quantum groups, Kac-Moody algebras, and cluster algebras, but they have also been studied from the geometric point of view, often serving to bridge the gap between representation theory and algebraic geometry. 
+        
+        If $V=(V_i,f_a)$ and $W=(W_i,g_a)$ are are two finite-dimensional representation of the same quiver with relations $(Q,R)$, a morphism $\psi$ from $V$ to $W$ is given by specifying , for every vertex $i$, a linear isomorphism $\psi_i:V_i\to W_i$ such that for avery arrow $a$ $\psi_{h(a)}\circ f_a=g_a\circ\psi_{t(a)}$. The \emph{direct sum} $V\oplus W$ of representations can also be defined as $(V\oplus W)_i=V_i\oplus W_i$ with the direct sum of the linear mappings. We then say that a representation is \emph{decomposable} is it is isomorphic to the direct sum of non-zero representations and of \emph{finite-type} if it has only finitely many isomorphism classes of indecomposable representations. A very important theorem in indecomposable representations is the following:
+        \begin{theorem*}[Gabriel]
+            A (connected) quiver is of fnite type if and only if its underlying graph (when the directions of the arrows are ignored) is ADE.
+        \end{theorem*}
+        
+        To any representation $V=(V_i,f_a)$ of $Q$ we can associate a $k$-vector space
+        \begin{equation}
+            V=\bigoplus_{i \in Q_0}V_i
+        \end{equation}
+        equipped with two famillies of linear self-maps: the projections $f_i:V\to V$ ($i\in Q_0$) obtained from the composition $V\hookrightarrow V_i\to V$ of the projections with the inclisions, and tha maps $f_a:V\to V$ ($a\in Q_1$) obtained similarly from the defining maps $f_a=V_{t(a)\to V_{h(a)}}$. One can see that these maps satisfy the relations
+        \begin{equation}
+            f^2_i=f_i,\qquad f_i\circ f_j=0~(i\neq j),\qquad f_{t(a)}\circ f_a=f_a\circ f_{h(a)}=f_a
+        \end{equation}
+        and all other products are zero. In this sense, representations a quiver defines an algebra (the algebra of $f_i$ and $f_a$). Now comes the whole point to all this is: this algebra is a representation of the path algebra. To see this, we can use the notation $\rho(e_i)=f_i:V\to V$ and $\rho(a)=f_a:V\to V$ so $\rho:kQ\to \End(V)$ and we can show that is is a $k$-linear morphism of rings. So $\rho$ is a representation of the algebra $kQ$. So a representation of a quiver $Q$ gives a representation of the path algebra. The converse can also be shown. We conclude that representations of the path algebra and of the quiver are equivalent. Gabriel's theorem could then be equivalently phrased as: the path algebra of any quiver has finite representations if and only if it is ADE.
+        
+        Recall also that giving a $k$-linear morphism $A=(k,R)\to\End(V)$ is equivalent to giving a structure of $R$-module to $V$. So from what we discussed above, giving a representation of a quiver is equivalent to giving a module structure to $V$. This can be rephrased using a more categorical language by showing that these constructions extend to functors. It is now clear that the finite-dimensional representations of a quiver with relations form a category, which we denote by $\texttt{fRep}(kQ,R)$. If $(Q,I(R))$ is a quiver with relations and $A=kQ/I$ its path algebra, then the set of finite-dimensional modules of $A$ is also a category that we denote by $\texttt{fdmod}A$.
+        \begin{lemma*}
+            There is a categorical equivalence
+            \begin{equation}
+                \texttt{fRep}(kQ,R)\approx\texttt{fdmod}A.
+            \end{equation}
+        \end{lemma*}
+        
+
+    \subsection{Quiver varities}
+
+    \subsection{Moduli problems}
+
+        Given a collection of algebra-geometric objects it is natural to try to classify these objects up to equivalence. Naively, given a collection $\A$ of such objects and an equivalence relation $\sim$ on $\A$, one may ask whether there exists an algebraic variety $X$ whose points (over the base field $k$) correspond to equivalence classes in $\A/\sim$. This approach is flawed, since there may be many such varieties and some are better than others at retaining the relationships between the objects being classified. If, for example, we are interested in classifying all lines through the origin in the complex plane $\C^2$ up to equality, we can view the corresponding equivalence classes as points of the complex projective line $\P^1_\C$, but we can also see them as points in the disjoint union $\bbA^1_\C\sqcup\{pt\}$ of a line and a point. Ideally, the points of the variety solving a moduli problem should be configured to reflect the relationship between the geometric objects they parametrize.
+        
+        Thus, in more nuanced approach we try to describe equivalence classes of families of objects of $\A$, rather than just of the objects themselves. That is, we look at pairs $\F,T$, consisting of a variety $T$ and a family $\pi:\F\to X$ of objects of $\A$ (the fibers $\pi^{-1}(t)$ are objects of $\A$) subject to some additional conditions (e.g. that $\pi$ is flat). Moreover, if the collection of families over a variety $T$ is denoted by $\A_T$, then for any morphism $f:S\to T$, there should be a pullback operation assigning to any family $\F\in \A_T$ a family $f^*\F\in\A_S$. Now, we can extend our moduli problem by introducing an equivalence relation $\sim_T$ on $A_T$ that is compatible with pullback and give us the starting equivalence relation $\sim$ when $T$ is $\text{Spec}k$.
+        
+        The solution to such an extended moduli problem, called a \emph{fine moduli space}, consists of a variety $X$ whose $k$-points classify equivalence classes in $\A/\sim$, together with a \emph{universal family} $\mathcal{U}\in\A_X$, which describes how these equivalence classes relate to each other. More specifically, any family $\F\in\A_T$ over a variety $T$ is equivalent to the pullback $f^*\mathcal{U}$ along a unique morphism $f:T\to X$. In the special case that $T=\text{Spec}k$, we obtain that the $k$-points of $X$ are in bijection with equivalence classes in $\A$. Furthermore, it turns out that the fine moduli space is
+        unique up to isomorphism. 
+        
+        Considering once again the example of lines through the origin in $\C^2$, we see that a family of such lines over a variety $T$ may be thought of as a line subbundle $\mathcal{L}\subset\C^2\times T\to T$ of the trivial rank $2$ vector bundle over $T$. The equivalence relation becomes an isomorphism of line subbundles of $\C^2\times T$. The solution to the corresponding moduli problem consists of the complex projective line $\P^1_\C$ together with the tautological line bundle $\mathcal{O}_{\P^1_\C}(-1)$. Indeed, if $\mathcal{L}\subset\C^2\times T$ is a subbundle, then its dual $\mathcal{L}^\vee$ is generated by global sections (specifically, the images of the standard global sections with respect to the surjection   $(\C^2)^\vee\times T\twoheadrightarrow\mathcal{L}^\vee)$. This defines a unique morphism $f:T\to\P^1_\C$ such that $\mathcal{L}\simeq f^*\mathcal{O}(-1)$.
+
+        Unfortunately, it is often the case that, for a given class of objects $\A$, a fine modduli space either does not exist or requires us to place restrictions on the kinds of objects in $\A$ we wish to classify. In order to avoid this, we can forget the universal family and look for a nice enough variety with points in bijection with equivalence classes in $\A/\sim$. Alternatively, we can allow for the solution of our moduli problem to no longer be a variety (or even a scheme). The result is a more complicated object called a \emph{stack}.
+
+
+    \textcolor{blue}{This section has to be rewritten \marker.}
+
+\section{Calabi-Yau manifolds, orbifolds and crepant resolutions}\label{sec:CY}
+
+    \subsection{Calabi-Yau manifolds}
+
+        A \emph{Calabi-Yau manifold} of (complex) dimension $n$ is a compact $n$-dimensional Kähler manifold $M$ satisfying one of the following equivalent conditions:
+        \begin{itemize}
+            \item the canonical bundle of $M$ is trivial,
+            \item $M$ has holomorphic $n$-form that vanishes nowhere,
+            \item the structure group of the tangent bundle of $M$ can be reduced from $\U(n)$ to $\SU(n)$,
+            \item $M$ has Kähler metric with global holonomy contained in $\SU(n)$.
+        \end{itemize}
+
+        It was conjectured by Calabi then prooved by Yau that such spaces are necessarily Ricci-flat. In particular, since the first Chern class of CY manifolds si given by
+        \begin{equation}
+            c_1=\frac{1}{2\pi}[\mathcal{R}]
+        \end{equation}
+        it implies that $c_1$ vanishes, the converse is not true.
+
+        For a compact $n$-dimensioanl Kähler manifold the following conditions are equivalent to each other:
+        \begin{itemize}
+            \item the first real Chern class vanishes,
+            \item $M$ has a Kähler metric with vanishing Ricci curvature,
+            \item $M$ has Kähler metric with local holonomy contained in $\SU(n)$.
+            \item a positive power of the canonical bundle of $M$ is trivial,
+            \item $M$ has a finite cover that has trivial canonical bundle,
+            \item $M$ has a finite cover that is a product of a torus and a simply connected manifold with trivial canonical bundle.
+        \end{itemize}
+        They are weaker than the conditions above except when the Kähler manifold is simply connected in which case they are equivalent.
+
+    \subsection{Calabi-Yau orbifolds}
+
+        A \emph{Calabi-Yau orbifold} is the quotient of a smooth Calabi-Yau manifold by a discrete group action which generically has fixed points. From a algebraic geometry perspective we can try to resolve the orbifold singularity. A resolution $(X,\pi)$ of $\C^n/\Gamma$ is a non-singular complex manifold $X$ of dimension $n$ with a proper biholomorphic map 
+        \begin{equation}
+            \pi:X\to\C^n/\Gamma
+        \end{equation}
+        that induces a biholomorphism between dense open sets. A resolution $(X,\pi)$ of $\C^n/\Gamma$ is called a \emph{crepant resolution}\index{resolution!crepant}\footnote{For a resolution of singularities we can define a notion of discrepancy. A crepant resolution is a resolution
+            without discrepancy.} if the canonical bundles of $X$ and $\C^n/\Gamma$ are isomorphic, i.e.
+            \begin{equation*}
+                K_X\cong\pi^*(K_{\C^n/\Gamma}).
+            \end{equation*}
+        Since Calabi-Yau manifolds have trivial canonical bundle, to obtain a Calabi-Yau structure on $X$ one must choose a crepant resolutions of singularities.
+
+        It turns out that the amount of information we know about a crepant resolution of singularities of $\C^n/\Gamma$ depends dramatically on the dimension $n$ of the orbifold:
+        \begin{itemize}
+            \item $n=2$: a crepant always exists and is unique. Its topology is entirely described in terms of the finite group $\Gamma$ (via the McKay correspondence).
+            \item $n=3$: a crepant resolution always exists but it is not unique; they are related by flops. However all the crepant resolutions have the same Euler and Betti numbers: the \emph{stringy} Betti and Hodge numbers of the orbifold.
+            \item $n\geq4$: very little is known; crepant resolution ecists in rather special cases. Many singularity are terminal, which implies that they admit no crepant resolution.
+        \end{itemize}
+
+
+\section{Toric varieties}
+
+    \subsection{Fans and cones}
+
+        An \emph{algebraic group} is a group that is also an algebraic variety and such the product and inversion are regular maps on the variety. Any product of $\C^*$ is an algebraic group, we call \emph{algebraic tori}. A \emph{toic variety} $\boldsymbol{\chi}_\Delta$ is an algebrais variety of dimension $n$ containing an algebraic torus $(\C^*)^n$ as a dense open subset, as such that the torus action on itself extends to an algebraic action on $\chi_\Delta$. For instance, $\C\P^2$ is a toric variety. This $n$-dimensional variety is obtained as the quotient of a complex plane of highe dimension $m\geq n$:
+        \begin{equation}
+            \chi_\Delta=\frac{\C^m/Z_\Delta}{(\C^*)^{m-n}\times\Gamma},
+        \end{equation}
+        where $\Gamma_\Delta\subset\C^m$ is a suitable set of points  and $\Gamma$ is a finite discrete goup.
+
+        \begin{prop*}
+            All abelian orbifolds are toric varities.
+        \end{prop*}
+
+        
+
+    \subsection{Calabi-Yau and non-compactness conditions}
+
+\section{Homology}
+
+    The $n$th simplicial homology group of a topological space $X$ with a complex simplicial structure $\Delta$ is always of the form
+    \begin{equation}
+        H^\Delta_n(X)=\underbrace{\Z\times\Z}_{b_n}\oplus\Z_{q_1}\times\dots\times\Z_{q_s}.
+    \end{equation}
+    $b_n$ are the Betti numbers. The \emph{Poincaré} polynomial is
+    \begin{equation}
+        P_X(x)=\sum_{i\geq 0}b_ix^i
+    \end{equation}
+    and the Euler characteristic of $X$ is given by $P_X(-1)$.
+
+\part{Orbifold singularities}
+
+\section{Strings on orbifolds}
+
+    \subsection{Twisted sector}
+    
+        The twisted sector is subspace of the full Hilbert space of string states in a particular theory over an orbifold. 
+        
+        In the first quantized formalism of string theory (or in two-dimensional conformal field theory) the target space is an orbifold $M/G$ if the observables of the string are only defined modulo $G$. Consequently, the value of the field after one cycle around the closed string need only be the same as its original value modulo some $G$ transformation, i.e. there exists some $g\in G$ such that $X(\tau,\sigma+2\pi)=g[X(\tau,\sigma)]$. For each conjugacy class of $G$, we have a different superselection sector (from the worldsheet point of view). The conjugacy class consisting of the identity gives rise to the \emph{untwisted sector} and all the other conjugacy classes give rise to \emph{twisted sectors}. It's easy to see that since the observables are only modulo $G$, two different g's which are conjugate to each other give rise to the same sector.
+
+        In the second quantized formalism, the different sectors give rise to different orbifold projections.
+
+    \subsection{Spacetime geometry: ALE space and orbifolds}\label{app:spacetimegeom}
+
+        Asymptotically locally euclidean (ALE) spaces are a particularly interresting choice of string background to probe with branes for mainly four reasons
+        \begin{enumerate}[label=(\roman*)]
+            \item they are the resolution (blow-ups) of orbifolds
+            \item there are completely classified: they fall in the ADE classification
+            \item they only break half of the supersymmetry
+            \item they are non-compact therefore we can study them for self-dual type II theory\marker.
+        \end{enumerate}
+        Mathematically, an ALE space is complete riemannian $n$-manifold $M$ such that there exists a compact set $K\subset M$ such that $M\backslash K$ is diffeomorphic to $(\R^n\backslash B_0(R))/G$, where $R\in\R^+_0$ is a radius and $G\subset\O(n)$ a subgroup. Additionally, it is asked that the pulled back metric on $\R^n\backslash B_0(R)$ tends to the euclidean flat metric at infinity.
+
+        If one considers string theory an the orbifold $\R^4/\Gamma$ where $\Gamma$ is a finite sub group of $\SU(2)$, massless states appear from the twisted sector. They are precisely the moduli needed the deform the theory to the one with smooth spacetime, i.e. the resolution of the orbifold. In that sense, is said that the strings know about the metric ALE space and that it is said that strings resolve the singularity. The metric of the ALE space can be recovered if the lagrangian of the resulting field theory is explicitely know, such as for the Wess-Zumino-Witten model. However, it is often not the case.
 
 \section{The simplest case: smooth transverse space}
 
@@ -92,8 +432,6 @@
         \begin{result}
             If the transverse space is non-singular, the only possibility is $S=\C^3$. In this case, the worldvolume theory is therefore $D=4,\mN=4$ $\U(N)$ SCFT gauge theory. It is called the \emph{parent theory}.
         \end{result}
-
-\part{Orbifold singularities}
 
 \section{Singular transverse space: orbifold singularities}\label{sec:orbsing}
 
@@ -1176,88 +1514,4 @@
 \part{Beyond orbifold singularities}
 
 \section{Non-commutative resolutions}
-
-\section{Determinantal varieties as transverse spaces}
-
-    \subsection{Basic properties of determinantal varieties}  
-
-            A \emph{determinantal variety} (DV) is a space of matrices with a given upper bound on their ranks. More precisely, given $m,n$ and $r<\min(m,n)$, the DV $Y_r$ of the field $K$ is the set of $m\times n$ matrices over $K$ with rank lower or equal to $r$:
-            \begin{equation}
-                Y_r\equiv\{M\in M_{m\times n}(K)|\rank M\leq r\}.
-            \end{equation}
-            Recall that a $k$-minor is the determinant of a $k\times k$ sub-matrix and that the rank of a matrix is equal to the biggest integer such that there is a non-vanishing minor of that size. Imposing $\rank M\leq r$ is therefore equivalent to the vanishing of its $(r+1)\times (r+1)$ minors, as it also implies tha vanishing of the biggest minors. This naturally qualifies $R_r$ as affine varieties embedded in $K^{mn}$. 
-            
-            Let us denote by $X=(x_{ij})$ an arbitrary $m\times n$ matrix. The independent entries $x_{ij}$ are affine coordinates. The $(r+1)\times(r+1)$ minors are therefore homogeneous polynomials of degree $r+1$. The \emph{determinantal ideal} $I_{r+1}(X)$ is the ideal of $k[X]$ generated by these polynomials. The cooridnate ring is 
-            \begin{equation}
-                R=k[X]/I_{r+1}(X)
-            \end{equation}
-            Homogeneity the polynomials implies that $Y_r$ can equivalently be seen as a projective variety in $\bbA^{mn-1}$.
-
-        \subsubsection{Computing the dimension}
-            
-            Let us compute the dimension of $Y_r$ seen as an affine variety. We consider the space $\bbA^{mn}\times\textbf{Gr}(r,m)$, where $\textbf{Gr}(r,m)$ is the Grassmannian of $r$-planes in an $m$-dimensioanl vector space. Let us define the subsapce
-            \begin{equation}
-                Z_r\equiv\{(A,W)|Ax\in W\text{ for all } x\in\bbA^{n}\}.
-            \end{equation}
-            $Y_r$ and $Z_r$ are birationaly equivalent so $\dim Y_r=\dim Z_r$. We want to compute $Z_r$. First we notice that $Z_r$ is a vector bundle over $\textbf{Gr}(r,m)$ and we denote it by $Z_r\xrightarrow[]{\pi_1}\textbf{Gr}(r,m)$. Now, over the Grassmannian $\textbf{Gr}(r,m)$, there is a tautologial vector bundle that we denote by $E_{\textbf{Gr}}\xrightarrow[]{\pi_2}\textbf{Gr}(r,m)$ whose fibers are $\pi^{-1}_2(W)=W\cong\R^r$. Finally, $K^m$ can also be seen as a vector bundle, with fibers $\R^m$. We denote it by $E_{K^n}\xrightarrow[]{\pi_3}K^n$. From $E_{\textbf{Gr}}$ and $E_{K^n}$, we can construct\footnote{Recall that if $E$ and $F$ are vector bundles over $X$, then we can construct a new vetor bundle over $X$, called the Hom-bundle and denoted $\Hom(E,F)$, by defining the fiber over $x\in X$ to be $\Hom(E_x,F_x)$.} the vector bundle $\Hom(E_{\textbf{Gr}},E_{K^n})\xrightarrow[]{\pi_4}\textbf{Gr}(r,m)$. This vector bundle has the same base space and its fibers are $\Hom(\R^m,\R^r)$ which are exactly the same as the ones of $Z_r$. So the two vector bundles are isomorphic:
-            \begin{equation}
-                Z_r\cong\Hom(E_{\textbf{Gr}},E_{K^n}).
-            \end{equation}
-            Finally, since the fibers of $\Hom(K^n,E_{\textbf{Gr}})$ have dimension $nr$, we find
-            \begin{equation}
-                \dim Z_r = \dim\Hom(K^n,E_{\textbf{Gr}}) = \dim\textbf{Gr}(r,m)+nr = r(m-r)+nr.
-            \end{equation}
-            Finally, we conclude that $Y_r$ is a affine variety of dimension $r(m-r)+nr$.
-
-            \begin{table}[H]
-                \centering
-                $
-                \begin{array}{|c|c|c||c|}
-                    \hline
-                    m & n & r & \dim_\C Y_r \\ \hline
-                    2 & 2 & 1 & 3 \\ \hline
-                    3 & 2 & 1 & 4 \\ \hline
-                    3 & 3 & 1 & 5 \\ \hline
-                    3 & 3 & 2 & 8 \\ \hline
-                    4 & 2 & 1 & 5 \\ \hline
-                    4 & 3 & 1 & 6 \\ \hline
-                    4 & 3 & 2 & 10 \\ \hline
-                    4 & 4 & 1 & 7 \\ \hline
-                    4 & 4 & 2 & 12 \\ \hline
-                    4 & 4 & 3 & 15 \\ \hline
-                \end{array}
-                $
-            \end{table}
-
-        \subsubsection{Singularity}
-        
-            Determinantal varieties are singular and possess non-commutative resolutions. $Y_r$ is singlar and the singular locus is contained in the subset of matrices with rank strictly lower than $r$. $Z_r$ is a resolution (over the open set of matrices with rank exactly $r$, this map is an isomorphism), it is called the \emph{Springer desingularization} of $\text{Spec}R$.
-
-        \subsubsection{Action and syzygies}
-
-            $Y_r$ naturally acts on $G=\GL(m,K)\times\GL(n,K)$
-
-        \subsection{Young's lattice}
-
-            \emph{Young's lattice} is a lattice $Y$ formed by all integer partitions ordered by inclusion of their Young tableau. It is generally used to to describe the irreducible representation sof the symmetric group\footnote{Two permutations of $S_n$ are equivalent if and only they have they have the same number of cycles of the same sizes. Therefore, the quivalence classes of the symmetric group $S_n$ are parametrized by the partitions of $n$, i.e. by Young diagrams.} $S_n$ together with their branching properties. Conventionnally, Young's lattice is depicted in a Hasse diagram, i.e. with element of the same rank shown at the same height and with links such that the descendance of two elements is the union and the parent is the intersection.
-
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=0.45]{Pictures/youngslattice.png}
-                \caption{Young's lattice.}
-            \end{figure}
-
-            Young's lattice possess the folling symmetry: the partition $n+n-1+\dots2+1$ of the $n$th triangular number has a Young diagram that looks like a staircase. If we now only keep the elements whose hull is contained in this staircase, we get a subset of Young's lattice. When rank-embedded, this subset clearly has the expected bilateral symmetry of Young's lattice but also a rotational symmetry, which appear more clearly if we move away from this rank-embedding. The rotation group of order $n+1$ acts on this poset\footnote{Partially ordered set.}. Since it has both a bilateral and a rotational symmetry it must also have a dihedral symmetry and, indeed, the dihedral group $\D_{n+1}$ acts faithfully on this set.
-
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=0.45]{Pictures/suter1.png}
-                \includegraphics[scale=0.45]{Pictures/suter2.png}
-                \caption{Example of dihedral symmetry for $n=4$.}
-            \end{figure}
-
-            
-
-
-        
 

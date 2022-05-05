@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1651139429 "main.bcf" "main.bbl" "main" 1651162757
+["biber main"] 1651139429 "main.bcf" "main.bbl" "main" 1651745341
   "bibliography.bib" 1651088353 13336 5df943ba21698ab32920efbe245ddc55 ""
-  "main.bcf" 1651162756 107552 0107671b234b67e5888bdb638e0f0e38 "pdflatex"
+  "main.bcf" 1651745341 107552 0107671b234b67e5888bdb638e0f0e38 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1651162753 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1651162757
+["pdflatex"] 1651745338 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1651745341
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0700.pk" 1640084903 17380 ecc1e3fa43bf6a9b621b73fe9ef8bf0c ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0900.pk" 1611418443 22504 5687b8afeb2756cbcb6ccaceec3a53ef ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1607267403 25420 f2c23a7c3a7fea5cb4ae4a632310af13 ""
@@ -447,17 +447,17 @@
   "Pictures/suter1.png" 1651139238 16150 fc8f4fee3b3934f58d51846566803417 ""
   "Pictures/suter2.png" 1651139249 20235 95d7f1f72fd7e1cfd15c661cd8eec110 ""
   "Pictures/youngslattice.png" 1650913483 255031 539c580499ebd606c1778db846236b02 ""
-  "appendices.aux" 1651162756 16765 105b5f7a2f65e75e6f034117afc82312 "pdflatex"
-  "appendices.tex" 1651162751 76723 64ba719650448447ddf5ff76a6cc8f30 ""
-  "main.aux" 1651162756 5963 ae930ccf1dd5c3c83de8239a888e8a2d "pdflatex"
+  "appendices.aux" 1651745340 10802 19d5031fcbd9fa1da877cf71a5774f55 "pdflatex"
+  "appendices.tex" 1651745333 46612 e894512d1c4f904178b112ea1a608f9e ""
+  "main.aux" 1651745341 5963 46eec62be3ec79a53cde0b7d335072e6 "pdflatex"
   "main.bbl" 1651139430 52121 fc4091ea048dbac43935492cc247186c "biber main"
-  "main.mak" 1651162756 2091 e322fcdac7ea6afc8576b3077091c3d6 "pdflatex"
-  "main.out" 1651162756 15828 3d8c6f1100efceebdc8131a7d9c8645c "pdflatex"
-  "main.run.xml" 1651162756 2313 300f39656d2ca573330f9b1b6a90dbb1 "pdflatex"
+  "main.mak" 1651745341 2090 9605eff4b2a4bc597cc9f692b28c0ad0 "pdflatex"
+  "main.out" 1651745341 15870 b7c3c3100b1ae68c29768850bc4d1ba0 "pdflatex"
+  "main.run.xml" 1651745341 2313 300f39656d2ca573330f9b1b6a90dbb1 "pdflatex"
   "main.tex" 1651088353 2253 e73b59b68f954cce72d506ab9081da94 ""
-  "main.toc" 1651162756 11041 ab30632aa70e4cfa50358d0eb7987440 "pdflatex"
-  "sections.aux" 1651162756 19123 faaf6d93fb94ecb5c5229d7c06058727 "pdflatex"
-  "sections.tex" 1651157042 88476 bdbd7a697d4bd2a5c718403c1bb0aa93 ""
+  "main.toc" 1651745341 11181 67f5f0a76490a4acdee37cd0cd6ea2e9 "pdflatex"
+  "sections.aux" 1651745340 25336 bec3f0c2f3b96a33ef6147754364528d "pdflatex"
+  "sections.tex" 1651745333 118384 4f1bff372fccaeb457886563626da68c ""
   (generated)
   "appendices.aux"
   "main.aux"
