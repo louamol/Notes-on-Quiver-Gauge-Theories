@@ -257,7 +257,10 @@
                 \texttt{fRep}(kQ,R)\approx\texttt{fdmod}A.
             \end{equation}
         \end{lemma*}
-        
+
+    \subsection{Geometric invariant theory}
+
+    \subsection{GIT quotient for quiver representation}
 
     \subsection{Quiver varities}
 
@@ -347,40 +350,366 @@
 
 \section{Homology}
 
-    The $n$th simplicial homology group of a topological space $X$ with a complex simplicial structure $\Delta$ is always of the form
-    \begin{equation}
-        H^\Delta_n(X)=\underbrace{\Z\times\Z}_{b_n}\oplus\Z_{q_1}\times\dots\times\Z_{q_s}.
-    \end{equation}
-    $b_n$ are the Betti numbers. The \emph{Poincaré} polynomial is
-    \begin{equation}
-        P_X(x)=\sum_{i\geq 0}b_ix^i
-    \end{equation}
-    and the Euler characteristic of $X$ is given by $P_X(-1)$.
+    \subsection{The idea of Homology}
 
-\part{Orbifold singularities}
-
-\section{Strings on orbifolds}
-
-    \subsection{Twisted sector}
-    
-        The twisted sector is subspace of the full Hilbert space of string states in a particular theory over an orbifold. 
         
-        In the first quantized formalism of string theory (or in two-dimensional conformal field theory) the target space is an orbifold $M/G$ if the observables of the string are only defined modulo $G$. Consequently, the value of the field after one cycle around the closed string need only be the same as its original value modulo some $G$ transformation, i.e. there exists some $g\in G$ such that $X(\tau,\sigma+2\pi)=g[X(\tau,\sigma)]$. For each conjugacy class of $G$, we have a different superselection sector (from the worldsheet point of view). The conjugacy class consisting of the identity gives rise to the \emph{untwisted sector} and all the other conjugacy classes give rise to \emph{twisted sectors}. It's easy to see that since the observables are only modulo $G$, two different g's which are conjugate to each other give rise to the same sector.
 
-        In the second quantized formalism, the different sectors give rise to different orbifold projections.
+        Note that they are in fact many types of homologies, the one we described here is the simplest (which is almost everytime for our needs) and is called \emph{simplicial homology}.
 
-    \subsection{Spacetime geometry: ALE space and orbifolds}\label{app:spacetimegeom}
+    \subsection{Simplicial Homology}
 
-        Asymptotically locally euclidean (ALE) spaces are a particularly interresting choice of string background to probe with branes for mainly four reasons
-        \begin{enumerate}[label=(\roman*)]
-            \item they are the resolution (blow-ups) of orbifolds
-            \item there are completely classified: they fall in the ADE classification
-            \item they only break half of the supersymmetry
-            \item they are non-compact therefore we can study them for self-dual type II theory\marker.
+        An \emph{$n$-simplex}, denoted by $\Delta^n=[v_0,\dots,v_n]$ is the smallest convex set in $\R^m$ containing $n+1$ points $v_0,\dots,v_n$ that do not lie in a hyperplane of dimension less than $n$. Or, equivalently, such that $v_1-v_0,\dots,v_n-v_0$ are linearly independant. The $n+1$ point $v_0,\dots,v_n$ are the \emph{vertices} of the $n$-simplex. A by-product of our ordered notation for the vertices of a simplex is that determines an orientation for the edges $[v_i,v_j]$ according to the increasing subscripts. The \emph{faces} of an $n$-simplex are all the subsimplices that can obtained by removing vertices of the original simplex. The order of the vertices of the smaller simplices is taken to be same than in the original $n$-simplex. 
+        
+        Let us now put some simplices together. If $X$ be a topological space, then a \emph{simplicial complex structure} on $X$ is a collection of continuous maps $\sigma_\alpha:\Delta^n\to X$ called \emph{characteristic maps} such that
+        \begin{enumerate}[label=\roman*)]
+            \item $\sigma_\alpha|_{e^\alpha}$ is injective and that for all $x\in X$ there exists $\alpha$ such that $x\in\Im(\sigma_\alpha|_{e^n})$,
+            \item the restriction of any map $\sigma_\alpha$ to a face of $\Delta^n$ is another $\sigma_\beta$,
+            \item for any subset $A\subseteq X$, $A$ is open if and only if $\sigma^{-1}_{\alpha}(A)$ is open in $\Delta^n$ for all $\alpha$,
         \end{enumerate}
-        Mathematically, an ALE space is complete riemannian $n$-manifold $M$ such that there exists a compact set $K\subset M$ such that $M\backslash K$ is diffeomorphic to $(\R^n\backslash B_0(R))/G$, where $R\in\R^+_0$ is a radius and $G\subset\O(n)$ a subgroup. Additionally, it is asked that the pulled back metric on $\R^n\backslash B_0(R)$ tends to the euclidean flat metric at infinity.
+        where $\Delta^n$ is an $n$-simplex and $e^n$ is the interior of $\Delta^n$. 
 
-        If one considers string theory an the orbifold $\R^4/\Gamma$ where $\Gamma$ is a finite sub group of $\SU(2)$, massless states appear from the twisted sector. They are precisely the moduli needed the deform the theory to the one with smooth spacetime, i.e. the resolution of the orbifold. In that sense, is said that the strings know about the metric ALE space and that it is said that strings resolve the singularity. The metric of the ALE space can be recovered if the lagrangian of the resulting field theory is explicitely know, such as for the Wess-Zumino-Witten model. However, it is often not the case.
+        Given a simplcial complex structure $\sigma_\alpha=\Delta^{n(\alpha)}\to X$ on $X$, $n$-chains are finite formal sums $\sum_\alpha n_\alpha e^n_\alpha$ with coefficient $n_\alpha\in\Z$. Equivalently, we can write $n$-chains as $\sum_\alpha n_\alpha \sigma_\alpha$. We denote by $\Delta_n(X)$ the free abelian group formed by $n$-chains. A basis is given by the open $n$-simplices $e^n_\alpha$ of $X$.
+
+        For a general simplicial complex structure on $X$, we define a \emph{boundary homomorphism} $\p_n:\Delta_n(X)\to\Delta_{n-1}(X)$ by its action on the basis elements:
+        \begin{equation}
+            \p_n(\sigma_\alpha)=\sum_i(-1)^i\sigma_\alpha|[v_0,\dots,\hat{v_i},\dots,v_n]
+        \end{equation}
+        We can note that the right side of this equations does indeed lies in $\Delta_{n-1}(X)$ since each restriction $\sigma_\alpha|[v_0,\dots,\hat{v_i},\dots,v_n]$ is the characteristic map of an $(n-1)$-simplex of $X$.
+
+        We now have a sequence of homomorphisms of abelian groups
+        \begin{equation}
+            \dots\to \Delta_{n+1}(X)\xrightarrow[]{\p_{n+1}}\Delta_n(X)\xrightarrow[]{\p_{n}}\Delta_{n-1}(X)\to\dots\to\Delta_1(X)\xrightarrow[]{\p_{1}}\Delta_0(X)\to 0
+        \end{equation}
+        with $\p_{n+1}\p_n=0$ for each. Such a sequence is called a \emph{chain complex}. We have extended the chain at the end with $\p_0=0$. It follows that $\Im\p_{n+1}\subset\Ker\p_n$. We then define the $n$th \emph{Homology group} of $X$ to be the quoitnet group $H_n(X)=\Ker(\p_n)/\Im\p_{n+1}$. Elements of $\Ker\p_n$ are called \emph{cycles} and elements of $\Im\p_{n+1}$ are called \emph{boundaries}. Elements of $H_n$ are cosets of $\Im\p_{n+1}$ and are called \emph{homology classes}. This means that two cycles are in the same homology classes if their difference is a boundary.
+
+        \begin{examp*}
+            Let us give some usefull examples of Homology groups for various topological spaces:
+            \begin{itemize}
+                \item the non-trivial Homology groups of the $n$-sphere are $H_0(S^n)=H_n(S^n)=\Z$.
+                \item the only non-trivial Homology group of the $n$-ball is $H_0(B^n)=\Z$ if $k=0$.
+                \item the non-trivial Homology groups of the 2-torus are $H_0(T)=H_2(T)=\Z$ and $H_1(T)=\Z^2$.
+                \item the non-trivial Homology groups of the complex projective space are $H_{0\leq 2k\leq 2n}(\C\P^n)=\Z$.
+            \end{itemize}
+        \end{examp*}
+
+        The $n$th simplicial homology group of a topological space $X$ with a complex simplicial structure $\Delta$ is always of the form
+        \begin{equation}
+            H^\Delta_n(X)=\underbrace{\Z\times\Z}_{b_n}\oplus\Z_{q_1}\times\dots\times\Z_{q_s}.
+        \end{equation}
+        $b_n$ are the Betti numbers. The \emph{Poincaré} polynomial is
+        \begin{equation}
+            P_X(x)=\sum_{i\geq 0}b_ix^i
+        \end{equation}
+        and the Euler characteristic of $X$ is given by $P_X(-1)$.
+
+\section{McKay correspondence}\label{app:McKay}
+
+    \subsection{Classical correspondence}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|c|l|l|l|}
+                \hline
+                $\Gamma\subset\SU(2)$ & Platonic solids & McKay graph & Variety \\ \hline
+                $\Z_n$ &  & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
+                    \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                    \draw (3*1.25,0) edge (4*1.25,0);
+                    \draw (0,0) edge (2*1.25,-1);
+                    \draw (4*1.25,0) edge (2*1.25,-1);
+                    \foreach \x in {0,1,2,3,4} {
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                        \draw (1.25*\x,0) node[above]{$1$};
+                    }
+                    \draw[fill=black] (1.25*2,-1) circle[radius=0.15];
+                    \draw (1.25*2,-1) node[above]{$1$};
+                \end{tikzpicture}\quad($n$ nodes) & $z^{n}+xy=0$ \\ \hline
+                $2\mathcal{D}_n$ & $n$-polygon & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
+                    \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                    \draw (3*1.25,0) edge (4*1.25,0);
+                    \draw (4*1.25,0) edge (5*1.25,0);
+                    \draw (1.25,0) edge (1.25,-1.25);
+                    \draw (4*1.25,0) edge (4*1.25,-1.25);
+                    \foreach \x in {0,1,2,3,4,5} {
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    
+                    \draw[fill=black] (1.25,-1.25) circle[radius=0.15];
+                    \draw (1.25,-1.25) node[right]{$1$};
+                    \draw[fill=black] (4*1.25,-1.25) circle[radius=0.15];
+                    \draw (4*1.25,-1.25) node[right]{$1$};
+                    \draw (0,0) node[above]{$1$};
+                    \draw (1.25*5,0) node[above]{$1$};
+                    \draw (1.25*1,0) node[above]{$2$};
+                    \draw (1.25*2,0) node[above]{$2$};
+                    \draw (1.25*3,0) node[above]{$2$};
+                    \draw (1.25*4,0) node[above]{$2$};
+                \end{tikzpicture}\quad($n+3$ nodes) & $x^2+y^2z+z^{n-1}=0$ \\ \hline
+                $2\mathcal{T}$ & tetrahedron & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (4*1.25,0);
+                    \draw (2*1.25,0) edge (2*1.25,-2*1.25);
+                    \foreach \x in {0,1,2,3,4} {
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=black] (2*1.25,-1.25) circle[radius=0.15];
+                    \draw (2*1.25,-1.25) node[right]{$2$};
+                    \draw[fill=black] (2*1.25,-2*1.25) circle[radius=0.15];
+                    \draw (2*1.25,-2*1.25) node[right]{$1$};
+                    \draw (0,0) node[above]{$1$};
+                    \draw (1.25*4,0) node[above]{$1$};
+                    \draw (1.25*1,0) node[above]{$2$};
+                    \draw (1.25*2,0) node[above]{$3$};
+                    \draw (1.25*3,0) node[above]{$2$};
+                \end{tikzpicture}\quad($7$ nodes) & $x^2+y^3+z^4=0$ \\ \hline
+                $2\mathcal{O}$  & \begin{tabular}{@{}l@{}}cube \\ octahedron\end{tabular} & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (6*1.25,0);
+                    \draw (3*1.25,0) edge (3*1.25,-1.25);
+                    \foreach \x in {0,1,2,3,4,5,6} {
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=black] (3*1.25,-1.25) circle[radius=0.15];
+                    \draw (3*1.25,-1.25) node[right]{$2$};
+                    \draw (0,0) node[above]{$1$};
+                    \draw (1.25*1,0) node[above]{$2$};
+                    \draw (1.25*2,0) node[above]{$3$};
+                    \draw (1.25*3,0) node[above]{$4$};
+                    \draw (1.25*4,0) node[above]{$3$};
+                    \draw (1.25*5,0) node[above]{$2$};
+                    \draw (1.25*6,0) node[above]{$1$};
+                \end{tikzpicture}\quad($8$ nodes) & $x^2+y^3+yz^3=0$ \\ \hline
+                $2\mathcal{I}$  & \begin{tabular}{@{}l@{}}icosahedron \\ dodecahedron\end{tabular} & \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (7*1.25,0);
+                    \draw (2*1.25,0) edge (2*1.25,-1.25);
+                    \foreach \x in {0,1,2,3,4,5,6,7} {
+                        \draw[fill=black] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=black] (2*1.25,-1.25) circle[radius=0.15];
+                    \draw (2*1.25,-1.25) node[right]{$3$};
+                    \draw (0,0) node[above]{$2$};
+                    \draw (1.25*1,0) node[above]{$4$};
+                    \draw (1.25*2,0) node[above]{$6$};
+                    \draw (1.25*3,0) node[above]{$5$};
+                    \draw (1.25*4,0) node[above]{$4$};
+                    \draw (1.25*5,0) node[above]{$3$};
+                    \draw (1.25*6,0) node[above]{$2$};
+                    \draw (1.25*7,0) node[above]{$1$};
+                \end{tikzpicture}\quad($9$ nodes) & $x^2+y^3+z^5=0$ \\ \hline
+            \end{tabular}
+            \caption{Binary polyhedral groups and their McKay graphs.Labels over the vertices are the dimension of the representation. We erase the arrow ends if they go in both directions and erase the label if it is
+            equal to $1$.}
+        \end{table}
+
+        \begin{figure}[H]
+            \centering
+            \begin{tabular}{|c|c|l|}
+                \hline
+                \begin{tabular}{@{}c@{}}Simple \\ Lie algebra\end{tabular} & Simply laced & \begin{tabular}{@{}l@{}}Dynkin diagram \\ Extended Dybkin diagram\end{tabular} \\ \hline
+                $\mathfrak{sl}(n+1,\C),n\geq1$ & yes & 
+                \begin{tabular}{@{}l@{}} $A_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
+                    \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                    \draw (3*1.25,0) edge (4*1.25,0);
+                    \foreach \x in {0,1,2,3,4} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \end{tikzpicture}\quad($n$ nodes) \\[0.4cm] $\tilde{A}_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (0,0) edge (2*1.25,0);
+                        \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                        \draw (3*1.25,0) edge (4*1.25,0);
+                        \draw (0,0) edge (2*1.25,1);
+                        \draw (4*1.25,0) edge (2*1.25,1);
+                        \foreach \x in {0,1,2,3,4} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (1.25*2,1) circle[radius=0.15];
+                    \end{tikzpicture}\quad($n+1$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{so}(2n+1,\R),n\geq2$ & no & 
+                \begin{tabular}{@{}l@{}}$B_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
+                    \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                    \draw (3*1.25+0.65-0.15,0.21) -- (3*1.25+0.65+0.15,0) -- (3*1.25+0.65-0.15,-0.21);
+                    \draw (3*1.25,0.07) -- (4*1.25,0.07);
+                    \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
+                    \foreach \x in {0,1,2,3,4} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \end{tikzpicture}\quad ($n$ nodes) \\[0.4cm] $\tilde{B}_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (1.25,0) edge (2*1.25,0);
+                        \draw (0,0.7) edge (1.25,0);
+                        \draw (0,-0.7) edge (1.25,0);
+                        \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                        \draw (3*1.25+0.65-0.15,0.21) -- (3*1.25+0.65+0.15,0) -- (3*1.25+0.65-0.15,-0.21);
+                        \draw (3*1.25,0.07) -- (4*1.25,0.07);
+                        \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
+                        \foreach \x in {1,2,3,4} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=white] (0,0.7) circle[radius=0.15];
+                        \draw[fill=black] (0,-0.7) circle[radius=0.15];
+                    \end{tikzpicture}\quad($n+1$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{sp}(2n,\C),n\geq3$ & no & 
+                \begin{tabular}{@{}l@{}}$C_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,4pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
+                    \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                    \draw (3*1.25+0.65+0.15,0.21) -- (3*1.25+0.65-0.15,0) -- (3*1.25+0.65+0.15,-0.21);
+                    \draw (3*1.25,0.07) -- (4*1.25,0.07);
+                    \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
+                    \foreach \x in {0,1,2,3,4} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \end{tikzpicture}\quad ($n$ nodes) \\[0.4cm] $\tilde{C}_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,4pt) $)},scale=0.5]
+                        \draw (0.65-0.15,0.21) -- (0.65+0.15,0) -- (0.65-0.15,-0.21);
+                        \draw (0,0.07) -- (1.25,0.07);
+                        \draw (0,-0.07) -- (1.25,-0.07);
+                        \draw (1.25,0) edge (2*1.25,0);
+                        \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                        \draw (3*1.25+0.65+0.15,0.21) -- (3*1.25+0.65-0.15,0) -- (3*1.25+0.65+0.15,-0.21);
+                        \draw (3*1.25,0.07) -- (4*1.25,0.07);
+                        \draw (3*1.25,-0.07) -- (4*1.25,-0.07); 
+                        \foreach \x in {1,2,3,4} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (0,0) circle[radius=0.15];
+                    \end{tikzpicture}\quad($n+1$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{so}(2n,\R),n\geq4$ & yes &
+                \begin{tabular}{@{}l@{}}$D_n:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (2*1.25,0);
+                    \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                    \draw (3*1.25,0) -- (4*1.25,0.7);
+                    \draw (3*1.25,0) -- (4*1.25,-0.7); 
+                    \foreach \x in {0,1,2,3} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=white] (1.25*4,0.7) circle[radius=0.15];
+                    \draw[fill=white] (1.25*4,-0.7) circle[radius=0.15];
+                    \end{tikzpicture}\quad($n$ nodes) \\[0.4cm] $\tilde{D}_n:\quad$  \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (0,0.7) edge (1.25,0);
+                        \draw (0,-0.7) edge (1.25,0);
+                        \draw (1.25,0) edge (2*1.25,0);
+                        \draw (2*1.25,0) edge[dashed] (3*1.25,0);
+                        \draw (3*1.25,0) -- (4*1.25,0.7);
+                        \draw (3*1.25,0) -- (4*1.25,-0.7); 
+                        \foreach \x in {1,2,3} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=white] (0,0.7) circle[radius=0.15];
+                        \draw[fill=black] (0,-0.7) circle[radius=0.15];
+                        \draw[fill=white] (1.25*4,0.7) circle[radius=0.15];
+                        \draw[fill=white] (1.25*4,-0.7) circle[radius=0.15];
+                    \end{tikzpicture}\quad($n+1$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{e}_6$ & yes &
+                \begin{tabular}{@{}l@{}}$E_6:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                    \draw (0,0) edge (4*1.25,0);
+                    \draw (2*1.25,0) edge (2*1.25,1.25);
+                    \foreach \x in {0,1,2,3,4} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
+                    \end{tikzpicture} \quad($6$ nodes) \\[0.4cm]  $\tilde{E}_6:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                        \draw (0,0) edge (4*1.25,0);
+                        \draw (2*1.25,0) edge (2*1.25,2*1.25);
+                        \foreach \x in {0,1,2,3,4} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
+                        \draw[fill=black] (2*1.25,2*1.25) circle[radius=0.15];
+                    \end{tikzpicture}\quad($7$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{e}_7$ & yes & 
+                \begin{tabular}{@{}l@{}} $E_7:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                    \draw (0,0) edge (5*1.25,0);
+                    \draw (2*1.25,0) edge (2*1.25,1.25);
+                    \foreach \x in {0,1,2,3,4,5} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
+                    \end{tikzpicture} \quad($7$ nodes) \\[0.4cm] $\tilde{E}_7:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                        \draw (-1.25,0) edge (5*1.25,0);
+                        \draw (2*1.25,0) edge (2*1.25,1.25);
+                        \foreach \x in {0,1,2,3,4,5} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (-1.25,0) circle[radius=0.15];
+                        \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
+                    \end{tikzpicture}\quad($8$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{e}_8$ & yes & 
+                \begin{tabular}{@{}l@{}}$E_8:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                    \draw (0,0) edge (6*1.25,0);
+                    \draw (2*1.25,0) edge (2*1.25,1.25);
+                    \foreach \x in {0,1,2,3,4,5,6} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
+                    \end{tikzpicture} \quad($8$ nodes) \\[0.4cm] $\tilde{E}_8:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.south) + (0,1pt) $)},scale=0.5]
+                        \draw (0,0) edge (7*1.25,0);
+                        \draw (2*1.25,0) edge (2*1.25,1.25);
+                        \foreach \x in {0,1,2,3,4,5,6} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (7*1.25,0) circle[radius=0.15];
+                        \draw[fill=white] (2*1.25,1.25) circle[radius=0.15];
+                    \end{tikzpicture}\quad($9$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{f}_4$ & no & 
+                \begin{tabular}{@{}l@{}}$F_4:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (1.25,0);
+                    \draw (2*1.25,0) edge (3*1.25,0);
+                    \draw (1*1.25+0.65-0.15,0.21) -- (1*1.25+0.65+0.15,0) -- (1*1.25+0.65-0.15,-0.21);
+                    \draw (1*1.25,0.07) -- (2*1.25,0.07);
+                    \draw (1*1.25,-0.07) -- (2*1.25,-0.07); 
+                    \foreach \x in {0,1,2,3} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \end{tikzpicture} \quad($4$ nodes) \\[0.4cm] $\tilde{F}_4:\quad$  \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (-1.25,0) edge (1.25,0);
+                        \draw (2*1.25,0) edge (3*1.25,0);
+                        \draw (1*1.25+0.65-0.15,0.21) -- (1*1.25+0.65+0.15,0) -- (1*1.25+0.65-0.15,-0.21);
+                        \draw (1*1.25,0.07) -- (2*1.25,0.07);
+                        \draw (1*1.25,-0.07) -- (2*1.25,-0.07); 
+                        \foreach \x in {0,1,2,3} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (-1.25,0) circle[radius=0.15];
+                    \end{tikzpicture}\quad($5$ nodes)\end{tabular} \\ \hline
+                $\mathfrak{g}_2$ & no & 
+                \begin{tabular}{@{}l@{}} $G_2:\quad$  \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                    \draw (0,0) edge (1.25,0);
+                    \draw (0.65-0.15,0.21) -- (0.65+0.15,0) -- (0.65-0.15,-0.21);
+                    \draw (0,0.11) -- (1.25,0.11);
+                    \draw (0,-0.11) -- (1.25,-0.11); 
+                    \foreach \x in {0,1} {
+                    \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                    }
+                    \end{tikzpicture} \quad($2$ nodes) \\[0.4cm] $\tilde{G}_2:\quad$ \begin{tikzpicture}[baseline={($ (current bounding box.center) - (0,3pt) $)},scale=0.5]
+                        \draw (-1.25,0) edge (1.25,0);
+                        \draw (0.65-0.15,0.21) -- (0.65+0.15,0) -- (0.65-0.15,-0.21);
+                        \draw (0,0.11) -- (1.25,0.11);
+                        \draw (0,-0.11) -- (1.25,-0.11); 
+                        \foreach \x in {0,1} {
+                            \draw[fill=white] (1.25*\x,0) circle[radius=0.15];
+                        }
+                        \draw[fill=black] (-1.25,0) circle[radius=0.15];
+                    \end{tikzpicture}\quad($3$ nodes)\end{tabular} \\ \hline
+            \end{tabular}
+            \caption{Simple Lie algebras and their (extended) Dynkin diagrams. The first four algebras are the classical simple Lie algebras and the last five are the excpetional simple Lie algebras.}
+        \end{figure}
+
+        Finally, we can see the following correspondence between the extended Dynkin diagrams and the McKay graphs.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                \begin{tabular}{@{}c@{}} Simply Lie \\ group \end{tabular} & \begin{tabular}{@{}c@{}} Simply laced \\ Lie algebra \end{tabular} & \begin{tabular}{@{}c@{}} Extended \\ Dybkin diagram \end{tabular} & \begin{tabular}{@{}c@{}} Finite subgroup \\ of $\SO(3)$ \end{tabular} & \begin{tabular}{@{}c@{}} Finite subgroup \\ of $\SU(2)$ \end{tabular} \\ \hline
+                $\SU(n+1)$ & $\mathfrak{sl}(n+1,\C)$ & $\tilde{A}_n$ & $\Z_{n+1}$ & $\Z_{n+1}$ \\ \hline
+                $\SO(2n),\Spin(2n)$ & $\mathfrak{so}(2,\R)$ & $\tilde{D}_n$ & $\D_{2(n-2)}$ & $2\D_{2(n-2)}$ \\ \hline
+                $E6$ & $\mathfrak{e}_6$ & $\tilde{E_6}$ &  $\T$ & $2\T$ \\ \hline
+                $E7$ & $\mathfrak{e}_7$ & $\tilde{E_7}$ & $\O$ & $2\O$ \\ \hline
+                $E8$ & $\mathfrak{e}_8$ & $\tilde{E_8}$ & $\I$ & $2\I$ \\ \hline
+            \end{tabular}
+            \caption{Classical McKay correspondence.}
+        \end{figure}
+
+    \subsection{Geometrical McKay correspondence}
 
 \section{The simplest case: smooth transverse space}
 
@@ -433,9 +762,11 @@
             If the transverse space is non-singular, the only possibility is $S=\C^3$. In this case, the worldvolume theory is therefore $D=4,\mN=4$ $\U(N)$ SCFT gauge theory. It is called the \emph{parent theory}.
         \end{result}
 
-\section{Singular transverse space: orbifold singularities}\label{sec:orbsing}
+\part{Orbifold singularities}
 
-    When the transverse space is singular, the worldvolume theory corresponds to a specific projection of the parent theory that we found in the smooth case $S=\C^3$. We call it the \emph{daughter theory}. This projections depends on the type of singularity that one considers. The simplest case is the the case of orbifold singularity, i.e. when the transverse space is a quotient space with a non-free action.
+\section{Strings on orbifolds}
+
+    Let us a consider a smooth background space $M^{(6)}$ and $\Gamma$ a discrete group acting on it. If $\Gamma$ has no fixed point, the quotient space $M^{(6)}/\Gamma$ is smooth and is a manifold but if the action of $\Gamma$ has a fixed point then the quotient space $M^{(6)}/\Gamma$ is singular and is an orbifold. Any orbifold can be described as an affine variety therefore it is the description that we will use most often. When the transverse space is singular, the worldvolume theory corresponds to a specific projection of the parent theory that we found in the smooth case $S=\C^3$. We call it the \emph{daughter theory}. This projections depends on the type of singularity that one considers. The simplest case is the the case of orbifold singularity, i.e. when the transverse space is a quotient space with a non-free action.
 
     \subsection{Generalities}
 
@@ -472,11 +803,20 @@
             \item the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$, in agreement with \eqref{eq:AHom}-\eqref{eq:phiHom}. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
         \end{itemize}
 
-        \begin{details}
-            \textbf{Details.} Riemannian symmetric spaces, which are locally isometric to homogeneous spaces $G/H$ have local holonomy isomorphic to $H$.\marker
-        \end{details}
+    \subsubsection{Further details on the projection}
 
-    \subsection{Representation theory realization}
+        Riemannian symmetric spaces, which are locally isometric to homogeneous spaces $G/H$ have local holonomy isomorphic to $H$.\marker
+
+    \subsection{Twisted sector}
+
+        What implications does have strings on an orbfold have for the spectrum? In general, we distinguish two kinds of states:
+        \begin{itemize}
+            \item the \emph{untiwsted states} are the states $\Psi$ that are invariant under the actio of $\Gamma$: $\gamma\cdot\Psi=\Psi$ for all $\gamma\in \Gamma$. They are the generators of the $\Gamma$-invariant part of the Hilbert space and can easily be constrcuted by superposing all the images $\gamma\cdot\Psi_0$.
+            \item closed strings must start and end at the same point, i.e. $X(\tau,\sigma+2\pi)=X(\tau,\sigma)$. Usually, a strings that starts at connects a point of $M^{(6)}$ to another point of its orbit, i.e. $X(\tau,\sigma+2\pi)=\gamma\cdot[X(\tau,\sigma)]$ would not be allowed. However, in $M^{(6)}/\Gamma$ it is an allowed configuration. Those new states that appear after orbifolding are the \emph{twisted states}. There existsnce is due to the fact that strings are extended objects. One can see that there is one twisted sector per conjugacy classe of $\Gamma$ \marker and that the untwisted states are recovered with $\gamma=e$.
+        \end{itemize}
+        The individual twisted sector quantum states of the strings are localized at the orbifold singularities that the classical configurations (untiwisted sector) enclose.
+
+    \subsection{Representation theory of the projection}
 
         Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^N$, we denote it $(\rho,\C^N)$ and also take it to be unitary. In that case, $\rho(\gamma)\in\U(N)$. This is what we mean by ``the embedding of $\Gamma$ in $\U(N)$''. The adjoint representation of $\U(N)$ defined as\footnote{this is well-defined since for all $\omega\in\mathfrak{u}(N)$ and $U\in\U(N)$, $U\omega U^{-1}\in\mathfrak{u}(N)$.}
         \begin{equation}
@@ -499,7 +839,6 @@
             R(\gamma)\Ad_{\rho(\gamma)}\psi_{IJ}  &= \psi_{IJ},\\
             R(\gamma)\Ad_{\rho(\gamma)}X_{IJ} &= X_{IJ}
         \end{align}
-        
 
         We can decompose $(\rho,\C^N)$ as follows:
         \begin{align}
@@ -571,6 +910,19 @@
         
         From \eqref{eq:defaij} we see that $n_{ij}=a^{\mR}_{ij}$, i.e. the matter quivers that we defined previously are exactly the McKay graph associated to the matter representation in question. Put differently, the matter content of the daughter theory is encapsulated in the McKay graphs of $\Gamma$ and with respect to $\mR$ with $\mR=\bs{4}$ for spinors and $\mR=\bs{6}$ for scalars. This very important point allows us to use known results on McKay graphs such as the McKay correspondence for example.
 
+        We mentionned the adjacency matrix as a way to represent a quiver but we will also use sometimes the another matrix called the \emph{incidence matrix} and denoted by $I$. In the later, the columns index the arrows and the rows, the nodes such that the $\alpha$th arrow from node $i$ to $j$ recieves a $-1$ in position $I_{i\alpha}$, a $+1$ in position $I_{j\alpha}$ and zero elsewhere.
+
+    \subsection{Gauge anomaly canellation}
+
+        Finally, let us discuss the gauge anomaly cancellation. Our fields transform under the adjoint representation of $\SU(N)$, under the fundamentals of $\SU(N_i)$ and under the anti-fundamentals of $\SU(N_i)$. The adjoint representation being reel, it is self-conjugate and therefore does not contribute to the anomaly. Fundamentals of $\SU(N_i)$ have a $+1$ contribution to the anomaly and anti-fundamentals of $\SU(N_i)$ have a $-1$ contribution to the anomaly. Anomaly cancellation therefore imposes that the contribution of the fundamental and of the anti-fundamental of $\SU(N_i)$ cancel each other for each $i=0,1,2$, see section \eqref{sec:anomalies}. The bi-fundamental representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ counts as $N_j$ fundamentals of $\SU(N_i)$ and as $N_i$ anti-fundamentals $\SU(N_j)$. The general condition for anomaly cancellation is therefore
+        \begin{equation}
+            (a_{ij}-a_{ji})n_i=0
+        \end{equation}
+        where $a_{ij}$ are the lements of the adjacency matrix of the quiver and $n_i$ are the node labels. This condition is equivalent to say that the ranks of tha gauge groups must lie in nullspace of the antisymmetrized adjacency matrix.
+
+    \subsection{Quiver gauge theories and quivers}
+
+        So far we have seen that a quiver gauge theory can be represented by a quiver where the matter content is represented by the arrows ant the gauge groups by the nodes. In more mathematical terms, a quiver gauge theorytherefore provides us with a representation of a quiver. Moreover, this quiver has relations coming from the interaction terms, in the superpotential.\marker
 
     \subsection{A simple example: $S=\C^3/\Z_3$}\label{sec:C3Z3}
 
@@ -752,7 +1104,7 @@
 
         \subsubsection{Gauge anomaly cancellation}
         
-            Finally, let us discuss the gauge anomaly cancellation. Our fields transform under the adjoint representation of $\SU(N)$, under the fundamentals of $\SU(N_i)$ and under the anti-fundamentals of $\SU(N_i)$. The adjoint representation being reel, it is self-conjugate and therefore does not contribute to the anomaly. Fundamentals of $\SU(N_i)$ have a $+1$ contribution to the anomaly and anti-fundamentals of $\SU(N_i)$ have a $-1$ contribution to the anomaly. Anomaly cancellation therefore imposes that the contribution of the fundamental and of the anti-fundamental of $\SU(N_i)$ cancel each other for each $i=0,1,2$, see appendix \eqref{sec:anomalies}. The bi-fundamental representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ counts as $N_j$ fundamentals of $\SU(N_i)$ and as $N_i$ anti-fundamentals $\SU(N_j)$. We get the three following conditions:
+            We get the three following conditions:
             \begin{align}
                 \SU(N_0) &: N_2-N_1 = 0,\\
                 \SU(N_1) &: N_0-N_2 = 0,\\
@@ -1467,36 +1819,6 @@
             m=4,5 &: (i-i'-1)\mod m = (j'-j+1)\mod n.
         \end{align}
 
-\section{Correspondence between gauge theory and singularity}
-
-    Above, we presented all the possible orbifold constructions of supersymmetric quiver gauge theories in four dimensions. We started from quotienting the transverse space and we found the corresponding (supersymmetric) gauge theory. In other words, we started from the singularity a found the gauge theory. We can therefore consider that the orbifold singularities are understood. However, not all singularities are orbifold one, such as the conifold for example. We can then ask ourselves how to obtain the gauge theory for more general singularities than the orbifold ones. Is a general approach possible ? On the other hand, we can also study the converse question; is it possible to to obtain the singularity from the gauge theory? And if it is, how so? In general we will see that there is a bijection between the four-dimensional supersymmetric worldvolume gauge theory and the Calabi-Yau singularity. We now detail this bijection.
-
-    \subsection{From gauge theory to singularity: forward algorithm}
-
-        We start with the simplest question: how to recover the singularity from the gauge theory? We already mentioned that the vacuum parameter space of the scalar fields of the gauge theory is the so-called moduli space, denoted $\M$. Because our D$3$-brane is a point in the Calabi-Yau threefold, the vacuum moduli space $\M$ is the affine coordinates of the Calabi-Yau singularity $S$.
-
-        For the ADE $\mN=2$ theories discussed in section \ref{sec:N2QGT}, by the Kronheimer-Nakajima construction \cite{Kronheimer1990}, the moduli space is a hyper-Kähler quotient. In general, the moduli space can be constructed as a \emph{quiver variety}, i.e. a variety constructed from the moduli space of quiver a quiver representation. More rpecisely, given the dimensions of the vector spaces assigned to every vertex, one can form a variety which characterizes all representations of that quiver with those specified dimensions, and consider stability conditions. Let us see some examples of this.
-
-        The anomaly free condition is
-        \begin{equation}
-            (a_{ij}-a_{ji})n_i=0\marker.
-        \end{equation}
-
-        \subsubsection{$S=\C\times\C^2/\Z_n$}
-
-        \subsubsection{The conifold}
-
-    \subsection{From singularity to gauge theory: inverse algorithm}
-
-        Mathematically, a quiver gauge theory is a representation of a finite quiver with relations. The labels are $\{N_i\in\Z_+\}$, they correspond to the dimension of the vector space $\{V_i\}$. The gauge group is $\prod_i\SU(N_i)$. The gauge fields are self-adjoint arrows $\Hom(V_i,V_i)$ while the matter fields are bi-fundamentals fermions/bosons and are arrows $X_{ij}\in\Hom(V_j,V_i)$. For a quiver with adjacency matrix $a_{ij}$, the gauge anomaly cancellation condition can be generally expressed as
-        \begin{equation}
-            (a_{ij}-a_{ji})N_i=0.
-        \end{equation}
-        At last, there are some relations that arises the superpotential $W(\{X_{ij}\})$. The vacuum is the minima of the superpotential. In other words,
-        \begin{equation}
-            \pdv{W}{X_{ij}}=0.
-        \end{equation}
-
 \section{A note about projective representations, discrete torsion and deformations}
 
     \subsection{Projective representations and discrete torsion}
@@ -1515,7 +1837,61 @@
 
         We can deforming the singular algebraic description of the orbifold with a field into a family smooth surfaces. The resulting total space is the \emph{conifold}.
 
-\part{Beyond orbifold singularities}
+\part{Toric singularities}
+
+    The next best thing to orbifold singularities is the toric singularities. In this case, the invers algorithm has been formalized in \cite{Feng_2001}.
+
+    All abelian orbifolds are toric varities.
+
+\section{Correspondence between gauge theory and singularity}
+
+    Above, we presented all the possible orbifold constructions of supersymmetric quiver gauge theories in four dimensions. We started from quotienting the transverse space and we found the corresponding (supersymmetric) gauge theory. In other words, we started from the singularity a found the gauge theory. We can therefore consider that the orbifold singularities are understood. However, not all singularities are orbifold one, such as the conifold for example. We can then ask ourselves how to obtain the gauge theory for more general singularities than the orbifold ones. Is a general approach possible ? On the other hand, we can also study the converse question; is it possible to to obtain the singularity from the gauge theory? And if it is, how so? In general we will see that there is a bijection between the four-dimensional supersymmetric worldvolume gauge theory and the Calabi-Yau singularity. We now detail this bijection.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{Pictures/algorithm.png}
+        \caption{Inverse and forward algorithm, from \cite{he2004lectures}.}
+    \end{figure}
+
+    \subsection{Gauged linear sigma model (GLSM)}
+
+
+
+    \subsection{From gauge theory to singularity: forward algorithm}
+
+        We start with the simplest question: how to recover the singularity from the gauge theory? We already mentioned that the vacuum parameter space of the scalar fields of the gauge theory is the so-called moduli space, denoted $\M$. Because our D$3$-brane is a point in the Calabi-Yau threefold, the vacuum moduli space $\M$ is the affine coordinates of the Calabi-Yau singularity $S$.
+
+        For the ADE $\mN=2$ theories discussed in section \ref{sec:N2QGT}, by the Kronheimer-Nakajima construction \cite{Kronheimer1990}, the moduli space is a hyper-Kähler quotient. In general, the moduli space can be constructed as a \emph{quiver variety}, i.e. a variety constructed from the moduli space of quiver a quiver representation. More rpecisely, given the dimensions of the vector spaces assigned to every vertex, one can form a variety which characterizes all representations of that quiver with those specified dimensions, and consider stability conditions. Let us see some examples of this.
+
+        The anomaly free condition is
+        \begin{equation}
+            (a_{ij}-a_{ji})n_i=0\marker.
+        \end{equation}
+
+    \subsection{From singularity to gauge theory: inverse algorithm}
+
+        Mathematically, a quiver gauge theory is a representation of a finite quiver with relations. The labels are $\{N_i\in\Z_+\}$, they correspond to the dimension of the vector space $\{V_i\}$. The gauge group is $\prod_i\SU(N_i)$. The gauge fields are self-adjoint arrows $\Hom(V_i,V_i)$ while the matter fields are bi-fundamentals fermions/bosons and are arrows $X_{ij}\in\Hom(V_j,V_i)$. For a quiver with adjacency matrix $a_{ij}$, the gauge anomaly cancellation condition can be generally expressed as
+        \begin{equation}
+            (a_{ij}-a_{ji})N_i=0.
+        \end{equation}
+        At last, there are some relations that arises the superpotential $W(\{X_{ij}\})$. The vacuum is the minima of the superpotential. In other words,
+        \begin{equation}
+            \pdv{W}{X_{ij}}=0.
+        \end{equation}
+
+        \subsubsection{Application to Toric del Pezzo's}
+
+\section{Toric duality}
+
+\part{Beyond toric singularities}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{Pictures/algebraicsingularities.png}
+        \caption{Venn diagram of different types of algebraic singularities, from \cite{he2004lectures}.}
+    \end{figure}
+
+\section{Conifold}
 
 \section{Non-commutative resolutions}
 
