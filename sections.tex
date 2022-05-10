@@ -45,130 +45,148 @@
 
         We consider $N$ D$3$-branes in type IIB superstring theory carrying a $\U(N)$ gauge group. The transverse space $S$ is taken to be a non-compact singular Calabi-Yau variety.
 
-\section{Supersymmetric Yang-Mills theories from D-branes}
+\section{Supersymmetric Yang-Mills theories}
 
-    The dynamics of D-branes is described by the Dirac-Born-Infeld action
-    \begin{equation}
-        S_{\text{DBI}}[X,F] = -\frac{T_p}{g_s}\int\d^{p+1}\sigma~\sqrt{-\det\limits_{0\leq a,b\leq p}(\eta_{ab}+\p_a X^m\p_b X_m+2\pi\alpha'F_{ab})}.
-    \end{equation}
-    The latter can be expended for slowly-varying ﬁelds, which is equivalent to passing to the ﬁeld theory limit $\alpha'\to0$. The resulting action is the action of a $\U(1)$ gauge theory in $p+1$ dimensions with $9-p$ real scalar fields. This action is exactly the same than the one we would obtain by dimensionally-reducing a pure $\U(1)$ Yang-Mills gauge theory in 10 spacetime dimensions with the identification
-    \begin{equation}
-        g_{\text{YM}}=g_sT^{-1}_p(2\pi\alpha')^{-2}=\frac{g_s}{\sqrt{\alpha'}}(2\pi\sqrt{\alpha'})^{p-1}.
-    \end{equation}
+    \subsection{Vacua space of SYM}
 
-    This construction can be generalized for multiple D-branes. It now results in a non-abelian theory. The general statement is the following:
-    \begin{result}
-        The low-energy dynamics of $N$ parallel, coicident D$p$-branes in flat space is described in static gauge by the dimensional reduction to $p+1$ dimensions of pure $10d$ $\mN=1$ supersymmetric Yang-Mills theory with gauge group $\U(N)$ in ten spacetime dimensions.
-    \end{result}
-    Recall that the $10$-dimensional action is given by
-    \begin{equation}
-        S_{\text{YM}} = \frac{1}{4g^2_{\text{YM}}}\int\d^{10}x~\left[ \tr(F_{\mu\nu}F^{\mu\nu})+2i\tr(\bar{\psi}\Gamma^\mu D_\mu\psi)\right],\label{eq:SYMaction}
-    \end{equation}
-    where $F_{\mu\nu}=\p_\mu A_\nu-\p_\nu A_\mu+i[A_\mu,A_\nu]$ is the non-abelian field strength of the $\U(N)$ gauge field $A_\mu$, $D_\mu=\p_\mu-i[A_\mu,\psi]$, $\Gamma^\mu$ are $16\times 16$ Dirac matrices \marker, and the $N\times N$ Hermitian fermion ﬁeld $\psi$ is a $16$-component Majorana-Weyl spinor of the Lorentz group $\SO(1,9)$ which transforms under the adjoint representation of the gauge group $\U(N)$. On-shell, there are eight on-shell bosonic, gauge ﬁeld degrees of freedom, and eight fermionic degrees of freedom, after imposition of the Dirac equation $\xout{D}\psi=\Gamma^\mu D_\mu\psi=0$. One can verify that this action is invariant under the supersymmetry transformations
-    \begin{align*}
-        \delta_\eps A_\mu &= \frac{i}{2}\bar{\eps}\Gamma_\mu\psi,\\
-        \delta_{\eps}\psi &= \frac{1}{2}F_{\mu\nu}[\Gamma^\mu,\Gamma^\nu]\eps,
-    \end{align*}
-    where $\eps$ is an Majorana-Weyl spinor.
-    
-    Using \eqref{eq:SYMaction}, we can construct a supersymmetric Yanf-Mills gauge theory in $p+1$ dimensions with $16$ independent supercharges by dimensional reduction: we take all fields to be independent of the coordinates $X^{p+1},\dots, X^9$, then the ten-dimensional gauge field $A_\mu$ splits into a $(p+1)$-dimensional $\U(N)$ gauge field $A_a$ plus $9-p$ Hermitian scalar fields $\Phi^m=X^m/2\pi\alpha'$ in the adjoint representation of $\U(N)$. The D$p$-brane action is thereby obtained from the dimensionality reduced field theory as
-    \begin{equation}
-        S_{\text{D}p} = -\frac{T_pg_s(2\pi\alpha')^2}{4}\int\d^{p+1}\sigma~\tr\left(F_{ab}F^{ab}+2D_a\Phi^m D^a\Phi_m+\sum_{m\neq n}[\Phi^m,\Phi^n]^2+\text{fermions}\right)\label{eq:SDp}
-    \end{equation}
-    where $a,b=0,\dots,p$, $m,n=p+1,\dots,9$. We do not explicitly display the fermionic contributions for the moment. In conclusion, the low-energy brane dynamics is described by a supersymmetric Yang-Mills theory on the D$p$-brane worldvolume which is dynamically coupled to the transverse, adjoint scalar ﬁelds $\Phi^m$.
-
-    The scalar potential is given by
-    \begin{equation}
-        V(\Phi)=\sum_{m\neq n}[\Phi^m,\Phi^n]^2.
-    \end{equation}
-    It is negative definite because $[\Phi^m,\Phi^n]^\dagger=[\Phi^n,\Phi^m]=-[\Phi^m,\Phi^n]$. A classical vacuum of the ﬁeld theory deﬁned by \eqref{eq:SDp} corresponds to a static solution of the equations of motion whereby the potential energy of the system is minimized. It is given by the field configurations which solve simultaneously the quations $F_{ab}=D_a\Phi^m=\psi^a=0$ and $V(\Phi)=0$. Since all term in $V(\Phi)$ have the same sign, the equation $V(\Phi)=0$ is equivalent to the equation $[\Phi^m,\Phi^n]=0$ for all $m,n$ and at each point in the $(p+1)$-dimensional worldvolume of the branes. This implies that the $N\times N$ hermitian matrix fields $\Phi^m$ are simultaneously diagonalizable by a gauge transformation, so that we may write
-    \begin{equation}
-        \Phi^m=U
-        \begin{bmatrix}
-            X^m_1 & & & 0 \\
-            & X^m_2 & & \\
-            & & \ddots & \\
-            0 & & & X^m_N
-        \end{bmatrix}U^{-1},\label{eq:diagPhi}
-    \end{equation}
-    the matrix $U$ is independent of $m$. The simultaneous,
-    real eigenvalues $X^m_i$ give the positions of the $N$ distinct D-branes in the $m$-th transverse direction. It follows that the moduli space of classical vacua for the $(p+1)$-dimensional ﬁeld theory \eqref{eq:SDp} is the quotient space $(\R^{9-p})^N/S_N$, where the factors of $\R$ correspond to the positions of the $N$ D$p$-branes in the $(9-p)$-dimensional transverse space, and $S_N$ is the symmetric group acting by permutations of the $N$ coordinates $X_i$. The group $S_N$ corresponds to the residual Weyl symmetry of the $\U(N)$ gauge group acting in \eqref{eq:diagPhi}. It represents the permutation symmetry of a system of $N$ \emph{indistinguishable} D-branes.
-
-    From \eqref{eq:SDp} one can easily deduce that the masses of the ﬁelds corresponding to the oﬀ-diagonal matrix elements are given precisely by the distances $\abs{x_i-x_j}$ between the corresponding branes. This description means that an interpretation of the D-brane conﬁguration in terms of classical geometry is only possible in the classical ground state of the system, whereby the matrices $\Phi^m$ are simultaneously diagonalizable and the positions of the individual D-branes may be described through their spectrum of eigenvalues. This gives a simple and natural dynamical mechanism for the appearence of ``non-commutative geometry'' at short distances, where the D-branes cease to have well-deﬁned positions according to classical geometry.
-
-    \textcolor{blue}{The end of this section has to be rewritten \marker.}
-    
-\section{$\mN=4$ super Yang-Mills theory in $D=4$}\label{sec:N4SCFT}
-
-    \subsection{Superconformal group $\SU(2,2|4)$ and its representations}
-
-        Conformal transformations and supersymmetries do not commute so the presence of conformal symmetry in addition to $\mN=4$ supersymmetry leads to an even larger group of symmetry known as the \emph{superconformal group}. In the $D=4,\mN=4$ case, the superconformal group is the super group\footnote{Supermanifold which is also a group with smooth product and inverse maps.} $\SU(2,2|4)$. The different component of the latter are
-        \begin{itemize}
-            \item \textbf{Conformal symmetries}: they form the 15-dimensional subgroup $\SO(2,4)$ and are generated by $P_\mu,M_{\mu\nu},K_\mu$ and $D$.
-            \item \textbf{R-symmetry}: they form the 15-dimensional subgroup $\SO(6)_R$ and are generated by $T^A$ ($A=1,\dots,15$).
-            \item \textbf{Poincaré supersymmetries}: they form the 16-dimensional sub group \marker and are generated by $Q^I_\alpha$ and $\bar{Q}^I_{\dalpha}$.
-            \item \textbf{Conformal supersymmetries}: they form the 16-dimensional subgroup \marker and are generated by $S_{\alpha I}$ and $\bar{S}^{\dalpha I}$.
-        \end{itemize}
-
-        Conformal invariance of this theory can be seen as a consequence of the non-renormalization theorems.
-
-    \subsection{Matter content}
-        
-        For $D=4,\mN=4$, there is only one kind of supermultiplet, the vector multiplet. Therefore, from an $\mN=4$ perspective, the only $\mN=4$ is a pure SYM. For extended supersymmetry, is is easier to express it in terms of $\mN=1$ superfield on $\mN=1$ superspace instead of looking to construct a superspace for $\mN=4$. In this case, we can see that the $\mN = 4$ vector superfield can be expressed in terms of $\mN = 1$ representations as one vector supermultiplet and three chiral scalar supermultiplets:
+        Let us consider a supersymmetric gauge theory in $d=4$ with $k$ chiral sueprfields $\Phi_i$ ($i=1,\dots,k$) charged under the gauge group $G$ in an arbitrary representation $r_i$, in which the generators of $G$ are given by $T^a_{r_i}$ ($a=1,\dots,\dim G$). $\mathcal{W}_\alpha$ is the gaugina chiral superfield, containing the field strength. The lagrangian density on superspace is given by
         \begin{equation}
-            [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi^A = (\phi^A,\psi^A_\alpha,F^A).
+            \mathcal{L}=\int\d^2\theta\d^2\bar{\theta}~\Phi^\dagger e^{2V}\Phi+\int\d^2\theta\left\{\frac{\tau}{16\pi i}\tr(\mathcal{W}^\alpha\mathcal{W}_\alpha)+W(\Phi)\right\}+\text{c.c.}
         \end{equation}
-        with $A=1,2,3$ and
-        \begin{align}
-            \phi^A&=\phi^A_a T^a,\qquad \psi^A_\alpha=\psi^A_{\alpha,a}T^a,\qquad F^A=F^a_a T^a,\\
-            \lambda^A&=\lambda^A_a T^a,\qquad A^A_\mu=A^A_{\mu,a}T^a,\qquad D^A=F^a_a T^a,\\
-            V&=V_aT^a,\qquad \Phi^A=\Phi^A_aT^a,
-        \end{align}
-        where $T^a$ ($a=1,\dots,\dim G$) are the generators of $\mathfrak{g}$. The propagating degrees of freedom are therefore a vector field, three complex scalars and four gauginos. The Lagrangian is very much constrained by $\mN = 4$ supersymmetry. First, the chiral superfields $\Phi^A$ should transform in the adjoint representation of the gauge group $G$, since internal symmetries commute with supersymmetry. This means that all fields transform in the adjoint of $G$.
-        
-        Moreover, there is a large R-symmetry group\footnote{The fact that the scalar fields transform under the fundamental representation of $\SO(6)$, which is real, makes the R-symmetry group of the $\mN = 4$ theory being at most $\SU(4)$ and not $\U(4)$, in fact).}: $\SU(4)_R$. The four Weyl fermions transform in the fundamental of $\SU(4)_R$, while the six real scalars in the two times anti-symmetric representation, which is nothing but the fundamental representation of $\SO(6)$. The auxiliary fields are singlets under the R-symmetry group. Using $\mN = 1$ superfield formalism the Lagrangian reads
-        \begin{align}
-            \begin{split}
-                \L^{\mN=4}_{\text{SYM}} &= \frac{1}{32\pi}\Im \left(\tau\int\d^4x\tr(W^\alpha W_\alpha)\right)+\int\d^2\theta\d^2\bar{\theta}\tr\sum^3_{A=1}\bar{\Phi}^Ae^{2gV}\Phi^A\\
-                &\quad-\int\d^2\theta\sqrt{2g}\tr\Phi_1[\Phi_2,\Phi_3]+\text{h.c.}
-            \end{split}\label{eq:N4lag}
-        \end{align}
-        where as usual $W_\alpha=-\frac{1}{4}\bar{D}\bar{D}(e^{-V}D_\alpha e^V)$ is the gaugino superfield. This lagrangian is indeed invariant under the superPoincaré algebra and under the gauge transformations
-        \begin{align}
-            e^V &\to e^{i\bar{\Lambda}} e^V e^{-i\Lambda} \text{ (which implies that $W_\alpha \to e^{i\Lambda}W_\alpha e^{-i\Lambda}$)},\\
-            \Phi^A &\to e^{i\Lambda}\Phi^A.
-        \end{align}
-        The large $\SU(4)_R$ R-symmetry group forbids of having a superpotential. The commutator in the third term of \eqref{eq:N4lag} appears for the same reason as for the $\mN = 2$ Lagrangian. Notice that the choice of a single $\mN = 1$ supersymmetry generator breaks the full $\SU(4)_R$ R-symmetry to $\SU(3)\times \U(1)_R$. The three chiral superfields transform in the $\boldsymbol{3}$ of $\SU(3)$ and have R-charge $R = 2/3$ under the $\U(1)_R$. It is an easy but tedious exercise to perform the integration in superspace and get an explicit expression in terms of fields. Finally, one can solve for the auxiliary fields and get an expression where only propagating degrees of freedom are present, and where $\SU(4)_R$ invariance is manifest.
+        where we ignored the gauge indices. The superpotential $W(\Phi)$ is a holomorphic polynomial in the $\Phi_i$. The space of vacua is the space of configurations of $\Phi$ such that the $D$-terms and the $F$-terms vanish:
+        \begin{subequations}
+            \begin{empheq}[box=\widefbox]{align}
+                D^a &\equiv \sum_i\Phi^\dagger_iT^a_{r_i}\Phi^i = 0,\\
+                F^\dagger_i&\equiv \pdv{W}{\Phi^i}=0.
+            \end{empheq}
+        \end{subequations}
+        In turns out that the full space of vacua of any supersymmetric gauge theory can be described as an algebraic variety.
 
-    \subsection{Moduli space and dynamical phases}
 
-        The scalar potential in \eqref{eq:N4lag} can be written in a rather compact form in terms of the six real scalars $X^i$ making up the three complex scalars $\phi^A$ and reads
+    \subsection{SYM from D-branes}
+
+        The dynamics of D-branes is described by the Dirac-Born-Infeld action
         \begin{equation}
-            V(X_1,\dots,X_6) = \frac{1}{2}g^2\tr\sum^6_{i,j=1}[X_i,X_j]^2.
+            S_{\text{DBI}}[X,F] = -\frac{T_p}{g_s}\int\d^{p+1}\sigma~\sqrt{-\det\limits_{0\leq a,b\leq p}(\eta_{ab}+\p_a X^m\p_b X_m+2\pi\alpha'F_{ab})}.
         \end{equation}
-        The positive definite behavior of the Cartan-Killing form on the compact gauge algebra $\g$ implies that each term in the sum is positive or zero. In other words, $V=0$ is equivalent to
+        The latter can be expended for slowly-varying ﬁelds, which is equivalent to passing to the ﬁeld theory limit $\alpha'\to0$. The resulting action is the action of a $\U(1)$ gauge theory in $p+1$ dimensions with $9-p$ real scalar fields. This action is exactly the same than the one we would obtain by dimensionally-reducing a pure $\U(1)$ Yang-Mills gauge theory in 10 spacetime dimensions with the identification
         \begin{equation}
-            [X^i,X^j]=0,\qquad i,j=1,\dots,6.
+            g_{\text{YM}}=g_sT^{-1}_p(2\pi\alpha')^{-2}=\frac{g_s}{\sqrt{\alpha'}}(2\pi\sqrt{\alpha'})^{p-1}.
         \end{equation}
-        This means that the potential vanishes whenever the scalar fields belong to the Cartan subalgebra of the gauge group $G$. At a generic point of the moduli space, the gauge group is broken to $\U(1)^r$ where $r$ is the rank of $\mathfrak{g}$.
-        This equations admit two classes of solutions:
-        \begin{itemize}
-            \item $\langle X^i\rangle=0$ for all $i=1,\dots,6$. This is the \emph{superconformal phase}. Neither the gauge symmetry nor the superconformal symmetry is broken. The physical states and operators are gauge invariant and transform under
-            unitary representations of $\SU(2,2|4)$.
-            \item  $\langle X^i\rangle\neq0$ for at least one $i$. This is the \emph{spontaneously broken Coulomb phase}. The gauge algebra $\g$ is going to be broken to $\U(1)^r$, where $r\equiv\rank\g$. The low energy behavior is then the one of $r$ copies of $\mN=4$ $\U(1)$ gauge theories. Superconformal symmetry is spontaneously broken since the non-zero VEV $\langle X^i\rangle$ sets a scale.
-        \end{itemize}
 
+        This construction can be generalized for multiple D-branes. It now results in a non-abelian theory. The general statement is the following:
         \begin{result}
-            \textbf{$\boldsymbol{\mN=4}$ Yang-Mills theory.} There is only one $D=4,\mN=4$ Yang-Mills theory and it contains $3$ $\mN=1$ chiral scalar supermutliplet and $1$ $\mN=1$ vector supermultiplet (up to $g$ and $\tau$). This theory is conformal and can be recovered from dimensional reduction of $D=10,\mN=1$ Yang-Mills on $\mathbb{T}^6$.
+            The low-energy dynamics of $N$ parallel, coicident D$p$-branes in flat space is described in static gauge by the dimensional reduction to $p+1$ dimensions of pure $10d$ $\mN=1$ supersymmetric Yang-Mills theory with gauge group $\U(N)$ in ten spacetime dimensions.
         \end{result}
+        Recall that the $10$-dimensional action is given by
+        \begin{equation}
+            S_{\text{YM}} = \frac{1}{4g^2_{\text{YM}}}\int\d^{10}x~\left[ \tr(F_{\mu\nu}F^{\mu\nu})+2i\tr(\bar{\psi}\Gamma^\mu D_\mu\psi)\right],\label{eq:SYMaction}
+        \end{equation}
+        where $F_{\mu\nu}=\p_\mu A_\nu-\p_\nu A_\mu+i[A_\mu,A_\nu]$ is the non-abelian field strength of the $\U(N)$ gauge field $A_\mu$, $D_\mu=\p_\mu-i[A_\mu,\psi]$, $\Gamma^\mu$ are $16\times 16$ Dirac matrices \marker, and the $N\times N$ Hermitian fermion ﬁeld $\psi$ is a $16$-component Majorana-Weyl spinor of the Lorentz group $\SO(1,9)$ which transforms under the adjoint representation of the gauge group $\U(N)$. On-shell, there are eight on-shell bosonic, gauge ﬁeld degrees of freedom, and eight fermionic degrees of freedom, after imposition of the Dirac equation $\xout{D}\psi=\Gamma^\mu D_\mu\psi=0$. One can verify that this action is invariant under the supersymmetry transformations
+        \begin{align*}
+            \delta_\eps A_\mu &= \frac{i}{2}\bar{\eps}\Gamma_\mu\psi,\\
+            \delta_{\eps}\psi &= \frac{1}{2}F_{\mu\nu}[\Gamma^\mu,\Gamma^\nu]\eps,
+        \end{align*}
+        where $\eps$ is an Majorana-Weyl spinor.
+        
+        Using \eqref{eq:SYMaction}, we can construct a supersymmetric Yanf-Mills gauge theory in $p+1$ dimensions with $16$ independent supercharges by dimensional reduction: we take all fields to be independent of the coordinates $X^{p+1},\dots, X^9$, then the ten-dimensional gauge field $A_\mu$ splits into a $(p+1)$-dimensional $\U(N)$ gauge field $A_a$ plus $9-p$ Hermitian scalar fields $\Phi^m=X^m/2\pi\alpha'$ in the adjoint representation of $\U(N)$. The D$p$-brane action is thereby obtained from the dimensionality reduced field theory as
+        \begin{equation}
+            S_{\text{D}p} = -\frac{T_pg_s(2\pi\alpha')^2}{4}\int\d^{p+1}\sigma~\tr\left(F_{ab}F^{ab}+2D_a\Phi^m D^a\Phi_m+\sum_{m\neq n}[\Phi^m,\Phi^n]^2+\text{fermions}\right)\label{eq:SDp}
+        \end{equation}
+        where $a,b=0,\dots,p$, $m,n=p+1,\dots,9$. We do not explicitly display the fermionic contributions for the moment. In conclusion, the low-energy brane dynamics is described by a supersymmetric Yang-Mills theory on the D$p$-brane worldvolume which is dynamically coupled to the transverse, adjoint scalar ﬁelds $\Phi^m$.
+
+        The scalar potential is given by
+        \begin{equation}
+            V(\Phi)=\sum_{m\neq n}[\Phi^m,\Phi^n]^2.
+        \end{equation}
+        It is negative definite because $[\Phi^m,\Phi^n]^\dagger=[\Phi^n,\Phi^m]=-[\Phi^m,\Phi^n]$. A classical vacuum of the ﬁeld theory deﬁned by \eqref{eq:SDp} corresponds to a static solution of the equations of motion whereby the potential energy of the system is minimized. It is given by the field configurations which solve simultaneously the quations $F_{ab}=D_a\Phi^m=\psi^a=0$ and $V(\Phi)=0$. Since all term in $V(\Phi)$ have the same sign, the equation $V(\Phi)=0$ is equivalent to the equation $[\Phi^m,\Phi^n]=0$ for all $m,n$ and at each point in the $(p+1)$-dimensional worldvolume of the branes. This implies that the $N\times N$ hermitian matrix fields $\Phi^m$ are simultaneously diagonalizable by a gauge transformation, so that we may write
+        \begin{equation}
+            \Phi^m=U
+            \begin{bmatrix}
+                X^m_1 & & & 0 \\
+                & X^m_2 & & \\
+                & & \ddots & \\
+                0 & & & X^m_N
+            \end{bmatrix}U^{-1},\label{eq:diagPhi}
+        \end{equation}
+        the matrix $U$ is independent of $m$. The simultaneous,
+        real eigenvalues $X^m_i$ give the positions of the $N$ distinct D-branes in the $m$-th transverse direction. It follows that the moduli space of classical vacua for the $(p+1)$-dimensional ﬁeld theory \eqref{eq:SDp} is the quotient space $(\R^{9-p})^N/S_N$, where the factors of $\R$ correspond to the positions of the $N$ D$p$-branes in the $(9-p)$-dimensional transverse space, and $S_N$ is the symmetric group acting by permutations of the $N$ coordinates $X_i$. The group $S_N$ corresponds to the residual Weyl symmetry of the $\U(N)$ gauge group acting in \eqref{eq:diagPhi}. It represents the permutation symmetry of a system of $N$ \emph{indistinguishable} D-branes.
+
+        From \eqref{eq:SDp} one can easily deduce that the masses of the ﬁelds corresponding to the oﬀ-diagonal matrix elements are given precisely by the distances $\abs{x_i-x_j}$ between the corresponding branes. This description means that an interpretation of the D-brane conﬁguration in terms of classical geometry is only possible in the classical ground state of the system, whereby the matrices $\Phi^m$ are simultaneously diagonalizable and the positions of the individual D-branes may be described through their spectrum of eigenvalues. This gives a simple and natural dynamical mechanism for the appearence of ``non-commutative geometry'' at short distances, where the D-branes cease to have well-deﬁned positions according to classical geometry.
+
+        \textcolor{blue}{The end of this section has to be rewritten \marker.}
     
-\section{Gauge anomaly}\label{sec:anomalies}
-    
-    The \emph{anomaly degree} $A(\rho)$ of a representation $\rho$ is defined as
-    \begin{equation}
-        \frac{1}{2}\tr(T_a\{T_b,T_c\})=A(\rho)d_{abc}
-    \end{equation}
-    where $d_{abc}$ is an invariant symmetric tensor of the Lie algebra of $G$, independent of the representation. One can show that $A(\rho^*)=-A(\rho)$ so self dual representation have $A(\rho)=0$ in particular. The only simple Lie groups that allow for a complex non-self-conjugate representation are $\SU(n)$ with $n\geq3$. We can normalize $d_{abc}$ such that $A(\rho)=1$ for the fundamental $n$-dimensional representations.
+    \subsection{$\mN=4$ super Yang-Mills theory in $D=4$}\label{sec:N4SCFT}
+
+        \subsubsection{Superconformal group $\SU(2,2|4)$ and its representations}
+
+            Conformal transformations and supersymmetries do not commute so the presence of conformal symmetry in addition to $\mN=4$ supersymmetry leads to an even larger group of symmetry known as the \emph{superconformal group}. In the $D=4,\mN=4$ case, the superconformal group is the super group\footnote{Supermanifold which is also a group with smooth product and inverse maps.} $\SU(2,2|4)$. The different component of the latter are
+            \begin{itemize}
+                \item \textbf{Conformal symmetries}: they form the 15-dimensional subgroup $\SO(2,4)$ and are generated by $P_\mu,M_{\mu\nu},K_\mu$ and $D$.
+                \item \textbf{R-symmetry}: they form the 15-dimensional subgroup $\SO(6)_R$ and are generated by $T^A$ ($A=1,\dots,15$).
+                \item \textbf{Poincaré supersymmetries}: they form the 16-dimensional sub group \marker and are generated by $Q^I_\alpha$ and $\bar{Q}^I_{\dalpha}$.
+                \item \textbf{Conformal supersymmetries}: they form the 16-dimensional subgroup \marker and are generated by $S_{\alpha I}$ and $\bar{S}^{\dalpha I}$.
+            \end{itemize}
+
+            Conformal invariance of this theory can be seen as a consequence of the non-renormalization theorems.
+
+        \subsubsection{Matter content}
+            
+            For $D=4,\mN=4$, there is only one kind of supermultiplet, the vector multiplet. Therefore, from an $\mN=4$ perspective, the only $\mN=4$ is a pure SYM. For extended supersymmetry, is is easier to express it in terms of $\mN=1$ superfield on $\mN=1$ superspace instead of looking to construct a superspace for $\mN=4$. In this case, we can see that the $\mN = 4$ vector superfield can be expressed in terms of $\mN = 1$ representations as one vector supermultiplet and three chiral scalar supermultiplets:
+            \begin{equation}
+                [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi^A = (\phi^A,\psi^A_\alpha,F^A).
+            \end{equation}
+            with $A=1,2,3$ and
+            \begin{align}
+                \phi^A&=\phi^A_a T^a,\qquad \psi^A_\alpha=\psi^A_{\alpha,a}T^a,\qquad F^A=F^a_a T^a,\\
+                \lambda^A&=\lambda^A_a T^a,\qquad A^A_\mu=A^A_{\mu,a}T^a,\qquad D^A=F^a_a T^a,\\
+                V&=V_aT^a,\qquad \Phi^A=\Phi^A_aT^a,
+            \end{align}
+            where $T^a$ ($a=1,\dots,\dim G$) are the generators of $\mathfrak{g}$. The propagating degrees of freedom are therefore a vector field, three complex scalars and four gauginos. The Lagrangian is very much constrained by $\mN = 4$ supersymmetry. First, the chiral superfields $\Phi^A$ should transform in the adjoint representation of the gauge group $G$, since internal symmetries commute with supersymmetry. This means that all fields transform in the adjoint of $G$.
+            
+            Moreover, there is a large R-symmetry group\footnote{The fact that the scalar fields transform under the fundamental representation of $\SO(6)$, which is real, makes the R-symmetry group of the $\mN = 4$ theory being at most $\SU(4)$ and not $\U(4)$, in fact).}: $\SU(4)_R$. The four Weyl fermions transform in the fundamental of $\SU(4)_R$, while the six real scalars in the two times anti-symmetric representation, which is nothing but the fundamental representation of $\SO(6)$. The auxiliary fields are singlets under the R-symmetry group. Using $\mN = 1$ superfield formalism the Lagrangian reads
+            \begin{align}
+                \begin{split}
+                    \L^{\mN=4}_{\text{SYM}} &= \frac{1}{32\pi}\Im \left(\tau\int\d^4x\tr(W^\alpha W_\alpha)\right)+\int\d^2\theta\d^2\bar{\theta}\tr\sum^3_{A=1}\bar{\Phi}^Ae^{2gV}\Phi^A\\
+                    &\quad-\int\d^2\theta\sqrt{2g}\tr\Phi_1[\Phi_2,\Phi_3]+\text{h.c.}
+                \end{split}\label{eq:N4lag}
+            \end{align}
+            where as usual $W_\alpha=-\frac{1}{4}\bar{D}\bar{D}(e^{-V}D_\alpha e^V)$ is the gaugino superfield. This lagrangian is indeed invariant under the superPoincaré algebra and under the gauge transformations
+            \begin{align}
+                e^V &\to e^{i\bar{\Lambda}} e^V e^{-i\Lambda} \text{ (which implies that $W_\alpha \to e^{i\Lambda}W_\alpha e^{-i\Lambda}$)},\\
+                \Phi^A &\to e^{i\Lambda}\Phi^A.
+            \end{align}
+            The large $\SU(4)_R$ R-symmetry group forbids of having a superpotential. The commutator in the third term of \eqref{eq:N4lag} appears for the same reason as for the $\mN = 2$ Lagrangian. Notice that the choice of a single $\mN = 1$ supersymmetry generator breaks the full $\SU(4)_R$ R-symmetry to $\SU(3)\times \U(1)_R$. The three chiral superfields transform in the $\boldsymbol{3}$ of $\SU(3)$ and have R-charge $R = 2/3$ under the $\U(1)_R$. It is an easy but tedious exercise to perform the integration in superspace and get an explicit expression in terms of fields. Finally, one can solve for the auxiliary fields and get an expression where only propagating degrees of freedom are present, and where $\SU(4)_R$ invariance is manifest.
+
+        \subsubsection{Moduli space and dynamical phases}
+
+            The scalar potential in \eqref{eq:N4lag} can be written in a rather compact form in terms of the six real scalars $X^i$ making up the three complex scalars $\phi^A$ and reads
+            \begin{equation}
+                V(X_1,\dots,X_6) = \frac{1}{2}g^2\tr\sum^6_{i,j=1}[X_i,X_j]^2.
+            \end{equation}
+            The positive definite behavior of the Cartan-Killing form on the compact gauge algebra $\g$ implies that each term in the sum is positive or zero. In other words, $V=0$ is equivalent to
+            \begin{equation}
+                [X^i,X^j]=0,\qquad i,j=1,\dots,6.
+            \end{equation}
+            This means that the potential vanishes whenever the scalar fields belong to the Cartan subalgebra of the gauge group $G$. At a generic point of the moduli space, the gauge group is broken to $\U(1)^r$ where $r$ is the rank of $\mathfrak{g}$.
+            This equations admit two classes of solutions:
+            \begin{itemize}
+                \item $\langle X^i\rangle=0$ for all $i=1,\dots,6$. This is the \emph{superconformal phase}. Neither the gauge symmetry nor the superconformal symmetry is broken. The physical states and operators are gauge invariant and transform under
+                unitary representations of $\SU(2,2|4)$.
+                \item  $\langle X^i\rangle\neq0$ for at least one $i$. This is the \emph{spontaneously broken Coulomb phase}. The gauge algebra $\g$ is going to be broken to $\U(1)^r$, where $r\equiv\rank\g$. The low energy behavior is then the one of $r$ copies of $\mN=4$ $\U(1)$ gauge theories. Superconformal symmetry is spontaneously broken since the non-zero VEV $\langle X^i\rangle$ sets a scale.
+            \end{itemize}
+
+            \begin{result}
+                \textbf{$\boldsymbol{\mN=4}$ Yang-Mills theory.} There is only one $D=4,\mN=4$ Yang-Mills theory and it contains $3$ $\mN=1$ chiral scalar supermutliplet and $1$ $\mN=1$ vector supermultiplet (up to $g$ and $\tau$). This theory is conformal and can be recovered from dimensional reduction of $D=10,\mN=1$ Yang-Mills on $\mathbb{T}^6$.
+            \end{result}
+        
+    \subsection{Gauge anomaly}\label{sec:anomalies}
+        
+        The \emph{anomaly degree} $A(\rho)$ of a representation $\rho$ is defined as
+        \begin{equation}
+            \frac{1}{2}\tr(T_a\{T_b,T_c\})=A(\rho)d_{abc}
+        \end{equation}
+        where $d_{abc}$ is an invariant symmetric tensor of the Lie algebra of $G$, independent of the representation. One can show that $A(\rho^*)=-A(\rho)$ so self dual representation have $A(\rho)=0$ in particular. The only simple Lie groups that allow for a complex non-self-conjugate representation are $\SU(n)$ with $n\geq3$. We can normalize $d_{abc}$ such that $A(\rho)=1$ for the fundamental $n$-dimensional representations.
     
 \section{Properties of D-branes in type II theories}
 
@@ -213,11 +231,49 @@
 
 \section{Algebraic geometry}
 
+    \subsection{Elements}
+
+        An important idea in algebraic geometry is that is is really the alegbra of function on it that defines a space. For affine varities $X$, this is illustrated by the fact that the structure of $X$ is really contained in its coordinate ring $K[x_1,\dots,x_n]/I(X)$ and by the isomorphism
+        \begin{equation}
+            K[x_1,\dots,x_n]|_X=K[x_1,\dots,x_n]/I(X).
+        \end{equation}
+        Now an algebraic set $Z(T)$ is irreducible if $I(Z(T))$ is prime. So there is a one-to-one correspondence between prime ideals and affine varieties.
+
+        Given an algebraic variety, one can modify the equations continuously by varying some parameters and the variety will be ``deformed'' accordingly. It is called the \emph{variation of the omplex structure}. The space of all complex deformations of an affine variety $X$ is called the \emph{complex moduli space} of $X$. For a Calabi-Yau manifold, the linearization of the complex moduli space (tangent space) is given by the cohomology group $H^{m-1,1}(X)$, where $m$ is the dimension of $X$. In general, it is much more complicated.
+
+    \subsection{Divisors and line bundles}
+
+        A \emph{(Weyl) divisor} $D$ of a complex variety $X$ is a linear combination (formal sum with integer coefficients) of co-dimension one, irreducible subvarieties,
+        \begin{equation}
+            D=\sum_i n_iV_i,\qquad n_i\in\Z,V_i\subset X.
+        \end{equation}
+        It said to be effective if all $n_i\geq1$. To any line bundle $L$ with a regular section $s$ (that is, on any open subset $U_\alpha$, $s_\alpha=s|_{U_\alpha}$ is a polyomial in the local coordinates) we can associate a hypersurface $Y\subset X$ defined as
+        \begin{equation}
+            Y=\{p\in X|s(p)=0\}.
+        \end{equation}
+        This hypersurface $Y$ can then be decomposed into irreducible parts (affine patches) on which $s_\alpha$ can be factorized in $\C[x_1,\dots,x_n]$ and decomposed in prime ideals $P_i$ of multiplicity $n_i$. Assembling all the $V^\alpha_i$ otgether, we construct co-dimension one subvarities $V_i$ that can be used to form divisors. One can also proceed the other ay around and, given a divisor $D=\sum_i n_iV_i$, define a line bundle $\mathcal{O}_X(D)$ whose sections vanish on each $V_i$ with a zero of order $n_i$. This construction can be generalized to divisors with negative coefficients $n_i<0$ in which case now have poles of order $n_i$ in $V_i$.
+
     \subsection{Singularities and resolutions}
 
         A \emph{rational map} from a variety $X$ to another $Y$ is a morphism from a non-empty subset $U\subset X$ to $Y$. Recall that, by definition of the Zariski topology, a non-empty open subset is always dense. Concretely, a rational map can be written in coordinates using ration functions (quotient of polynomials). A \emph{birational map} is an invertible rational map. It induces an isomorphism between two non-empty open subsets. In this case, $X$ and $Y$ are said to be \emph{birationally equivalent}.
 
         The \emph{resolution of a singularity} of an algebraic variety $V$ is a non-singular variety $W$ with a proper birational map $W\to V$. For varities over fields of characteristic $0$, it was proven (Hironaka, 1964) that \marker.
+
+    \subsection{Projective plane curves}
+
+        In $\C\P^2$, we consider a hypersurface defined by a single polynomial $p$ of degree $d$. If
+        \begin{equation}
+            \pdv{p(x)}{x_i}=0
+        \end{equation}
+        for all $i$ whenever $p(x)=0$, then the curve is said to be regular, it is a Riemann surface. The latter are classified by their genus and
+        \begin{equation}
+            g=\frac{(d-1)(d-2)}{2}.
+        \end{equation}
+        For $d=3$, the most geenral polynomial is
+        \begin{equation}
+            \sum_{i+j+k=3}c_{ijk}x^i_0x^j_1x^k_2=0
+        \end{equation}
+        and defines a torus, also called \emph{elliptic curve}. There $10$ independant parameters but $9$ of them can be removed by a $\GL(3,\C)$ transformation, leaving us with only one complex parameter; the complex structrue modulus of the torus.
 
 \section{Quivers representations, path algebras, moduli spaces and quiver varieties}
 
@@ -250,13 +306,10 @@
         \end{equation}
         and all other products are zero. In this sense, representations a quiver defines an algebra (the algebra of $f_i$ and $f_a$). Now comes the whole point to all this is: this algebra is a representation of the path algebra. To see this, we can use the notation $\rho(e_i)=f_i:V\to V$ and $\rho(a)=f_a:V\to V$ so $\rho:kQ\to \End(V)$ and we can show that is is a $k$-linear morphism of rings. So $\rho$ is a representation of the algebra $kQ$. So a representation of a quiver $Q$ gives a representation of the path algebra. The converse can also be shown. We conclude that representations of the path algebra and of the quiver are equivalent. Gabriel's theorem could then be equivalently phrased as: the path algebra of any quiver has finite representations if and only if it is ADE.
         
-        Recall also that giving a $k$-linear morphism $A=(k,R)\to\End(V)$ is equivalent to giving a structure of $R$-module to $V$. So from what we discussed above, giving a representation of a quiver is equivalent to giving a module structure to $V$. This can be rephrased using a more categorical language by showing that these constructions extend to functors. It is now clear that the finite-dimensional representations of a quiver with relations form a category, which we denote by $\texttt{fRep}(kQ,R)$. If $(Q,I(R))$ is a quiver with relations and $A=kQ/I$ its path algebra, then the set of finite-dimensional modules of $A$ is also a category that we denote by $\texttt{fdmod}A$.
-        \begin{lemma*}
-            There is a categorical equivalence
-            \begin{equation}
-                \texttt{fRep}(kQ,R)\approx\texttt{fdmod}A.
-            \end{equation}
-        \end{lemma*}
+        Recall also that giving a $k$-linear morphism $A=(k,R)\to\End(V)$ is equivalent to giving a structure of $R$-module to $V$. So from what we discussed above, giving a representation of a quiver is equivalent to giving a module structure to $V$. This can be rephrased using a more categorical language by showing that these constructions extend to functors. It is now clear that the finite-dimensional representations of a quiver with relations form a category, which we denote by $\texttt{fRep}(kQ,R)$. If $(Q,I(R))$ is a quiver with relations and $A=kQ/I$ its path algebra, then the set of finite-dimensional modules of $A$ is also a category that we denote by $\texttt{fdmod}A$. There is a categorical equivalence
+        \begin{equation}
+            \boxed{\texttt{fRep}(kQ,R)\approx\texttt{fdmod}A.}
+        \end{equation}
 
     \subsection{Geometric invariant theory}
 
@@ -281,6 +334,24 @@
     \textcolor{blue}{This section has to be rewritten \marker.}
 
 \section{Calabi-Yau manifolds, orbifolds and crepant resolutions}\label{sec:CY}
+
+    \subsection{Kähler, Calabi-Yau structure and moduli spaces}
+
+        The Kähler form $\omega$ is a representative of a Doleault cohomology class
+        \begin{equation}
+            [\omega]\in H^{1,1}(X)
+        \end{equation}
+        and $[\omega]$ is called the \emph{Hähler class} of $\omega$.
+        \begin{theorem}[Calabi-Yau]
+            Given $X$ a compact manifold with trivial canonical bundle, and given a Kähler form $\tilde{\omega}$ on $X$, there exist a unique Ricci-flat metric in the Kähler class of $\tilde{\omega}$. That is, a unique Ricci-flat metric defined for some $\omega\in[\tilde{\omega}]$.
+        \end{theorem}
+        On the other hand, it is easy to show that Ricci-flatness implies triviality of the canonical bundle. For non-compact manifolds, the theorem does not hold strictly speaking, one must specify boundary conditions at infinity to find a Ricci-flat metric.
+
+        Given a Calabi-Yau anifold, we see that there are continuous famillies of Ricci-flat metrics, one for each cohomology class of $H^{1,1}(X)$. One can decompose any chomology class on a basis $[\omega]^i$ of the vactor space $H^{1,1}(X)$
+        \begin{equation}
+            [\omega]=\sum^{h^{1,1}}_{i=1}\lambda_i[\omega]^i.
+        \end{equation}
+        It is called the \emph{Kähler moduli space} of $X$ and its dimension is denoed by $h^{1,1}$.
 
     \subsection{Calabi-Yau manifolds}
 
@@ -332,9 +403,19 @@
 
 \section{Toric varieties}
 
+    \subsection{Algebraic approach}
+
+        An \emph{algebraic group} is a group that is also an algebraic variety and such the product and inversion are regular maps on the variety. Any product of $\C^*$ is an algebraic group that we call \emph{algebraic tori}. A \emph{toric variety} $X$ of dimension $n$ is an algebraic variety containing the algebraic torus $\mathbb{T}=(\C^*)^n$ as a dense open subset, together with a natural action $\mathbb{T}\times X\to X$. An $n$-dimensional algebraic variety is obtained as the quotient
+        \begin{equation}
+            X_\Delta=\frac{\{\C^m/\Z_\Delta\}}{G}
+        \end{equation}
+        with $G\cong (\C^*)^{m-n}\times\Gamma$, $m\geq n$, $\Gamma$ and abelian discrete group and $\Z_\Delta\subset\C^m$ a set of points. We of course need to know how $G$ acts on $\C^m$.
+
     \subsection{Fans and cones}
 
-        An \emph{algebraic group} is a group that is also an algebraic variety and such the product and inversion are regular maps on the variety. Any product of $\C^*$ is an algebraic group, we call \emph{algebraic tori}. A \emph{toic variety} $\boldsymbol{\chi}_\Delta$ is an algebrais variety of dimension $n$ containing an algebraic torus $(\C^*)^n$ as a dense open subset, as such that the torus action on itself extends to an algebraic action on $\chi_\Delta$. For instance, $\C\P^2$ is a toric variety. This $n$-dimensional variety is obtained as the quotient of a complex plane of highe dimension $m\geq n$:
+         A \emph{toic variety} $\boldsymbol{\chi}_\Delta$ is an algebrais variety of dimension $n$ containing an algebraic torus $(\C^*)^n$ as a dense open subset, as such that the torus action on itself extends to an algebraic action on $\chi_\Delta$. For instance, $\C\P^2$ is a toric variety. 
+        
+        This $n$-dimensional :
         \begin{equation}
             \chi_\Delta=\frac{\C^m/Z_\Delta}{(\C^*)^{m-n}\times\Gamma},
         \end{equation}
@@ -752,11 +833,13 @@
         \end{itemize}
 
         Note that the gauge group $\U(N)$ can also be seen as the group of isometries of the metric space $\C^N$, i.e. $\Hom(\C^N,C^N)$. From this point of view, the transformations \eqref{eq:transfA1}-\eqref{eq:transfphi2}can be summarized as
-        \begin{align}
-            A_\mu&\in\Hom(\C^N,\C^N),\label{eq:AHom}\\
-            \psi&\in\boldsymbol{4}\otimes\Hom(\C^N,\C^N),\label{eq:psiHom}\\
-            X&\in\boldsymbol{6}\otimes\Hom(\C^N,\C^N).\label{eq:phiHom}
-        \end{align}
+        \begin{subequations}
+            \begin{empheq}[box=\widefbox]{align}
+                A_\mu&\in\Hom(\C^N,\C^N),\label{eq:AHom}\\
+                \psi&\in\boldsymbol{4}\otimes\Hom(\C^N,\C^N),\label{eq:psiHom}\\
+                X&\in\boldsymbol{6}\otimes\Hom(\C^N,\C^N).\label{eq:phiHom}
+            \end{empheq}
+        \end{subequations}
 
         \begin{result}
             If the transverse space is non-singular, the only possibility is $S=\C^3$. In this case, the worldvolume theory is therefore $D=4,\mN=4$ $\U(N)$ SCFT gauge theory. It is called the \emph{parent theory}.
@@ -791,11 +874,13 @@
         If $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$ \marker, see appendix \ref{sec:CY}.
 
         If the transverse space is $S=\C^3/\Gamma$, the field theory must be projected to a theory which also invariant under $\Gamma$, seen as a subgroup of the R-symmetry group. The prescription is straihgt-forward: we can use the elements $\gamma\in\Gamma$ to project out that states that are not $\Gamma$-invariant. That is, if $\rho$ is an embedding of $\Gamma$ in the gauge group $\U(N)$, only the the fields such that
-        \begin{align}
-            \rho(\gamma) A_\mu \rho(\gamma)^{-1} &= A_\mu,\label{eq:proj1}\\
-            R(\gamma)\rho(\gamma) \psi_{IJ} \rho(\gamma)^{-1} &= \psi_{IJ}\label{eq:proj2},\\
-            R(\gamma)\rho(\gamma) X_{IJ} \rho(\gamma)^{-1} &= X_{IJ}\label{eq:proj3}
-        \end{align}
+        \begin{subequations}
+            \begin{empheq}[box=\widefbox]{align}
+                \rho(\gamma) A_\mu \rho(\gamma)^{-1} &= A_\mu,\label{eq:proj1}\\
+                R(\gamma)\rho(\gamma) \psi_{IJ} \rho(\gamma)^{-1} &= \psi_{IJ}\label{eq:proj2},\\
+                R(\gamma)\rho(\gamma) X_{IJ} \rho(\gamma)^{-1} &= X_{IJ}\label{eq:proj3}
+            \end{empheq}
+        \end{subequations}
         are kept in the spectrum, where $\rho$ is a unitary representation of $\Gamma$ on $\C^N$ and $R=\boldsymbol{4},\boldsymbol{6}$.
         Let us make two remarks:
         \begin{itemize}
@@ -818,7 +903,7 @@
 
     \subsection{Representation theory of the projection}
 
-        Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^N$, we denote it $(\rho,\C^N)$ and also take it to be unitary. In that case, $\rho(\gamma)\in\U(N)$. This is what we mean by ``the embedding of $\Gamma$ in $\U(N)$''. The adjoint representation of $\U(N)$ defined as\footnote{this is well-defined since for all $\omega\in\mathfrak{u}(N)$ and $U\in\U(N)$, $U\omega U^{-1}\in\mathfrak{u}(N)$.}
+        Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. We also use the notation $N_i=\dim\rho_i$ sich that $V_i=\C^{N_i}$ Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^N$, we denote it $(\rho,\C^N)$ and also take it to be unitary. In that case, $\rho(\gamma)\in\U(N)$. This is what we mean by ``the embedding of $\Gamma$ in $\U(N)$''. The adjoint representation of $\U(N)$ defined as\footnote{this is well-defined since for all $\omega\in\mathfrak{u}(N)$ and $U\in\U(N)$, $U\omega U^{-1}\in\mathfrak{u}(N)$.}
         \begin{equation}
             \Ad:\left(
             \begin{array}{ccc}
@@ -842,10 +927,14 @@
 
         We can decompose $(\rho,\C^N)$ as follows:
         \begin{align}
-            (\rho,\C^N) &= \bigoplus_{i\in I}~(\rho_i,V_i)^{N_i} \\
+            (\rho,\C^N) &= \bigoplus_{i\in I}~(\rho_i,V_i)^{N_i} \label{eq:decomp:line1} \\
             &= \bigoplus_{i\in I}~(\boldsymbol{1}^{N_i}\otimes\rho_i,\C^{N_i}\otimes V_i) \label{eq:decomp:line2}
         \end{align}
-        were $N_i$ are integer multiplicities ($(\rho_i,V_i)^{N_i}\equiv(\rho_i,V_i)^{\oplus N_i}$) and $\boldsymbol{1}$ is the trivial representation, so $\Gamma$ acts trivially on the $\C^{N_i}$. We have $\sum_iN_i\dim(\rho_i)=N$. The rewritting \eqref{eq:decomp:line2} will be useful later on.
+        were $N_i$ are integer multiplicities ($(\rho_i,V_i)^{N_i}\equiv(\rho_i,V_i)^{\oplus N_i}$) and $\boldsymbol{1}$ is the trivial representation, so $\Gamma$ acts trivially on the $\C^{N_i}$. We have
+        \begin{equation}
+            \sum_iN_i\dim(\rho_i)=N.
+        \end{equation}
+        The rewritting \eqref{eq:decomp:line2} will be useful later on.
         
         After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, that is $\Hom(\C^N,\C^N)^\Gamma$. We use the superscript $\Gamma$ to indicate that we only keep the trivial representations in the decomposition, that is, we only keep that subspaces that transform trivially. First, we can see that by Schur's lemma \marker
         \begin{equation}
@@ -860,7 +949,11 @@
             &= \bigoplus_{i,j\in I} \left(\C^{N_i}\otimes(\C^{N_j})^*\right)^\Gamma\otimes\left(V_i\otimes V^*_j\right)^\Gamma\\
             &= \bigoplus_{i\in I}\C^{N_i}\otimes(\C^{N_i})^*
         \end{align}
-        so the daughter gauge group is
+        so, in complete notations,
+        \begin{equation}
+            (\rho,\C^N)^\Gamma = \bigoplus_{i\in I}(\rho_i,\C^{N_i})\otimes(\bar{\rho_i},\C^{N_i})
+        \end{equation}
+        and the daughter gauge group is
         \begin{equation}
             G_{\text{proj}} = \bigotimes_{i\in I}\U(N_i).
         \end{equation}
@@ -873,13 +966,17 @@
         \begin{align}
             (V_\mR\otimes\Hom(\C^N,\C^N))^\Gamma &= \bigoplus_{i,j\in I} \left(V_\mR\otimes (\C^{N_i}\otimes V_i)\otimes(\C^{N_j}\otimes V_j)^*\right)^\Gamma\\
             &= \bigoplus_{i,j\in I} \left(V_\mR\otimes\C^{N_i}\otimes(\C^{N_j})^*\right)^\Gamma\otimes\left(V_i\otimes V^*_j\right)^\Gamma\\
-            &= \bigoplus_{i,j\in I}a^\mR_{ij}\left(\C^{N_i}\otimes(\C^{N_j})^*\right)\label{eq:resdecomp}
+            &= \bigoplus_{i,j\in I}a^\mR_{ij}\left(\C^{N_i}\otimes(\C^{N_j})^*\right)
         \end{align}
         with
         \begin{equation}
             (\rho_\mR,V_\mR)\otimes(\rho_i,V_i)=\bigoplus_{j\in I}a^\mR_{ij}(\rho_j,V_j).\label{eq:defaij}
         \end{equation}
-        This expression makes sense because $(\rho_\mR,V_\mR)$ is a representation of $\SU(4)$ so it is in particular a representation of $\SU(3)$ and therefore also in particular a representation of $\Gamma$.
+        This expression makes sense because $(\rho_\mR,V_\mR)$ is a representation of $\SU(4)$ so it is in particular a representation of $\SU(3)$ and therefore also in particular a representation of $\Gamma$. In more complete notations, we obtained that
+        \begin{equation}
+            ((\rho_\mR,V_\R)\otimes(\rho,\C^N))^\Gamma = \bigoplus_{i,j\in I}a^\mR_{ij}\left((\rho_i,\C^{N_i})\otimes(\bar{\rho}_j,\C^{N_j})\right).\label{eq:resdecomp}
+        \end{equation}
+        
 
         Using the orthogonality of characters of irreducible non-equivalent representations, we obtain the explicit expression of the coefficient $a^\mR_{ij}$:
         \begin{equation}
@@ -891,6 +988,22 @@
         \begin{result}
             In the daughter theory, the matter fields become a total of $a^{\boldsymbol{4}}_{ij}$ bi-fundamental fermions and $a^{\boldsymbol{6}}_{ij}$ bi-fundamental bosons transforming as the $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\SU(N_i)\times\SU(N_j)$ under the products of gauge groups.
         \end{result}
+
+    \subsection{Bi-index notation}
+
+        The gauge and the bi-fundamental fields that we obtained in the previous section are easier to manipulate in the \emph{bi-index notation}. Recall that $A_\mu\in\mathfrak{u}(N)$ si it is an $N\times N$ complex matrix and we denote its elements by $A_{\mu;IJ}$ ($I,J=1,\dots,N$). We saw that this matrix of fields transform under $\Gamma$ as
+        \begin{equation}
+            A_\mu\mapsto \rho(\gamma)A_\mu \rho(\gamma)^{-1},\qquad \gamma\in \Gamma,
+        \end{equation}
+        i.e. the adjoint representation but without the derivative term. From the decomposition \eqref{eq:decomp:line1}, it is easier to decompose $A_\mu$ it in blocks $A_{\mu;ij}$ ($i,j\in I$) of size $N_i\times N_j$ that transform under the representation $\rho^{\oplus N_i}_i\otimes(\bar{\rho_j})^{\oplus N_j}$ of $\text{diag}(\Gamma\times\Gamma)=\Gamma$:
+        \begin{equation}
+            A_{\mu;ij}\mapsto \rho_i(\gamma)^{\oplus N_i}X^m_{ij}(\rho_j(\gamma)^{-1})^{\oplus N_j},\qquad \gamma\in\Gamma.
+        \end{equation}
+        Now those blocks that transform under the direct sum of irreducible representaitons can of course again be diveded into block that transform directly under the irreducible representations. We denote those $\dim\rho_i\times\dim\rho_j$ blocks by $X^m_{i\alpha_i,j\beta_j}$ ($\alpha_i,\beta_i=0,\dots,N_i-1$). In the end, we have
+        \begin{equation}
+            \boxed{A_{\mu;i\alpha_i,j\beta_j}\mapsto\rho_i(\gamma)A_{\mu;i\alpha_i,j\beta_j}\rho_j(\gamma)^{-1},\qquad \gamma\in\Gamma.}
+        \end{equation}
+        This is the equation that is important and that we will use to find the invaraint configurations under $\Gamma$. We use the exact same bi-index notations for $X^m$ and $\psi^a$.
 
     \subsection{Field content, quivers and McKay graphs}
 
@@ -916,7 +1029,7 @@
 
         Finally, let us discuss the gauge anomaly cancellation. Our fields transform under the adjoint representation of $\SU(N)$, under the fundamentals of $\SU(N_i)$ and under the anti-fundamentals of $\SU(N_i)$. The adjoint representation being reel, it is self-conjugate and therefore does not contribute to the anomaly. Fundamentals of $\SU(N_i)$ have a $+1$ contribution to the anomaly and anti-fundamentals of $\SU(N_i)$ have a $-1$ contribution to the anomaly. Anomaly cancellation therefore imposes that the contribution of the fundamental and of the anti-fundamental of $\SU(N_i)$ cancel each other for each $i=0,1,2$, see section \eqref{sec:anomalies}. The bi-fundamental representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ counts as $N_j$ fundamentals of $\SU(N_i)$ and as $N_i$ anti-fundamentals $\SU(N_j)$. The general condition for anomaly cancellation is therefore
         \begin{equation}
-            (a_{ij}-a_{ji})n_i=0
+            \boxed{(a_{ij}-a_{ji})n_i=0}
         \end{equation}
         where $a_{ij}$ are the lements of the adjacency matrix of the quiver and $n_i$ are the node labels. This condition is equivalent to say that the ranks of tha gauge groups must lie in nullspace of the antisymmetrized adjacency matrix.
 
@@ -1843,6 +1956,8 @@
 
     All abelian orbifolds are toric varities.
 
+    There is a specific class of supersymmetric gauge theories whose space of vacua is toric. They are called \emph{toric quiver gauge theories}.
+
 \section{Correspondence between gauge theory and singularity}
 
     Above, we presented all the possible orbifold constructions of supersymmetric quiver gauge theories in four dimensions. We started from quotienting the transverse space and we found the corresponding (supersymmetric) gauge theory. In other words, we started from the singularity a found the gauge theory. We can therefore consider that the orbifold singularities are understood. However, not all singularities are orbifold one, such as the conifold for example. We can then ask ourselves how to obtain the gauge theory for more general singularities than the orbifold ones. Is a general approach possible ? On the other hand, we can also study the converse question; is it possible to to obtain the singularity from the gauge theory? And if it is, how so? In general we will see that there is a bijection between the four-dimensional supersymmetric worldvolume gauge theory and the Calabi-Yau singularity. We now detail this bijection.
@@ -1855,7 +1970,23 @@
 
     \subsection{Gauged linear sigma model (GLSM)}
 
-
+        The gauged linear sigma model provides a physical perspective on toric varieties which provides us with the right approach for the forward algorithm. Let us consider the vectorspace $\C^q$ with complex coordinates $z_1,\dots,z_q$. We provide it with a an action of $\C^{*(q-d)}$ $z_i\mapsto\lambda^{Q^a_i}z_i$ with $\lambda_a\in\C^*$ and $Q^a_i\in\Z$ ($a=1,\dots,q-d$) so $Q$ is a $q\times(q-d)$ integer matrix. So under $(\lambda_1,\dots,\lambda_{q-d})$, we have
+        \begin{equation}
+            \begin{bmatrix}
+                z_1\\
+                \vdots\\
+                z_q
+            \end{bmatrix}
+            \mapsto
+            \begin{bmatrix}
+                \lambda_a
+            \end{bmatrix}
+            \begin{bmatrix}
+                z_1\\
+                \vdots\\
+                z_q
+            \end{bmatrix}
+        \end{equation}
 
     \subsection{From gauge theory to singularity: forward algorithm}
 
@@ -1867,6 +1998,10 @@
         \begin{equation}
             (a_{ij}-a_{ji})n_i=0\marker.
         \end{equation}
+
+    \subsection{Forward algorithm for abelina orbifolds}
+
+        
 
     \subsection{From singularity to gauge theory: inverse algorithm}
 
