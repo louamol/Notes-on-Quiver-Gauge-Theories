@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1652275640 "main.bcf" "main.bbl" "main" 1652276433
+["biber main"] 1652435625 "main.bcf" "main.bbl" "main" 1652435625
   "bibliography.bib" 1651950948 13678 334043255b4772e04c36a5403f14733b ""
-  "main.bcf" 1652276433 107884 5d655e9e63490a3ee740289e848e1f8e "pdflatex"
+  "main.bcf" 1652435625 107884 5d655e9e63490a3ee740289e848e1f8e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1652276430 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1652276433
+["pdflatex"] 1652435622 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1652435622
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0700.pk" 1640084903 17380 ecc1e3fa43bf6a9b621b73fe9ef8bf0c ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0900.pk" 1611418443 22504 5687b8afeb2756cbcb6ccaceec3a53ef ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1607267403 25420 f2c23a7c3a7fea5cb4ae4a632310af13 ""
@@ -14,7 +14,6 @@
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk" 1641390200 49100 ad312a467cccf1f33ef2bf6624120aad ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2074.pk" 1611410848 59008 eb97ed11c3a2c178fa4300b23558519c ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk" 1611413019 72288 7402c6ebe52000941032adef5947c0d4 ""
-  "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1000.pk" 1611411465 25100 26ee539aa84c95da2ec11b325acb7c75 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0500.pk" 1619429135 12520 6f959399f90a32936e0ef28ac19b8356 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk" 1611419631 14880 6fad596d7f9ae7a2b25d04efee3c9741 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk" 1617893459 17000 6b4690916445f7284d9d363e7aa2db9a ""
@@ -59,7 +58,6 @@
   "/home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecbx1728.tfm" 1605294551 3204 d35cb76836b6cb4ed404dd64a550530d ""
   "/home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecbx2074.tfm" 1605294551 3208 da5ec29ca7c2f5f55c296dd6713d4a74 ""
   "/home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecbx2488.tfm" 1605294551 3192 b0a07ba84fb3fb36d088c4f796e254b9 ""
-  "/home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/eccc1000.tfm" 1605294551 2788 9da2d2e7e17b2a98c3aa301c9668a522 ""
   "/home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0500.tfm" 1605294551 3160 7643a152c0e9200a0a8161b2bb3a452d ""
   "/home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0600.tfm" 1605294551 3160 116e21835795bb29209ae8bb4682382f ""
   "/home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0700.tfm" 1605294551 3168 c739b83da3134ef1007979877c1089cf ""
@@ -448,18 +446,18 @@
   "Pictures/algorithm.png" 1651949509 32464 3e99d2e1100a4fdf7c785d16aedbb5c3 ""
   "Pictures/suter1.png" 1651139238 16150 fc8f4fee3b3934f58d51846566803417 ""
   "Pictures/suter2.png" 1651139249 20235 95d7f1f72fd7e1cfd15c661cd8eec110 ""
+  "Pictures/toricdiagZ2orbifold.png" 1652433739 46414 9e553c0be7bd59a36458fe88673f14f6 ""
   "Pictures/youngslattice.png" 1650913483 255031 539c580499ebd606c1778db846236b02 ""
-  "appendices.aux" 1652276433 9675 f57e7c1f8e593a2d0048f925644754a8 "pdflatex"
+  "appendices.aux" 0 -1 0 "pdflatex"
   "appendices.tex" 1651948211 27928 2f6c2f8807055d44fc455fa8cef3f0d5 ""
-  "main.aux" 1652276433 6408 a1dbafbee9d7444b8b2f79b86ada9766 "pdflatex"
-  "main.bbl" 1652275641 53815 5d35d2e905deadf3b6ecbd410b75331d "biber main"
-  "main.mak" 1652276433 2367 b8ee37f348a5d2e97b3bca871ec8111c "pdflatex"
-  "main.out" 1652276433 19661 8cf1614b02a976de9e1ce99f38a5af68 "pdflatex"
-  "main.run.xml" 1652276433 2313 300f39656d2ca573330f9b1b6a90dbb1 "pdflatex"
+  "main.aux" 1652435622 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.bbl" 0 -1 0 "biber main"
+  "main.mak" 0 -1 0 "pdflatex"
+  "main.out" 0 -1 0 "pdflatex"
+  "main.run.xml" 0 -1 0 "pdflatex"
   "main.tex" 1651950994 2340 209a987e269fdedef25f23331cd25644 ""
-  "main.toc" 1652276433 13814 5e4f144d494a281f247c775c3ec28cc6 "pdflatex"
-  "sections.aux" 1652276432 31443 c471b885136f853a74cf4ff894e4c17c "pdflatex"
-  "sections.tex" 1652276425 158220 7e3dfa73746788831a71adb4d3e4338a ""
+  "sections.aux" 0 -1 0 "pdflatex"
+  "sections.tex" 1652435619 161553 4b134a622e264ebfd4696fb3787a15b3 ""
   (generated)
   "appendices.aux"
   "main.aux"
