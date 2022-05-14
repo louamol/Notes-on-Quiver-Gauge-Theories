@@ -112,8 +112,8 @@
       \strng{authorfullhash}{a4fd5a8285710d8bd6688b748c7cc5fd}
       \field{extraname}{2}
       \field{labelalpha}{He02}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{On Algebraic Singularities, Finite Graphs and D-Brane Gauge Theories: A String Theoretic Perspective}
@@ -149,8 +149,8 @@
       \strng{authornamehash}{2d39ab4237decd67b581c085053bc278}
       \strng{authorfullhash}{2d39ab4237decd67b581c085053bc278}
       \field{labelalpha}{DM96}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -184,8 +184,8 @@
       \strng{authornamehash}{1410f0973a0a12d9fbe14121b8d047a4}
       \strng{authorfullhash}{1410f0973a0a12d9fbe14121b8d047a4}
       \field{labelalpha}{JM97}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{10}
@@ -224,8 +224,8 @@
       \strng{authornamehash}{8313b22ec75f880ac5049c17e4e28560}
       \strng{authorfullhash}{8313b22ec75f880ac5049c17e4e28560}
       \field{labelalpha}{HH99}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of High Energy Physics}
@@ -568,8 +568,8 @@
       \strng{authornamehash}{db8594bedb3c00eaedf048accfaa8dd8}
       \strng{authorfullhash}{db8594bedb3c00eaedf048accfaa8dd8}
       \field{labelalpha}{MP98}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Non-Spherical Horizons, I}
@@ -618,8 +618,8 @@
       \strng{authornamehash}{2f0b4153d51f5610cacdfcc92ef72560}
       \strng{authorfullhash}{9c2294306abf37c042d9ad77c231a94e}
       \field{labelalpha}{Bea+00}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nuclear Physics B}
@@ -994,8 +994,8 @@
       \strng{authornamehash}{3c971bce1e85d768517bf7a062f488d9}
       \strng{authorfullhash}{3c971bce1e85d768517bf7a062f488d9}
       \field{labelalpha}{Ber21}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Introduction to Supersymmetry}
@@ -1031,8 +1031,8 @@
       \strng{authorfullhash}{5b04c80ad62ea502657fc10fe34adedf}
       \field{extraname}{1}
       \field{labelalpha}{DL99}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1073,8 +1073,8 @@
       \strng{authorfullhash}{5b04c80ad62ea502657fc10fe34adedf}
       \field{extraname}{2}
       \field{labelalpha}{DL99}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -1167,8 +1167,8 @@
       \strng{authornamehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \strng{authorfullhash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \field{labelalpha}{Lin12}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -1210,8 +1210,8 @@
       \strng{authornamehash}{e4640af9ccbe04a3006a13ca7cd8b0a2}
       \strng{authorfullhash}{5ccad494fd894b0988427c00b9b2f3f8}
       \field{labelalpha}{Hit+87}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Commun. Math. Phys.}
