@@ -962,19 +962,23 @@
 
     \subsection{Bi-index notation}
 
-        The gauge and the bi-fundamental fields that we obtained in the previous section are easier to manipulate in the \emph{bi-index notation}. Recall that $A_\mu\in\mathfrak{u}(N)$ si it is an $N\times N$ complex matrix and we denote its elements by $A_{\mu;IJ}$ ($I,J=1,\dots,N$). We saw that this matrix of fields transform under $\Gamma$ as
+        The gauge and the bi-fundamental fields that we obtained in the previous section are easier to manipulate in the \emph{bi-index notation}. Recall that $A_\mu\in\mathfrak{u}(N)$ so it is an $N\times N$ complex matrix and we denote its elements by $A_{\mu;IJ}$ ($I,J=1,\dots,N$). We saw that this matrix of fields transform under $\Gamma$ as
         \begin{equation}
-            A_\mu\mapsto \rho(\gamma)A_\mu \rho(\gamma)^{-1},\qquad \gamma\in \Gamma,
+            A_\mu\mapsto \rho(\gamma)A_\mu \rho(\gamma)^{-1},\qquad \gamma\in \Gamma,\label{eq:transfAmu1}
         \end{equation}
-        i.e. the adjoint representation but without the derivative term. From the decomposition \eqref{eq:decomp:line1}, it is easier to decompose $A_\mu$ it in blocks $A_{\mu;ij}$ ($i,j\in I$) of size $N_i\times N_j$ that transform under the representation $\rho^{\oplus N_i}_i\otimes(\bar{\rho_j})^{\oplus N_j}$ of $\text{diag}(\Gamma\times\Gamma)=\Gamma$:
+        i.e. in the adjoint representation but without the derivative term (as explained above). Now if $\{(\rho_i,V_i)\}_{i\in I}$ is a complete set of irreducible representation of $\gamma$, any representation of $\Gamma$ on $\C^n$ can be decomposed as \eqref{eq:decomp:line1}. In particular, this provides us with the following partitioning of $N$:
         \begin{equation}
-            A_{\mu;ij}\mapsto \rho_i(\gamma)^{\oplus N_i}X^m_{ij}(\rho_j(\gamma)^{-1})^{\oplus N_j},\qquad \gamma\in\Gamma.
+            N=\sum_{i\in}N_i\dim\rho_i.
         \end{equation}
-        Now those blocks that transform under the direct sum of irreducible representaitons can of course again be diveded into block that transform directly under the irreducible representations. We denote those $\dim\rho_i\times\dim\rho_j$ blocks by $X^m_{i\alpha_i,j\beta_j}$ ($\alpha_i,\beta_i=0,\dots,N_i-1$). In the end, we have
+        It is very convenient to apply the analogous partitionning for the matrix $A_\mu$. More precisely, we now denote decompose $A_\mu$ into $(\dim\rho_iN_i)\times(\dim\rho_jN_j)$ sub-blocks $A_{\mu;ij}$ where $i,j\in I$ are indices over the irreducible representations. From \eqref{eq:transfAmu}, those sub-blocks transform as direct sums of the same irreducible representations:
+        \begin{equation}
+            A_{\mu;ij}\mapsto \rho_i(\gamma)^{N_i}A_{\mu;ij}(\rho_j(\gamma)^{-1})^{N_j},\qquad \gamma\in\Gamma.\label{eq:transfAmu2}
+        \end{equation}
+        We can go one step further and decompose the sub-blocks $A_{\mu;ij}$ into $\dim\rho_i\times\dim\rho_j$ sub-sub-blocks $A_{\mu;i\alpha_i,j\beta_j}$ where $\alpha_i,\beta_i=0,\dots N_i-1$. From \eqref{eq:transfAmu2}, they transform directly under the irreducible representations:
         \begin{equation}
             \boxed{A_{\mu;i\alpha_i,j\beta_j}\mapsto\rho_i(\gamma)A_{\mu;i\alpha_i,j\beta_j}\rho_j(\gamma)^{-1},\qquad \gamma\in\Gamma.}
         \end{equation}
-        This is the equation that is important and that we will use to find the invaraint configurations under $\Gamma$. We use the exact same bi-index notations for $X^m$ and $\psi^a$.
+        This notation is very convenient to compute explicitely the invariant configurations, as we will see in several examples. We use the exact same bi-index notations for $X^m$ and $\psi^a$.
 
     \subsection{Field content, quivers and McKay graphs}
 
@@ -1420,44 +1424,181 @@
 
     \subsection{$S=\C\times\C^2/\D_n$}
 
-        We quotient $\C^3$ by the binary dihedral group $\D_n$ that acts on the last two components. A set of irreducible representations of $\D_n$ is given by
+        We quotient $\C^3$ by the binary dihedral group $\D_n$ that acts on the last two components. This group is geneated by two elements that we denote $A$ and $B$. Firther details on its structure and representations are given in appendix \ref{app:su2subgroups}. A set of irreducible representations of $\D_n$ is given by
         \begin{equation}
             \{(\rho_i,V_i)\}_{i=0,\dots,n+2}
         \end{equation}
-        with $V_i=\C$ for $i=0,\dots,3$ and $V_i=\C^2$ for $i=4,\dots,n+2$, so there are $4$ one-dimensional representations and $n-1$ two-dimensional representations. They are explicitely given in section \ref{sec:irrep}. Any representation of $(\rho,\C^N)$ of $\D_n$ can be decomposed as
-        \begin{equation}
-            ()
-        \end{equation}
+        with $V_i=\C$ for $i=0,\dots,3$ and $V_i=\C^2$ for $i=4,\dots,n+2$, so there are $4$ one-dimensional representations and $n-1$ two-dimensional representations. It is more convenient to treat the $1$-dimensional and $2$-dimensional representations idependently. We therefore denote by $\sigma_i$ with $i=0,\dots,3$ the $1$-dimensional representations and $\mu_r$ with $r=1,\dots,n-1$ the $2$-dimensional ones:
+        \begin{equation*}
+        \begin{array}{cc}
+            \multirow{7}{*}{$\begin{array}{|c|c|c|}
+                \hline
+                a & \sigma_a(A) & \sigma_a(B) \text{ ($n$ even or odd)} \\
+                \hline
+                0 & 1 & 1\\ \hline
+                1 & 1 & -1 \\ \hline
+                2 & -1 & 1 \text{ or } i \\ \hline
+                3 & -1 & -1 \text{ or } -i \\
+                \hline
+            \end{array}$} & \\
+            & {\hspace{0.9cm}\mu_r(A) = 
+            \begin{bmatrix}
+                e^{i\frac{\pi}{n}r} & 0\\
+                0 & e^{-i\frac{\pi}{n}r} 
+            \end{bmatrix}}\\
+            & \\
+            & {\rho_r(B) = 
+            \begin{bmatrix}
+                0 & -1 \\
+                1 & 0
+            \end{bmatrix}}
+        \end{array}
+        \end{equation*}
+        We note that there is a slight difference for the $1$-dimensional representations if $n$ is even or odd.
         
-        Using the bi-index notations $A_{\mu;i\alpha_i,j\beta_j}$ with $i,j=0,\dots,n+2$ and $\alpha_i,\beta_j=0,\dots,N_i\dim\rho_i-1$, the invariant configurations must have $A_{\mu;ij}=0$ if $i\neq j$, i.e. it must have a diagonal block-form, wiht block of size $N_i\times N_i$ for $i=0,\dots,3$ and of size $2N_i\times 2N_i$ for $i=4,\dots,n+1$. The blocks transforming under the $2$-dimensional representations must have the form
+        Any representation of $(\rho,\C^N)$ of $\D_n$ can be decomposed as
         \begin{equation}
-            A_{\mu;ii}=
-            \begin{bmatrix}
-                A_{\mu;i0,i0} & A_{\mu;i0,i1} & \cdots & A_{\mu;i,0,i,2N_i-2} & A_{\mu;i,0,i,2N_i-1} \\ 
-                \mp A_{\mu;i0,i1} & A_{\mu;i0,i0} & \cdots & \mp A_{\mu;i,0,i,2N_i-1} & A_{\mu;i,0,i,2N_i-2} \\
-                \vdots & \cdots & \ddots & \vdots & \vdots \\
-                A_{\mu;i,2N_i-2,i,0} & A_{\mu;i,2N_i-2,i1} & \cdots & A_{\mu;i,2N_i-2,i,2N_i-2} & A_{\mu;i,2N_i-2,i,2N_i-1} \\ 
-                \mp A_{\mu;i,2N_i-2,i1} & A_{\mu;i,N_i-2,i,0} & \cdots & \mp  A_{\mu;i,2N_i-2,i,2N_i-1} & A_{\mu;i,2N_i-2,i,2N_i-2}
-            \end{bmatrix}
+            (\rho,\C^n) = \left( \bigoplus^3_{a=0}(\sigma_a,\C) \right)\oplus\left( \bigoplus^{n-1}_{r=1}(\mu_r,\C^2) \right).
         \end{equation}
-        so each block is composed of $N^2_i$ $2\times2$ matrices of the form
+        To find the invariant configurations of the gauge group, we use use the bi-index notation and split the sub-blocks of $A_\mu$ in four categories depending on the dimneisonlity of the representations that they transform in. At last, before goinginto the computation, we mention that it is only necessary to check the invaraince under the two generators of $2\D_n$ to ensure invariance under the whole group.
+        \begin{itemize}
+            \item components $A_{\mu;a\alpha_a,b\beta_b}$ are $1\times 1$ blocks that transform as $A_{\mu;a\alpha_a,b\beta_b}\mapsto\sigma_a(\gamma)A_{\mu;a\alpha_a,b\beta_b}\sigma_b(\gamma)^{-1}$. It follows that only the component with $a,b=0,1$ or $a,b=2,3$ can be non-zero to have invariance under $A$. For invariance under $B$, we find that only the component with $a,b=0,2$ or $a,b=1,3$ can be non-zero if $n$ is even and only the component with $a=b$ if $n$ is odd. In conclusion, the invarint configuration under $A$ and $B$ are of the form
+            \begin{equation}
+                (A_{\mu;ab})=\begin{bmatrix}
+                    \times & 0 & 0 & 0 \\
+                    0 & \times & 0 & 0 \\
+                    0 & 0 & \times & 0 \\
+                    0 & 0 & 0 & \times
+                \end{bmatrix}
+            \end{equation}
+            regardless of the parity of $n$.
+            \item components $A_{\mu;a\alpha_a,r\beta_r}$ are $1\times 2$ blocks that transform as $A_{\mu;a\alpha_a,r\beta_r}\mapsto\sigma_a(\gamma)A_{\mu;a\alpha_a,r\beta_r}\mu_r(\gamma)^{-1}$. More explicitely, each block is of the form $\begin{bmatrix} x_1 & x_2 \end{bmatrix}$ and transforms as
+            \begin{equation*}
+                \begin{bmatrix} x_1 & x_2 \end{bmatrix}\mapsto\sigma_a(A)\begin{bmatrix} x_1\zeta^{-r}_{2n} & x_2\zeta^{r}_{2n} \end{bmatrix}
+            \end{equation*}
+            under the generator $A$. This never invariant unless $a=b=0$. There is no need to check the invariance under $B$ since all these component are already all zero.
+            \item components $A_{\mu;r\alpha_r,a\beta_a}$ are $2\times 1$. The situation is exactly the samme as in the previous point: they must all vanish.
+            \item components $A_{\mu;r\alpha_r,s\beta_s}$ are $2\times 2$ blocks that transform as $A_{\mu;r\alpha_r,s\beta_s}\mapsto\mu_r(\gamma)A_{\mu;r\alpha_r,s\beta_s}\mu_s(\gamma)^{-1}$. Generically speaking, an invariant block under $A$ must satisfy
+            \begin{equation}
+                \begin{bmatrix}
+                    \zeta^{r}_{2n} & 0 \\
+                    0 & \zeta^{-r}_{2n}
+                \end{bmatrix}
+                \begin{bmatrix}
+                    x_1 & x_2 \\
+                    x_3 & x_4
+                \end{bmatrix}
+                \begin{bmatrix}
+                    \zeta^{-s}_{2n} & 0 \\
+                    0 & \zeta^{s}_{2n}
+                \end{bmatrix}=
+                \begin{bmatrix}
+                    x_1\zeta^{r-s}_{2n} & x_2\zeta^{r+s}_{2n} \\
+                    x_3\zeta^{-r-s}_{2n} & x_4\zeta^{-r+s}_{2n}
+                \end{bmatrix}=
+                \begin{bmatrix}
+                    x_1 & x_2 \\
+                    x_3 & x_4
+                \end{bmatrix}.
+            \end{equation}
+            There are two possibilities to have non-vanishing component: $\zeta^{r-s}_{2n}=1$ and $x_2=x_3=0$ or $\zeta^{r+s}_{2n}=1$ and $x_1=x_4=0$ but the latter is actually not possible since $r,s=1,\dots,n-1$. To we find that the blocks must be of the form
+            \begin{equation}
+                A_{\mu;r\alpha_r,s\beta_s}=
+                    \begin{bmatrix}
+                        \times & 0 \\
+                        0 & \times
+                    \end{bmatrix}
+            \end{equation}
+            if $r=s$ and vanishing otherwise. For invariance under $B$, a blocks must satisfy
+            \begin{equation}
+                \begin{bmatrix}
+                    0 & -1 \\
+                    1 & 0
+                \end{bmatrix}
+                \begin{bmatrix}
+                    x_1 & x_2 \\
+                    x_3 & x_4
+                \end{bmatrix}
+                \begin{bmatrix}
+                    0 & -1 \\
+                    1 & 0
+                \end{bmatrix}=
+                \begin{bmatrix}
+                    -x_4 & x_3 \\
+                    x_2 & -x_1
+                \end{bmatrix}=
+                \begin{bmatrix}
+                    x_1 & x_2 \\
+                    x_3 & x_4
+                \end{bmatrix}.
+            \end{equation}
+            which is only possible if $x_1-x_4$ and $x_2=x_3$. Finally, we find that invariance under $A$ and $B$ imposes the block to be of the form
+            \begin{equation}
+                A_{\mu;r\alpha_r,s\beta_s}=
+                    \begin{bmatrix}
+                        x & 0 \\
+                        0 & -x
+                    \end{bmatrix}
+            \end{equation}
+            if $r=s$ and vanishing otherwise.
+        \end{itemize}
+        The invariant gauge field configurations were found to be of the form
+        \begin{equation}
+            A_\mu=
+            {\tiny
+            \left[
+            \begin{array}{*{20}c}
+                \times & 0 & 0 & 0 & & & & & & \cdots & 0 \\
+                0 & \times & 0 & 0 & & & & & & & \\
+                0 & 0 & \times & 0 & & & & & & & \\
+                0 & 0 & 0 & \times & & & & & & & \\
+                & & & & x_1 & 0 & & & & & \\
+                & & & & 0 & -x_1 & & & & & \\
+                & & & & & & x_2 & 0 & & & \\
+                & & & & & & 0 & -x_2 & & & \\
+                \vdots & & & & & & & & \ddots & & \vdots \\
+                & & & & & & & & & x_{n-1} & 0 \\
+                0 & & & & & & & & & 0 & -x_{n_1}
+        \end{array}
+        \right]}\label{eq:invformAmuDn}
+        \end{equation}
+
+        For the real scalar fields $X^m$, we need the action of $2\D_n$ on $\C^3$:
         \begin{equation}
             \begin{bmatrix}
-                A & B \\
-                \mp B & A
+                z_1\\z_2\\z_3
+            \end{bmatrix}\overset{A}{\longmapsto}
+            \begin{bmatrix}
+                1 & 0 & 0 \\
+                0 & \zeta_{2n} & 0 \\
+                0 & 0 & \zeta^{-1}_{2n}
+            \end{bmatrix}
+            \begin{bmatrix}
+                z_1\\z_2\\z_3
+            \end{bmatrix},\qquad
+            \begin{bmatrix}
+                z_1\\z_2\\z_3
+            \end{bmatrix}\overset{B}{\longmapsto}
+            \begin{bmatrix}
+                1 & 0 & 0 \\
+                0 & 0 & i \\
+                0 & i & 0
+            \end{bmatrix}
+            \begin{bmatrix}
+                z_1\\z_2\\z_3
             \end{bmatrix}.
         \end{equation}
-        We take the ``$-$'' signs when $i$ is even and the ``$+$'' signs when $i$ is odd. This comes from the fact that the $2$-dimensional representations involve alternating signs.
+        The partitionning of $X^m$ is exactly the same than $A_\mu$.
+        \begin{itemize}
+            \item the fields $X^0$ and $X^1$ are left untouched by R-symmetry, meaning that the invariant configurations have the same form than the gauge field, i.e. \eqref{eq:invformAmuDn}.
+            \item 
+        \end{itemize}
 
-        R-symmetry acts on the three complex scalar fields as
-        \begin{equation}
-            R(A) =
-            \begin{matrix}
-                A
-            \end{matrix}
-        \end{equation}
-
-        \marker
+        Summary of differences when irreps are not all $1$-dimensional:
+        \begin{itemize}
+            \item gauge field is not necessarily diagonal
+            \item scalar fields can be exchanged by R-symmetry
+        \end{itemize}
 
     \subsection{$S=\C\times\C^2/\T,\mathcal{O},\I$}
 
@@ -1969,159 +2110,174 @@
             \end{itemize}
         \end{examp*}
 
-    \subsection{Toric variety of a cone}
+    \subsection{Constructing toric affine varieties}
+    
+        \subsubsection{Toric variety of a cones}
 
-        A \emph{semigroup} $S$ is a set with an internal associative $+$ operation and a neutral element $0$. It differs from a group in that elements need not have an inverse. A semigroup is \emph{affine} if it can be embedded as a subsemigroup in a lattice $\Z^m$ (\emph{integral}) and if there exists a finite set $\mathscr{A}$ such that $S=\N\mathscr{A}$ (\emph{finitely generated}). 
+            A \emph{semigroup} $S$ is a set with an internal associative $+$ operation and a neutral element $0$. It differs from a group in that elements need not have an inverse. A semigroup is \emph{affine} if it can be embedded as a subsemigroup in a lattice $\Z^m$ (\emph{integral}) and if there exists a finite set $\mathscr{A}$ such that $S=\N\mathscr{A}$ (\emph{finitely generated}). 
+                
+            What is interesting is that affine semigroups allows us to construct affine varities. For this, we need to introduce the notion of \emph{semigroup algebra} $\C[S]$ associated to any semi group $S$. It is the algebra generated by elements $\chi^u$ indexed by elements $u\in S$. The semigroup operation $+$ the induces a multiplication operation for the $\chi^u$ in $\C[S]$ as $\chi^u\cdot\chi^v=\chi^{u+v}$. For instance, the semigroup algebra of $S=\N^n$ is simply $\C[x_1,\dots,x_n]$ and the semigroup algebra of $S=\{2,3,\dots\}\subset\N$ is $\C[x,y]/I(x^3-y^2)$. The important result is now that if $S$ is an affine semigroup then $\Spec(\C[S])$ is an affine variety.
+
+            Given a cone $\sigma$ and its dual cone $\sigma^\vee$, $S_\sigma=\sigma^\vee\cap M$ is finitely generated and hence an affine semigroup. In this way, we may obtain an affine variety from a cone as $U_\sigma=\Spec(\C[S_\sigma])$, this the \emph{variety if the cone} $\sigma$. An important result is that if $K[V]$ is the coordinate ring of an affine variety $V$, then $V=\Spec(K[V])$. From this, we see that $\C[S_\sigma]$ is exactly the coordinate ring of the variety $U_\sigma$ we are looking for.
             
-        What is interesting is that affine semigroups allows us to construct affine varities. For this, we need to introduce the notion of \emph{semigroup algebra} $\C[S]$ associated to any semi group $S$. It is the algebra generated by elements $\chi^u$ indexed by elements $u\in S$. The semigroup operation $+$ the induces a multiplication operation for the $\chi^u$ in $\C[S]$ as $\chi^u\cdot\chi^v=\chi^{u+v}$. For instance, the semigroup algebra of $S=\N^n$ is simply $\C[x_1,\dots,x_n]$ and the semigroup algebra of $S=\{2,3,\dots\}\subset\N$ is $\C[x,y]/I(x^3-y^2)$. The important result is now that if $S$ is an affine semigroup then $\Spec(\C[S])$ is an affine variety.
-
-        Given a cone $\sigma$ and its dual cone $\sigma^\vee$, $S_\sigma=\sigma^\vee\cap M$ is finitely generated and hence an affine semigroup. In this way, we may obtain an affine variety from a cone as $U_\sigma=\Spec(\C[S_\sigma])$, this the \emph{variety if the cone} $\sigma$. An important result is that if $K[V]$ is the coordinate ring of an affine variety $V$, then $V=\Spec(K[V])$. From this, we see that $\C[S_\sigma]$ is exactly the coordinate ring of the variety $U_\sigma$ we are looking for.
-        
-        We have seen how to get an affine variety $U_\sigma$ from a cone $\sigma$. This variety is in fact toric. If $n$ denotes the rank of the lattice $\Z S_\sigma$, then there is torus action $\mathbb{T}=(\C^*)^n$ acting on $U_\sigma$. The torus that it contained is called the \emph{torus corresponding to a lattice} $N=\Z^m$ and is $\mathbb{Z}_N=(\C^*)^n$, so that the rank of the lattice equals the dimension of the torus:
-        \begin{equation}
-            T_N = N\otimes_\Z\C^*=\Hom_\Z(M,\C^*).
-        \end{equation}
-        To torus acts on $U_\sigma$ as $t\cdot\gamma:S_\sigma\to\C:m\mapsto\chi^m(t)\gamma(m)$, for all $t\in T_N$ and $\gamma\in\sigma$ (so$\gamma:S_\sigma\to\C$). To summarize, the steps to extract the $m$-complex dimensional toric variety from a given cone $\sigma$ in $N_\R$ are the following:
-        \begin{enumerate}
-            \item find the dual cone $\sigma^\vee$
-            \item find the intersection $S_\sigma \sigma^\vee\cap\Z^m$, it is a finitely generated semigroup. Find a minimal set of generating vectors $\{w_1,\dots,w_r\}$
-            \item find the polynomial ring $\C[S_\sigma]$ by exponentiating the coordinates of $S_\sigma$
-            \item find the relations between the elements of $\C[S_\sigma]$ corresponding to the generating vectors $w_i$. Such a relation looks like
+            We have seen how to get an affine variety $U_\sigma$ from a cone $\sigma$. This variety is in fact toric. If $n$ denotes the rank of the lattice $\Z S_\sigma$, then there is torus action $\mathbb{T}=(\C^*)^n$ acting on $U_\sigma$. The torus that it contained is called the \emph{torus corresponding to a lattice} $N=\Z^m$ and is $\mathbb{Z}_N=(\C^*)^n$, so that the rank of the lattice equals the dimension of the torus:
             \begin{equation}
-                \sum_{i\in I} m_iw_i=\sum^r_{j\in J}m_jw_j,\quad m_i,m_j\in\N\Rightarrow p(x)=\prod_{i\in I}x^{m_i}x_i-\prod_{j\in J}x^{m_j}x_j
+                T_N = N\otimes_\Z\C^*=\Hom_\Z(M,\C^*).
             \end{equation}
-            where $I\cup J=\{1,\dots,r\}$ and $I\cap J=0$. If $\{p_1,p_2,\dots\}$ is the set of all those relations, then $I(\{p_1,,p_2,\dots\})$ is a prime ideal and $\C[S_\sigma]=\C[x_1,\dots,x_r]/I(p_1,p_2,\dots)$
-            \item $\C[S_\sigma]$ is the coordinate ring of desired the toric variety. We can recover the variety explicitely as $\Spec(\C[S_\sigma])$. It might be easier to use the fact that $\Spec[K[V]]=V$, so $\C[S_\sigma]$ is actually the coordinate ring of $U_\sigma$ and $U_\sigma=Z(\{p_1,p_2,\dots\})$.
-        \end{enumerate}
-        The vtoric variety $U_\sigma$ has the same dimension than $\sigma$.
+            To torus acts on $U_\sigma$ as $t\cdot\gamma:S_\sigma\to\C:m\mapsto\chi^m(t)\gamma(m)$, for all $t\in T_N$ and $\gamma\in\sigma$ (so$\gamma:S_\sigma\to\C$). To summarize, the steps to extract the $m$-complex dimensional toric variety from a given cone $\sigma$ in $N_\R$ are the following:
+            \begin{enumerate}
+                \item find the dual cone $\sigma^\vee$
+                \item find the intersection $S_\sigma = \sigma^\vee\cap\Z^m$, it is a finitely generated semigroup. Find a minimal set of generating vectors $\{w_1,\dots,w_r\}$
+                \item find the polynomial ring $\C[S_\sigma]$ by exponentiating the coordinates of $S_\sigma$
+                \item find the relations between the elements of $\C[S_\sigma]$ corresponding to the generating vectors $w_i$. Such a relation looks like
+                \begin{equation}
+                    \sum_{i\in I} m_iw_i=\sum^r_{j\in J}m_jw_j,\quad m_i,m_j\in\N\Rightarrow p(x)=\prod_{i\in I}x^{m_i}x_i-\prod_{j\in J}x^{m_j}x_j
+                \end{equation}
+                where $I\cup J=\{1,\dots,r\}$ and $I\cap J=0$. If $\{p_1,p_2,\dots\}$ is the set of all those relations, then $I(\{p_1,,p_2,\dots\})$ is a prime ideal and $\C[S_\sigma]=\C[x_1,\dots,x_r]/I(p_1,p_2,\dots)$
+                \item $\C[S_\sigma]$ is the coordinate ring of desired the toric variety. We can recover the variety explicitely as $\Spec(\C[S_\sigma])$. It might be easier to use the fact that $\Spec[K[V]]=V$, so $\C[S_\sigma]$ is actually the coordinate ring of $U_\sigma$ and $U_\sigma=Z(\{p_1,p_2,\dots\})$.
+            \end{enumerate}
+            The vtoric variety $U_\sigma$ has the same dimension than $\sigma$.
 
-        \begin{examp*}
-            If we consider the cone $\sigma$ generated by $e_1$ and $2e_1-e_2$ in $\Z^2$ (where $\{e_1,e_2\}$ is the canonical basis of $\Z^2$), then the dual cone $\sigma^\vee$ is generated by $e_1$ and $e_1+2e_2$. We therefore have $S_\sigma=\sigma^\vee\cap\Z^2$. Ths subset of $\Z^2$ is spanned by $e_1,e_1+e_2$ and $e_1+2e_1$:
+            \begin{examp*}
+                If we consider the cone $\sigma$ generated by $e_2$ and $2e_1-e_2$ in $\Z^2$ (where $\{e_1,e_2\}$ is the canonical basis of $\Z^2$), then the dual cone $\sigma^\vee$ is generated by $e_1$ and $e_1+2e_2$. We therefore have $S_\sigma=\sigma^\vee\cap\Z^2$. Ths subset of $\Z^2$ is spanned by $e_1,e_1+e_2$ and $e_1+2e_1$:
+                \begin{equation}
+                    S_\sigma=\Span(\{(1,0),(1,1),(1,2)\}).
+                \end{equation}
+                Note that, even though it is a $2$-dimensional cone, i.e. the intersection of this cone and the lattice actually need three vectors to be completely generated. This is often the case when dealing with lattices.
+                By exponentiating we get the semigroup algebra $\C[S_\sigma]=\C[x,xy,xy^2]$. If we denote $u=x,v=xy$ and $w=xy^2$, relation between those three variables is $uw=v^2$, so $\C[S_\sigma]=\C[u,v,w]/I(v^2-uw)$. It only remains to compute the spectrum, and we find that
+                \begin{equation}
+                    \Spec(\C[S_\sigma])=\C^2/\Z^2.
+                \end{equation}
+                In conclusion the toric varitey associated to the cone $\sigma$ is the abelian orbifold $\C^2/\Z^2$.
+            \end{examp*}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.4]{Pictures/toricdiagZ2orbifold.png}
+                \caption{Representations of the cone and dual cone in the lattice $\Z^2$.}
+            \end{figure}
+
+            The previous example illistrate a more genral result:
+            \begin{prop*}
+                All abelian orbifolds are toric varities.
+            \end{prop*}
+            Note that this result is not that surprising considering the general expression \eqref{eq:toricvargenform}.
+
+            \begin{examp*}
+                Let us start with $\sigma=\Cone(\{e_1,2e_1+e_2\})$. We then get $\sigma^\vee=\Cone(\{e_2,e_1-2e_2\})$ so $S_\sigma=\Span_{\Z^+}(\{e_2,e_1-2e_2\})$ and $\C[S_\sigma]=\C[y,xy^{-2}]=\C[u,v]$.
+            \end{examp*}
+
+            Now what happens with faces? An inclusion of face $\tau\subset\sigma$ gives an inclusions of the semigroups $S_\sigma\subset S_\tau$ and $\C[S_\sigma]\subset \C[S_\tau]$. This induces a morphism $U_\tau\to U_\sigma$ of affine toric varieties and it happens the this morphism is an open embedding.
+            \begin{examp*}
+                If $\sigma=\Cone(e_1,e_2)$ then we find $U_\sigma=\C^2$. There are three faces: $\rho_1=\Cone(e_1)$, $\rho_2=\Cone(e_2)$ and the origin $0$. These faces can be described by hyperplane $H_{e_2}, H_{e_1}$\marker and $H_{e_1+e_2}$ respectively, so we get
+                \begin{align}
+                    \C[S_{\rho_1}] &= \C[x,y,y^{-1}],
+                    \C[S_{\rho_2}] &= \C[x,x^{-1},y],
+                    \C[S_{0}] &= \C[x,y,x^{-1},y^{-1}].
+                \end{align}
+                They define the varieties $U_{\rho_1}=\C^*\times\C$, $U_{\rho_1}=\C\times\C^*$ and $(\C^*)^2$\marker, which are all open subvarieties of $\C^2$.
+            \end{examp*}
+
+        \subsection{Toric variety of a fan}
+            
+            A \emph{fan} is a collection $\Delta$ of cones in $N_\R$ such that each face of a cone is also a cone and the intersection of two cones is a face of each. Those two requirement imply in particular that the intersection of two cones in a fan is again a cone in the fan. Note that to any cone corresponds a fan containing the cone itself and all its faces.
+
+            For a cone $\sigma$ in $N_\R$ the variety $U_\sigma$ contains the torus $T_N$ so fan in $N_\R$ produces a collection of varieties that all contain th same torus $T_N$. Gluing together the affine varities we obtain $X_\Delta$, it is clear that $T_N$ is an open subset of $X_\Delta$ and that $T_N$ acts on $X_\Delta$. This is called the \emph{toric variety of a fan}. For the toric varitey of a fan, each cone in the fan turns out to be determines an orbit $O(\sigma)$ of the torus.
+
+            Generally speaking, an $m$-dimensional algebraic variety of a fan can be obtained as as particular holomorphic quotient of $\C^n$. If $\Z_\Delta\subset\C^n$ a set of points and $G\cong (\C^*)^{n-m}\times\Gamma$ is the group formed by the algebraic torus and an abelian discrete group $\Gamma$, then
             \begin{equation}
-                S_\sigma=\Span(\{(1,0),(1,1),(1,2)\}).
+                \boxed{X_\Delta=\frac{\{\C^n\backslash\Z_\Delta\}}{G}.}\label{eq:toricvargenform}
             \end{equation}
-            Note that, even though it is a $2$-dimensional cone, i.e. the intersection of this cone and the lattice actually need three vectors to be completely generated. This is often the case when dealing with lattices.
-            By exponentiating we get the semigroup algebra $\C[S_\sigma]=\C[x,xy,xy^2]$. If we denote $u=x,v=xy$ and $w=xy^2$, relation between those three variables is $uw=v^2$, so $\C[S_\sigma]=\C[u,v,w]/I(v^2-uw)$. It only remains to compute the spectrum, and we find that
+            Let us explain this construction.
+            
+            If $\Delta$ is an $m$-dimensional fan, we denote by $\Delta(j)$ ($j\leq n$) the collection of $j$-dimensional cones in $\Delta$. The set $\Delta(1)\subset\Delta$ is then the collection of all one-dimensional cones in $\Delta$, i.e. the set of edges. To each cone $\sigma\in\Delta(1)$ is associated a unique vector $v_\sigma\in N$ that generates the sublattice $\sigma\cap N$. This vactor is called the \emph{primitive generator} of $\sigma$. Let $v_1,\dots,v_n$ be the primitive generators of of each $\sigma\in\Delta(1)$. Note that we always have $n\geq m$ since $\Delta$ is $m$-dimensional. Each vector $v_i$ has component $v^k_i$ ($i=1,\dots,n$,$k=1,\dots,m$) so we can construct an $m\times n$ matrix by putting the vectors in columns:
             \begin{equation}
-                \Spec(\C[S_\sigma])=\C^2/\Z^2.
-            \end{equation}
-            In conclusion the toric varitey associated to the cone $\sigma$ is the abelian orbifold $\C^2/\Z^2$.
-        \end{examp*}
-        \begin{figure}[H]
-            \centering
-            \includegraphics[scale=0.4]{Pictures/toricdiagZ2orbifold.png}
-            \caption{Representations of the cone and dual cone in the lattice $\Z^2$.}
-        \end{figure}
-
-        The previous example illistrate a more genral result:
-        \begin{prop*}
-            All abelian orbifolds are toric varities.
-        \end{prop*}
-        Note that this result is not that surprising considering the general expression \eqref{eq:toricvargenform}.
-
-        \begin{examp*}
-            Let us start with $\sigma=\Cone(\{e_1,2e_1+e_2\})$. We then get $\sigma^\vee=\Cone(\{e_2,e_1-2e_2\})$ so $S_\sigma=\Span_{\Z^+}(\{e_2,e_1-2e_2\})$ and $\C[S_\sigma]=\C[y,xy^{-2}]=\C[u,v]$.
-        \end{examp*}
-
-        Now what happens with faces? An inclusion of face $\tau\subset\sigma$ gives an inclusions of the semigroups $S_\sigma\subset S_\tau$ and $\C[S_\sigma]\subset \C[S_\tau]$. This induces a morphism $U_\tau\to U_\sigma$ of affine toric varieties and it happens the this morphism is an open embedding.
-        \begin{examp*}
-            If $\sigma=\Cone(e_1,e_2)$ then we find $U_\sigma=\C^2$. There are three faces: $\rho_1=\Cone(e_1)$, $\rho_2=\Cone(e_2)$ and the origin $0$. These faces can be described by hyperplane $H_{e_2}, H_{e_1}$\marker and $H_{e_1+e_2}$ respectively, so we get
-            \begin{align}
-                \C[S_{\rho_1}] &= \C[x,y,y^{-1}],
-                \C[S_{\rho_2}] &= \C[x,x^{-1},y],
-                \C[S_{0}] &= \C[x,y,x^{-1},y^{-1}].
-            \end{align}
-            They define the varieties $U_{\rho_1}=\C^*\times\C$, $U_{\rho_1}=\C\times\C^*$ and $(\C^*)^2$\marker, which are all open subvarieties of $\C^2$.
-        \end{examp*}
-
-    \subsection{More general constructions}
-
-        In general, an affine variety canbe defined by an ideal in $\C[x_1,\dots,x_n]$. In the same way, a toric affine variety can be defined by a \emph{toric ideal} (or \emph{binomial ideal}), i.e. an ideal in $\C[x_1,\dots,x_n]$ generated by binomials (polynoamils with precisely two non-zero coefficients).
-        \begin{theorem*}
-            Let $V$ be an affine variety. The following are equivalent:
-            \begin{itemize}
-                \item $V$ is toric,
-                \item $V=\Spec(\C[S])$ for an affine semigroup $S$,
-                \item $V=V(I)$ for a toric ideal.
-            \end{itemize}
-        \end{theorem*}
-        This is a very powerfull theorem since is states that an affine avariety is toric if and only if the generating polynomials of its ideal are binomials.
-
-        %Toric varities of a cone are a way to construct toric varieties but there are others that we will not detail here.
-
-    \subsection{Toric variety of a fan}
-        
-        A \emph{fan} is a collection $\Delta$ of cones in $N_\R$ such that each face of a cone is also a cone and the intersection of two cones is a face of each. Those two requirement imply in particular that the intersection of two cones in a fan is again a cone in the fan. Note that to any cone corresponds a fan containing the cone itself and all its faces.
-
-        For a cone $\sigma$ in $N_\R$ the variety $U_\sigma$ contains the torus $T_N$ so fan in $N_\R$ produces a collection of varieties that all contain th same torus $T_N$. Gluing together the affine varities we obtain $X_\Delta$, it is clear that $T_N$ is an open subset of $X_\Delta$ and that $T_N$ acts on $X_\Delta$. This is called the \emph{toric variety of a fan}. For the toric varitey of a fan, each cone in the fan turns out to be determines an orbit $O(\sigma)$ of the torus.
-
-        Generally speaking, an $m$-dimensional algebraic variety of a fan can be obtained as as particular holomorphic quotient of $\C^n$. If $\Z_\Delta\subset\C^n$ a set of points and $G\cong (\C^*)^{n-m}\times\Gamma$ is the group formed by the algebraic torus and an abelian discrete group $\Gamma$, then
-        \begin{equation}
-            \boxed{X_\Delta=\frac{\{\C^n\backslash\Z_\Delta\}}{G}.}\label{eq:toricvargenform}
-        \end{equation}
-        Let us explain this construction.
-        
-        If $\Delta$ is an $m$-dimensional fan, we denote by $\Delta(j)$ ($j\leq n$) the collection of $j$-dimensional cones in $\Delta$. The set $\Delta(1)\subset\Delta$ is then the collection of all one-dimensional cones in $\Delta$. Each cone in $\Delta(1)$ is generated by a vector of $N=\Z^n$ and we denote those generating vectors by $v_1,\dots,v_n$. Note that we always have $n\geq m$. Each vector $v_i$ has component $v^k_i$ ($i=1,\dots,n$,$k=1,\dots,m$) so we can construct an $m\times n$ matrix by putting the vectors in columns:
-        \begin{equation}
-            \begin{bmatrix}
-                v^1_1 & & & \cdots & \hspace{0.5cm} & & v^1_n \\
-                \vdots & & & & & & \vdots \\
-                v^m_1 & & & \cdots & & & v^m_n
-            \end{bmatrix}
-        \end{equation}
-        The kernel of this map from $\C^n$ to $\C^m$ is $\C^{n-m}$. Let $Q^a$ ($a=1,\dots,n-m$) be vectors that generate this kernel, i.e.
-        \begin{equation}
-            \sum^n_{i=1}v^k_i Q^a_i=0\label{eq:detQalpha}
-        \end{equation}
-        for all $a=1,\dots,n-m$ and $k=1,\dots,m$. We can now consider the map
-        \begin{equation}
-            \phi:\left(
-            \begin{array}{ccc}
-                \C^n & \longrightarrow & \C^m \\
-                (z_1,\dots,z_n) & \longmapsto & (\prod^n_{i=1}z^{v^1_i}_i,\dots,\prod^n_{i=1}z^{v^m_i}_i)
-            \end{array}
-            \right).
-        \end{equation}
-        and it is clear that its kernel is $\tilde{G}\equiv\Ker(\phi)=(\C^*)^{n-m}$\marker. One can see that this kernel naturally acts on $\C^n$ as
-        \begin{equation}
-            \left(
-            \begin{array}{ccc}
-                (\C^*)_a\times\C^n & \longrightarrow & \C^n \\
-                (\lambda,z_1,\dots,z_n) & \longmapsto & (\lambda^{Q^a_1} z_1,\dots,\lambda^{Q^a_n} z_n)
-            \end{array}
-            \right)
-        \end{equation}
-        where $Q^a_i$ are the component ofthe vectors $Q^a$ defined above. We defined the action of $\tilde{G}=(\C^*)^{n-m}$ on $\C^n$for each factor separately for simplicity.
-
-        The $n$ vecotrs $v_i$ generate over $\Z$ a sublattice of $N$ that we denote $N'$. The discrete group obtained by taking the quotient of $N$ by this sublattice
-        \begin{equation}
-            \Gamma=N/N'
-        \end{equation}
-        is a subgroup of $G$ and taking the quotient by $\Gamma$ gives rise to the orbifold singularities.
-
-        The last piece of data in the construction isthe zero set $Z_\Delta$. For any subset of $\Delta(1)$ (corresponding to the vectors $v_{i_1},\dots,v_{i_l}$) which does not generate a cone in $\Delta$, we define the algebraic set $V_{i_1,\dots,i_l}=Z(z_{i_1},\dots,z_{i_l})$, i.e. the hyperplane of $\C^n$ defined by $z_{i_1}=\dots=z_{i_l}=0$. $Z_\Delta$ si then defined as the union of all such $V_{i_1,\dots,i_l}$.
-
-        \begin{examp*}
-            If we consider the $2$-dimensional fan $\Delta=\Fan(e_1,e_2,-e_1-e_2)$ in $N=\Z^3$ (so $m=2$), we have three one-dimensional cones generated by $v_1=e_1,v_2=e_2$ and $v_3=-e_2-e_2$ (so $n=3$) and the component matrix is
-            \begin{equation}
+                V=
                 \begin{bmatrix}
-                    1 & 0 & -1 \\
-                    0 & 1 & -1
-                \end{bmatrix}.
+                    v^1_1 & & & \cdots & \hspace{0.5cm} & & v^1_n \\
+                    \vdots & & & & & & \vdots \\
+                    v^m_1 & & & \cdots & & & v^m_n
+                \end{bmatrix}
             \end{equation}
-            We only have one vector $Q^a$ to find and since it must satisfy the relation \eqref{eq:detQalpha}, i.e. in this case $Q_1v_1+Q_2v_2+Q_3v_3=0$, it implies that $Q=(1,1,1)$. The group action of $\tilde{G}=\C^*$ on the $\C^3$ is then
+            This defines a linear map from $\C^n$ to $\C^m$ whose kernel is $\C^{n-m}$. Let $Q^a$ ($a=1,\dots,n-m$) be vectors that generate this kernel, then we must have
             \begin{equation}
-                (z_1,z_2,z_3)\mapsto (\lambda z_1,\lambda z_2\lambda z_3).
+                VQ^a=0\Leftrightarrow \sum^n_{i=1}v^k_i Q^a_i=0,\qquad k=1,\dots,m\label{eq:detQalpha}
             \end{equation}
-            Since $v_1,v_2$ and $v_3$ generate all of $\Z^2$, $\Gamma=\{0\}$ is the trivial group and $G=\tilde{G}\times\Gamma\cong\cong\tilde{G}=\C^*$. There is no subset of $\{v_1,v_2,v_3\}$ that generates a cone which is not in $\Delta$ (because we defined $\Delta$ as the fan generated by those vectors in the first place) therefore $Z_\Delta=\{(0,0,0)\}$\marker. Finally, the affine toric variety of $\Delta$ is
+            for all $a=1,\dots,n-m$. We now put that on the side for a moment. To each edge $\sigma\in\Delta(1)$ with associate a complex coordinate $x_\sigma$
+            and consider the new map
             \begin{equation}
-                X_\Delta=\frac{\C^3\backslash Z_\Delta}{G}=\frac{(\C^*)^3}{\C^*}=\C\P^2.
+                \phi:\left(
+                \begin{array}{ccc}
+                    \C^n & \longrightarrow & \C^m \\
+                    (z_1,\dots,z_n) & \longmapsto & (\prod^n_{i=1}z^{v^1_i}_i,\dots,\prod^n_{i=1}z^{v^m_i}_i)
+                \end{array}
+                \right).
             \end{equation}
-        \end{examp*}
+            In order to have $\phi(z_1,\dots,z_n)=0$ we must have  It is clear that the kernel of $\phi$ is $\tilde{G}\equiv\Ker(\phi)=(\C^*)^{n-m}$\marker. One can see that this kernel naturally acts on $\C^n$ as
+            \begin{equation}
+                \left(
+                \begin{array}{ccc}
+                    (\C^*)_a\times\C^n & \longrightarrow & \C^n \\
+                    (\lambda,z_1,\dots,z_n) & \longmapsto & (\lambda^{Q^a_1} z_1,\dots,\lambda^{Q^a_n} z_n)
+                \end{array}
+                \right)
+            \end{equation}
+            where $Q^a_i$ are the component ofthe vectors $Q^a$ defined above. We defined the action of $\tilde{G}=(\C^*)^{n-m}$ on $\C^n$for each factor separately for simplicity.
 
-        \begin{prop*}
-            A toric variety $\Delta$ is compact if and only its fan $\Delta$ span the $N_\R$.
-        \end{prop*}
+            The $n$ vecotrs $v_i$ generate over $\Z$ a sublattice of $N$ that we denote $N'$. The discrete group obtained by taking the quotient of $N$ by this sublattice
+            \begin{equation}
+                \Gamma=N/N'
+            \end{equation}
+            is a subgroup of $G$ and taking the quotient by $\Gamma$ gives rise to the orbifold singularities.
+
+            The last piece of data in the construction is the zero set $Z_\Delta$. Let us denote by $\mathcal{S}$ any subset of $\Delta(1)$ that does not generate a cone in $\Delta$ and $V(\mathcal{S})\subset\C^n$ the linear subspace defined by setting $x_\sigma=0$ for all $\sigma\in\mathcal{S}$, i.e. the hyperplane generated by the edges that does not generate a cone in $\Delta$. We the denote $Z_\Delta$ the union of all those hyerplanes, i.e. of all the $V(\mathcal{S})$. Our toric variety is defined as a qutient of $\C^n\backslash Z_\Delta$.
+
+            To summarize, we can construct affine toric variety $X_\Delta$ from the $m$-fan $\Delta$ by following these steps:
+            \begin{itemize}
+                \item find the primitive generators $v_1,\dots,v_n$ of the $1$-cones of $\Delta$
+                \item find the $n-m$ vectors $Q^a$ such that $\sum_iv^k_i Q^a_i=0$
+                \item compute $\Gamma=N/N'$
+                \item find the subsets of $\{v_1,\dots,v_n\}$ that don't generate in $\Delta$ and compute $Z_\Delta$
+                \item the toric affine variety is $X_\Delta=(\C^n\backslash Z_\Delta)/((\C^*)^{n-m}\times\Gamma)$.
+            \end{itemize}
+
+            \begin{examp*}
+                If we consider the $2$-dimensional fan $\Delta=\Fan(e_1,e_2,-e_1-e_2)$ in $N=\Z^3$ (so $m=2$), we have three one-dimensional cones generated by $v_1=e_1,v_2=e_2$ and $v_3=-e_2-e_2$ (so $n=3$) and the component matrix is
+                \begin{equation}
+                    \begin{bmatrix}
+                        1 & 0 & -1 \\
+                        0 & 1 & -1
+                    \end{bmatrix}.
+                \end{equation}
+                We only have one vector $Q^a$ to find and since it must satisfy the relation \eqref{eq:detQalpha}, i.e. in this case $Q_1v_1+Q_2v_2+Q_3v_3=0$, it implies that $Q=(1,1,1)$. The group action of $\tilde{G}=\C^*$ on the $\C^3$ is then
+                \begin{equation}
+                    (z_1,z_2,z_3)\mapsto (\lambda z_1,\lambda z_2\lambda z_3).
+                \end{equation}
+                Since $v_1,v_2$ and $v_3$ generate all of $\Z^2$, $\Gamma=\{0\}$ is the trivial group and $G=\tilde{G}\times\Gamma\cong\cong\tilde{G}=\C^*$. There is no subset of $\{v_1,v_2,v_3\}$ that generates a cone which is not in $\Delta$ (because we defined $\Delta$ as the fan generated by those vectors in the first place) therefore $Z_\Delta=\{(0,0,0)\}$\marker. Finally, the affine toric variety of $\Delta$ is
+                \begin{equation}
+                    X_\Delta=\frac{\C^3\backslash Z_\Delta}{G}=\frac{(\C^*)^3}{\C^*}=\C\P^2.
+                \end{equation}
+            \end{examp*}
+
+            \begin{prop*}
+                A toric variety $X_\Delta$ is compact if and only its fan $\Delta$ span the $N_\R$.
+            \end{prop*}
+
+        \subsubsection{Fan from a toric variety}
+
+        \subsection{More general constructions}
+
+            In general, an affine variety canbe defined by an ideal in $\C[x_1,\dots,x_n]$. In the same way, a toric affine variety can be defined by a \emph{toric ideal} (or \emph{binomial ideal}), i.e. an ideal in $\C[x_1,\dots,x_n]$ generated by binomials (polynoamils with precisely two non-zero coefficients).
+            \begin{theorem*}
+                Let $V$ be an affine variety. The following are equivalent:
+                \begin{itemize}
+                    \item $V$ is toric,
+                    \item $V=\Spec(\C[S])$ for an affine semigroup $S$,
+                    \item $V=V(I)$ for a toric ideal.
+                \end{itemize}
+            \end{theorem*}
+            This is a very powerfull theorem since is states that an affine avariety is toric if and only if the generating polynomials of its ideal are binomials.
+
+            %Toric varities of a cone are a way to construct toric varieties but there are others that we will not detail here.
 
     \subsection{Relation between fan varieties, cone varities and local coordinates}
 
@@ -2150,20 +2306,53 @@
 
     \subsection{Calabi-Yau toric varities}
 
-        As motivated in the beginning, we are mainly interested in Calabi-Youaffine varities, so Calabi-Yau affine troic varieties in this case. A very convenient property of the toric varieties is that the CY condition is translated into a simple condition on the combinatoric data of the variety.
+        As motivated in the beginning, we are mainly interested in Calabi-You affine varities, so Calabi-Yau affine toric varieties in this case. A very convenient property of the toric varieties is that the CY condition is translated into a simple condition on the combinatoric data of the variety.
 
-        Recall that a divisor of an affine variety is a linear combination of codimension-one irreducible subvarieties. A \emph{toric divisor} is a divisor invariant under the action of $G$. Using the homogeneous coordinates $(z_i)$, we can easily construct $G$-invariant subvarieties.
-
+        Recall that a divisor of an affine variety is a linear combination of codimension-one irreducible subvarieties. A \emph{toric divisor} is a divisor invariant under the action of $G$. Using the homogeneous coordinates $(z_i)$, we can easily construct $G$-invariant subvarieties. The simple algebraic subsets
+        \begin{equation}
+            \{(z_1,\dots,z_n)|z_i=0 \forall i\in I\subset\{1,\dots,n\}\}
+        \end{equation}
+        are $G$-invariant so the subvarieties
+        \begin{equation}
+            D_i=\{z_i=0\}\cap X_\Delta
+        \end{equation}
+        are toric divisors. Even stronger, one can actually show that they generate the full group of divisors of $X_\Delta$ and that if $X_\Delta$ is smooth with canonical bundle $K_X$, we have
+        \begin{equation}
+            K_X=\mathcal{O}\left(-\sum^n_{i=1} D_i\right).
+        \end{equation}
+        This important result allows us us to state the Calabi-Yau condition (triviality of the canonical bundle) in a very simple way. The only thing left is to see that any $G$-invairant function is asection of the trivial bundle and that $K_X=\mathcal{O}\left(-\sum^n_{i=1} D_i\right)$ is trivial if and only if
+        \begin{equation}
+            G:z_1\dots z_n\mapsto\lambda^{\sum^n_{i=1}Q^a_i}z_1\dots z_n\quad\Leftrightarrow\sum^n_{i=1}Q^a_i=0.
+        \end{equation}
+        This last condition is equivalent to the existence of a vector $w\in M$ such that $\langle w,v_i\rangle=1$ for all $v_i$ in the fan. Finally, we get the follwing criteria:
         \begin{prop*}
-            The otric variety $X_\Delta$ is CY if and only ifall the vectors $v_i$ in $\Delta$ end on the same hyperplane in $N$, which happens if and only if $\sum^n_{i=1}Q^a_i=0$ for $a=1,\dots,n-m$.
+            The toric variety $X_\Delta$ is CY if and only if all the vectors $v_i$ in $\Delta$ end on the same hyperplane in $N$, which happens if and only if $\sum^n_{i=1}Q^a_i=0$ for $a=1,\dots,n-m$.
         \end{prop*}
+
         Following from the proposition on compactness of toric varieties that we gave before, this implies tha toric CY varieties are necessarily non-compact.
+
+        \begin{table}[H]
+            \centering
+            $
+            \begin{array}{|c|c|c|c|c|c|}
+                \hline
+                X_\Delta & \dim_\C & \text{generating polynomial} & \text{compact} & \text{CY} & \Delta \\ \hline
+                \C^2 & 2 & & \text{no} & \text{yes} & \Fan(e_1,e_2) \\ \hline
+                \C^2/\Z_k & 2 & uv-w^2 & \text{no} & \text{yes} & \Fan(e_2,ke_1-e_2) \\ \hline
+                \C^3/\Z_k & 3 &  & \text{no} & \text{yes} & \Fan(e_2,ke_1-e_2,e_3) \\ \hline
+                \mathcal{C}_0 & 3 & x_1x_2-x_3x_4 & \text{no} & \text{yes} & \Fan(e_3,e_1+e_3,e_1+e_2+e_3,e_2+e_3) \\ \hline
+                \text{SSP} & & & & & \\ \hline
+            \end{array}
+            $
+            \caption{Useful list of toric varieties.}
+        \end{table}
 
     \subsection{Toric diagrams and p-q webs}
 
         For CY toric varieties, the combinatoric information encoded in the fan can be expressed in term of a reduced lattice of one less dimension. This is espacially convenient for us since we are mainly concerned about toric CY threefolds, which can therefore be fully encoded in the $2$-dimensional lattice. Indeand, instead of drawing a $3$-dimensional fan, we can simply project iton the special plane defined by $\langle w,v_i\rangle=1$, and we get the \emph{toric diagram}.
 
         We can also write the dual of the toric diagram by replacing each line with an orthogonal line. This is called the \emph{peq-web}. They have a nice physical interpreatation as webs intersecting $5$-banes.
+
     \subsection{Singularities}
 
         A cone is said to be \emph{smooth} if it is generated by part of a lattice basis.
@@ -2181,7 +2370,9 @@
 
         A toric variety is nonsingular if its cones of maximal dimension are generated by a basis of the lattice. This implies that every toric variety has a resolution of singularities given by another toric variety, which can be constructed by subdividing the maximal cones into cones of non-singular toric varieties.
 
-    \subsection{Example 1: the conifold}
+\section{Iportant examples}
+    
+    \subsection{The conifold}
 
         The singular conifold $\mathcal{C}_0$ can be viewed as the toric variety of the fan $\Delta=\Fan(e_3,e_1+e_3,e_1+e_2+e_3,e_2+e_3)$ in $\Z^3$. This fan contains $10$ cones on total. Denoting the four generating vectors as $v_1,v_2,v_3$ and $v_4$, we find that the only charge vector $Q$ must satisfy $Q_1v_1+Q_2v_2+Q_3v_3+Q_4v_4=0$ which gives $Q=(1,-1,1-1)$ so $\tilde{G}=\C^*$ acts as
         \begin{equation}
@@ -2189,7 +2380,7 @@
         \end{equation}
         We also find that $\Gamma=\{0\}$ is the trivial group and that $Z_\Delta=Z(z_1,z_3)\cup Z(z_2,z_4)$. Finally,
         \begin{equation}
-            \mathcal{C_0}=\frac{\C^3\backslash Z_\Delta}{\C^*}.
+            \mathcal{C}_0=\frac{\C^3\backslash Z_\Delta}{\C^*}.
         \end{equation}
 
         Note that, by definition we also have $\mathcal{C}_0=Z(x_1x_4-x_2x_3)$ so it is generated by a binomial andistherefore expected to be toric. 
@@ -2213,13 +2404,15 @@
             \label{fig:Z5graphs}
        \end{figure}
 
-    \subsection{Examples 1: the suspended pinch point}
+    \subsection{The suspended pinch point}
 
        \begin{figure}
            \centering
            \includegraphics[scale=0.4]{Pictures/SPPtoricdiagram.png}
            \caption{Toric diagram of the SPP.}
        \end{figure}
+
+    \subsection{del Pezzo surfaces}
 
 \section{Gauged linear sigma model (GLSM)}
 
