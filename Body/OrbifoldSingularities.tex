@@ -1,0 +1,1152 @@
+\part{Orbifold singularities}
+
+\section{Strings on orbifolds}
+
+    Let us a consider a smooth background space $M^{(6)}$ and $\Gamma$ a discrete group acting on it. If $\Gamma$ has no fixed point, the quotient space $M^{(6)}/\Gamma$ is smooth and is a manifold but if the action of $\Gamma$ has a fixed point then the quotient space $M^{(6)}/\Gamma$ is singular and is an orbifold. Any orbifold can be described as an affine variety therefore it is the description that we will use most often. When the transverse space is singular, the worldvolume theory corresponds to a specific projection of the parent theory that we found in the smooth case $S=\C^3$. We call it the \emph{daughter theory}. This projections depends on the type of singularity that one considers. The simplest case is the the case of orbifold singularity, i.e. when the transverse space is a quotient space with a non-free action.
+
+    \subsection{Generalities}
+
+        We now wish to pick a discrete group $\Gamma$ and which acts non-trivially on $\R^6$. There are several possibilities:
+        \begin{itemize}
+            \item $\Gamma\subset\SU(4)$ naturally acts on $\R^6$. This does not require a choice of complex structure. We get an $\mN=0$ theory.
+            \item $\Gamma\subset\SU(3)$ naturally acts on $\C^3$, this also requires a choice of complex structure on $\R^6$. We get an $\mN=1$ theory.
+            \item $\Gamma\subset\SU(2)$ naturally acts on the second factor of $\C\times\C^2$, so this requires a choice of complex structure on $\R^6$. We get an $\mN=2$ theory.
+        \end{itemize}
+
+        We are interested in supersymmetric theories so we take $\Gamma\subset\SU(3)$ with the action
+        \begin{equation}
+            \cdot:\left(
+            \begin{array}{ccc}
+                \Gamma\times\C^3 & \longrightarrow & \C^3 \\
+                (\gamma,z) & \longmapsto & \gamma\cdot z
+            \end{array}
+            \right)
+        \end{equation}
+        is the representation of $\Gamma$ coming from the fundamental representation of $\SU(3)$, so $\cdot$ is just the matrix product. We can see that the origin is always a fixed point so this action is never free. Since $\C^3$ is a smooth manifold, this makes $\C^3/\Gamma$ an orbifold. Note this case naturally includes the case $\Gamma\subset\SU(2)$ too (as $\SU(2)\subset\SU(3)$), just not the case $\Gamma\in\SO(6)$. When $\Gamma\subset\SU(2\subset\SU(3)$, it acts trivially on one component so we write $S=\C\times\C^2/\Gamma$.
+
+        If $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$ \marker{Details ?}, see appendix \ref{sec:CY}.
+
+        If the transverse space is $S=\C^3/\Gamma$, the field theory must be projected to a theory which also invariant under $\Gamma$, seen as a subgroup of the R-symmetry group. The prescription is straihgt-forward: we can use the elements $\gamma\in\Gamma$ to project out that states that are not $\Gamma$-invariant. That is, if $\rho$ is an embedding of $\Gamma$ in the gauge group $\U(N)$, only the the fields such that
+        \begin{subequations}
+            \begin{empheq}[box=\widefbox]{align}
+                \rho(\gamma) A_\mu \rho(\gamma)^{-1} &= A_\mu,\label{eq:proj1}\\
+                R(\gamma)\rho(\gamma) \psi_{IJ} \rho(\gamma)^{-1} &= \psi_{IJ}\label{eq:proj2},\\
+                R(\gamma)\rho(\gamma) X_{IJ} \rho(\gamma)^{-1} &= X_{IJ}\label{eq:proj3}
+            \end{empheq}
+        \end{subequations}
+        are kept in the spectrum, where $\rho$ is a unitary representation of $\Gamma$ on $\C^N$ and $R=\boldsymbol{4},\boldsymbol{6}$.
+        Let us make two remarks:
+        \begin{itemize}
+            \item the term $U\p_\mu U^{-1}$ is absent from \ref{eq:proj1}. Indeed, $\Gamma$ is a finite group and the only smooth functions $x\mapsto\Gamma$ are the constant ones. Consequently, transformations of the gauge field under a finite subgroup of its gauge group cannot depend on $x$.
+            \item the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$, in agreement with \eqref{eq:AHom}-\eqref{eq:phiHom}. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
+        \end{itemize}
+
+    \subsubsection{Further details on the projection}
+
+        Riemannian symmetric spaces, which are locally isometric to homogeneous spaces $G/H$ have local holonomy isomorphic to $H$. \marker{Continue and detail.}
+
+    \subsection{Twisted sector}
+
+        What implications does have strings on an orbfold have for the spectrum? In general, we distinguish two kinds of states:
+        \begin{itemize}
+            \item the \emph{untiwsted states} are the states $\Psi$ that are invariant under the actio of $\Gamma$: $\gamma\cdot\Psi=\Psi$ for all $\gamma\in \Gamma$. They are the generators of the $\Gamma$-invariant part of the Hilbert space and can easily be constrcuted by superposing all the images $\gamma\cdot\Psi_0$.
+            \item closed strings must start and end at the same point, i.e. $X(\tau,\sigma+2\pi)=X(\tau,\sigma)$. Usually, a strings that starts at connects a point of $M^{(6)}$ to another point of its orbit, i.e. $X(\tau,\sigma+2\pi)=\gamma\cdot[X(\tau,\sigma)]$ would not be allowed. However, in $M^{(6)}/\Gamma$ it is an allowed configuration. Those new states that appear after orbifolding are the \emph{twisted states}. There existsnce is due to the fact that strings are extended objects. One can see that there is one twisted sector per conjugacy classe of $\Gamma$ \marker{details ?} and that the untwisted states are recovered with $\gamma=e$.
+        \end{itemize}
+        The individual twisted sector quantum states of the strings are localized at the orbifold singularities that the classical configurations (untiwisted sector) enclose.
+
+    \subsection{Representation theory of the projection}
+
+        Let $\{(\rho_i,V_i)\}_{i\in I}$ be a complete set of irreducible representations of $\Gamma$. Since $\Gamma$ is finite, it is particular compact and those representation can be taken to be unitary. We also use the notation $N_i=\dim\rho_i$ sich that $V_i=\C^{N_i}$ Moreover, $i$ takes a finite number of values. Let us consider a representation of $\Gamma$ on $\C^N$, we denote it $(\rho,\C^N)$ and also take it to be unitary. In that case, $\rho(\gamma)\in\U(N)$. This is what we mean by ``the embedding of $\Gamma$ in $\U(N)$''. The adjoint representation of $\U(N)$ defined as\footnote{this is well-defined since for all $\omega\in\mathfrak{u}(N)$ and $U\in\U(N)$, $U\omega U^{-1}\in\mathfrak{u}(N)$.}
+        \begin{equation}
+            \Ad:\left(
+            \begin{array}{ccc}
+                \U(n) & \longrightarrow & \GL(\mathfrak{u}(N)) \\
+                U & \longmapsto & \Ad_U
+            \end{array}
+            \right),\qquad
+            \Ad_U:\left(
+            \begin{array}{ccc}
+                \mathfrak{u}(N) & \longrightarrow & \mathfrak{u}(N) \\
+                \omega & \longmapsto & \Ad_U(\omega)\equiv U\omega U^{-1}
+            \end{array}
+            \right),
+        \end{equation}
+        now allows us to act with $\Gamma$ on $\mathfrak{u}(N)$. We use this representation in the expression \eqref{eq:proj1}-\eqref{eq:proj3}. More formally, these relations can be rewritten as
+        \begin{align}
+            \Ad_{\rho(\gamma)}A_\mu  &= A_\mu,\\
+            R(\gamma)\Ad_{\rho(\gamma)}\psi_{IJ}  &= \psi_{IJ},\\
+            R(\gamma)\Ad_{\rho(\gamma)}X_{IJ} &= X_{IJ}
+        \end{align}
+
+        We can decompose $(\rho,\C^N)$ as follows:
+        \begin{align}
+            (\rho,\C^N) &= \bigoplus_{i\in I}~(\rho_i,V_i)^{N_i} \label{eq:decomp:line1} \\
+            &= \bigoplus_{i\in I}~(\boldsymbol{1}^{N_i}\otimes\rho_i,\C^{N_i}\otimes V_i) \label{eq:decomp:line2}
+        \end{align}
+        were $N_i$ are integer multiplicities ($(\rho_i,V_i)^{N_i}\equiv(\rho_i,V_i)^{\oplus N_i}$) and $\boldsymbol{1}$ is the trivial representation, so $\Gamma$ acts trivially on the $\C^{N_i}$. We have
+        \begin{equation}
+            \sum_iN_i\dim(\rho_i)=N.
+        \end{equation}
+        The rewritting \eqref{eq:decomp:line2} will be useful later on.
+        
+        After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, that is $\Hom(\C^N,\C^N)^\Gamma$. We use the superscript $\Gamma$ to indicate that we only keep the trivial representations in the decomposition, that is, we only keep that subspaces that transform trivially. First, we can see that by Schur's lemma \marker{Why ?}
+        \begin{equation}
+            (V_i\otimes V^*_j)^\Gamma=\delta_{ij}
+        \end{equation}
+        
+        Now since $\Hom(\C^N,\C^N)\cong\C^N\otimes(\C^N)^*$, we get
+        \begin{align}
+            \Hom(\C^N,\C^N)^\Gamma &= (\C^N\otimes(\C^N)^*)^\Gamma\\
+            &= \bigoplus_{i,j\in I} \left((\C^{N_i}\otimes V_i)\otimes(\C^{N_j}\otimes V_j)^*\right)^\Gamma\\
+            &= \bigoplus_{i,j\in I} \left(\C^{N_i}\otimes(\C^{N_j})^*\otimes V_i\otimes V^*_j\right)^\Gamma\\
+            &= \bigoplus_{i,j\in I} \left(\C^{N_i}\otimes(\C^{N_j})^*\right)^\Gamma\otimes\left(V_i\otimes V^*_j\right)^\Gamma\\
+            &= \bigoplus_{i\in I}\C^{N_i}\otimes(\C^{N_i})^*
+        \end{align}
+        so, in complete notations,
+        \begin{equation}
+            (\rho,\C^N)^\Gamma = \bigoplus_{i\in I}(\rho_i,\C^{N_i})\otimes(\bar{\rho_i},\C^{N_i})
+        \end{equation}
+        and the daughter gauge group is
+        \begin{equation}
+            G_{\text{proj}} = \bigotimes_{i\in I}\U(N_i).
+        \end{equation}
+        Now it turns out that in the low energy effective field theory the $\U(1)$ factor of every $\U(N_i)$ decouples \marker{Why ?} so the resulting gauge group is in fact
+        \begin{equation}
+            G_{\text{proj}} = \bigotimes_{i\in I}\SU(N_i).
+        \end{equation}
+
+        For the matter fields, the reasoning is similar but we now have to take into account the R-symmetry. Let $\boldsymbol{4}\equiv(\rho_{\boldsymbol{4}},V_{\boldsymbol{4}})$ be the fundamental representation of $\SU(4)_R$ and $\boldsymbol{6}\equiv(\rho_{\boldsymbol{6}},V_{\boldsymbol{6}})$ be the fundamental representation of $\SO(6)_R$. Wish to compute $(V_\mR\otimes\Hom(\C^N,\C^N))^\Gamma$ with $\mR=\boldsymbol{4},\boldsymbol{6}$:
+        \begin{align}
+            (V_\mR\otimes\Hom(\C^N,\C^N))^\Gamma &= \bigoplus_{i,j\in I} \left(V_\mR\otimes (\C^{N_i}\otimes V_i)\otimes(\C^{N_j}\otimes V_j)^*\right)^\Gamma\\
+            &= \bigoplus_{i,j\in I} \left(V_\mR\otimes\C^{N_i}\otimes(\C^{N_j})^*\right)^\Gamma\otimes\left(V_i\otimes V^*_j\right)^\Gamma\\
+            &= \bigoplus_{i,j\in I}a^\mR_{ij}\left(\C^{N_i}\otimes(\C^{N_j})^*\right)
+        \end{align}
+        with
+        \begin{equation}
+            (\rho_\mR,V_\mR)\otimes(\rho_i,V_i)=\bigoplus_{j\in I}a^\mR_{ij}(\rho_j,V_j).\label{eq:defaij}
+        \end{equation}
+        This expression makes sense because $(\rho_\mR,V_\mR)$ is a representation of $\SU(4)$ so it is in particular a representation of $\SU(3)$ and therefore also in particular a representation of $\Gamma$. In more complete notations, we obtained that
+        \begin{equation}
+            ((\rho_\mR,V_\R)\otimes(\rho,\C^N))^\Gamma = \bigoplus_{i,j\in I}a^\mR_{ij}\left((\rho_i,\C^{N_i})\otimes(\bar{\rho}_j,\C^{N_j})\right).\label{eq:resdecomp}
+        \end{equation}
+        
+
+        Using the orthogonality of characters of irreducible non-equivalent representations, we obtain the explicit expression of the coefficient $a^\mR_{ij}$:
+        \begin{equation}
+            a^\mR_{ij} = \frac{1}{\abs{\Gamma}}\sum^r_{\gamma=1} r_\gamma\chi^\mR(\gamma)\chi^i(\gamma)\chi^j(\gamma)^*
+        \end{equation}
+        where $r_\gamma$ is the order of the conjugacy class containing $\gamma$ and $\chi^i$ is the character of $\rho_i$.
+
+        In the end, we can see that:
+        \begin{result}
+            In the daughter theory, the matter fields become a total of $a^{\boldsymbol{4}}_{ij}$ bi-fundamental fermions and $a^{\boldsymbol{6}}_{ij}$ bi-fundamental bosons transforming as the $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\SU(N_i)\times\SU(N_j)$ under the products of gauge groups.
+        \end{result}
+
+    \subsection{Bi-index notation}
+
+        The gauge and the bi-fundamental fields that we obtained in the previous section are easier to manipulate in the \emph{bi-index notation}. Recall that $A_\mu\in\mathfrak{u}(N)$ so it is an $N\times N$ complex matrix and we denote its elements by $A_{\mu;IJ}$ ($I,J=1,\dots,N$). We saw that this matrix of fields transform under $\Gamma$ as
+        \begin{equation}
+            A_\mu\mapsto \rho(\gamma)A_\mu \rho(\gamma)^{-1},\qquad \gamma\in \Gamma,\label{eq:transfAmu1}
+        \end{equation}
+        i.e. in the adjoint representation but without the derivative term (as explained above). Now if $\{(\rho_i,V_i)\}_{i\in I}$ is a complete set of irreducible representation of $\gamma$, any representation of $\Gamma$ on $\C^n$ can be decomposed as \eqref{eq:decomp:line1}. In particular, this provides us with the following partitioning of $N$:
+        \begin{equation}
+            N=\sum_{i\in}N_i\dim\rho_i.
+        \end{equation}
+        It is very convenient to apply the analogous partitionning for the matrix $A_\mu$. More precisely, we now denote decompose $A_\mu$ into $(\dim\rho_iN_i)\times(\dim\rho_jN_j)$ sub-blocks $A_{\mu;ij}$ where $i,j\in I$ are indices over the irreducible representations. From \eqref{eq:transfAmu}, those sub-blocks transform as direct sums of the same irreducible representations:
+        \begin{equation}
+            A_{\mu;ij}\mapsto \rho_i(\gamma)^{N_i}A_{\mu;ij}(\rho_j(\gamma)^{-1})^{N_j},\qquad \gamma\in\Gamma.\label{eq:transfAmu2}
+        \end{equation}
+        We can go one step further and decompose the sub-blocks $A_{\mu;ij}$ into $\dim\rho_i\times\dim\rho_j$ sub-sub-blocks $A_{\mu;i\alpha_i,j\beta_j}$ where $\alpha_i,\beta_i=0,\dots N_i-1$. From \eqref{eq:transfAmu2}, they transform directly under the irreducible representations:
+        \begin{equation}
+            \boxed{A_{\mu;i\alpha_i,j\beta_j}\mapsto\rho_i(\gamma)A_{\mu;i\alpha_i,j\beta_j}\rho_j(\gamma)^{-1},\qquad \gamma\in\Gamma.}
+        \end{equation}
+        In particular, we see that this relations does not depend on the indices $\alpha_i$ and $\beta_j$, they all transform in the same way. This notation is very convenient to compute explicitely the invariant configurations, as we will see in several examples. We use the exact same bi-index notations for $X^m$ and $\psi^a$.
+
+    \subsection{Field content, quivers and McKay graphs}
+
+        A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$. In other words, from \eqref{eq:resdecomp}, the adjacency matrix of the fermions has elements $A_{ij}=a^{\boldsymbol{4}}_{ij}$ and the one of the scalars has elements $A_{ij}=a^{\boldsymbol{6}}_{ij}$.
+
+        On the other hand, given finite group $\Gamma$, a representation $(\rho_W,W)$ and a complete set of irreducible representations $\{(\rho_i,V_i)\}_{i\in I}$ of the latter, one can construct a McKay graph (or quiver) as follows:
+        \begin{enumerate}
+            \item Draw a vertex for every representation $(\rho_i,V_i)$.
+            \item For every representation $(\rho_i,V_i)$, compute the decomposition
+            \begin{equation*}
+                (\rho_W,V_W)\otimes(\rho_i,V_i)=\bigoplus_j (\rho_j,V_j)^{\oplus n_{ij}}
+            \end{equation*}
+            where $n_{ij}$ is the multiplicity of $(\rho_j,V_j)$ in the decomposition of $(\rho_W,V_W)\otimes(\rho_i,V_i)$.
+            \item For every $n_{ij}>0$, draw $n_{ij}$ arrows from the vertex of $(\rho_i,V_i)$ to the one of $(\rho_j,V_j)$.
+        \end{enumerate}
+        When $\Gamma\subset\SU(2)$ and that $(\rho_W,W)$ is its defining representation, the McKay graphs are in one-to-one correspondence with the extended Dynkin diagrams of the simply laced Lie algebras. This is the classical McKay correspondence, see appendix \ref{app:McKay}.
+        
+        From \eqref{eq:defaij} we see that $n_{ij}=a^{\mR}_{ij}$, i.e. the matter quivers that we defined previously are exactly the McKay graph associated to the matter representation in question. Put differently, the matter content of the daughter theory is encapsulated in the McKay graphs of $\Gamma$ and with respect to $\mR$ with $\mR=\bs{4}$ for spinors and $\mR=\bs{6}$ for scalars. This very important point allows us to use known results on McKay graphs such as the McKay correspondence for example.
+
+        We mentionned the adjacency matrix as a way to represent a quiver but we will also use sometimes the another matrix called the \emph{incidence matrix} and denoted by $I$. In the later, the columns index the arrows and the rows, the nodes such that the $\alpha$th arrow from node $i$ to $j$ recieves a $-1$ in position $I_{i\alpha}$, a $+1$ in position $I_{j\alpha}$ and zero elsewhere.
+
+    \subsection{Gauge anomaly canellation}
+
+        Finally, let us discuss the gauge anomaly cancellation. Our fields transform under the adjoint representation of $\SU(N)$, under the fundamentals of $\SU(N_i)$ and under the anti-fundamentals of $\SU(N_i)$. The adjoint representation being reel, it is self-conjugate and therefore does not contribute to the anomaly. Fundamentals of $\SU(N_i)$ have a $+1$ contribution to the anomaly and anti-fundamentals of $\SU(N_i)$ have a $-1$ contribution to the anomaly. Anomaly cancellation therefore imposes that the contribution of the fundamental and of the anti-fundamental of $\SU(N_i)$ cancel each other for each $i=0,1,2$, see section \eqref{sec:anomalies}. The bi-fundamental representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ counts as $N_j$ fundamentals of $\SU(N_i)$ and as $N_i$ anti-fundamentals $\SU(N_j)$. The general condition for anomaly cancellation is therefore
+        \begin{equation}
+            \boxed{(a_{ij}-a_{ji})n_i=0}
+        \end{equation}
+        where $a_{ij}$ are the lements of the adjacency matrix of the quiver and $n_i$ are the node labels. This condition is equivalent to say that the ranks of tha gauge groups must lie in nullspace of the antisymmetrized adjacency matrix.
+
+    \subsection{Quiver gauge theories and quivers}
+
+        So far we have seen that a quiver gauge theory can be represented by a quiver where the matter content is represented by the arrows ant the gauge groups by the nodes. In more mathematical terms, a quiver gauge theorytherefore provides us with a representation of a quiver. Moreover, this quiver has relations coming from the interaction terms, in the superpotential. \marker{Explain: for the vacua.}
+
+    \subsection{A simple example: $S=\C^3/\Z_3$}\label{sec:C3Z3}
+
+        We illustrate the previous discussion by the simple case where $\Gamma=\Z_3$ acts on $\C^2$ as
+        \begin{equation}
+            \begin{bmatrix}
+                z_1\\z_2\\z_3
+            \end{bmatrix}\mapsto
+            \begin{bmatrix}
+                \zeta_3 & 0 & 0 \\
+                0 & \zeta_3 & 0 \\
+                0 & 0 & \zeta_3
+            \end{bmatrix}
+            \begin{bmatrix}
+                z_1\\z_2\\z_3
+            \end{bmatrix}
+        \end{equation}
+        i.e. the transverse space is the orbifold $\C^3/\Z_3$. This simple example is a good first approach in which we will to explain in details each step so that we can go faster afterwards.
+
+        \subsubsection{Projection}
+
+            Let us consider a representation $(\rho,\C^N)$ of $\Z_3$. A complete set of irreducible representations of $\Z_3$ is given by $\{(\rho_k,V_k)\}_{k=0,1,2}$ with $V_k=\C$ and
+            \begin{equation}
+                \rho_k(g)=\zeta^k_3
+            \end{equation}
+            where $g$ is the generator of $\Z_3$. The representation $(\rho,V)$ can be decomposed as
+            \begin{equation}
+                (\rho,V)=\bigoplus^{2}_{i=0}N_i(\rho_i,V_i).
+            \end{equation}
+            In other words, it is equivalent to the representation
+            \begin{equation}
+                \rho(g)=
+                \begin{bmatrix}
+                    1 & & & & \cdots & & & & & 0 \\
+                    & \ddots & & & & & & & & \\
+                    & & 1 & & & & & & & \\
+                    & & & \zeta_3 & & & & & & \\
+                    \vdots & & & & \ddots & & & & & \vdots \\
+                    & & & & & \zeta_3 & & & & \\
+                    & & & & & & & \zeta^2_3 & & \\
+                    & & & & & & & & \ddots & \\
+                    0 & & & & \cdots & & & & & \zeta^2_3 \\
+                \end{bmatrix}
+                \hspace{-0.2cm}
+                \begin{tabular}{l}
+                $\left.\lefteqn{\phantom{
+                    \begin{matrix}
+                        a_0\\ \ddots\\ a_0\ 
+                    \end{matrix} 
+                }}\right\}N_0$\\
+                $\left.\lefteqn{\phantom{
+                    \begin{matrix}
+                        a_0\\ \ddots\\ a_0\ 
+                    \end{matrix} 
+                }}\right\}N_1$\\
+                $\left.\lefteqn{\phantom{
+                    \begin{matrix}
+                        b_0\\ \ddots\\ b_0\ 
+                    \end{matrix}
+                }} \right\}N_2$
+                \end{tabular}.\label{eq:reprrhoZn}
+            \end{equation}
+            Since $\dim\rho_i=1$, we have
+            \begin{equation}
+                N_0+N_1+N_2=N.\label{eq:sumNiZ3}
+            \end{equation} 
+            
+            The gauge field configurations that are left invariant under the action of $\Z_3$ are therefore the ones that satisfy
+            \begin{equation}
+                \rho(g)A_\mu\rho(g)^{-1}=A_\mu.\label{eq:AinvZ3}
+            \end{equation}
+            We actually want this relation to be true for any element of $\Z_n$ but in this case it is invariant under any element of $\Z_3$ if and only if it is invariant under the generator $g$ of $\Z_3$, so we only need to impose \eqref{eq:AinvZ3}. The constrained is easily solved by using the bi-index notation $A_{\mu;i\alpha_i,j\beta_j}$ ($i,j=0,1,2,\alpha_i,\beta_i=1,\dots,N_i$) for the component of the gauge fields. From \eqref{eq:reprrhoZn}, we can see that
+            \begin{equation}
+                A_{\mu;i\alpha_i,i\beta_j}\mapsto \rho_i(g)A_{\mu;i\alpha_i,j\beta_j}\rho_j(g)^{-1}=\zeta^{i-j}_nA_{\mu;i\alpha_i,j\beta_j}.
+            \end{equation}
+            thus only the configurations with $A_{\mu;i\alpha_i,j\beta_j}=0$ if $i\neq j$ are invariant. The gauge field has therefore a block diagonal form:
+            \begin{equation}
+                A_\mu=
+                \begin{bmatrix}
+                    A_{\mu;00} & & \\
+                    & A_{\mu;11} & \\
+                    & & & A_{\mu;2,2}
+                \end{bmatrix}
+            \end{equation}
+            with $A_{\mu;ij}\equiv (A_{\mu;i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}$. The block $A_{ii}$ transforms under $\Z_3$ under $(\rho_i,V_i)^{N_i}$.
+            Consequently, the gauge group is now broken to
+            \begin{equation}
+                G_{\text{proj}}=\U(N_0)\times\U(N_1)\times\U(N_2),
+            \end{equation}
+            the biggest subgroup of $\U(N)$ that preserves those form of configurations.
+            
+            Let us study the scalars. $\Z_3$ acts on the three complex scalars through
+            \begin{equation}
+                R(g)= \rho^{\oplus 3}_1(g) = \zeta_3\mathbbm{1}_3 =
+                \begin{bmatrix}
+                    \zeta_3 & 0 & 0 \\
+                    0 & \zeta_3 & 0 \\
+                    0 & 0 & \zeta_3
+                \end{bmatrix}
+            \end{equation}
+            or, equivalently, on the real scalars as $R(g)=\zeta_3\mathbbm{1}_6$. According to \eqref{eq:transfphi1}-\eqref{eq:transfphi2}, the scalar field configurations that are left invariant satisfy
+            \begin{equation}
+                R(g)\indices{^m_n}\rho(g)X^n\rho(g)^{-1}=X^m
+            \end{equation}
+            for all $g\in\Z_3$. Using the bi-index notations, this becomes
+            \begin{align}
+                X^m_{i\alpha_i,j\beta_j}\mapsto  \zeta_n\delta\indices{^m_n}\rho_i(g) X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \zeta^{i-j+1}_3X^m_{i\alpha_i,j\beta_j}\\
+                \bar{X}^m_{i\alpha_i,j\beta_j}\mapsto  \zeta^{-1}_3\delta\indices{^m_n}\rho_i(g) \bar{X}^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1} = \zeta^{i-j-1}_3\bar{X}^m_{i\alpha_i,j\beta_j}
+            \end{align}
+            thus only the configurations with $X^n_{i\alpha_i,j\beta_j}=0$ if $i-j+1\neq0$ are left invariant and only the configurations with $\bar{X}^n_{i\alpha_i,j\beta_j}=0$ if $i-j-1\neq0$ are left invariant. The scalar fields $X$ have a block off-diagonal form:
+            \begin{equation}
+                X^m=
+                \begin{bmatrix}
+                    0 & X^m_{01} & 0 \\
+                    0 & 0 & X^m_{12} \\
+                    X^m_{21} & & 0
+                \end{bmatrix},\qquad
+                \bar{X}^m=
+                \begin{bmatrix}
+                    0 & 0 & \bar{X}^m_{02} \\
+                    \bar{X}^m_{10} & 0 & 0 \\
+                    0 & \bar{X}^m_{21} & 0
+                \end{bmatrix}
+            \end{equation}
+            with the block notations
+            \begin{align*}
+                X^m_{ij}&\equiv (X^m_{i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}\\
+                \bar{X}^m_{ij}&\equiv (\bar{X}^m_{i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}.
+            \end{align*}
+            The block $X^m_{ij}$ is an $N_i\times N_j$ block and transforms under the representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\U(N_i)\times\U(N_j)$:
+            \begin{align}
+                X^m_{i,i+1} &\in \boldsymbol{\textbf{N}_{i+1}}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_{i+1},V_i),\\
+                \bar{X}^m_{i+1,i} &\in \boldsymbol{\textbf{N}_{i}}\otimes\boldsymbol{\bar{\textbf{N}}_{i+1}} \cong \Hom(V_{i},V_{i+1}).
+            \end{align}
+            Let us make an important observation: the form of the scalar fields are the same for every $m=0,\dots,5$. This can be traced back to the fact that $R(g)=\zeta_3\mathbbm{1}_6$ so the R-symmetry action of $\Z_3$ is the same for all $m$.
+
+            Let us now study the four Weyl fermions $\psi^a$. \marker{Continue.}
+
+        \subsubsection{Quiver}
+
+            We can draw the quiver of this daughter theory. We have three types of bi-fundamental scalar fields:
+            \begin{equation}
+                X^m_{01}\in(\boldsymbol{\textbf{N}_{1}},\boldsymbol{\bar{\textbf{N}}_0}),\quad
+                X^m_{12}\in(\boldsymbol{\textbf{N}_{2}},\boldsymbol{\bar{\textbf{N}}_1}),\quad
+                X^m_{20}\in(\boldsymbol{\textbf{N}_{0}},\boldsymbol{\bar{\textbf{N}}_2}).
+            \end{equation}
+            In each representation bi-fundamental representation there are six real scalars, i.e. 3 complex scalars. They are each represented by an arrow between the right representations, see fig. \ref{fig:Z3quiver}.
+            \begin{figure}[H]
+                \centering
+                \begin{tikzpicture}[scale=0.8]
+                    \foreach \n in {0,...,2}{
+                        \draw[very thick] ({-120*\n-30}:2)--({-120*(\n+1)-30}:2) node[midway,sloped,allow upside down]{$\blacktriangleright\blacktriangleright\blacktriangleright$};
+                        \draw[fill=black] ({-120*\n-30}:2) circle[radius=0.15];
+                    }
+                    \draw (-30:2.45) node{$N_0$};
+                    \draw (90:2.45) node{$N_1$};
+                    \draw (210:2.45) node{$N_2$};
+                \end{tikzpicture}
+                \caption{Quiver of the $\C^3/\Z_3$ daughter theory.}
+                \label{fig:Z3quiver}
+            \end{figure}
+            The adjacency matrix of this quiver is
+            \begin{equation}
+                A=
+                \begin{bmatrix}
+                    0 & 3 & 0 \\
+                    0 & 0 & 3 \\
+                    3 & 0 & 0
+                \end{bmatrix}
+            \end{equation}
+            which is coherent with the fact that the coefficients of the McKay decomposition of $\rho_1\oplus\rho_1\oplus\rho_1$ are
+            \begin{align}
+                \begin{split}
+                    n_{00} &= 0,\quad n_{01} = 3\qquad n_{02}=0,\\
+                    n_{10} &= 0,\quad n_{11} = 0,\qquad n_{12}=3,\\
+                    n_{20} &= 3,\quad n_{21} = 0,\qquad n_{22}=0.
+                \end{split}
+            \end{align}
+
+        \subsubsection{Gauge anomaly cancellation}
+        
+            We get the three following conditions:
+            \begin{align}
+                \SU(N_0) &: N_2-N_1 = 0,\\
+                \SU(N_1) &: N_0-N_2 = 0,\\
+                \SU(N_2) &: N_1-N_0 = 0.
+            \end{align}
+            which immediately imply
+            \begin{equation}
+                N_0=N_1=N_2.
+            \end{equation}
+            From \eqref{eq:sumNiZ3}, we get that $N_0=N_1=N_2=N/3$, meaning that that the daughter theory has quantum gauge symmetry if and only if the parent theory with has gauge group $\SU(N)$ where $N$ is a multiple of $3$. Or, in other words, if the number of D-branes is a multiple of $3$.
+
+    \subsection{$(p+1)$-dimensional quiver gauge theories}
+
+        Let us mention that we can generalize our initial brane-world paradigm and consider D$p$-branes in type II string theory (type IIA if $p$ is even and type IIB if $p$ is odd) instead of just D$3$-branes. The spacetime is then of the form
+        \begin{equation}
+            M = \R^{1,p}\times\R^{9-p}/\Gamma
+        \end{equation}
+        where $\Gamma$ is a discrete subgroup of $\Spin(9-p)$. If $\Gamma$ is a subgroup of a special holonomy group, we recover a somewhat generalized version of the paradigm that we discussed above. In this case the transverse space is a Calabi-Yau orbifold and some degree of supersymmetry is preserved. Note that the fermionic and bosonic quivers that coincides. If $\Gamma$ is not a subgroup of a special holonomy group, then the $(p+1)$-dimensional quiver gauge theory that we obtain in the low-energy limit is not supersymmetric. We then have different quivers for the fermions and the bosons, although with the same vertices, by definition.
+
+        Recall that the fraction of supercharges that is preserved by compactifying on a Calabi-Yau $n$-fold (with $\SU(n)$ holonomy) is $2^{1-n}$. Starting from the $\mN=2$ 10-dimensional type IIB string theory with 32 supercharges, this means that
+        \begin{itemize}
+            \item if we compactify on a $1$-fold, we get $32$ supercharges in $8$ dimensions so $\mN=2$,
+            \item if we compactify on a $2$-fold, we get $16$ supercharges in $6$ dimensions so $\mN=2$,
+            \item if we compactify on a $3$-fold, we get $8$ supercharges in $4$ dimensions so $\mN=2$,
+            \item is we compactify on a $4$-fold, we get $4$ supercharges in $2$ dimensions so $\mN=4$.
+        \end{itemize}
+
+        We will however mostly mostly consider $4$-dimensional quiver gauge theories, i.e. living on D$3$-branes.
+    
+
+\section{$\mN=2$ daughter theories}\label{sec:N2QGT}
+
+    %Let us consider that $\Gamma$ is a finite subgroup of $\SU(2)\subset\SU(3)$. It naturally acts on $\C^3$ trough its fundamental representation $\bs{2}$ as $\bs{1}\oplus\bs{2}$ (only acts on 2 coordinates).
+
+    \subsection{$S=\C\times\C^2/\Z_n$}
+
+        We consider a representation $(\rho,\C^N)$ of $\Z_n$. We decompose it on the set of irreducible representations of $\Z_n$ as
+        \begin{equation}
+            (\rho,\C^n)=\bigoplus^{n-1}_{i=0}N_i(\rho_i,\C).
+        \end{equation}
+        In other words, it is equivalent to the representation
+        \begin{equation}
+            \rho(g)=
+            \begin{bmatrix}
+                1 & & & \cdots & & & 0 \\
+                & \ddots & & & & & \\
+                & & 1 & & & &  \\
+                \vdots & & & \ddots & & & \vdots \\
+                & & & & \zeta^{n-1}_n & & \\
+                & & & & & \ddots & \\
+                0 & & & \cdots & & & \zeta^{n-1}_n 
+            \end{bmatrix}
+            \hspace{-0.2cm}
+            \begin{tabular}{l}
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                    a_0\\ \ddots\\ a_0\ 
+                \end{matrix} 
+            }}\right\}N_0$\\
+            \vdots \\
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                    b_0\\ \ddots\\ b_0\ 
+                \end{matrix}
+            }} \right\}N_{n-1}$
+            \end{tabular}.\label{eq:reprrhoZn}
+        \end{equation}
+        Since $\dim\rho_i=1$, $\sum_i N_i=N$. 
+
+        The gauge field configurations that are left invariant under the action of $\Z_n$ are therefore the ones that satisfy
+        \begin{equation}
+            \rho(g)A_\mu\rho(g)^{-1}=A_\mu.
+        \end{equation}
+        The constrained is easily solved by using the bi-index notation:
+        \begin{equation}
+            A_{\mu;i\alpha_i,i\beta_j}\mapsto \rho_i(g)A_{\mu;i\alpha_i,j\beta_j}\rho_j(g)^{-1}=\zeta^{i-j}_nA_{\mu;i\alpha_i,j\beta_j}.
+        \end{equation}
+        thus only the configurations with $A_{\mu;i\alpha_i,j\beta_j}=0$ if $i\neq j$ are invariant. The gauge field has therefore a block diagonal form:
+        \begin{equation}
+            A_\mu=
+            \begin{bmatrix}
+                A_{\mu;00} & & & \\
+                & A_{\mu;11} & & \\
+                & & \ddots & \\
+                & & & A_{\mu;n-1,n-1}
+            \end{bmatrix}
+        \end{equation}
+        with $A_{\mu;ij}\equiv (A_{\mu;i\alpha_i,j\beta_j})_{\alpha_i=0,\dots,N_i,\beta_j=0,\dots,N_j}$. The block $A_{ii}$ transforms under $\Z_n$ as $(\rho_i,V_i)^{N_i}$. For now it is only a simple generalization of the case $\C^3/\Z_3$. This makes sense: projection of the gauge field only depends the discrete group $\Gamma$, not on the way it acts on $\C^3$ because it does not transform under R-symmetry.
+        
+        The gauge group is now broken to
+        \begin{equation}
+            G_{\text{proj}}=\prod^{n-1}_{i=0}~\U(N_i).
+        \end{equation}
+
+        Now for the scalar fields. The action of $\Z_n$ that we consider leaves the first component of $\C^3$ untouched so we take the action $\boldsymbol{1}\oplus\boldsymbol{2}$ where $\boldsymbol{2}$ is the usual action of $\Z_n$ on $\C^2$. In other words, 
+        \begin{equation}
+            R(g)=
+            \begin{bmatrix}
+                1 & 0 & 0 \\
+                0 & \zeta_n & 0 \\
+                0 & 0 & \zeta^{-1}_n
+            \end{bmatrix}.
+        \end{equation}
+        Or, equivalently, $R(g)\indices{^m_n}=\delta\indices{^m_n}A_n$ with $A_m=(1,1,\zeta_n,\zeta_n,\zeta^{-1}_n,\zeta^{-1}_n)$. The scalar field configurations that are left invariant satisfy
+        \begin{equation}
+            R(g)\indices{^m_n}\rho(g)X^n\rho(g)^{-1}=X^m
+        \end{equation}
+        for all $g\in\Z_n$. Using the bi-index notations, this becomes
+        \begin{align}
+            X^m_{i\alpha_i,j\beta_j}\mapsto  \delta\indices{^m_n}A_n\rho_i(g)X^m_{i\alpha_i,j\beta_j}\rho_j(g)^{-1}  = \delta\indices{^m_n}A_n\zeta^{i-j}_n X^m_{i\alpha_i,j\beta_j} =
+            \begin{cases}
+                \zeta^{i-j}_nX^m_{i\alpha_i,j\beta_j},\quad m=0,1\\
+                \zeta^{i-j+1}_nX^m_{i\alpha_i,j\beta_j},\quad m=2,3\\
+                \zeta^{i-j-1}_nX^m_{i\alpha_i,j\beta_j},\quad m=4,5\\
+            \end{cases}\\
+            \bar{X}^m_{i\alpha_i,j\beta_j}\mapsto \delta\indices{^m_n}\bar{A_n}\rho_i(g)\bar{X}^m_{i\alpha_i,j\beta_j}\rho_j(g)^{-1}  = \delta\indices{^m_n}\bar{A_n}\zeta^{i-j}_n X^m_{i\alpha_i,j\beta_j} =
+            \begin{cases}
+                \zeta^{i-j}_nX^m_{i\alpha_i,j\beta_j},\quad m=0,1\\
+                \zeta^{i-j-1}_nX^m_{i\alpha_i,j\beta_j},\quad m=2,3\\
+                \zeta^{i-j+1}_nX^m_{i\alpha_i,j\beta_j},\quad m=4,5\\
+            \end{cases}
+        \end{align}
+        thus only the configurations with $X^{0,1}_{i\alpha_i,j\beta_j}=0$ if $i-j\neq0$, $X^{2,3}_{i\alpha_i,j\beta_j}=0$ if $i-j+1\neq0$ and $X^{4,5}_{i\alpha_i,j\beta_j}=0$ if $i-j-1\neq0$ are left invariant (and similarly for the conjugated fields). The scalar fields $X$ have a the following forms:
+        {\small
+        \begin{align}
+            X^{0,1}&=
+            \begin{bmatrix}
+                X^{0,1}_{00} &  & 0 \\
+                 & \ddots & \\
+                0 & & X^{0,1}_{n-1,n-1}
+            \end{bmatrix},\\
+            X^{2,3}&=
+            \begin{bmatrix}
+                0 & X^{2,3}_{01} & & 0 \\
+                 & \ddots & \ddots & \\
+                 & & 0 & X^{2,3}_{n-2,n-1} \\
+                X^{2,3}_{n-1,0} & & & 0 
+            \end{bmatrix},\quad
+            X^{4,5}=
+            \begin{bmatrix}
+                0 & & & X^{4,5}_{0,n-1} \\
+                X^{4,5}_{10} & 0 & & \\
+                 & \ddots & \ddots  & \\
+                0 & & X^{4,5}_{n-1,n-2} & 0
+            \end{bmatrix},\\
+            \bar{X}^{0,1}&=
+            \begin{bmatrix}
+                \bar{X}^{0,1}_{00} &  & 0 \\
+                 & \ddots & \\
+                0 & & \bar{X}^{0,1}_{n-1,n-1}
+            \end{bmatrix},\\
+            \bar{X}^{2,3}&=
+            \begin{bmatrix}
+                0 & & & \bar{X}^{2,3}_{0,n-1} \\
+                \bar{X}^{2,3}_{10} & 0 & & \\
+                 & \ddots & \ddots  & \\
+                0 & & \bar{X}^{2,3}_{n-1,n-2} & 0
+            \end{bmatrix},\quad
+            \bar{X}^{4,5}=
+            \begin{bmatrix}
+                0 & \bar{X}^{4,5}_{01} & & 0 \\
+                 & \ddots & \ddots & \\
+                 & & 0 & \bar{X}^{4,5}_{n-2,n-1} \\
+                 \bar{X}^{4,5}_{n-1,0} & & & 0
+            \end{bmatrix}
+        \end{align}}
+        so $X^m_{ij}$ is an $N_i\times N_j$ block and transforms under the representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\U(N_i)\times\U(N_j)$:
+        \begin{align}
+            X^{0,1}_{i,i} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_i,V_i),\\
+            X^{2,3}_{i,i+1} &\in \boldsymbol{\textbf{N}_{i+1}}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_{i+1},V_i),\\
+            X^{4,5}_{i+1,i} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_{i+1}} \cong \Hom(V_i,V_{i+1}).
+        \end{align}
+        So the scalar fields are split up in three families depending on the way they transform under R-symmetry. We now see a big difference with the case $\C^3/\Z_3$: since the R-symmetry does not act the same way on each directions in $\C^3$, the invariant scalar field configurations are not the same in each direction either.
+
+        Let us draw the quiver for the case $n=3$ so that we can compare to \ref{fig:Z3quiver}. We have $2\cdot 9=18$ real scalar fields in $9$ different representations:
+        \begin{align}
+            X^0_{00},X^1_{00}&\in(\boldsymbol{\textbf{N}_0},\boldsymbol{\bar{\textbf{N}}_0}),\quad
+            X^0_{11},X^1_{11}\in(\boldsymbol{\textbf{N}_1},\boldsymbol{\bar{\textbf{N}}_1}),\quad
+            X^0_{22},X^1_{22}\in(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_2}),\\
+            X^2_{01},X^3_{01}&\in(\boldsymbol{\textbf{N}_1},\boldsymbol{\bar{\textbf{N}}_0}),\quad
+            X^2_{12},X^3_{12}\in(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_1}),\quad
+            X^2_{20},X^3_{20}\in(\boldsymbol{\textbf{N}_0},\boldsymbol{\bar{\textbf{N}}_2}),\\
+            X^4_{10},X^5_{10}&\in(\boldsymbol{\textbf{N}_0},\boldsymbol{\bar{\textbf{N}}_1}),\quad
+            X^4_{21},X^5_{21}\in(\boldsymbol{\textbf{N}_1},\boldsymbol{\bar{\textbf{N}}_2}),\quad
+            X^4_{02},X^5_{02}\in(\boldsymbol{\textbf{N}_2},\boldsymbol{\bar{\textbf{N}}_0}),
+        \end{align}
+        We now only have 1 complex scalar in each representation and the quiver is given by \ref{fig:2Z3quiver}.
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}[scale=0.8]
+                \foreach \n in {0,...,2}{
+                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-20}:2) and ({120*\n+120-40}:2) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{$\blacktriangleright$};
+                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n-30}:1.6) and ({120*\n+120-30}:1.6) .. ({120*\n+120-30}:2) node[midway,sloped,allow upside down]{$\blacktriangleleft$};
+                    \draw[very thick] ({120*\n-30}:2) .. controls ({120*\n}:4) and ({120*\n-60}:4) .. ({120*\n-30}:2) node[midway,sloped,allow upside down]{$\blacktriangleright$};
+                    \draw[fill=black] ({120*\n-30}:2) circle[radius=0.15];
+                }
+                \draw (-10:2.2) node{$N_0$};
+                \draw (70:2.2) node{$N_1$};
+                \draw (190:2.2) node{$N_2$};
+            \end{tikzpicture}
+            \caption{Quiver of the $\C\times\C^2/\Z_3$ daughter theory.}
+            \label{fig:2Z3quiver}
+        \end{figure}
+        It is easy to see how the construction of the the quiver generalizes for arbitrary $n$. The adjacency matrix is
+        \begin{equation}
+            A=
+            \begin{bmatrix}
+                1 & \cdots & 1 \\
+                \vdots & \ddots & \vdots \\
+                1 & \cdots & 1
+            \end{bmatrix}
+        \end{equation}
+        which is, as it should, coincides with the McKay decomposition of $\boldsymbol{1}\oplus\boldsymbol{2}$:
+        \begin{align}
+            \begin{split}
+                n_{00} &= 1,\quad\dots,\qquad n_{0,n-1}=1,\\
+                &\vdots\hspace{3.7cm}\vdots\\
+                n_{n-1,0} &= 1,\quad\dots,\qquad n_{n-1,n-1}=1.
+            \end{split}
+        \end{align}
+        
+        Gauge anomaly cancellation now imposes that
+        \begin{equation}
+            N_{i-1}-N_{i-1}+N_{i+1}+N_{i+1}=0
+        \end{equation}
+        for $i=0,\dots,n-1$. Those constrains are always satisfied so the the factors $N_i$ are arbitrary, as long as $\sum_iN_i=N$ of course.
+
+        This quiver is easy to scale up for any $n$. We therefore implement that into Mathematica and get the quivers for any $n$.
+
+    \subsection{$S=\C\times\C^2/\D_n$}
+
+        We quotient $\C^3$ by the binary dihedral group $\D_n$ that acts on the last two components. This group is geneated by two elements that we denote $A$ and $B$. Firther details on its structure and representations are given in appendix \ref{app:su2subgroups}. A set of irreducible representations of $\D_n$ is given by
+        \begin{equation}
+            \{(\rho_i,V_i)\}_{i=0,\dots,n+2}
+        \end{equation}
+        with $V_i=\C$ for $i=0,\dots,3$ and $V_i=\C^2$ for $i=4,\dots,n+2$, so there are $4$ one-dimensional representations and $n-1$ two-dimensional representations. It is more convenient to treat the $1$-dimensional and $2$-dimensional representations idependently. We therefore denote by $\sigma_i$ with $i=0,\dots,3$ the $1$-dimensional representations and $\mu_r$ with $r=1,\dots,n-1$ the $2$-dimensional ones:
+        \begin{equation*}
+        \begin{array}{cc}
+            \multirow{7}{*}{$\begin{array}{|c|c|c|}
+                \hline
+                a & \sigma_a(A) & \sigma_a(B) \text{ ($n$ even or odd)} \\
+                \hline
+                0 & 1 & 1\\ \hline
+                1 & 1 & -1 \\ \hline
+                2 & -1 & 1 \text{ or } i \\ \hline
+                3 & -1 & -1 \text{ or } -i \\
+                \hline
+            \end{array}$} & \\
+            & {\hspace{0.9cm}\mu_r(A) = 
+            \begin{bmatrix}
+                e^{i\frac{\pi}{n}r} & 0\\
+                0 & e^{-i\frac{\pi}{n}r} 
+            \end{bmatrix}}\\
+            & \\
+            & {\rho_r(B) = 
+            \begin{bmatrix}
+                0 & -1 \\
+                1 & 0
+            \end{bmatrix}}
+        \end{array}
+        \end{equation*}
+        We note that there is a slight difference for the $1$-dimensional representations if $n$ is even or odd.
+        
+        Any representation of $(\rho,\C^N)$ of $\D_n$ can be decomposed as
+        \begin{equation}
+            (\rho,\C^n) = \left( \bigoplus^3_{a=0}(\sigma_a,\C) \right)\oplus\left( \bigoplus^{n-1}_{r=1}(\mu_r,\C^2) \right).
+        \end{equation}
+        The invariant gauge field configurations were found to be of the form
+        \begin{equation}
+            A_\mu=
+            {\tiny
+            \left[
+            \begin{array}{*{20}c}
+                \times & 0 & 0 & 0 & & & & & & \cdots & 0 \\
+                0 & \times & 0 & 0 & & & & & & & \\
+                0 & 0 & \times & 0 & & & & & & & \\
+                0 & 0 & 0 & \times & & & & & & & \\
+                & & & & x_1 & 0 & & & & & \\
+                & & & & 0 & -x_1 & & & & & \\
+                & & & & & & x_2 & 0 & & & \\
+                & & & & & & 0 & -x_2 & & & \\
+                \vdots & & & & & & & & \ddots & & \vdots \\
+                & & & & & & & & & x_{n-1} & 0 \\
+                0 & & & & & & & & & 0 & -x_{n_1}
+        \end{array}
+        \right]}\label{eq:invformAmuDn}
+        \end{equation}
+        and the one of the scalar fields of the form
+        \begin{equation}
+            X^m=
+            {\tiny
+            \left[
+            \begin{array}{*{20}c}
+                \times & 0 & 0 & 0 & & & & & & \cdots & 0 \\
+                0 & \times & 0 & 0 & & & & & & & \\
+                0 & 0 & \times & 0 & & & & & & & \\
+                0 & 0 & 0 & \times & & & & & & & \\
+                & & & & x_1 & 0 & & & & & \\
+                & & & & 0 & -x_1 & & & & & \\
+                & & & & & & x_2 & 0 & & & \\
+                & & & & & & 0 & -x_2 & & & \\
+                \vdots & & & & & & & & \ddots & & \vdots \\
+                & & & & & & & & & x_{n-1} & 0 \\
+                0 & & & & & & & & & 0 & -x_{n_1}
+        \end{array}
+        \right]}\label{eq:invformXmDn}
+        \end{equation}
+        where each entry $(i,j)$ is an arbitrary block of size $N_i\times N_j$. The explicit derivations are carried out in appendix \ref{app:invconfDn}. It is interesting to notive the main differences with the case of $\Z_n$:
+        \begin{itemize}
+            \item since $2\D_n$ is not abelian, it can have irreps of two or more dimension (which it does). This implies that the gauge field bloacks $A_{\mu;ij}$ are not necessarily diagonal. This will have important consequence for the residual gauge group.
+            \item again because some irreps are mode then $1$-dimensional, we can act on $\C^3$ with non-diagonal actions (which we do). This means that components of the different complex scalars can be exchanged under $R$-symmetry.
+        \end{itemize}
+        
+
+    \subsection{$S=\C\times\C^2/\T,\mathcal{O},\I$}
+
+        \marker{Continue.}
+
+
+
+
+\section{$\mN=1$ daughter theories}
+
+    \subsection{$S=\C^3/\Z_n$}
+
+        Let us now consider the general case of $\Z_n$ acting on $\C^3$, i.e. we want to generalize the case that we treated in section \ref{sec:C3Z3}. 
+        
+        \subsubsection{Actions of $\Z_n$ on $\C^3$}
+        
+            The first thing to do is to specify a representation of $\Z_n$ on $\C^3$. Any representation $(R,\C^3)$ can be decomposed as
+            \begin{equation}
+                R=\bigoplus^{n-1}_{k=0} \rho^{\oplus n_k}_k
+            \end{equation}
+            and is therefore equivalent to a block-diagonal representation. This implies that $\sum_kn_k=3$ so $R$ can always be written as
+            \begin{equation}
+                R(g)= (\rho_a\oplus\rho_b\oplus\rho_c)(g)=
+                \begin{bmatrix}
+                    \zeta^a_n & 0 & 0 \\
+                    0 & \zeta^b_n & 0 \\
+                    0 & 0 & \zeta^c_n
+                \end{bmatrix}\label{eq:reprZnC3}
+            \end{equation}
+            with $a,b,c$ some arbitrary exponents. We denote the representation \eqref{eq:reprZnC3} by $(a,b,c)$. Let us make a few remarks on these representations:
+            \begin{itemize}
+                \item Since we consider $\Z_n$ as a subgroup of $\SU(3)$, we must have
+                \begin{equation}
+                    (a+b+c)\mod n = 0\label{eq:cdtabc}
+                \end{equation}
+                such that $\det(R(g))=1$.
+                \item Taking $a$ or $a+n$ gives the same representation and the same is true for $b$ and $c$, so we we can actually restrict ourselves to $0<a,b,c<n$. We can trade the strict inequalities and allow the values $0$ or $n$ if we want to consider trivial representations as well. In this case, we will find that at least one direction of $\C^3$ is left untouched, i.e. we are in the situation where the orbifold is actually $\C\times\C^2/\Z_n$, which we will not consider here.
+                \item Permuting $a,b,c$ gives equivalent representations so we can take $a,b,c$ to be ordered, so $0<a\leq b\leq c<n$.
+            \end{itemize}
+
+            The problem has now been reformulated as follows:
+            we are looking for all possible ordered triplets $(a,b,c)$ such that $0<a\leq b\leq c<n$ and \eqref{eq:cdtabc}. For $n=1$ and $n=2$, it is clear that this is not possible, the possibilities involve at least one trivial representation. For $n=3$, the only possibility is $(1,1,1)$, the one we used in \ref{sec:C3Z3}. What about bigger values of $n$? First, note that $0<a\leq b\leq c<n$ implies that the maximum value of $a+b+c$ is $3n-1$. From equation \eqref{eq:cdtabc}, the only two possibilities are then $a+b+c=n$ or $a+b+c=2n$. What simplifies the analysis is that the second case can actually be ignored because it is already being taken care of by the first case. Let us explain that in more details: \marker{details}.
+            
+            Now that we have seen that the only possibility is $a+b+c=n$, we find that the maximum value that $a$ can take is $\lfloor n/3\rfloor$, so $a=1,\dots,\lfloor n/3\rfloor$. $c$ can then be expressed in terms of $a$ and $b$ as $c=n-a-b$. The constraint $b\leq c$ then implies $b\leq (n-a)/2$, i.e. $b=a,\dots,\lfloor (n-a)/2\rfloor$. To summarize, the representations are all the representations of the form
+            \begin{equation}
+                (a,b,n-a-b)
+            \end{equation}
+            with $a=1,\dots,\lfloor n/3\rfloor$ and $b=a,\dots,\lfloor (n-a)/2\rfloor$. For small values, we get
+            \begin{align*}
+                \Z_1 &: \text{necessarily involves a trivial representation}\\
+                \Z_2 &: \text{necessarily involves a trivial representation}\\
+                \Z_3 &: (1,1,1)\\
+                \Z_4 &: (1,1,2)\\
+                \Z_5 &: (1,1,3),(1,2,2)\label{reprZ5C3}\marker{False.}\\
+                \Z_6 &: (1,1,4),(1,2,3),(2,2,2)\\
+                \Z_7 &: (1,1,5),(1,2,4),(1,3,3),(2,2,3)\marker{False}\\
+                &\vdots
+            \end{align*}
+            For an arbitrary $n$, the total number of different representation is
+            \begin{equation}
+                \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}+1\right\rfloor = \begin{cases}
+                    3k^2,\qquad\text{if $n=6k$}\\
+                    3k^2+k,\qquad\text{if $n=6k+1$},\\
+                    3k^2+2k,\qquad\text{if $n=6k+2$},\\
+                    3k^2+3k+1,\qquad\text{if $n=6k+3$},\\
+                    3k^2+4k+1,\qquad\text{if $n=6k+4$},\\
+                    3k^2+5k+2,\qquad\text{if $n=6k+5$}
+                \end{cases}
+            \end{equation}
+            The details are presented in appendix \ref{app:compsum}.
+
+        \subsubsection{Example: $\Z_5$}
+
+            For $\Z_5$, we saw that there are two nonequivalent ways of acting on $\C^3$, see \eqref{reprZ5C3}. Let us first consider the action $(1,1,3)$
+            \begin{equation}
+                R(g)=
+                \begin{bmatrix}
+                    \zeta_5 & 0 & 0\\
+                    0 & \zeta_5 & 0\\
+                    0 & 0 & \zeta^3_5
+                \end{bmatrix}
+            \end{equation}
+            i.e. $R=\rho_1\oplus\rho_1\oplus\rho_3$.
+
+            For the gauge field, the reasoning is exactly the same than for $\Z_3$ and we get
+            \begin{equation}
+                A_\mu=
+                \begin{bmatrix}
+                    A_{\mu;00} & & \\
+                    & \ddots & \\
+                    & & A_{\mu;44}
+                \end{bmatrix}
+            \end{equation}
+            where each block $A_{\mu;ii}$ is of size $N_i\times N_i$. The projected gauge group is
+            \begin{equation}
+                G_{\text{proj}} = \U(N_0)\times\U(N_1)\times\U(N_2)\times\U(N_3)\times\U(N_4).
+            \end{equation}
+
+            The scalar fields transform as
+            \begin{equation}
+                X^m_{i\alpha_i,j\beta_j}\to R(g)\indices{^m_n}\rho_i(g)X^n_{i\alpha_i,j\beta_j}\rho_j(g)^{-1}
+            \end{equation}
+            so the invariant configurations must satisfy
+            \begin{equation}
+                X^m_{i\alpha_i,j\beta_j} = R(g)\indices{^m_n}\zeta^{i-j}_4\rho_i(g)X^n_{i\alpha_i,j\beta_j} = 
+                \begin{cases}
+                    \zeta^{i-j+1}X^m_{i\alpha_i,j\beta_j},\quad\text{if } m=0,1,2,3\\
+                    \zeta^{i-j+3}X^m_{i\alpha_i,j\beta_j},\quad\text{if } m=4,5.
+                \end{cases}
+            \end{equation}
+            and are therefore of the form
+            \begin{equation}
+                X^m = 
+                \begin{bmatrix}
+                    0 & X^m_{01} & 0 & 0 & 0\\
+                    0 & 0 & X^m_{12} & 0 & 0\\
+                    0 & 0 & 0 & X^m_{23} & 0\\
+                    0 & 0 & 0 & 0 & X^m_{34}\\
+                    X^m_{40} & 0 & 0 & 0 & 0
+                \end{bmatrix}
+            \end{equation}
+            for $m=0,1,2,3$ and 
+            \begin{equation}
+                X^m = 
+                \begin{bmatrix}
+                    0 & 0 & 0 & X^m_{03} & 0\\
+                    0 & 0 & 0 & 0 & X^m_{14}\\
+                    X^m_{20} & 0 & 0 & 0 & 0\\
+                    0 & X^m_{31} & 0 & 0 & 0\\
+                    0 & 0 & X^m_{42} & 0 & 0
+                \end{bmatrix}
+            \end{equation}
+            for $m=4,5$. Gauge anomaly cancellation imposes
+            \begin{align}
+                -N_{i-2}+N_{i+2}-2N_{i+1}+2N_{i-1}=0
+            \end{align}
+            for $i=0,1,2,3,4$ which implies that
+            \begin{equation}
+                N_0=N_1=N_2=N_3=N_4.
+            \end{equation}
+
+            Now if we choose the representation $(1,2,2)$, i.e.
+            \begin{equation}
+                R(g)=
+                \begin{bmatrix}
+                    \zeta_5 & 0 & 0\\
+                    0 & \zeta^2_5 & 0\\
+                    0 & 0 & \zeta^2_5
+                \end{bmatrix}
+            \end{equation}
+            we get instead that the invariant field configurations must satisfy
+            \begin{equation}
+                X^m_{i\alpha_i,j\beta_j} = R(g)\indices{^m_n}\zeta^{i-j}_4\rho_i(g)X^n_{i\alpha_i,j\beta_j} =
+                \begin{cases}
+                    \zeta^{i-j+1}X^m_{i\alpha_i,j\beta_j},\quad\text{if } m=0,1\\
+                    \zeta^{i-j+2}X^m_{i\alpha_i,j\beta_j},\quad\text{if } m=2,3,4,5.
+                \end{cases}
+            \end{equation}
+            and are therefore of the form
+            \begin{equation}
+                X^m = 
+                \begin{bmatrix}
+                    0 & X^m_{01} & 0 & 0 & 0\\
+                    0 & 0 & X^m_{12} & 0 & 0\\
+                    0 & 0 & 0 & X^m_{23} & 0\\
+                    0 & 0 & 0 & 0 & X^m_{34}\\
+                    X^m_{40} & 0 & 0 & 0 & 0
+                \end{bmatrix}
+            \end{equation}
+            for $m=0,1$ and 
+            \begin{equation}
+                X^m = 
+                \begin{bmatrix}
+                    0 & 0 &  X^m_{02} & 0 & 0\\
+                    0 & 0 & 0 &  X^m_{13} & 0\\
+                    0 & 0 & 0 & 0 &  X^m_{24}\\
+                    X^m_{30} & 0 & 0 & 0 & 0\\
+                    0 &  X^m_{41} & 0 & 0 & 0
+                \end{bmatrix}
+            \end{equation}
+            for $m=2,3,4,5$. Gauge anomaly cancellation imposes
+            \begin{align}
+                -2N_{i+2}+2N_{i-2}-N_{i+1}+N_{i-1}=0\marker{True ?}
+            \end{align}
+            for $i=0,1,2,3,4$ which implies that
+            \begin{equation}
+                N_0=N_1=N_2=N_3=N_4.
+            \end{equation}
+
+            \begin{figure}
+                \centering
+                \begin{subfigure}[b]{0.3\textwidth}
+                    \centering
+                    \begin{tikzpicture}[scale=0.8]
+                        \foreach \n in {0,...,4}{
+                            \draw[very thick] (-72*\n:2) .. controls ({-72*(\n+1)+15}:3.5) and ({-72*(\n+1)-15}:3.5) .. ({-72*(\n+2)}:2) node[midway,sloped,allow upside down]{$\blacktriangleright$};
+                            \draw[very thick] ({-72*\n}:2) -- ({-72*(\n-1)}:2) node[midway,sloped,allow upside down]{$\blacktriangleright\blacktriangleright$};
+                            \draw[fill=black] (-72*\n:2) circle[radius=0.15];
+                            \draw (-72*\n:1.5) node{$N_\n$};
+                        }
+                    \end{tikzpicture}
+                    \caption{$(1,1,3)$}
+                    \label{fig:y equals x}
+                \end{subfigure}
+                \hspace{2cm}
+                \begin{subfigure}[b]{0.3\textwidth}
+                    \centering
+                    \begin{tikzpicture}[scale=0.8]
+                        \foreach \n in {0,...,4}{
+                            \draw[very thick] (-72*\n:2) .. controls ({-72*(\n+1)+15}:3.5) and ({-72*(\n+1)-15}:3.5) .. ({-72*(\n+2)}:2) node[midway,sloped,allow upside down]{$\blacktriangleleft\blacktriangleleft$};
+                            \draw[very thick] ({-72*\n}:2) -- ({-72*(\n-1)}:2) node[midway,sloped,allow upside down]{$\blacktriangleright$};
+                            \draw[fill=black] (-72*\n:2) circle[radius=0.15];
+                            \draw (-72*\n:1.5) node{$N_\n$};
+                        }
+                    \end{tikzpicture}
+                    \caption{$(1,2,2)$}
+                    \label{fig:three sin x}
+                \end{subfigure}
+                \caption{Quivers of the $\C^3/\Z_5$ daughter theories.}
+                \label{fig:Z5graphs}
+           \end{figure}
+
+           Note that, even we thought that $(1,1,3)$ and $(1,2,2)$ were different representation, that are actually equivalent in the sense that $(1,1,3)+(1,1,3)=(2,2,1)$. The two quivers in fig. \ref{fig:Z5graphs} should therefore be the same. And indeed, upon further inspection, the two are the same. To see this, we can rename the vertices in the second graph as $N_1\to N_3,N_2\to N_1,N_3\to N_4,N_4\to N_2$. This renaming defines the bijection between the two graphs. A more pragmatic way to see this is to look at the adjacency matrices:
+           \begin{equation}
+                a_{(1,1,3)}=
+                \begin{bmatrix}
+                    0 & 0 & 1 & 0 & 2 \\
+                    2 & 0 & 0 & 1 & 0 \\
+                    0 & 2 & 0 & 0 & 1 \\
+                    1 & 0 & 2 & 0 & 0 \\
+                    0 & 1 & 0 & 2 & 0
+                \end{bmatrix}\qquad
+                a_{(1,2,2)}=
+                \begin{bmatrix}
+                    0 & 0 & 0 & 2 & 1 \\
+                    1 & 0 & 0 & 0 & 2 \\
+                    1 & 1 & 0 & 0 & 0 \\
+                    0 & 2 & 1 & 0 & 0 \\
+                    0 & 0 & 2 & 1 & 0
+                \end{bmatrix}.
+           \end{equation}
+           Changing the names of the vertices is equivalent to swapping line and columns. For example, 
+
+        \subsubsection{General $\Z_n$}
+
+           Let us now consider the general action
+           \begin{equation}
+                R(g)=
+                \begin{bmatrix}
+                    \zeta^a_n & 0 & 0\\
+                    0 & \zeta^b_n & 0\\
+                    0 & 0 & \zeta^c_n
+                \end{bmatrix}
+           \end{equation}
+           of $\Z_n$ on $\C^3$, where $(a,b,c)$ one of the representation that we studied before. In particular, recall that $a+b+c=n$. Following the same reasoning than before, we get that the gauge field of of the form
+           \begin{equation}
+               A_\mu=
+               \begin{bmatrix}
+                   A_{\mu;00} & & \\
+                   & \ddots & & \\
+                   & & A_{\mu;n-1,n-1}
+               \end{bmatrix}.
+           \end{equation}
+
+           Invariant scalar field configurations transform as
+           \begin{equation}
+               X^m_{i\alpha_i,j\beta_j}=
+               \begin{cases}
+                   \zeta^{i-j+a}_nX^m_{i\alpha_i,j\beta_j},\qquad \text{if }m=0,1\\
+                   \zeta^{i-j+b}_nX^m_{i\alpha_i,j\beta_j},\qquad \text{if }m=2,3\\
+                   \zeta^{i-j+c}_nX^m_{i\alpha_i,j\beta_j},\qquad \text{if }m=4,5
+               \end{cases}
+           \end{equation}
+           so
+           \begin{align}
+               X^{0,1}_{j-a,j} &\in (\boldsymbol{\textbf{N}_j},\boldsymbol{\bar{\textbf{N}}_{j-a}}),\\
+               X^{2,3}_{j-b,j} &\in (\boldsymbol{\textbf{N}_j},\boldsymbol{\bar{\textbf{N}}_{j-b}}),\\
+               X^{4,5}_{j-c,j} &\in (\boldsymbol{\textbf{N}_j},\boldsymbol{\bar{\textbf{N}}_{j-c}})
+           \end{align}
+           are the only possible non-vanishing components. This allows us to quickly draw all the possible quivers for a given $n$. Once again, the difficulty is only computational, not conceptual. This can therefore easily be implemented into Mathematica and we get the quiver for any $n$ and any representation $(a,b,c)$.
+        
+    \subsection{$S=\C^3/\Delta(3n^2),\Delta(6n^2)$}
+
+    \subsection{$S=\C^3/\Sigma_{36\times 3},\Sigma_{60\times 3},\Sigma_{168\times 3},\Sigma_{216\times 3},\Sigma_{360\times 3}$}
+
+    \subsection{$S=\C^3/(\Z_m\times\Z_n)$}
+
+        \subsubsection{Representations of $\Z_m\times\Z_n$}
+
+           We consider the group $\Z_m\times\Z_n$. Let us denote by $\{\mu_i\}_{i=0,\dots,m-1}$ and $\{\sigma_j\}_{j=0,\dots,n-1}$ two complete set of irreducible representation of $\Z_m$ and $\Z_n$ respectively, with
+           \begin{align}
+               \mu(g_1)&=\zeta^i_m\\
+               \sigma_j(g_2)&=\zeta^j_n
+           \end{align}
+           where $g_1$ and $g_2$ are the generating elements of $\Z_m$ and $\Z_n$ respectively. $\Z_m\times\Z_n$ is of order $mn$ and possesses the same number of equivalency classes (abelian). It has therefore $mn$ irreducible representations. Since the group is abelian, they are all of dimension $1$. Let us denote by $\{T_k\}_{k=0,\dots,m+n-1}$ a complete set of irreducible representations. Since we have a product group, for any $k$ there exists indices $i(k)$ and $j(k)$ such that $T_k=\mu_{i(k)}\otimes\sigma_{j(k)}$. We choose the indices $i(k)$ and $j(k)$ such that
+           \begin{align*}
+               T_0 &= \mu_0\otimes\mu_0,\\
+               T_1 &= \mu_0\otimes\mu_1,\\
+               T_2 &= \mu_0\otimes\mu_2,\\
+               &\vdots\\
+               T_{n-1} &= \mu_0\otimes\mu_{n-1},\\
+               T_n &= \mu_1\otimes\mu_0,\\
+               &\vdots\\
+               T_{2n-1} &= \mu_1\otimes\mu_{n-1},\\
+               &\vdots\\
+               T_{mn-1} &= \mu_{m-1}\otimes\mu_{n-1}.
+           \end{align*}
+           That is, we take
+           \begin{equation}
+               \begin{cases}
+                   i(k) &= \lfloor k/n\rfloor\\
+                   j(k) &= k\mod n
+               \end{cases}\qquad \Leftrightarrow \qquad k=i(k)n+j(k).
+           \end{equation}
+           Note that this simply a dictionary between a line notation and a matrix notation and that it is indeed a bijection $k\Leftrightarrow i,j$. In this way, we can proceed to similar manipulations than before, were we used line notations. 
+
+           Any representation $R$ of $\Z_m\times\Z_n$ can be decomposed as
+           \begin{equation}
+               R=\bigoplus_{i,j}N_k T_k=\bigoplus_{i,j}N_{ij}(\mu_{i}\otimes\sigma_{j})
+           \end{equation}
+           with $N_k=N_{i(k)j(k)}$. We must have $\sum_kN_k=3$. In other words, any representation of $\Z_m\times\Z_n$ on $\C^3$ is equivalent to
+           \begin{equation}
+                R(g_1,g_2)=[(\mu_{a}\otimes\sigma_{a'})\oplus(\mu_{b'}\otimes\sigma_{b'})\oplus(\mu_{c}\otimes\sigma_{c'})](g_1,g_2)=
+               \begin{bmatrix}
+                   \xi^a_m\xi^{a'}_n & 0 & 0 \\
+                   0 & \xi^b_m\xi^{b'}_n & 0 \\
+                   0 & 0 & \xi^c_m\xi^{c'}_n
+               \end{bmatrix}.
+           \end{equation}
+           The determinant condition is
+           \begin{align}
+                \xi^{a+b+c}_m &= \xi^{-a'-b'-c'}_n\\
+               \Leftrightarrow (a+b+c)\mod m &= (a'+b'+c')\mod n
+           \end{align}
+
+           
+
+           \begin{equation}
+            R(g_1,g_2)=
+           \begin{bmatrix}
+               \xi_m & 0 & 0 \\
+               0 & \xi_n & 0 \\
+               0 & 0 & \xi^{-1}_m\xi^{-1}_n
+           \end{bmatrix}.
+       \end{equation}
+
+    \subsubsection{Projection}
+
+        Let us start by the gauge field. We consider a unitary representation $(\rho,\C^N)$ of $\Z_m\times \Z_n$ on $\C^n$ and decompose it as
+        \begin{equation}
+            \rho=\bigoplus_{i,j}N_k T_k
+        \end{equation}
+        such that
+        \begin{equation}
+            \rho(g)=
+            \begin{bmatrix}
+                T_0(g) & & & \cdots & & & 0 \\
+                & \ddots & & & & & \\
+                & & T_0(g) & & & &  \\
+                \vdots & & & \ddots & & & \vdots \\
+                & & & & T_{mn-1}(g) & & \\
+                & & & & & \ddots & \\
+                0 & & & \cdots & & & T_{mn-1}(g) 
+            \end{bmatrix}
+            \hspace{-0.2cm}
+            \begin{tabular}{l}
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                    a_0\\ \ddots\\ a_0\ 
+                \end{matrix} 
+            }}\right\}N_0$\\
+            \vdots \\
+            $\left.\lefteqn{\phantom{
+                \begin{matrix}
+                    b_0\\ \ddots\\ b_0\ 
+                \end{matrix}
+            }} \right\}N_{mn-1}$
+            \end{tabular}.
+        \end{equation}
+
+        We can now use our usual bi-index notation $A_{\mu;k\alpha_k,l\beta_l}$ with $k,l=0,\dots mn-1$ and $\alpha_k,\beta_k=0,\dots,N_k$ but instead it is more convenient to come back to our matrix notation by writing the block $A_{\mu;k,l}$ as $A_{\mu;i(k)j(k),i(l)j(l)}$ that we simply denote by $A_{\mu;ij,i'j'}$ with $i,i'\in\{0,\dots,n-1\}$ and $j,j'\in\{0,\dots,n-1\}$. So for $m=2,n=3$ for example, the link between the two notations is
+        {\tiny
+        \begin{equation}
+            \begin{bmatrix}
+                A_{\mu;00} & A_{\mu;01} & A_{\mu;02} & A_{\mu;03} & A_{\mu;04} & A_{\mu;05} \\
+                A_{\mu;10} & A_{\mu;11} & A_{\mu;12} & A_{\mu;13} & A_{\mu;14} & A_{\mu;05} \\
+                A_{\mu;20} & A_{\mu;21} & A_{\mu;22} & A_{\mu;23} & A_{\mu;24} & A_{\mu;05} \\
+                A_{\mu;30} & A_{\mu;31} & A_{\mu;32} & A_{\mu;33} & A_{\mu;34} & A_{\mu;05} \\
+                A_{\mu;40} & A_{\mu;41} & A_{\mu;42} & A_{\mu;43} & A_{\mu;44} & A_{\mu;05} \\
+                A_{\mu;50} & A_{\mu;51} & A_{\mu;52} & A_{\mu;53} & A_{\mu;54} & A_{\mu;05}
+            \end{bmatrix}=
+            \begin{bmatrix}
+                \begin{bmatrix}
+                    A_{\mu;00,00} & A_{\mu;00,01} & A_{\mu;00,02}\\
+                    A_{\mu;01,00} & A_{\mu;01,01} & A_{\mu;01,02}\\
+                    A_{\mu;02,00} & A_{\mu;02,01} & A_{\mu;02,02}\\
+                \end{bmatrix}
+                \begin{bmatrix}
+                    A_{\mu;00,10} & A_{\mu;00,11} & A_{\mu;00,12}\\
+                    A_{\mu;01,10} & A_{\mu;01,11} & A_{\mu;01,12}\\
+                    A_{\mu;02,10} & A_{\mu;02,11} & A_{\mu;02,12}\\
+                \end{bmatrix}\\
+                \begin{bmatrix}
+                    A_{\mu;10,00} & A_{\mu;10,01} & A_{\mu;10,02}\\
+                    A_{\mu;11,00} & A_{\mu;11,01} & A_{\mu;11,02}\\
+                    A_{\mu;12,00} & A_{\mu;12,01} & A_{\mu;12,02}\\
+                \end{bmatrix}
+                \begin{bmatrix}
+                A_{\mu;10,10} & A_{\mu;10,11} & A_{\mu;10,12}\\
+                A_{\mu;11,10} & A_{\mu;11,11} & A_{\mu;11,12}\\
+                A_{\mu;12,10} & A_{\mu;12,11} & A_{\mu;12,12}\\
+            \end{bmatrix}
+            \end{bmatrix}
+        \end{equation}}
+        So instead of considering $A_\mu$ to be a single $mn\times mn$ matrix of element $A_{\mu;kl}$, where $A_{\mu;kl}$ are $N_k\times N_l$ matrices, we consider it as an $m\times m$ where each element $A_{\mu,ii'}$ (line $i$ column $i'$) is itself an $n\times n$ matrices with elements $A_{\mu;ij,i'j'}$ (line $j$ column $j'$), as shown above.
+
+        Using these notations, the gauge field transforms as
+        \begin{equation}
+            A_{\mu;ij,i'j'} \mapsto (\mu_i(g)\otimes\sigma_j(g))A_{\mu;ij,i'j'}(\mu_{i'}(g)\otimes\sigma_{j'}(g))^{-1} = \zeta^{i-i'}_m\zeta^{j'-j}_n A_{\mu;ij,i'j'}
+        \end{equation}
+        so invariant configurations can possess non-vanishing components $A_{\mu;ij,i'j'}$ only if
+        \begin{align}
+            \zeta^{i-i'}_m &= \zeta(j'-j)_n \\
+            \Leftrightarrow\quad (i-i')\mod m &= (j'-j)\mod n \\
+            \Leftrightarrow\quad j' &= j+\abs{i'-i}.
+        \end{align}
+        This means that the submatrices $A_{\mu;ii'}$ has an off-diagonal block form with offset $\abs{i'-i}$. Once again, for a general $n$, the difficulty is only computational, not conceptual. This can therefore easily be implemented into Mathematica and we get the form of the gauge field for any $n$.
+
+        For the scalar fields, we have
+        \begin{align}
+            X^m_{ij,i'j'}&\mapsto R(g)\indices{^m_n}(\mu_i(g)\otimes\sigma_j(g))X^n_{ij,i'j'}(\mu_{i'}(g)\otimes\sigma_{j'}(g))^{-1}\\
+            &\quad =
+            \begin{cases}
+                \zeta^{i-i'+1}_m\zeta^{j-j'}_n X^m_{ij,i'j'},\qquad m=0,1\\
+                \zeta^{i-i'}_m\zeta^{j-j'+1}_n X^m_{ij,i'j'},\qquad m=2,3\\
+                \zeta^{i-i'-1}_m\zeta^{j-j'-1}_n X^m_{ij,i'j'},\qquad m=4,5.
+            \end{cases}
+        \end{align}
+        So a configuration is invariant if and only if the only non-vanishing component satisfy
+        \begin{align}
+            m=0,1 &: (i-i'+1)\mod m = (j'-j)\mod n\\
+            m=2,3 &: (i-i')\mod m = (j'-j-1)\mod n\\
+            m=4,5 &: (i-i'-1)\mod m = (j'-j+1)\mod n.
+        \end{align}
+
+\section{A note about projective representations, discrete torsion and deformations}
+
+    \subsection{Projective representations and discrete torsion}
+
+        Up until now, and in particular in all of our computations in section \ref{sec:orbsing}, we only considered ordinary representations, i.e. linear representations. We can however use a more general representations such as projective representations for example. That is, representations $\rho$ of $\Gamma$ such that for all $\gamma_1,\gamma_2\in\Gamma$,
+        \begin{equation}
+            \rho(\gamma_1)\rho(\gamma_2)=A(g_1,g_2)\rho(\gamma_1\gamma_2)
+        \end{equation}
+        for some factor $A(\gamma_1,\gamma_2)$. The $A(\gamma_1,\gamma_2)=1$ corresponding to linear representations. For consistency reasons, the factor $A(g_1,g_2)$ cannot be completely arbitrary and must a cocycle condition. As a result, the possibilities for $A(\gamma_1,\gamma_2)$ are classified by the second cohomology group $H^2(\Gamma,\C^*)$, also called \emph{discrete torsion}. There exists a projective representation if and only if the latter does not vanish. This new liberty, whenever admissible, provides new classes of quiver gauge theories that can be remarkably different from the ones we considered up until now, with no discrete torsion.
+
+        What happens is that if one turns on an NSNS B-fiels alors the worldvolume, then the moduli space is expected to a non-commutative version of a Calabi-Yau space. This haw the discrete torsion is physically realized. Another, and actually equivalent through T-duality, way of studying gauge theories is to consider D-branes streched between configurations of NS$5$-branes\footnote{D$5$-branes are charged under the Ramond-Ramond field whose quanta comes from the Ramond-Ramond sector but NS$5$-branes are charges under the Kalb-Ramonf field whose quanta comes fromthe Neveu-Schwarz. On the worldvolume of an NS$5$-brane (6-dimensional) propagates propagates a superstring, this called the \emph{little string}.}. This is the\emph{Hanany-Witten setup}.
+
+        The discrete tosrion also appears when writing the full open strin gpartition function that inclues the twisted sector where there is ambiguity up to a phase factor. As a consequence from modular invariance, the latter must satisfy certain cocycle conditions. It is precisely the deiscrete torsion. Note that this has been found to be true only for the open string sector.
+
+    \subsection{Quiver gauge theories deformations and conifold}
+
+        We can deforming the singular algebraic description of the orbifold with a field into a family smooth surfaces. The resulting total space is the \emph{conifold}.
