@@ -234,7 +234,7 @@
         \item they are the resolution (blow-ups) of orbifolds
         \item there are completely classified: they fall in the ADE classification
         \item they only break half of the supersymmetry
-        \item they are non-compact therefore we can study them for self-dual type II theory\marker.
+        \item they are non-compact therefore we can study them for self-dual type II theory. \marker{Why is that ?}
     \end{enumerate}
     Mathematically, an ALE space is complete riemannian $n$-manifold $M$ such that there exists a compact set $K\subset M$ such that $M\backslash K$ is diffeomorphic to $(\R^n\backslash B_0(R))/G$, where $R\in\R^+_0$ is a radius and $G\subset\O(n)$ a subgroup. Additionally, it is asked that the pulled back metric on $\R^n\backslash B_0(R)$ tends to the euclidean flat metric at infinity.
 
@@ -324,6 +324,214 @@
             \end{figure}
 
 \section{Some derivations}
+
+    \subsection{Invariant configurations for $\C\times\C^2/2\D_n$}\label{app:invconfDn}
+
+        \subsubsection{Gauge field}
+
+            To find the invariant configurations of the gauge group, we use use the bi-index notation and split the sub-blocks of $A_\mu$ in four categories depending on the dimensionality of the representations that they transform in. Note that it is only necessary to check the invariance under the two generators of $2\D_n$ to ensure invariance under the whole group.
+            \begin{itemize}
+                \item components $A_{\mu;a\alpha_a,b\beta_b}$ are $1\times 1$ blocks that transform as $A_{\mu;a\alpha_a,b\beta_b}\mapsto\sigma_a(\gamma)A_{\mu;a\alpha_a,b\beta_b}\sigma_b(\gamma)^{-1}$. It follows that only the component with $a,b=0,1$ or $a,b=2,3$ can be non-zero to have invariance under $A$. For invariance under $B$, we find that only the component with $a,b=0,2$ or $a,b=1,3$ can be non-zero if $n$ is even and only the component with $a=b$ if $n$ is odd. In conclusion, the invarint configuration under $A$ and $B$ are of the form
+                \begin{equation}
+                    (A_{\mu;ab})=\begin{bmatrix}
+                        \times & 0 & 0 & 0 \\
+                        0 & \times & 0 & 0 \\
+                        0 & 0 & \times & 0 \\
+                        0 & 0 & 0 & \times
+                    \end{bmatrix}
+                \end{equation}
+                regardless of the parity of $n$.
+                \item components $A_{\mu;a\alpha_a,r\beta_r}$ are $1\times 2$ blocks that transform as $A_{\mu;a\alpha_a,r\beta_r}\mapsto\sigma_a(\gamma)A_{\mu;a\alpha_a,r\beta_r}\mu_r(\gamma)^{-1}$. More explicitely, each block is of the form $\begin{bmatrix} x_1 & x_2 \end{bmatrix}$ and transforms as
+                \begin{equation*}
+                    \begin{bmatrix} x_1 & x_2 \end{bmatrix}\mapsto\sigma_a(A)\begin{bmatrix} x_1\zeta^{-r}_{2n} & x_2\zeta^{r}_{2n} \end{bmatrix}
+                \end{equation*}
+                under the generator $A$. This never invariant unless $a=b=0$. There is no need to check the invariance under $B$ since all these component are already all zero.
+                \item components $A_{\mu;r\alpha_r,a\beta_a}$ are $2\times 1$. The situation is exactly the samme as in the previous point: they must all vanish.
+                \item components $A_{\mu;r\alpha_r,s\beta_s}$ are $2\times 2$ blocks that transform as $A_{\mu;r\alpha_r,s\beta_s}\mapsto\mu_r(\gamma)A_{\mu;r\alpha_r,s\beta_s}\mu_s(\gamma)^{-1}$. Generically speaking, an invariant block under $A$ must satisfy
+                \begin{equation}
+                    \begin{bmatrix}
+                        \zeta^{r}_{2n} & 0 \\
+                        0 & \zeta^{-r}_{2n}
+                    \end{bmatrix}
+                    \begin{bmatrix}
+                        x_1 & x_2 \\
+                        x_3 & x_4
+                    \end{bmatrix}
+                    \begin{bmatrix}
+                        \zeta^{-s}_{2n} & 0 \\
+                        0 & \zeta^{s}_{2n}
+                    \end{bmatrix}=
+                    \begin{bmatrix}
+                        x_1\zeta^{r-s}_{2n} & x_2\zeta^{r+s}_{2n} \\
+                        x_3\zeta^{-r-s}_{2n} & x_4\zeta^{-r+s}_{2n}
+                    \end{bmatrix}=
+                    \begin{bmatrix}
+                        x_1 & x_2 \\
+                        x_3 & x_4
+                    \end{bmatrix}.
+                \end{equation}
+                There are two possibilities to have non-vanishing component: $\zeta^{r-s}_{2n}=1$ and $x_2=x_3=0$ or $\zeta^{r+s}_{2n}=1$ and $x_1=x_4=0$ but the latter is actually not possible since $r,s=1,\dots,n-1$. To we find that the blocks must be of the form
+                \begin{equation}
+                    A_{\mu;r\alpha_r,s\beta_s}=
+                        \begin{bmatrix}
+                            \times & 0 \\
+                            0 & \times
+                        \end{bmatrix}
+                \end{equation}
+                if $r=s$ and vanishing otherwise. For invariance under $B$, a blocks must satisfy
+                \begin{equation}
+                    \begin{bmatrix}
+                        0 & -1 \\
+                        1 & 0
+                    \end{bmatrix}
+                    \begin{bmatrix}
+                        x_1 & x_2 \\
+                        x_3 & x_4
+                    \end{bmatrix}
+                    \begin{bmatrix}
+                        0 & -1 \\
+                        1 & 0
+                    \end{bmatrix}=
+                    \begin{bmatrix}
+                        -x_4 & x_3 \\
+                        x_2 & -x_1
+                    \end{bmatrix}=
+                    \begin{bmatrix}
+                        x_1 & x_2 \\
+                        x_3 & x_4
+                    \end{bmatrix}.
+                \end{equation}
+                which is only possible if $x_1-x_4$ and $x_2=x_3$. Finally, we find that invariance under $A$ and $B$ imposes the block to be of the form
+                \begin{equation}
+                    A_{\mu;r\alpha_r,s\beta_s}=
+                        \begin{bmatrix}
+                            x & 0 \\
+                            0 & -x
+                        \end{bmatrix}
+                \end{equation}
+                if $r=s$ and vanishing otherwise.
+            \end{itemize}
+            The invariant gauge field configurations were found to be of the form
+            \begin{equation}
+                A_\mu=
+                {\tiny
+                \left[
+                \begin{array}{*{20}c}
+                    \times & 0 & 0 & 0 & & & & & & \cdots & 0 \\
+                    0 & \times & 0 & 0 & & & & & & & \\
+                    0 & 0 & \times & 0 & & & & & & & \\
+                    0 & 0 & 0 & \times & & & & & & & \\
+                    & & & & x_1 & 0 & & & & & \\
+                    & & & & 0 & -x_1 & & & & & \\
+                    & & & & & & x_2 & 0 & & & \\
+                    & & & & & & 0 & -x_2 & & & \\
+                    \vdots & & & & & & & & \ddots & & \vdots \\
+                    & & & & & & & & & x_{n-1} & 0 \\
+                    0 & & & & & & & & & 0 & -x_{n_1}
+            \end{array}
+            \right]}\label{eq:invformAmuDn}
+            \end{equation}
+            where each entry $(i,j)$ is an arbitrary block of size $N_i\times N_j$.
+
+        \subsubsection*{Scalar fields}
+
+            For the real scalar fields $X^m$, we need the action of $2\D_n$ on $\C^3$:
+            \begin{equation}
+                \begin{bmatrix}
+                    z_1\\z_2\\z_3
+                \end{bmatrix}\overset{A}{\longmapsto}
+                \begin{bmatrix}
+                    1 & 0 & 0 \\
+                    0 & \zeta_{2n} & 0 \\
+                    0 & 0 & \zeta^{-1}_{2n}
+                \end{bmatrix}
+                \begin{bmatrix}
+                    z_1\\z_2\\z_3
+                \end{bmatrix},\qquad
+                \begin{bmatrix}
+                    z_1\\z_2\\z_3
+                \end{bmatrix}\overset{B}{\longmapsto}
+                \begin{bmatrix}
+                    1 & 0 & 0 \\
+                    0 & 0 & i \\
+                    0 & i & 0
+                \end{bmatrix}
+                \begin{bmatrix}
+                    z_1\\z_2\\z_3
+                \end{bmatrix}.\label{eq:RsymDn}
+            \end{equation}
+            The partitionning of $X^m$ is similar to $A_\mu$. The additional difficulty is come from R-symmetry. Since it acts differently on the different components, we have the study themalmost one by one.
+            \begin{itemize}
+                \item the fields $X^0$ and $X^1$ are left untouched by R-symmetry, meaning that the invariant configurations have the same form than the gauge field, i.e. \eqref{eq:invformAmuDn}.
+                \item $X^{2,3}_{a\alpha_a,b\beta_b}$ transforms under $A$ as $X^{2,3}_{a\alpha_a,b\beta_b}\mapsto \xi_{2n}\sigma_a(A) X^{2,3}_{a\alpha_a,b\beta_b}\sigma_b(A)^{-1}$. The only configurations that are left invariant are therefore the ones such that $ \xi_{2n}\sigma_a(A) \sigma_b(A)^{-1}=1$, which is never the case. So $X^{2,3}_{a\alpha_a,b\beta_b}=0$ for all $a,b=0,\dots,3$.
+                \item $X^{2,3}_{a\alpha_a,k\beta_k}$ transforms under $A$ as $X^{2,3}_{a\alpha_a,k\beta_k}\mapsto \xi_{2n}\sigma_a(A) X^{2,3}_{a\alpha_a,k\beta_k}\mu_k(A)^{-1}$. More explicitely, if we denote a block$X^{2,3}_{a\alpha_a,k\beta_k}$ by $\begin{bmatrix} x_1 & x_2 \end{bmatrix}$, we get
+                \begin{equation}
+                    \begin{bmatrix}
+                        \xi^{k+1}_{2n}\sigma_a(A) x_1 & \xi^{-k+1}_{2n}\sigma_a(A) x_2
+                    \end{bmatrix}=
+                    \begin{bmatrix}
+                        x_1 & x_2
+                    \end{bmatrix}
+                \end{equation}
+                therefore we can have $x_1\neq0$ iff $\sigma_a(A)=-1$(i.e. $a=2,3$) and $k=n-1$, and we can have $x_1\neq0$ iff $\sigma_a(A)=1$(i.e. $a=0,1$) and $k=1$.
+                \item $X^{2,3}_{k\alpha_k,b\beta_b}$ transforms under $A$ as $X^{2,3}_{k\alpha_k,b\beta_b}\mapsto \xi_{2n}\mu_k(A) X^{2,3}_{k\alpha_k,b\beta_b}\sigma_a(A)^{-1}$. Similarly to the previous case, we can write the blocks $X^{2,3}_{k\alpha_k,a\beta_a}$ as $\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}$, we get
+                \begin{equation}
+                    \begin{bmatrix}
+                        \xi^{k+1}_{2n}\sigma_a(A) x_1 \\ \xi^{-k+1}_{2n}\sigma_a(A) x_2
+                    \end{bmatrix}=
+                    \begin{bmatrix}
+                        x_1 \\ x_2
+                    \end{bmatrix}
+                \end{equation}
+                therefore the conditions are exactly the same: we can have $x_1\neq0$ iff $\sigma_a(A)=-1$(i.e. $a=2,3$) and $k=n-1$, and we can have $x_1\neq0$ iff $\sigma_a(A)=1$(i.e. $a=0,1$) and $k=1$.
+                \item $X^{2,3}_{k\alpha_k,l\beta_l}$ transforms under $A$ as $X^{2,3}_{k\alpha_k,l\beta_l}\mapsto \xi_{2n}\mu_k(A) X^{2,3}_{k\alpha_k,l\beta_l}\mu_l(A)^{-1}$. Again, we can write the blocks $X^{2,3}_{k\alpha_k,l\beta_l}$ as $\begin{bmatrix} x_1 & x_2 \\ x_3 & x_4 \end{bmatrix}$ and we get
+                \begin{equation}
+                    \begin{bmatrix} 
+                        \zeta^{k-l+1}_{2n}x_1 & \zeta^{k+l+1}_{2n}x_2 \\
+                        \zeta^{-k-l+1}_{2n}x_3 & \zeta^{-k+l+1}_{2n}x_4 
+                    \end{bmatrix}=
+                    \begin{bmatrix} 
+                        x_1 & x_2 \\
+                        x_3 & x_4 
+                    \end{bmatrix}
+                \end{equation}
+                therefore, we can have
+                \begin{itemize}
+                    \item $x_1\neq0$ iff $l=k+1$,
+                    \item $x_2\neq0$ iff $l=-k-1$ (not possible),
+                    \item $x_3\neq0$ iff $l=-k+1$ (not possible),
+                    \item $x_4\neq0$ iff $l=k-1$.
+                \end{itemize}
+                For $X^{4,5}_{i\alpha_i,j\beta_j}$, the reasonning is exactly the same but with the $R$-symmetry acting as $\zeta^{-1}_{2n}$ instead of $\zeta_{2n}$. After similar computations, we get that the components $X^{4,5}_{a\alpha_a,b\beta_b}$ must be all vanishing too and the components $X^{4,5}_{a\alpha_a,k\beta_k} = \begin{bmatrix} x_1 & x_2 \end{bmatrix}$ can have $x_1\neq0$ iff $a=0,1$ and $k=1$ and $x_2\neq0$ iff $a=2,3$ and $k=n-1$. The same goes for the components $X^{4,5}_{k\alpha_k,b\beta_b}=\begin{bmatrix}x_1\\ x_2\end{bmatrix}$ and, at last, for the components $X^{4,5}_{k\alpha_k,l\beta_l}=\begin{bmatrix} 
+                    x_1 & x_2 \\
+                    x_3 & x_4 
+                \end{bmatrix}$, we find 
+                \begin{itemize}
+                    \item $x_1\neq0$ iff $l=k-1$,
+                    \item $x_2\neq0$ iff $l=-k+1$ (not possible),
+                    \item $x_3\neq0$ iff $l=-k-1$ (not possible),
+                    \item $x_4\neq0$ iff $l=k+1$.
+                \end{itemize}
+            \end{itemize}
+
+            We have established what configurations are invariant under the generator $A$, equivalently under the subgroup of $2\D_n$ generated by $A$. What about $B$? The action of $R$-symmetry for $B$ is more tiresome because it is not diagonal, see \eqref{eq:RsymDn}.  This implies that components get exchanged. More precisely, recall our notations $z_1=X^0+iX^1$, etc, if we rewrite \eqref{eq:RsymDn} in terms of real components, we get that
+            \begin{equation}
+                \begin{bmatrix}
+                    X^0\\X^1\\X^2\\X^3\\X^4\\X^5
+                \end{bmatrix}\overset{B}{\longmapsto}
+                \begin{bmatrix}
+                    X^0\\X^1\\-X^5\\X^4\\-X^3\\X^2
+                \end{bmatrix}.
+            \end{equation}
+            For the components $X^2_{a\alpha_a,b\beta_b}$, this implies that $X^2_{a\alpha_a,b\beta_b}=-\sigma_a(B)\sigma_b(B)^{-1}X^5_{a\alpha_a,b\beta_b}$. This completely fixes $X^5_{a\alpha_a,b\beta_b}$ in terms of $X^2_{a\alpha_a,b\beta_b}$. The can be done the other components of $X^2$, they we find that they all determine the ones of $X^5$. Without fully splitting each fields into components, we see that we must have
+            \begin{align}
+                X^2_{ij}&=-\rho_i(B)X^5_{ij}\rho_j(B)^{-1},\\
+                X^3_{ij}&=\rho_i(B)X^4_{ij}\rho_j(B)^{-1},\\
+                X^4_{ij}&=-\rho_i(B)X^3_{ij}\rho_j(B)^{-1},\\
+                X^5_{ij}&=\rho_i(B)X^2_{ij}\rho_j(B)^{-1},\\
+            \end{align}
+            bto have invariance under $B$. This equations imply in particular that $X^2_{kl}=-\rho_k(B^2)X^2_{kl}\rho_l(B^2)^{-1}$. Since, $\rho_k(B^1)=-\mathbbm{1}_{2\times 2}$ for every $k$, we get that all components $X^2_{kl}$ must be vanishing. In turn, this implies the components $X^{3,4,5}_{kl}$ must also all vanish. \marker{This cannot be true.}
+
 
     \subsection{}\label{app:compsum}
 

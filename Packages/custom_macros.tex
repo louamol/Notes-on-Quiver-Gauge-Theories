@@ -188,7 +188,8 @@
 % Marker counter
 \newcommand{\listmarkername}{List of Markers}
 \newlistof{marker}{mak}{\listmarkername}
-\newcommand{\marker}{\refstepcounter{marker}\textcolor{blue}{(*)}\addcontentsline{mak}{marker}{\protect\numberline{\themarker}}}
+\newcommand{\marker}[1]{\refstepcounter{marker}\textcolor{red}{#1}\addcontentsline{mak}{marker}{\protect\numberline{\themarker}}}
+%\newcommand{\note}[1]{\marker \textcolor{red}{#1}}
 
 % Clashes with mathptmx
 %\renewcommand{\mathbbm}{boldsylbol}
