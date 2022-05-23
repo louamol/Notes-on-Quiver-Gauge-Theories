@@ -176,6 +176,8 @@
 \newcommand{\tblacktriangleright}{\tiny{\blacktriangleright}}
 \newcommand{\tblacktriangleleft}{\tiny{\blacktriangleleft}}
 
+\newcommand{\boldN}{\boldsymbol{\bar{\textbf{N}}}}
+
 % SUSY
 
 \newcommand{\bve}{\bar{\varepsilon}}
@@ -188,7 +190,7 @@
 % Marker counter
 \newcommand{\listmarkername}{List of Markers}
 \newlistof{marker}{mak}{\listmarkername}
-\newcommand{\marker}[1]{\refstepcounter{marker}\textcolor{red}{#1}\addcontentsline{mak}{marker}{\protect\numberline{\themarker}}}
+\newcommand{\marker}[1]{\refstepcounter{marker}\textcolor{red}{\text{#1}}\addcontentsline{mak}{marker}{\protect\numberline{\themarker}}}
 %\newcommand{\note}[1]{\marker \textcolor{red}{#1}}
 
 % Clashes with mathptmx

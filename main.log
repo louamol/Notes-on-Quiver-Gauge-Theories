@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.7)  20 MAY 2022 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.7)  23 MAY 2022 17:48
 entering extended mode
 **"/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex"
 (/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex
@@ -1423,7 +1423,11 @@ LaTeX Warning: Label `sub@fig:three sin x' multiply defined.
 
 LaTeX Warning: Label `fig:Z5graphs' multiply defined.
 
-) (Body/BeyondToric.aux) (appendices.aux))
+) (Body/BeyondToric.aux) (Body/appendices.aux
+
+LaTeX Warning: Label `eq:invformAmuDn' multiply defined.
+
+))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -1583,11 +1587,7 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count510
 \openout2 = `titlepage.aux'.
 
- (titlepage.tex
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 22.
- (/home/louan/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [1
+ (titlepage.tex [1
 
 
 {/home/louan/.miktex/texmfs/data/pdftex/config/pdftex.map}]) (main.toc
@@ -1626,7 +1626,7 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90 ...ers and McKay graphs}{24}{subsection.10.5}
+l.90 ... configurations}{24}{subsubsection.10.3.3}
                                                   % [1
 
 
@@ -1639,11 +1639,7 @@ l.90 ...ers and McKay graphs}{24}{subsection.10.5}
 
  (Body/PreliminaryNotions.tex [4
 
-]
-
-LaTeX Warning: Reference `app:spacetimegeom' on page 5 undefined on input line 28.
-
-[5] [6]
+] [5] [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 119.
@@ -1675,7 +1671,11 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [8] [9] [10] [11]
 Package hyperref Info: bookmark level for unknown examp* defaults to 0 on input line 287.
 Package hyperref Info: bookmark level for unknown theorem* defaults to 0 on input line 295.
- [12] [13]
+ [12]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 309.
+ (/home/louan/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [13]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 345.
  [14] [15] [16] [17] [18] [19]) [20]
 \openout2 = `Body/OrbifoldSingularities.aux'.
@@ -1684,436 +1684,527 @@ Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input
 
 
 
-] [22] [23]
-Overfull \hbox (1.32845pt too wide) in paragraph at lines 150--152
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 83.
+
+[22] [23] [24]
+Overfull \hbox (1.32845pt too wide) in paragraph at lines 202--204
 \T1/cmr/m/n/10 i.e. in the ad-joint rep-re-sen-ta-tion but with-out the deriva-tive term (as ex-plained above). Now if $\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 []; V[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g[]$
  []
 
 
-LaTeX Warning: Reference `eq:transfAmu' on page 24 undefined on input line 155.
-
-[24]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 197.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 197.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 197.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 197.
+LaTeX Warning: Reference `eq:transfAmu' on page 25 undefined on input line 207.
 
 [25]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 289.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 250.
+
+[26]
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 342.
  (/home/louan/.miktex/texmfs/install/tex/latex/bbm/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [26] [27]
+) [27] [28]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 389.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 389.
+(hyperref)                removing `math shift' on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 408.
+(hyperref)                removing `math shift' on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 408.
+(hyperref)                removing `math shift' on input line 470.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 412.
+(hyperref)                removing `math shift' on input line 470.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 412.
+(hyperref)                removing `math shift' on input line 474.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 412.
+(hyperref)                removing `\times' on input line 474.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 412.
+(hyperref)                removing `superscript' on input line 474.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 412.
+(hyperref)                removing `subscript' on input line 474.
 
-[28]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 474.
+
+[29] [30]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 502.
- [29] [30]
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 564.
+ [31]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 607.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 607.
+(hyperref)                removing `math shift' on input line 669.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 607.
+(hyperref)                removing `\times' on input line 669.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 607.
+(hyperref)                removing `superscript' on input line 669.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 607.
-
-
-LaTeX Warning: Reference `app:su2subgroups' on page 31 undefined on input line 609.
-
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 648.
-
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 668.
-
-[31]
-
-LaTeX Warning: Reference `app:invconfDn' on page 32 undefined on input line 685.
+(hyperref)                removing `subscript' on input line 669.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 692.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 692.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 692.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 692.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 699.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 699.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 701.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 701.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 701.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 701.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 705.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 705.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 705.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 705.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 705.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 705.
+(hyperref)                removing `math shift' on input line 669.
 
 [32]
 
-LaTeX Warning: Reference `app:compsum' on page 33 undefined on input line 760.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 710.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 736.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 762.
+(hyperref)                removing `math shift' on input line 764.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 762.
+(hyperref)                removing `\times' on input line 764.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 762.
+(hyperref)                removing `superscript' on input line 764.
 
 
-LaTeX Warning: Reference `reprZ5C3' on page 33 undefined on input line 764.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 764.
 
-[33] [34]
-Overfull \hbox (16.63765pt too wide) in paragraph at lines 891--892
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 771.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 771.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 777.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 777.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 777.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 777.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 777.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 777.
+
+[33]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 834.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 834.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 834.
+
+
+LaTeX Warning: Reference `reprZ5C3' on page 34 undefined on input line 836.
+
+[34] [35]
+Overfull \hbox (16.63765pt too wide) in paragraph at lines 963--964
  [][] 
  []
 
 
-Overfull \hbox (16.63765pt too wide) in paragraph at lines 905--906
+Overfull \hbox (16.63765pt too wide) in paragraph at lines 977--978
  [][] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 934.
+(hyperref)                removing `math shift' on input line 1006.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 934.
+(hyperref)                removing `subscript' on input line 1006.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 934.
+(hyperref)                removing `math shift' on input line 1006.
 
-[35]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 972.
-
+[36]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 972.
+(hyperref)                removing `math shift' on input line 1044.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 972.
+(hyperref)                removing `superscript' on input line 1044.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 972.
+(hyperref)                removing `\Delta' on input line 1044.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 972.
+(hyperref)                removing `superscript' on input line 1044.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 972.
+(hyperref)                removing `\Delta' on input line 1044.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 972.
+(hyperref)                removing `superscript' on input line 1044.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 974.
+(hyperref)                removing `math shift' on input line 1044.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 974.
+(hyperref)                removing `math shift' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Sigma' on input line 974.
+(hyperref)                removing `superscript' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 974.
+(hyperref)                removing `\Sigma' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 974.
+(hyperref)                removing `subscript' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Sigma' on input line 974.
+(hyperref)                removing `\times' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 974.
+(hyperref)                removing `\Sigma' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 974.
+(hyperref)                removing `subscript' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Sigma' on input line 974.
+(hyperref)                removing `\times' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 974.
+(hyperref)                removing `\Sigma' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 974.
+(hyperref)                removing `subscript' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Sigma' on input line 974.
+(hyperref)                removing `\times' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 974.
+(hyperref)                removing `\Sigma' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 974.
+(hyperref)                removing `subscript' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Sigma' on input line 974.
+(hyperref)                removing `\times' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 974.
+(hyperref)                removing `\Sigma' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 974.
+(hyperref)                removing `subscript' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 974.
+(hyperref)                removing `\times' on input line 1046.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 976.
+(hyperref)                removing `math shift' on input line 1046.
+
+<Pictures/SU3finitequivers.png, id=1072, 1204.5pt x 744.7825pt>
+File: Pictures/SU3finitequivers.png Graphic file (type png)
+<use Pictures/SU3finitequivers.png>
+Package pdftex.def Info: Pictures/SU3finitequivers.png  used on input line 1050.
+(pdftex.def)             Requested size: 481.79147pt x 297.90771pt.
+
+Overfull \hbox (28.82358pt too wide) in paragraph at lines 1050--1051
+ [][] 
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 976.
+(hyperref)                removing `math shift' on input line 1054.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 976.
+(hyperref)                removing `superscript' on input line 1054.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 976.
+(hyperref)                removing `subscript' on input line 1054.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 976.
+(hyperref)                removing `\times' on input line 1054.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 976.
+(hyperref)                removing `subscript' on input line 1054.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 978.
+(hyperref)                removing `math shift' on input line 1054.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 978.
+(hyperref)                removing `math shift' on input line 1056.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 978.
+(hyperref)                removing `subscript' on input line 1056.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 978.
+(hyperref)                removing `\times' on input line 1056.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 978.
+(hyperref)                removing `subscript' on input line 1056.
 
-[36] [37]
 
-LaTeX Warning: Reference `sec:orbsing' on page 38 undefined on input line 1140.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1056.
 
-) [38]
+[37 <./Pictures/SU3finitequivers.png>] [38] [39]
+
+LaTeX Warning: Reference `sec:orbsing' on page 40 undefined on input line 1248.
+
+) [40] [41]
 \openout2 = `Body/ToricSingularities.aux'.
 
- (Body/ToricSingularities.tex [39
+ (Body/ToricSingularities.tex [42
 
 
 
-] [40]
-<Pictures/toricdiagZ2orbifold.png, id=1013, 879.285pt x 358.33875pt>
+] [43]
+<Pictures/toricdiagZ2orbifold.png, id=1155, 879.285pt x 358.33875pt>
 File: Pictures/toricdiagZ2orbifold.png Graphic file (type png)
 <use Pictures/toricdiagZ2orbifold.png>
 Package pdftex.def Info: Pictures/toricdiagZ2orbifold.png  used on input line 95.
 (pdftex.def)             Requested size: 351.70778pt x 143.33296pt.
 Package hyperref Info: bookmark level for unknown prop* defaults to 0 on input line 101.
- [41 <./Pictures/toricdiagZ2orbifold.png>] [42] [43] [44]
-<Pictures/conifoldtoricdiag.png, id=1070, 255.95625pt x 254.9525pt>
+ [44 <./Pictures/toricdiagZ2orbifold.png>] [45] [46] [47]
+<Pictures/conifoldtoricdiag.png, id=1210, 255.95625pt x 254.9525pt>
 File: Pictures/conifoldtoricdiag.png Graphic file (type png)
 <use Pictures/conifoldtoricdiag.png>
 Package pdftex.def Info: Pictures/conifoldtoricdiag.png  used on input line 332.
 (pdftex.def)             Requested size: 102.38068pt x 101.97919pt.
-<Pictures/conifoldpqweb.png, id=1071, 334.24875pt x 330.23375pt>
+<Pictures/conifoldpqweb.png, id=1211, 334.24875pt x 330.23375pt>
 File: Pictures/conifoldpqweb.png Graphic file (type png)
 <use Pictures/conifoldpqweb.png>
 Package pdftex.def Info: Pictures/conifoldpqweb.png  used on input line 339.
 (pdftex.def)             Requested size: 100.27539pt x 99.07088pt.
- [45]
-<Pictures/SPPtoricdiagram.png, id=1082, 194.7275pt x 333.245pt>
+ [48]
+<Pictures/SPPtoricdiagram.png, id=1223, 194.7275pt x 333.245pt>
 File: Pictures/SPPtoricdiagram.png Graphic file (type png)
 <use Pictures/SPPtoricdiagram.png>
 Package pdftex.def Info: Pictures/SPPtoricdiagram.png  used on input line 351.
 (pdftex.def)             Requested size: 77.8896pt x 133.29562pt.
-<Pictures/algorithm.png, id=1083, 1189.44376pt x 280.04625pt>
+<Pictures/algorithm.png, id=1224, 1189.44376pt x 280.04625pt>
 File: Pictures/algorithm.png Graphic file (type png)
 <use Pictures/algorithm.png>
 Package pdftex.def Info: Pictures/algorithm.png  used on input line 370.
 (pdftex.def)             Requested size: 356.83588pt x 84.01451pt.
- [46 <./Pictures/SPPtoricdiagram.png> <./Pictures/conifoldtoricdiag.png> <./Pictures/conifoldpqweb.png>]
+ [49 <./Pictures/SPPtoricdiagram.png> <./Pictures/conifoldtoricdiag.png> <./Pictures/conifoldpqweb.png>]
 
-LaTeX Warning: Citation 'Kronheimer1990' on page 47 undefined on input line 378.
+LaTeX Warning: Citation 'Kronheimer1990' on page 50 undefined on input line 378.
 
 
 Overfull \hbox (46.87195pt too wide) in paragraph at lines 378--379
 []\T1/cmr/m/n/10 For the ADE $\OMS/cmsy/m/n/10 N \OT1/cmr/m/n/10 = 2$ \T1/cmr/m/n/10 the-o-ries dis-cussed in sec-tion []11[], by the Kronheimer-Nakajima con-struc-tion [[]],
  []
 
-) [47 <./Pictures/algorithm.png>]
+<Pictures/delPezzo.png, id=1236, 958.58125pt x 895.345pt>
+File: Pictures/delPezzo.png Graphic file (type png)
+<use Pictures/delPezzo.png>
+Package pdftex.def Info: Pictures/delPezzo.png  used on input line 404.
+(pdftex.def)             Requested size: 383.4257pt x 358.13165pt.
+) [50 <./Pictures/algorithm.png>] [51 <./Pictures/delPezzo.png>]
 \openout2 = `Body/BeyondToric.aux'.
 
- (Body/BeyondToric.tex) [48
+ (Body/BeyondToric.tex) [52
 
 
 
 ]
-\openout2 = `appendices.aux'.
+\openout2 = `Body/appendices.aux'.
+
+ (Body/appendices.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
 
 
-No file appendices.tex.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+[53
+
+
+
+]
+Overfull \hbox (7.02814pt too wide) detected at line 148
+[]
+ []
+
+[54]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 222.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 222.
+
+[55] [56]
+<Pictures/youngslattice.png, id=1298, 938.50626pt x 952.55875pt>
+File: Pictures/youngslattice.png Graphic file (type png)
+<use Pictures/youngslattice.png>
+Package pdftex.def Info: Pictures/youngslattice.png  used on input line 313.
+(pdftex.def)             Requested size: 422.32391pt x 428.64748pt.
+ [57]
+<Pictures/suter1.png, id=1310, 455.7025pt x 379.4175pt>
+File: Pictures/suter1.png Graphic file (type png)
+<use Pictures/suter1.png>
+Package pdftex.def Info: Pictures/suter1.png  used on input line 321.
+(pdftex.def)             Requested size: 205.06422pt x 170.73628pt.
+<Pictures/suter2.png, id=1311, 569.12625pt x 262.9825pt>
+File: Pictures/suter2.png Graphic file (type png)
+<use Pictures/suter2.png>
+Package pdftex.def Info: Pictures/suter2.png  used on input line 322.
+(pdftex.def)             Requested size: 256.10445pt x 118.34102pt.
+ [58 <./Pictures/youngslattice.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 328.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 328.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 328.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 328.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 328.
+
+[59 <./Pictures/suter1.png> <./Pictures/suter2.png>]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 417.
+
+[60] [61] [62]) [63]
 Overfull \hbox (0.1637pt too wide) in paragraph at lines 47--48
 []\T1/cmr/m/n/10 Forward al-go-rithm for toric sin-gu-lar-i-ties: de-vl-op-ments: [[]Asp94[]],[[]DGM97[]],[[]MP98[]],[[]Bea+00[]],[[]DD00[]],
  []
 
-[49
-
-
-
+[64
 
 
 ] (main.mak)
 \tf@mak=\write8
 \openout8 = `main.mak'.
 
- [50] [51] [52] (main.aux (titlepage.aux) (Body/PreliminaryNotions.aux) (Body/OrbifoldSingularities.aux) (Body/ToricSingularities.aux) (Body/BeyondToric.aux) (appendices.aux))
+ [65] [66] [67] (main.aux (titlepage.aux) (Body/PreliminaryNotions.aux) (Body/OrbifoldSingularities.aux) (Body/ToricSingularities.aux) (Body/BeyondToric.aux) (Body/appendices.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2121,7 +2212,7 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7886171A89F5AB17AFAA103CF36E239C;18762.
+(rerunfilecheck)             Checksum: E3F4C8DCB4B41DA20E7AA7A2581B56DC;23000.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -2132,13 +2223,21 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50989 strings out of 478865
- 1092382 string characters out of 2853437
- 1987072 words of memory out of 3000000
- 67384 multiletter control sequences out of 15000+600000
- 449174 words of font info for 169 fonts, out of 8000000 for 9000
+ 51164 strings out of 478865
+ 1095264 string characters out of 2853437
+ 1994675 words of memory out of 3000000
+ 67445 multiletter control sequences out of 15000+600000
+ 449308 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,24n,127p,1767b,2174s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,24n,127p,1767b,2166s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
@@ -2153,10 +2252,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
- </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti0900.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0500.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0900.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm10.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2074.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1200.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1440.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1728.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (53 pages, 996978 bytes).
+ </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0700.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti0900.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0500.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0900.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm10.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2074.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (68 pages, 1472636 bytes).
 PDF statistics:
- 2173 PDF objects out of 2487 (max. 8388607)
- 482 named destinations out of 1000 (max. 500000)
- 814 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2462 PDF objects out of 2487 (max. 8388607)
+ 589 named destinations out of 1000 (max. 500000)
+ 1015 words of extra memory for PDF output out of 10000 (max. 10000000)
 
