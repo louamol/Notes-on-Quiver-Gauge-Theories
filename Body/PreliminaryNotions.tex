@@ -9,27 +9,25 @@
         \begin{equation*}
             M = \R^{1,3}\times M^{(6)}.\label{spacetimedecomp}
         \end{equation*}
-        This is the so-called \emph{brane-world paradigm}. %In particular, we will be interested in type IIB string theory because of its self-duality under S-duality. \marker{Why ?}
+        This is the so-called \emph{brane-world paradigm}. %In particular, we will be interested in type IIB string theory because of its self-duality under S-duality. \todo{Why ?}
 
     \subsubsection*{Supersymmetry and Calabi-Yau manifolds}
     
-        Independently from string theory, we can ask for the wolrdvolume theory to be supersymmetric. We start from type IIB superstring theory which is $10$-dimensional and has $\mN=2$ supersymmetry so it possesses $32$ supercharges. As usual, they transform under the minimal spinor representation (MSR) of the bulk Lorentz group, here $\SO(1,9)$. In ten dimensions this representation is $8$-dimensional (complex) which is why there are $2(8+8)=32$ supercharges: $8$ transforming in the $8$-dimensional MSR and $8$ transforming in the $8$-dimensional conjugate MSR and whole thing times two since $\mN=2$. If we compactify type II string theory on $\R^{1,3}\times M^{(6)}$ where $M^{(6)}$ is any $6$-dimensional manifold, supersymmetry is broken. The reason for this is that the supercharges now have to transform under the MSR of $\SO(1,3)\times\H(M^{(6)})$\marker{Why ?}, where $\H(M^{(6)})$ is the holonomy group of $M^{6}$. Recall that a generic curved 6-dimensional manifold has $\O(6)$ holonomy and $\SO(6)$ if it is orientable. We only consider the later case. The supercharges must therefore transform under the MSR of $\SO(1,3)\times\SO(6)$. The MSR of $\SO(1,3)$ being $\boldsymbol{2}$ and the one of $\SO(6)$ being $\boldsymbol{4}$, we conclude that imposing the spacetime to have the form \eqref{spacetimedecomp} changes the representation under which the supercharges transform as follows:
+        Independently from string theory, we can ask for the wolrdvolume theory to be supersymmetric. We start from type IIB superstring theory which is $10$-dimensional and has $\mN=2$ supersymmetry so it possesses $32$ supercharges. As usual, they transform under the minimal spinor representation (MSR) of the bulk Lorentz group, here $\SO(1,9)$. In ten dimensions this representation is $8$-dimensional (complex) which is why there are $2(8+8)=32$ supercharges: $8$ transforming in the $8$-dimensional MSR and $8$ transforming in the $8$-dimensional conjugate MSR and whole thing times two since $\mN=2$. If we compactify type II string theory on $\R^{1,3}\times M^{(6)}$ where $M^{(6)}$ is any $6$-dimensional manifold, supersymmetry is broken. The reason for this is that the supercharges now have to transform under the MSR of $\SO(1,3)\times\H(M^{(6)})$\todo{Why ?}, where $\H(M^{(6)})$ is the holonomy group of $M^{6}$. Recall that a generic curved 6-dimensional manifold has $\O(6)$ holonomy and $\SO(6)$ if it is orientable. We only consider the later case. The supercharges must therefore transform under the MSR of $\SO(1,3)\times\SO(6)$. The MSR of $\SO(1,3)$ being $\boldsymbol{2}$ and the one of $\SO(6)$ being $\boldsymbol{4}$, we conclude that imposing the spacetime to have the form \eqref{spacetimedecomp} changes the representation under which the supercharges transform as follows:
         \begin{equation}
             \boldsymbol{8}\oplus\bar{\boldsymbol{8}}\to (\boldsymbol{2}_L,\boldsymbol{4})\oplus(\boldsymbol{2}_R,\bar{\boldsymbol{4}}).
         \end{equation}
-        If we stop here, the residual supercharges might be ill-defined since making a tour around a loop in $M^{(6)}$ could result in anon-trivial rotation. To solve this problem, we need also to be more restrictive on the holonomy. In fact, it is precisely the holonomy of the transverse space that dictates the number of supersymmetries that are left. Let us now consider a four-dimensional field theory resulting from compactification of the transverse six-dimensional space. The number of supercharges that generate supersymmetries for this theory is the number of Killing spinor (covariantly constant spinor): each Killing spinor contracted with the local supersymmetry current generates a residual supersymmetry. \marker{Explain.} Now the link with holonomy: since $\SO(6)\cong\SU(4)$, minimal spinors can be viewed as having four complex component and as transforming under $\SU(4)$. Indeed, minimal spinors in six dimensions have four complex components. In order to have one covariantly conserved spinor, we look for the biggest subgroup of $\SU(4)$ that leaves a component of the spinor invariant. This is clearly $\{e\}\times\SU(3)\subset\SU(4)$ that acts trivially on the first component. The spinor $(1,0,0,0)$ is then covariantly conserved. Our transverse space must therefore have $\SU(3)$ holonomy such that the parallel transport of the spinor $(1,0,0,0)$ under any closed loop is a lower $\SU(3)$ rotation. We conclude that if the transverse Calabi-Yau has $\SU(3)$ holonomy, the worldvolume theory has $\mN=1$ supersymmetry. The same reasoning can be used to obtain that $\SU(2)$ holonomy implies $\mN=2$ supersymmetry.
+        If we stop here, the residual supercharges might be ill-defined since making a tour around a loop in $M^{(6)}$ could result in anon-trivial rotation. To solve this problem, we need also to be more restrictive on the holonomy. In fact, it is precisely the holonomy of the transverse space that dictates the number of supersymmetries that are left. Let us now consider a four-dimensional field theory resulting from compactification of the transverse six-dimensional space. The number of supercharges that generate supersymmetries for this theory is the number of Killing spinor (covariantly constant spinor): each Killing spinor contracted with the local supersymmetry current generates a residual supersymmetry. \todo{Explain.} Now the link with holonomy: since $\SO(6)\cong\SU(4)$, minimal spinors can be viewed as having four complex component and as transforming under $\SU(4)$. Indeed, minimal spinors in six dimensions have four complex components. In order to have one covariantly conserved spinor, we look for the biggest subgroup of $\SU(4)$ that leaves a component of the spinor invariant. This is clearly $\{e\}\times\SU(3)\subset\SU(4)$ that acts trivially on the first component. The spinor $(1,0,0,0)$ is then covariantly conserved. Our transverse space must therefore have $\SU(3)$ holonomy such that the parallel transport of the spinor $(1,0,0,0)$ under any closed loop is a lower $\SU(3)$ rotation. We conclude that if the transverse Calabi-Yau has $\SU(3)$ holonomy, the worldvolume theory has $\mN=1$ supersymmetry. The same reasoning can be used to obtain that $\SU(2)$ holonomy implies $\mN=2$ supersymmetry.
 
         To conclude, preserving any degree of supersymmetry constrains the transverse space $M^{(6)}$ to be compact, complex, Kähler and to have $G\subset\SU(3)$ holonomy. Namely, $M^{(6)}$ must be a Calabi-Yau threefoldau manifolds are given in appendix \ref{sec:CY}.
 
     \subsubsection*{Non-compact transverse space}
     
-        If we let the worldvolume of the D$3$-branes carry the requisite gauge theory while the bulk contains gravity, we can relax the compactness condition and study non-compact threefolds. In other words, $M^{(6)}$ is taken to be Calabi-Yau variety, instead of a Calabi-Yau manifold. A Calabi-Yau varitey is an affine variety that locally models a Calabi-Yau manifold, therefore allowing for singularities. 
-        
-        Using a non-compact transverse space can intuitively be understood as a Kaluza-Klein compactification where we take the size of the compact dimensions to infinity. The four-dimensional gravity coupling constant being inversely proportional to this quantity, there is no gravity in this limit. This makes the analysis much simpler and therefore also serves as an argument to ignore gravity in the worldvolume theory. Consequently, we will mostly ignore gravity and not care about the metric of the spacetime, see appendix \ref{app:spacetimegeom} for more details.
+        If we let the worldvolume of the D$3$-branes carry the requisite gauge theory while the bulk contains gravity, we can relax the compactness condition and study non-compact Calabi-Yau threefolds. Using a non-compact transverse space can intuitively be understood as a Kaluza-Klein compactification where we take the size of the compact dimensions to infinity. The four-dimensional gravity coupling constant being inversely proportional to this quantity, there is no gravity in this limit. This makes the analysis much simpler and therefore also serves as an argument to ignore gravity in the worldvolume theory. Consequently, we will mostly ignore gravity and not care about the metric of the spacetime, see appendix \ref{app:spacetimegeom} for more details. In this setup we cannot really talk about compactification anymore. Instead we just think of it as a flat space on which lives the gauge theory while gravity only lives in transverse space. This non-compact limit Kaluza-Klein argument is useful to understand why there no gravity from the point of view of the worldvolume theory.
 
     \subsubsection*{Singular transverse space}
 
-        The only smooth Calabi-Yau threefold is $\C^3$ so we are lead to consider singular Calabi-Yau varieties. We usually denote $S\equiv M^{(6)}$ to remind us of the singular aspect. String theory being a theory of extended objects, it is well-defined on such singularities. In a sense that will be clarified later, this singular structure of the geometry requires to ``project'' the theory. As a result, the gauge group $\U(N)$ will be broken down into products of smaller gauge groups. The simplest examples of singular Calabi-Yau varieties are Calabi-Yau orbifolds. We will mainly be interested these examples.
+        The only smooth Calabi-Yau threefold is $\C^3$ so we are lead to consider singular Calabi-Yau varieties. A Calabi-Yau variety is an affine variety that locally models a Calabi-Yau manifold, therefore allowing for singularities. We usually denote $S\equiv M^{(6)}$ to remind us of the singular aspect. String theory being a theory of extended objects, it is well-defined on such singularities. In a sense that will be clarified later, this singular structure of the geometry requires to ``project'' the theory. As a result, the gauge group $\U(N)$ will be broken down into products of smaller gauge groups. The simplest examples of singular Calabi-Yau varieties are Calabi-Yau orbifolds. We will mainly be interested these examples.
     
         From the point of view of the orbifold, the D$3$-brane is a point. Consequently, the D$3$-branes parametrize the transverse space. This is the first clue of the crucial relationship between the worldvolume theory and the Calabi-Yau singularity. Eventually, we will see that the classical vacuum of the gauge theory should be, in explicit coordinates, the defining equation of $S$. This is precisely the opposite of the projection manipulation we mentioned above: recovering the transverse space from the gauge theory. 
         
@@ -39,7 +37,7 @@
 
         Mathematically, this brane-world paradigm is the realization of branes as supports of vector bundles (sheaf). Gauge theories on branes are intimately related to algebraic constructions of stable bundles, i.e. holomorphic or algebraic vector bundles that are stable in the sense of geometric invariant theory. In particular, D-brane gauge theories manifest as a natural description of symplectic quotients and their resolutions in geometric invariant theory.
 
-        To summarize in more mathematical terms, our D-branes, together with the stable vector bundle (sheaf) supported thereupon, resolves the transverse Calabi-Yau orbifold which is the vacuum for the gauge theory on the worldvolume as a GIT quotient. \marker{Explain.}
+        To summarize in more mathematical terms, our D-branes, together with the stable vector bundle (sheaf) supported thereupon, resolves the transverse Calabi-Yau orbifold which is the vacuum for the gauge theory on the worldvolume as a GIT quotient. \todo{Explain.}
 
     \subsubsection*{Summary}
 
@@ -61,60 +59,6 @@
             \end{empheq}
         \end{subequations}
         In turns out that the full space of vacua of any supersymmetric gauge theory can be described as an algebraic variety.
-
-
-    \subsection{SYM from D-branes}
-
-        The dynamics of D-branes is described by the Dirac-Born-Infeld action
-        \begin{equation}
-            S_{\text{DBI}}[X,F] = -\frac{T_p}{g_s}\int\d^{p+1}\sigma~\sqrt{-\det\limits_{0\leq a,b\leq p}(\eta_{ab}+\p_a X^m\p_b X_m+2\pi\alpha'F_{ab})}.
-        \end{equation}
-        The latter can be expended for slowly-varying ﬁelds, which is equivalent to passing to the ﬁeld theory limit $\alpha'\to0$. The resulting action is the action of a $\U(1)$ gauge theory in $p+1$ dimensions with $9-p$ real scalar fields. This action is exactly the same than the one we would obtain by dimensionally-reducing a pure $\U(1)$ Yang-Mills gauge theory in 10 spacetime dimensions with the identification
-        \begin{equation}
-            g_{\text{YM}}=g_sT^{-1}_p(2\pi\alpha')^{-2}=\frac{g_s}{\sqrt{\alpha'}}(2\pi\sqrt{\alpha'})^{p-1}.
-        \end{equation}
-
-        This construction can be generalized for multiple D-branes. It now results in a non-abelian theory. The general statement is the following:
-        \begin{result}
-            The low-energy dynamics of $N$ parallel, coicident D$p$-branes in flat space is described in static gauge by the dimensional reduction to $p+1$ dimensions of pure $10d$ $\mN=1$ supersymmetric Yang-Mills theory with gauge group $\U(N)$ in ten spacetime dimensions.
-        \end{result}
-        Recall that the $10$-dimensional action is given by
-        \begin{equation}
-            S_{\text{YM}} = \frac{1}{4g^2_{\text{YM}}}\int\d^{10}x~\left[ \tr(F_{\mu\nu}F^{\mu\nu})+2i\tr(\bar{\psi}\Gamma^\mu D_\mu\psi)\right],\label{eq:SYMaction}
-        \end{equation}
-        where $F_{\mu\nu}=\p_\mu A_\nu-\p_\nu A_\mu+i[A_\mu,A_\nu]$ is the non-abelian field strength of the $\U(N)$ gauge field $A_\mu$, $D_\mu=\p_\mu-i[A_\mu,\psi]$, $\Gamma^\mu$ are $16\times 16$ Dirac matrices \marker{Why ?}, and the $N\times N$ Hermitian fermion ﬁeld $\psi$ is a $16$-component Majorana-Weyl spinor of the Lorentz group $\SO(1,9)$ which transforms under the adjoint representation of the gauge group $\U(N)$. On-shell, there are eight on-shell bosonic, gauge ﬁeld degrees of freedom, and eight fermionic degrees of freedom, after imposition of the Dirac equation $\xout{D}\psi=\Gamma^\mu D_\mu\psi=0$. One can verify that this action is invariant under the supersymmetry transformations
-        \begin{align*}
-            \delta_\eps A_\mu &= \frac{i}{2}\bar{\eps}\Gamma_\mu\psi,\\
-            \delta_{\eps}\psi &= \frac{1}{2}F_{\mu\nu}[\Gamma^\mu,\Gamma^\nu]\eps,
-        \end{align*}
-        where $\eps$ is an Majorana-Weyl spinor.
-        
-        Using \eqref{eq:SYMaction}, we can construct a supersymmetric Yanf-Mills gauge theory in $p+1$ dimensions with $16$ independent supercharges by dimensional reduction: we take all fields to be independent of the coordinates $X^{p+1},\dots, X^9$, then the ten-dimensional gauge field $A_\mu$ splits into a $(p+1)$-dimensional $\U(N)$ gauge field $A_a$ plus $9-p$ Hermitian scalar fields $\Phi^m=X^m/2\pi\alpha'$ in the adjoint representation of $\U(N)$. The D$p$-brane action is thereby obtained from the dimensionality reduced field theory as
-        \begin{equation}
-            S_{\text{D}p} = -\frac{T_pg_s(2\pi\alpha')^2}{4}\int\d^{p+1}\sigma~\tr\left(F_{ab}F^{ab}+2D_a\Phi^m D^a\Phi_m+\sum_{m\neq n}[\Phi^m,\Phi^n]^2+\text{fermions}\right)\label{eq:SDp}
-        \end{equation}
-        where $a,b=0,\dots,p$, $m,n=p+1,\dots,9$. We do not explicitly display the fermionic contributions for the moment. In conclusion, the low-energy brane dynamics is described by a supersymmetric Yang-Mills theory on the D$p$-brane worldvolume which is dynamically coupled to the transverse, adjoint scalar ﬁelds $\Phi^m$.
-
-        The scalar potential is given by
-        \begin{equation}
-            V(\Phi)=\sum_{m\neq n}[\Phi^m,\Phi^n]^2.
-        \end{equation}
-        It is negative definite because $[\Phi^m,\Phi^n]^\dagger=[\Phi^n,\Phi^m]=-[\Phi^m,\Phi^n]$. A classical vacuum of the ﬁeld theory deﬁned by \eqref{eq:SDp} corresponds to a static solution of the equations of motion whereby the potential energy of the system is minimized. It is given by the field configurations which solve simultaneously the quations $F_{ab}=D_a\Phi^m=\psi^a=0$ and $V(\Phi)=0$. Since all term in $V(\Phi)$ have the same sign, the equation $V(\Phi)=0$ is equivalent to the equation $[\Phi^m,\Phi^n]=0$ for all $m,n$ and at each point in the $(p+1)$-dimensional worldvolume of the branes. This implies that the $N\times N$ hermitian matrix fields $\Phi^m$ are simultaneously diagonalizable by a gauge transformation, so that we may write
-        \begin{equation}
-            \Phi^m=U
-            \begin{bmatrix}
-                X^m_1 & & & 0 \\
-                & X^m_2 & & \\
-                & & \ddots & \\
-                0 & & & X^m_N
-            \end{bmatrix}U^{-1},\label{eq:diagPhi}
-        \end{equation}
-        the matrix $U$ is independent of $m$. The simultaneous,
-        real eigenvalues $X^m_i$ give the positions of the $N$ distinct D-branes in the $m$-th transverse direction. It follows that the moduli space of classical vacua for the $(p+1)$-dimensional ﬁeld theory \eqref{eq:SDp} is the quotient space $(\R^{9-p})^N/S_N$, where the factors of $\R$ correspond to the positions of the $N$ D$p$-branes in the $(9-p)$-dimensional transverse space, and $S_N$ is the symmetric group acting by permutations of the $N$ coordinates $X_i$. The group $S_N$ corresponds to the residual Weyl symmetry of the $\U(N)$ gauge group acting in \eqref{eq:diagPhi}. It represents the permutation symmetry of a system of $N$ \emph{indistinguishable} D-branes.
-
-        From \eqref{eq:SDp} one can easily deduce that the masses of the ﬁelds corresponding to the oﬀ-diagonal matrix elements are given precisely by the distances $\abs{x_i-x_j}$ between the corresponding branes. This description means that an interpretation of the D-brane conﬁguration in terms of classical geometry is only possible in the classical ground state of the system, whereby the matrices $\Phi^m$ are simultaneously diagonalizable and the positions of the individual D-branes may be described through their spectrum of eigenvalues. This gives a simple and natural dynamical mechanism for the appearence of ``non-commutative geometry'' at short distances, where the D-branes cease to have well-deﬁned positions according to classical geometry.
-
-        \marker{The end of this section has to be rewritten}
     
     \subsection{$\mN=4$ super Yang-Mills theory in $D=4$}\label{sec:N4SCFT}
 
@@ -124,8 +68,8 @@
             \begin{itemize}
                 \item \textbf{Conformal symmetries}: they form the 15-dimensional subgroup $\SO(2,4)$ and are generated by $P_\mu,M_{\mu\nu},K_\mu$ and $D$.
                 \item \textbf{R-symmetry}: they form the 15-dimensional subgroup $\SO(6)_R$ and are generated by $T^A$ ($A=1,\dots,15$).
-                \item \textbf{Poincaré supersymmetries}: they form the 16-dimensional sub group \marker{Why ?} and are generated by $Q^I_\alpha$ and $\bar{Q}^I_{\dalpha}$.
-                \item \textbf{Conformal supersymmetries}: they form the 16-dimensional subgroup \marker{Why ?} and are generated by $S_{\alpha I}$ and $\bar{S}^{\dalpha I}$.
+                \item \textbf{Poincaré supersymmetries}: they form the 16-dimensional sub group \todo{Why ?} and are generated by $Q^I_\alpha$ and $\bar{Q}^I_{\dalpha}$.
+                \item \textbf{Conformal supersymmetries}: they form the 16-dimensional subgroup \todo{Why ?} and are generated by $S_{\alpha I}$ and $\bar{S}^{\dalpha I}$.
             \end{itemize}
 
             Conformal invariance of this theory can be seen as a consequence of the non-renormalization theorems.
@@ -188,46 +132,105 @@
         \end{equation}
         where $d_{abc}$ is an invariant symmetric tensor of the Lie algebra of $G$, independent of the representation. One can show that $A(\rho^*)=-A(\rho)$ so self dual representation have $A(\rho)=0$ in particular. The only simple Lie groups that allow for a complex non-self-conjugate representation are $\SU(n)$ with $n\geq3$. We can normalize $d_{abc}$ such that $A(\rho)=1$ for the fundamental $n$-dimensional representations.
     
-\section{Properties of D-branes in type II theories}
+\section{Properties of D-branes}
 
-    The minimal irreducible representation in 10 dimensions is a Majorana-Weyl representation of dimension 8. In type II theories, we have $\mN=(1,1)$ for IIA and $\mN=(2,0)$ for IIB. Because of the string origin of the generators, the two supersymmetry generators $\eps_L$ and $\eps_R$ (Majorana-Weyl spinors) satisfy
-    \begin{equation}
-        \eps_L=\Gamma_{11}\eps_L,\qquad \eps_R=\eta\Gamma_{11}\eps_R
-    \end{equation}
-    with $\eta=+1$ for IIB and $\eta=-1$ for IIA theory. For a D$p$-brane, the supersymmetry projections is the following:
-    \begin{equation}
-        \eps_L=\Gamma_0\dots\Gamma_p\eps_R.
-    \end{equation}
-    In other words, the supersymmetries with generators of the form
-    \begin{equation}
-        Q_\alpha+\Gamma_0\dots\Gamma_p\bar{Q}_{\dalpha}\label{eq:susypresved}
-    \end{equation}
-    are preserved by the D$p$-brane while the one with generators of the form
-    \begin{equation}
-        Q_\alpha-\Gamma_0\dots\Gamma_p\bar{Q}_{\dalpha}\label{eq:susybroken}
-    \end{equation}
-    are broken. They violate the boundary conditions. Since there is the same number of generators of the form \eqref{eq:susypresved} than of the form \eqref{eq:susybroken}, exactly haf of the supersymmetry is broken. The idea that one spacetime direction would break one supercharge could be reasonable if supersymmetries were transforming as vectors which not the case; supercharges transform as spinors. It would also be incompatible with the T-duality because two branes of different dimensions must have the same number of unbroken supercharges if there is a T-duality relating them: the number of unbroken supercharges is the same for all dual descriptions (a necessary condition for the equivalence). And indeed, in the correct theory, that's the case. Every type II D-brane breaks half of the supercharges.
+    \subsection{SYM from D-branes}
 
-    To obtain the previous relations, we start by the ones from M-theory and compactify the 11th direction, getting type IIA theory. $\Gamma_{11}$ then plays the role of the chiral projector in 10 dimensions; the supersymmetry parameters are related by $\eps_L=\frac{1}{2}(1+\Gamma_{11})\eps$ and $\eps_R=\frac{1}{2}(1-\Gamma_{11})\eps$. The relations for type IIB theory are then obtained by T-duality. Under a T-duality over the $\hat{i}$ direction, the supersymmetry parameters transform as
-    \begin{align*}
-        \eps_L &\mapsto \eps_L,\\
-        \eps_R &\mapsto \Gamma_i\eps_R.
-    \end{align*}
-    The tension of a D$p$-brane is given by
-    \begin{equation}
-        T_{p} = \frac{1}{(2\pi)^pg_sl^{p+1}_s}.
-    \end{equation}
-    This completely fixes the Newton constant: the tension of electric-magnetic duals must satisfy:
-    \begin{equation}
-        T_pT_{D-p-4} = \frac{2\pi}{16\pi G_D}.
-    \end{equation}
-    In ten dimensions, this gives $G_{10}=8\pi^6g^2_sl^8_s$.
+        The dynamics of D-branes is described by the Dirac-Born-Infeld action
+        \begin{equation}
+            S_{\text{DBI}}[X,F] = -\frac{T_p}{g_s}\int\d^{p+1}\sigma~\sqrt{-\det\limits_{0\leq a,b\leq p}(\eta_{ab}+\p_a X^m\p_b X_m+2\pi\alpha'F_{ab})}.
+        \end{equation}
+        The latter can be expended for slowly-varying ﬁelds, which is equivalent to passing to the ﬁeld theory limit $\alpha'\to0$. The resulting action is the action of a $\U(1)$ gauge theory in $p+1$ dimensions with $9-p$ real scalar fields. This action is exactly the same than the one we would obtain by dimensionally-reducing a pure $\U(1)$ Yang-Mills gauge theory in 10 spacetime dimensions with the identification
+        \begin{equation}
+            g_{\text{YM}}=g_sT^{-1}_p(2\pi\alpha')^{-2}=\frac{g_s}{\sqrt{\alpha'}}(2\pi\sqrt{\alpha'})^{p-1}.
+        \end{equation}
 
-    The dualities are defined as follows:
-    \begin{align*}
-        \text{S-duality} &: g_s\mapsto\frac{1}{g_s},\qquad l^2_s\mapsto g_sl^2_s,\\
-        \text{T-duality} &: R\mapsto\frac{l^2_s}{R},\qquad g\mapsto g_s\frac{l_s}{R}.
-    \end{align*}
+        This construction can be generalized for multiple D-branes. It now results in a non-abelian theory. The general statement is the following:
+        \begin{result}
+            The low-energy dynamics of $N$ parallel, coicident D$p$-branes in flat space is described in static gauge by the dimensional reduction to $p+1$ dimensions of pure $10d$ $\mN=1$ supersymmetric Yang-Mills theory with gauge group $\U(N)$ in ten spacetime dimensions.
+        \end{result}
+        Recall that the $10$-dimensional action is given by
+        \begin{equation}
+            S_{\text{YM}} = \frac{1}{4g^2_{\text{YM}}}\int\d^{10}x~\left[ \tr(F_{\mu\nu}F^{\mu\nu})+2i\tr(\bar{\psi}\Gamma^\mu D_\mu\psi)\right],\label{eq:SYMaction}
+        \end{equation}
+        where $F_{\mu\nu}=\p_\mu A_\nu-\p_\nu A_\mu+i[A_\mu,A_\nu]$ is the non-abelian field strength of the $\U(N)$ gauge field $A_\mu$, $D_\mu=\p_\mu-i[A_\mu,\psi]$, $\Gamma^\mu$ are $16\times 16$ Dirac matrices \todo{Why ?}, and the $N\times N$ Hermitian fermion ﬁeld $\psi$ is a $16$-component Majorana-Weyl spinor of the Lorentz group $\SO(1,9)$ which transforms under the adjoint representation of the gauge group $\U(N)$. On-shell, there are eight on-shell bosonic, gauge ﬁeld degrees of freedom, and eight fermionic degrees of freedom, after imposition of the Dirac equation $\xout{D}\psi=\Gamma^\mu D_\mu\psi=0$. One can verify that this action is invariant under the supersymmetry transformations
+        \begin{align*}
+            \delta_\eps A_\mu &= \frac{i}{2}\bar{\eps}\Gamma_\mu\psi,\\
+            \delta_{\eps}\psi &= \frac{1}{2}F_{\mu\nu}[\Gamma^\mu,\Gamma^\nu]\eps,
+        \end{align*}
+        where $\eps$ is an Majorana-Weyl spinor.
+
+        Using \eqref{eq:SYMaction}, we can construct a supersymmetric Yanf-Mills gauge theory in $p+1$ dimensions with $16$ independent supercharges by dimensional reduction: we take all fields to be independent of the coordinates $X^{p+1},\dots, X^9$, then the ten-dimensional gauge field $A_\mu$ splits into a $(p+1)$-dimensional $\U(N)$ gauge field $A_a$ plus $9-p$ Hermitian scalar fields $\Phi^m=X^m/2\pi\alpha'$ in the adjoint representation of $\U(N)$. The D$p$-brane action is thereby obtained from the dimensionality reduced field theory as
+        \begin{equation}
+            S_{\text{D}p} = -\frac{T_pg_s(2\pi\alpha')^2}{4}\int\d^{p+1}\sigma~\tr\left(F_{ab}F^{ab}+2D_a\Phi^m D^a\Phi_m+\sum_{m\neq n}[\Phi^m,\Phi^n]^2+\text{fermions}\right)\label{eq:SDp}
+        \end{equation}
+        where $a,b=0,\dots,p$, $m,n=p+1,\dots,9$. We do not explicitly display the fermionic contributions for the moment. In conclusion, the low-energy brane dynamics is described by a supersymmetric Yang-Mills theory on the D$p$-brane worldvolume which is dynamically coupled to the transverse, adjoint scalar ﬁelds $\Phi^m$.
+
+        The scalar potential is given by
+        \begin{equation}
+            V(\Phi)=\sum_{m\neq n}[\Phi^m,\Phi^n]^2.
+        \end{equation}
+        It is negative definite because $[\Phi^m,\Phi^n]^\dagger=[\Phi^n,\Phi^m]=-[\Phi^m,\Phi^n]$. A classical vacuum of the ﬁeld theory deﬁned by \eqref{eq:SDp} corresponds to a static solution of the equations of motion whereby the potential energy of the system is minimized. It is given by the field configurations which solve simultaneously the quations $F_{ab}=D_a\Phi^m=\psi^a=0$ and $V(\Phi)=0$. Since all term in $V(\Phi)$ have the same sign, the equation $V(\Phi)=0$ is equivalent to the equation $[\Phi^m,\Phi^n]=0$ for all $m,n$ and at each point in the $(p+1)$-dimensional worldvolume of the branes. This implies that the $N\times N$ hermitian matrix fields $\Phi^m$ are simultaneously diagonalizable by a gauge transformation, so that we may write
+        \begin{equation}
+            \Phi^m=U
+            \begin{bmatrix}
+                X^m_1 & & & 0 \\
+                & X^m_2 & & \\
+                & & \ddots & \\
+                0 & & & X^m_N
+            \end{bmatrix}U^{-1},\label{eq:diagPhi}
+        \end{equation}
+        the matrix $U$ is independent of $m$. The simultaneous,
+        real eigenvalues $X^m_i$ give the positions of the $N$ distinct D-branes in the $m$-th transverse direction. It follows that the moduli space of classical vacua for the $(p+1)$-dimensional ﬁeld theory \eqref{eq:SDp} is the quotient space $(\R^{9-p})^N/S_N$, where the factors of $\R$ correspond to the positions of the $N$ D$p$-branes in the $(9-p)$-dimensional transverse space, and $S_N$ is the symmetric group acting by permutations of the $N$ coordinates $X_i$. The group $S_N$ corresponds to the residual Weyl symmetry of the $\U(N)$ gauge group acting in \eqref{eq:diagPhi}. It represents the permutation symmetry of a system of $N$ \emph{indistinguishable} D-branes.
+
+        From \eqref{eq:SDp} one can easily deduce that the masses of the ﬁelds corresponding to the oﬀ-diagonal matrix elements are given precisely by the distances $\abs{x_i-x_j}$ between the corresponding branes. This description means that an interpretation of the D-brane conﬁguration in terms of classical geometry is only possible in the classical ground state of the system, whereby the matrices $\Phi^m$ are simultaneously diagonalizable and the positions of the individual D-branes may be described through their spectrum of eigenvalues. This gives a simple and natural dynamical mechanism for the appearence of ``non-commutative geometry'' at short distances, where the D-branes cease to have well-deﬁned positions according to classical geometry.
+
+        \todo{The end of this section has to be rewritten}
+
+    \subsection{D-branes and residual SUSY in type II theories}
+
+        The minimal irreducible representation in 10 dimensions is a Majorana-Weyl representation of dimension 8. In type II theories, we have $\mN=(1,1)$ for IIA and $\mN=(2,0)$ for IIB. Because of the string origin of the generators, the two supersymmetry generators $\eps_L$ and $\eps_R$ (Majorana-Weyl spinors) satisfy
+        \begin{equation}
+            \eps_L=\Gamma_{11}\eps_L,\qquad \eps_R=\eta\Gamma_{11}\eps_R
+        \end{equation}
+        with $\eta=+1$ for IIB and $\eta=-1$ for IIA theory. For a D$p$-brane, the supersymmetry projections is the following:
+        \begin{equation}
+            \eps_L=\Gamma_0\dots\Gamma_p\eps_R.
+        \end{equation}
+        In other words, the supersymmetries with generators of the form
+        \begin{equation}
+            Q_\alpha+\Gamma_0\dots\Gamma_p\bar{Q}_{\dalpha}\label{eq:susypresved}
+        \end{equation}
+        are preserved by the D$p$-brane while the one with generators of the form
+        \begin{equation}
+            Q_\alpha-\Gamma_0\dots\Gamma_p\bar{Q}_{\dalpha}\label{eq:susybroken}
+        \end{equation}
+        are broken. They violate the boundary conditions. Since there is the same number of generators of the form \eqref{eq:susypresved} than of the form \eqref{eq:susybroken}, exactly haf of the supersymmetry is broken. The idea that one spacetime direction would break one supercharge could be reasonable if supersymmetries were transforming as vectors which not the case; supercharges transform as spinors. It would also be incompatible with the T-duality because two branes of different dimensions must have the same number of unbroken supercharges if there is a T-duality relating them: the number of unbroken supercharges is the same for all dual descriptions (a necessary condition for the equivalence). And indeed, in the correct theory, that's the case. Every type II D-brane breaks half of the supercharges.
+
+        To obtain the previous relations, we start by the ones from M-theory and compactify the 11th direction, getting type IIA theory. $\Gamma_{11}$ then plays the role of the chiral projector in 10 dimensions; the supersymmetry parameters are related by $\eps_L=\frac{1}{2}(1+\Gamma_{11})\eps$ and $\eps_R=\frac{1}{2}(1-\Gamma_{11})\eps$. The relations for type IIB theory are then obtained by T-duality. Under a T-duality over the $\hat{i}$ direction, the supersymmetry parameters transform as
+        \begin{align*}
+            \eps_L &\mapsto \eps_L,\\
+            \eps_R &\mapsto \Gamma_i\eps_R.
+        \end{align*}
+        The tension of a D$p$-brane is given by
+        \begin{equation}
+            T_{p} = \frac{1}{(2\pi)^pg_sl^{p+1}_s}.
+        \end{equation}
+        This completely fixes the Newton constant: the tension of electric-magnetic duals must satisfy:
+        \begin{equation}
+            T_pT_{D-p-4} = \frac{2\pi}{16\pi G_D}.
+        \end{equation}
+        In ten dimensions, this gives $G_{10}=8\pi^6g^2_sl^8_s$.
+
+        The dualities are defined as follows:
+        \begin{align*}
+            \text{S-duality} &: g_s\mapsto\frac{1}{g_s},\qquad l^2_s\mapsto g_sl^2_s,\\
+            \text{T-duality} &: R\mapsto\frac{l^2_s}{R},\qquad g\mapsto g_s\frac{l_s}{R}.
+        \end{align*}
+
+    \subsection{D-branes wrapping cycles}
+
+        A D$p$-brane worldvolume $\phi:\Sigma\to X$ in spacetime $X$ \emph{wraps} a cycle $c\in H_{p+1}$ if the pushforward $\phi_*(\Sigma)\in H_\text{\textbullet}(X)$ of the fundamental class of $\Sigma$ is the class $[c]$ of the given cycle in $X$. If the pushforward is a mutliple of $[c]$, then the branes wraps $c$ multiple times.
 
 \section{Algebraic geometry}
 
@@ -257,7 +260,7 @@
 
         A \emph{rational map} from a variety $X$ to another $Y$ is a morphism from a non-empty subset $U\subset X$ to $Y$. Recall that, by definition of the Zariski topology, a non-empty open subset is always dense. Concretely, a rational map can be written in coordinates using ration functions (quotient of polynomials). A \emph{birational map} is an invertible rational map. It induces an isomorphism between two non-empty open subsets. In this case, $X$ and $Y$ are said to be \emph{birationally equivalent}.
 
-        The \emph{resolution of a singularity} of an algebraic variety $V$ is a non-singular variety $W$ with a proper birational map $W\to V$. For varities over fields of characteristic $0$, it was proven (Hironaka, 1964) that \marker{fill in}.
+        The \emph{resolution of a singularity} of an algebraic variety $V$ is a non-singular variety $W$ with a proper birational map $W\to V$. For varities over fields of characteristic $0$, it was proven (Hironaka, 1964) that \todo{fill in}.
 
     \subsection{Projective plane curves}
 
@@ -289,7 +292,7 @@
 
     \subsection{Quiver representations}
 
-        A \emph{representation} of a quiver $Q$ over the field $k$ is an assignment to every vertex $i$ os a $k$-vector space $V_i$ and to every arrow $a$ a linear mapping $f_a=V_{t(a)}\to V_{h(a)}$ between the corresponding vector spaces to each arrow. A representation of a quiver with relations $(Q,R)$ has the same definition but with the additional requirement that the linear maps must preserve the relations. \marker{Explain.} Denoting $\alpha_i=\dim V_i$, $\alpha=(\alpha_i)\in\N^{Q_0}_0$ is the \emph{dimension vector} of the representation. Quiver representations are an effective combinatorial tool for organizing linear algebraic data. Not only are they naturally related to many algebraic objects such as quantum groups, Kac-Moody algebras, and cluster algebras, but they have also been studied from the geometric point of view, often serving to bridge the gap between representation theory and algebraic geometry. 
+        A \emph{representation} of a quiver $Q$ over the field $k$ is an assignment to every vertex $i$ os a $k$-vector space $V_i$ and to every arrow $a$ a linear mapping $f_a=V_{t(a)}\to V_{h(a)}$ between the corresponding vector spaces to each arrow. A representation of a quiver with relations $(Q,R)$ has the same definition but with the additional requirement that the linear maps must preserve the relations. \todo{Explain.} Denoting $\alpha_i=\dim V_i$, $\alpha=(\alpha_i)\in\N^{Q_0}_0$ is the \emph{dimension vector} of the representation. Quiver representations are an effective combinatorial tool for organizing linear algebraic data. Not only are they naturally related to many algebraic objects such as quantum groups, Kac-Moody algebras, and cluster algebras, but they have also been studied from the geometric point of view, often serving to bridge the gap between representation theory and algebraic geometry. 
         
         If $V=(V_i,f_a)$ and $W=(W_i,g_a)$ are are two finite-dimensional representation of the same quiver with relations $(Q,R)$, a morphism $\psi$ from $V$ to $W$ is given by specifying , for every vertex $i$, a linear isomorphism $\psi_i:V_i\to W_i$ such that for avery arrow $a$ $\psi_{h(a)}\circ f_a=g_a\circ\psi_{t(a)}$. The \emph{direct sum} $V\oplus W$ of representations can also be defined as $(V\oplus W)_i=V_i\oplus W_i$ with the direct sum of the linear mappings. We then say that a representation is \emph{decomposable} is it is isomorphic to the direct sum of non-zero representations and of \emph{finite-type} if it has only finitely many isomorphism classes of indecomposable representations. A very important theorem in indecomposable representations is the following:
         \begin{theorem*}[Gabriel]
@@ -331,7 +334,7 @@
         Unfortunately, it is often the case that, for a given class of objects $\A$, a fine modduli space either does not exist or requires us to place restrictions on the kinds of objects in $\A$ we wish to classify. In order to avoid this, we can forget the universal family and look for a nice enough variety with points in bijection with equivalence classes in $\A/\sim$. Alternatively, we can allow for the solution of our moduli problem to no longer be a variety (or even a scheme). The result is a more complicated object called a \emph{stack}.
 
 
-    \marker{This section has to be rewritten.}
+    \todo{This section has to be rewritten.}
 
 \section{Calabi-Yau manifolds, orbifolds and crepant resolutions}\label{sec:CY}
 
@@ -800,7 +803,7 @@
                 \text{Gauge transformation} &: X^m \mapsto U X^m U^\dagger ,\qquad U\in\U(N),\label{eq:transfphi1}\\
                 \text{R-symmetry} &: X^m \mapsto R\indices{^m_n}X^n,\qquad R\in\SO(6)_R.\label{eq:transfphi2}
             \end{align}
-            Note that this gives $6N^2$ real scalars in total. They are the superpartners of the fermions. \marker{Detail.}
+            Note that this gives $6N^2$ real scalars in total. They are the superpartners of the fermions. \todo{Detail.}
         \end{itemize}
 
         Note that the gauge group $\U(N)$ can also be seen as the group of isometries of the metric space $\C^N$, i.e. $\Hom(\C^N,C^N)$. From this point of view, the transformations \eqref{eq:transfA1}-\eqref{eq:transfphi2}can be summarized as

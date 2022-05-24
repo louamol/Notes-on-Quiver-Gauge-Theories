@@ -9,19 +9,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Vacua space of SYM}{5}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}SYM from D-branes}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}$\mathcal {N}=4$ super Yang-Mills theory in $D=4$}{6}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}$\mathcal {N}=4$ super Yang-Mills theory in $D=4$}{7}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.1}Superconformal group $\text {SU}(2,2|4)$ and its representations}{6}{subsubsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.1}Superconformal group $\text {SU}(2,2|4)$ and its representations}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Matter content}{6}{subsubsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2}Matter content}{8}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Moduli space and dynamical phases}{7}{subsubsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3}Moduli space and dynamical phases}{9}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3}Gauge anomaly}{8}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Gauge anomaly}{9}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Properties of D-branes}{8}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Properties of D-branes in type II theories}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}SYM from D-branes}{8}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}D-branes and residual SUSY in type II theories}{9}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}D-branes wrapping cycles}{10}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Algebraic geometry}{10}{section.4}%
 \defcounter {refsection}{0}\relax 
@@ -33,9 +37,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Projective plane curves}{11}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Quivers representations, path algebras, moduli spaces and quiver varieties}{11}{section.5}%
+\contentsline {section}{\numberline {5}Quivers representations, path algebras, moduli spaces and quiver varieties}{12}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Quivers, path algebras and relations}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Quivers, path algebras and relations}{12}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2}Quiver representations}{12}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
@@ -75,61 +79,67 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{II\hspace {1em}Orbifold singularities}{21}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Projection to daughter theories}{21}{section.10}%
+\contentsline {section}{\numberline {10}Strings on orbifolds}{21}{section.10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.1}Generalities}{21}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Projection}{21}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}Twisted sector}{21}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3}Representation theory of the projection}{22}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.3}Projection to daughter theory}{22}{subsection.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.3.1}Embedding of $\Gamma $ in the gauge group}{22}{subsubsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.4}Representation theory of the projection}{22}{subsection.10.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.3.2}Adjoint representation and bi-fundamental fields}{23}{subsubsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.4.1}Embedding of $\Gamma $ in the gauge group}{23}{subsubsection.10.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.3.3}Invariant configurations}{24}{subsubsection.10.3.3}%
+\contentsline {subsubsection}{\numberline {10.4.2}Adjoint representation and bi-fundamental fields}{23}{subsubsection.10.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.4}Bi-index notation}{25}{subsection.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.3}Invariant configurations}{24}{subsubsection.10.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.5}Field content, quivers and McKay graphs}{25}{subsection.10.5}%
+\contentsline {subsubsection}{\numberline {10.4.4}Bi-index notation}{25}{subsubsection.10.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.5}Field content, quivers and McKay graphs}{26}{subsection.10.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {10.6}Gauge anomaly cancellation}{26}{subsection.10.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.7}Moduli space}{26}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.7}Lagrangian}{27}{subsection.10.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.8}A simple example: $S=\mathbb {C}^3/\mathbb {Z}_3$}{26}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.8}Moduli space}{27}{subsection.10.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.8.1}Projection}{27}{subsubsection.10.8.1}%
+\contentsline {subsection}{\numberline {10.9}Fractional branes}{27}{subsection.10.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.8.2}Quiver}{28}{subsubsection.10.8.2}%
+\contentsline {subsection}{\numberline {10.10}A note on couplings}{27}{subsection.10.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.8.3}Gauge anomaly cancellation}{29}{subsubsection.10.8.3}%
+\contentsline {subsection}{\numberline {10.11}A simple example: $S=\mathbb {C}^3/\mathbb {Z}_3$}{27}{subsection.10.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.9}On note on the twisted sector}{29}{subsection.10.9}%
+\contentsline {subsubsection}{\numberline {10.11.1}Projection}{27}{subsubsection.10.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.10}A note on $(p+1)$-dimensional quiver gauge theories}{29}{subsection.10.10}%
+\contentsline {subsubsection}{\numberline {10.11.2}Quiver}{29}{subsubsection.10.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {10.11.3}Gauge anomaly cancellation}{29}{subsubsection.10.11.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.12}A note on $(p+1)$-dimensional quiver gauge theories}{30}{subsection.10.12}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {11}$\mathcal {N}=2$ daughter theories}{30}{section.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.1}$S=\mathbb {C}\times \mathbb {C}^2/\mathbb {Z}_n$}{30}{subsection.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2}$S=\mathbb {C}\times \mathbb {C}^2/\mathcal {D}_n$}{32}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.2}$S=\mathbb {C}\times \mathbb {C}^2/\mathcal {D}_n$}{33}{subsection.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3}$S=\mathbb {C}\times \mathbb {C}^2/\mathcal {T},\mathcal {O},\mathcal {I}$}{33}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.3}$S=\mathbb {C}\times \mathbb {C}^2/\mathcal {T},\mathcal {O},\mathcal {I}$}{34}{subsection.11.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}$\mathcal {N}=1$ daughter theories}{33}{section.12}%
+\contentsline {section}{\numberline {12}$\mathcal {N}=1$ daughter theories}{34}{section.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1}$S=\mathbb {C}^3/\mathbb {Z}_n$}{33}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.1}$S=\mathbb {C}^3/\mathbb {Z}_n$}{34}{subsection.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {12.1.1}Actions of $\mathbb {Z}_n$ on $\mathbb {C}^3$}{33}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Actions of $\mathbb {Z}_n$ on $\mathbb {C}^3$}{34}{subsubsection.12.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {12.1.2}Example: $\mathbb {Z}_5$}{35}{subsubsection.12.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {12.1.3}General $\mathbb {Z}_n$}{36}{subsubsection.12.1.3}%
+\contentsline {subsubsection}{\numberline {12.1.3}General $\mathbb {Z}_n$}{37}{subsubsection.12.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2}$S=\mathbb {C}^3/\Delta (3n^2),\Delta (6n^2)$}{37}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.2}$S=\mathbb {C}^3/\Delta (3n^2),\Delta (6n^2)$}{38}{subsection.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.3}$S=\mathbb {C}^3/\Sigma _{36\times 3},\Sigma _{60\times 3},\Sigma _{168\times 3},\Sigma _{216\times 3},\Sigma _{360\times 3}$}{37}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.3}$S=\mathbb {C}^3/\Sigma _{36\times 3},\Sigma _{60\times 3},\Sigma _{168\times 3},\Sigma _{216\times 3},\Sigma _{360\times 3}$}{38}{subsection.12.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {12.4}$S=\mathbb {C}^3/(\mathbb {Z}_m\times \mathbb {Z}_n)$}{38}{subsection.12.4}%
 \defcounter {refsection}{0}\relax 
@@ -137,104 +147,102 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {12.4.2}Projection}{39}{subsubsection.12.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13}Summary of orbifold worldvlume theories}{40}{section.13}%
+\contentsline {section}{\numberline {13}Summary of orbifold worldvlume theories}{41}{section.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {14}A note about projective representations, discrete torsion and deformations}{40}{section.14}%
+\contentsline {section}{\numberline {14}A note about projective representations, discrete torsion and deformations}{41}{section.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.1}Projective representations and discrete torsion}{40}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.1}Projective representations and discrete torsion}{41}{subsection.14.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {14.2}Quiver gauge theories deformations and conifold}{41}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.2}Quiver gauge theories deformations and conifold}{42}{subsection.14.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{III\hspace {1em}Toric singularities}{42}{part.3}%
+\contentsline {part}{III\hspace {1em}Toric singularities}{43}{part.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {15}Toric geometry}{42}{section.15}%
+\contentsline {section}{\numberline {15}Toric geometry}{43}{section.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.1}Cones}{42}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.1}Cones}{43}{subsection.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.2}Toric varieties}{42}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.2}Toric varieties}{43}{subsection.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.3}Constructing toric affine varieties}{43}{subsection.15.3}%
+\contentsline {subsection}{\numberline {15.3}Constructing toric affine varieties}{44}{subsection.15.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {15.3.1}Toric variety of a cones}{43}{subsubsection.15.3.1}%
+\contentsline {subsubsection}{\numberline {15.3.1}Toric variety of a cones}{44}{subsubsection.15.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.4}Toric variety of a fan}{44}{subsection.15.4}%
+\contentsline {subsection}{\numberline {15.4}Toric variety of a fan}{45}{subsection.15.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {15.4.1}Fan from a toric variety}{46}{subsubsection.15.4.1}%
+\contentsline {subsubsection}{\numberline {15.4.1}Fan from a toric variety}{47}{subsubsection.15.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.5}More general constructions}{46}{subsection.15.5}%
+\contentsline {subsection}{\numberline {15.5}More general constructions}{47}{subsection.15.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.6}Relation between fan varieties, cone varities and local coordinates}{46}{subsection.15.6}%
+\contentsline {subsection}{\numberline {15.6}Relation between fan varieties, cone varities and local coordinates}{47}{subsection.15.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.7}Calabi-Yau toric varities}{47}{subsection.15.7}%
+\contentsline {subsection}{\numberline {15.7}Calabi-Yau toric varities}{48}{subsection.15.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.8}Toric diagrams and p-q webs}{48}{subsection.15.8}%
+\contentsline {subsection}{\numberline {15.8}Toric diagrams and p-q webs}{49}{subsection.15.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {15.9}Singularities}{48}{subsection.15.9}%
+\contentsline {subsection}{\numberline {15.9}Singularities}{49}{subsection.15.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {16}Important examples}{48}{section.16}%
+\contentsline {section}{\numberline {16}Important examples}{49}{section.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.1}The conifold}{48}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.1}The conifold}{49}{subsection.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.2}The suspended pinch point}{49}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.2}The suspended pinch point}{50}{subsection.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {16.3}del Pezzo surfaces}{49}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.3}del Pezzo surfaces}{50}{subsection.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {17}Gauged linear sigma model (GLSM)}{49}{section.17}%
+\contentsline {section}{\numberline {17}Gauged linear sigma model (GLSM)}{50}{section.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {17.1}Calabi-Yau and non-compactness conditions}{49}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.1}Calabi-Yau and non-compactness conditions}{50}{subsection.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {18}Correspondence between gauge theory and singularity}{49}{section.18}%
+\contentsline {section}{\numberline {18}Correspondence between gauge theory and singularity}{50}{section.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {18.1}From gauge theory to singularity: forward algorithm}{50}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.1}From gauge theory to singularity: forward algorithm}{51}{subsection.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {18.2}Forward algorithm for abelina orbifolds}{50}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.2}Forward algorithm for abelina orbifolds}{51}{subsection.18.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {18.3}From singularity to gauge theory: inverse algorithm}{50}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.3}From singularity to gauge theory: inverse algorithm}{51}{subsection.18.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {18.4}Application to Toric del Pezzo's}{50}{subsection.18.4}%
+\contentsline {subsection}{\numberline {18.4}Application to Toric del Pezzo's}{51}{subsection.18.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {19}Toric duality}{50}{section.19}%
+\contentsline {section}{\numberline {19}Toric duality}{51}{section.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{IV\hspace {1em}Beyond toric singularities}{52}{part.4}%
+\contentsline {part}{IV\hspace {1em}Beyond toric singularities}{53}{part.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {20}Non-commutative resolutions}{52}{section.20}%
+\contentsline {section}{\numberline {20}Non-commutative resolutions}{53}{section.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Some finite subgroups}{53}{appendix.A}%
+\contentsline {section}{\numberline {A}Some finite subgroups}{54}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1}Finite subgroups of $\text {SU}(2)$ and $\text {SL}(2,\mathbb {C})$}{53}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.1}Finite subgroups of $\text {SU}(2)$ and $\text {SL}(2,\mathbb {C})$}{54}{subsection.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.1}Finite subgroups}{53}{subsubsection.A.1.1}%
+\contentsline {subsubsection}{\numberline {A.1.1}Finite subgroups}{54}{subsubsection.A.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.2}Irreducible representations}{53}{subsubsection.A.1.2}%
+\contentsline {subsubsection}{\numberline {A.1.2}Irreducible representations}{54}{subsubsection.A.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.3}Character tables}{54}{subsubsection.A.1.3}%
+\contentsline {subsubsection}{\numberline {A.1.3}Character tables}{55}{subsubsection.A.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2}Finite subgroups of $\text {SU}(3)$}{55}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.2}Finite subgroups of $\text {SU}(3)$}{56}{subsection.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Spacetime geometry: ALE space and orbifolds}{56}{appendix.B}%
+\contentsline {section}{\numberline {B}Spacetime geometry: ALE space and orbifolds}{57}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Graphs}{56}{appendix.C}%
+\contentsline {section}{\numberline {C}Graphs}{57}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {D}Determinantal varieties as transverse spaces}{56}{appendix.D}%
+\contentsline {section}{\numberline {D}Determinantal varieties as transverse spaces}{57}{appendix.D}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.1}Basic properties of determinantal varieties}{56}{subsection.D.1}%
+\contentsline {subsection}{\numberline {D.1}Basic properties of determinantal varieties}{57}{subsection.D.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {D.1.1}Computing the dimension}{56}{subsubsection.D.1.1}%
+\contentsline {subsubsection}{\numberline {D.1.1}Computing the dimension}{58}{subsubsection.D.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {D.1.2}Singularity}{57}{subsubsection.D.1.2}%
+\contentsline {subsubsection}{\numberline {D.1.2}Singularity}{58}{subsubsection.D.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {D.1.3}Action and syzygies}{57}{subsubsection.D.1.3}%
+\contentsline {subsubsection}{\numberline {D.1.3}Action and syzygies}{58}{subsubsection.D.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {D.2}Young's lattice}{57}{subsection.D.2}%
+\contentsline {subsection}{\numberline {D.2}Young's lattice}{58}{subsection.D.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {E}Some derivations}{59}{appendix.E}%
+\contentsline {section}{\numberline {E}Some derivations}{60}{appendix.E}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.1}Invariant configurations for $\mathbb {C}\times \mathbb {C}^2/2\mathcal {D}_n$}{59}{subsection.E.1}%
+\contentsline {subsection}{\numberline {E.1}Invariant configurations for $\mathbb {C}\times \mathbb {C}^2/2\mathcal {D}_n$}{60}{subsection.E.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {E.1.1}Gauge field}{59}{subsubsection.E.1.1}%
+\contentsline {subsubsection}{\numberline {E.1.1}Gauge field}{60}{subsubsection.E.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {E.2}}{62}{subsection.E.2}%
+\contentsline {subsection}{\numberline {E.2}}{63}{subsection.E.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {F}References guide}{64}{appendix.F}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Markers}{65}{appendix.F}%
+\contentsline {section}{\numberline {F}References guide}{65}{appendix.F}%

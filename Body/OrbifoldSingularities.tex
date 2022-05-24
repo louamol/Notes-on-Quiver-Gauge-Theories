@@ -1,6 +1,6 @@
 \part{Orbifold singularities}
 
-\section{Projection to daughter theories}
+\section{Strings on orbifolds}
 
     Let us a consider a smooth background space $M^{(6)}$ and $\Gamma$ a discrete group acting on it. If $\Gamma$ has no fixed point, the quotient space $M^{(6)}/\Gamma$ is smooth and is a manifold but if the action of $\Gamma$ has a fixed point then the quotient space $M^{(6)}/\Gamma$ is singular and is an orbifold. Any orbifold can be described as an affine variety therefore it is the description that we will use most often. When the transverse space is singular, the worldvolume theory corresponds to a specific projection of the parent theory that we found in the smooth case $S=\C^3$. We call it the \emph{daughter theory}. This projections depends on the type of singularity that one considers. The simplest case is the the case of orbifold singularity, i.e. when the transverse space is a quotient space with a non-free action.
 
@@ -24,14 +24,23 @@
         \end{equation}
         is the representation of $\Gamma$ coming from the fundamental representation of $\SU(3)$, so $\cdot$ is just the matrix product. We can see that the origin is always a fixed point so this action is never free. Since $\C^3$ is a smooth manifold, this makes $\C^3/\Gamma$ an orbifold. Our choice of $\Gamma$ naturally includes the case $\Gamma\subset\SU(2)$ too (as $\SU(2)\subset\SU(3)$), just not the case $\Gamma\in\SO(6)$. When $\Gamma\subset\SU(2\subset\SU(3)$, it acts trivially on one component so we write $S=\C\times\C^2/\Gamma$.
 
-        If $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$ \marker{Details ?}, see section \ref{sec:CY}.
+        If $\Gamma$ is a general finite group the condition that $\C^3/\Gamma$ is an Calabi-Yau orbifold means that there must exist a resolution of this orbifold such that the corresponding smooth space is Calabi-Yau, i.e. a crepant resolution. Existence of such a resolution constrains $\Gamma$ \todo{Details ?}, see section \ref{sec:CY}.
 
+    
+    \subsection{Twisted sector}
 
-    \subsection{Projection}
+        What implications does have strings on an orbifold have for the spectrum? In general, we distinguish two kinds of states:
+        \begin{itemize}
+            \item the \emph{untiwsted states} are the states $\Psi$ that are invariant under the actio of $\Gamma$: $\gamma\cdot\Psi=\Psi$ for all $\gamma\in \Gamma$. They are the generators of the $\Gamma$-invariant part of the Hilbert space and can easily be constrcuted by superposing all the images $\gamma\cdot\Psi_0$.
+            \item closed strings must start and end at the same point, i.e. $X(\tau,\sigma+2\pi)=X(\tau,\sigma)$. Usually, a strings that starts at connects a point of $M^{(6)}$ to another point of its orbit, i.e. $X(\tau,\sigma+2\pi)=\gamma\cdot[X(\tau,\sigma)]$ would not be allowed. However, in $M^{(6)}/\Gamma$ it is an allowed configuration. Those new states that appear after orbifolding are the \emph{twisted states}. There existsnce is due to the fact that strings are extended objects. One can see that there is one twisted sector per conjugacy classe of $\Gamma$ \todo{details ?} and that the untwisted states are recovered with $\gamma=e$.
+        \end{itemize}
+        The individual twisted sector quantum states of the strings are localized at the orbifold singularities that the classical configurations (untiwisted sector) enclose.
 
-        \textcolor{red}{This section is considering D$1$-branes on $\R^6\times\R^4/\Gamma$ extending in the $X^0,X^1$-directions. This is not our usual paradigm.}
+    \subsection{Projection to daughter theory}
 
-        Three types of open string sector states must be considered:
+        \todo{Make the link with the ususal setup.}
+
+        Let us consider a D$1$-brane in the $x^0,x^1$-plane of the orbifold space $\R^6\times\R^4/\Gamma$. We can view the brane as a point in the covering space $\R^4$. If the brane trivially sits at a fixed point, which in our case is usually the origin, there is no problem but if the brane moves away from the origin, this will break the $\Gamma$ symmetry. In order for it to be able to move away from a the origin we therefore also need to add image-branes moving in all the other $\Gamma$-sectors of the covering space (the regions of $\C^n$ that are related by the action of $\Gamma$ and all projected to a unique sector in $\C^n/\Gamma$). Since there are $\abs{\Gamma}$ sectors we need exactly $\abs{\Gamma}$ branes in total, one per sector. From the open string states point of view, this is means adding $\abs{\Gamma}$ Chan-Paton factors, resulting in an $U(\abs{\Gamma})$ gauge symmetry. $\Gamma$ then acts on the Chan-Paton factors and switch them between themselves. We now need to make sure that the string theory is consistent with that action. There are three types of open string sector states that one must consider:
         \begin{itemize}
             \item the vector multiplets $\lambda_V\psi^\mu_{-1/2}\ket{0}$ ($\mu=0,1$), where $\lambda_V$ is the Chan-Paton matrix (arbitrary $\U(N)$) matrix. Invariance under $\Gamma$ means that $\lambda_V$ should satisfy the additional property
             \begin{equation}
@@ -41,39 +50,39 @@
             \item the hypermultiplet I $\lambda^{\text{I}}_H\psi^i_{-1/2}\ket{0}$ ($i=2,\dots,5$). They are the rest of the $D=6,\mN=1$ vectors. From the $\mN=4,D=2$ point of view, they are the scalar parts of the gauge multiplet and represent the oscillations fo the branes in the $X^2,\dots,X^5$-directions. The matrices $\lambda^{\text{I}}_H$ must satisfy the relation \eqref{eq:projspectrum}.
             \item the hypermultiplet II $\lambda^{\text{II}}_H\psi^m_{-1/2}\ket{0}$ ($m=6,\dots,9$).
         \end{itemize}
-        We relabel our string states with respect to the action of $\Gamma$ over $\C^2$. The massless modes are $\lambda^1_H\psi^1_{-1/2}\ket{0}$ and $\lambda^2_H\psi^2_{-1/2}\ket{0}$ and their adjoints. The discrete group acts on then as
-        \begin{equation}
-            \begin{bmatrix}
-                \rho(\gamma)\lambda^1_H\rho(\gamma)^{-1} \\
-                \rho(\gamma)\lambda^2_H\rho(\gamma)^{-1}
-            \end{bmatrix}=
-            \gamma
-            \begin{bmatrix}
-                \lambda^1_H \\
-                \lambda^2_H
-            \end{bmatrix}
-        \end{equation}
-        We denote by $\psi^1$ and $\psi^2$ the resulting massless complex fields of the worlvolume theory.
+        %We relabel our string states with respect to the action of $\Gamma$ over $\C^2$. The massless modes are $\lambda^1_H\psi^1_{-1/2}\ket{0}$ and $\lambda^2_H\psi^2_{-1/2}\ket{0}$ and their adjoints. The discrete group acts on then as
+        %\begin{equation}
+        %    \begin{bmatrix}
+        %        \rho(\gamma)\lambda^1_H\rho(\gamma)^{-1} \\
+        %        \rho(\gamma)\lambda^2_H\rho(\gamma)^{-1}
+        %    \end{bmatrix}=
+        %    \gamma
+        %    \begin{bmatrix}
+        %        \lambda^1_H \\
+        %        \lambda^2_H
+        %    \end{bmatrix}
+        %\end{equation}
+        %We denote by $\psi^1$ and $\psi^2$ the resulting massless complex fields of the worlvolume theory.
 
-    
-        \begin{result}
-            If the transverse space is $S=\C^3/\Gamma$, the field theory must be projected to a theory which also invariant under $\Gamma$, seen as a subgroup of the R-symmetry group. The prescription is straihgt-forward: we can use the elements $\gamma\in\Gamma$ to project out that states that are not $\Gamma$-invariant. That is, if $\rho$ is an embedding of $\Gamma$ in the gauge group $\U(N)$, only the the fields such that
-            \begin{subequations}
-                \begin{empheq}[box=\widefbox]{align}
-                    \rho(\gamma) A_\mu \rho(\gamma)^{-1} &= A_\mu,\label{eq:proj1}\\
-                    R(\gamma)\rho(\gamma) \psi_{IJ} \rho(\gamma)^{-1} &= \psi_{IJ}\label{eq:proj2},\\
-                    R(\gamma)\rho(\gamma) X_{IJ} \rho(\gamma)^{-1} &= X_{IJ}\label{eq:proj3}
-                \end{empheq}
-            \end{subequations}
-            are kept in the spectrum, where $\rho$ is a unitary representation of $\Gamma$ on $\C^N$ and $R=\boldsymbol{4},\boldsymbol{6}$.
-        \end{result}
+        \todo{Make the link between this discussion and the final projection.}
+
+        If the transverse space is $S=\C^3/\Gamma$, the field theory must be projected to a theory which also invariant under $\Gamma$, seen as a subgroup of the R-symmetry group. The prescription is straihgt-forward: we can use the elements $\gamma\in\Gamma$ to project out that states that are not $\Gamma$-invariant. That is, if $\rho$ is an embedding of $\Gamma$ in the gauge group $\U(N)$, only the the fields such that
+        \begin{subequations}
+            \begin{empheq}[box=\widefbox]{align}
+                \rho(\gamma) A_\mu \rho(\gamma)^{-1} &= A_\mu,\label{eq:proj1}\\
+                R(\gamma)\rho(\gamma) \psi_{IJ} \rho(\gamma)^{-1} &= \psi_{IJ}\label{eq:proj2},\\
+                R(\gamma)\rho(\gamma) X_{IJ} \rho(\gamma)^{-1} &= X_{IJ}\label{eq:proj3}
+            \end{empheq}
+        \end{subequations}
+        are kept in the spectrum, where $\rho$ is a unitary representation of $\Gamma$ on $\C^N$ and $R=\boldsymbol{4},\boldsymbol{6}$.
         Let us make two remarks:
         \begin{itemize}
             \item the term $U\p_\mu U^{-1}$ is absent from \ref{eq:proj1}. Indeed, $\Gamma$ is a finite group and the only smooth functions $x\mapsto\Gamma$ are the constant ones. Consequently, transformations of the gauge field under a finite subgroup of its gauge group cannot depend on $x$.
             \item the fields that transform non-trivially under R-symmetry also have an extra induced action of $\Gamma$, in agreement with \eqref{eq:AHom}-\eqref{eq:phiHom}. The R-symmetry untouched by $\Gamma$ will be the resulting R-symmetry of daughter theory.
         \end{itemize}
 
-        %Riemannian symmetric spaces, which are locally isometric to homogeneous spaces $G/H$ have local holonomy isomorphic to $H$. \marker{Continue and detail.}
+        %Riemannian symmetric spaces, which are locally isometric to homogeneous spaces $G/H$ have local holonomy isomorphic to $H$. \todo{Continue and detail.}
+
 
 
     \subsection{Representation theory of the projection}
@@ -141,7 +150,7 @@
 
         \subsubsection{Invariant configurations}
             
-            After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, denoted by $\Hom(\C^N,\C^N)^\Gamma$. The superscript $\Gamma$ is used to indicate that we only keep the trivial representations in the decomposition, that is, we only keep that subspaces that transform trivially. We want to compute $\Hom(\C^N,\C^N)^\Gamma$. First, we can see that by Schur's lemma \marker{Why ?}
+            After the projection, the resulting gauge group is given by the $\Gamma$-invariant part of the gauge group, denoted by $\Hom(\C^N,\C^N)^\Gamma$. The superscript $\Gamma$ is used to indicate that we only keep the trivial representations in the decomposition, that is, we only keep that subspaces that transform trivially. We want to compute $\Hom(\C^N,\C^N)^\Gamma$. First, we can see that by Schur's lemma \todo{Why ?}
             \begin{equation}
                 (V_i\otimes V^*_j)^\Gamma=\delta_{ij}
             \end{equation}
@@ -162,7 +171,7 @@
             \begin{equation}
                 G_{\text{proj}} = \bigotimes_{i\in I}\U(N_i\dim\rho_i).
             \end{equation}
-            Now it turns out that in the low energy effective field theory the $\U(1)$ factor of every $\U(N_i)$ decouples \marker{Why ?} so the resulting gauge group is in fact
+            Now it turns out that in the low energy effective field theory the $\U(1)$ factor of every $\U(N_i)$ decouples \todo{Why ?} so the resulting gauge group is in fact
             \begin{equation}
                 \boxed{G_{\text{proj}} = \bigotimes_{i\in I}\SU(N_i\dim\rho_i).}
             \end{equation}
@@ -194,58 +203,79 @@
                 In the daughter theory, the matter fields become a total of $a^{\boldsymbol{4}}_{ij}$ bi-fundamental fermions and $a^{\boldsymbol{6}}_{ij}$ bi-fundamental bosons transforming as the $(\boldsymbol{\textbf{N}_i},\bar{\boldsymbol{\textbf{N}_j}})$ of $\SU(N_i)\times\SU(N_j)$ under the products of gauge groups.
             \end{result}
 
-    \subsection{Bi-index notation}
+        \subsubsection{Bi-index notation}
 
-        The gauge and the bi-fundamental fields that we obtained in the previous section are easier to manipulate in the \emph{bi-index notation}. Recall that $A_\mu\in\mathfrak{u}(N)$ so it is an $N\times N$ complex matrix and we denote its elements by $A_{\mu;IJ}$ ($I,J=1,\dots,N$). We saw that this matrix of fields transform under $\Gamma$ as
-        \begin{equation}
-            A_\mu\mapsto \rho(\gamma)A_\mu \rho(\gamma)^{-1},\qquad \gamma\in \Gamma,\label{eq:transfAmu1}
-        \end{equation}
-        i.e. in the adjoint representation but without the derivative term (as explained above). Now if $\{(\rho_i,V_i)\}_{i\in I}$ is a complete set of irreducible representation of $\gamma$, any representation of $\Gamma$ on $\C^n$ can be decomposed as \eqref{eq:decomp:line1}. In particular, this provides us with the following partitioning of $N$:
-        \begin{equation}
-            N=\sum_{i\in}N_i\dim\rho_i.
-        \end{equation}
-        It is very convenient to apply the analogous partitionning for the matrix $A_\mu$. More precisely, we now denote decompose $A_\mu$ into $(\dim\rho_iN_i)\times(\dim\rho_jN_j)$ sub-blocks $A_{\mu;ij}$ where $i,j\in I$ are indices over the irreducible representations. From \eqref{eq:transfAmu}, those sub-blocks transform as direct sums of the same irreducible representations:
-        \begin{equation}
-            A_{\mu;ij}\mapsto \rho_i(\gamma)^{N_i}A_{\mu;ij}(\rho_j(\gamma)^{-1})^{N_j},\qquad \gamma\in\Gamma.\label{eq:transfAmu2}
-        \end{equation}
-        We can go one step further and decompose the sub-blocks $A_{\mu;ij}$ into $\dim\rho_i\times\dim\rho_j$ sub-sub-blocks $A_{\mu;i\alpha_i,j\beta_j}$ where $\alpha_i,\beta_i=0,\dots N_i-1$. From \eqref{eq:transfAmu2}, they transform directly under the irreducible representations:
-        \begin{equation}
-            \boxed{A_{\mu;i\alpha_i,j\beta_j}\mapsto\rho_i(\gamma)A_{\mu;i\alpha_i,j\beta_j}\rho_j(\gamma)^{-1},\qquad \gamma\in\Gamma.}
-        \end{equation}
-        In particular, we see that this relations does not depend on the indices $\alpha_i$ and $\beta_j$, they all transform in the same way. This notation is very convenient to compute explicitely the invariant configurations, as we will see in several examples. We use the exact same bi-index notations for $X^m$ and $\psi^a$.
+            The gauge and the bi-fundamental fields that we obtained in the previous section are easier to manipulate in the \emph{bi-index notation}. Recall that $A_\mu\in\mathfrak{u}(N)$ so it is an $N\times N$ complex matrix and we denote its elements by $A_{\mu;IJ}$ ($I,J=1,\dots,N$). We saw that this matrix of fields transform under $\Gamma$ as
+            \begin{equation}
+                A_\mu\mapsto \rho(\gamma)A_\mu \rho(\gamma)^{-1},\qquad \gamma\in \Gamma,\label{eq:transfAmu1}
+            \end{equation}
+            i.e. in the adjoint representation but without the derivative term (as explained above). Now if $\{(\rho_i,V_i)\}_{i\in I}$ is a complete set of irreducible representation of $\gamma$, any representation of $\Gamma$ on $\C^n$ can be decomposed as \eqref{eq:decomp:line1}. In particular, this provides us with the following partitioning of $N$:
+            \begin{equation}
+                N=\sum_{i\in}N_i\dim\rho_i.
+            \end{equation}
+            It is very convenient to apply the analogous partitionning for the matrix $A_\mu$. More precisely, we now denote decompose $A_\mu$ into $(\dim\rho_iN_i)\times(\dim\rho_jN_j)$ sub-blocks $A_{\mu;ij}$ where $i,j\in I$ are indices over the irreducible representations. From \eqref{eq:transfAmu}, those sub-blocks transform as direct sums of the same irreducible representations:
+            \begin{equation}
+                A_{\mu;ij}\mapsto \rho_i(\gamma)^{N_i}A_{\mu;ij}(\rho_j(\gamma)^{-1})^{N_j},\qquad \gamma\in\Gamma.\label{eq:transfAmu2}
+            \end{equation}
+            We can go one step further and decompose the sub-blocks $A_{\mu;ij}$ into $\dim\rho_i\times\dim\rho_j$ sub-sub-blocks $A_{\mu;i\alpha_i,j\beta_j}$ where $\alpha_i,\beta_i=0,\dots N_i-1$. From \eqref{eq:transfAmu2}, they transform directly under the irreducible representations:
+            \begin{equation}
+                \boxed{A_{\mu;i\alpha_i,j\beta_j}\mapsto\rho_i(\gamma)A_{\mu;i\alpha_i,j\beta_j}\rho_j(\gamma)^{-1},\qquad \gamma\in\Gamma.}
+            \end{equation}
+            In particular, we see that this relations does not depend on the indices $\alpha_i$ and $\beta_j$, they all transform in the same way. This notation is very convenient to compute explicitely the invariant configurations, as we will see in several examples. We use the exact same bi-index notations for $X^m$ and $\psi^a$.
 
-    \subsection{Field content, quivers and McKay graphs}
+        \subsection{Field content, quivers and McKay graphs}
 
-        A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$. In other words, from \eqref{eq:resdecomp}, the adjacency matrix of the fermions has elements $A_{ij}=a^{\boldsymbol{4}}_{ij}$ and the one of the scalars has elements $A_{ij}=a^{\boldsymbol{6}}_{ij}$.
+            A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$. In other words, from \eqref{eq:resdecomp}, the adjacency matrix of the fermions has elements $A_{ij}=a^{\boldsymbol{4}}_{ij}$ and the one of the scalars has elements $A_{ij}=a^{\boldsymbol{6}}_{ij}$.
 
-        On the other hand, given finite group $\Gamma$, a representation $(\rho_W,W)$ and a complete set of irreducible representations $\{(\rho_i,V_i)\}_{i\in I}$ of the latter, one can construct a McKay graph (or quiver) as follows:
-        \begin{enumerate}
-            \item Draw a vertex for every representation $(\rho_i,V_i)$.
-            \item For every representation $(\rho_i,V_i)$, compute the decomposition
-            \begin{equation*}
-                (\rho_W,V_W)\otimes(\rho_i,V_i)=\bigoplus_j (\rho_j,V_j)^{\oplus n_{ij}}
-            \end{equation*}
-            where $n_{ij}$ is the multiplicity of $(\rho_j,V_j)$ in the decomposition of $(\rho_W,V_W)\otimes(\rho_i,V_i)$.
-            \item For every $n_{ij}>0$, draw $n_{ij}$ arrows from the vertex of $(\rho_i,V_i)$ to the one of $(\rho_j,V_j)$.
-        \end{enumerate}
-        When $\Gamma\subset\SU(2)$ and that $(\rho_W,W)$ is its defining representation, the McKay graphs are in one-to-one correspondence with the extended Dynkin diagrams of the simply laced Lie algebras. This is the classical McKay correspondence, see appendix \ref{app:McKay}.
-        
-        From \eqref{eq:defaij} we see that $n_{ij}=a^{\mR}_{ij}$, i.e. the matter quivers that we defined previously are exactly the McKay graph associated to the matter representation in question. Put differently, the matter content of the daughter theory is encapsulated in the McKay graphs of $\Gamma$ and with respect to $\mR$ with $\mR=\bs{4}$ for spinors and $\mR=\bs{6}$ for scalars. This very important point. For example, it will allows us to use known results on McKay graphs such as the McKay correspondence. Not only the field content is a quiver, which is exactly the McKay graph of the finite group, but we also have gauge groups at each vertex and transformations between them for each arrow (these transformations are precisely the fields, see as elements of $\Hom(V_i,V_j)$). So we are actually given a representation of the quiver. Moreover, the vacuum configurations have to solve the F-term and D-term equations. Those algebraic relations constrain the path algebra of the quiver: they are relations.
-        \begin{result}
-            A quiver gauge theory is a representations of a quiver with relations.
-        \end{result}
+            On the other hand, given finite group $\Gamma$, a representation $(\rho_W,W)$ and a complete set of irreducible representations $\{(\rho_i,V_i)\}_{i\in I}$ of the latter, one can construct a McKay graph (or quiver) as follows:
+            \begin{enumerate}
+                \item Draw a vertex for every representation $(\rho_i,V_i)$.
+                \item For every representation $(\rho_i,V_i)$, compute the decomposition
+                \begin{equation*}
+                    (\rho_W,V_W)\otimes(\rho_i,V_i)=\bigoplus_j (\rho_j,V_j)^{\oplus n_{ij}}
+                \end{equation*}
+                where $n_{ij}$ is the multiplicity of $(\rho_j,V_j)$ in the decomposition of $(\rho_W,V_W)\otimes(\rho_i,V_i)$.
+                \item For every $n_{ij}>0$, draw $n_{ij}$ arrows from the vertex of $(\rho_i,V_i)$ to the one of $(\rho_j,V_j)$.
+            \end{enumerate}
+            When $\Gamma\subset\SU(2)$ and that $(\rho_W,W)$ is its defining representation, the McKay graphs are in one-to-one correspondence with the extended Dynkin diagrams of the simply laced Lie algebras. This is the classical McKay correspondence, see appendix \ref{app:McKay}.
+            
+            From \eqref{eq:defaij} we see that $n_{ij}=a^{\mR}_{ij}$, i.e. the matter quivers that we defined previously are exactly the McKay graph associated to the matter representation in question. Put differently, the matter content of the daughter theory is encapsulated in the McKay graphs of $\Gamma$ and with respect to $\mR$ with $\mR=\bs{4}$ for spinors and $\mR=\bs{6}$ for scalars. This very important point. For example, it will allows us to use known results on McKay graphs such as the McKay correspondence. Not only the field content is a quiver, which is exactly the McKay graph of the finite group, but we also have gauge groups at each vertex and transformations between them for each arrow (these transformations are precisely the fields, see as elements of $\Hom(V_i,V_j)$). So we are actually given a representation of the quiver. Moreover, the vacuum configurations have to solve the F-term and D-term equations. Those algebraic relations constrain the path algebra of the quiver: they are relations.
+            \begin{result}
+                A quiver gauge theory is a representations of a quiver with relations.
+            \end{result}
 
-        We mentioned the adjacency matrix as a way to represent a quiver but we will also use sometimes the another matrix called the \emph{incidence matrix} and denoted by $I$. In the later, the columns index the arrows and the rows, the nodes such that the $\alpha$th arrow from node $i$ to $j$ receives a $-1$ in position $I_{i\alpha}$, a $+1$ in position $I_{j\alpha}$ and zero elsewhere.
+            We mentioned the adjacency matrix as a way to represent a quiver but we will also use sometimes the another matrix called the \emph{incidence matrix} and denoted by $I$. In the later, the columns index the arrows and the rows, the nodes such that the $\alpha$th arrow from node $i$ to $j$ receives a $-1$ in position $I_{i\alpha}$, a $+1$ in position $I_{j\alpha}$ and zero elsewhere.
 
     \subsection{Gauge anomaly cancellation}
 
-        Finally, let us discuss the gauge anomaly cancellation. Our fields transform under the adjoint representation of $\SU(N)$, under the fundamentals of $\SU(N_i)$ and under the anti-fundamentals of $\SU(N_i)$. The adjoint representation being reel, it is self-conjugate and therefore does not contribute to the anomaly. Fundamentals of $\SU(N_i)$ have a $+1$ contribution to the anomaly and anti-fundamentals of $\SU(N_i)$ have a $-1$ contribution to the anomaly. Anomaly cancellation therefore imposes that the contribution of the fundamental and of the anti-fundamental of $\SU(N_i)$ cancel each other for each $i=0,1,2$, see section \eqref{sec:anomalies}. The bi-fundamental representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ counts as $N_j$ fundamentals of $\SU(N_i)$ and as $N_i$ anti-fundamentals $\SU(N_j)$. The general condition for anomaly cancellation is therefore
+        Finally, let us discuss the gauge anomaly cancellation. Our fields transform under the adjoint representation of $\SU(N)$, under the fundamentals of some $\SU(N_i)$ and under the anti-fundamentals of some $\SU(N_i)$. The adjoint representation being real, it is self-conjugate and therefore does not contribute to the anomaly. The other representation however do contribute: the fundamentals of each $\SU(N_i)$ have a $+1$ contribution the anti-fundamentals of each $\SU(N_i)$ have a $-1$ contribution. Anomaly cancellation therefore imposes that the contribution of the fundamental and of the anti-fundamental of $\SU(N_i)$ cancel each other, for each $i\in I$ (see section \eqref{sec:anomalies}). Since the bi-fundamental representations $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ counts as $N_j$ fundamentals of $\SU(N_i)$ and as $N_i$ anti-fundamentals $\SU(N_j)$, the condition for anomaly cancellation is
         \begin{equation}
-            \boxed{(a_{ij}-a_{ji})n_i=0}
+            \sum_{k\in I}a_{jk}N_k-\sum_{i\in I}a_{ij}N_i=0
         \end{equation}
-        where $a_{ij}$ are the elements of the adjacency matrix of the quiver and $n_i$ are the node labels. This condition is equivalent to say that the ranks of tha gauge groups must lie in nullspace of the antisymmetrized adjacency matrix.
+        for every $j\in I$, where $a_{ij}$ are the elements of the adjacency matrix of the quiver. This can be simply rewritten as
+        \begin{equation}
+            \boxed{\sum_{i\in I}(a_{ji}-a_{ij})N_i=0}
+        \end{equation}
+        This is equivalent to say that the vector $(N_0,N_1,N_2,\dots)$ formed by the ranks of the gauge groups must lie in nullspace of the antisymmetrized adjacency matrix. From this nice reformulation we can already see that any ``symmetric'' quiver, i.e. quiver associated to a symmetric adjacency matrix, is automatically anomaly-free. In other words, a gauge theory is automatically anomaly-free if and only if all arrows come in pairs\footnote{Loops are also allowed since they don't contribute to the anomaly.} (with different orientations) in the quiver. If it is not the case, the ranks of the gauge groups must be constrained.
+
+        At this stage, we can already predict that all $\mN=2$ orbifold quiver gauge theories will be automatically anomaly-free since their quiver are their McKay graphs in which all arrows come in pairs.
+
+    \subsection{Lagrangian}
+
+        There is a Yukawa coupling for each triangle of the quiver consisting of two fermionic arrows and a bosonic arrow and a quartic scalar interaction for each square consisting of four bosonic arrows.
+
+        
 
     \subsection{Moduli space}
+
+        
+
+    \subsection{Fractional branes}
+        
+        %From the point of view of boundary conformal field theory\footnote{CFT on a manifold with boundary. Boundary conditions for open strings are interpreted as coherent states of the corresponding closed string 2d CFT.}, \emph{fractional D-branes} are reflected by boundary states in twisted sectors.
+        %For fractional D-branes at an orbifold singularity, the boundary states are sums of boundary states foreach $g$-twisted sector of the closed string 2d CFT.
+
+    \subsection{A note on couplings}
 
     \subsection{A simple example: $S=\C^3/\Z_3$}\label{sec:C3Z3}
 
@@ -382,7 +412,7 @@
             \end{align}
             Let us make an important observation: the form of the scalar fields are the same for every $m=0,\dots,5$. This can be traced back to the fact that $R(g)=\zeta_3\mathbbm{1}_6$ so the R-symmetry action of $\Z_3$ is the same for all $m$.
 
-            Let us now study the four Weyl fermions $\psi^a$. \marker{Continue.}
+            Let us now study the four Weyl fermions $\psi^a$. \todo{Continue.}
 
         \subsubsection{Quiver}
 
@@ -439,15 +469,6 @@
             \end{equation}
             From \eqref{eq:sumNiZ3}, we get that $N_0=N_1=N_2=N/3$, meaning that that the daughter theory has quantum gauge symmetry if and only if the parent theory with has gauge group $\SU(N)$ where $N$ is a multiple of $3$. Or, in other words, if the number of D-branes is a multiple of $3$.
 
-    \subsection{On note on the twisted sector}
-
-        What implications does have strings on an orbfold have for the spectrum? In general, we distinguish two kinds of states:
-        \begin{itemize}
-            \item the \emph{untiwsted states} are the states $\Psi$ that are invariant under the actio of $\Gamma$: $\gamma\cdot\Psi=\Psi$ for all $\gamma\in \Gamma$. They are the generators of the $\Gamma$-invariant part of the Hilbert space and can easily be constrcuted by superposing all the images $\gamma\cdot\Psi_0$.
-            \item closed strings must start and end at the same point, i.e. $X(\tau,\sigma+2\pi)=X(\tau,\sigma)$. Usually, a strings that starts at connects a point of $M^{(6)}$ to another point of its orbit, i.e. $X(\tau,\sigma+2\pi)=\gamma\cdot[X(\tau,\sigma)]$ would not be allowed. However, in $M^{(6)}/\Gamma$ it is an allowed configuration. Those new states that appear after orbifolding are the \emph{twisted states}. There existsnce is due to the fact that strings are extended objects. One can see that there is one twisted sector per conjugacy classe of $\Gamma$ \marker{details ?} and that the untwisted states are recovered with $\gamma=e$.
-        \end{itemize}
-        The individual twisted sector quantum states of the strings are localized at the orbifold singularities that the classical configurations (untiwisted sector) enclose.
-
     \subsection{A note on $(p+1)$-dimensional quiver gauge theories}
 
         Let us mention that we can generalize our initial brane-world paradigm and consider D$p$-branes in type II string theory (type IIA if $p$ is even and type IIB if $p$ is odd) instead of just D$3$-branes. The spacetime is then of the form
@@ -465,7 +486,6 @@
         \end{itemize}
 
         We will however mostly mostly consider $4$-dimensional quiver gauge theories, i.e. living on D$3$-branes.
-    
 
 \section{$\mN=2$ daughter theories}\label{sec:N2QGT}
 
@@ -672,7 +692,7 @@
         \begin{equation}
             \{(\rho_i,V_i)\}_{i=0,\dots,n+2}
         \end{equation}
-        with $V_i=\C$ for $i=0,\dots,3$ and $V_i=\C^2$ for $i=4,\dots,n+2$, so there are $4$ one-dimensional representations and $n-1$ two-dimensional representations. It is more convenient to treat the $1$-dimensional and $2$-dimensional representations idependently. We therefore denote by $\sigma_i$ with $i=0,\dots,3$ the $1$-dimensional representations and $\mu_r$ with $r=1,\dots,n-1$ the $2$-dimensional ones:
+        with $V_i=\C$ for $i=0,\dots,3$ and $V_i=\C^2$ for $i=4,\dots,n+2$, so there are $4$ one-dimensional representations and $n-1$ two-dimensional representations. It is more convenient to treat the $1$-dimensional and $2$-dimensional representations idependently. We therefore denote by $\sigma_i$ with $i=0,\dots,3$ the $1$-dimensional representations and by $\mu_r$ with $r=1,\dots,n-1$ the $2$-dimensional ones:
         \begin{equation*}
         \begin{array}{cc}
             \multirow{7}{*}{$\begin{array}{|c|c|c|}
@@ -720,50 +740,48 @@
                 & & & & & & 0 & -x_2 & & & \\
                 \vdots & & & & & & & & \ddots & & \vdots \\
                 & & & & & & & & & x_{n-1} & 0 \\
-                0 & & & & & & & & & 0 & -x_{n_1}
+                0 & & & & & & & & & 0 & -x_{n-1}
         \end{array}
         \right]}.\label{eq:invformAmuDn}
         \end{equation}
-        The projected gauge group is then
+        where each entry $(i,j)$ is an arbitrary block of size $N_i\times N_j$. The explicit derivations are carried out in appendix \ref{app:invconfDn}. The projected gauge group is then
         \begin{equation}
-            G_{\text{proj}} = \SU(N_0)\times\dots\SU(N_3)\times\SU(2N_4)\times\dots\times\U(2N_{n+3}).
+            G_{\text{proj}} = \SU(N_0)\times\dots\SU(N_3)\times\SU(2N_4)\times\dots\times\SU(2N_{n+3}).
         \end{equation}
 
 
-        The invariant scalar field configurations are computed to be of the form
-        \begin{equation}
-            X^m=
-            {\tiny
-            \left[
-            \begin{array}{*{20}c}
-                \times & 0 & 0 & 0 & & & & & & \cdots & 0 \\
-                0 & \times & 0 & 0 & & & & & & & \\
-                0 & 0 & \times & 0 & & & & & & & \\
-                0 & 0 & 0 & \times & & & & & & & \\
-                & & & & x_1 & 0 & & & & & \\
-                & & & & 0 & -x_1 & & & & & \\
-                & & & & & & x_2 & 0 & & & \\
-                & & & & & & 0 & -x_2 & & & \\
-                \vdots & & & & & & & & \ddots & & \vdots \\
-                & & & & & & & & & x_{n-1} & 0 \\
-                0 & & & & & & & & & 0 & -x_{n_1}
-        \end{array}
-        \right]}\label{eq:invformXmDn}
-        \end{equation}
-        where each entry $(i,j)$ is an arbitrary block of size $N_i\times N_j$. The explicit derivations are carried out in appendix \ref{app:invconfDn}. It is interesting to notive the main differences with the case of $\Z_n$:
+        %The invariant scalar field configurations are computed to be of the form
+        %\begin{equation}
+        %    X^m=
+        %    {\tiny
+        %    \left[
+        %    \begin{array}{*{20}c}
+        %        \times & 0 & 0 & 0 & & & & & & \cdots & 0 \\
+        %        0 & \times & 0 & 0 & & & & & & & \\
+        %        0 & 0 & \times & 0 & & & & & & & \\
+        %        0 & 0 & 0 & \times & & & & & & & \\
+        %        & & & & x_1 & 0 & & & & & \\
+        %        & & & & 0 & -x_1 & & & & & \\
+        %        & & & & & & x_2 & 0 & & & \\
+        %        & & & & & & 0 & -x_2 & & & \\
+        %        \vdots & & & & & & & & \ddots & & \vdots \\
+        %        & & & & & & & & & x_{n-1} & 0 \\
+        %        0 & & & & & & & & & 0 & -x_{n-1}
+        %\end{array}
+        %\right]}\label{eq:invformXmDn}
+        %\end{equation}
+        It is interesting to notice the main differences with the case of $\Z_n$:
         \begin{itemize}
             \item since $2\D_n$ is not abelian, it can have irreps of two or more dimension (which it does). This implies that the gauge field bloacks $A_{\mu;ij}$ are not necessarily diagonal. This will have important consequence for the residual gauge group.
-            \item again because some irreps are mode then $1$-dimensional, we can act on $\C^3$ with non-diagonal actions (which we do). This means that components of the different complex scalars can be exchanged under $R$-symmetry.
+            \item again because some irreps are mode then $1$-dimensional, we can act on $\C^3$ with non-diagonal actions (which we do). This means that components of the different complex scalars can be exchanged under R-symmetry.
         \end{itemize}
 
 
-        The anomaly cancellation conditions is
-
-        
+        As we mentioned previously, there is no constrain on the ranks of the gauge groups coming from the the anomaly condition, it is automatically anomaly-free.
 
     \subsection{$S=\C\times\C^2/\T,\mathcal{O},\I$}
 
-        \marker{Continue.}
+        \todo{Continue.}
 
 
 
@@ -801,7 +819,7 @@
             \end{itemize}
 
             The problem has now been reformulated as follows:
-            we are looking for all possible ordered triplets $(a,b,c)$ such that $0<a\leq b\leq c<n$ and \eqref{eq:cdtabc}. For $n=1$ and $n=2$, it is clear that this is not possible, the possibilities involve at least one trivial representation. For $n=3$, the only possibility is $(1,1,1)$, the one we used in \ref{sec:C3Z3}. What about bigger values of $n$? First, note that $0<a\leq b\leq c<n$ implies that the maximum value of $a+b+c$ is $3n-1$. From equation \eqref{eq:cdtabc}, the only two possibilities are then $a+b+c=n$ or $a+b+c=2n$. What simplifies the analysis is that the second case can actually be ignored because it is already being taken care of by the first case. Let us explain that in more details: \marker{details}.
+            we are looking for all possible ordered triplets $(a,b,c)$ such that $0<a\leq b\leq c<n$ and \eqref{eq:cdtabc}. For $n=1$ and $n=2$, it is clear that this is not possible, the possibilities involve at least one trivial representation. For $n=3$, the only possibility is $(1,1,1)$, the one we used in \ref{sec:C3Z3}. What about bigger values of $n$? First, note that $0<a\leq b\leq c<n$ implies that the maximum value of $a+b+c$ is $3n-1$. From equation \eqref{eq:cdtabc}, the only two possibilities are then $a+b+c=n$ or $a+b+c=2n$. What simplifies the analysis is that the second case can actually be ignored because it is already being taken care of by the first case. Let us explain that in more details: \todo{details}.
             
             Now that we have seen that the only possibility is $a+b+c=n$, we find that the maximum value that $a$ can take is $\lfloor n/3\rfloor$, so $a=1,\dots,\lfloor n/3\rfloor$. $c$ can then be expressed in terms of $a$ and $b$ as $c=n-a-b$. The constraint $b\leq c$ then implies $b\leq (n-a)/2$, i.e. $b=a,\dots,\lfloor (n-a)/2\rfloor$. To summarize, the representations are all the representations of the form
             \begin{equation}
@@ -813,11 +831,12 @@
                 \Z_2 &: \text{necessarily involves a trivial representation}\\
                 \Z_3 &: (1,1,1)\\
                 \Z_4 &: (1,1,2)\\
-                \Z_5 &: (1,1,3),(1,2,2)\label{reprZ5C3}\marker{False.}\\
+                \Z_5 &: (1,1,3),(1,2,2)\label{reprZ5C3}\\
                 \Z_6 &: (1,1,4),(1,2,3),(2,2,2)\\
-                \Z_7 &: (1,1,5),(1,2,4),(1,3,3),(2,2,3)\marker{False}\\
+                \Z_7 &: (1,1,5),(1,2,4),(1,3,3),(2,2,3)\\
                 &\vdots
             \end{align*}
+            \todo{Correct this.}
             For an arbitrary $n$, the total number of different representation is
             \begin{equation}
                 \sum^{\lfloor n/3\rfloor}_{a=1}~\left\lfloor \frac{n-3a}{2}+1\right\rfloor = \begin{cases}
@@ -942,12 +961,13 @@
             \end{equation}
             for $m=2,3,4,5$. Gauge anomaly cancellation imposes
             \begin{align}
-                -2N_{i+2}+2N_{i-2}-N_{i+1}+N_{i-1}=0\marker{True ?}
+                -2N_{i+2}+2N_{i-2}-N_{i+1}+N_{i-1}=0
             \end{align}
             for $i=0,1,2,3,4$ which implies that
             \begin{equation}
                 N_0=N_1=N_2=N_3=N_4.
             \end{equation}
+            \todo{Right conditions?}
 
             \begin{figure}
                 \centering

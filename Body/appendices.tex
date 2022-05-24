@@ -224,8 +224,14 @@
         The finite subgroups of $\SU(3)$ are
         \begin{itemize}
             \item the finite subgroups of $\SU(2)$
+            \item $\Delta(3n^2)=(\Z_n\times\Z_n)\rtimes\Z_3$ and $\Delta(3n^2)=(\Z_n\times\Z_n)\rtimes S^3$
+            \item the exceptional groups
         \end{itemize}
         so there are $2$ infinite series and $5$ exceptional subgroups. Note that they are all divisible by $3$ because the center of $\SU(3)$ is $\Z_3$.
+
+        \begin{theorem*}
+            Every abelian finite subgroup of $\SU(3)$ is isomorphic to $\Z_m\times\Z_n$.
+        \end{theorem*}
 
 \section{Spacetime geometry: ALE space and orbifolds}\label{app:spacetimegeom}
 
@@ -234,7 +240,7 @@
         \item they are the resolution (blow-ups) of orbifolds
         \item there are completely classified: they fall in the ADE classification
         \item they only break half of the supersymmetry
-        \item they are non-compact therefore we can study them for self-dual type II theory. \marker{Why is that ?}
+        \item they are non-compact therefore we can study them for self-dual type II theory. \todo{Why is that ?}
     \end{enumerate}
     Mathematically, an ALE space is complete riemannian $n$-manifold $M$ such that there exists a compact set $K\subset M$ such that $M\backslash K$ is diffeomorphic to $(\R^n\backslash B_0(R))/G$, where $R\in\R^+_0$ is a radius and $G\subset\O(n)$ a subgroup. Additionally, it is asked that the pulled back metric on $\R^n\backslash B_0(R)$ tends to the euclidean flat metric at infinity.
 
@@ -427,7 +433,7 @@
                     & & & & & & 0 & -x_2 & & & \\
                     \vdots & & & & & & & & \ddots & & \vdots \\
                     & & & & & & & & & x_{n-1} & 0 \\
-                    0 & & & & & & & & & 0 & -x_{n_1}
+                    0 & & & & & & & & & 0 & -x_{n-1}
             \end{array}
             \right]}\label{eq:invformAmuDn}
             \end{equation}
@@ -530,7 +536,7 @@
                 X^4_{ij}&=-\rho_i(B)X^3_{ij}\rho_j(B)^{-1},\\
                 X^5_{ij}&=\rho_i(B)X^2_{ij}\rho_j(B)^{-1},\\
             \end{align}
-            bto have invariance under $B$. This equations imply in particular that $X^2_{kl}=-\rho_k(B^2)X^2_{kl}\rho_l(B^2)^{-1}$. Since, $\rho_k(B^1)=-\mathbbm{1}_{2\times 2}$ for every $k$, we get that all components $X^2_{kl}$ must be vanishing. In turn, this implies the components $X^{3,4,5}_{kl}$ must also all vanish. \marker{This cannot be true.}
+            bto have invariance under $B$. This equations imply in particular that $X^2_{kl}=-\rho_k(B^2)X^2_{kl}\rho_l(B^2)^{-1}$. Since, $\rho_k(B^2)=-\mathbbm{1}_{2\times 2}$ for every $k$, we get that all components $X^2_{kl}$ must be vanishing. In turn, this implies the components $X^{3,4,5}_{kl}$ must also all vanish. \todo{This cannot be true.}
 
 
     \subsection{}\label{app:compsum}
