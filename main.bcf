@@ -40,7 +40,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labelalpha</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labelnamespec</bcf:key>
@@ -274,7 +274,7 @@
   <bcf:options component="biblatex" type="online">
     <bcf:option type="singlevalued">
       <bcf:key>labelalpha</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labelnamespec</bcf:key>
@@ -2345,39 +2345,45 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
-    <bcf:citekey order="1">Feng_2001</bcf:citekey>
-    <bcf:citekey order="2">he2004lectures</bcf:citekey>
-    <bcf:citekey order="3">he2004lectures</bcf:citekey>
-    <bcf:citekey order="4">Kronheimer1990</bcf:citekey>
-    <bcf:citekey order="5">he2004lectures</bcf:citekey>
-    <bcf:citekey order="6">masterHe</bcf:citekey>
-    <bcf:citekey order="7">douglas1996dbranes</bcf:citekey>
-    <bcf:citekey order="8">PhysRevD.55.6382</bcf:citekey>
-    <bcf:citekey order="9">Hanany_1999</bcf:citekey>
-    <bcf:citekey order="10">vafa1998</bcf:citekey>
-    <bcf:citekey order="11">silervstein1998</bcf:citekey>
-    <bcf:citekey order="12">cox2011toric</bcf:citekey>
-    <bcf:citekey order="13">torigeomandCY</bcf:citekey>
-    <bcf:citekey order="14">fulton1993introduction</bcf:citekey>
-    <bcf:citekey order="15">oda1988convex</bcf:citekey>
-    <bcf:citekey order="16">FA1</bcf:citekey>
-    <bcf:citekey order="17">FA2</bcf:citekey>
-    <bcf:citekey order="18">FA3</bcf:citekey>
-    <bcf:citekey order="19">FA4</bcf:citekey>
-    <bcf:citekey order="20">FA5</bcf:citekey>
-    <bcf:citekey order="21">FA6</bcf:citekey>
-    <bcf:citekey order="22">FA7</bcf:citekey>
-    <bcf:citekey order="23">FA8</bcf:citekey>
-    <bcf:citekey order="24">Argurio_20081</bcf:citekey>
-    <bcf:citekey order="25">Argurio_20082</bcf:citekey>
-    <bcf:citekey order="26">kirillov2016quiver</bcf:citekey>
-    <bcf:citekey order="27">Feng_2001</bcf:citekey>
-    <bcf:citekey order="28">bertolinisusy</bcf:citekey>
-    <bcf:citekey order="29">DbranespartI</bcf:citekey>
-    <bcf:citekey order="29">DbranespartII</bcf:citekey>
-    <bcf:citekey order="30">he2004lectures</bcf:citekey>
-    <bcf:citekey order="31">brion</bcf:citekey>
-    <bcf:citekey order="32">torigeomandCY</bcf:citekey>
+    <bcf:citekey order="1">johnson_1997</bcf:citekey>
+    <bcf:citekey order="1">johnson_2002</bcf:citekey>
+    <bcf:citekey order="2">vafa1998</bcf:citekey>
+    <bcf:citekey order="3">vafa1998</bcf:citekey>
+    <bcf:citekey order="4">vafa1998</bcf:citekey>
+    <bcf:citekey order="5">vafa1998</bcf:citekey>
+    <bcf:citekey order="6">Feng_2001</bcf:citekey>
+    <bcf:citekey order="7">he2004lectures</bcf:citekey>
+    <bcf:citekey order="8">he2004lectures</bcf:citekey>
+    <bcf:citekey order="9">Kronheimer1990</bcf:citekey>
+    <bcf:citekey order="10">he2004lectures</bcf:citekey>
+    <bcf:citekey order="11">masterHe</bcf:citekey>
+    <bcf:citekey order="12">douglas1996dbranes</bcf:citekey>
+    <bcf:citekey order="13">PhysRevD.55.6382</bcf:citekey>
+    <bcf:citekey order="14">Hanany_1999</bcf:citekey>
+    <bcf:citekey order="15">vafa1998</bcf:citekey>
+    <bcf:citekey order="16">silervstein1998</bcf:citekey>
+    <bcf:citekey order="17">cox2011toric</bcf:citekey>
+    <bcf:citekey order="18">torigeomandCY</bcf:citekey>
+    <bcf:citekey order="19">fulton1993introduction</bcf:citekey>
+    <bcf:citekey order="20">oda1988convex</bcf:citekey>
+    <bcf:citekey order="21">FA1</bcf:citekey>
+    <bcf:citekey order="22">FA2</bcf:citekey>
+    <bcf:citekey order="23">FA3</bcf:citekey>
+    <bcf:citekey order="24">FA4</bcf:citekey>
+    <bcf:citekey order="25">FA5</bcf:citekey>
+    <bcf:citekey order="26">FA6</bcf:citekey>
+    <bcf:citekey order="27">FA7</bcf:citekey>
+    <bcf:citekey order="28">FA8</bcf:citekey>
+    <bcf:citekey order="29">Argurio_20081</bcf:citekey>
+    <bcf:citekey order="30">Argurio_20082</bcf:citekey>
+    <bcf:citekey order="31">kirillov2016quiver</bcf:citekey>
+    <bcf:citekey order="32">Feng_2001</bcf:citekey>
+    <bcf:citekey order="33">bertolinisusy</bcf:citekey>
+    <bcf:citekey order="34">DbranespartI</bcf:citekey>
+    <bcf:citekey order="34">DbranespartII</bcf:citekey>
+    <bcf:citekey order="35">he2004lectures</bcf:citekey>
+    <bcf:citekey order="36">brion</bcf:citekey>
+    <bcf:citekey order="37">torigeomandCY</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

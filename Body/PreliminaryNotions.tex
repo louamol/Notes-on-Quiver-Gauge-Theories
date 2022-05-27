@@ -766,55 +766,17 @@
 
     \subsection{Geometrical McKay correspondence}
 
-\section{The simplest case: smooth transverse space}
+        The geometrical McKay correspondence is the bijection between the exeptional graph of the blow up of orbifolds $\C^2/\Gamma$ ($\Gamma\subset\SU(2)$) and the McKay graphs of $\Gamma$.
 
-    \subsection{Generalities}
+    %\subsection{Integral transform interpretation}
 
-        Let us start by considering the simplest configuration were the transverse Calabi-Yau space is non-singular, i.e. it is a proper smooth Calabi-Yau threefold. As mentioned above, the only smooth Calabi-Yau threefold is $S=\C^3$. In this case, the spacetime is simply flat space $\R^{1,9}=\R^{1,3}\times\R^6$ with a choice a complex structure on $\R^6$. From the $\U(N)$ Chan-Paton factors, the worldvolume theory inherits from a $\U(N)$ gauge group. Type IIB superstring theory is a ten-dimensional $\mN=2$ theory so it has $32$ supercharges. The presence of the branes breaks the Lorentz symmetry of $\R^{1,9}$ as
-        \begin{equation}
-            \SO(1,9)\to\SO(1,3)\times\SO(6),
-        \end{equation}
-        whereby breaking half of the supersymmetries, as we explained in the previous section. We are thus left with $16$ supercharges. In four dimensions, this corresponds to $\mN=4$. The worldvolume theory for $S=\C^3$ is therefore $D=4,\mN=4$ $\U(N)$ SCFT gauge theory. This worldvolume theory, obtained in the non-singular case $S=\C^3$, is called the \emph{parent theory}.
-
-        Note that the D$3$-brane will warp the flat space metric to that of $AdS_5\times S^5$ and the bulk geometry is not strictly $\C^3$. However, as stated above, we are only concerned with the local gauge theory and not with gravitational back-reaction, therefore it suffices to consider $S$ as $\C^3$.
-
-    \subsection{Matter content}
-
-        As discussed in appendix \ref{sec:N4SCFT}, there is only one $D=4,\mN=4$ SCFT theory, up to a choice of gauge group $G$. In our case, $G=\U(N)$. The isometry group of the transverse space $\R^6$ is $\SO(6)\cong\SU(4)$. Since the scalar fields living on the branes are interpreted as its tranverse oscillations, $\SO(6)$ is a global symmetry of the field theory. These global symmetries of worldvolume theory lead to the R-symmetry group $\SU(4)_R$. The only $\mN=4$ supermutliplet can be rewritten in terms of $\mN=1$ supermultiplets as follows:
-        \begin{equation}
-            [\mN = 4 \text{ vector multiplet}] : V = (\lambda_\alpha, A_\mu, D) \oplus \Phi_A = (\phi^A,\psi^A_\alpha,F^A).
-        \end{equation}
-        with $A=1,2,3$. In other words, after removing the auxiliary fields $D$ and $F^A$, the matter content is
-        \begin{itemize}
-            \item a $\U(N)$ gauge field $A_\mu$ which transforms as a singlets under $\SU(4)_R$:
-            \begin{align}
-                \text{Gauge transformation} &: A_\mu\mapsto UA_\mu U^{-1}+U\p_\mu U^{-1},\qquad U\in\U(N)\label{eq:transfA1}\\
-                \text{R-symmetry} &: A_\mu\mapsto A_\mu.\label{eq:transfA2}
-            \end{align}
-            Note that the usual term 
-            \item $4$ Weyl fermions $\psi^{a}_\alpha\equiv(\lambda_\alpha,\psi^1_\alpha,\psi^2_\alpha,\psi^3_\alpha,)$ that transform under the adjoint of $\U(N)$ and are mixed together under the representation $\boldsymbol{4}$ of $\SU(4)_R$. This means that each fermion $\psi^a$ takes values in $\mathfrak{u}(N)$. We denote the components by $\psi^a_{IJ}$ ($I,J=1,\dots,N$). Explicitely:
-            \begin{align}
-                \text{Gauge transformation} &: \psi^a \mapsto U \psi^a U^\dagger ,\qquad U\in\U(N),\label{eq:transfpsi1}\\
-                \text{R-symmetry} &: \psi^a\mapsto R\indices{^a_b}\psi^b,\qquad R\in\SU(4)_R.\label{eq:transfpsi2}
-            \end{align}
-            Note that this gives us $4N^2$ Weyl fermions in total.
-            \item $3$ complex scalar fields $\phi^A$ transforming under the adjoint representation of $\U(N)$ and under the two-times anti-symmettric representation of $\SU(4)_R$. This means that each $\phi^A$ takes values in $\mathfrak{u}(N)$ and we denote the components by $\phi^A_{IJ}$. Recall that $\SU(4)\cong\SO(6)$ so the action of the R-symmetry can be seen as the $\boldsymbol{3}$ of $\SU(3)\subset\SU(4)_R$ acting on three complex scalars $\phi^A$ or equivalently as the $\boldsymbol{6}$ of $\SO(6)_R$ acting on $6$ real scalars $X^m$, the real and imaginary parts of the $\phi^A$. They are interpreted as the oscillations of the branes in the transverse space. Explicitely:
-            \begin{align}
-                \text{Gauge transformation} &: X^m \mapsto U X^m U^\dagger ,\qquad U\in\U(N),\label{eq:transfphi1}\\
-                \text{R-symmetry} &: X^m \mapsto R\indices{^m_n}X^n,\qquad R\in\SO(6)_R.\label{eq:transfphi2}
-            \end{align}
-            Note that this gives $6N^2$ real scalars in total. They are the superpartners of the fermions. \todo{Detail.}
-        \end{itemize}
-
-        Note that the gauge group $\U(N)$ can also be seen as the group of isometries of the metric space $\C^N$, i.e. $\Hom(\C^N,C^N)$. From this point of view, the transformations \eqref{eq:transfA1}-\eqref{eq:transfphi2}can be summarized as
-        \begin{subequations}
-            \begin{empheq}[box=\widefbox]{align}
-                A_\mu&\in\Hom(\C^N,\C^N),\label{eq:AHom}\\
-                \psi&\in\boldsymbol{4}\otimes\Hom(\C^N,\C^N),\label{eq:psiHom}\\
-                X&\in\boldsymbol{6}\otimes\Hom(\C^N,\C^N).\label{eq:phiHom}
-            \end{empheq}
-        \end{subequations}
-
-        \begin{result}
-            If the transverse space is non-singular, the only possibility is $S=\C^3$. In this case, the worldvolume theory is therefore $D=4,\mN=4$ $\U(N)$ SCFT gauge theory. It is called the \emph{parent theory}.
-        \end{result}
+        %An \emph{integral transform} on functions is a linear map between the space of fucntions on a space $X$ to the space of functions on some other space $Y$, encoded by some function on the product space $X\times Y$ and that has the form
+        %\begin{equation}
+        %    \left(
+        %        \begin{array}{ccc}
+        %            \{f:A\to X\} & \longrightarrow & \{f:A\to Y\} \\
+        %            f & \longmapsto & g_f
+        %        \end{array}
+        %        \right),\qquad g_f(y)=\int_X~K(x,y)f(x).
+        %\end{equation}
+        %The McKay correspondence can be interpreted in terms of the Fourier-Mukai transform (categorified integral transform).
