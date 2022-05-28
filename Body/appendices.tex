@@ -1,3 +1,74 @@
+\section{Simplicial Homology}
+
+    An \emph{$n$-simplex}, denoted by $\Delta^n=[v_0,\dots,v_n]$ is the smallest convex set in $\R^m$ containing $n+1$ points $v_0,\dots,v_n$ that do not lie in a hyperplane of dimension less than $n$. Or, equivalently, such that $v_1-v_0,\dots,v_n-v_0$ are linearly independant. The $n+1$ point $v_0,\dots,v_n$ are the \emph{vertices} of the $n$-simplex. A by-product of our ordered notation for the vertices of a simplex is that it determines an orientation for the edges $[v_i,v_j]$ according to the increasing subscripts. The \emph{faces} of an $n$-simplex are all the sub-simplices that can obtained by removing vertices of the original simplex. The order of the vertices of the smaller simplices is taken to be same than in the original $n$-simplex. 
+    
+    Let us now put some simplices together. If $X$ be a topological space, then a \emph{simplicial complex structure} $\Delta$ on $X$ is a collection $\Delta=\{\sigma_\alpha\}$ of continuous maps $\sigma_\alpha:\Delta^{n(\alpha)}\to X$ called \emph{characteristic maps} such that
+    \begin{enumerate}[label=\roman*)]
+        \item $\sigma_\alpha|_{e^{n(\alpha)}}$ is injective and that for all $x\in X$ there exists $\alpha$ such that $x\in\Im(\sigma_\alpha|_{e^{n(\alpha)}})$,
+        \item the restriction of any map $\sigma_\alpha$ to a face of $\Delta^n$ is another $\sigma_\beta$,
+        \item for any subset $A\subseteq X$, $A$ is open if and only if $\sigma^{-1}_{\alpha}(A)$ is open in $\Delta^n$ for all $\alpha$,
+    \end{enumerate}
+    where $\Delta^n$ is an $n$-simplex and $e^n$ is the interior of $\Delta^n$. 
+
+    Given a simplicial complex structure $\Delta$ on $X$, $n$-chains are finite formal sums
+    \begin{equation}
+        \sum_\alpha n_\alpha \sigma_\alpha(e^{n(\alpha)})
+    \end{equation}
+    with coefficient $n_\alpha\in\Z$. We denote by $\Delta_n(X)$ the set of all $n$-chains, it is a free abelian group.
+
+    For a general simplicial complex structure on $X$, we define a \emph{boundary homomorphism} $\p_n:\Delta_n(X)\to\Delta_{n-1}(X)$ by its action on the basis elements:
+    \begin{equation}
+        \p_n(\sigma_\alpha)=\sum_i(-1)^i\sigma_\alpha|_{[v_0,\dots,\hat{v_i},\dots,v_n]}.
+    \end{equation}
+    In particular, homomorphism here means that this maps are linear. We can note that the right side of this equation does indeed lies in $\Delta_{n-1}(X)$ since each restriction $\sigma_\alpha|_{[v_0,\dots,\hat{v_i},\dots,v_n]}$ is the characteristic map of an $(n-1)$-simplex of $X$. The most important property of those maps is that $\p_{n}\circ\p_{n+1}=0$ (symbolically $\p^2=0$), meaning that $\Im\p_{n+1}\subset\Ker\p_n$. We can then form a sequence of homomorphisms of abelian groups
+    \begin{equation}
+        \dots\to \Delta_{n+1}(X)\xrightarrow[]{\p_{n+1}}\Delta_n(X)\xrightarrow[]{\p_{n}}\Delta_{n-1}(X)\to\dots\to\Delta_1(X)\xrightarrow[]{\p_{1}}\Delta_0(X)\to 0
+    \end{equation}
+    $\Im\p_{n+1}\subset\Ker\p_n$ for each $n$. Chains of homomorphisms satisfying this property are called \emph{chain complex}. We have extended the chain at the end with $\p_0=0$ such that this property is also true at the ends. Elements of $\Ker\p_n$ are called \emph{$n$-cycles} and elements of $\Im\p_{n+1}$ are called \emph{$n$-boundaries}. Note that they are each elements of $\Delta_n(X)$, hence the notation. 
+    \begin{examp*}
+        If we consider a triangle withe vertices $A,B$ and $C$, we can put a simplicial complex structure on it consisting of one $2$-simplex ($u=[A,B,C]$), three 1-simplices ($a=[A,B],b=[B,C],c=[C,A]$) and three $0$-simplices ($A,B,C$). We can see that
+        \begin{equation}
+            \p_2(u)=[B,C]-[A,C]+[A,B] = a+b+c.
+        \end{equation} 
+        So we get that $a+b+c$ is a $1$-boundary. However, we see that
+        \begin{equation}
+            \p_1(a+b+c)=B-A+C-B+A-C=0
+        \end{equation}
+        so it is also a $1$-cycle.
+    \end{examp*}
+    The fact that image of each map lies the kernel of the next map means that any boundary is also a cycle. As illustrated by the previous example. We can wonder what are the cycles that are not boundaries of any higher-dimensional simplicial complex. This set is precisely the quotient space
+    \begin{equation}
+        H_n(X)=\frac{\Ker(\p_n)}{\Im\p_{n+1}}.
+    \end{equation}
+    It naturally inherits a group structure and is called the $n$th \emph{Homology group} of $X$. The elements of this space are equivalence classes (cosets of $\Im\p_{n+1}$) of $n$-cycles where two cycles are considered equivalent if they only differ by a boundary, i.e. if their formal difference is a boundary. These equivalence classes are called \emph{homology classes}.
+
+    \begin{examp*}
+        Let us give some useful examples of Homology groups for various topological spaces:
+        \begin{itemize}
+            \item the Homology groups of $\R^n$ are all trivial therefore $\chi=0$.
+            \item the non-trivial Homology groups of the $n$-sphere are $H_0(S^n)=H_n(S^n)=\Z$ therefore $\chi=(-1)^n-1$
+            \item the only non-trivial Homology group of the $n$-ball is $H_0(B^n)=\Z$ therefore $\chi=1$.
+            \item the non-trivial Homology groups of the $2$-torus are $H_0(T)=H_2(T)=\Z$ and $H_1(T)=\Z^2$ therefore $\chi=(1+x)^2$.
+            \item the non-trivial Homology groups of the complex projective space are $H_{0\leq 2k\leq 2n}(\C\P^n)=\Z$.
+            \item the only non-trivial Homology groups of any Riemann surface of genus $g$ are $H_0=\Z, H_1=\Z^{2g}$ and $H_2=\Z$, such that $\chi=2-2g$.
+        \end{itemize}
+    \end{examp*}
+    Let us make a comment on the zeroth homology group. Since $\Ker\p_0=\Delta_0$ by definition, all elements of $\Delta_0$ (i.e. every point of $X$) are $0$-cycles and $H_0(X)$ is the set of $0$-cycles that are not the boundary of any chain of $1$-simplices. Since any linear combination of $0$-simplices (i.e. point) can be seen as the boundary the $1$-simples that joins them, we can see that all points that can be joined by a path are equivalent. For a topological space $X$ where all points can be connected by a path this means that the zeroth homology group is necessarily $H_{0}(X)=\{nA|a\in\Z\}\cong\Z$, where $A$ any point in $X$. More generally, we can conclude that the number of copies of $\Z_n$ in $H_0(X)$ is the number of path-connected components of $X$.
+
+    For a graph $\Gamma$, we can understand from our previous discussions that the only non-trivial homology groups are going to be $H_0(\Gamma)=\Z\times\dots\times\Z$ where the number of copies is the number of connected components and $H_1(\Gamma)=\Z\times\dots\times\Z$ where the number of copies is the number of ``irreducible'' loops.
+
+    The $n$th simplicial homology group of a topological space $X$ with a complex simplicial structure $\Delta$ is always of the form
+    \begin{equation}
+        H^\Delta_n(X)=\underbrace{\Z\times\Z}_{b_n}\oplus\Z_{q_1}\times\dots\times\Z_{q_s}.
+    \end{equation}
+    $b_n$ are the Betti numbers. The \emph{Poincaré polynomial} is
+    \begin{equation}
+        P_X(x)=\sum_{i\geq 0}b_ix^i
+    \end{equation}
+    and the Euler characteristic of $X$ is given by $P_X(-1)$. Recall that the Euler characteristic is also given by $\chi=2-2g-b-c$, $g$ being the genus, $b$ the number of topological boundaries and $c$ the number of crosscaps.
+
+    Note that the homology that we considered is with coefficients in $\Z$, i.e. we started with simplicial chains with coefficients in $\Z$. We can however also consider coefficients in $\R$, in $\C$ or in any ring. In those case however we can easily lose the information about torsion. For example $\Z/2\Z=\Z_2$ is non trivial but since $2\R=\R$, $\R/2\R=\{0\}$.
+
 \section{Some finite subgroups}
 
     \subsection{Finite subgroups of $\SU(2)$ and $\SL(2,\C)$}\label{app:su2subgroups}

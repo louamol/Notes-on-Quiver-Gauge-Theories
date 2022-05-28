@@ -403,60 +403,6 @@
             \item $n\geq4$: very little is known; crepant resolution ecists in rather special cases. Many singularity are terminal, which implies that they admit no crepant resolution.
         \end{itemize}
 
-\section{Homology}
-
-    \subsection{The idea of Homology}
-
-        
-
-        Note that they are in fact many types of homologies, the one we described here is the simplest (which is almost everytime for our needs) and is called \emph{simplicial homology}.
-
-    \subsection{Simplicial Homology}
-
-        An \emph{$n$-simplex}, denoted by $\Delta^n=[v_0,\dots,v_n]$ is the smallest convex set in $\R^m$ containing $n+1$ points $v_0,\dots,v_n$ that do not lie in a hyperplane of dimension less than $n$. Or, equivalently, such that $v_1-v_0,\dots,v_n-v_0$ are linearly independant. The $n+1$ point $v_0,\dots,v_n$ are the \emph{vertices} of the $n$-simplex. A by-product of our ordered notation for the vertices of a simplex is that determines an orientation for the edges $[v_i,v_j]$ according to the increasing subscripts. The \emph{faces} of an $n$-simplex are all the subsimplices that can obtained by removing vertices of the original simplex. The order of the vertices of the smaller simplices is taken to be same than in the original $n$-simplex. 
-        
-        Let us now put some simplices together. If $X$ be a topological space, then a \emph{simplicial complex structure} on $X$ is a collection of continuous maps $\sigma_\alpha:\Delta^n\to X$ called \emph{characteristic maps} such that
-        \begin{enumerate}[label=\roman*)]
-            \item $\sigma_\alpha|_{e^\alpha}$ is injective and that for all $x\in X$ there exists $\alpha$ such that $x\in\Im(\sigma_\alpha|_{e^n})$,
-            \item the restriction of any map $\sigma_\alpha$ to a face of $\Delta^n$ is another $\sigma_\beta$,
-            \item for any subset $A\subseteq X$, $A$ is open if and only if $\sigma^{-1}_{\alpha}(A)$ is open in $\Delta^n$ for all $\alpha$,
-        \end{enumerate}
-        where $\Delta^n$ is an $n$-simplex and $e^n$ is the interior of $\Delta^n$. 
-
-        Given a simplcial complex structure $\sigma_\alpha=\Delta^{n(\alpha)}\to X$ on $X$, $n$-chains are finite formal sums $\sum_\alpha n_\alpha e^n_\alpha$ with coefficient $n_\alpha\in\Z$. Equivalently, we can write $n$-chains as $\sum_\alpha n_\alpha \sigma_\alpha$. We denote by $\Delta_n(X)$ the free abelian group formed by $n$-chains. A basis is given by the open $n$-simplices $e^n_\alpha$ of $X$.
-
-        For a general simplicial complex structure on $X$, we define a \emph{boundary homomorphism} $\p_n:\Delta_n(X)\to\Delta_{n-1}(X)$ by its action on the basis elements:
-        \begin{equation}
-            \p_n(\sigma_\alpha)=\sum_i(-1)^i\sigma_\alpha|[v_0,\dots,\hat{v_i},\dots,v_n]
-        \end{equation}
-        We can note that the right side of this equations does indeed lies in $\Delta_{n-1}(X)$ since each restriction $\sigma_\alpha|[v_0,\dots,\hat{v_i},\dots,v_n]$ is the characteristic map of an $(n-1)$-simplex of $X$.
-
-        We now have a sequence of homomorphisms of abelian groups
-        \begin{equation}
-            \dots\to \Delta_{n+1}(X)\xrightarrow[]{\p_{n+1}}\Delta_n(X)\xrightarrow[]{\p_{n}}\Delta_{n-1}(X)\to\dots\to\Delta_1(X)\xrightarrow[]{\p_{1}}\Delta_0(X)\to 0
-        \end{equation}
-        with $\p_{n+1}\p_n=0$ for each. Such a sequence is called a \emph{chain complex}. We have extended the chain at the end with $\p_0=0$. It follows that $\Im\p_{n+1}\subset\Ker\p_n$. We then define the $n$th \emph{Homology group} of $X$ to be the quoitnet group $H_n(X)=\Ker(\p_n)/\Im\p_{n+1}$. Elements of $\Ker\p_n$ are called \emph{cycles} and elements of $\Im\p_{n+1}$ are called \emph{boundaries}. Elements of $H_n$ are cosets of $\Im\p_{n+1}$ and are called \emph{homology classes}. This means that two cycles are in the same homology classes if their difference is a boundary.
-
-        \begin{examp*}
-            Let us give some usefull examples of Homology groups for various topological spaces:
-            \begin{itemize}
-                \item the non-trivial Homology groups of the $n$-sphere are $H_0(S^n)=H_n(S^n)=\Z$.
-                \item the only non-trivial Homology group of the $n$-ball is $H_0(B^n)=\Z$ if $k=0$.
-                \item the non-trivial Homology groups of the 2-torus are $H_0(T)=H_2(T)=\Z$ and $H_1(T)=\Z^2$.
-                \item the non-trivial Homology groups of the complex projective space are $H_{0\leq 2k\leq 2n}(\C\P^n)=\Z$.
-            \end{itemize}
-        \end{examp*}
-
-        The $n$th simplicial homology group of a topological space $X$ with a complex simplicial structure $\Delta$ is always of the form
-        \begin{equation}
-            H^\Delta_n(X)=\underbrace{\Z\times\Z}_{b_n}\oplus\Z_{q_1}\times\dots\times\Z_{q_s}.
-        \end{equation}
-        $b_n$ are the Betti numbers. The \emph{Poincaré} polynomial is
-        \begin{equation}
-            P_X(x)=\sum_{i\geq 0}b_ix^i
-        \end{equation}
-        and the Euler characteristic of $X$ is given by $P_X(-1)$.
-
 \section{McKay correspondence}\label{app:McKay}
 
     \subsection{Classical correspondence}
