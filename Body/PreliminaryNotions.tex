@@ -43,6 +43,8 @@
 
         We consider $N$ D$3$-branes in type IIB superstring theory carrying a $\U(N)$ gauge group. The transverse space $S$ is taken to be a non-compact singular Calabi-Yau variety.
 
+    
+
 \section{Supersymmetric Yang-Mills theories}
 
     \subsection{Vacua space of SYM}
@@ -101,6 +103,13 @@
                 \Phi^A &\to e^{i\Lambda}\Phi^A.
             \end{align}
             The large $\SU(4)_R$ R-symmetry group forbids of having a superpotential. The commutator in the third term of \eqref{eq:N4lag} appears for the same reason as for the $\mN = 2$ Lagrangian. Notice that the choice of a single $\mN = 1$ supersymmetry generator breaks the full $\SU(4)_R$ R-symmetry to $\SU(3)\times \U(1)_R$. The three chiral superfields transform in the $\boldsymbol{3}$ of $\SU(3)$ and have R-charge $R = 2/3$ under the $\U(1)_R$. It is an easy but tedious exercise to perform the integration in superspace and get an explicit expression in terms of fields. Finally, one can solve for the auxiliary fields and get an expression where only propagating degrees of freedom are present, and where $\SU(4)_R$ invariance is manifest.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.4]{Pictures/N4SYMparameterspace.png}
+                \caption{Map of the parameter space of $\mN=4$ SYM or strings on $\text{AdS}_5\times S^5$, from \cite{Beisert_2011}.}
+            \end{figure}
+            \todo{Explain this diagram.}
 
         \subsubsection{Moduli space and dynamical phases}
 
@@ -282,7 +291,38 @@
 
     \subsection{Quivers, path algebras and relations}
 
-        A quiver $Q$ is a finite directed graph where loops and multiple arrows between edges are allowed. More precisely, it is a piece of combinatorial data $(Q_0,Q_1,t,h)$ such that $Q_0$ is the set of vertice, $Q_0$ the set of arrows ahd $t,h:Q_1\to Q_0$ are the tail and head maps. We can define a notion of product of paths\footnote{Note that for every vertex we add a trivial loop.} and, provided with the formal sum, the paths form a ring. Given a field $k$ and an action of $k$ aver this ring, we form an algebra, called the \emph{path algebra} of $Q$ and denoted by $kQ$. It is clear that the path algebra of a quiver is finite-dimensional if and only if $Q$ has no non-trivial cycles.
+        A quiver $Q$ is a finite directed graph where loops and multiple arrows between edges are allowed. More precisely, it is a piece of combinatorial data $(Q_0,Q_1,t,h)$ such that $Q_0$ is the set of vertice, $Q_1$ the set of arrows and $t,h:Q_1\to Q_0$ are the tail and head maps. A \emph{path} of length $m$ is a trivial composition of arrows $a_1\dots a_m$ such that $h(a_l)=t(a_{l+1})$ for $l=1,\dots,m-1$. It is in particular a \emph{loop} if $h(a_m)=t(a_0)$. We associate to any vertex $i\in Q_0$ a trivial loop $e_i$ going from $i$ to itself. This allows us identify $Q_0$ with the set of paths of lenth $0$. Since $Q_1$ is the set of paths with length $1$ by definition, we can generalize this notation and denote by $Q_m$ be the set of paths of length $m$.
+        
+        We define the product of paths as
+        \begin{equation}
+            pq\equiv
+            \begin{cases}
+                pq,&\quad h(p)=t(q)\\
+                0,&\quad\text{else}
+            \end{cases}\qquad
+            e_ip\equiv
+            \begin{cases}
+                q,&\quad t(p)=i\\
+                0,&\quad\text{else}
+            \end{cases}\qquad
+            pe_i\equiv
+            \begin{cases}
+                p,&\quad h(p)=i\\
+                0,&\quad\text{else}.
+            \end{cases}
+        \end{equation}
+        We are using the convention that $pq$ means $p$ then $q$. Provided with the formal sum, the set of all paths then forms a ring. Given a field $k$ and an action of $k$ aver this ring we form an algebra, called the \emph{path algebra} of $Q$ and denoted by $kQ$. The addition and multiplication of two elements $a$ and $b$ 
+        \begin{equation}
+            a=\sum_{\alpha\in Q_m;a_\alpha\in k}\alpha a_\alpha,\qquad b=\sum_{\beta\in Q_m;a_\beta\in k}\beta b_\beta
+        \end{equation}
+        of $kQ$ are therefore defined as
+        \begin{equation}
+            a+b=\sum_{\alpha}\alpha(a_\alpha+b_\alpha),\qquad a\cdot b \sum_{\alpha,\beta}\alpha\beta a_\alpha b_\beta.
+        \end{equation}
+        It is clear that the path algebra is finitely generated if and only if $Q_0$ and $Q_1$ are finite and that it is finite-dimensional if and only if $Q$ has no non-trivial cycles. The $Q_m$'s, the set of paths of length $m$, define a gradation of the path algebra $kQ$:
+        \begin{equation}
+            kQ=\bigoplus_{m}kQ_m\qquad\text{ with } kQ_m\equiv\bigoplus_{p\in Q_m}pk.
+        \end{equation}
 
         To enforce commutativity of some squares inside a quiver, we can use the notion of relation. A \emph{relation} on a quiver $Q$ is a $k$-linear combination of paths from $Q$. More precisely, is a subsapce of $kQ$ spanned by linear combinations of paths having a common source and common target, and of length at least $2$. A \emph{quiver with relations} is a pair $(Q,I(R))$ where $I(R)\subseteq kQ$ is the (two-sided) ideal of the path algebra generated by $R$. The path algebra of $(Q,I)$ is $kQ/I(R)$. 
         
@@ -294,9 +334,9 @@
 
         A \emph{representation} of a quiver $Q$ over the field $k$ is an assignment to every vertex $i$ os a $k$-vector space $V_i$ and to every arrow $a$ a linear mapping $f_a=V_{t(a)}\to V_{h(a)}$ between the corresponding vector spaces to each arrow. A representation of a quiver with relations $(Q,R)$ has the same definition but with the additional requirement that the linear maps must preserve the relations. \todo{Explain.} Denoting $\alpha_i=\dim V_i$, $\alpha=(\alpha_i)\in\N^{Q_0}_0$ is the \emph{dimension vector} of the representation. Quiver representations are an effective combinatorial tool for organizing linear algebraic data. Not only are they naturally related to many algebraic objects such as quantum groups, Kac-Moody algebras, and cluster algebras, but they have also been studied from the geometric point of view, often serving to bridge the gap between representation theory and algebraic geometry. 
         
-        If $V=(V_i,f_a)$ and $W=(W_i,g_a)$ are are two finite-dimensional representation of the same quiver with relations $(Q,R)$, a morphism $\psi$ from $V$ to $W$ is given by specifying , for every vertex $i$, a linear isomorphism $\psi_i:V_i\to W_i$ such that for avery arrow $a$ $\psi_{h(a)}\circ f_a=g_a\circ\psi_{t(a)}$. The \emph{direct sum} $V\oplus W$ of representations can also be defined as $(V\oplus W)_i=V_i\oplus W_i$ with the direct sum of the linear mappings. We then say that a representation is \emph{decomposable} is it is isomorphic to the direct sum of non-zero representations and of \emph{finite-type} if it has only finitely many isomorphism classes of indecomposable representations. A very important theorem in indecomposable representations is the following:
+        If $V=(V_i,f_a)$ and $W=(W_i,g_a)$ are are two finite-dimensional representation of the same quiver with relations $(Q,R)$, a morphism $\psi$ from $V$ to $W$ is given by specifying , for every vertex $i$, a linear isomorphism $\psi_i:V_i\to W_i$ such that for avery arrow $a$ $\psi_{h(a)}\circ f_a=g_a\circ\psi_{t(a)}$. The \emph{direct sum} $V\oplus W$ of representations can also be defined as $(V\oplus W)_i=V_i\oplus W_i$ with the direct sum of the linear mappings. We then say that a representation is \emph{decomposable} is it is isomorphic to the direct sum of non-zero representations and of \emph{finite-type} (or \emph{finite orbit type}) if it has only finitely many isomorphism classes of indecomposable representations. Or, equivalently, if it has only finitely many isomorphism classes of representations for any prescribed dimension vector. A very important theorem in indecomposable representations is the following:
         \begin{theorem*}[Gabriel]
-            A (connected) quiver is of fnite type if and only if its underlying graph (when the directions of the arrows are ignored) is ADE.
+            A (connected) quiver is of fnite type if and only if its underlying undirected graph is a simply-laced Dynkin diagram.
         \end{theorem*}
         
         To any representation $V=(V_i,f_a)$ of $Q$ we can associate a $k$-vector space
@@ -307,12 +347,14 @@
         \begin{equation}
             f^2_i=f_i,\qquad f_i\circ f_j=0~(i\neq j),\qquad f_{t(a)}\circ f_a=f_a\circ f_{h(a)}=f_a
         \end{equation}
-        and all other products are zero. In this sense, representations a quiver defines an algebra (the algebra of $f_i$ and $f_a$). Now comes the whole point to all this is: this algebra is a representation of the path algebra. To see this, we can use the notation $\rho(e_i)=f_i:V\to V$ and $\rho(a)=f_a:V\to V$ so $\rho:kQ\to \End(V)$ and we can show that is is a $k$-linear morphism of rings. So $\rho$ is a representation of the algebra $kQ$. So a representation of a quiver $Q$ gives a representation of the path algebra. The converse can also be shown. We conclude that representations of the path algebra and of the quiver are equivalent. Gabriel's theorem could then be equivalently phrased as: the path algebra of any quiver has finite representations if and only if it is ADE.
+        and all other products are zero. In this sense, representations a quiver defines an algebra (the algebra of $f_i$ and $f_a$). Now comes the whole point to all this is: this algebra is a representation of the path algebra. To see this, we can use the notation $\rho(e_i)=f_i:V\to V$ and $\rho(a)=f_a:V\to V$ so $\rho:kQ\to \End(V)$ and we can show that is is a $k$-linear morphism of rings. So $\rho$ is a representation of the algebra $kQ$. So a representation of a quiver $Q$ gives a representation of the path algebra. Conversely, given the path algebra $kQ$ of a quiver, then $kQ$ is in particular a vector space over $k$ that yields a familly of vector space $\{V_i=e_i V\}_{i\in Q_0}$ and we have a linear map $f_a:V_{t(a)}\to V_{h(a)}$ for any arrow $a\in Q_1$. We conclude that representations of the path algebra and of the quiver are equivalent. Gabriel's theorem could then be equivalently phrased as: the path algebra of any quiver has finite representations if and only if it is ADE.
         
         Recall also that giving a $k$-linear morphism $A=(k,R)\to\End(V)$ is equivalent to giving a structure of $R$-module to $V$. So from what we discussed above, giving a representation of a quiver is equivalent to giving a module structure to $V$. This can be rephrased using a more categorical language by showing that these constructions extend to functors. It is now clear that the finite-dimensional representations of a quiver with relations form a category, which we denote by $\texttt{fRep}(kQ,R)$. If $(Q,I(R))$ is a quiver with relations and $A=kQ/I$ its path algebra, then the set of finite-dimensional modules of $A$ is also a category that we denote by $\texttt{fdmod}A$. There is a categorical equivalence
         \begin{equation}
             \boxed{\texttt{fRep}(kQ,R)\approx\texttt{fdmod}A.}
         \end{equation}
+
+        The representation of any finite-dimensional alegbra can be described by a quiver with relations $(Q,I)$ such that $I$ contains the power of the ideal generated by the arrows.
 
     \subsection{Geometric invariant theory}
 
@@ -335,6 +377,8 @@
 
 
     \todo{This section has to be rewritten.}
+
+\section{Quivers in string theory and Yang-mills in graph theory}
 
 \section{Calabi-Yau manifolds, orbifolds and crepant resolutions}\label{sec:CY}
 

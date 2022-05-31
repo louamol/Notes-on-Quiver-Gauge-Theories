@@ -279,7 +279,7 @@
 
         \subsection{Field content, quivers and McKay graphs}
 
-            A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$. In other words, from \eqref{eq:resdecomp}, the adjacency matrix of the fermions has elements $A_{ij}=a^{\boldsymbol{4}}_{ij}$ and the one of the scalars has elements $A_{ij}=a^{\boldsymbol{6}}_{ij}$.
+            A convenient way the represent the matter content of a daughter theory is to use \emph{quiver diagrams}. A quiver is a finite oriented graph such that each node $i$ represents a gauge factor $\SU(N_i)$ and each arrow $i\to j$ represents a bi-fundamental field transforming under $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$. So, in essence, the arrows represent the vector multiplets (gauge) and the vertices the hypermultiplets (matter). The \emph{adjacency matrix} $A$ of the graph is a $k\times k$ with $k$ being the number of nodes (gauge factors) whose elements $A_{ij}$ are the number of arrows (bi-fundamental fields) from $i$ to $j$. In other words, from \eqref{eq:resdecomp}, the adjacency matrix of the fermions has elements $A_{ij}=a^{\boldsymbol{4}}_{ij}$ and the one of the scalars has elements $A_{ij}=a^{\boldsymbol{6}}_{ij}$.
 
             On the other hand, given finite group $\Gamma$, a representation $(\rho_W,W)$ and a complete set of irreducible representations $\{(\rho_i,V_i)\}_{i\in I}$ of the latter, one can construct a McKay graph (or quiver) as follows:
             \begin{enumerate}
@@ -574,14 +574,6 @@
         with $N_i=\dim\rho_i$ in terms of the irreducible representations of $\Gamma$. One may then wonder about the existence of a more ``elementary'' set of D-branes such that the open strings attached to the latter carry Chan-Paton factors indices that transform in an irreducible representation. Those indeed do exist and are called \emph{fractional D-branes}. They are BPS object that carry only a fraction of the charge with respect to the untwisted RR $(p+1)$-form of a regular brane but they are charged with respect to some twisted RR $(p+1)$-form, contrarily to the regular D-branes. They are stuck at the orbifold fixed point (where all twisted fields sit) since sitting elsewhere would require an invariant configuration in the covering space and those correspond to the regular representation, as we mentioned. So they cannot be fractional D-branes.
 
         An important property of fractional D-branes is that they can be interpreted as higher-dimensional branes wrapped on exceptional cycles of the resolved space. In the orbifold limit, these exceptional cycles collapses leaving lower-dimensional fractional branes behind. This suggest a link between the spectrum of the D-branes and the homology of the resolved orbifold space. More precisely, it is linked to its homological K-theory. This is has been studied a lot.
-
-        From the point of view of the worldvolume theory, the equivalence between fractional branes stuck at orbifold singularities and wrapped branes on the blow-up resolution is exhibited by going from the Higgs branch to the Coulomb branch. The first step to understand this was done by Kronheimer. He showed that the resolution of the orbifold $\C^2/\Gamma$ with $\Gamma$ a finite group of $\SU(2)$ is precisely the generic form of the gauge orbit of the direct product of $\U(N_i)$ factors. From the QGT point of view, the product of those circle group is the gauge group of the theory and each factor is associated to a vertex of the quiver. The fields of the theory are organized as a linear representation into a direct sum of $\Hom(V_i,V_j)$ for each edge. If we pick one field and follow it around as the gauge group transforms it, the space swept out is the gauge orbit of that field. Kronheimer then showed that, if the quiver is a Dynkin diagram, this orbit is $\C^2/\Gamma$. Now in general, gauge theories with with simple Lie groups (such as $\SU(N), E_8,$etc) are more interesting than the ones with gauge groups that are direct products so how could we relate the two? The mechanism the relates the two classes of theories is SSB, or \emph{Higgsing}. Indeed, one may embed the fields configurations in a higher-dimensional field configuration space (see them as submatrices of bigger matrices) on which acts the bigger (simple) Lie group. To from this group to a product of small ones. Fixing this submatrix-structure then singles out every gauge group factor one by one as the stabilizer subgroups of every submatrix. The final step is $\mN=2$ super Yang-Mills theories (Seiberg-Witten theory) which have a potential such that its vacua (more precisely the Higgs branch part) break a simple Lie group down to a Dynkin diagram QGT. The Coulomb branch is supposed to behave in a similar way. To summarize, the relation between simple Lie groups and the finite subgroups of $\SU(2)$ is the following:
-        \begin{enumerate}
-            \item start with $\mN=2$ SYM with gauge group that is a simple Lie group,
-            \item let it spontaneously find its vacuum,
-            \item consider the orbit space of the remaining spontaneously broken symmetry group,
-            \item the latter space is the resolution of the orbifold of $\C^2/\Gamma$.
-        \end{enumerate}
     
         From the point of view of boundary conformal field theory\footnote{CFT on a manifold with boundary. Boundary conditions for open strings are interpreted as coherent states of the corresponding closed string 2d CFT.}, \emph{fractional D-branes} are reflected by boundary states in twisted sectors.
 
@@ -1347,7 +1339,7 @@
             m=4,5 &: (i-i'-1)\mod m = (j'-j+1)\mod n.
         \end{align}
 
-\section{Summary of orbifold worldvlume theories}
+\section{Summary of orbifold worldvolume theories}
 
     \begin{table}[H]
         \centering
@@ -1376,6 +1368,56 @@
         $
         \caption{All supersymmetric orbifold worldvolume theories.}
     \end{table}
+
+\section{Finite orbifold quiver gauge theories}
+
+    For any QFT, the Callan-Symanzik equations dictates the behavior, under the renormalization group flow, of the $n$-point correlator $G^{(n)}(\{\phi(x_i)\};M,\lambda)$ forthe quantum fields $\phi(x)$ according the the renormalizationof the coupling $\lambda$ and momentum scale $M$:
+    \begin{equation}
+        \left[M\pdv{}{M}+\beta(\lambda)\pdv{}{\lambda}+n\gamma(\lambda)\right]G^{(n)}(\{\phi(x_i)\};M,\lambda)=0,
+    \end{equation}
+    where the dimensionless functions $\beta$ and $\gamma$ are the $\beta$-function and the anomalous dimension respectively. As usuall, the determine how the shifts $\lambda\to\lambda+\delta\lambda$ in the coupling constant and $\phi(1+\delta\eta)\phi$ in the wave function compensate for the shift in the renomalization scale $M$:
+    \begin{equation}
+        \beta(\lambda)\equiv M\pdv{\lambda}{M},\qquad \gamma(\lambda)\equiv-M\pdv{\eta}{M}.
+    \end{equation}
+    Thee are three possible behaviours for the $\beta$-function when $\lambda$ is small: $\beta(\lambda)>0$ then the theory has good IR behaviour and admits valid Feynman permutation theory at large distances, $\beta(\lambda)<0$ then the theory is asymptotically free and has a good permutative behaviour in the UV limit and finally if $\beta(\lambda)=0$ then the coupling constants do not flow and the renormalized couplings are always equal to the bare ones.
+
+    Theories in which no divergences can be associated with the coupling in the ultraviolet are called \emph{finite} theories. To find such theories, supersymmetry is often a very god tool as it indices cancellation of the boon-fermion loop effects. More precisely, $\mN=4$ SYM have been shown to be finite to all orders, for $\mN=2$ SYM it has been shown that no higher than $1$-loop corrections exist for the $\beta$-function (Adler-Bardeen theorem) and for $\mN=1$ theories the vanishing at $1$-loop implies the vanishing at $2$-loops. Finite non-supersymmetric theories has however also been porposed (see \cite{He:2018gvd} for references). Of particular interest are theories which, in addition to a vanishing $\beta$-function, also have a vanishing anomalous dimensions. These theories are often part of a continuous manifold of scale-invariant theories and are characterized by the existence of exactly marginal operators (and hence dimensionless coupling constants). An important result is that there is a choice of coupling constant such that both the $\beta$-function and the anomalous dimensions vanish at first order, then the theory is necessarily finite at all orders.
+
+    From \eqref{eq:defaij}, we must have
+    \begin{equation}
+        \dim(\mR)r_i=\sum_{j\in I}a^{\mR}_{ij}r_j.
+    \end{equation}
+    with $r_i\equiv\dim\rho_i$. It was shown (see \ref{He:2018gvd} for references) that this equation necessitates the vanishing of the $1$-loop $\beta$-function. In addition, we discussed that the remaining SUSY must be in the commutant of $\Gamma$ in $\SU(4)$ R-symmetry of the $\mN=4$ parent theory. It was shown in \cite{vafa1998,https://doi.org/10.48550/arxiv.hep-th/9706110} that the $1$-loop $\beta$-function is proportional to the function $dr_i-a^d_{ij}r_j$, called the \emph{discriminant function}:
+    \begin{equation*}
+        \beta_{1\text{-loop}}\propto dr_i-a^d_{ij}r_j,\qquad d\equiv 4-\mN.
+    \end{equation*}
+    Since the vanishing of the $\beta$-function signifies finitude, we have in particular the following necessary conditions for finitude:
+    \begin{equation*}
+        \begin{array}{c|c}
+            \text{SUSY} & \text{Finitude} \\ \hline
+            \mN=2 & 2r_i = a^2_{ij}r_j \\
+            \mN=1 & 3r_i = a^3_{ij}r_j \\
+            \mN=0 & 4r_i = a^4_{ij}r_j \\
+        \end{array}
+    \end{equation*}
+    Note that in the case $\mN=2$ this condition is necessary and sufficient but not for $\mN=1$ and $\mN=0$ where one also have to chack the superpotential. In the non-supersymmetric case, vanishing of the $1$-loop $\beta$-function does not necessarily implies the vanishing of the following orders so we consider the notion finiteness in a weaker sense where only the leading order must vanish.
+
+    Finitude of quiver gauge theories constrcuted in from D-brane probing singularities, the Hanany-Witten setup or geometric engineering is very much linked the the mathematical properties of their quiver. See \cite{Hanany:1999sp} for more details.
+    
+
+\section{Classical McKay correspondence from strings}
+
+    We mentionned before the equivalence between fractional branes stuck at orbifold singularities and wrapped branes on the blow-up resolution. From the point of view of the worldvolume theory, this equivalence is exhibited by going from the Higgs branch to the Coulomb branch. The first step to understand this was done by Kronheimer. He showed that the resolution of the orbifold $\C^2/\Gamma$ with $\Gamma$ a finite group of $\SU(2)$ is precisely the generic form of the gauge orbit of the direct product of $\U(N_i)$ factors. From the QGT point of view, the product of those circle group is the gauge group of the theory and each factor is associated to a vertex of the quiver. The fields of the theory are organized as a linear representation into a direct sum of $\Hom(V_i,V_j)$ for each edge. If we pick one field and follow it around as the gauge group transforms it, the space swept out is the gauge orbit of that field. Kronheimer then showed that, if the quiver is a Dynkin diagram, this orbit is $\C^2/\Gamma$. 
+    
+    Now in general, gauge theories with with simple Lie groups (such as $\SU(N), E_8,$etc) are more interesting than the ones with gauge groups that are direct products so how could we relate the two? The mechanism the relates the two classes of theories is SSB, or \emph{Higgsing}. Indeed, one may embed the fields configurations in a higher-dimensional field configuration space (see them as submatrices of bigger matrices) on which acts the bigger (simple) Lie group. To from this group to a product of small ones. Fixing this submatrix-structure then singles out every gauge group factor one by one as the stabilizer subgroups of every submatrix. The final step is $\mN=2$ super Yang-Mills theories (Seiberg-Witten theory) which have a potential such that its vacua (more precisely the Higgs branch part) break a simple Lie group down to a Dynkin diagram QGT. The Coulomb branch is supposed to behave in a similar way. To summarize, the relation between simple Lie groups and the finite subgroups of $\SU(2)$ is the following:
+    \begin{enumerate}
+        \item start with $\mN=2$ SYM with gauge group that is a simple Lie group,
+        \item let it spontaneously find its vacuum,
+        \item consider the orbit space of the remaining spontaneously broken symmetry group,
+        \item the latter space is the resolution of the orbifold of $\C^2/\Gamma$.
+    \end{enumerate}
+
+    All the details are presented in \cite{albertssonthesis}.
 
 \section{A note about projective representations, discrete torsion and deformations}
 
