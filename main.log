@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.7)  1 JUN 2022 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.7)  1 JUN 2022 22:06
 entering extended mode
 **"/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex"
 (/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex
@@ -1644,46 +1644,46 @@ Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
 ] [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
+(hyperref)                removing `math shift' on input line 57.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
+(hyperref)                removing `math shift' on input line 57.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
+(hyperref)                removing `math shift' on input line 57.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
+(hyperref)                removing `math shift' on input line 57.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 67.
+(hyperref)                removing `math shift' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 67.
+(hyperref)                removing `math shift' on input line 59.
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 91.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 83.
 (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [6]
-<Pictures/N4SYMparameterspace.png, id=707, 823.075pt x 510.90875pt>
+<Pictures/N4SYMparameterspace.png, id=705, 823.075pt x 510.90875pt>
 File: Pictures/N4SYMparameterspace.png Graphic file (type png)
 <use Pictures/N4SYMparameterspace.png>
-Package pdftex.def Info: Pictures/N4SYMparameterspace.png  used on input line 109.
+Package pdftex.def Info: Pictures/N4SYMparameterspace.png  used on input line 101.
 (pdftex.def)             Requested size: 329.22417pt x 204.35988pt.
  [7 <./Pictures/N4SYMparameterspace.png>] [8] [9] [10] [11] [12]
-Package hyperref Info: bookmark level for unknown examp* defaults to 0 on input line 330.
-Package hyperref Info: bookmark level for unknown theorem* defaults to 0 on input line 338.
+Package hyperref Info: bookmark level for unknown examp* defaults to 0 on input line 322.
+Package hyperref Info: bookmark level for unknown theorem* defaults to 0 on input line 330.
  [13]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 352.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 344.
  (/home/louan/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [14]
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 392.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 384.
  [15] [16] [17] [18]) [19]
 \openout2 = `Body/OrbifoldSingularities.aux'.
 
@@ -2011,7 +2011,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1174.
 
-<Pictures/SU3finitequivers.png, id=1137, 1204.5pt x 744.7825pt>
+<Pictures/SU3finitequivers.png, id=1135, 1204.5pt x 744.7825pt>
 File: Pictures/SU3finitequivers.png Graphic file (type png)
 <use Pictures/SU3finitequivers.png>
 Package pdftex.def Info: Pictures/SU3finitequivers.png  used on input line 1178.
@@ -2081,30 +2081,30 @@ LaTeX Warning: Reference `sec:orbsing' on page 44 undefined on input line 1426.
 
 
 ] [47]
-<Pictures/toricdiagZ2orbifold.png, id=1246, 879.285pt x 358.33875pt>
+<Pictures/toricdiagZ2orbifold.png, id=1244, 879.285pt x 358.33875pt>
 File: Pictures/toricdiagZ2orbifold.png Graphic file (type png)
 <use Pictures/toricdiagZ2orbifold.png>
 Package pdftex.def Info: Pictures/toricdiagZ2orbifold.png  used on input line 95.
 (pdftex.def)             Requested size: 351.70778pt x 143.33296pt.
 Package hyperref Info: bookmark level for unknown prop* defaults to 0 on input line 101.
  [48 <./Pictures/toricdiagZ2orbifold.png>] [49] [50] [51]
-<Pictures/conifoldtoricdiag.png, id=1302, 255.95625pt x 254.9525pt>
+<Pictures/conifoldtoricdiag.png, id=1300, 255.95625pt x 254.9525pt>
 File: Pictures/conifoldtoricdiag.png Graphic file (type png)
 <use Pictures/conifoldtoricdiag.png>
 Package pdftex.def Info: Pictures/conifoldtoricdiag.png  used on input line 332.
 (pdftex.def)             Requested size: 102.38068pt x 101.97919pt.
-<Pictures/conifoldpqweb.png, id=1303, 334.24875pt x 330.23375pt>
+<Pictures/conifoldpqweb.png, id=1301, 334.24875pt x 330.23375pt>
 File: Pictures/conifoldpqweb.png Graphic file (type png)
 <use Pictures/conifoldpqweb.png>
 Package pdftex.def Info: Pictures/conifoldpqweb.png  used on input line 339.
 (pdftex.def)             Requested size: 100.27539pt x 99.07088pt.
  [52]
-<Pictures/SPPtoricdiagram.png, id=1314, 194.7275pt x 333.245pt>
+<Pictures/SPPtoricdiagram.png, id=1312, 194.7275pt x 333.245pt>
 File: Pictures/SPPtoricdiagram.png Graphic file (type png)
 <use Pictures/SPPtoricdiagram.png>
 Package pdftex.def Info: Pictures/SPPtoricdiagram.png  used on input line 351.
 (pdftex.def)             Requested size: 77.8896pt x 133.29562pt.
-<Pictures/algorithm.png, id=1315, 1189.44376pt x 280.04625pt>
+<Pictures/algorithm.png, id=1313, 1189.44376pt x 280.04625pt>
 File: Pictures/algorithm.png Graphic file (type png)
 <use Pictures/algorithm.png>
 Package pdftex.def Info: Pictures/algorithm.png  used on input line 370.
@@ -2118,7 +2118,7 @@ Overfull \hbox (46.87195pt too wide) in paragraph at lines 378--379
 []\T1/cmr/m/n/10 For the ADE $\OMS/cmsy/m/n/10 N \OT1/cmr/m/n/10 = 2$ \T1/cmr/m/n/10 the-o-ries dis-cussed in sec-tion []11[], by the Kronheimer-Nakajima con-struc-tion [[]],
  []
 
-<Pictures/delPezzo.png, id=1327, 958.58125pt x 895.345pt>
+<Pictures/delPezzo.png, id=1325, 958.58125pt x 895.345pt>
 File: Pictures/delPezzo.png Graphic file (type png)
 <use Pictures/delPezzo.png>
 Package pdftex.def Info: Pictures/delPezzo.png  used on input line 405.
@@ -2185,18 +2185,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 307.
 
 [63]
-<Pictures/youngslattice.png, id=1419, 938.50626pt x 952.55875pt>
+<Pictures/youngslattice.png, id=1417, 938.50626pt x 952.55875pt>
 File: Pictures/youngslattice.png Graphic file (type png)
 <use Pictures/youngslattice.png>
 Package pdftex.def Info: Pictures/youngslattice.png  used on input line 394.
 (pdftex.def)             Requested size: 422.32391pt x 428.64748pt.
  [64]
-<Pictures/suter1.png, id=1432, 455.7025pt x 379.4175pt>
+<Pictures/suter1.png, id=1430, 455.7025pt x 379.4175pt>
 File: Pictures/suter1.png Graphic file (type png)
 <use Pictures/suter1.png>
 Package pdftex.def Info: Pictures/suter1.png  used on input line 402.
 (pdftex.def)             Requested size: 205.06422pt x 170.73628pt.
-<Pictures/suter2.png, id=1433, 569.12625pt x 262.9825pt>
+<Pictures/suter2.png, id=1431, 569.12625pt x 262.9825pt>
 File: Pictures/suter2.png Graphic file (type png)
 <use Pictures/suter2.png>
 Package pdftex.def Info: Pictures/suter2.png  used on input line 403.
@@ -2266,13 +2266,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51702 strings out of 478865
- 1108860 string characters out of 2853437
- 2027759 words of memory out of 3000000
- 67903 multiletter control sequences out of 15000+600000
+ 51692 strings out of 478865
+ 1108658 string characters out of 2853437
+ 2027564 words of memory out of 3000000
+ 67895 multiletter control sequences out of 15000+600000
  450321 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,24n,127p,1812b,2174s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,24n,127p,2091b,2174s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exist, replaced by a fixed one
@@ -2298,9 +2298,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
  </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0700.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti0900.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0500.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm10.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0700.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0900.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2074.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (76 pages, 1624546 bytes).
+Output written on main.pdf (76 pages, 1623706 bytes).
 PDF statistics:
- 2678 PDF objects out of 2984 (max. 8388607)
- 651 named destinations out of 1000 (max. 500000)
+ 2674 PDF objects out of 2984 (max. 8388607)
+ 649 named destinations out of 1000 (max. 500000)
  1068 words of extra memory for PDF output out of 10000 (max. 10000000)
 
