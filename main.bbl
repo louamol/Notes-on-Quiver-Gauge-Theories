@@ -1848,6 +1848,41 @@
       \verb https://doi.org/10.22199%2Fissn.0717-6279-5274
       \endverb
     \endentry
+    \entry{https://doi.org/10.48550/arxiv.hep-th/9601007}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d0e849f1e55562194cebe2bdfa93aa52}{%
+           family={Bilal},
+           familyi={B\bibinitperiod},
+           given={Adel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{d0e849f1e55562194cebe2bdfa93aa52}
+      \strng{fullhash}{d0e849f1e55562194cebe2bdfa93aa52}
+      \strng{bibnamehash}{d0e849f1e55562194cebe2bdfa93aa52}
+      \strng{authorbibnamehash}{d0e849f1e55562194cebe2bdfa93aa52}
+      \strng{authornamehash}{d0e849f1e55562194cebe2bdfa93aa52}
+      \strng{authorfullhash}{d0e849f1e55562194cebe2bdfa93aa52}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Duality in N=2 SUSY SU(2) Yang-Mills Theory: A pedagogical introduction to the work of Seiberg and Witten}
+      \field{year}{1996}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.48550/ARXIV.HEP-TH/9601007
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/hep-th/9601007
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/hep-th/9601007
+      \endverb
+      \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

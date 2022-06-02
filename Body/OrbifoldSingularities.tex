@@ -94,16 +94,29 @@
 
         \todo{Make the link with the ususal setup.}
 
-        Let us consider a D$1$-brane in the $x^0,x^1$-plane of the orbifold space $\R^6\times\R^4/\Gamma$ \cite{johnson_1997,johnson_2002}. We can view the brane as a point in the covering space $\R^4$. If the brane trivially sits at a fixed point, which in our case is usually the origin, there is no problem but if the brane moves away from the origin, this will break the $\Gamma$ symmetry. In order for it to be able to move away from a the origin we therefore also need to add image-branes moving in all the other $\Gamma$-sectors of the covering space (the regions of $\C^n$ that are related by the action of $\Gamma$ and all projected to a unique sector in $\C^n/\Gamma$). Since there are $\abs{\Gamma}$ sectors we need exactly $\abs{\Gamma}$ branes in total, one per sector. From the open string states point of view, this is means adding $\abs{\Gamma}$ Chan-Paton factors, resulting in an $U(\abs{\Gamma})$ gauge symmetry. $\Gamma$ then acts on the Chan-Paton factors and switch them between themselves. We now need to make sure that the string theory is consistent with that action. There are three types of open string sector states that one must consider:
+        Let us consider a D$1$-brane in the $x^0,x^1$-plane of the orbifold space $\R^6\times\R^4/\Gamma$ \cite{johnson_1997,johnson_2002}. We can view the brane as a point in the covering space $\R^4$. If the brane trivially sits at a fixed point, which in our case is usually the origin, there is no problem but if the brane moves away from the origin, this will break the $\Gamma$ symmetry. In order for it to be able to move away from a the origin we therefore also need to add image-branes moving in all the other $\Gamma$-sectors of the covering space (the regions of $\C^n$ that are related by the action of $\Gamma$ and all projected to a unique sector in $\C^n/\Gamma$). Since there are $\abs{\Gamma}$ sectors we need exactly $\abs{\Gamma}$ branes in total, one per sector. From the open string states point of view, this is means adding $\abs{\Gamma}$ Chan-Paton factors, resulting in an $U(\abs{\Gamma})$ gauge symmetry. $\Gamma$ then acts on the Chan-Paton factors and switch them between themselves. We now need to make sure that the string theory is consistent with that action. 
+        
+        Let us denote by $\rho_{\text{reg}}$ the regular representation of $\Gamma$, which is $\abs{\Gamma}$-dimensional. Concretely, there are three types of open string sector states that one must consider:
         \begin{itemize}
-            \item the vector multiplets $\lambda_V\psi^\mu_{-1/2}\ket{0}$ ($\mu=0,1$), where $\lambda_V$ is the Chan-Paton matrix (arbitrary $\U(N)$) matrix. Invariance under $\Gamma$ means that $\lambda_V$ should satisfy the additional property
+            \item the vector multiplets: $\lambda_V\psi^\mu_{-1/2}\ket{0}$ ($\mu=0,1$), where $\lambda_V$ is the Chan-Paton matrix (arbitrary $\U(N)$) matrix, i.e. an arbitrary matrix of $\U(\abs{\Gamma})$. Invariance under $\Gamma$ means that $\lambda_V$ should satisfy the additional property
             \begin{equation}
-                \rho(\gamma)\lambda_V\rho(\gamma)^{-1}=\lambda_V\label{eq:projspectrum}
+                \rho_{\text{reg}}(\gamma)\lambda_V\rho_{\text{reg}}(\gamma)^{-1}=\lambda_V.\label{eq:projspectrum}
             \end{equation}
-            for all $\gamma\in\Gamma$, where $\rho$ is an embedding of $\Gamma$ in the gauge group $\U(N)$. This will be precised later on. This constraint will give rise to the gauge group of the theory, transforming in the adjoint of some subgroup of the original gauge group $\U(N)$.
-            \item the hypermultiplet I $\lambda^{\text{I}}_H\psi^i_{-1/2}\ket{0}$ ($i=2,\dots,5$). They are the rest of the $D=6,\mN=1$ vectors. From the $\mN=4,D=2$ point of view, they are the scalar parts of the gauge multiplet and represent the oscillations fo the branes in the $X^2,\dots,X^5$-directions. The matrices $\lambda^{\text{I}}_H$ must satisfy the relation \eqref{eq:projspectrum}.
-            \item the hypermultiplet II $\lambda^{\text{II}}_H\psi^m_{-1/2}\ket{0}$ ($m=6,\dots,9$).
+            This constraint will give rise to the gauge group of the theory, transforming in the adjoint of some subgroup of the original gauge group $\U(N)$.
+            \item the hypermultiplet I: $\lambda^{\text{I}}_H\psi^i_{-1/2}\ket{0}$ ($i=2,\dots,5$). They are the rest of the $D=6,\mN=1$ vectors. From the $\mN=4,D=2$ point of view, they are the scalar parts of the gauge multiplet and represent the oscillations for the branes in the $X^2,\dots,X^5$-directions. The matrices $\lambda^{\text{I}}_H$ must satisfy the relations
+            \begin{equation}
+                \rho_{\text{reg}}(\gamma)\lambda^{\text{I}}_H\rho_{\text{reg}}(\gamma)^{-1}=\lambda^{\text{I}}_H
+            \end{equation}
+            \item the hypermultiplet II: $\lambda^{\text{II}}_H\psi^m_{-1/2}\ket{0}$ ($m=6,\dots,9$). The matrices $\lambda^{\text{II}}_H$ must satisfy the relations
+            \begin{equation}
+                \rho_{\text{reg}}(\gamma)\lambda^{\text{II}}_H\rho_{\text{reg}}(\gamma)^{-1}=\lambda^{\text{II}}_H
+            \end{equation}
         \end{itemize}
+        Note that there is a trivial solution to \eqref{eq:projspectrum}: $\lambda_V=\mathbbm{1}$. This solution corresponds to an extra $\U(1)$ factor in the gauge group that will always be unbroken. Consequently, the Dynkin digram will always contain an extra $\U(1)$ node, this is what we call the the \emph{extended} (or \emph{affine})) Dynkin diagram\footnote{It can be viewed as the Dynkin diagram for the affine-extended Lie algebra.} This explains why the quiver that we will obtain will be affine Dynkin diagrams. From the point of view of the worldvolume theory, this means that there is always the possibility of Higgsing away all the vector multiplets except the ones corresponding to this trivial $\U(1)$. This $\U(1)$ is the gauge group of a configuration with a single D$3$-brane so the hypermultiplet parametrizes the position this brane in the orbifold. From the point of view of the covering space, this brane is a stack of $\abs{\Gamma}$ fractional branes, moving simultaneously in such a way that they are $\Gamma$-images of each other.
+
+        Looking only the open string sector is sufficient however to explore covering all the possibilities. One also needs to look at the massless closed strings and in particular at the twisted sector. We will see that these states enter the theory as Fayet-Iliopoulos terms.
+
+
         %We relabel our string states with respect to the action of $\Gamma$ over $\C^2$. The massless modes are $\lambda^1_H\psi^1_{-1/2}\ket{0}$ and $\lambda^2_H\psi^2_{-1/2}\ket{0}$ and their adjoints. The discrete group acts on then as
         %\begin{equation}
         %    \begin{bmatrix}
@@ -299,6 +312,8 @@
             \end{result}
 
             We mentioned the adjacency matrix as a way to represent a quiver but we will also use sometimes the another matrix called the \emph{incidence matrix} and denoted by $I$. In the later, the columns index the arrows and the rows, the nodes such that the $\alpha$th arrow from node $i$ to $j$ receives a $-1$ in position $I_{i\alpha}$, a $+1$ in position $I_{j\alpha}$ and zero elsewhere.
+
+            Another convenient way of representing the same information are the \emph{dimer diagram}, i.e. a graph whose faces represent the gauge groups, the edges represent the bi-fundamental fields and the vertices represent the superpotentials.
 
     \subsection{Gauge anomaly cancellation}
 
@@ -506,94 +521,113 @@
             \end{equation}
             From \eqref{eq:sumNiZ3}, we get that $N_0=N_1=N_2=N/3$, meaning that that the daughter theory has quantum gauge symmetry if and only if the parent theory with has gauge group $\SU(N)$ where $N$ is a multiple of $3$. Or, in other words, if the number of D-branes is a multiple of $3$.
 
-    \subsection{Superconformal daughter theories}
+\section{Conformal invariance}
 
-        Now that we have discussed the general case and found the resulting field content for an strings an orbifold $\C^3/\Gamma$. The content is then completely determined by the two actions that give ourselves at beginning: 
-        \begin{itemize}
-            \item the action of $\Gamma$ on $\C^3$ that defines the orbifold per se and dictates how the ``R-symmetry part`` of the projection happens. This action is fixed by the choice of orbifold background we want.
-            \item the action of $\Gamma$ on $\C^N$ (from some arbitrary $N$) that defines the embedding of $\Gamma$ in the gauge group $\U(N)$ and and dictates how that ``gauge part'' of the projection happens. Up until, this action was completely arbitrary. In other words, the multiplicities $N_i$ are arbitrary, as long as they sum to $N$, which is arbitrary.
-        \end{itemize}
-        We discussed in the beginning that the origin the ``gauge part'' of the projection lies in the projection the Chan-Paton factors which was necessary in order to have $\Gamma$-invariant configurations of branes even if they are not at the origin. 
-        
-        What are the conditions to get a superconformal daughter theory? The answer lies in the choice of the second action, i.e. on the choice of embedding of $\Gamma$ in the gauge group. One can show \cite{vafa1998} that to have conformal invariance, we have to use the regular representation of $\Gamma$. The resulting embedding will be called \emph{regular embedding}. This isonly possible of course if $N=\abs{\Gamma}$. Actually, considering stacks of $N$ branes, we can consider that the rank of the gauge group is $N\abs{\Gamma}$ (we change our $N$) so that the gauge group is $\U(N\abs{\Gamma})$. Recall that the multiplicity of each irredicuble representation in the decomposition of the regular representation is the dimension of the irrep, i.e. $N_i=n_i\equiv\dim\rho_i$ meaning that the gauge group is broken to
+    We have discussed the general case and found the resulting field content for strings on any orbifold $\C^3/\Gamma$. The content of those theories was found to be completely determined by the two actions that give ourselves from start: 
+    \begin{itemize}
+        \item the action of $\Gamma$ on $\C^3$ that defines the orbifold per se and dictates how the ``R-symmetry part`` of the projection happens. This action is fixed by the choice of orbifold background we want.
+        \item the action of $\Gamma$ on $\C^N$ (from some arbitrary $N$) that defines the embedding of $\Gamma$ in the gauge group $\U(N)$ and and dictates how the ``gauge part'' of the projection happens. Up until now, this action was completely arbitrary. In other words, the multiplicities $N_i$ are arbitrary, as long as they sum to $N$, which is arbitrary.
+    \end{itemize}
+    
+    Let is discuss the role of the second representations in more details. If the stack of branes trivially sits at a fixed point, which in our case is usually the origin, there is no problem. On the other hand, if the stack of branes moves away from the origin, this will break the $\Gamma$ symmetry. The only the configurations that are able to move away from the fixed point are the ones that are still $\Gamma$-invariant while doing so, i.e. the configurations where the stack of branes possesses a an image-stack in each $\Gamma$ sector. Each of this stacks must be related by $\Gamma$ and they move all together in the covering space such as to be set to a unique point in the quotient space. Since there are $\abs{\Gamma}$ sectors we need exactly $\abs{\Gamma}$ branes in total, one per sector. This means that $N$, the total number of branes in the covering space, cannot be arbitrary anymore. It must be of the form $N=n\abs{\Gamma}$, where $n$ now represents the number of brane in each stack. From the open string states point of view, this is means adding $n\abs{\Gamma}$ Chan-Paton factors, resulting in an $U(n\abs{\Gamma})$ gauge symmetry. $\Gamma$ then acts on the Chan-Paton factors and switch them between themselves. We now need to make sure that the string theory is consistent with that action.\todo{What is the link between moving axay from the fixed point and conformal invariance.} Let us insist on the fact that we can take $N$ arbitrary but in order to have configurations that can move aways from the fixed point, $N$ must be a multiple of $\Gamma$, otherwise the stack of branes juste stays at the fixed point.
+
+    What does it have to do with the choice of embedding of $\Gamma$ in the gauge group? If branes move away from the origin \todo{complete}.
+    
+    What are the conditions to get a superconformal daughter theory? The answer lies in the choice of the second action, i.e. on the choice of embedding of $\Gamma$ in the gauge group. One can show \cite{vafa1998} that to have conformal invariance, we have to use the regular representation of $\Gamma$. The resulting embedding will be called \emph{regular embedding}. This isonly possible of course if $N=\abs{\Gamma}$. Actually, considering stacks of $N$ branes, we can consider that the rank of the gauge group is $N\abs{\Gamma}$ (we change our $N$) so that the gauge group is $\U(N\abs{\Gamma})$. Recall that the multiplicity of each irredicuble representation in the decomposition of the regular representation is the dimension of the irrep, i.e. $N_i=n_i\equiv\dim\rho_i$ meaning that the gauge group is broken to
+    \begin{equation}
+        G_{\text{proj}}=\bigotimes_{i\in I}\SU(N n_i)
+    \end{equation}
+    at low energy. Let us be clear and mention that any choice of multiplicities $N_i$ is valid and gives a supersymmetric daughter theory, but this theory is conformal only if $N_i=n\dim\rho_i$.
+
+    Since the superconformal theories are of particular interest, this case have been studied in some details.
+
+    \subsection{Lagrangian}
+
+        Let us describe the lagrangian of the projected theory \cite{vafa1998}. We saw that the gauge group is broken to 
         \begin{equation}
             G_{\text{proj}}=\bigotimes_{i\in I}\SU(N n_i)
         \end{equation}
-        at low energy. Let us be clear and mention that any choice of multiplicities $N_i$ is valid and gives a supersymmetric daughter theory, but this theory is conformal only if $N_i=n\dim\rho_i$.
-
-        Since the superconformal theories are of particular interest, this case have been studied in some details.
-
-            \subsubsection{Lagrangian}
-
-                Let us describe the lagrangian of the projected theory \cite{vafa1998}. We saw that the gauge group is broken to 
-                \begin{equation}
-                    G_{\text{proj}}=\bigotimes_{i\in I}\SU(N n_i)
-                \end{equation}
-                at low energy, with $n_i\equiv\dim\rho_i$. The coupling constant $\tau_i$ (including the theta angle as usual) of the $i$th group is
-                \begin{equation}
-                    \tau_i=\frac{n_i\tau}{\abs{\Gamma}}
-                \end{equation}
-                where $\tau$ is the initial $\mN=4$ coupling, or the Type IIB coupling. This implies in particular that
-                \begin{equation}
-                    \sum_{i\in I}n_i\tau_i=\tau.
-                \end{equation}
-                There are Yukawa couplings for each triangle of the quiver consisting of two fermionic arrows and a bosonic arrow and quartic scalar interactions for each square consisting of four bosonic arrows. The coefficient ofthese interactions can be by projecting the $\mN=4$ lagrangian in terms of the field we kept. The Yukawa terms are therefore
-                \begin{equation}
-                    Y=\sum_{i,j,k\in I}\gamma^{f_{ij},f_{jk},f_{kj}}_{ijk}\tr(\psi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\psi^{ki}_{f_{ki}})
-                \end{equation}
-                and the quartic scalar interaction terms by
-                \begin{equation}
-                    V=\sum_{i,j,k,l\in I}\eta^{ijkl}_{f_{ij};f_{jk},f_{kl},f_{li}}\tr(\phi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\phi^{kl}_{f_{kl}}\phi^{li}_{f_{li}})
-                \end{equation}
-                with
-                \begin{align}
-                    \gamma^{f_{ij},f_{jk},f_{kj}}_{ijk} &= \Gamma_{\alpha\beta,m}(Y_{f_{ij}})\indices{^m_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^\beta_{v_j\bar{v}_k}}(Y_{f_{ki}})\indices{^\alpha_{v_k\bar{v}_i}}, \\
-                    \eta^{ijkl}_{f_{ij};f_{jk},f_{kl},f_{li}} &= (Y_{f_{ij}})\indices{^{[m}_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^{n]}_{v_j\bar{v}_k}}(Y^{f_{kl}})\indices{^{[m}_{v_k\bar{v}_l}}(Y_{f_{li}})\indices{^{n]}_{v_l\bar{v}_i}}.
-                \end{align}
-                The coefficients $(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}$ and $(Y_{f_{ij}})\indices{^m_{v_i\bar{v}_j}}$ are to be understood as the $f_{ij}$th Clebsch-Gordan coefficients of the projection of $\boldsymbol{4}\otimes\rho_i$ and $\boldsymbol{6}\otimes\rho_i$ onto $\rho_j$, and $\Gamma_{\alpha\beta,m}$ is the invariant in $\boldsymbol{4}\otimes\boldsymbol{4}\otimes\boldsymbol{6}$.
-        
-                When we choose the regular embedding of $\Gamma$, the 1-loop beta functions have been computed in \cite{vafa1998} and they o indeed vanish \cite{vafa1998}.
-                
-                In the same paper, the superpotential inherited from the parent theory is shown to be
-                \begin{equation}
-                    \mathcal{W}=\sum_{i,j,k\in I}\sum_{f_{ij},f_{jk},f_{ki}}h^{f_{ij},f_{jk},f_{kj}}_{ijk}\tr(\phi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\phi^{ki}_{f_{ki}})
-                \end{equation}
-                where
-                \begin{equation}
-                    h^{f_{ij},f_{jk},f_{kj}}_{ijk} = \eps_{\alpha\beta\gamma}(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^\beta_{v_j\bar{v}_k}}(Y_{f_{ki}})\indices{^\gamma_{v_k\bar{v}_i}}
-                \end{equation}
-                and $(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}$ is now the $f_{ij}$th Clebsch-Gordan coefficient of the projection of $\boldsymbol{3}\otimes\rho_i$ onto $\rho_j$.
-
-
-    \subsection{Fractional branes}\todo{Rework/understand this section}
-        
-        We saw that invariant configurations of D-branes naturally give rise to the regular representation of the orbifold group $\Gamma$ on the Chan-Paton factors. Correspondingly, these branes are called $\emph{regular branes}$. The regular representation is not irreducible and it decomposes as
+        at low energy, with $n_i\equiv\dim\rho_i$. The coupling constant $\tau_i$ (including the theta angle as usual) of the $i$th group is
         \begin{equation}
-            \rho_{\text{reg}}=\bigoplus_{i\in I} N_i\rho_i
+            \tau_i=\frac{n_i\tau}{\abs{\Gamma}}
         \end{equation}
-        with $N_i=\dim\rho_i$ in terms of the irreducible representations of $\Gamma$. One may then wonder about the existence of a more ``elementary'' set of D-branes such that the open strings attached to the latter carry Chan-Paton factors indices that transform in an irreducible representation. Those indeed do exist and are called \emph{fractional D-branes}. They are BPS object that carry only a fraction of the charge with respect to the untwisted RR $(p+1)$-form of a regular brane but they are charged with respect to some twisted RR $(p+1)$-form, contrarily to the regular D-branes. They are stuck at the orbifold fixed point (where all twisted fields sit) since sitting elsewhere would require an invariant configuration in the covering space and those correspond to the regular representation, as we mentioned. So they cannot be fractional D-branes.
+        where $\tau$ is the initial $\mN=4$ coupling, or the Type IIB coupling. This implies in particular that
+        \begin{equation}
+            \sum_{i\in I}n_i\tau_i=\tau.
+        \end{equation}
+        There are Yukawa couplings for each triangle of the quiver consisting of two fermionic arrows and a bosonic arrow and quartic scalar interactions for each square consisting of four bosonic arrows. The coefficient ofthese interactions can be by projecting the $\mN=4$ lagrangian in terms of the field we kept. The Yukawa terms are therefore
+        \begin{equation}
+            Y=\sum_{i,j,k\in I}\gamma^{f_{ij},f_{jk},f_{kj}}_{ijk}\tr(\psi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\psi^{ki}_{f_{ki}})
+        \end{equation}
+        and the quartic scalar interaction terms by
+        \begin{equation}
+            V=\sum_{i,j,k,l\in I}\eta^{ijkl}_{f_{ij};f_{jk},f_{kl},f_{li}}\tr(\phi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\phi^{kl}_{f_{kl}}\phi^{li}_{f_{li}})
+        \end{equation}
+        with
+        \begin{align}
+            \gamma^{f_{ij},f_{jk},f_{kj}}_{ijk} &= \Gamma_{\alpha\beta,m}(Y_{f_{ij}})\indices{^m_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^\beta_{v_j\bar{v}_k}}(Y_{f_{ki}})\indices{^\alpha_{v_k\bar{v}_i}}, \\
+            \eta^{ijkl}_{f_{ij};f_{jk},f_{kl},f_{li}} &= (Y_{f_{ij}})\indices{^{[m}_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^{n]}_{v_j\bar{v}_k}}(Y^{f_{kl}})\indices{^{[m}_{v_k\bar{v}_l}}(Y_{f_{li}})\indices{^{n]}_{v_l\bar{v}_i}}.
+        \end{align}
+        The coefficients $(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}$ and $(Y_{f_{ij}})\indices{^m_{v_i\bar{v}_j}}$ are to be understood as the $f_{ij}$th Clebsch-Gordan coefficients of the projection of $\boldsymbol{4}\otimes\rho_i$ and $\boldsymbol{6}\otimes\rho_i$ onto $\rho_j$, and $\Gamma_{\alpha\beta,m}$ is the invariant in $\boldsymbol{4}\otimes\boldsymbol{4}\otimes\boldsymbol{6}$.
 
-        An important property of fractional D-branes is that they can be interpreted as higher-dimensional branes wrapped on exceptional cycles of the resolved space. In the orbifold limit, these exceptional cycles collapses leaving lower-dimensional fractional branes behind. This suggest a link between the spectrum of the D-branes and the homology of the resolved orbifold space. More precisely, it is linked to its homological K-theory. This is has been studied a lot.
+        When we choose the regular embedding of $\Gamma$, the 1-loop beta functions have been computed in \cite{vafa1998} and they o indeed vanish \cite{vafa1998}.
+        
+        In the same paper, the superpotential inherited from the parent theory is shown to be
+        \begin{equation}
+            \mathcal{W}=\sum_{i,j,k\in I}\sum_{f_{ij},f_{jk},f_{ki}}h^{f_{ij},f_{jk},f_{kj}}_{ijk}\tr(\phi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\phi^{ki}_{f_{ki}})
+        \end{equation}
+        where
+        \begin{equation}
+            h^{f_{ij},f_{jk},f_{kj}}_{ijk} = \eps_{\alpha\beta\gamma}(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^\beta_{v_j\bar{v}_k}}(Y_{f_{ki}})\indices{^\gamma_{v_k\bar{v}_i}}
+        \end{equation}
+        and $(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}$ is now the $f_{ij}$th Clebsch-Gordan coefficient of the projection of $\boldsymbol{3}\otimes\rho_i$ onto $\rho_j$.
+
+\section{Finitude}
+
+    For any QFT, the Callan-Symanzik equations dictates the behavior, under the renormalization group flow, of the $n$-point correlator $G^{(n)}(\{\phi(x_i)\};M,\lambda)$ forthe quantum fields $\phi(x)$ according the the renormalizationof the coupling $\lambda$ and momentum scale $M$:
+    \begin{equation}
+        \left[M\pdv{}{M}+\beta(\lambda)\pdv{}{\lambda}+n\gamma(\lambda)\right]G^{(n)}(\{\phi(x_i)\};M,\lambda)=0,
+    \end{equation}
+    where the dimensionless functions $\beta$ and $\gamma$ are the $\beta$-function and the anomalous dimension respectively. As usuall, the determine how the shifts $\lambda\to\lambda+\delta\lambda$ in the coupling constant and $\phi(1+\delta\eta)\phi$ in the wave function compensate for the shift in the renomalization scale $M$:
+    \begin{equation}
+        \beta(\lambda)\equiv M\pdv{\lambda}{M},\qquad \gamma(\lambda)\equiv-M\pdv{\eta}{M}.
+    \end{equation}
+    Thee are three possible behaviours for the $\beta$-function when $\lambda$ is small: $\beta(\lambda)>0$ then the theory has good IR behaviour and admits valid Feynman permutation theory at large distances, $\beta(\lambda)<0$ then the theory is asymptotically free and has a good permutative behaviour in the UV limit and finally if $\beta(\lambda)=0$ then the coupling constants do not flow and the renormalized couplings are always equal to the bare ones.
+
+    Theories in which no divergences can be associated with the coupling in the ultraviolet are called \emph{finite} theories. To find such theories, supersymmetry is often a very god tool as it indices cancellation of the boon-fermion loop effects. More precisely, $\mN=4$ SYM have been shown to be finite to all orders, for $\mN=2$ SYM it has been shown that no higher than $1$-loop corrections exist for the $\beta$-function (Adler-Bardeen theorem) and for $\mN=1$ theories the vanishing at $1$-loop implies the vanishing at $2$-loops. Finite non-supersymmetric theories has however also been porposed (see \cite{He:2018gvd} for references). Of particular interest are theories which, in addition to a vanishing $\beta$-function, also have a vanishing anomalous dimensions. These theories are often part of a continuous manifold of scale-invariant theories and are characterized by the existence of exactly marginal operators (and hence dimensionless coupling constants). An important result is that there is a choice of coupling constant such that both the $\beta$-function and the anomalous dimensions vanish at first order, then the theory is necessarily finite at all orders.
+
+    From \eqref{eq:defaij}, we must have
+    \begin{equation}
+        \dim(\mR)r_i=\sum_{j\in I}a^{\mR}_{ij}r_j.
+    \end{equation}
+    with $r_i\equiv\dim\rho_i$. It was shown (see \ref{He:2018gvd} for references) that this equation necessitates the vanishing of the $1$-loop $\beta$-function. In addition, we discussed that the remaining SUSY must be in the commutant of $\Gamma$ in $\SU(4)$ R-symmetry of the $\mN=4$ parent theory. It was shown in \cite{vafa1998,https://doi.org/10.48550/arxiv.hep-th/9706110} that the $1$-loop $\beta$-function is proportional to the function $dr_i-a^d_{ij}r_j$, called the \emph{discriminant function}:
+    \begin{equation*}
+        \beta_{1\text{-loop}}\propto dr_i-a^d_{ij}r_j,\qquad d\equiv 4-\mN.
+    \end{equation*}
+    Since the vanishing of the $\beta$-function signifies finitude, we have in particular the following necessary conditions for finitude:
+    \begin{equation*}
+        \begin{array}{c|c}
+            \text{SUSY} & \text{Finitude} \\ \hline
+            \mN=2 & 2r_i = a^2_{ij}r_j \\
+            \mN=1 & 3r_i = a^3_{ij}r_j \\
+            \mN=0 & 4r_i = a^4_{ij}r_j \\
+        \end{array}
+    \end{equation*}
+    Note that in the case $\mN=2$ this condition is necessary and sufficient but not for $\mN=1$ and $\mN=0$ where one also have to chack the superpotential. In the non-supersymmetric case, vanishing of the $1$-loop $\beta$-function does not necessarily implies the vanishing of the following orders so we consider the notion finiteness in a weaker sense where only the leading order must vanish.
+
+    Finitude of quiver gauge theories constrcuted in from D-brane probing singularities, the Hanany-Witten setup or geometric engineering is very much linked the the mathematical properties of their quiver. See \cite{Hanany:1999sp} for more details.
+
+\section{Fractional branes}\todo{Rework/understand this section}
     
-        From the point of view of boundary conformal field theory\footnote{CFT on a manifold with boundary. Boundary conditions for open strings are interpreted as coherent states of the corresponding closed string 2d CFT.}, \emph{fractional D-branes} are reflected by boundary states in twisted sectors.
+    We saw that invariant configurations of D-branes naturally give rise to the regular representation of the orbifold group $\Gamma$ on the Chan-Paton factors. Correspondingly, these branes are called $\emph{regular branes}$. The regular representation is not irreducible and it decomposes as
+    \begin{equation}
+        \rho_{\text{reg}}=\bigoplus_{i\in I} N_i\rho_i
+    \end{equation}
+    with $N_i=\dim\rho_i$ in terms of the irreducible representations of $\Gamma$. One may then wonder about the existence of a more ``elementary'' set of D-branes such that the open strings attached to the latter carry Chan-Paton factors indices that transform in an irreducible representation. Those indeed do exist and are called \emph{fractional D-branes}. They are BPS object that carry only a fraction of the charge with respect to the untwisted RR $(p+1)$-form of a regular brane but they are charged with respect to some twisted RR $(p+1)$-form, contrarily to the regular D-branes. They are stuck at the orbifold fixed point (where all twisted fields sit) since sitting elsewhere would require an invariant configuration in the covering space and those correspond to the regular representation, as we mentioned. So they cannot be fractional D-branes.
 
-    \subsection{A note on $(p+1)$-dimensional quiver gauge theories}
+    An important property of fractional D-branes is that they can be interpreted as higher-dimensional branes wrapped on exceptional cycles of the resolved space. In the orbifold limit, these exceptional cycles collapses leaving lower-dimensional fractional branes behind. This suggest a link between the spectrum of the D-branes and the homology of the resolved orbifold space. More precisely, it is linked to its homological K-theory. This is has been studied a lot.
 
-        Let us mention that we can generalize our initial brane-world paradigm and consider D$p$-branes in type II string theory (type IIA if $p$ is even and type IIB if $p$ is odd) instead of just D$3$-branes. The spacetime is then of the form
-        \begin{equation}
-            M = \R^{1,p}\times\R^{9-p}/\Gamma
-        \end{equation}
-        where $\Gamma$ is a discrete subgroup of $\Spin(9-p)$. If $\Gamma$ is a subgroup of a special holonomy group, we recover a somewhat generalized version of the paradigm that we discussed above. In this case the transverse space is a Calabi-Yau orbifold and some degree of supersymmetry is preserved. Note that the fermionic and bosonic quivers that coincides. If $\Gamma$ is not a subgroup of a special holonomy group, then the $(p+1)$-dimensional quiver gauge theory that we obtain in the low-energy limit is not supersymmetric. We then have different quivers for the fermions and the bosons, although with the same vertices, by definition.
-
-        Recall that the fraction of supercharges that is preserved by compactifying on a Calabi-Yau $n$-fold (with $\SU(n)$ holonomy) is $2^{1-n}$. Starting from the $\mN=2$ 10-dimensional type IIB string theory with 32 supercharges, this means that
-        \begin{itemize}
-            \item if we compactify on a $1$-fold, we get $32$ supercharges in $8$ dimensions so $\mN=2$,
-            \item if we compactify on a $2$-fold, we get $16$ supercharges in $6$ dimensions so $\mN=2$,
-            \item if we compactify on a $3$-fold, we get $8$ supercharges in $4$ dimensions so $\mN=2$,
-            \item is we compactify on a $4$-fold, we get $4$ supercharges in $2$ dimensions so $\mN=4$.
-        \end{itemize}
-
-        We will however mostly mostly consider $4$-dimensional quiver gauge theories, i.e. living on D$3$-branes.
+    From the point of view of boundary conformal field theory\footnote{CFT on a manifold with boundary. Boundary conditions for open strings are interpreted as coherent states of the corresponding closed string 2d CFT.}, \emph{fractional D-branes} are reflected by boundary states in twisted sectors.
 
 \section{$\mN=2$ daughter theories}\label{sec:N2QGT}
 
@@ -733,9 +767,9 @@
         \end{align}}
         so $X^m_{ij}$ is an $N_i\times N_j$ block and transforms under the representation $(\boldsymbol{\textbf{N}_i},\boldsymbol{\bar{\textbf{N}}_j})$ of $\U(N_i)\times\U(N_j)$:
         \begin{align}
-            X^{0,1}_{i,i} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_i,V_i),\\
-            X^{2,3}_{i,i+1} &\in \boldsymbol{\textbf{N}_{i+1}}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_{i+1},V_i),\\
-            X^{4,5}_{i+1,i} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_{i+1}} \cong \Hom(V_i,V_{i+1}).
+            X^{0,1}_{i,i} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_i,V_i),\label{eq:N2Znrepr1}\\
+            X^{2,3}_{i,i+1} &\in \boldsymbol{\textbf{N}_{i+1}}\otimes\boldsymbol{\bar{\textbf{N}}_i} \cong \Hom(V_{i+1},V_i),\label{eq:N2Znrepr2}\\
+            X^{4,5}_{i+1,i} &\in \boldsymbol{\textbf{N}_i}\otimes\boldsymbol{\bar{\textbf{N}}_{i+1}} \cong \Hom(V_i,V_{i+1}).\label{eq:N2Znrepr3}
         \end{align}
         So the scalar fields are split up in three families depending on the way they transform under R-symmetry. We now see a big difference with the case $\C^3/\Z_3$: since the R-symmetry does not act the same way on each directions in $\C^3$, the invariant scalar field configurations are not the same in each direction either.
 
@@ -793,6 +827,8 @@
         for $i=0,\dots,n-1$. Those constrains are always satisfied so the the factors $N_i$ are arbitrary, as long as $\sum_iN_i=N$ of course.
 
         This quiver is easy to scale up for any $n$. We therefore implement that into Mathematica and get the quivers for any $n$.
+
+        Looking at \eqref{eq:N2Znrepr1}-\eqref{eq:N2Znrepr1}, we see that for each factor in the projected gauge group we have $1$ complex scalar transforming in the adjoint (Coulomb branch) and two complex scalars in bi-fundamentals (Higgs branch). The former is the scalar in the $\mN=2$ vector multiplet and the latter are the complex scalars in of two hypermultiplets. The worldvolume theory is therefore $\mN=2$ SYM with two hypermultiplets.
 
     \subsection{$S=\C\times\C^2/\D_n$}
 
@@ -1339,6 +1375,42 @@
             m=4,5 &: (i-i'-1)\mod m = (j'-j+1)\mod n.
         \end{align}
 
+\section{A note about projective representations, discrete torsion and deformations}
+
+    \subsection{Projective representations and discrete torsion}
+
+        Up until now, and in particular in all of our computations in section \ref{sec:orbsing}, we only considered ordinary representations, i.e. linear representations. We can however use a more general representations such as projective representations for example. That is, representations $\rho$ of $\Gamma$ such that for all $\gamma_1,\gamma_2\in\Gamma$,
+        \begin{equation}
+            \rho(\gamma_1)\rho(\gamma_2)=A(g_1,g_2)\rho(\gamma_1\gamma_2)
+        \end{equation}
+        for some factor $A(\gamma_1,\gamma_2)$. The $A(\gamma_1,\gamma_2)=1$ corresponding to linear representations. For consistency reasons, the factor $A(g_1,g_2)$ cannot be completely arbitrary and must a cocycle condition. As a result, the possibilities for $A(\gamma_1,\gamma_2)$ are classified by the second cohomology group $H^2(\Gamma,\C^*)$, also called \emph{discrete torsion}. There exists a projective representation if and only if the latter does not vanish. This new liberty, whenever admissible, provides new classes of quiver gauge theories that can be remarkably different from the ones we considered up until now, with no discrete torsion.
+
+        What happens is that if one turns on an NSNS B-fiels alors the worldvolume, then the moduli space is expected to a non-commutative version of a Calabi-Yau space. This haw the discrete torsion is physically realized. Another, and actually equivalent through T-duality, way of studying gauge theories is to consider D-branes streched between configurations of NS$5$-branes\footnote{D$5$-branes are charged under the Ramond-Ramond field whose quanta comes from the Ramond-Ramond sector but NS$5$-branes are charges under the Kalb-Ramonf field whose quanta comes fromthe Neveu-Schwarz. On the worldvolume of an NS$5$-brane (6-dimensional) propagates propagates a superstring, this called the \emph{little string}.}. This is the\emph{Hanany-Witten setup}.
+
+        The discrete tosrion also appears when writing the full open strin gpartition function that inclues the twisted sector where there is ambiguity up to a phase factor. As a consequence from modular invariance, the latter must satisfy certain cocycle conditions. It is precisely the deiscrete torsion. Note that this has been found to be true only for the open string sector.
+
+    \subsection{Quiver gauge theories deformations and conifold}
+
+        We can deforming the singular algebraic description of the orbifold with a field into a family smooth surfaces. The resulting total space is the \emph{conifold}.
+
+\section{A note on $(p+1)$-dimensional quiver gauge theories}
+
+    Let us mention that we can generalize our initial brane-world paradigm and consider D$p$-branes in type II string theory (type IIA if $p$ is even and type IIB if $p$ is odd) instead of just D$3$-branes. The spacetime is then of the form
+    \begin{equation}
+        M = \R^{1,p}\times\R^{9-p}/\Gamma
+    \end{equation}
+    where $\Gamma$ is a discrete subgroup of $\Spin(9-p)$. If $\Gamma$ is a subgroup of a special holonomy group, we recover a somewhat generalized version of the paradigm that we discussed above. In this case the transverse space is a Calabi-Yau orbifold and some degree of supersymmetry is preserved. Note that the fermionic and bosonic quivers that coincides. If $\Gamma$ is not a subgroup of a special holonomy group, then the $(p+1)$-dimensional quiver gauge theory that we obtain in the low-energy limit is not supersymmetric. We then have different quivers for the fermions and the bosons, although with the same vertices, by definition.
+
+    Recall that the fraction of supercharges that is preserved by compactifying on a Calabi-Yau $n$-fold (with $\SU(n)$ holonomy) is $2^{1-n}$. Starting from the $\mN=2$ 10-dimensional type IIB string theory with 32 supercharges, this means that
+    \begin{itemize}
+        \item if we compactify on a $1$-fold, we get $32$ supercharges in $8$ dimensions so $\mN=2$,
+        \item if we compactify on a $2$-fold, we get $16$ supercharges in $6$ dimensions so $\mN=2$,
+        \item if we compactify on a $3$-fold, we get $8$ supercharges in $4$ dimensions so $\mN=2$,
+        \item is we compactify on a $4$-fold, we get $4$ supercharges in $2$ dimensions so $\mN=4$.
+    \end{itemize}
+
+    We will however mostly mostly consider $4$-dimensional quiver gauge theories, i.e. living on D$3$-branes.
+
 \section{Summary of orbifold worldvolume theories}
 
     \begin{table}[H]
@@ -1369,41 +1441,7 @@
         \caption{All supersymmetric orbifold worldvolume theories.}
     \end{table}
 
-\section{Finite orbifold quiver gauge theories}
-
-    For any QFT, the Callan-Symanzik equations dictates the behavior, under the renormalization group flow, of the $n$-point correlator $G^{(n)}(\{\phi(x_i)\};M,\lambda)$ forthe quantum fields $\phi(x)$ according the the renormalizationof the coupling $\lambda$ and momentum scale $M$:
-    \begin{equation}
-        \left[M\pdv{}{M}+\beta(\lambda)\pdv{}{\lambda}+n\gamma(\lambda)\right]G^{(n)}(\{\phi(x_i)\};M,\lambda)=0,
-    \end{equation}
-    where the dimensionless functions $\beta$ and $\gamma$ are the $\beta$-function and the anomalous dimension respectively. As usuall, the determine how the shifts $\lambda\to\lambda+\delta\lambda$ in the coupling constant and $\phi(1+\delta\eta)\phi$ in the wave function compensate for the shift in the renomalization scale $M$:
-    \begin{equation}
-        \beta(\lambda)\equiv M\pdv{\lambda}{M},\qquad \gamma(\lambda)\equiv-M\pdv{\eta}{M}.
-    \end{equation}
-    Thee are three possible behaviours for the $\beta$-function when $\lambda$ is small: $\beta(\lambda)>0$ then the theory has good IR behaviour and admits valid Feynman permutation theory at large distances, $\beta(\lambda)<0$ then the theory is asymptotically free and has a good permutative behaviour in the UV limit and finally if $\beta(\lambda)=0$ then the coupling constants do not flow and the renormalized couplings are always equal to the bare ones.
-
-    Theories in which no divergences can be associated with the coupling in the ultraviolet are called \emph{finite} theories. To find such theories, supersymmetry is often a very god tool as it indices cancellation of the boon-fermion loop effects. More precisely, $\mN=4$ SYM have been shown to be finite to all orders, for $\mN=2$ SYM it has been shown that no higher than $1$-loop corrections exist for the $\beta$-function (Adler-Bardeen theorem) and for $\mN=1$ theories the vanishing at $1$-loop implies the vanishing at $2$-loops. Finite non-supersymmetric theories has however also been porposed (see \cite{He:2018gvd} for references). Of particular interest are theories which, in addition to a vanishing $\beta$-function, also have a vanishing anomalous dimensions. These theories are often part of a continuous manifold of scale-invariant theories and are characterized by the existence of exactly marginal operators (and hence dimensionless coupling constants). An important result is that there is a choice of coupling constant such that both the $\beta$-function and the anomalous dimensions vanish at first order, then the theory is necessarily finite at all orders.
-
-    From \eqref{eq:defaij}, we must have
-    \begin{equation}
-        \dim(\mR)r_i=\sum_{j\in I}a^{\mR}_{ij}r_j.
-    \end{equation}
-    with $r_i\equiv\dim\rho_i$. It was shown (see \ref{He:2018gvd} for references) that this equation necessitates the vanishing of the $1$-loop $\beta$-function. In addition, we discussed that the remaining SUSY must be in the commutant of $\Gamma$ in $\SU(4)$ R-symmetry of the $\mN=4$ parent theory. It was shown in \cite{vafa1998,https://doi.org/10.48550/arxiv.hep-th/9706110} that the $1$-loop $\beta$-function is proportional to the function $dr_i-a^d_{ij}r_j$, called the \emph{discriminant function}:
-    \begin{equation*}
-        \beta_{1\text{-loop}}\propto dr_i-a^d_{ij}r_j,\qquad d\equiv 4-\mN.
-    \end{equation*}
-    Since the vanishing of the $\beta$-function signifies finitude, we have in particular the following necessary conditions for finitude:
-    \begin{equation*}
-        \begin{array}{c|c}
-            \text{SUSY} & \text{Finitude} \\ \hline
-            \mN=2 & 2r_i = a^2_{ij}r_j \\
-            \mN=1 & 3r_i = a^3_{ij}r_j \\
-            \mN=0 & 4r_i = a^4_{ij}r_j \\
-        \end{array}
-    \end{equation*}
-    Note that in the case $\mN=2$ this condition is necessary and sufficient but not for $\mN=1$ and $\mN=0$ where one also have to chack the superpotential. In the non-supersymmetric case, vanishing of the $1$-loop $\beta$-function does not necessarily implies the vanishing of the following orders so we consider the notion finiteness in a weaker sense where only the leading order must vanish.
-
-    Finitude of quiver gauge theories constrcuted in from D-brane probing singularities, the Hanany-Witten setup or geometric engineering is very much linked the the mathematical properties of their quiver. See \cite{Hanany:1999sp} for more details.
-    
+    \todo{Add finitude and conformal invariance.}
 
 \section{Classical McKay correspondence from strings}
 
@@ -1418,21 +1456,3 @@
     \end{enumerate}
 
     All the details are presented in \cite{albertssonthesis}.
-
-\section{A note about projective representations, discrete torsion and deformations}
-
-    \subsection{Projective representations and discrete torsion}
-
-        Up until now, and in particular in all of our computations in section \ref{sec:orbsing}, we only considered ordinary representations, i.e. linear representations. We can however use a more general representations such as projective representations for example. That is, representations $\rho$ of $\Gamma$ such that for all $\gamma_1,\gamma_2\in\Gamma$,
-        \begin{equation}
-            \rho(\gamma_1)\rho(\gamma_2)=A(g_1,g_2)\rho(\gamma_1\gamma_2)
-        \end{equation}
-        for some factor $A(\gamma_1,\gamma_2)$. The $A(\gamma_1,\gamma_2)=1$ corresponding to linear representations. For consistency reasons, the factor $A(g_1,g_2)$ cannot be completely arbitrary and must a cocycle condition. As a result, the possibilities for $A(\gamma_1,\gamma_2)$ are classified by the second cohomology group $H^2(\Gamma,\C^*)$, also called \emph{discrete torsion}. There exists a projective representation if and only if the latter does not vanish. This new liberty, whenever admissible, provides new classes of quiver gauge theories that can be remarkably different from the ones we considered up until now, with no discrete torsion.
-
-        What happens is that if one turns on an NSNS B-fiels alors the worldvolume, then the moduli space is expected to a non-commutative version of a Calabi-Yau space. This haw the discrete torsion is physically realized. Another, and actually equivalent through T-duality, way of studying gauge theories is to consider D-branes streched between configurations of NS$5$-branes\footnote{D$5$-branes are charged under the Ramond-Ramond field whose quanta comes from the Ramond-Ramond sector but NS$5$-branes are charges under the Kalb-Ramonf field whose quanta comes fromthe Neveu-Schwarz. On the worldvolume of an NS$5$-brane (6-dimensional) propagates propagates a superstring, this called the \emph{little string}.}. This is the\emph{Hanany-Witten setup}.
-
-        The discrete tosrion also appears when writing the full open strin gpartition function that inclues the twisted sector where there is ambiguity up to a phase factor. As a consequence from modular invariance, the latter must satisfy certain cocycle conditions. It is precisely the deiscrete torsion. Note that this has been found to be true only for the open string sector.
-
-    \subsection{Quiver gauge theories deformations and conifold}
-
-        We can deforming the singular algebraic description of the orbifold with a field into a family smooth surfaces. The resulting total space is the \emph{conifold}.

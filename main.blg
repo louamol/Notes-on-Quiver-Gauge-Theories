@@ -1,38 +1,38 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[61] biber:340> INFO - === Wed Jun  1, 2022, 14:43:20
-[72] Biber.pm:415> INFO - Reading 'main.bcf'
-[133] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[143] Biber.pm:4340> INFO - Processing section 0
-[151] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[153] bibtex.pm:1689> INFO - LaTeX decoding ...
-[201] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
-[202] Utils.pm:395> WARN - Duplicate entry key: 'lindström2012supersymmetric' in file 'bibliography.bib', skipping ...
-[202] Utils.pm:395> WARN - Duplicate entry key: 'bertolinisusy' in file 'bibliography.bib', skipping ...
-[204] Utils.pm:395> WARN - Duplicate entry key: 'Hanany_1999' in file 'bibliography.bib', skipping ...
-[225] Utils.pm:395> WARN - legacy month field 'aug' in entry 'FA7' is not an integer - this will probably not sort properly.
-[235] Utils.pm:395> WARN - legacy month field 'Nov' in entry '2020' is not an integer - this will probably not sort properly.
-[260] Utils.pm:395> WARN - legacy month field 'oct' in entry 'Beisert_2011' is not an integer - this will probably not sort properly.
-[292] Utils.pm:395> WARN - legacy month field 'Nov' in entry 'vafa1998' is not an integer - this will probably not sort properly.
-[295] Utils.pm:395> WARN - legacy month field 'aug' in entry 'Argurio_20082' is not an integer - this will probably not sort properly.
-[312] Utils.pm:395> WARN - legacy month field 'feb' in entry 'Feng_2001' is not an integer - this will probably not sort properly.
-[318] Utils.pm:395> WARN - legacy month field 'jul' in entry 'Argurio_20081' is not an integer - this will probably not sort properly.
-[322] Utils.pm:395> WARN - legacy month field 'feb' in entry 'Hanany_1999' is not an integer - this will probably not sort properly.
-[336] Utils.pm:395> WARN - legacy month field 'feb' in entry 'FA4' is not an integer - this will probably not sort properly.
-[344] Utils.pm:395> WARN - legacy month field 'nov' in entry 'FA2' is not an integer - this will probably not sort properly.
-[352] Utils.pm:395> WARN - legacy month field 'May' in entry '1997' is not an integer - this will probably not sort properly.
-[353] Utils.pm:395> WARN - legacy month field 'feb' in entry 'FA6' is not an integer - this will probably not sort properly.
-[366] Utils.pm:395> WARN - legacy month field 'May' in entry 'johnson_1997' is not an integer - this will probably not sort properly.
-[372] Utils.pm:395> WARN - legacy month field 'nov' in entry 'Elitzur_1997' is not an integer - this will probably not sort properly.
-[381] Utils.pm:395> WARN - legacy month field 'Jun' in entry 'silervstein1998' is not an integer - this will probably not sort properly.
-[388] Utils.pm:395> WARN - legacy month field 'apr' in entry 'Bao_2022' is not an integer - this will probably not sort properly.
-[394] Utils.pm:411> ERROR - Name "Kronheimer, Peter B., Nakajima, Hiraku" has too many commas, skipping entry 'Kronheimer1990'
-[400] Utils.pm:395> WARN - legacy month field 'dec' in entry 'FA8' is not an integer - this will probably not sort properly.
-[522] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[522] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[522] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[522] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[545] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[567] bbl.pm:757> INFO - Output to main.bbl
-[567] Biber.pm:128> INFO - WARNINGS: 20
-[567] Biber.pm:132> INFO - ERRORS: 1
+[59] biber:340> INFO - === Thu Jun  2, 2022, 16:50:40
+[70] Biber.pm:415> INFO - Reading 'main.bcf'
+[127] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[138] Biber.pm:4340> INFO - Processing section 0
+[146] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[148] bibtex.pm:1689> INFO - LaTeX decoding ...
+[195] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[196] Utils.pm:395> WARN - Duplicate entry key: 'lindström2012supersymmetric' in file 'bibliography.bib', skipping ...
+[196] Utils.pm:395> WARN - Duplicate entry key: 'bertolinisusy' in file 'bibliography.bib', skipping ...
+[198] Utils.pm:395> WARN - Duplicate entry key: 'Hanany_1999' in file 'bibliography.bib', skipping ...
+[214] Utils.pm:395> WARN - legacy month field 'dec' in entry 'FA8' is not an integer - this will probably not sort properly.
+[225] Utils.pm:395> WARN - legacy month field 'aug' in entry 'Argurio_20082' is not an integer - this will probably not sort properly.
+[238] Utils.pm:395> WARN - legacy month field 'feb' in entry 'Hanany_1999' is not an integer - this will probably not sort properly.
+[276] Utils.pm:395> WARN - legacy month field 'May' in entry 'johnson_1997' is not an integer - this will probably not sort properly.
+[277] Utils.pm:395> WARN - legacy month field 'feb' in entry 'FA6' is not an integer - this will probably not sort properly.
+[285] Utils.pm:395> WARN - legacy month field 'Nov' in entry '2020' is not an integer - this will probably not sort properly.
+[294] Utils.pm:395> WARN - legacy month field 'feb' in entry 'FA4' is not an integer - this will probably not sort properly.
+[304] Utils.pm:395> WARN - legacy month field 'May' in entry '1997' is not an integer - this will probably not sort properly.
+[310] Utils.pm:395> WARN - legacy month field 'nov' in entry 'Elitzur_1997' is not an integer - this will probably not sort properly.
+[320] Utils.pm:395> WARN - legacy month field 'nov' in entry 'FA2' is not an integer - this will probably not sort properly.
+[325] Utils.pm:395> WARN - legacy month field 'aug' in entry 'FA7' is not an integer - this will probably not sort properly.
+[337] Utils.pm:395> WARN - legacy month field 'apr' in entry 'Bao_2022' is not an integer - this will probably not sort properly.
+[347] Utils.pm:395> WARN - legacy month field 'feb' in entry 'Feng_2001' is not an integer - this will probably not sort properly.
+[354] Utils.pm:411> ERROR - Name "Kronheimer, Peter B., Nakajima, Hiraku" has too many commas, skipping entry 'Kronheimer1990'
+[368] Utils.pm:395> WARN - legacy month field 'Jun' in entry 'silervstein1998' is not an integer - this will probably not sort properly.
+[388] Utils.pm:395> WARN - legacy month field 'jul' in entry 'Argurio_20081' is not an integer - this will probably not sort properly.
+[397] Utils.pm:395> WARN - legacy month field 'Nov' in entry 'vafa1998' is not an integer - this will probably not sort properly.
+[404] Utils.pm:395> WARN - legacy month field 'oct' in entry 'Beisert_2011' is not an integer - this will probably not sort properly.
+[513] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[513] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[513] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[513] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[536] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[557] bbl.pm:757> INFO - Output to main.bbl
+[557] Biber.pm:128> INFO - WARNINGS: 20
+[558] Biber.pm:132> INFO - ERRORS: 1
