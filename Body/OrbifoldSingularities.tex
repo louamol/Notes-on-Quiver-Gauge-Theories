@@ -259,9 +259,9 @@
             \end{equation}
             
 
-            Using the orthogonality of characters of irreducible non-equivalent representations, we obtain the explicit expression of the coefficient $a^\mR_{ij}$:
+            Using the fact that characters are homomorhisms and the orthogonality of the characters of characters of irreducible non-equivalent representations, we obtain the explicit expression of the coefficient $a^\mR_{ij}$:
             \begin{equation}
-                a^\mR_{ij} = \frac{1}{\abs{\Gamma}}\sum^r_{\gamma=1} r_\gamma\chi^\mR(\gamma)\chi^i(\gamma)\chi^j(\gamma)^*
+                \boxed{a^\mR_{ij} = \frac{1}{\abs{\Gamma}}\sum^r_{\gamma=1} r_\gamma\chi^\mR(\gamma)\chi^i(\gamma)\chi^j(\gamma)^*}\label{eq:aij}
             \end{equation}
             where $r_\gamma$ is the order of the conjugacy class containing $\gamma$ and $\chi^i$ is the character of $\rho_i$.
 
@@ -329,7 +329,9 @@
 
         At this stage, we can already predict that all $\mN=2$ orbifold quiver gauge theories will be automatically anomaly-free since their quiver are their McKay graphs in which all arrows come in pairs.
 
-    \subsection{A simple example: $S=\C^3/\Z_3$}\label{sec:C3Z3}
+    %\begin{comment}
+    
+        \subsection{A simple example: $S=\C^3/\Z_3$}\label{sec:C3Z3}
 
         We illustrate the previous discussion by the simple case where $\Gamma=\Z_3$ acts on $\C^2$ as
         \begin{equation}
@@ -521,6 +523,8 @@
             \end{equation}
             From \eqref{eq:sumNiZ3}, we get that $N_0=N_1=N_2=N/3$, meaning that that the daughter theory has quantum gauge symmetry if and only if the parent theory with has gauge group $\SU(N)$ where $N$ is a multiple of $3$. Or, in other words, if the number of D-branes is a multiple of $3$.
 
+        %\end{comment}
+
 \section{Conformal invariance}
 
     We have discussed the general case and found the resulting field content for strings on any orbifold $\C^3/\Gamma$. The content of those theories was found to be completely determined by the two actions that give ourselves from start: 
@@ -541,46 +545,46 @@
 
     Since the superconformal theories are of particular interest, this case have been studied in some details.
 
-    \subsection{Lagrangian}
+\section{Lagrangian}\todo{For conformal only ?}
 
-        Let us describe the lagrangian of the projected theory \cite{vafa1998}. We saw that the gauge group is broken to 
-        \begin{equation}
-            G_{\text{proj}}=\bigotimes_{i\in I}\SU(N n_i)
-        \end{equation}
-        at low energy, with $n_i\equiv\dim\rho_i$. The coupling constant $\tau_i$ (including the theta angle as usual) of the $i$th group is
-        \begin{equation}
-            \tau_i=\frac{n_i\tau}{\abs{\Gamma}}
-        \end{equation}
-        where $\tau$ is the initial $\mN=4$ coupling, or the Type IIB coupling. This implies in particular that
-        \begin{equation}
-            \sum_{i\in I}n_i\tau_i=\tau.
-        \end{equation}
-        There are Yukawa couplings for each triangle of the quiver consisting of two fermionic arrows and a bosonic arrow and quartic scalar interactions for each square consisting of four bosonic arrows. The coefficient ofthese interactions can be by projecting the $\mN=4$ lagrangian in terms of the field we kept. The Yukawa terms are therefore
-        \begin{equation}
-            Y=\sum_{i,j,k\in I}\gamma^{f_{ij},f_{jk},f_{kj}}_{ijk}\tr(\psi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\psi^{ki}_{f_{ki}})
-        \end{equation}
-        and the quartic scalar interaction terms by
-        \begin{equation}
-            V=\sum_{i,j,k,l\in I}\eta^{ijkl}_{f_{ij};f_{jk},f_{kl},f_{li}}\tr(\phi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\phi^{kl}_{f_{kl}}\phi^{li}_{f_{li}})
-        \end{equation}
-        with
-        \begin{align}
-            \gamma^{f_{ij},f_{jk},f_{kj}}_{ijk} &= \Gamma_{\alpha\beta,m}(Y_{f_{ij}})\indices{^m_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^\beta_{v_j\bar{v}_k}}(Y_{f_{ki}})\indices{^\alpha_{v_k\bar{v}_i}}, \\
-            \eta^{ijkl}_{f_{ij};f_{jk},f_{kl},f_{li}} &= (Y_{f_{ij}})\indices{^{[m}_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^{n]}_{v_j\bar{v}_k}}(Y^{f_{kl}})\indices{^{[m}_{v_k\bar{v}_l}}(Y_{f_{li}})\indices{^{n]}_{v_l\bar{v}_i}}.
-        \end{align}
-        The coefficients $(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}$ and $(Y_{f_{ij}})\indices{^m_{v_i\bar{v}_j}}$ are to be understood as the $f_{ij}$th Clebsch-Gordan coefficients of the projection of $\boldsymbol{4}\otimes\rho_i$ and $\boldsymbol{6}\otimes\rho_i$ onto $\rho_j$, and $\Gamma_{\alpha\beta,m}$ is the invariant in $\boldsymbol{4}\otimes\boldsymbol{4}\otimes\boldsymbol{6}$.
+    Let us describe the lagrangian of the projected theory \cite{vafa1998}. We saw that the gauge group is broken to 
+    \begin{equation}
+        G_{\text{proj}}=\bigotimes_{i\in I}\SU(N n_i)
+    \end{equation}
+    at low energy, with $n_i\equiv\dim\rho_i$. The coupling constant $\tau_i$ (including the theta angle as usual) of the $i$th group is
+    \begin{equation}
+        \tau_i=\frac{n_i\tau}{\abs{\Gamma}}
+    \end{equation}
+    where $\tau$ is the initial $\mN=4$ coupling, or the Type IIB coupling. This implies in particular that
+    \begin{equation}
+        \sum_{i\in I}n_i\tau_i=\tau.
+    \end{equation}
+    There are Yukawa couplings for each triangle of the quiver consisting of two fermionic arrows and a bosonic arrow and quartic scalar interactions for each square consisting of four bosonic arrows. The coefficient ofthese interactions can be by projecting the $\mN=4$ lagrangian in terms of the field we kept. The Yukawa terms are therefore
+    \begin{equation}
+        Y=\sum_{i,j,k\in I}\gamma^{f_{ij},f_{jk},f_{kj}}_{ijk}\tr(\psi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\psi^{ki}_{f_{ki}})
+    \end{equation}
+    and the quartic scalar interaction terms by
+    \begin{equation}
+        V=\sum_{i,j,k,l\in I}\eta^{ijkl}_{f_{ij};f_{jk},f_{kl},f_{li}}\tr(\phi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\phi^{kl}_{f_{kl}}\phi^{li}_{f_{li}})
+    \end{equation}
+    with
+    \begin{align}
+        \gamma^{f_{ij},f_{jk},f_{kj}}_{ijk} &= \Gamma_{\alpha\beta,m}(Y_{f_{ij}})\indices{^m_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^\beta_{v_j\bar{v}_k}}(Y_{f_{ki}})\indices{^\alpha_{v_k\bar{v}_i}}, \\
+        \eta^{ijkl}_{f_{ij};f_{jk},f_{kl},f_{li}} &= (Y_{f_{ij}})\indices{^{[m}_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^{n]}_{v_j\bar{v}_k}}(Y^{f_{kl}})\indices{^{[m}_{v_k\bar{v}_l}}(Y_{f_{li}})\indices{^{n]}_{v_l\bar{v}_i}}.
+    \end{align}
+    The coefficients $(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}$ and $(Y_{f_{ij}})\indices{^m_{v_i\bar{v}_j}}$ are to be understood as the $f_{ij}$th Clebsch-Gordan coefficients of the projection of $\boldsymbol{4}\otimes\rho_i$ and $\boldsymbol{6}\otimes\rho_i$ onto $\rho_j$, and $\Gamma_{\alpha\beta,m}$ is the invariant in $\boldsymbol{4}\otimes\boldsymbol{4}\otimes\boldsymbol{6}$.
 
-        When we choose the regular embedding of $\Gamma$, the 1-loop beta functions have been computed in \cite{vafa1998} and they o indeed vanish \cite{vafa1998}.
-        
-        In the same paper, the superpotential inherited from the parent theory is shown to be
-        \begin{equation}
-            \mathcal{W}=\sum_{i,j,k\in I}\sum_{f_{ij},f_{jk},f_{ki}}h^{f_{ij},f_{jk},f_{kj}}_{ijk}\tr(\phi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\phi^{ki}_{f_{ki}})
-        \end{equation}
-        where
-        \begin{equation}
-            h^{f_{ij},f_{jk},f_{kj}}_{ijk} = \eps_{\alpha\beta\gamma}(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^\beta_{v_j\bar{v}_k}}(Y_{f_{ki}})\indices{^\gamma_{v_k\bar{v}_i}}
-        \end{equation}
-        and $(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}$ is now the $f_{ij}$th Clebsch-Gordan coefficient of the projection of $\boldsymbol{3}\otimes\rho_i$ onto $\rho_j$.
+    When we choose the regular embedding of $\Gamma$, the 1-loop beta functions have been computed in \cite{vafa1998} and they o indeed vanish \cite{vafa1998}.
+    
+    In the same paper, the superpotential inherited from the parent theory is shown to be
+    \begin{equation}
+        \mathcal{W}=\sum_{i,j,k\in I}\sum_{f_{ij},f_{jk},f_{ki}}h^{f_{ij},f_{jk},f_{kj}}_{ijk}\tr(\phi^{ij}_{f_{ij}}\phi^{jk}_{f_{jk}}\phi^{ki}_{f_{ki}})
+    \end{equation}
+    where
+    \begin{equation}
+        h^{f_{ij},f_{jk},f_{kj}}_{ijk} = \eps_{\alpha\beta\gamma}(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}(Y_{f_{jk}})\indices{^\beta_{v_j\bar{v}_k}}(Y_{f_{ki}})\indices{^\gamma_{v_k\bar{v}_i}}
+    \end{equation}
+    and $(Y_{f_{ij}})\indices{^\alpha_{v_i\bar{v}_j}}$ is now the $f_{ij}$th Clebsch-Gordan coefficient of the projection of $\boldsymbol{3}\otimes\rho_i$ onto $\rho_j$.
 
 \section{Finitude}
 
@@ -631,7 +635,30 @@
 
 \section{$\mN=2$ daughter theories}\label{sec:N2QGT}
 
-    %Let us consider that $\Gamma$ is a finite subgroup of $\SU(2)\subset\SU(3)$. It naturally acts on $\C^3$ trough its fundamental representation $\bs{2}$ as $\bs{1}\oplus\bs{2}$ (only acts on 2 coordinates).
+    \subsection{Generalities}
+
+        Quotienting by a finite subgroup $\Gamma$ of $\SU(2)$ give rise to the so-called \emph{Klein singularieties}. There also refered as \emph{simple}, \emph{du Val} or \emph{ADE} singularieties, those are all synonims. To find \eqref{eq:aij}, the only remaining choice is $\mR$. The only thing we now is that these representations must come from the fundamental $\boldsymbol{4}$ (for fermions) or the anti-symmetric $\boldsymbol{6}$ of $\SU(4)$. Now, for a general decomposition
+        \begin{equation}
+            \mR=\bigoplus_{i\in I}c_i\rho_i
+        \end{equation}
+        we must have $\dim\mR=\sum_{i\in I}\dim\rho_i$, i.e. the dimension of $\mR$ ($4$ for the fermions and $6$ for the bosons) must be partitioned into the dimension of the irreps of $\Gamma$ and, out of those possibilities, we must choose the ones that are define are a representation of the $\SU(2)\SU(4)$, namely:
+        \begin{equation}
+            \begin{array}{ccc}
+                \SU(4)&\to&\SU(2)\times\SU(2)\times\U(1)\\
+                \boldsymbol{4}&\to&(\boldsymbol{2},\boldsymbol{1})_{+1}\oplus(\boldsymbol{1},\boldsymbol{2})_{-1}\\
+                \boldsymbol{6}&\to&(\boldsymbol{1},\boldsymbol{1})_{+2}\oplus(\boldsymbol{1},\boldsymbol{1})_{-2}\oplus(\boldsymbol{2},\boldsymbol{2})_{0}
+            \end{array}
+        \end{equation}
+        where the subscripts correspond to the $\U(1)$ factor (i.e. the trace) and in particular the $\pm$ dictates the overall traceless condition. Exploiting these decompositions and paying with the reppresentation properties, one can show that we must have \cite{Hanany_1999}
+        \begin{align}
+            \boldsymbol{4}&=\boldsymbol{2}_{\text{trivial}}\oplus\boldsymbol{2}\\
+            \boldsymbol{6}&=\boldsymbol{2}_{\text{trivial}}\oplus\boldsymbol{2}\oplus\boldsymbol{2}.
+        \end{align}
+        This limits our attention to only $2$-dimensional representations of $\Gamma$. However there are still many possiblities.
+        
+        \begin{align}
+            a^{\boldsymbol{4}}_{ij} &= 
+        \end{align}
 
     \subsection{$S=\C\times\C^2/\Z_n$}
 
