@@ -19,7 +19,6 @@
 \usepackage{latexsym} % liste énorme de symboles
 \usepackage{bm} % better bold symbols
 \usepackage{bbm} % \mathbbm{1}
-\usepackage{nicefrac} % perme de faire des fraction diagonales utilie pour les corps de texte
 \usepackage{empheq} % permet de faire des systèmes déquation avec acolade et numérotation
 \usepackage{physics} % ajoute des commandes pratiques pour dérivées, sin, ...
 \usepackage{tensor} % permet de mieux gérer les indices des tenseurs
@@ -39,27 +38,17 @@
 \usepackage[backend=biber,sorting=none,style=numeric]{biblatex} % bilbiography
 \usepackage{hyperref} % hyperlinks
 \usepackage{footnote} % footnotes
-\usepackage{imakeidx}
-\usepackage{csquotes} % ermet de faire des sitations
 \usepackage{multirow} % permet de faire des cases  sur plusieurs colonnes
-\usepackage{esvect} % \vv pour vecteurs
-\usepackage[normalem]{ulem} % commandes de soulignage, achurage, ... mieux
 \usepackage[nottoc]{tocbibind}% ajoute l'appendice, ..; à la table des matières
 \usepackage[titletoc]{appendix}
-\usepackage[font={it}]{caption}
-\usepackage{xfrac}
+%\usepackage[font={it}]{caption}
 \usepackage[procnames]{listings}
 \usepackage{enumitem} % améliore l'env. enumerate, ...
 %\usepackage{calrsfs} % very calygraphied mathcal
 \usepackage{cases}
 \usepackage{setspace}
-\usepackage{CJKutf8}
 \usepackage{framed}
-\usepackage{makeidx}
 \usepackage{comment}
-\usepackage{simplewick} % operator contraction
-\usepackage{ragged2e} % alignment in titlepage
-\usepackage{tocloft}
 \usepackage{parskip} % set parskip to non-zero value and parindent to zero, avoid underfull hbox errors
 \usepackage{titling}
 \usepackage{caption}
@@ -89,7 +78,8 @@
 \numberwithin{equation}{section}
 
 %\setuptodonotes{noline,bordercolor=azure!80,textcolor=black,backgroundcolor=azure!50,size=\tiny}
-\setuptodonotes{noline,bordercolor=white,textcolor=red,backgroundcolor=white,size=\small}
+%\setuptodonotes{noline,bordercolor=white,textcolor=red,backgroundcolor=white,size=\small}
+\setuptodonotes{fancyline,bordercolor=black,textcolor=black,backgroundcolor=orange,size=\small}
 
 % Environements
 
