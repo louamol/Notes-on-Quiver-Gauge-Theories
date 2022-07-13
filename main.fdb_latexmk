@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1657645635 "main.bcf" "main.bbl" "main" 1657647624
-  "bibliography.bib" 1654251486 19302 427069cab3030f3cc6a40147a01b2505 ""
-  "main.bcf" 1657647624 106012 7d40d14d984d8da8a29ee69b8a65d8ca "pdflatex"
+["biber main"] 1657720818 "main.bcf" "main.bbl" "main" 1657724200
+  "bibliography.bib" 1657720814 19679 cb8c6fcf9e783b96db0816cda2c380ca ""
+  "main.bcf" 1657724200 106012 7d40d14d984d8da8a29ee69b8a65d8ca "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1657647622 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1657647624
+["pdflatex"] 1657724198 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1657724200
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1607267403 25420 f2c23a7c3a7fea5cb4ae4a632310af13 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1607273539 31952 3c609752e07479b75f1400c325a21382 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1607267403 40136 52321c4f09ab9f3c383093364073b7e8 ""
@@ -101,6 +101,7 @@
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1623060326 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1623060326 35752 024fb6c41858982481f6968b5fc26508 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1623060326 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1623060326 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1623060326 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1623060326 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1623060326 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -366,18 +367,18 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1623060370 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty" 1609679784 2275 d29aca6fd67823551cb07584e3681d5d ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-base.sty" 1609679784 20688 beaddf14d96104d4bf016523be5395c5 ""
-  "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" 1657647622 727 5af3aab89aac3edd6d6d31ad8c929f4c ""
-  "N2fieldtheories.aux" 1657647624 8319 7297f5337a7940a60a81534844787e2a "pdflatex"
-  "N2fieldtheories.tex" 1657647503 17026 857f2171c9e8d2459301b0be104b7f4b ""
-  "Packages/custom_macros.tex" 1657634668 5461 805c3feed4dde8d9461d70a634d6c759 ""
+  "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" 1657718546 727 5af3aab89aac3edd6d6d31ad8c929f4c ""
+  "N2fieldtheories.aux" 1657724199 9896 e932060e410acca91b1c3903d713a1fd "pdflatex"
+  "N2fieldtheories.tex" 1657724195 28093 e94fba2144b10e556bb36036476d711a ""
+  "Packages/custom_macros.tex" 1657716294 5491 7a1774a6051e32f41b1667424e44b65a ""
   "Packages/custom_packages.tex" 1657636675 5440 250cfb4224b2888ab21aed5b07ddece2 ""
-  "main.aux" 1657647624 5260 432176fc38ad96b9f528cbef444a0115 "pdflatex"
-  "main.bbl" 1657645636 71957 34a1ae215fa5e517865a45b103fabaf9 "biber main"
-  "main.out" 1657647624 2288 de5dfe863b0dc44d86424dda5e1b6654 "pdflatex"
-  "main.run.xml" 1657647624 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
-  "main.tdo" 1657647624 243 fe0192c77eff446748e73a8ccbc18ff1 "pdflatex"
-  "main.tex" 1657647622 727 5af3aab89aac3edd6d6d31ad8c929f4c ""
-  "main.toc" 1657647624 1809 bb4c94708a33ae0101120452b2da6106 "pdflatex"
+  "main.aux" 1657724200 5467 f36f8f020925cf9945f18c9a4f62b7da "pdflatex"
+  "main.bbl" 1657720819 73683 0ae2b51e5e00377e96374b509308050c "biber main"
+  "main.out" 1657724200 3069 c83e2a4bf16e3368ef259879ed8acfe9 "pdflatex"
+  "main.run.xml" 1657724200 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
+  "main.tdo" 1657724200 340 3e5729dfee9f30b694dfbb7a060db2e1 "pdflatex"
+  "main.tex" 1657718546 727 5af3aab89aac3edd6d6d31ad8c929f4c ""
+  "main.toc" 1657724200 2300 9c79cb8c6a64c4b7074a894811928934 "pdflatex"
   (generated)
   "N2fieldtheories.aux"
   "main.aux"

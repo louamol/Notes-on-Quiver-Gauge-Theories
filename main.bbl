@@ -1921,6 +1921,50 @@
       \endverb
       \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
     \endentry
+    \entry{Argyres_1996}{article}{}
+      \name{author}{3}{}{%
+        {{hash=54622db0e197bf87cec65814a48df2da}{%
+           family={Argyres},
+           familyi={A\bibinitperiod},
+           given={Philip\bibnamedelima C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=bc09907c4a442df4d48803b9070ed68c}{%
+           family={Plesser},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi Ronen},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c1fe5d39fd0373c9697cb4ec1c1279f3}{%
+           family={Seiberg},
+           familyi={S\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{fullhash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{bibnamehash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{authorbibnamehash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{authornamehash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{authorfullhash}{609d8a03b01091b0a215aab8f19a191d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{month}{7}
+      \field{number}{1-2}
+      \field{title}{The moduli space of vacua of N = 2 {SUSY} {QCD} and duality in N = 1 {SUSY} {QCD}}
+      \field{volume}{471}
+      \field{year}{1996}
+      \true{nocite}
+      \field{pages}{159\bibrangedash 194}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1016/0550-3213(96)00210-6
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

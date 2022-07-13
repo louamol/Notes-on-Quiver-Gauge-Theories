@@ -175,7 +175,7 @@
                 
                 To reduce \eqref{eq:Higgsbranchsol} by $2N_c-N_f$ columns, we must set $2N_c-N_f$ parameters to zero: $\lambda_1=\dots=\lambda_i=\kappa_1=\dots=\kappa_j=0$ with $i+j=2N_c-N_f$. By \eqref{eq:Higgsbrachcdt1}-\eqref{eq:Higgsbrachcdt2}, if some $\kappa$'s vanish, we must set $\rho=0$ before, which implies that some $\lambda_a$'s vanish too. Consequently, there are two possibilities to reducing columns, hence defining two sub-branches of the Higgs branch:
                 \begin{itemize}[label=$\triangleright$]
-                    \item \emph{baryonic branch}: only some $\lambda_a$'s vanish, more precisely, $i=2N_c-N_f$ of them and the VEV's have the form
+                    \item \emph{baryonic branch}: only some $\lambda_a$'s vanish, more precisely, $i=2N_c-N_f$ and $j=0$. The VEV's have the form
                     \begin{align}
                         \begin{split}
                         H_1 &= 
@@ -196,29 +196,151 @@
                             & & & & \ddots & & & & \\
                             & & & & & \tilde{\kappa}_0 & & &
                         \end{bmatrix},\qquad\lambda_a\in\R^+\\
-                    \end{split}
+                    \end{split}\label{eq:barynoicbranch}
                     \end{align}
                     where
                     \begin{align}
-                        \kappa_a\tilde{\kappa}_a &= \rho,\qquad\rho\in\C \label{eq:Higgsbrachcdt1}\\
-                        \lambda^2_a &= \kappa^2_a-\kappa^2_0+\abs{\rho}^2\left(\frac{1}{\kappa^2_a}-\frac{1}{\kappa^2_0}\right),\qquad\nu\in\R \label{eq:Higgsbrachcdt2}
+                        \kappa_a\tilde{\kappa}_a &= \rho,\qquad\rho\in\C\\
+                        \lambda^2_a &= \kappa^2_a-\kappa^2_0+\abs{\rho}^2\left(\frac{1}{\kappa^2_a}-\frac{1}{\kappa^2_0}\right),\qquad\nu\in\R 
                     \end{align}
-                    We use the term baryonic branch for the $N_f\geq 2N_c$ solutions \eqref{eq:Higgsbranchsol} as well. The baryonic branch exists for $N_f\geq N_c$.
-                    \item \emph{non-baryonic branch}:
+                    We use the term baryonic branch for the $N_f\geq 2N_c$ solutions \eqref{eq:Higgsbranchsol} as well. The baryonic branch exists for $N_f\geq N_c$. \todo{Is this case possible ?} One can see that the opposite case, i.e. taking only $\kappa_a$'s to vanish, with $i=0$ and $j=2N_c-N_f$, leads to a submanifold of the same branch uppon interchanging $H_1$ and $H_2$, which is a symmetry (charge conjugation) of our theory.
+                    \item \emph{non-baryonic branch}: both some $\lambda_a$'s and some $\kappa_a$'s vanish, more precisely $i,j\neq0$ such that $i+j=2N_c-N_f$. From the constraints \eqref{eq:Higgsbrachcdt1}-\eqref{eq:Higgsbrachcdt2}, this implies that $\rho=\nu=0$ and $\kappa_a=\lambda_a$. The VEVs have the form
+                    \begin{align}
+                        \begin{split}
+                            H_1 &= 
+                            \begin{bmatrix}
+                                \kappa_1 & & & 0 & & & 0 & \\
+                                & \ddots & & & \ddots & & & \ddots \\
+                                & & \kappa_r & & & 0 & & \\
+                                & & & & & & & \\
+                                & & & & & & &
+                            \end{bmatrix},\\
+                            (H_2)^t &= 
+                            \begin{bmatrix}
+                                0 & & & \kappa_1 & & & 0 & \\
+                                & \ddots & & & \ddots & & & \ddots \\
+                                & & 0 & & & \kappa_r & & \\
+                                & & & & & & & \\
+                                & & & & & & &
+                            \end{bmatrix},\qquad\kappa_a\in\R^+\\
+                        \end{split}\label{eq:nonbarynoicbranch}
+                    \end{align}
+                    where $r\leq \lfloor N_f/2\rfloor$ and $2N_c-N_f$ columns of zeros should be deleted by the column-reduction procedure. If $N_f$ is odd, there remains at least one column of zeros in the reduced matrices. The different values of $r$ give distinct submanifolds of the branch with maximal value. Nonetheless, we will refer to them as different baryonic branches. Some non-baryonic branches can also be obtained as submanifolds of the baryonic branch by setting $\rho=\kappa_0=\tilde{\kappa}_0=0$ in \eqref{eq:barynoicbranch}. The reason for these choices of terminology will become clear latter. Non-baryonic branches exist for $N_f\geq2$. For $N_f<2$ there is no Higgs branch at all.
                 \end{itemize}
-                
-                There two possibilities, either only $\lambda$'s vanish
             \end{itemize}
         
         \subsubsection{Gauge symmetry and separate branches}
 
+            Let us clarify the intersection pattern of the Higgs branches. We say that two Higgs branches are \emph{separate} if any path between the two goes through a point of enhanced gauge symmetry. This implies in particular that branches that if a branch has a larger unbroken gauge group than the other, they separate.
+
+            \underline{Baryonic branch:} the $N_f\geq2N_c$ solution \eqref{eq:Higgsbranchsol} and the $N_f\leq2N_c$ solution \eqref{eq:barynoicbranch} completely break the gauge symmetry. By the Higgs mechanism, the number of massless supermultiplets is $\H=N_fN_c-N^2_c+1$. This counts the quaternionic dimension of the Higgs branch. There are submanifolds of the baryonic branch where the gauge symmetry is enhanced. These occur when two or more rows $H_1$ and $H_2$ vanish, i.e. if $\rho=\nu=0$ for \eqref{eq:Higgsbranchsol} and if $\rho=\kappa_0=0$ for \eqref{eq:barynoicbranch}, giving rise to non-baryonic branch VEV's \label{eq:nonbarynoicbranch} with
+            \begin{equation}
+                r\leq \min\{N_f-N_c,N_c-2\}.\label{eq:rrange}
+            \end{equation}
+
+            \underline{Non-baryonic branch:} there are non-baryonic branches with $r$ outside of the range \eqref{eq:rrange}. In general, the unbroken gauge group is $\SU(N_c-r)$ with $N_f-2r$ massless hypermultiplets in the fundamental. There are different unbroken gauge groups for different values of $r$ so they are separate branches. Higgs mechanism gives $\H=r(N_f-r)$ massless multiplets neutral under the unbroken gauge group.
+
         \subsubsection{Flavor symmetry}
 
-        \subsubsection{Gaue-invariant description}
+            To identify the unbroken global symmetries on the Higgs branches, it is useful to define a basis of gauge-invariant quantities made from the squark VEV's:
+            \begin{align}
+                M^i_j &\equiv (H_2)^a_j(H_1)^i_a\\
+                B^{i_1\dots i_{N_c}} &\equiv \eps^{a_1\dots a_{N_c}}(H_1)^{i_1}_{a_1}\dots(H_1)^{i_{N_c}}_{a_{N_c}}\\
+                \tilde{B}_{i_1\dots i_{N_c}} &\equiv \eps_{a_1\dots a_{N_c}}(H_2)^{a_1}_{i_1}\dots(H_2)^{a_{N_c}}_{i_{N_c}}.
+            \end{align}
+            $M$ is called the \emph{meson field} and $B,\tilde{B}$ are called the \emph{baryon fields}. The latter are only defined for $N_f\geq N_c$.
+
+            \underline{The baryonic branch:} on this branch, the baryonic fields are non-vanishing: $B,\tilde{B}\neq0$, hence the name, and from \eqref{eq:Higgsbranchsol} or \eqref{eq:barynoicbranch}, the meson field is
+            \begin{equation}
+                M=
+                \begin{bmatrix}
+                    \rho & & & \kappa_1\lambda_1 & & & 0 & \\
+                    & \ddots & & & \ddots & & & \ddots \\
+                    & & \rho & & & \kappa_{N_c}\lambda_{N_c} & & \\
+                    & & & & & & & \\
+                    & & & & & & &
+                \end{bmatrix}\label{eq:baryonicbranchmesonfield}
+            \end{equation}
+            where the $\rho$-block is $N_c\times N_c$. For $N_f\leq 2N_c$ we should remove the appropriate number of columns from the right and rows from the bottom.
+            
+            For $N_f\geq 2N_c$, the meson field \eqref{eq:baryonicbranchmesonfield} and the non-vanishing baryon VEV's imply that the global symmetry is broken as
+            \begin{equation}
+                \SU(N_f)\times\U(1)_B\times\SU(2)_R\to\U(N_f-2N_c)\times\U(1)^{N_c-1}\times\SU(2)'_R.
+            \end{equation}
+            The number of real Goldstone boson bosons is then $\G=4N_fN_c-N^2_c-N_c+1$. Since the number of real parameters describing the Higgs branch in \eqref{eq:Higgsbranchsol} is $\mP=N_c+3$, we can see that $\G+\mP=4\H$. This is a check that we have a complete parametrization of this branch.
+
+            For $N_C\leq N_f< 2N_c$, the global symmetry is broken as
+            \begin{equation}
+                \SU(N_f)\times\U(1)_B\times\SU(2)_R\to\SU(2N_c-N_f)\times\U(1)^{N_c-N_c}\times\SU(2)'_R.
+            \end{equation}
+            The number of real Goldstone boson is then $\G=-4N^2_c+4N_cN_f-N_f+N_c+1$. The number of real parameters describing the baryonic branch is $\mP=N_f-N_c+3$ and $\G+\mP=4\H$.
+
+            \underline{The non-baryonic branches:} on these branches, the baryonic field vanishes, $B=\tilde{B}=0$, hence their name, and the meson field is given by
+            \begin{equation}
+                M=
+                \begin{bmatrix}
+                    0 & & & \kappa^2_1 & & & 0 & \\
+                    & \ddots & & & \ddots & & & \ddots \\
+                    & & 0 & & & \kappa^2_r & & \\
+                    & & & & & & & \\
+                    & & & & & & &
+                \end{bmatrix}\label{eq:nonbaryonicbranchmesonfield}
+            \end{equation}
+            where the first block of zeros is $r\times r$. This implies that the global symmetry is broken as
+            \begin{equation}
+                \SU(N_f)\times\U(1)_B\times\SU(2)_R\to\U(N_f-2r)\times\U(1)^{r}\times\SU(2)'_R.
+            \end{equation}
+            The number of real Goldstone bosons is $\G=r(4N_f-4r-1)$ and $\mP=r$ so $\G+\mP=4\H$.
+
+        \subsubsection{Gauge-invariant description}
+
+            The configuration \eqref{eq:Higgsbranchsol} is sent to inequivalent points in the moduli space, but with the same physics, by global symmetry transformations. Gauge symmetry transformations on the other hand, sends them to equivalent point in the moduli space, which is not manifest in our writing. We want to describe the moduli space in terms of gauge-invariant coordinates, i.e. describe the various branches in terms of constraints on the meson field and the baryonic fields.
+
+            The Higgs branch is a hyperKähler quotient of the squark space by the gauge group, with the D-terms and F-terms as moment maps. It is easier to work with a Kähler quotient, thus consider the theory as an $\mN=1$ theory with a superpotential interaction. In a Kähler quotient, the D-term equations are equivalent to quotienting by the complexified gauge group. This can be achieved by expressing the VEVs directly in terms of holomorphic gauge-invariant coordinates, such as the meson and baryonic fields, and by imposing the F-term equations. The non-trivial structure of the quotient is manifest in the fact that the gauge invariant coordinates are not independent as functions of the squark fields but they satisfy a set of polynomial relations which we must impose as constraints. Our goal is to find a set of generators of for these constraints and the F-term equations.
+
+            By definition, the meson field $M$ and the baryonic fields $B,\tilde{B}$ must satisfy
+            \begin{equation}
+                B^{i_1\dots i_{N_c}}\tilde{B}_{j_1\dots j_{N_c}}=M^{[i_1}_{j_1}\dots M^{i_{N_c}]}_{j_{N_c}}
+            \end{equation}
+            which can be rewritten as
+            \begin{equation}
+                (\star B)\tilde{B}=\star(M^{N_c})\label{eq:constraint1}
+            \end{equation}
+            with $(\star B)_{i_{N_c+1}\dots i_{N_f}}=\eps_{i_1\dots i_{N_f}}B^{i_1\dots i_{N_c}}$.
+            
+            Also, since any expression antisymmetrized on $N_c+1$ color indices must vanish, any product of $M$'s, $B$'s and $\tilde{B}$'s antisymmetrized on $N_c+1$ upper or lower indices must vanish. For $B,\tilde{B}\neq0$, an induction argument shows that the constraint \eqref{eq:constraint1} together with
+            \begin{equation}
+                M\cdot\star B=M\cdot\star\tilde{B}=0\label{eq:constraint2}
+            \end{equation}
+            where $\cdot$ represents the contraction of flavor indices. If $B=\tilde{B}=0$, all the other constraints are automatically satisfied and \eqref{eq:constraint1} implies \eqref{eq:constraint2}
+
+            From \eqref{eq:constraint1} and \eqref{eq:constraint2}, one can show that
+            \begin{equation}
+                \text{rank}(M)\leq N_c.
+            \end{equation}
+
+            The first F-terms gives two new constraints:
+            \begin{align}
+                M'\cdot B = \tilde{B}\cdot M' &= 0\label{eq:constraint3}\\
+                M\cdot M' &= 0\label{eq:constraint4}
+            \end{align} 
+            and the other two equations are relevant only for mixed branches. Finally, a complete set of constraints is given by \eqref{eq:constraint1},\eqref{eq:constraint2},\eqref{eq:constraint3} and \eqref{eq:constraint4}.
+
+            The condition \eqref{eq:constraint4} is already quite restrictive; its only solutions are, up to flavor rotations, the meson field configuration \eqref{eq:baryonicbranchmesonfield} and \eqref{eq:nonbaryonicbranchmesonfield}. NThe non-baryonic solutions have rank $r\leq\lfloor N_f/2\rfloor$. For $N_f> 2N_c$, this will be reduced to $r\leq N_c$ by \eqref{eq:constraint2}. For $N_f\leq 2N_c$ on the other hand this constraint is automatically satisfied and \eqref{eq:constraint2} is implied by \eqref{eq:constraint4}.
 
     \subsection{Mixed branches}
 
+        
+
 \section{Quantum moduli space}
+
+\section{Quantum Higgs branches and the non-renormalization theorem}
+
+\section{Higgs branch roots}
+
+    \subsection{Non-baryonic root}
+
+    \subsection{Baryonic root}
 
 \part{$A_1$ singularity}
 
