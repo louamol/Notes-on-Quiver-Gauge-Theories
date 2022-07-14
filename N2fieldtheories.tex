@@ -14,7 +14,7 @@
         \item $Q^i$ ($i=1,\dots,N_f$) are $N_f$ chiral superfields transforming in the $\boldsymbol{N_C}$ of $\SU(N_c)$ and in the $\boldsymbol{N_f}$ of the global group $\SU(N_f)$. It has $N_c$ components, denoted by $Q^i_a$.
         \item $\tilde{Q}_i$ are $N_f$ chiral superfields transforming in the $\bar{\boldsymbol{N_C}}$ of $\SU(N_c)$ and in the $\bar{\boldsymbol{N_f}}$ of the global group $\SU(N_f)$. It has $N_c$ components, denoted by $\tilde{Q}^a_i$.
     \end{itemize}
-    The lagrangian reads
+    $Q$ and $\tilde{Q}$ are called the \emph{quark superfields}, $H_1$ and $H_2$ the \emph{squarks} and $\phi$ the \emph{adjoint-scalar}. The lagrangian reads
     \begin{equation}
         \L^{\mN=2}_{\text{SYM}} = \frac{1}{4\pi}\Im\left[\tau\int\d^2\theta\d^2\bar{\theta}\tr\left(\Phi^\dagger e^V\Phi + Q^\dagger_i e^V Q^i + \tilde{Q}^{\dagger i}e^V \tilde{Q}_i\right)+\tau\int\d^2\theta\left(\frac{1}{2}\tr(\W^\alpha\W_\alpha)+W(\phi,H_1,H_2)\right)\right]\label{eq:lag}
     \end{equation}
@@ -75,23 +75,29 @@
 
 \section{Classical moduli space}
 
-    The D-term equations are
-    \begin{align}
-        D:
-        \begin{cases}
-            \hspace{3.1cm}[\phi,\phi^\dagger]  &= 0 \\
-            (H_1)^i_a(H^\dagger_1)^b_i-(H^\dagger_2)^i_a(H_2)^b_i &= \nu\delta^a_b
-        \end{cases}
-    \end{align}
-    and the F-term equations are
-    \begin{align}
-        F:
+    The D-term and F-term equations are
+    \begin{figure}[H]
+        \centering
+        $
+        \begin{array}{|cc|}
+            \hline
+            & \\
+            D:& \begin{cases}
+                \hspace{3.1cm}[\phi,\phi^\dagger]  &= 0 \\
+                (H_1)^i_a(H^\dagger_1)^b_i-(H^\dagger_2)^i_a(H_2)^b_i &= \nu\delta^a_b
+            \end{cases}\\
+        & \\
+        F:&
         \begin{cases}
             \hspace{1.3cm}(H_1)^i_a(H_2)^b_i &= \rho\delta^b_a \\
             (H_1)^j_am^i_j+\phi^b_a(H_1)^i_b &= 0 \\
             m^i_j(H_2)^a_j+(H_2)^b_i\phi^a_b &= 0
-        \end{cases}
-    \end{align}\todo{Verify how to obtain these equation from the F-terms and D-terms}
+        \end{cases}\\
+        & \\ \hline
+        \end{array}
+        $
+    \end{figure}
+    \todo{Verify how to obtain these equation from the F-terms and D-terms}
     where $\nu$ and $\rho$ are arbitrary complex numbers.\todo{From where do those come from ?} The the two equations in the D-terms appear separately is a consequence of $\mN=2$ supersymmetry. One can square the D-term and show that the cross-term cancels or by noting that the first term is an $\SU(2)_R$-singlet and that that the second is part of a triplet\footnote{More generally, we will need to quotient by the complexified gauge transformation, which can be used to diagonalize $\phi$ and the first equation is automatically satisfied. This is another explanation.}.
     
     These equations suggest that $\phi,H_1$ and $H_2$ may get VEVs, which we denote by $\vev{\phi},\vev{H_1}$ and $\vev{H_2}$ respectively. Since there $N^2_c-1$ components $\phi^a_b$, $N_c\cdot N_f$ components $(H_1)^i_a$ and $N_c\cdot N_f$ components $(H_2)^a_i$, there are $N_c(N_c+2N_f)-1$ complex scalars in total. Meaning that the D-term and F-term equations define a subspace of $\C^{N_c(N_c+2N_f)-1}$. The \emph{classical moduli space} is defined as
@@ -175,7 +181,7 @@
                 
                 To reduce \eqref{eq:Higgsbranchsol} by $2N_c-N_f$ columns, we must set $2N_c-N_f$ parameters to zero: $\lambda_1=\dots=\lambda_i=\kappa_1=\dots=\kappa_j=0$ with $i+j=2N_c-N_f$. By \eqref{eq:Higgsbrachcdt1}-\eqref{eq:Higgsbrachcdt2}, if some $\kappa$'s vanish, we must set $\rho=0$ before, which implies that some $\lambda_a$'s vanish too. Consequently, there are two possibilities to reducing columns, hence defining two sub-branches of the Higgs branch:
                 \begin{itemize}[label=$\triangleright$]
-                    \item \emph{baryonic branch}: only some $\lambda_a$'s vanish, more precisely, $i=2N_c-N_f$ and $j=0$. The VEV's have the form
+                    \item \emph{baryonic branch}: only some $\lambda_a$'s vanish, more precisely, $i=2N_c-N_f$ and $j=0$. Starting from the case $N_f=2N_c$ and  the last $2N_c-N_f$ $\lambda_a$'s to zero: $\lambda_{N_f-N_c+1}=\dots=\lambda_{N_c}=0$. The $\kappa_a$'s and the $\lambda_a$'s are related by \eqref{eq:Higgsbrachcdt2}, which implies that the last $2N_c-N_f$ $\kappa_a$'s are completely fixed in terms of $\rho$ and $\nu$. Let us call this value $\kappa_0$. The same goes for the $\tilde{\kappa}_a$'s and we have
                     \begin{align}
                         \begin{split}
                         H_1 &= 
@@ -189,9 +195,9 @@
                         \end{bmatrix},\qquad\kappa_a\in\R^+\\
                         (H_2)^t &= 
                         \begin{bmatrix}
-                            \kappa_1 & & & & & & \lambda_1 & & \\
+                            \tilde{\kappa}_1 & & & & & & \lambda_1 & & \\
                             & \ddots & & & & & & \ddots & \\
-                            & & \kappa_{N_f-N_c} & & & & & & \lambda_{N_f-N_c} \\
+                            & & \tilde{\kappa}_{N_f-N_c} & & & & & & \lambda_{N_f-N_c} \\
                             & & & \tilde{\kappa}_0 & & & & & \\
                             & & & & \ddots & & & & \\
                             & & & & & \tilde{\kappa}_0 & & &
@@ -203,8 +209,11 @@
                         \kappa_a\tilde{\kappa}_a &= \rho,\qquad\rho\in\C\\
                         \lambda^2_a &= \kappa^2_a-\kappa^2_0+\abs{\rho}^2\left(\frac{1}{\kappa^2_a}-\frac{1}{\kappa^2_0}\right),\qquad\nu\in\R 
                     \end{align}
-                    We use the term baryonic branch for the $N_f\geq 2N_c$ solutions \eqref{eq:Higgsbranchsol} as well. The baryonic branch exists for $N_f\geq N_c$. \todo{Is this case possible ?} One can see that the opposite case, i.e. taking only $\kappa_a$'s to vanish, with $i=0$ and $j=2N_c-N_f$, leads to a submanifold of the same branch uppon interchanging $H_1$ and $H_2$, which is a symmetry (charge conjugation) of our theory.
-                    \item \emph{non-baryonic branch}: both some $\lambda_a$'s and some $\kappa_a$'s vanish, more precisely $i,j\neq0$ such that $i+j=2N_c-N_f$. From the constraints \eqref{eq:Higgsbrachcdt1}-\eqref{eq:Higgsbrachcdt2}, this implies that $\rho=\nu=0$ and $\kappa_a=\lambda_a$. The VEVs have the form
+                    Since there are only $N_c$ $\lambda_a$'s in the first place, there are only $N_c$ of them to set $0$ so this method only works if $N_f\geq N_c$. For reasons that will become clear later, we use the term baryonic branch for the $N_f\geq 2N_c$ solutions \eqref{eq:Higgsbranchsol} as well.
+                    
+                    One can see that the opposite case, i.e. taking only $\kappa_a$'s to vanish, with $i=0$ and $j=2N_c-N_f$, leads to a submanifold of the same branch upon interchanging $H_1$ and $H_2$, which is a symmetry (charge conjugation) of our theory, as one can also see from the F-term and D-term equation for example.
+
+                    \item \emph{non-baryonic branch}: we now set both some $\lambda_a$'s and some $\kappa_a$'s to zero, more precisely we set $\lambda_1=\dots=\lambda_i=\kappa_1=\dots=\kappa_j=0$ with $i,j\neq0$ and $i+j=2N_c-N_f$. From the constraints \eqref{eq:Higgsbrachcdt1}-\eqref{eq:Higgsbrachcdt2}, this implies that $\rho=\nu=0$ and $\kappa_a=\lambda_a$. The VEVs have the form
                     \begin{align}
                         \begin{split}
                             H_1 &= 
@@ -225,7 +234,11 @@
                             \end{bmatrix},\qquad\kappa_a\in\R^+\\
                         \end{split}\label{eq:nonbarynoicbranch}
                     \end{align}
-                    where $r\leq \lfloor N_f/2\rfloor$ and $2N_c-N_f$ columns of zeros should be deleted by the column-reduction procedure. If $N_f$ is odd, there remains at least one column of zeros in the reduced matrices. The different values of $r$ give distinct submanifolds of the branch with maximal value. Nonetheless, we will refer to them as different baryonic branches. Some non-baryonic branches can also be obtained as submanifolds of the baryonic branch by setting $\rho=\kappa_0=\tilde{\kappa}_0=0$ in \eqref{eq:barynoicbranch}. The reason for these choices of terminology will become clear latter. Non-baryonic branches exist for $N_f\geq2$. For $N_f<2$ there is no Higgs branch at all.
+                    where $r\leq \lfloor N_f/2\rfloor$ and $2N_c-N_f$ columns of zeros should be deleted by the column-reduction procedure. 
+                    
+                    If $N_f$ is odd, there remains at least one column of zeros in the reduced matrices. The different values of $r$ give distinct submanifolds of the branch with maximal value. Nonetheless, we will refer to them as different baryonic branches for reasons that will become clear later.
+                    
+                    Some non-baryonic branches can also be obtained as submanifolds of the baryonic branch by setting $\rho=\kappa_0=\tilde{\kappa}_0=0$ in \eqref{eq:barynoicbranch}. The reason for these choices of terminology will become clear latter. Non-baryonic branches exist for $N_f\geq2$, for $N_f<2$ there is no Higgs branch at all.
                 \end{itemize}
             \end{itemize}
         
@@ -233,12 +246,14 @@
 
             Let us clarify the intersection pattern of the Higgs branches. We say that two Higgs branches are \emph{separate} if any path between the two goes through a point of enhanced gauge symmetry. This implies in particular that branches that if a branch has a larger unbroken gauge group than the other, they separate.
 
-            \underline{Baryonic branch:} the $N_f\geq2N_c$ solution \eqref{eq:Higgsbranchsol} and the $N_f\leq2N_c$ solution \eqref{eq:barynoicbranch} completely break the gauge symmetry. By the Higgs mechanism, the number of massless supermultiplets is $\H=N_fN_c-N^2_c+1$. This counts the quaternionic dimension of the Higgs branch. There are submanifolds of the baryonic branch where the gauge symmetry is enhanced. These occur when two or more rows $H_1$ and $H_2$ vanish, i.e. if $\rho=\nu=0$ for \eqref{eq:Higgsbranchsol} and if $\rho=\kappa_0=0$ for \eqref{eq:barynoicbranch}, giving rise to non-baryonic branch VEV's \label{eq:nonbarynoicbranch} with
+            \underline{Baryonic branch:} the $N_f\geq2N_c$ solution \eqref{eq:Higgsbranchsol} and the $N_f\leq2N_c$ solution \eqref{eq:barynoicbranch} completely break the gauge symmetry. By the Higgs mechanism, there $N^2_c-1$ hypermultiplets that become massive so the number of massless hypermultiplets is $\H=N_fN_c-(N^2_c-1)$. This counts the quaternionic dimension of the Higgs branch. There are submanifolds of the baryonic branch where the gauge symmetry is enhanced. These occur when two or more rows of $H_1$ and $H_2$ vanish, i.e. if $\rho=\nu=0$ for \eqref{eq:Higgsbranchsol} and if $\rho=\kappa_0=0$ for \eqref{eq:barynoicbranch}, giving rise to non-baryonic branch VEV's \label{eq:nonbarynoicbranch} with
             \begin{equation}
                 r\leq \min\{N_f-N_c,N_c-2\}.\label{eq:rrange}
             \end{equation}
 
-            \underline{Non-baryonic branch:} there are non-baryonic branches with $r$ outside of the range \eqref{eq:rrange}. In general, the unbroken gauge group is $\SU(N_c-r)$ with $N_f-2r$ massless hypermultiplets in the fundamental. There are different unbroken gauge groups for different values of $r$ so they are separate branches. Higgs mechanism gives $\H=r(N_f-r)$ massless multiplets neutral under the unbroken gauge group.
+            \underline{Non-baryonic branch:} there are non-baryonic branches with $r$ outside of the range \eqref{eq:rrange}. Recall that the gauge group acts on the columns so, at a generic point, the unbroken gauge group is $\SU(N_c-r)$. 
+            
+            with $N_f-2r$ massless hypermultiplets in the fundamental. There are different unbroken gauge groups for different values of $r$ so they are separate branches. The Higgs mechanism gives mass to $2N_cr-r^2$ hypermultiplets\footnote{Since $\dim\SU(N_c)-\dim\SU(N_c-r)=2N_cr-r^2$.} therefore there are $\H=r(N_f-r)$ massless multiplets neutral under the unbroken gauge group.
 
         \subsubsection{Flavor symmetry}
 
@@ -330,7 +345,42 @@
 
     \subsection{Mixed branches}
 
+        Up until now, we have not taken the last two F-term equation into account. Whether or not the masses vanish, it has no effect on the Coulomb branch. For the Higgs branch on the other hand, it has no effect on it if and on ly the masses vanish, otherwise they put constraints on the Higgs VEVs and lifts the branch. Indeed, there are non non-zero masses for which the generic Higgs branch \eqref{eq:Higgsbranchsol} for $N_f=2N_c$ satisfies the last two F-term equations. Since the Higgs phase corresponds to flat directions along which some components of the hypermultiplet remain massless, we say that the presence of mass terms ``lifts'' these flat directions.
+
+        For mixed branches, i.e. when all both $H_1$ or $H_2$ and $\phi$ take non-vanishing VEVs, those equations are always important, even if the masses are vanishing. We suppose again that it is the case. Once again, $\phi$ can be diagonalized using color rotations. Then the last two F-term equations only have non-zero solution for $H_1,H_2$ and $\phi$ if the squarks and adjoint-scalar VEVs live in disjoint color subgroups. This leads to a clean distinction between the Higgs branches: branches with different gauge groups are distinct between because they appear as the Higgs factor of mixed branches with manifestly distinct Coulomb factors.
+
+        The other F-term and D-terms equations then implies that the VEVs can be parametrized up to gauge and flavor rotations as
+        \begin{equation}
+            \Phi=\text{diag}(0,\dots,0,\phi_{r+1},\dots,\phi_{N_c}),\qquad \phi\in\C,\qquad\sum_a\phi=0
+        \end{equation}
+        and as in \eqref{eq:nonbarynoicbranch} for the squarks. We conclude that locally, the mixed branch has the structure of a direct product of a non-baryonic Higgs branch and a Coulomb branch. This Coulomb branch can be identified with the Coulomb branch of the unbroken $\SU(N_c-r)$ gauge theory of the non-baryonic Higgs branch. Henceforth, we will refer to the mixed branch as a non-baryonic branch.
+
+    \subsection{Summary}
+
+        We summarize by recording the number $\V$ of massless $\U(1)$ vector multiplets and $\H$ of massless neutral hypermultiplets at a generic point of the moduli space:
+        \begin{figure}[H]
+            \centering
+            $
+            \begin{array}{c|c|c|c}
+                & \text{exists when} & \V & \H \\ \hline
+                \text{Barynoic branch} & N_f\geq N_c & 0 & N_fN_c-N^2_c+1 \\
+                \text{Non-baryonic branch} & N_f\geq 2 & N_c-1-r & r(N_f-r) \\
+                \text{Coulomb branch} & / & N_c-1 & 0
+            \end{array}
+            $
+        \end{figure}
+        where $1\leq r\leq \min\{\lfloor N_f/2\rfloor,N_c-2\}$. The Higgs branch intersect the Coulomb branch at the origin and, out of the Higgs branch, emanates various mixed branch which touch the Coulomb branch along submanifolds where two or more squarks are massless, which where a non-abelian gauge group is unbroken. 
+        \begin{itemize}
+            \item \textbf{Non-baryonic--Coulomb:} the non-baryonic branch intersects the Coulomb branch along a submanifold $B$. On $B$, classically, there is an $\SU(r)\times\U(1)^{N_c-r}$ unbroken gauge group with $N_f$ massless hypermultiplets in the fundamental representation of $\SU(r)$ and charged under the one of the $\U(1)$ factors (by an appropriate choice of basis of the $\U(1)'s$). 
+            \item \textbf{Baryonic--Coulomb:} the baryonic branches intersect the Coulomb branch at its origin. There, classically, the full $\SU(N_c)$ is unbroken with $N_f$ massless fundamental flavors.
+            \item \textbf{Non-baryonic--Baryonic:} the various Higgs branches connect up along a submanifold of enhanced gauge symmetry. In particular, the baryonic intersects the non-baryonic branch along a submanifold $A$ with enhanced gauge group $\SU(N_c-r)$ for $r\leq \min\{\lfloor N_f/2\rfloor,N_c-2\}$.
+        \end{itemize}
         
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.3]{Pictures/classicalmodulispace.png}
+            \caption{Map of the classical moduli space of $\mN=2$ $\SU(N_c)$ SQCD with $N_f$ fundamental flavors, from \cite{Argyres_1996}.}
+        \end{figure}
 
 \section{Quantum moduli space}
 

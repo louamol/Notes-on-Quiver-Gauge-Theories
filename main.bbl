@@ -19,6 +19,49 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Argyres_1996}{article}{}
+      \name{author}{3}{}{%
+        {{hash=54622db0e197bf87cec65814a48df2da}{%
+           family={Argyres},
+           familyi={A\bibinitperiod},
+           given={Philip\bibnamedelima C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=bc09907c4a442df4d48803b9070ed68c}{%
+           family={Plesser},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi Ronen},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c1fe5d39fd0373c9697cb4ec1c1279f3}{%
+           family={Seiberg},
+           familyi={S\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{fullhash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{bibnamehash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{authorbibnamehash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{authornamehash}{609d8a03b01091b0a215aab8f19a191d}
+      \strng{authorfullhash}{609d8a03b01091b0a215aab8f19a191d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{month}{7}
+      \field{number}{1-2}
+      \field{title}{The moduli space of vacua of N = 2 {SUSY} {QCD} and duality in N = 1 {SUSY} {QCD}}
+      \field{volume}{471}
+      \field{year}{1996}
+      \field{pages}{159\bibrangedash 194}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1016/0550-3213(96)00210-6
+      \endverb
+    \endentry
     \entry{he2004lectures}{misc}{}
       \name{author}{1}{}{%
         {{hash=a4fd5a8285710d8bd6688b748c7cc5fd}{%
@@ -34,8 +77,8 @@
       \strng{authornamehash}{a4fd5a8285710d8bd6688b748c7cc5fd}
       \strng{authorfullhash}{a4fd5a8285710d8bd6688b748c7cc5fd}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -66,8 +109,8 @@
       \strng{authorbibnamehash}{2d39ab4237decd67b581c085053bc278}
       \strng{authornamehash}{2d39ab4237decd67b581c085053bc278}
       \strng{authorfullhash}{2d39ab4237decd67b581c085053bc278}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -101,8 +144,8 @@
       \strng{authorbibnamehash}{1410f0973a0a12d9fbe14121b8d047a4}
       \strng{authornamehash}{1410f0973a0a12d9fbe14121b8d047a4}
       \strng{authorfullhash}{1410f0973a0a12d9fbe14121b8d047a4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{10}
@@ -140,8 +183,8 @@
       \strng{authorbibnamehash}{44297e33535e8cd1aa927ea98528b83f}
       \strng{authornamehash}{44297e33535e8cd1aa927ea98528b83f}
       \strng{authorfullhash}{44297e33535e8cd1aa927ea98528b83f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1079-7114}
@@ -185,8 +228,8 @@
       \strng{authorbibnamehash}{4601784a035f9c011701276652a0fce1}
       \strng{authornamehash}{4601784a035f9c011701276652a0fce1}
       \strng{authorfullhash}{4601784a035f9c011701276652a0fce1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0550-3213}
@@ -226,8 +269,8 @@
       \strng{authorbibnamehash}{bf70cd910ea0644a2cd1db5704ad2d37}
       \strng{authornamehash}{bf70cd910ea0644a2cd1db5704ad2d37}
       \strng{authorfullhash}{bf70cd910ea0644a2cd1db5704ad2d37}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1029-8479}
@@ -256,8 +299,8 @@
       \strng{authorbibnamehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \strng{authornamehash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
       \strng{authorfullhash}{a62e7ffc76ae0fdd3fcbc43740369ddd}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-th}
@@ -298,8 +341,8 @@
       \strng{authorbibnamehash}{e4640af9ccbe04a3006a13ca7cd8b0a2}
       \strng{authornamehash}{e4640af9ccbe04a3006a13ca7cd8b0a2}
       \strng{authorfullhash}{5ccad494fd894b0988427c00b9b2f3f8}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Commun. Math. Phys.}
@@ -340,8 +383,8 @@
       \strng{authorbibnamehash}{80b5dafe7fb6cde0f17924adefb0f0d8}
       \strng{authornamehash}{80b5dafe7fb6cde0f17924adefb0f0d8}
       \strng{authorfullhash}{80b5dafe7fb6cde0f17924adefb0f0d8}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00029947}
@@ -725,8 +768,8 @@
       \strng{authorbibnamehash}{2f0b4153d51f5610cacdfcc92ef72560}
       \strng{authornamehash}{2f0b4153d51f5610cacdfcc92ef72560}
       \strng{authorfullhash}{9c2294306abf37c042d9ad77c231a94e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nuclear Physics B}
@@ -1160,8 +1203,8 @@
       \strng{authorbibnamehash}{5f6ae2187172f218b00ce9263261b400}
       \strng{authornamehash}{5f6ae2187172f218b00ce9263261b400}
       \strng{authorfullhash}{5f6ae2187172f218b00ce9263261b400}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Lecture Notes on Quiver Representations and Moduli Problems in Algebraic Geometry}
@@ -1483,8 +1526,8 @@
       \strng{authorbibnamehash}{6d1163e98744717ed0bfa9446a02fcac}
       \strng{authornamehash}{6d1163e98744717ed0bfa9446a02fcac}
       \strng{authorfullhash}{6d1163e98744717ed0bfa9446a02fcac}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Superconformal D-branes and moduli spaces}
@@ -1903,8 +1946,8 @@
       \strng{authorbibnamehash}{d0e849f1e55562194cebe2bdfa93aa52}
       \strng{authornamehash}{d0e849f1e55562194cebe2bdfa93aa52}
       \strng{authorfullhash}{d0e849f1e55562194cebe2bdfa93aa52}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Duality in N=2 SUSY SU(2) Yang-Mills Theory: A pedagogical introduction to the work of Seiberg and Witten}
@@ -1920,50 +1963,6 @@
       \verb https://arxiv.org/abs/hep-th/9601007
       \endverb
       \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
-    \endentry
-    \entry{Argyres_1996}{article}{}
-      \name{author}{3}{}{%
-        {{hash=54622db0e197bf87cec65814a48df2da}{%
-           family={Argyres},
-           familyi={A\bibinitperiod},
-           given={Philip\bibnamedelima C.},
-           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=bc09907c4a442df4d48803b9070ed68c}{%
-           family={Plesser},
-           familyi={P\bibinitperiod},
-           given={M.\bibnamedelimi Ronen},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=c1fe5d39fd0373c9697cb4ec1c1279f3}{%
-           family={Seiberg},
-           familyi={S\bibinitperiod},
-           given={Nathan},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier {BV}}%
-      }
-      \strng{namehash}{609d8a03b01091b0a215aab8f19a191d}
-      \strng{fullhash}{609d8a03b01091b0a215aab8f19a191d}
-      \strng{bibnamehash}{609d8a03b01091b0a215aab8f19a191d}
-      \strng{authorbibnamehash}{609d8a03b01091b0a215aab8f19a191d}
-      \strng{authornamehash}{609d8a03b01091b0a215aab8f19a191d}
-      \strng{authorfullhash}{609d8a03b01091b0a215aab8f19a191d}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nuclear Physics B}
-      \field{month}{7}
-      \field{number}{1-2}
-      \field{title}{The moduli space of vacua of N = 2 {SUSY} {QCD} and duality in N = 1 {SUSY} {QCD}}
-      \field{volume}{471}
-      \field{year}{1996}
-      \true{nocite}
-      \field{pages}{159\bibrangedash 194}
-      \range{pages}{36}
-      \verb{doi}
-      \verb 10.1016/0550-3213(96)00210-6
-      \endverb
     \endentry
   \enddatalist
 \endrefsection
