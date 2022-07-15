@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1657871165 "main.bcf" "main.bbl" "main" 1657874181
-  "bibliography.bib" 1657720814 19679 cb8c6fcf9e783b96db0816cda2c380ca ""
-  "main.bcf" 1657874181 106120 c6836c10b31cd34cf7330fed781e4e12 "pdflatex"
+["biber main"] 1657904036 "main.bcf" "main.bbl" "main" 1657904449
+  "bibliography.bib" 1657904032 20022 fb6f391448d013083db7543dd2e8f363 ""
+  "main.bcf" 1657904449 106120 c6836c10b31cd34cf7330fed781e4e12 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1657874179 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1657874181
+["pdflatex"] 1657904447 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1657904449
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1607267403 25420 f2c23a7c3a7fea5cb4ae4a632310af13 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1607273539 31952 3c609752e07479b75f1400c325a21382 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1607267403 40136 52321c4f09ab9f3c383093364073b7e8 ""
@@ -371,18 +371,18 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty" 1609679784 2275 d29aca6fd67823551cb07584e3681d5d ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-base.sty" 1609679784 20688 beaddf14d96104d4bf016523be5395c5 ""
   "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" 1657718546 727 5af3aab89aac3edd6d6d31ad8c929f4c ""
-  "N2fieldtheories.aux" 1657874180 10383 0979b4305b7b8652c5364d92deeb4d2f "pdflatex"
-  "N2fieldtheories.tex" 1657874178 33996 c4368a2615f0db9b1e9eaaf9199d38ab ""
+  "N2fieldtheories.aux" 1657904449 10887 83f9ae5279ef57004ed5e7106c2bddc2 "pdflatex"
+  "N2fieldtheories.tex" 1657904446 38684 a34d92c276f2c7b7da84513a7c754d8f ""
   "Packages/custom_macros.tex" 1657804334 5520 6d23c5ece779a11f4f3cd6594b1cc7ff ""
   "Packages/custom_packages.tex" 1657636675 5440 250cfb4224b2888ab21aed5b07ddece2 ""
   "Pictures/classicalmodulispace.png" 1657807531 66004 b0d69376d115d61cb5f96e8d03634cfd ""
-  "main.aux" 1657874180 5591 184aa1d32382f493bd0cd4f441ed85ea "pdflatex"
-  "main.bbl" 1657871167 73663 f799ad8b879b5ff16bda40beb4e1ae2e "biber main"
-  "main.out" 1657874180 3162 9651644d8d83fedfca648a87a20d0ff4 "pdflatex"
-  "main.run.xml" 1657874181 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
-  "main.tdo" 1657874181 341 2a93f79a861d1692f49de852018fd5f8 "pdflatex"
+  "main.aux" 1657904449 5798 f3b2125fa797a2cd85b7620c69b97e54 "pdflatex"
+  "main.bbl" 1657904037 75518 0696b29670653304d43995f3d3580330 "biber main"
+  "main.out" 1657904449 3202 470dd977ab242252b145cd70bf8fe484 "pdflatex"
+  "main.run.xml" 1657904449 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
+  "main.tdo" 1657904449 427 7b547e1a2490c27a69f361ffced21989 "pdflatex"
   "main.tex" 1657718546 727 5af3aab89aac3edd6d6d31ad8c929f4c ""
-  "main.toc" 1657874181 2416 0d500af617209fd2b4a5a92a1f89b55f "pdflatex"
+  "main.toc" 1657904449 2488 92b9040d93f03ef1a2c8c7f991ab73c8 "pdflatex"
   (generated)
   "N2fieldtheories.aux"
   "main.aux"

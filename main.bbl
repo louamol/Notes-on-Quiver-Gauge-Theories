@@ -1136,6 +1136,7 @@
       \strng{authorbibnamehash}{a06b7dd3976716617ec602a513d6dbf5}
       \strng{authornamehash}{a06b7dd3976716617ec602a513d6dbf5}
       \strng{authorfullhash}{dbef7b08c340228a290ece7afafc16da}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -1956,13 +1957,61 @@
       \verb{doi}
       \verb 10.48550/ARXIV.HEP-TH/9601007
       \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/hep-th/9601007
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/hep-th/9601007
-      \endverb
       \keyw{High Energy Physics - Theory (hep-th),FOS: Physical sciences,FOS: Physical sciences}
+    \endentry
+    \entry{Argurio_2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=96430ff77e7aea5fff33cb800561a10e}{%
+           family={Argurio},
+           familyi={A\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=31874127f1f26cf065aad5e2fd6bdccb}{%
+           family={Forcella},
+           familyi={F\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2243bd7bf99f107456b09f40331001e5}{%
+           family={Mariotti},
+           familyi={M\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=282cc7d68177d4e23c78019555ec47b4}{%
+           family={Musso},
+           familyi={M\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a19caf50a1cdd040b28957276c2e873c}{%
+           family={Petersson},
+           familyi={P\bibinitperiod},
+           given={Christoffer},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{a06b7dd3976716617ec602a513d6dbf5}
+      \strng{fullhash}{0565b4a63500f0001f8ba28d57cdec64}
+      \strng{bibnamehash}{a06b7dd3976716617ec602a513d6dbf5}
+      \strng{authorbibnamehash}{a06b7dd3976716617ec602a513d6dbf5}
+      \strng{authornamehash}{a06b7dd3976716617ec602a513d6dbf5}
+      \strng{authorfullhash}{0565b4a63500f0001f8ba28d57cdec64}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Field theory interpretation of $\mN=2$ stringy instantons}
+      \field{volume}{2013}
+      \field{year}{2013}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/jhep02(2013)002
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

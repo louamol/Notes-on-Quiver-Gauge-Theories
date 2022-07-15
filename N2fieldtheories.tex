@@ -1,6 +1,6 @@
 \part{Non-singular case}
 
-\section{$\mN=2$ $\SU(N_c)$ supersymmetric field theories}
+\section{The model}
 
     We consider an $\mN=2$ gauge theory with gauge group $\SU(N_c)$ and with $N_f$ hypermultiplets, i.e. $\mN=2$ SQCD with $N_c$ colors and $N_f$ flavors. Recall the following decomposition of $\mN=2$ superfields in terms of $\mN=1$ superfields:
     \begin{align}
@@ -117,7 +117,7 @@
         \begin{equation}
             \phi = \sum_I \phi_Ih^I
         \end{equation}
-        where $h^I=E_{I,I}-E_{I+1,I+1}$ with $(E_{I,J})_{ab}=\delta_{aI}\delta{bJ}\equiv$ are the generators of the Cartan subalgebra and $I=1,\dots N_c-1$ ($N_c-1$ is the rank of $\mathfrak{su}(N_c)$). In simpler words, the vacuum configurations are of the form
+        where $h^I=E_{I,I}-E_{I+1,I+1}$ with $(E_{I,J})_{ab}=\delta_{aI}\delta_{bJ}\equiv$ are the generators of the Cartan subalgebra and $I=1,\dots N_c-1$ ($N_c-1$ is the rank of $\mathfrak{su}(N_c)$). In simpler words, the vacuum configurations are of the form
         \begin{equation}
             \phi=\text{diag}(\phi_1,\dots,\phi_{N_c}),\qquad \sum^{N_c}_{a=1}\phi_a=0.\label{eq:diagform}
         \end{equation}
@@ -131,7 +131,12 @@
         \begin{equation}
             u_2=\sum_{i<j}\phi_i\phi_j,\quad u_3=\sum_{i<j<k}\phi_i\phi_j\phi_k,\quad \dots,\quad u_{N_c}=\phi_1\dots \phi_{N_c}, \qquad i,j,k=1,\dots,N_c.
         \end{equation}
-        It has an orbifold singularity along submanifolds where some of the $\phi_a$'s are equal. In this case, some of the non-abelian gauge symmetry is restored. The scalar potential gives the mass of the fields $H_1$ and $H_2$ as $\phi_a+m_i$. The vanishing of these masses describes a complex co-dimension $1$ submanifold of the Coulomb branch. 
+        It has an orbifold singularity along submanifolds where some of the $\phi_a$'s are equal. In this case, some of the non-abelian gauge symmetry is restored. The scalar potential gives the mass of the fields $H_1$ and $H_2$ as $\phi_a+m_i$. The vanishing of these masses describes a complex co-dimension $1$ submanifold of the Coulomb branch.
+
+        The SW curve describing the Coulomb branch for vanishing masses is
+        \begin{equation}
+            y^2=\prod^{N_c}_{a=1}(x-\phi_a)^2+4\Lambda^{2N_c-N_f}x^{N_f}.\label{eq:SWcurveCoulombbranch}
+        \end{equation}
 
     \subsection{Higgs branch}
 
@@ -246,7 +251,7 @@
 
             Let us clarify the intersection pattern of the Higgs branches. We say that two Higgs branches are \emph{separate} if any path between the two goes through a point of enhanced gauge symmetry. This implies in particular that if a branch has a larger unbroken gauge group than the other, they are separate.
 
-            \underline{Baryonic branch:} the $N_f\geq2N_c$ solution \eqref{eq:Higgsbranchsol} and the $N_f\leq2N_c$ solution \eqref{eq:baryonicbranch} completely break the gauge symmetry. By the Higgs mechanism, there are $N^2_c-1$ hypermultiplets that become massive so the number of massless hypermultiplets is $\H=N_fN_c-(N^2_c-1)$. This counts the quaternionic dimension of the Higgs branch. There are submanifolds of the baryonic branch where the gauge symmetry is enhanced. These occur when two or more rows of $H_1$ and $H_2$ vanish, i.e. if $\rho=\nu=0$ for \eqref{eq:Higgsbranchsol} and if $\rho=\kappa_0=0$ for \eqref{eq:baryonicbranch}, giving rise to non-baryonic branch VEV's \label{eq:nonbaryonicbranch} with
+            \underline{Baryonic branch:} the $N_f\geq2N_c$ solution \eqref{eq:Higgsbranchsol} and the $N_f\leq2N_c$ solution \eqref{eq:baryonicbranch} completely break the gauge symmetry. By the Higgs mechanism, there are $N^2_c-1$ hypermultiplets that become massive so the number of massless hypermultiplets is $\H=N_fN_c-(N^2_c-1)$. This counts the quaternionic dimension of the Higgs branch. There are submanifolds of the baryonic branch where the gauge symmetry is enhanced. These occur when two or more rows of $H_1$ and $H_2$ vanish, i.e. if $\rho=\nu=0$ for \eqref{eq:Higgsbranchsol} and if $\rho=\kappa_0=0$ for \eqref{eq:baryonicbranch}, giving rise to non-baryonic branch VEV's \eqref{eq:nonbaryonicbranch} with
             \begin{equation}
                 r\leq \min\{N_f-N_c,N_c-2\}.\label{eq:rrange}
             \end{equation}
@@ -349,7 +354,7 @@
 
         The other F-term and D-terms equations then implies that the VEV's can be parametrized up to gauge and flavor rotations as
         \begin{equation}
-            \Phi=\text{diag}(0,\dots,0,\phi_{r+1},\dots,\phi_{N_c}),\qquad \phi\in\C,\qquad\sum_a\phi=0
+            \Phi=\text{diag}(0,\dots,0,\phi_{r+1},\dots,\phi_{N_c}),\qquad \phi_a\in\C,\qquad\sum_a\phi_a=0
         \end{equation}
         and as in \eqref{eq:nonbaryonicbranch} for the squarks. We conclude that locally, the mixed branch has the structure of a direct product of a non-baryonic Higgs branch and a Coulomb branch. This Coulomb branch can be identified with the Coulomb branch of the unbroken $\SU(N_c-r)$ gauge theory of the non-baryonic Higgs branch. Henceforth, we will refer to the mixed branch as a non-baryonic branch.
 
@@ -358,13 +363,13 @@
         We summarize by recording the number $\V$ of massless $\U(1)$ vector multiplets and $\H$ of massless neutral hypermultiplets at a generic point of the moduli space. The classical moduli space is composed of the following branches:
         \begin{itemize}
             \item \textbf{Baryonic branch:} exists for $N_f\geq N_c$ with \eqref{eq:baryonicbranch} when $N_c\leq N_f<2N_c$ and \eqref{eq:Higgsbranchsol} when $N_f\geq 2N_c$. It has $\V=0$ and $\H=N_fN_c-N^2_c+1$.
-            \item \textbf{Non-baryonic branches:} contains the mixed branches and part of the Higgs branch: \eqref{eq:nonbaryonicbranch} when $2\leq N_f<2N_c$. It has $\V=N_c-1-r$ and $\H= r(N_f-r)$ with $1\leq r\leq \min\{\lfloor N_f/2\rfloor,N_c-2\}$. Each $r$ parametrizes a different branch.
+            \item \textbf{Non-baryonic branches:} contains the mixed branches and part of the Higgs branch: \eqref{eq:nonbaryonicbranch} when $2\leq N_f<2N_c$, that are labelled with an integer $1\leq r\leq \min\{\lfloor N_f/2\rfloor,N_c-2\}$. It has $\V=N_c-1-r$ and $\H= r(N_f-r)$.
             \item \textbf{Coulomb branch:} it has $\V=N_c-1$ and $\H=0$.
         \end{itemize}
         The Higgs branch intersect the Coulomb branch at the origin and, out of the Higgs branch, emanates various mixed branch which touch the Coulomb branch along submanifolds where two or more squarks are massless and whiwh is where also, classically, a non-abelian gauge group is unbroken. More precisely, these branches are arranged in the following way:
         \begin{itemize}
-            \item \textbf{Non-baryonic--Coulomb:} the non-baryonic branch intersects the Coulomb branch along a submanifold $B$. On $B$, classically, there is an $\SU(r)\times\U(1)^{N_c-r}$ unbroken gauge group with $N_f$ massless hypermultiplets in the fundamental representation of $\SU(r)$ and charged under the one of the $\U(1)$ factors (by an appropriate choice of basis of the $\U(1)'s$). 
-            \item \textbf{Baryonic--Coulomb:} the baryonic branches intersect the Coulomb branch at its origin. There, classically, the full $\SU(N_c)$ is unbroken with $N_f$ massless fundamental flavors.
+            \item \textbf{Non-baryonic--Coulomb:} the non-baryonic branch intersects the Coulomb branch along a submanifold $B$, whose points are called \emph{non-baryonic roots}. On $B$, classically, there is an $\SU(r)\times\U(1)^{N_c-r}$ unbroken gauge group with $N_f$ massless hypermultiplets in the fundamental representation of $\SU(r)$ and charged under the one of the $\U(1)$ factors (by an appropriate choice of basis of the $\U(1)$'s). 
+            \item \textbf{Baryonic--Coulomb:} the baryonic branches intersect the Coulomb branch at its origin, which can then be called \emph{baryonic root}. There, classically, the full $\SU(N_c)$ is unbroken with $N_f$ massless fundamental flavors.
             \item \textbf{Non-baryonic--Baryonic:} the various Higgs branches connect up along a submanifold of enhanced gauge symmetry. In particular, the baryonic intersects the non-baryonic branch along a submanifold $A$ with enhanced gauge group $\SU(N_c-r)$ for $r\leq \min\{\lfloor N_f/2\rfloor,N_c-2\}$.
         \end{itemize}
         
@@ -374,18 +379,64 @@
             \caption{Map of the classical moduli space of $\mN=2$ $\SU(N_c)$ SQCD with $N_f$ fundamental flavors, from \cite{Argyres_1996}.}
         \end{figure}
 
-\section{Quantum moduli space}
+\section{Quantum moduli space}\label{secquantummodulispaceSU}
 
-\section{Quantum Higgs branches and the non-renormalization theorem}
+    There are no quantum corrections to the baryonic and non baryonic branches, only the coulomb branch receives quantum corrections. However, the baryonic and non-baryonic roots can be modified. The mixed non-baryonic branch will retain its classical product structure.
 
-\section{Higgs branch roots}
+    The baryonic root is a single point, invariant under the $\Z_{2N_c-N_f}$ R-symmetry. Its coordinates on the Coulomb branch are
+    \begin{equation}
+        \Phi_{\text{bb}}(\underbrace{0,\dots,0}_{N_f-N_c},\phi\omega,\phi\omega^2,\dots,\phi\omega^{2N_c-N_c})\label{eq:quantumbaryonicroot}
+    \end{equation}
+    with $\omega\equiv\zeta_{2N_c-N_f}=e^{i\frac{2\pi}{2N_c-N_f}}$ for some value of $\phi$. Classically, $\phi=0$. The gauge group is thus unbroken to $\SU(N_f-N_c)\times\U(1)^{2N_c-N_f}$, which is IR free, if we assume that $N_f<2N_c$ so that the original theory is UV free. The requirement that the Higgs branch originates from this root implies the presence of $2N_c-N_f$ massless hypermultiplets charged under the $\U(1)$ factors, this singles out the point $\phi=\Lambda$ in the submanifold \eqref{eq:quantumbaryonicroot}.
 
-    \subsection{Non-baryonic root}
-
-    \subsection{Baryonic root}
+    Substituting this in the SW curve \eqref{eq:SWcurveCoulombbranch}, we get the singular form
+    \begin{equation}
+        y^2=x^{2(N_f-N_c)}(x^{2N_c-N_f}+\Lambda^{2N_c-N_f})^2.
+    \end{equation}
 
 \part{$A_1$ singularity}
 
-\part{$A_n$ singularity}
+\section{The model}
+
+\section{RG flow}
+
+    \begin{equation}
+        \beta=\pm 2M\label{eq:betafct}
+    \end{equation}
+
+\section{Cascading vacuum}
+
+    The perturbative RG flow of the $\SU(N+M)\times\SU(N)$ theory is given by \eqref{eq:betafct}. It such that the largest group goes at strong coupling at a scale $\Lambda$. The dual supergravity solution suggests that, in the dual vacuum, a mechanism effectively reduces the gauge group as
+    \begin{equation}
+        \SU(N+M)\times\SU(N)\to\SU(N-M)\times\SU(N)\label{eq:gaugegroupereduction}
+    \end{equation}
+    below $\Lambda$, plus possible $\U(1)$ factors. 
+    
+    This statement is supported by a computation of Page charges in supergravity:
+    \begin{align}
+        Q^{\text{Page}}_{\text{D3}} &= -\frac{1}{4\pi^2\alpha'}\int (F_5+B_2\wedge F_3))=N+M\left(\frac{g_sM}{\pi}\log\frac{r}{\rho_0}\right),\\
+        Q^{\text{Page}}_{\text{D5}} &= -\frac{1}{4\pi^2\alpha'}\int F_3=2M
+    \end{align}
+    with $\rho\equiv\abs{z}$. Positivity of the charges implies that
+    \begin{equation}
+        r>(e^{-\frac{\pi}{g_sM}})^{\frac{N}{M}}\rho_0.
+    \end{equation}
+    This shows that the reduction of the gauge group \eqref{eq:gaugegroupereduction} does not only happens at the first strong coupling scale $\Lambda$ but actually each generalized enhançon, occuring at scales
+    \begin{equation}
+        \rho_k=\Lambda_k\equiv e^{-\frac{\pi(k-1)}{g_sM}}\Lambda_1 = e^{-\frac{\pi(2k+1)}{2g_sM}}\rho_0, \qquad k=1,\dots,l
+    \end{equation}
+    where $N=lM+p$, i.e. $l=\lfloor N/M\rfloor$ and $\Lambda_1\equiv\Lambda$.
+
+    \subsection{Solving in a corner of the parameter space}
+
+        To start, we focus on the first such generalized enhançon, which accurs at scale $\Lambda_1$. This will be a prototype for each generalized enhançon. Moreover, for simplicity, we can consider a corner of the parameter space of the gauge theory: the limit $Ng^2_{\text{min}}\to0$. In this limit, the gauge dynamics of the second factor in the gauge group decouples and effectively becomes a global symmetry. Consequently, the theory around $\Lambda_1$ is $\SU(N+M)$ SQCD with $2N$ flavors. The VEV's for the smaller group adjoint-scalar effectively behaves as asses for the larger group hypermultiplets. In this case, we are out of the supergravity approximation but it will still give some good insights.
+
+        We discussed the form of the quantum baryonic root in \ref{secquantummodulispaceSU}. We found that it preserves the same $\Z_{2N_c-N_f}\Z_{2M}$ R-symmetry as the supergravity solution we are discussing. Moreover, its low energy effective theory possesses an $\SU(N_f-N_c)=\SU(N-M)$ gauge symmetry. This precisely mathes the numerology of the cascading interpretation. Hencre, iterating the same procedure at the subsequent generalized enhançon $\Lambda_k$ (where the higher rank gauge group coupling diverges), it is natural to propose the supergravity solutions in \todo{to complete} (excised only down at the true enhançon $\rho_{\text{min}}$) to be dual to a cascading $\SU(N+M)\times\SU(N)$ quiver gauge theory at subsequent baryonic roots of the strongly coupled gauge groups.
+
+    \subsection{Cascading vacuum in the quiver gauge theory}
+
+
+
+\section{Generalization to $A_n$ singularity}
 
 \part{$\D_4$ singularity}
