@@ -23,20 +23,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4}Summary}{9}{subsection.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Quantum moduli space}{10}{section.3}%
+\contentsline {section}{\numberline {3}Quantum moduli space}{11}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{II\hspace {1em}$A_1$ singularity}{11}{part.2}%
+\contentsline {subsection}{\numberline {3.1}Non-baryonic roots}{11}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}The model}{11}{section.4}%
+\contentsline {subsection}{\numberline {3.2}Baryonic root}{11}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}RG flow}{11}{section.5}%
+\contentsline {subsection}{\numberline {3.3}Summary}{11}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Cascading vacuum}{11}{section.6}%
+\contentsline {part}{II\hspace {1em}$A_1$ singularity}{12}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Solving in a corner of the parameter space}{11}{subsection.6.1}%
+\contentsline {section}{\numberline {4}The model}{12}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Cascading vacuum in the quiver gauge theory}{12}{subsection.6.2}%
+\contentsline {section}{\numberline {5}RG flow}{12}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Generalization to $A_n$ singularity}{12}{section.7}%
+\contentsline {section}{\numberline {6}Cascading vacuum}{12}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{III\hspace {1em}$\mathcal {D}_4$ singularity}{12}{part.3}%
+\contentsline {subsection}{\numberline {6.1}Solving in a corner of the parameter space}{12}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Cascading vacuum in the quiver gauge theory}{13}{subsection.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Generalization to $A_n$ singularity}{13}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{III\hspace {1em}$\mathcal {D}_4$ singularity}{13}{part.3}%
