@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1658158352 "main.bcf" "main.bbl" "main" 1658158362
+["biber main"] 1658240184 "main.bcf" "main.bbl" "main" 1658241595
   "bibliography.bib" 1657904032 20022 fb6f391448d013083db7543dd2e8f363 ""
-  "main.bcf" 1658158362 106120 c6836c10b31cd34cf7330fed781e4e12 "pdflatex"
+  "main.bcf" 1658241594 106120 c6836c10b31cd34cf7330fed781e4e12 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1658158360 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1658158362
+["pdflatex"] 1658241593 "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" "main.pdf" "main" 1658241595
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0900.pk" 1611418443 22504 5687b8afeb2756cbcb6ccaceec3a53ef ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1607267403 25420 f2c23a7c3a7fea5cb4ae4a632310af13 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1607273539 31952 3c609752e07479b75f1400c325a21382 ""
@@ -102,6 +102,7 @@
   "/home/louan/.miktex/texmfs/install/fonts/tfm/public/latex-fonts/lasyb10.tfm" 1605294561 520 4bf1455197d190cb95c579bde4c2f0ba ""
   "/home/louan/.miktex/texmfs/install/fonts/tfm/public/stix/stix-mathfrak.tfm" 1639818885 1768 da596289b8f971781ec2fb6de90ff57a ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1623060326 34811 78b52f49e893bcba91bd7581cdc144c0 ""
+  "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb" 1623060326 32007 e8fa0078355f39467039935974716569 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1623060326 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1623060326 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1623060326 36741 fa121aac0049305630cf160b86157ee4 ""
@@ -127,6 +128,7 @@
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb" 1623060326 39386 0bb525d495ceab21fe797301a586e0d7 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb" 1623060326 21098 d4aee7c0aac232caac5688b586b9363c ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1623060326 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm5.pfb" 1623060326 35457 884c5a936fbb3fae6a4c18058662d654 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1623060326 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "/home/louan/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii" 1605294575 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/home/louan/.miktex/texmfs/install/tex/generic/atbegshi/atbegshi.sty" 1623060326 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -385,18 +387,18 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty" 1609679784 2275 d29aca6fd67823551cb07584e3681d5d ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-base.sty" 1609679784 20688 beaddf14d96104d4bf016523be5395c5 ""
   "/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex" 1657718546 727 5af3aab89aac3edd6d6d31ad8c929f4c ""
-  "N2fieldtheories.aux" 1658158361 11398 659a4e24632ca5a153082760c3723fb1 "pdflatex"
-  "N2fieldtheories.tex" 1658158355 41245 25b3ac1ce51549464e31afaba283060f ""
+  "N2fieldtheories.aux" 1658241594 11838 59c755b063d4993b333396687b893fdf "pdflatex"
+  "N2fieldtheories.tex" 1658241589 46876 50689c9cfe03caea940ba9b78a52f560 ""
   "Packages/custom_macros.tex" 1657804334 5520 6d23c5ece779a11f4f3cd6594b1cc7ff ""
   "Packages/custom_packages.tex" 1657636675 5440 250cfb4224b2888ab21aed5b07ddece2 ""
   "Pictures/classicalmodulispace.png" 1657807531 66004 b0d69376d115d61cb5f96e8d03634cfd ""
-  "main.aux" 1658158362 5797 751a4bbbb50ea349cd66b459480fe3cb "pdflatex"
-  "main.bbl" 1658158353 75518 0696b29670653304d43995f3d3580330 "biber main"
-  "main.out" 1658158362 3572 ade3526b8264422260409da7f5dca6aa "pdflatex"
-  "main.run.xml" 1658158362 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
-  "main.tdo" 1658158362 427 0b7e7ef3af8e3092e5eb262b24bc7c4a "pdflatex"
+  "main.aux" 1658241594 5797 da04467c59b838fd80c0c9ed57cf2980 "pdflatex"
+  "main.bbl" 1658240186 75518 0696b29670653304d43995f3d3580330 "biber main"
+  "main.out" 1658241594 3943 2627aded41d22342600d05650643a595 "pdflatex"
+  "main.run.xml" 1658241594 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
+  "main.tdo" 1658241594 427 4cfeb79a6dc28fa32a36980156d68db3 "pdflatex"
   "main.tex" 1657718546 727 5af3aab89aac3edd6d6d31ad8c929f4c ""
-  "main.toc" 1658158362 2832 15c291fda756e945610cb84c98a52709 "pdflatex"
+  "main.toc" 1658241594 3084 ce7e81585bae5528038c77c5c15459ef "pdflatex"
   (generated)
   "N2fieldtheories.aux"
   "main.aux"

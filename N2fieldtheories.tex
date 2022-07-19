@@ -388,7 +388,7 @@
             \G &= \dim_\R(G_{\text{global}}/H_{\text{global}}) = \dim_\R G_{\text{global}} - \dim_\R H_{\text{global}}\\
             \V &= 
         \end{align*}
-        where $H\subset G_{\text{global}}$ is the stabilizer of the vacuum configuration, i.e. the unbroken gauge group.
+        where $H\subset G$ is the unbroken gauge/global group.
 
         The Higgs branch intersect the Coulomb branch at the origin and, out of the Higgs branch, emanates various mixed branch which touch the Coulomb branch along submanifolds where two or more squarks are massless and whiwh is where also, classically, a non-abelian gauge group is unbroken. More precisely, these branches are arranged in the following way:
         \begin{itemize}
@@ -412,19 +412,23 @@
     \subsection{Non-baryonic roots}
 
         
+        
 
     \subsection{Baryonic root}
 
-        The baryonic root is a single point, invariant under the $\Z_{2N_c-N_f}$ R-symmetry. Its coordinates on the Coulomb branch are
+        For $N_f\leq 2N_c$ (UV free theory), $\U(1)_R$ symmetry of the classical theory is broken down by anomalies to a discrete $\Z_{2N_c-N_f}$ symmetry, which acts on the VEV of $\phi$ by a phase. By the non-renormalization theorem, the fact that the baryonic root is a single point cannot be modified at quantum level. The most general VEV for $\phi$ is therefore a single point invariant under $\Z_{2N_c-N_f}$ thus its coordinates on the Coulomb branch are
         \begin{equation}
             \Phi_{\text{bb}}=\text{diag}(\underbrace{0,\dots,0}_{N_f-N_c},\phi\omega,\phi\omega^2,\dots,\phi\omega^{2N_c-N_f})\label{eq:quantumbaryonicroot}
         \end{equation}
-        with $\omega\equiv\zeta_{2N_c-N_f}=e^{i\frac{2\pi}{2N_c-N_f}}$ for some value of $\phi$. Classically, $\phi=0$. The gauge group is thus unbroken to $\SU(N_f-N_c)\times\U(1)^{2N_c-N_f}$, which is IR free, if we assume that $N_f<2N_c$ so that the original theory is UV free. The requirement that the Higgs branch originates from this root implies the presence of $2N_c-N_f$ massless hypermultiplets charged under the $\U(1)$ factors, this singles out the point $\phi=\Lambda$ in the submanifold \eqref{eq:quantumbaryonicroot}.
+        with $\omega\equiv\zeta_{2N_c-N_f}=e^{i\frac{2\pi}{2N_c-N_f}}$ for some value of $\phi\in\C$. There is only one such point, up to overall renormalization, since the components of $\phi$ are identified up tu permutations. Classically, $\phi=0$. The gauge group is thus unbroken to $\SU(N_f-N_c)\times\U(1)^{2N_c-N_f}$, which is IR free. There are $N_f$ fundamental hypermultiplets. 
+        
+        Since this theory is IR free, the gauge symmetry is expected to survive at quantum level. However, quantum effects could change this effective theory by bringing additional light degrees of freedom. In particular, there are many point on the submanifold \eqref{eq:quantumbaryonicroot} where monopoles singlets charged under the $\U(1)$ factors become massless. One can show that this theory does not have any purely hypermultiplet Higgs branch, like the baryonic one, unless there is at least one singlet charged under each $\U(1)$ factor. Does such a point exists in \eqref{eq:quantumbaryonicroot}? Using the exact solution, one can show that such a point exist, with precisely $2N_c-N_f$ massless hypermultiplets charged under the $\U(1)$ factors. This singles out the point $\phi=\Lambda$ in the submanifold \eqref{eq:quantumbaryonicroot}.
 
         Substituting this in the SW curve \eqref{eq:SWcurveCoulombbranch}, we get the singular form
         \begin{equation}
             y^2=x^{2(N_f-N_c)}(x^{2N_c-N_f}+\Lambda^{2N_c-N_f})^2.
         \end{equation}
+        The $x^{2(N_f-N_c)}$ factor corresponds to the unbroken $\SU(N_f-N_c)$ gauge group. The remaining $2(2N_c-N_f)$ branch points show up in coincident pairs, located at $x_k=\Lambda\omega^{k-\frac{1}{2}}$ with $k=1,\dots,2N_c-N_f$, corresponding to the $2N_c-N_f$ mutually local massless hypermultiplets.
 
     \subsection{Summary}
 
@@ -437,7 +441,77 @@
 
 \part{$A_1$ singularity}
 
-\section{The model}
+\section{The quiver gauge theory}
+
+    \subsection{Content and lagrangian}
+
+        We consider $N$ D$3$-branes at on an $A_1$ singularity, i.e. probing the transverse space $C\times\C/\Z_2$ and located at the singularity. The usual orbifold projection for $\Gamma=\Z_2$ gives us $\rho=\rho^{N_0}_0\oplus\rho^{N_1}_1$ so the projected gauge group is $G=\U(N_0)\times\U(N_1)$ and the theory automatically anomaly free (because chiral). The orbifold group acts as
+        \begin{equation}
+            \begin{bmatrix}
+                1 & 0 & 0 \\
+                0 & \zeta_2 & 0 \\
+                0 & 0 & \zeta_2
+            \end{bmatrix}
+        \end{equation}
+        on the transverse space. The invariant configurations are
+        \begin{align}
+            &X^{0,1}_{00}\in(\boldsymbol{N_0},\bar{\boldsymbol{N_0}}),\qquad X^{0,1}_{11}\in(\boldsymbol{N_1},\bar{\boldsymbol{N_1}}),\qquad (\equiv\Phi,\tilde{\Phi})\\
+            &X^{2,3}_{01}\in(\boldsymbol{N_1},\bar{\boldsymbol{N_0}}),\qquad X^{2,3}_{10}\in(\boldsymbol{N_0},\bar{\boldsymbol{N_1}}),\qquad (\equiv A_1,B_1)\\
+            &X^{4,5}_{01}\in(\boldsymbol{N_1},\bar{\boldsymbol{N_0}}),\qquad X^{4,5}_{10}\in(\boldsymbol{N_0},\bar{\boldsymbol{N_1}}),\qquad (\equiv A_2,B_2)
+        \end{align}
+        where each $X^m_{ij}$ is an $N_i\times N_j$ block. $\Z_2$ is embedded in $\U(n)$ trough the regular representation, with $N$ branes in each stack. Since $\rho_{\text{reg}}=(\rho_0\oplus\rho_1)^N=\rho^N_0\oplus\rho^N_1$ we have $n=2N$ and we must have $N_0=N_1\equiv N$. At last, is a four-dimensional $\mN=2$ gauge theory with $\U(N)\times\U(N)$ gauge group and $2$ hypermultiplets.
+
+        The lagrangian can be obtained from $D=4$ $\mN=4$ pure SYM with $\U(2N)$ gauge group bu substituing the invariant configurations that we found. The $\mN=4$ vector multiplet can written in terms $\mN=1$ fields as one vector multiplet $V$ and three chiral multiplets $\Phi^A$, $A=1,2,3$, all fields are in the adjoint of $\U(2N)$. The invariant configuration are
+        \begin{equation}
+            \Phi^1=
+            \begin{bmatrix}
+                \Phi & 0 \\
+                0 & \tilde{\Phi}
+            \end{bmatrix},\qquad
+            \Phi^2=
+            \begin{bmatrix}
+                0 & A_1 \\
+                B_2 & 0
+            \end{bmatrix},\qquad
+            \Phi^3=
+            \begin{bmatrix}
+                0 & A_2 \\
+                B_1 & 0
+            \end{bmatrix}.\label{eqinvconf}
+        \end{equation}
+        More precisely, the fields are
+        \begin{itemize}
+            \item $A_1,A_2$ transforming in the $(\boldsymbol{N_1},\bar{\boldsymbol{N_0}})$ are the two complex scalars of the first hypermultiplet. They are in $\mathfrak{u}(N)$.
+            \item $B_1,B_2$ transforming in the $(\boldsymbol{N_0},\bar{\boldsymbol{N_1}})$ are the two complex scalars of the second hypermultiplet. They are in $\mathfrak{u}(N)$.
+            \item $\Phi,\tilde{\Phi}$ are transforming in the $(\boldsymbol{N_0},\bar{\boldsymbol{N_0}})$ and $(\boldsymbol{N_1},\bar{\boldsymbol{N_1}})$ respectively, i.e. in the adjoint of each factor of the gauge group. They are part of the the $\U(N)\times\U(N)$ vector multiplet.
+        \end{itemize}
+        The superpotenntial is obtained from the the superpotenntial of $\mN=2$ SYM ($\Phi^1[\Phi^2,\Phi^3]$) by substituting \eqref{eqinvconf}:
+        \begin{equation}
+            W=(B_1\Phi A_1-B_2\Phi A_2)-(A_1\tilde{\Phi}B_1-A_2\tilde{\Phi}B_2).
+        \end{equation}
+
+    \subsection{Moduli space}
+
+        The F-term equations are
+        \begin{equation}
+            F:
+            \begin{cases}
+                \Phi A_i-A_i\tilde{\Phi} = 0\\
+                B_i\Phi-\tilde{\Phi}B_i = 0\\
+                A_1B_1-A_2B_2 = 0\\
+                B_1A_1-B_2A_2 = 0
+            \end{cases}
+        \end{equation}
+        The moduli space is $\M=Z(F)/G_\C\subset\C^{3N^2}$ therefore its coordinate ring is $K[\M]=K[Z(F)]^{G_\C}$ and we must find a generating set of this polynomial ring, i.e. a basis of invariant polynomials.
+
+        The Coulomb branch is given by
+        \begin{equation}
+            \M^V_{\text{cl.}} = \frac{\C^N}{S_N}\times\frac{\C^N}{S_N}
+        \end{equation}
+        and the Higgs branch by
+        \begin{equation}
+            \M^H_{\text{cl.}} = \frac{(\C\times\C^2/\Z_2)^N}{S_N}.
+        \end{equation}
 
 \section{RG flow}
 

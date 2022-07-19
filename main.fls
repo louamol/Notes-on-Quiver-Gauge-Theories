@@ -1877,6 +1877,8 @@ INPUT /home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx172
 INPUT /home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -1927,5 +1929,7 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm1
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm5.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm5.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb
