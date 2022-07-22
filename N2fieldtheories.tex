@@ -445,7 +445,7 @@
 
     \subsection{Content and lagrangian}
 
-        We consider $N$ D$3$-branes at on an $A_1$ singularity, i.e. probing the transverse space $C\times\C/\Z_2$ and located at the singularity. The usual orbifold projection for $\Gamma=\Z_2$ gives us $\rho=\rho^{N_0}_0\oplus\rho^{N_1}_1$ so the projected gauge group is $G=\U(N_0)\times\U(N_1)$ and the theory automatically anomaly free (because chiral). The orbifold group acts as
+        We consider $N$ D$3$-branes at on an $A_1$ singularity, i.e. probing the transverse space $\C\times\C/\Z_2$ and located at the singularity. To find the low-energy theory, we proceed to the usual orbifold projection for $\Gamma=\Z_2$. $\Gamma$ acts on $\C^n$ through the regular representation as $\rho^N_{\text{reg}}=(\rho_0\oplus\rho_1)^N=\rho^N_0\oplus\rho^N_1$, so $N=n/2$ and the projected gauge group is $G=\U(N)\times\U(N)$. Since $\Gamma\subset\SU(2)$, the theory automatically anomaly free (because chiral). The orbifold group acts as
         \begin{equation}
             \begin{bmatrix}
                 1 & 0 & 0 \\
@@ -453,15 +453,32 @@
                 0 & 0 & \zeta_2
             \end{bmatrix}
         \end{equation}
-        on the transverse space. The invariant configurations are
+        on the transverse space. The invariant configurations read
         \begin{align}
             &X^{0,1}_{00}\in(\boldsymbol{N_0},\bar{\boldsymbol{N_0}}),\qquad X^{0,1}_{11}\in(\boldsymbol{N_1},\bar{\boldsymbol{N_1}}),\qquad (\equiv\Phi,\tilde{\Phi})\\
             &X^{2,3}_{01}\in(\boldsymbol{N_1},\bar{\boldsymbol{N_0}}),\qquad X^{2,3}_{10}\in(\boldsymbol{N_0},\bar{\boldsymbol{N_1}}),\qquad (\equiv A_1,B_1)\\
             &X^{4,5}_{01}\in(\boldsymbol{N_1},\bar{\boldsymbol{N_0}}),\qquad X^{4,5}_{10}\in(\boldsymbol{N_0},\bar{\boldsymbol{N_1}}),\qquad (\equiv A_2,B_2)
         \end{align}
-        where each $X^m_{ij}$ is an $N_i\times N_j$ block. $\Z_2$ is embedded in $\U(n)$ trough the regular representation, with $N$ branes in each stack. Since $\rho_{\text{reg}}=(\rho_0\oplus\rho_1)^N=\rho^N_0\oplus\rho^N_1$ we have $n=2N$ and we must have $N_0=N_1\equiv N$. At last, is a four-dimensional $\mN=2$ gauge theory with $\U(N)\times\U(N)$ gauge group and $2$ hypermultiplets.
+        where each $X^m_{ij}$ is an $N_i\times N_j$ block. In conclusion, the low-energy theory is a four-dimensional $\mN=2$ gauge theory with $\U(N)\times\U(N)$ gauge group and $2$ bi-fundamental hypermultiplets and the field content is the following:
+        \begin{itemize}
+            \item $A_1,A_2$ transforming in the $(\boldsymbol{N_1},\bar{\boldsymbol{N_0}})$ are the two complex scalars of the first hypermultiplet. They are in $\mathfrak{u}(N)$.
+            \item $B_1,B_2$ transforming in the $(\boldsymbol{N_0},\bar{\boldsymbol{N_1}})$ are the two complex scalars of the second hypermultiplet. They are in $\mathfrak{u}(N)$.
+            \item $\Phi,\tilde{\Phi}$ are transforming in the $(\boldsymbol{N_0},\bar{\boldsymbol{N_0}})$ and $(\boldsymbol{N_1},\bar{\boldsymbol{N_1}})$ respectively, i.e. in the adjoint of each factor of the gauge group. They are part of the the $\U(N)\times\U(N)$ vector multiplet.
+        \end{itemize}
 
-        The lagrangian can be obtained from $D=4$ $\mN=4$ pure SYM with $\U(2N)$ gauge group bu substituing the invariant configurations that we found. The $\mN=4$ vector multiplet can written in terms $\mN=1$ fields as one vector multiplet $V$ and three chiral multiplets $\Phi^A$, $A=1,2,3$, all fields are in the adjoint of $\U(2N)$. The invariant configuration are
+        The quiver of the theory is given by
+        \begin{center}
+            \includegraphics[scale=0.35]{Pictures/A1quiver.png}
+        \end{center}
+        and has adjacency matrix
+        \begin{equation}
+            \begin{bmatrix}
+                1 & 2 \\
+                2 & 1
+            \end{bmatrix}.  
+        \end{equation}
+
+        The lagrangian can be obtained from $D=4$ $\mN=4$ pure SYM with $\U(2N)$ gauge group by substituting the invariant configurations that we found. The $\mN=4$ vector multiplet can written in terms $\mN=1$ fields as one vector multiplet $V$ and three chiral multiplets $\Phi^A$, $A=1,2,3$, all fields in the adjoint of $\U(2N)$. The invariant configuration are
         \begin{equation}
             \Phi^1=
             \begin{bmatrix}
@@ -479,18 +496,20 @@
                 B_1 & 0
             \end{bmatrix}.\label{eqinvconf}
         \end{equation}
-        More precisely, the fields are
-        \begin{itemize}
-            \item $A_1,A_2$ transforming in the $(\boldsymbol{N_1},\bar{\boldsymbol{N_0}})$ are the two complex scalars of the first hypermultiplet. They are in $\mathfrak{u}(N)$.
-            \item $B_1,B_2$ transforming in the $(\boldsymbol{N_0},\bar{\boldsymbol{N_1}})$ are the two complex scalars of the second hypermultiplet. They are in $\mathfrak{u}(N)$.
-            \item $\Phi,\tilde{\Phi}$ are transforming in the $(\boldsymbol{N_0},\bar{\boldsymbol{N_0}})$ and $(\boldsymbol{N_1},\bar{\boldsymbol{N_1}})$ respectively, i.e. in the adjoint of each factor of the gauge group. They are part of the the $\U(N)\times\U(N)$ vector multiplet.
-        \end{itemize}
-        The superpotenntial is obtained from the the superpotenntial of $\mN=2$ SYM ($\Phi^1[\Phi^2,\Phi^3]$) by substituting \eqref{eqinvconf}:
+        The gauge transformation of the fields $A_i,B_i\Phi,\tilde{\Phi}$ coming from the transformation of $\Phi^1,\Phi^2,\Phi^3$ are indeed what we found before. The superpotenntial is obtained from the the superpotenntial of $\mN=2$ SYM ($\Phi^1[\Phi^2,\Phi^3]$) by substituting \eqref{eqinvconf}:
         \begin{equation}
             W=(B_1\Phi A_1-B_2\Phi A_2)-(A_1\tilde{\Phi}B_1-A_2\tilde{\Phi}B_2).
         \end{equation}
 
-    \subsection{Moduli space}
+        We are interested by the superconformal theory with gauge group $\SU(N+M)\times\SU(N)$. The latter can be obtained from our original theory through the following steps:
+        \begin{alignat}{2}
+            \U(N)\times\U(N)&\to \SU(N+M)\times\SU(N+M)\qquad&&\text{redefining $N$}\\
+            &\to \U(N+M)\times\U(N)\times\U(1)^M\qquad&&\text{Higgsing: we taking $M$ VEV's $\abs{z_0}/2\pi\alpha'$ in $\tilde{\Phi}$}\\
+            &\to \SU(N+M)\times\SU(N)\qquad&&\text{low-energy limit}.\label{eq:theorymanip}
+        \end{alignat}
+
+
+    \subsection{Classical moduli space}
 
         The F-term equations are
         \begin{equation}
@@ -502,37 +521,181 @@
                 B_1A_1-B_2A_2 = 0
             \end{cases}
         \end{equation}
-        The moduli space is $\M=Z(F)/G_\C\subset\C^{3N^2}$ therefore its coordinate ring is $K[\M]=K[Z(F)]^{G_\C}$ and we must find a generating set of this polynomial ring, i.e. a basis of invariant polynomials.
+        In total, there are six different fields, whiwh are all matrices in $\u(N)$, meaning that in total their are $6N^2/2=3N^2$ independent complex parameters. The moduli space is therefore a variety embedded in $\C^{3N^2}$, defined by $\M=Z(F)/G_\C$. Its cooridnate ring is $K[\M]=K[Z(F)]^{G_\C}$ and we must find a generating set of this polynomial ring, i.e. a basis of invariant polynomials. We find the six following coordinates:
+        \begin{align}
+            \vp_{ij} &= \tr (A_i B_j),\\
+            \vp &= \tr(\Phi),
+            \tilde{\vp} &= \tr(\tilde{\Phi}).
+        \end{align}
 
-        The Coulomb branch is given by
+        \underline{Coulomb branch:} the fields $\Phi,\tilde{\Phi}$ can be diagonalized by a gauge transformation, leaving $2N$ independant complex parameters. The gauge group breaks to $(\U(1)^{N}\times S_N)\times(\U(1)^{N}\times S_n)=\U(1)^{2N}/(S_N\times S_N)$ and the geometry is
         \begin{equation}
-            \M^V_{\text{cl.}} = \frac{\C^N}{S_N}\times\frac{\C^N}{S_N}
+            \M^V_{\text{cl.}} = \frac{\C^N}{S_N}\times\frac{\C^N}{S_N},
         \end{equation}
-        and the Higgs branch by
+        which corresponds to the displacement of two types of fractional branes D$3$-branes, each associated to one gauge factor, along the singularity line. The Coulomb branch recieves corrections at the quantum level, this will be discussed later on. The exact quantum-corrected metric is calculable thanks to Seiberg-Witten theory\cite{Witten_1997}.
+
+
+        \underline{Higgs branch:} it is parametrized by $4N$ complex parameters, which are the VEV's of $A_i,B_i$. These VEV's result in the Higgsing of the quiver to a subgroup of the diagonal $\U(N)$ gauge group and the theory has accidental $\mN=4$ suersymmetry in the IR. Its geometry is
         \begin{equation}
             \M^H_{\text{cl.}} = \frac{(\C\times\C^2/\Z_2)^N}{S_N}.
         \end{equation}
+        Because of $\mN=2$ supersymmetry, the Higgs is a Kähler manifold and its metric is classicaly exact, meaning that it is protected against quantum corrections.
 
+        \underline{Mixed branches:} are also present.
+
+\section{Type IIB supergravity dual solution}
+
+    The initial observation is that the large $N$ limit of certain conformal field theories in various dimensions include in their Hilbert space a sector describing supergravity on the product of anti-de-Sitter spacetimes, spheres and other compact manifolds \cite{Maldacena:1997re}. This was shown by taking some branes in the full M/string theory and then taking a low energy limit where the field theory on the brane decouples from the bulk. In this limit, we can still trust the near horizon geometry for large $N$. The enhanced supersymmetries of the near horizon geometry correspond to the extra supersymmetry generators present in the superconformal group (as opposed to just the super-Poincaré group). The 't Hooft limit of $\mN = 4$ SYM at the conformal point is shown to contain strings: they are IIB strings. It was the conjectured that compactifications of M/string theory on various anti-de-Sitter spacetimes is dual to various conformal field theories.
+
+    Very soon after that, a specific correpsondence between $4d$ $\mN=0,1,2$ SCFT and Type IIB string theory on various orbifolds of $AdS_5\times S^5$ was argued in \cite{silervstein1998}. In particular, in the large $N$ and large 't Hooft coupling limit, the low energy superconformal sector of our $\U(N)\times\U(N)$ theory can be described by its Type IIB supergravity dual. The full Higgs branch is dual to a familly of supergravity solutions corresponding to D$3$-branes at arbitrary positions on the $6$-dismensional transverse space:
+    \begin{align}
+        ds^2 &= Z^{-1/2}\eta_{\mu\nu}\d x^\mu\d x^\nu+Z^{1/2}\delta_{mn}\d x^m\d x^n\\
+        g_s F_5 &= (1+\star)\d\text{vol}_{3,1}\wedge\d Z^{-1}
+    \end{align}
+    where $\mu\nu,0,\dots,3$ denotes the brane worldvolume coordinates and $m,n=4,\dots,9$ the transverse coordinates. The transverse space is a $\Z_2$-orbifold so we have the identification $\textbf{x}\sim\tilde{\textbf{x}}$ with
+    \begin{align*}
+        \textbf{x} &\equiv (x^4,x^5,x^6,x^7,x^8,x^9),\\
+        \tilde{\textbf{x}} &\equiv (x^4,x^5,-x^6,-x^7,-x^8,-x^9)
+    \end{align*}
+    $Z$ is the harmonic function
+    \begin{equation}
+        Z(x^4,\dots,x^9)=4\pi g_s(\alpha')^2\sum^N_{j=1}\left( \frac{1}{\abs{\textbf{x}-\textbf{x}_j}^4}+\frac{1}{\abs{\textbf{x}-\tilde{\textbf{x}}_j}^4} \right)
+    \end{equation}
+    containing the D$3$-branes and their image. We see that the total $5$-form flux on $S^5/\Z_2$ at infinity is $N$. The relations between the field theory and the supergravity solution is
+    \begin{itemize}
+        \item the relation between the parameters $x_j$ (positions of the branes on the orbifold) and the field theory moduli is $x_j=2\pi\alpha'\phi_j$, where $\phi_j$ is the eigenvalue of the VEV of some field
+        \item the coordinates $\vp$ and $\tilde{\vp}$ are mapped to $x^4+i x^5$
+        \item the coordinates are mapped to $\vp_{ij}$ to the algebraic coordinates $z_{ij}$ on $\C^2/\Z_2$, such that $z_{12}z_{21}=z^2_{11}$ and $z_{22}=z_{11}$.
+        \item the supergravity axio-dilaton $\tau=C_0+ie^{-\Phi}=C_0+i/g_s$ is constant, as D$3$-branes are not coupled to it. It is related to the field theory gauge coupling and theta angles by
+        \begin{equation}
+            \tau = \tau_1+\tau_2, \qquad \tau_j = \frac{\theta_j}{2\pi}+\frac{4\pi i}{g^2_j}.
+        \end{equation}
+    \end{itemize}
+    We take $\tau=i/g_s$.
+
+    The Coumob branch of our theory is described by fractional D$3$-branes alongs the orbifold singularity. In this case, the supergravity solutions include non-travial profile for the twisted field fluxes. Indeed, fraction D$3$-branes source magnetically the twisted scalar $c$ and, by supersymmetry, they also soure its NS-NS partner, the twisted scalar $b$. This can be understood recalling that fractional D$3$-branes are equivalent to D$5$-branes wrapped around the exceptional $2$-cycle $\mathcal{C}$ which lives at the orbifold ingularity. The twisted scalars are simply the reduction of the R-Rand NS-NS 2-form potentials $C_2$ and $B_2$, on $\mathcal{C}$:
+    \begin{equation}
+        c = \frac{1}{4\pi^2\alpha'}\int_\mathcal{C}C_2,\qquad b = \frac{1}{4\pi^2\alpha'}\int_\mathcal{C}B_2.
+    \end{equation}
+    They can be organized in a single complex scalar as
+    \begin{equation}
+        \gamma=c+\tau b
+    \end{equation}
+    where took $\tau=i/g_s$.
+
+    For $N$ fractional branes at $z_1,\dots,z_N$ and $N$ anti-fractional\footnote{Branes wrapped around $\mathcal{C}$ with the opposite orientation.} branes at $\bar{z}_1,\dots,\bar{z}_N$, we have
+    \begin{equation}
+        \gamma=\frac{i}{\pi}\left[ \sum^N_{j=1}\log(z-z_j)-\sum^N_{j=1}\log(z-\bar{z}_j) \right]+\gamma^{(0)}.\label{eq:gammasol}
+    \end{equation}
+    The $\SU(N+M)\times\SU(M)$ quiver gauge theory obtained in \eqref{eq:theorymanip} corresponds, in the dual picture, to placing $M$ anti-fractional branes at the roots $\tilde{z}^M_j=-z^M_0$ while theo other $N$ anti-fractional branes and $N+M$ fractional branes sit at the origin. This configuration gives us
+    \begin{equation}
+        \gamma(z)=\frac{i}{\pi}\log\frac{z^M}{z^M+z^M_0}+\gamma^{(0)}.
+    \end{equation}
+    For simplicity, we set the point value orbifold $\gamma^{(0)}=i/2g_s$ so that, in the UV, $\tau_1=\tau_2=i/g_s$. In the large $M$ limit, \eqref{eq:gammasol} becomes
+    \begin{equation}
+        \gamma=
+        \begin{cases}
+            i\frac{M}{\pi}\log\frac{z}{z_0}+\frac{i}{2g_s}\ = i\frac{M}{\pi}\log\frac{z}{z_1},\qquad \text{ if } \abs{z}<\abs{z_0}\\
+            \gamma^{(0)},\hspace{3.8cm}\qquad \text{ if } \abs{z}>\abs{z_0}
+        \end{cases}\label{eq:flux1}
+    \end{equation}
+    with $z_1\equiv e^{i\frac{\pi}{M}\gamma^{(0)}}=e^{-\frac{\pi}{2g_sM}}$.
+
+    For $r<\rho_0=\abs{z_0}$, the gauge invariant D$3$-brane Maxwell charge carried by the fluxes of the solution is
+    \begin{equation}
+        -\frac{1}{(2\pi^2\alpha')^2}\int F_5=N+\frac{g_sM^2}{\pi}\log\frac{r}{\rho_1}\label{eq:flux2}
+    \end{equation}
+    where $\rho_1=\abs{z_1}$.
+
+    \begin{mybox}
+        Below the cutoff $\rho_0$, the solution enjoys logarithmically varying $B$-field and $5$-form flux. This similarity with the Klebanov-Tseytlin solution suggests the dual theory might enjoy a cascading RG flow with subsequent infinite coupling transition reducing the rank of the infinitely-coupled non-abelian gauge group by $2M$ at scales $\rho_k=e^{-\frac{(2k-1)\pi}{2g_sM}}\rho_0$, with $k=1,\dots,l$ and $l=\lfloor N/M \rfloor$.
+    \end{mybox}
+
+\section{Enhançon mehcanism, quantum Coulomb branch and SW curves}
+
+    There is another problem of the supergraity solution that one has to deal with. This problem always arises in supergravity solutions dual to non-conformal sueprsymmetric gauge theories with eight supercharges: by analyzing the explicit form of the warp factor, one can show that the $10$-dimensional metric obtained using \eqref{eq:gammasol} possesses, besides the orbifold singularity, an unphysical repulsive region near the origin. An enhançon-like mechanism is therefore expected, in order to excise the unphysical region, thus rendering back a repulsion-free solution.
+
+    While the Higgs branch is classicaly exact, it is not the case of the Coulomb branch. At the classical level, the VEV's of the adjoint scalars correspond to the position of the fraction and anti-fractional branes. In the quantum theory, this identification cannot survive because, while the VEV's are still unconstrained, the position of the branes become constrained.
+        
+    Because of supersymmetry, one expects that, in the large $N$ limit, the quantum corrections and the consequent constraints on $z_j$ and $\tilde{z}_j$ are bound to a non-negative $5$-form flux for allowed configurations on the quantum moduli space, at least whenever the supergravity approximation is valid. This property is the core of the enhançon mechanism.
+
+    Let us discuss the SW curves of the $\SU(N+M)\times\SU(N)$ theory. Since the second gauge group is not asymptitcally free, one should embed theory into the $\SU(N+M)\times\SU(N+M)$ superconformal one, properly Higgsed, as explained before. We define the complex coordinate
+    \begin{equation}
+        u=i\frac{x^6+ix^{10}}{2\pi R_{10}}
+    \end{equation}
+    which parametrizes the M-theory torus defined by the identification $u\sim u+\tau$. The complex structure $\tau$ is identified with the Type IIB axio-dilaton. Retricting ourselves to the case of equal gauge couplings $\tau_1=\tau_2=\tau/2$, the Sw curve for the conformal theory reads
+    \begin{equation}
+        \frac{R(v)}{S(v)}=g(u|\tau)
+    \end{equation}
+    where $g(u|\tau)$ is a combination of quasi-modular Jacobi $\theta$-functions
+    \begin{equation}
+        R(v)=\prod^{N+M}_{a=1}(v-\phi_a),\qquad S(v)=\prod^{N+M}_{a=1}(v-\tilde{\phi}_a)
+    \end{equation}
+    are polynomials of degree $N+M$ whose zeros $\phi_a$ and $\tilde{\phi}_a$ are the eigenvalues of the VEV's of the adjoint scalar fields of the first and second gauge group respectively. 
+    
+    Comparing the SW curve at the origin, we can see that the dynamically generated scale is $\Lambda=e^{\frac{\pi i \tau}{2M}}z_0$. One can check that:
+    \begin{itemize}
+        \item \underline{for $\abs{v}>\abs{z_0}$:} the quantum theory is conformal with equal gauge couplings.
+        \item \underline{for $\abs{\Lambda}<\abs{v}<\abs{z_0}$:} the two couplings are running with opposite $\beta$-functions:
+        \begin{equation}
+            \beta_{1,2} = \pm 2M\label{eq:betafct}.
+        \end{equation}
+        \item \underline{at $\abs{v}=\abs{\Lambda}$:} the gauge group is effectively broken by instantons as
+        \begin{equation}
+            \SU(N+M)\times\SU(N)\times\U(1)^M\to\SU(N)\times\SU(N)\times\U(1)^{2M},
+        \end{equation}
+        the residual gauge group being conformal up to an IR free abelian sector.
+        \item \underline{for $\abs{v}<\abs{\Lambda}$:} the gauge couplings are constant with $8\pi^2/g^2_{s,1}=0$ and $8\pi^2/g^2_{s,2}=2\pi/g_s$.
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{Pictures/RGflow.png}
+        \caption{RG flow of the theory at the enhançon vacuum (origin of the moduli space). The low-energy theory below $\Lambda$ is a peculiar one, with one formally diverging coupling.}
+    \end{figure}
+
+    Further information is gained by the computation of the branch points of the SW curve. the first set is located at
+    \begin{equation}
+        u=\frac{\tau}{2},\frac{\tau+1}{2}:\qquad v=v^\pm_h=z_0e^{\frac{2\pi i h}{M}}\left[ 1\pm \frac{2}{M}\left( \frac{\Lambda}{z_0} \right)^M \right],\qquad h=1,\dots,M
+    \end{equation}
+    and are almost double branch points, which corresponds to the $M$ anti-fractional branes located near $\abs{z_0}$, corresponding to the VEV's of $\tilde{\Phi}$ we used to Higgs the conformal theory. The second set is located at
+    \begin{equation}
+        u=0,\frac{1}{2}:\qquad v=v_k=2^{\frac{1}{M}}e^{\frac{\pi i k}{M}}\Lambda,\qquad k=1,\dots,2M.
+    \end{equation}
+    These branch points correspond to $M$ fractional branes melted into en enhançon ring at scale $\Lambda$.
+
+    Probe fractional branes can be studied on this background by means of the SW curve of the $\SU(N+M+1)\times\SU(N+M+1)$ theory, where the VEV's of $\Phi$ and $\tilde{\Phi}$ now have an extra eigen value that we denote $\phi$ and $\tilde{\phi}$. We find that the branch points corresponding corresponding to the eigenvalue $\phi$ (the fraction brane) can freely move outside the enhancon ring, but as they approach the enhançon ring and $\phi$ goes to zero, the two branch points split and melt into the anhançon ring. The two branch points corresponding to the eigenvalue $\tilde{\phi}$ (the anti-fractional brane) can instead penetrate the enhançon ring.Whe this happens, they unchain two branch points from the ring which follow them inside: an anti-fractional brane eats a melted fractional brane from the ring, thus forming a regular brane free to move everywhere.
+
+    We conclude that, no matter the value of $N$, the fluxes in \eqref{eq:flux1} and \eqref{eq:flux2} do describe the physics of the $\SU(N+M)\times\SU(N)$ theory at the origin of its moduli space, provided that they are excised at radius $\rho_1=\abs{\Lambda}$ by an enhançon mechanism. The solution should also be cut off at radius $\abs{z_0}$, or completed with $M$ fractional branes, providing a conformal $AdS_5$ UV completion. The warp factors then needs to be recomputed in the presence of the correct brane configuration.
+
+    \begin{mybox}
+        The $10$-dimensional metric possesses an unphysical repulsive region around the origin. It is expected that an enhancon-like mehcanism will excise this unphyiscal region. This indeed what happens: using the SW curve technology, one finds that, in the quantum theory, fractional branes melt into an enhançon ring at scale $\Lambda$. Anti-fractional branes can penetrate this ring by eating a fractional brane on the way, thus forming a regular brane that is free to move everywhere.
+    \end{mybox}
+
+    Notice that the supergravity solution \eqref{eq:flux1} and \eqref{eq:flux2} does not seem to have any pathology below $\rho_1$, at least down to a scale of order $e^{-\frac{\pi N}{g_s M^2}}\rho_1$, where the $5$-form flux \eqref{eq:flux2} vanishes and the problematic region starts. The question arises whether there is any field theory interpration for such a solution, suitbaly excised only at radius
+    \begin{equation}
+        \rho_{\text{min}}=\rho_{l+1}\equiv e^{-\frac{\pi l}{g_s M}}\rho_1
+    \end{equation}
+    with $l=\lfloor N/M\rfloor$, the smallest infinite coupling scale outside the region of nagative D$3$ brane charge. Based on results about $\mN=2$ SQCD, it was proposed that there exists a field theory vacua, not at the origin of hte Coulomb branch, which display csacading bahavior. Theyare dual to the supergravity solution \eqref{eq:flux1} and \eqref{eq:flux2}, valid well below the first infinite coupling radius $\rho_1$ down to smoe much lower scale, at most until the so-called true anhançon scale $\rho_{\text{min}}$ where the twisted fields are excised.
+        
 \section{RG flow}
 
-    \begin{equation}
-        \beta=\pm 2M\label{eq:betafct}
-    \end{equation}
+    The beta function of both $\SU(N)$ factors vanish. The duagonal $\U(1)$ is decoupled and the anti-diagonal $\U(1)$ becomes free in the IR and gives rise to a global symmetry, the baryonic symmetry $\U(1)_B$.
 
 \section{Cascading vacuum}
 
-    The perturbative RG flow of the $\SU(N+M)\times\SU(N)$ theory is given by \eqref{eq:betafct}. It such that the largest group goes at strong coupling at a scale $\Lambda$. The dual supergravity solution suggests that, in the dual vacuum, a mechanism effectively reduces the gauge group as
+    The perturbative RG flow of the $\SU(N+M)\times\SU(N)$ theory described is given by \eqref{eq:betafct}. It such that the largest group goes to strong coupling at a scale $\Lambda$ while the smallest group goes to a fixed, lower coupling. The dual supergravity solution suggests that, in the dual vacuum, a mechanism effectively reduces the gauge group as
     \begin{equation}
         \SU(N+M)\times\SU(N)\to\SU(N-M)\times\SU(N)\label{eq:gaugegroupereduction}
     \end{equation}
     below $\Lambda$, plus possible $\U(1)$ factors. 
     
-    This statement is supported by a computation of Page charges in supergravity:
+    This statement is supported by a computation of Page charges in supergravity. We find
     \begin{align}
-        Q^{\text{Page}}_{\text{D3}} &= -\frac{1}{4\pi^2\alpha'}\int (F_5+B_2\wedge F_3))=N+M\left(\frac{g_sM}{\pi}\log\frac{r}{\rho_0}\right),\\
-        Q^{\text{Page}}_{\text{D5}} &= -\frac{1}{4\pi^2\alpha'}\int F_3=2M
+        Q^{\text{Page}}_{\text{D3}}(r) &= -\frac{1}{4\pi^2\alpha'}\int (F_5+B_2\wedge F_3))=N+M\left\lfloor\frac{g_sM}{\pi}\log\frac{r}{\rho_0}\right\rfloor,\\
+        Q^{\text{Page}}_{\text{D5}}(r) &= -\frac{1}{4\pi^2\alpha'}\int F_3=2M
     \end{align}
-    with $\rho\equiv\abs{z}$. Positivity of the charges implies that
+    with $\rho\equiv\abs{z}$. Positivity of the charges implies
     \begin{equation}
         r>(e^{-\frac{\pi}{g_sM}})^{\frac{N}{M}}\rho_0.
     \end{equation}
@@ -540,7 +703,33 @@
     \begin{equation}
         \rho_k=\Lambda_k\equiv e^{-\frac{\pi(k-1)}{g_sM}}\Lambda_1 = e^{-\frac{\pi(2k+1)}{2g_sM}}\rho_0, \qquad k=1,\dots,l
     \end{equation}
-    where $N=lM+p$, i.e. $l=\lfloor N/M\rfloor$ and $\Lambda_1\equiv\Lambda$.
+    where $N=lM+p$, i.e. $l=\lfloor N/M\rfloor$ and $\Lambda_1\equiv\Lambda$. At each step, the rank of the biggest group decreases by $2M$:
+    \begin{center}
+        $\SU(N+M)\times\SU(N)$\\
+        $\downarrow$\\
+        $\SU(N-M)\times\SU(N)$\\
+        $\downarrow$\\
+        $\SU(N-M)\times\SU(N-2M)$\\
+        $\downarrow$\\
+        $\SU(N-3M)\times\SU(N-2M)$\\
+        $\vdots$\\
+        $\SU(M+p)\times\SU(N-(l-2)M)$\\
+        $\downarrow$\\
+        $\SU(M+p)\times\SU(p)$\\
+    \end{center}
+    Note that $\lfloor N/M\rfloor$ or $\lfloor(N+M)/M\rfloor$ is even so, in the end, the gauge group is always $\SU(M+p)\times\SU(p)$, upon a possible parmutation of the factors.
+
+    There are two steps that on has to add to this to obtain the complete evolution of the gauge group for all scales: the Higgsing step at scale $\abs{z_0}$ that allows us introduce a difference in the gauge group ranks and the last step, at $\Lambda_{l+1}=\Lambda_{\text{min}}=e^{-\frac{\pi l}{g_s M}}\Lambda_1$. Below $\Lambda_{l+1}$, there is a true anhançon ring with $M$ tensionless fractional branes, and the non-abelian factors in the gauge group reduce according to
+    \begin{equation}
+        \SU(M+p)\times\SU(p)\to\SU(p)\times\SU(p),
+    \end{equation}
+    with one infinite gauge coupling. Twisted fields have to be excised so as to avoid negative D$3$-brane charge in the interior region.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{Pictures/RGflowcascade.png}
+        \caption{RG flow of the theory at the cascading vacuum, without the $\SU$ factors for the gauge groups, to avoid clutter.}
+    \end{figure}
 
     \subsection{Solving in a corner of the parameter space}
 
@@ -549,6 +738,10 @@
         We discussed the form of the quantum baryonic root in \ref{secquantummodulispaceSU}. We found that it preserves the same $\Z_{2N_c-N_f}=\Z_{2M}$ R-symmetry as the supergravity solution we are discussing. Moreover, its low energy effective theory possesses an $\SU(N_f-N_c)=\SU(N-M)$ gauge symmetry. This precisely matches the numerology of the cascading interpretation. Hencre, iterating the same procedure at the subsequent generalized enhançon $\Lambda_k$ (where the higher rank gauge group coupling diverges), it is natural to propose the supergravity solutions in \todo{to complete} (excised only down at the true enhançon $\rho_{\text{min}}$) to be dual to a cascading $\SU(N+M)\times\SU(N)$ quiver gauge theory at subsequent baryonic roots of the strongly coupled gauge groups.
 
     \subsection{Cascading vacuum in the quiver gauge theory}
+
+
+
+    
 
 
 

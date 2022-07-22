@@ -2347,6 +2347,44 @@
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
     <bcf:citekey order="1">Argyres_1996</bcf:citekey>
     <bcf:citekey order="2">Argyres_1996</bcf:citekey>
+    <bcf:citekey order="3">Witten_1997</bcf:citekey>
+    <bcf:citekey order="4">Maldacena:1997re</bcf:citekey>
+    <bcf:citekey order="5">silervstein1998</bcf:citekey>
+    <bcf:citekey order="6">DbranespartI</bcf:citekey>
+    <bcf:citekey order="7">DbranespartII</bcf:citekey>
+    <bcf:citekey order="8">notesDbranes</bcf:citekey>
+    <bcf:citekey order="9">he2004lectures</bcf:citekey>
+    <bcf:citekey order="10">masterHe</bcf:citekey>
+    <bcf:citekey order="11">douglas1996dbranes</bcf:citekey>
+    <bcf:citekey order="12">PhysRevD.55.6382</bcf:citekey>
+    <bcf:citekey order="13">Hanany_1999</bcf:citekey>
+    <bcf:citekey order="14">Hanany:1999sp</bcf:citekey>
+    <bcf:citekey order="15">vafa1998</bcf:citekey>
+    <bcf:citekey order="16">silervstein1998</bcf:citekey>
+    <bcf:citekey order="17">brion</bcf:citekey>
+    <bcf:citekey order="18">kirillov2016quiver</bcf:citekey>
+    <bcf:citekey order="19">cox2011toric</bcf:citekey>
+    <bcf:citekey order="20">torigeomandCY</bcf:citekey>
+    <bcf:citekey order="21">fulton1993introduction</bcf:citekey>
+    <bcf:citekey order="22">oda1988convex</bcf:citekey>
+    <bcf:citekey order="23">FA1</bcf:citekey>
+    <bcf:citekey order="24">FA2</bcf:citekey>
+    <bcf:citekey order="25">FA3</bcf:citekey>
+    <bcf:citekey order="26">FA4</bcf:citekey>
+    <bcf:citekey order="27">FA5</bcf:citekey>
+    <bcf:citekey order="28">FA6</bcf:citekey>
+    <bcf:citekey order="29">FA7</bcf:citekey>
+    <bcf:citekey order="30">FA8</bcf:citekey>
+    <bcf:citekey order="31">Argurio_20081</bcf:citekey>
+    <bcf:citekey order="32">Argurio_20082</bcf:citekey>
+    <bcf:citekey order="33">Feng_2001</bcf:citekey>
+    <bcf:citekey order="34">https://doi.org/10.48550/arxiv.hep-th/9611137</bcf:citekey>
+    <bcf:citekey order="35">Elitzur_1997</bcf:citekey>
+    <bcf:citekey order="36">1997</bcf:citekey>
+    <bcf:citekey order="37">https://doi.org/10.48550/arxiv.hep-th/9706110</bcf:citekey>
+    <bcf:citekey order="38">Katz:1996xe</bcf:citekey>
+    <bcf:citekey order="39">Katz:1996fh</bcf:citekey>
+    <bcf:citekey order="40">Hanany:1999sp</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
