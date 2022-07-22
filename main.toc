@@ -47,12 +47,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8}Cascading vacuum}{18}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Solving in a corner of the parameter space}{19}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.1}One cascade step: $\mathcal {N}=2$ SQCD}{19}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2}Cascading vacuum in the quiver gauge theory}{19}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Generalization to $A_n$ singularity}{19}{section.9}%
+\contentsline {section}{\numberline {9}Generalization to $A_n$ singularity}{20}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{III\hspace {1em}$\mathcal {D}_4$ singularity}{19}{part.3}%
+\contentsline {part}{III\hspace {1em}$\mathcal {D}_4$ singularity}{20}{part.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}References guide}{20}{appendix.A}%
+\contentsline {section}{\numberline {A}References guide}{21}{appendix.A}%

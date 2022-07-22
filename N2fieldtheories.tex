@@ -392,7 +392,7 @@
 
         The Higgs branch intersect the Coulomb branch at the origin and, out of the Higgs branch, emanates various mixed branch which touch the Coulomb branch along submanifolds where two or more squarks are massless and whiwh is where also, classically, a non-abelian gauge group is unbroken. More precisely, these branches are arranged in the following way:
         \begin{itemize}
-            \item \textbf{Non-baryonic--Coulomb:} the non-baryonic branch intersects the Coulomb branch along a submanifold $B$, whose points are called \emph{non-baryonic roots}. On $B$, classically, there is an $\SU(r)\times\U(1)^{N_c-r}$ unbroken gauge group with $N_f$ massless hypermultiplets in the fundamental representation of $\SU(r)$ and charged under the one of the $\U(1)$ factors (by an appropriate choice of basis of the $\U(1)$'s). 
+            \item \textbf{Non-baryonic--Coulomb:} the non-baryonic branch intersects the Coulomb branch along a submanifold $B$, whose points are called \emph{non-baryonic roots}. On $B$, classically, there is an $\SU(r)\times\U(1)^{N_c-r}$ unbroken gauge group with $N_f$ massless hypermultiplets in the fundamental representation of $\SU(r)$ and charged under the one of the $\U(1)$ factors (by an appropriate choice of basis of the $\U(1)$'s).
             \item \textbf{Baryonic--Coulomb:} the baryonic branches intersect the Coulomb branch at its origin, which can then be called \emph{baryonic root}. There, classically, the full $\SU(N_c)$ is unbroken with $N_f$ massless fundamental flavors.
             \item \textbf{Non-baryonic--Baryonic:} the various Higgs branches connect up along a submanifold of enhanced gauge symmetry. In particular, the baryonic intersects the non-baryonic branch along a submanifold $A$ with enhanced gauge group $\SU(N_c-r)$ for $r\leq \min\{\lfloor N_f/2\rfloor,N_c-2\}$.
         \end{itemize}
@@ -411,8 +411,7 @@
 
     \subsection{Non-baryonic roots}
 
-        
-        
+        The roots are the IR free or finite $\SU(r)\times\U(1)^{N_c-r}$ SQCD with $N_f$ hypermultiplets in the fundamental representation and charged under one of the $\U(1)$ factor.At special points along these manifolds, the SW curve shows that $N_r-r-1$ additional massless singlet hypermultiplets arise, each one charged under one of the remaining $\U(1)$ factors. There are $2N_c-N_f$ such vacua, related by the broken $\Z_{2N_f-N_c}$ non-anomalous $R$-symmetry acting on the Coulomb branch.
 
     \subsection{Baryonic root}
 
@@ -703,7 +702,7 @@
     \begin{equation}
         \rho_k=\Lambda_k\equiv e^{-\frac{\pi(k-1)}{g_sM}}\Lambda_1 = e^{-\frac{\pi(2k+1)}{2g_sM}}\rho_0, \qquad k=1,\dots,l
     \end{equation}
-    where $N=lM+p$, i.e. $l=\lfloor N/M\rfloor$ and $\Lambda_1\equiv\Lambda$. At each step, the rank of the biggest group decreases by $2M$:
+    where $N=lM+p$, i.e. $l=\lfloor N/M\rfloor$ and $\Lambda_1\equiv\Lambda$. At each step, the rank of the biggest group decreases by $2M$. There are therefore $l$ steps:
     \begin{center}
         $\SU(N+M)\times\SU(N)$\\
         $\downarrow$\\
@@ -713,10 +712,11 @@
         $\downarrow$\\
         $\SU(N-3M)\times\SU(N-2M)$\\
         $\vdots$\\
-        $\SU(M+p)\times\SU(N-(l-2)M)$\\
+        $\SU(M+p)\times\SU(N-(l-1)M)$\\
         $\downarrow$\\
         $\SU(M+p)\times\SU(p)$\\
     \end{center}
+    %where, by convention, we wrote the bigger group first in the product, i.e. there is a permutation at each new line. 
     Note that $\lfloor N/M\rfloor$ or $\lfloor(N+M)/M\rfloor$ is even so, in the end, the gauge group is always $\SU(M+p)\times\SU(p)$, upon a possible parmutation of the factors.
 
     There are two steps that on has to add to this to obtain the complete evolution of the gauge group for all scales: the Higgsing step at scale $\abs{z_0}$ that allows us introduce a difference in the gauge group ranks and the last step, at $\Lambda_{l+1}=\Lambda_{\text{min}}=e^{-\frac{\pi l}{g_s M}}\Lambda_1$. Below $\Lambda_{l+1}$, there is a true anhançon ring with $M$ tensionless fractional branes, and the non-abelian factors in the gauge group reduce according to
@@ -725,23 +725,27 @@
     \end{equation}
     with one infinite gauge coupling. Twisted fields have to be excised so as to avoid negative D$3$-brane charge in the interior region.
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[scale=0.3]{Pictures/RGflowcascade.png}
-        \caption{RG flow of the theory at the cascading vacuum, without the $\SU$ factors for the gauge groups, to avoid clutter.}
-    \end{figure}
+    
 
-    \subsection{Solving in a corner of the parameter space}
+    \subsection{One cascade step: $\mN=2$ SQCD}
 
-        To start, we focus on the first such generalized enhançon, which accurs at scale $\Lambda_1$. This will be a prototype for each generalized enhançon. Moreover, for simplicity, we can consider a corner of the parameter space of the gauge theory: the limit $Ng^2_{\text{min}}\to0$. In this limit, the gauge dynamics of the second factor in the gauge group decouples and effectively becomes a global symmetry. Consequently, the theory around $\Lambda_1$ is $\SU(N+M)$ SQCD with $2N$ flavors. The VEV's for the smaller group adjoint-scalar effectively behaves as masses for the larger group hypermultiplets. In this case, we are out of the supergravity approximation but it will still give some good insights.
+        To devlop an intuition of the coupling dynamics, we can start by focussing on the first such generalized enhançon, which accurs at scale $\Lambda_1$. This will be a prototype for each generalized enhançon. Moreover, for simplicity, we can consider a corner of the parameter space of the gauge theory: the limit $Ng^2_{\text{min}}\to0$. In this limit, the gauge dynamics of the second factor in the gauge group decouples and effectively becomes a global symmetry. Consequently, the theory around $\Lambda_1$ is $\SU(N+M)$ SQCD with $2N$ flavors. The VEV's for the smaller group adjoint-scalar effectively behaves as masses for the larger group hypermultiplets. In this case, we are out of the supergravity approximation but it will still give some good insights.
 
-        We discussed the form of the quantum baryonic root in \ref{secquantummodulispaceSU}. We found that it preserves the same $\Z_{2N_c-N_f}=\Z_{2M}$ R-symmetry as the supergravity solution we are discussing. Moreover, its low energy effective theory possesses an $\SU(N_f-N_c)=\SU(N-M)$ gauge symmetry. This precisely matches the numerology of the cascading interpretation. Hencre, iterating the same procedure at the subsequent generalized enhançon $\Lambda_k$ (where the higher rank gauge group coupling diverges), it is natural to propose the supergravity solutions in \todo{to complete} (excised only down at the true enhançon $\rho_{\text{min}}$) to be dual to a cascading $\SU(N+M)\times\SU(N)$ quiver gauge theory at subsequent baryonic roots of the strongly coupled gauge groups.
+        We discussed the form of the quantum baryonic root in \ref{secquantummodulispaceSU}. We found that it preserves the same $\Z_{2N_c-N_f}=\Z_{2M}$ R-symmetry as the supergravity solution we are discussing. Moreover, its low energy effective theory possesses an $\SU(N_f-N_c)=\SU(N-M)$ gauge symmetry. This precisely matches the numerology of the cascading interpretation. Hence, iterating the same procedure at the subsequent generalized enhançon $\Lambda_k$ (where the higher rank gauge group coupling diverges), it is natural to propose the supergravity solutions in \todo{to complete} (excised only down at the true enhançon $\rho_{\text{min}}$) to be dual to a cascading $\SU(N+M)\times\SU(N)$ quiver gauge theory at subsequent baryonic roots of the strongly coupled gauge groups.
+
+        \begin{mybox}
+            The non-perturbative dynamics at the baryonic roots possesses the same R-symmetry as the dual supergravity solution. Moreover its low energy effective theory possesses an $\SU(N_f-N_c)=\SU(N-M)$ gauge symmetry, thus matching the numerology of the cascading interpretation. Iterating the same procedure at the subsequent generalized enhançon, it is natural to propose the supergravity solution \eqref{eq:flux1} and \eqref{eq:flux2} (excised only down at the true enhançon $\rho_{\text{min}}$) to be dual to a cascading $\SU(N+M)\times\SU(N)$ quiver gauge theory at subsequent baryonic roots of the strongly coupled gauge groups.
+        \end{mybox}
 
     \subsection{Cascading vacuum in the quiver gauge theory}
 
 
 
-    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{Pictures/RGflowcascade.png}
+        \caption{RG flow of the theory at the cascading vacuum, without the $\SU$ factors for the gauge groups, to avoid clutter.}
+    \end{figure}
 
 
 
