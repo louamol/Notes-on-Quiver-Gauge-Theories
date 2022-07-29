@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  29 JUL 2022 13:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  29 JUL 2022 17:04
 entering extended mode
 **"/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex"
 (/home/louan/Documents/LaTeX/Notes on Quiver Gauge Theories/main.tex
@@ -1297,112 +1297,113 @@ Overfull \hbox (14.39096pt too wide) detected at line 32
 [2
 
 ] [3]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 112.
-
-
-LaTeX Warning: Marginpar on page 4 moved.
-
-[4] [5] [6] [7] [8] [9]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 92.
+ [4] [5] [6] [7] [8] [9]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 379.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 383.
 
-Overfull \hbox (28.78113pt too wide) in paragraph at lines 379--388
+Overfull \hbox (28.78113pt too wide) in paragraph at lines 383--392
  [][] 
  []
 
 [10]
-<Pictures/classicalmodulispace.png, id=330, 717.68124pt x 707.64375pt>
+<Pictures/classicalmodulispace.png, id=336, 717.68124pt x 707.64375pt>
 File: Pictures/classicalmodulispace.png Graphic file (type png)
 <use Pictures/classicalmodulispace.png>
-Package pdftex.def Info: Pictures/classicalmodulispace.png  used on input line 411.
+Package pdftex.def Info: Pictures/classicalmodulispace.png  used on input line 415.
 (pdftex.def)             Requested size: 215.30603pt x 212.29475pt.
  [11 <./Pictures/classicalmodulispace.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 450.
+(hyperref)                removing `math shift' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 450.
+(hyperref)                removing `subscript' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 450.
+(hyperref)                removing `math shift' on input line 454.
+
+
+Overfull \hbox (0.37198pt too wide) in paragraph at lines 459--460
+[]$[]$\T1/cmr/m/n/10 : one ob-
+ []
 
 [12]
-<Pictures/A1quiver.png, id=356, 579.16376pt x 311.1625pt>
+<Pictures/A1quiver.png, id=358, 579.16376pt x 311.1625pt>
 File: Pictures/A1quiver.png Graphic file (type png)
 <use Pictures/A1quiver.png>
-Package pdftex.def Info: Pictures/A1quiver.png  used on input line 479.
+Package pdftex.def Info: Pictures/A1quiver.png  used on input line 494.
 (pdftex.def)             Requested size: 202.71034pt x 108.90851pt.
  [13 <./Pictures/A1quiver.png>] [14] [15] [16]
-<Pictures/RGflow.png, id=414, 1110.1475pt x 467.7475pt>
+<Pictures/RGflow.png, id=417, 1110.1475pt x 467.7475pt>
 File: Pictures/RGflow.png Graphic file (type png)
 <use Pictures/RGflow.png>
-Package pdftex.def Info: Pictures/RGflow.png  used on input line 661.
+Package pdftex.def Info: Pictures/RGflow.png  used on input line 676.
 (pdftex.def)             Requested size: 333.04681pt x 140.32532pt.
- [17 <./Pictures/RGflow.png>] [18]
+ [17] [18 <./Pictures/RGflow.png>] [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 739.
+(hyperref)                removing `math shift' on input line 754.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 739.
+(hyperref)                removing `math shift' on input line 754.
 
-[19]
-<Pictures/RGflowcascade.png, id=454, 1297.84875pt x 408.52625pt>
+<Pictures/RGflowcascade.png, id=458, 1297.84875pt x 408.52625pt>
 File: Pictures/RGflowcascade.png Graphic file (type png)
 <use Pictures/RGflowcascade.png>
-Package pdftex.def Info: Pictures/RGflowcascade.png  used on input line 758.
+Package pdftex.def Info: Pictures/RGflowcascade.png  used on input line 773.
 (pdftex.def)             Requested size: 389.35764pt x 122.55882pt.
-<Pictures/cascadeduality.png, id=455, 552.0625pt x 634.37pt>
+[20]
+<Pictures/cascadeduality.png, id=465, 552.0625pt x 634.37pt>
 File: Pictures/cascadeduality.png Graphic file (type png)
 <use Pictures/cascadeduality.png>
-Package pdftex.def Info: Pictures/cascadeduality.png  used on input line 764.
+Package pdftex.def Info: Pictures/cascadeduality.png  used on input line 779.
 (pdftex.def)             Requested size: 165.62003pt x 190.31245pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 769.
+(hyperref)                removing `math shift' on input line 786.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 769.
+(hyperref)                removing `subscript' on input line 786.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 769.
+(hyperref)                removing `math shift' on input line 786.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 771.
+(hyperref)                removing `math shift' on input line 788.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 771.
+(hyperref)                removing `subscript' on input line 788.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 771.
+(hyperref)                removing `math shift' on input line 788.
 
-) [20 <./Pictures/RGflowcascade.png> <./Pictures/cascadeduality.png>]
+) [21 <./Pictures/RGflowcascade.png> <./Pictures/cascadeduality.png>] [22]
 
-LaTeX Warning: Citation 'PhysRevD.55.6382' on page 21 undefined on input line 35.
+LaTeX Warning: Citation 'PhysRevD.55.6382' on page 23 undefined on input line 35.
 
 
 Overfull \hbox (17.36783pt too wide) in paragraph at lines 41--42
 []\T1/cmr/m/n/10 Forward al-go-rithm for toric sin-gu-lar-i-ties de-vl-op-ments: [[]16[]],[[]17[]],[[]18[]],[[]19[]],[[]20[]], for-mal-iza-tion: [[]21[]],[[]22[]],[[]23[]] 
  []
 
-[21
+[23
 
 
 ] (main.tdo)
 \tf@tdo=\write8
 \openout8 = `main.tdo'.
 
- [22]
+ [24]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 71.
  (/home/louan/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -1411,12 +1412,12 @@ Overfull \hbox (6.4912pt too wide) in paragraph at lines 72--72
 []\T1/cmr/m/n/10 Amihay Hanany and Ed-ward Wit-ten. ``Type IIB su-per-strings, BPS monopoles, and three-dimensional
  []
 
-[23] [24] [25] (main.aux (N2fieldtheories.aux))
+[25] [26] [27] (main.aux (N2fieldtheories.aux))
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 174F97AF0C358DA8B01F946D0620599C;4632.
+(rerunfilecheck)             Checksum: 5B33D23B3AC4853963FACBCFF6D9ACBC;4743.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1427,13 +1428,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51573 strings out of 478362
- 1153624 string characters out of 2842112
- 1963454 words of memory out of 3000000
- 68880 multiletter control sequences out of 15000+600000
+ 51580 strings out of 478362
+ 1153707 string characters out of 2842112
+ 1962459 words of memory out of 3000000
+ 68883 multiletter control sequences out of 15000+600000
  512746 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,27n,114p,1254b,1857s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 106i,27n,114p,1546b,1857s stack positions out of 10000i,1000n,20000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
@@ -1441,9 +1442,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
  </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0900.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0900.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2074.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (25 pages, 857630 bytes).
+Output written on main.pdf (27 pages, 864384 bytes).
 PDF statistics:
- 1411 PDF objects out of 1440 (max. 8388607)
- 216 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1430 PDF objects out of 1440 (max. 8388607)
+ 220 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

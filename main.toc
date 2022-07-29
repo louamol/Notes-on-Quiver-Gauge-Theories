@@ -15,15 +15,16 @@
 \contentsline {subsection}{\numberline {3.2}Baryonic root}{11}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Summary}{12}{subsection.3.3}%
 \contentsline {part}{II\hspace {1em}$A_1$ singularity}{12}{part.2}%
-\contentsline {section}{\numberline {4}The quiver gauge theory}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Content and lagrangian}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Classical moduli space}{13}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Type IIB supergravity dual solution}{14}{section.5}%
-\contentsline {section}{\numberline {6}Enhan^^c3^^a7on mehcanism, quantum Coulomb branch and SW curves}{16}{section.6}%
-\contentsline {section}{\numberline {7}RG flow}{18}{section.7}%
-\contentsline {section}{\numberline {8}Cascading vacuum}{18}{section.8}%
-\contentsline {subsection}{\numberline {8.1}One cascade step: $\mathcal {N}=2$ SQCD}{19}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Cascading vacuum in the quiver gauge theory}{20}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Generalization to $A_n$ singularity}{20}{section.9}%
-\contentsline {part}{III\hspace {1em}$\mathcal {D}_4$ singularity}{20}{part.3}%
-\contentsline {section}{\numberline {A}References guide}{21}{appendix.A}%
+\contentsline {section}{\numberline {4}Introduction}{13}{section.4}%
+\contentsline {section}{\numberline {5}The quiver gauge theory}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Content and lagrangian}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Classical moduli space}{14}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Type IIB supergravity dual solution}{15}{section.6}%
+\contentsline {section}{\numberline {7}Enhan^^c3^^a7on mehcanism, quantum Coulomb branch and SW curves}{16}{section.7}%
+\contentsline {section}{\numberline {8}RG flow}{19}{section.8}%
+\contentsline {section}{\numberline {9}Cascading vacuum}{19}{section.9}%
+\contentsline {subsection}{\numberline {9.1}One cascade step: $\mathcal {N}=2$ SQCD}{20}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Cascading vacuum in the quiver gauge theory}{20}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Generalization to $A_n$ singularity}{22}{section.10}%
+\contentsline {part}{III\hspace {1em}$\mathcal {D}_4$ singularity}{22}{part.3}%
+\contentsline {section}{\numberline {A}References guide}{23}{appendix.A}%

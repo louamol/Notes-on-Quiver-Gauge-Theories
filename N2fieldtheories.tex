@@ -24,7 +24,7 @@
             \text{gauge} &: (H_2)^a_i \mapsto (U(x)^*)\indices{^a_b} (H_2)^b_i,\qquad U\in\SU(N_c)\\
             \text{global} &: (H_2)^a_i \mapsto  (H_2)^a_j(U^\dagger)\indices{^j_i},\qquad U\in\SU(N_f).
         \end{align}
-        We denote by $\bar{H}_2$ the matrix who transform exactly as $H_1$, i.e. in the conjugate representation of $H_2$. Its elements are given by $(\bar{H}_2)^i_a=\bar{(H_2)^a_i}$ which transform exactly as the elements of $H_1$, as one can show.
+        We denote by $\bar{H}_2$ the matrix who transform exactly as $H_1$, i.e. in the conjugate representation of $H_2$. Hence, $\bar{H}_2=(H_2)^\dagger$ and its elements are given by $(\bar{H}_2)^i_a=\bar{(H_2)^a_i}$ which transform exactly as the elements of $H_1$, as one can show.
     \end{itemize}
     The lagrangian reads
     \begin{equation}
@@ -78,16 +78,18 @@
         (\bar{F}_{(H_2)})^i_a &= \pdv{W}{(H_{2})^a_i} = \sqrt{2}\phi^b_a (H_1)^i_b + \sqrt{2}m^i_j(H_1)^j_a,\\
         D^A &= -[\phi,\phi^\dagger]^A + \bar{H}_1T^AH_1-\bar{H}_2T^AH_2
     \end{align}
-    where $T^A$ are the generators of $\SU(N_f)$ and $A=1,\dots,N^2_f-1$. Note that we can also integrate out the auxiliary fields $F_1$ and $F_2$ to recast the scalar potential for the hypermultiplets as a D-term contribution. The potential reads
+    where $T^A$ are the generators of $\SU(N_f)$ and $A=1,\dots,N^2_f-1$. Note that we can also integrate out the auxiliary fields $F_1$ and $F_2$ to recast the scalar potential for the hypermultiplets as a D-term contribution. 
+    
+    The potential reads
     \begin{align}
         V(\phi,H_1,H_2) &= \frac{1}{2}\tr(D^AD_A)+\abs{F_{(\phi)}}^2+\abs{F_{(H_1)}}^2+\abs{F_{(H_2)}}^2\\
         &= \frac{1}{2}\tr([\phi,\phi^\dagger]^2)+\frac{1}{2}\abs{\bar{H}_1T^AH_1-\bar{H}_2T^AH_2}^2\\
-        &\qquad+2\abs{(H_2)^b_i\phi^a_b+m^j_i(H_2)^a_j}^2+2\abs{\phi^b_a (H_1)^i_b+m^i_j(H_1)^j_a}^2
+        &\qquad+2\abs{(H_2)^b_i\phi^a_b+m^j_i(H_2)^a_j}^2+2\abs{\phi^b_a (H_1)^i_b+m^i_j(H_1)^j_a}^2 \geq 0
     \end{align}
 
 \section{Classical moduli space}
 
-    The D-term and F-term equations are
+    The D-term and F-term equations are \todo{Verify how to obtain these equation from the F-terms and D-terms}
     \begin{figure}[H]
         \centering
         $
@@ -109,10 +111,9 @@
         \end{array}
         $
     \end{figure}
-    \todo{Verify how to obtain these equation from the F-terms and D-terms}
-    where $\nu$ and $\rho$ are arbitrary complex numbers.\todo{From where do those come from ?} The the two equations in the D-terms appear separately is a consequence of $\mN=2$ supersymmetry. One can square the D-term and show that the cross-term cancels or by noting that the first term is an $\SU(2)_R$-singlet and that that the second is part of a triplet\footnote{More generally, we will need to quotient by the complexified gauge transformation, which can be used to diagonalize $\phi$ and the first equation is automatically satisfied. This is another explanation.}.
+    where $\nu$ and $\rho$ are arbitrary complex numbers. The the two equations in the D-terms appear separately is a consequence of $\mN=2$ supersymmetry. One can square the D-term and show that the cross-term cancels or by noting that the first term is an $\SU(2)_R$-singlet and that that the second is part of a triplet\footnote{More generally, we will need to quotient by the complexified gauge transformation, which can be used to diagonalize $\phi$ and the first equation is automatically satisfied. This is another explanation.}.
     
-    These equations suggest that $\phi,H_1$ and $H_2$ may get VEV's, which we denote by $\vev{\phi},\vev{H_1}$ and $\vev{H_2}$ respectively. Since there $N^2_c-1$ components $\phi^a_b$, $N_c\cdot N_f$ components $(H_1)^i_a$ and $N_c\cdot N_f$ components $(H_2)^a_i$, there are $N_c(N_c+2N_f)-1$ complex scalars in total. Meaning that the D-term and F-term equations define a subspace of $\C^{N_c(N_c+2N_f)-1}$. The \emph{classical moduli space} is defined as
+    These equations suggest that $\phi,H_1$ and $H_2$ may get VEV's, which we denote by the same symbols. Since $\phi$ has $N^2_c-1$ components, $H_1$ has $N_c\cdot N_f$ components and $H_2$ has $N_c\cdot N_f$ components, there are $N_c(N_c+2N_f)-1$ independant complex scalars in total. Meaning that the D-term and F-term equations define a subspace of $\C^{N_c(N_c+2N_f)-1}$. The \emph{classical moduli space} is defined as
     \begin{equation}
         \M_c\equiv Z(F,D)/G\subset \C^{N_c(N_c+2N_f)-1}
     \end{equation}
@@ -121,7 +122,10 @@
         \M_c = Z(F)/G_\C.
     \end{equation}
 
-    The solutions to those equations fall into various branches corresponding to the phases of the theory. The \emph{Coulomb branch} is the region of the moduli space where only the scalars from the vector multiplet can take VEV's, i.e. where $\vev{H_1}=\vev{H_2}=0$. The \emph{Higgs branch} is the region of the moduli space where only the scalars from the hypermultiplets can take VEV's, i.e. where $\vev{\phi}=0$. \emph{Mixed branches} are regions where all VEV's are non-vanishing. For simplicity we will mostly consider the case with no mass: $m^i_j=0$.
+    The solutions to those equations fall into various branches corresponding to the phases of the theory. The \emph{Coulomb branch} is the region of the moduli space where only the scalars from the vector multiplet can take VEV's, i.e. where $H_1=H_2=0$. The \emph{Higgs branch} is the region of the moduli space where only the scalars from the hypermultiplets can take VEV's, i.e. where $\phi=0$. \emph{Mixed branches} are regions where all the fields can take VEV's. For simplicity we will mostly consider the case with no mass and set
+    \begin{equation}
+        m^i_j=0.
+    \end{equation}
 
     \subsection{Coulomb branch}
 
@@ -156,15 +160,15 @@
         \begin{equation}
             H_1=
             \begin{bmatrix}
-                (H_1)^1_1 & \dots & (H_1)^{N_f} \\
+                (H_1)^1_1 & \dots & (H_1)^{N_f}_1 \\
                 \vdots & & \vdots \\
                 (H_1)^1_{N_c} & \dots & (H_1)^{N_f}_{N_c}
             \end{bmatrix},\qquad
             (H_2)^t=
             \begin{bmatrix}
-                (H_2)^1_1 & \dots & (H_2)^{N_f} \\
+                (H_2)^1_1 & \dots & (H_2)^1_{N_f} \\
                 \vdots & & \vdots \\
-                (H_2)^1_{N_c} & \dots & (H_2)^{N_f}_{N_c}
+                (H_2)^{N_c}_{1} & \dots & (H_2)^{N_c}_{N_f}
             \end{bmatrix}.
         \end{equation}
 
@@ -305,7 +309,7 @@
             \end{equation}
             The number of real Goldstone boson is then $\G=-4N^2_c+4N_cN_f-N_f+N_c+1$. The number of real parameters describing the baryonic branch in \eqref{eq:baryonicbranch} is $\mP=N_f-N_c+3$ and $\G+\mP=4\H$.
 
-            \underline{Non-baryonic branches:} on these branches, the baryonic field vanishes, $B=\tilde{B}=0$, hence their name, and the meson field is given by
+            \underline{Non-baryonic branches:}\todo{Redo those computations} on these branches, the baryonic field vanishes, $B=\tilde{B}=0$, hence their name, and the meson field is given by
             \begin{equation}
                 M=
                 \begin{bmatrix}
@@ -372,7 +376,7 @@
 
     \subsection{Summary}
 
-        We summarize by recording the number $\V$ of massless $\U(1)$ vector multiplets and $\H$ of massless neutral hypermultiplets at a generic point of the moduli space. The classical moduli space is composed of the following branches:
+        The classical moduli space is composed of the following branches:
         \begin{figure}[H]
             \centering
             {\small
@@ -448,6 +452,17 @@
 
 
 \part{$A_1$ singularity}
+
+Supergravity solutions with running fluxes are ubiquitous in non-conformal versions of the gauge/gravity correspondence. In fact, they occur whenever fractional branes are present. The decrease of such fluxes as a function of the holographic coordinate is believed to correspond to a reduction in the number of degrees of freedom of the dual gauge theory as the latter flows towards the IR.
+\begin{itemize}
+    \item \underline{Fractional branes at a conifold singularity (KTS model):} the dual gauge theory interpretation of running fluxes is, in terms of RG flow, described by a cascade of Seiberg dualities, occurring at subsequent strong coupling scales and lowering the rank of the strongly coupled gauge group. This flow takes place along the baryonic branch of the gauge theory. The low energy dynamics involves confinement and chiral symmetry breaking, which geometrically translate into a complex structure deformation of the singularity. This behavior is prototypical of any isolated singularity admitting complex structure deformation.
+    \item \underline{Fractional branes at isolated singularities with obstructed complex structure deformation}: one obtains theories whose RG flow is expected to be similarly described by a cascade of Seiberg dualities, but where the geometric obstruction translates into a runaway along a baryonic direction.
+    \item \underline{Fractional branes at non-isolated singularities:} consideration of probe fractional branes in the supergravity solutions and methods based on the computation of Page charges suggest that the RG flow of the dual theories involves strong coupling transitions where the rank of the non-abelian factor in a gauge group with an adjoint chiral superfield drops according to the same numerology as in Seiberg duality, leading to a cascade. Since Seiberg-like dualities do not hold in this case, such strong coupling transitions cry for an explanation. Such a phenomenon is not specific to $\mN = 2$ models, but instead appears quite generically in any $\mN = 1$ setup admitting non-isolated singularities together with isolated ones: the RG flow, as read from the gravity solution, is described by suitable combinations of Seiberg duality cascades and $\mN = 2$-like transitions. Therefore, clarifying which field theory dynamics governs these transitions is instrumental to understanding how string theory UV-completes field theories arising on systems of fractional branes at rather generic CY singularities.
+\end{itemize}
+
+\section{Introduction}
+
+
 
 \section{The quiver gauge theory}
 
@@ -764,7 +779,9 @@
         \includegraphics[scale=0.3]{Pictures/cascadeduality.png}
     \end{figure}
 
-
+    \begin{mybox}
+        We reconsidered the cascading solution describing regular and fractional D3 branes at the $\C\times\C^2/\Z_2$ orbifold, as a prototype of the more general class of branes at non-isolated singularities, and provide a solution for this problem. The dual gauge theory is a $\SU(N + M)\times\SU(N)$ $\mN = 2$ quiver with bifundamental matter, where $N$ is the number of regular branes and $M$ the number of fractional ones, and its dual supergravity solution is known. The structure of such a gauge theory has many similarities with the conifold one, and the two are indeed related by a $\mN = 1$-preserving mass deformation. In order to provide a precise interpretation of the cascading RG flow, we started by approximating the dynamics around scales where one of the two gauge coupling diverges with an effective $\mN = 2$ SQCD, treating the other group as global. This allows us to claim that the transition occurs at the baryonic root, where the strongly coupled $\SU(N + M)$ group is effectively broken to $\SU(N - M)$ (plus abelian factors). As in the $\mN = 1$ conifold model, this is an iterative process which has the effect of lowering the effective ranks of the two gauge groups as the energy decreases, in a way which is exactly matched by the dual supergravity solution. On the other hand, the power of the Seiberg-Witten (SW) curve technology allows us to check our claim exactly, in the full quiver theory.
+    \end{mybox}
 
 \section{Generalization to $A_n$ singularity}
 
