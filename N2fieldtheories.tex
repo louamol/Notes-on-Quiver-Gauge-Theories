@@ -7,20 +7,32 @@
         [\mN=2 \text{ vector multiplet}] &: V=(\lambda_\alpha,A_\mu,D)\oplus \Phi=(\phi,\psi_\alpha,F)\\
         [\mN=2 \text{ hypermultiplet}] &: Q=(H_1,\psi_{1\alpha},F_1) \oplus \tilde{Q}=(\bar{H}_2,\bar{\psi}_{2\dalpha},\bar{F}_2)
     \end{align}
-    where $V$ is a vector superfield and $\Phi,H_1,H_2$ are chiral superfields. We denote by $\W_\alpha$ the chiral superfield strength associated to $V$. We have
+    where $V$ is a vector superfield and $\Phi,H_1,H_2$ are chiral superfields.$Q$ and $\tilde{Q}$ are called the \emph{quark superfields}, $H_1$ and $H_2$ the \emph{squarks} and $\phi$ the \emph{adjoint-scalar}. We denote by $\W_\alpha$ the chiral superfield strength associated to $V$. In terms of scalar fields, we have
     \begin{itemize}
-        \item $V$ is a vector superfield transforming in the adjoint of $\SU(N_c)$. It belongs to $\mathfrak{su}(N_c)$ and his components are denoted by $V^a_b$ with $a,b=1,\dots,N_c$.
-        \item $\Phi$ is a chiral superfield transforming in the adjoint of $\SU(N_c)$. It belongs to $\mathfrak{su}(N_c)$ and his components are denoted by $\Phi^a_b$ with $a,b=1,\dots,N_c$.
-        \item $Q^i$ ($i=1,\dots,N_f$) are $N_f$ chiral superfields transforming in the $\boldsymbol{N_C}$ of $\SU(N_c)$ and in the $\boldsymbol{N_f}$ of the global group $\SU(N_f)$. It has $N_c$ components, denoted by $Q^i_a$.
-        \item $\tilde{Q}_i$ are $N_f$ chiral superfields transforming in the $\bar{\boldsymbol{N_C}}$ of $\SU(N_c)$ and in the $\bar{\boldsymbol{N_f}}$ of the global group $\SU(N_f)$. It has $N_c$ components, denoted by $\tilde{Q}^a_i$.
+        \item $\phi$ is complex scalar transforming the adjoint of $\SU(N_c)$. It belongs to $\mathfrak{su}(N_c)$ and his components are denoted by $\phi^a_b$ with $a,b=1,\dots,N_c$:
+        \begin{align}
+            \text{gauge} &: \phi \mapsto U(x)\phi U(x)^{-1}+U(x)\p_\mu U(x)^{-1},\qquad U\in\SU(N_c)\\
+            \text{global} &: \phi\mapsto \phi
+        \end{align}
+        \item $H_1$ is an $N_c\times N_f$ complex matrix with components $(H_1)^i_a$. It transforms transforming in the $\boldsymbol{N_C}$ of $\SU(N_c)$ and in the $\boldsymbol{N_f}$ of the global group $\SU(N_f)$:
+        \begin{align}
+            \text{gauge} &: (H_1)^i_a \mapsto (H_1)^i_b(U(x)^T)\indices{^b_a},\qquad U\in\SU(N_c)\\
+            \text{global} &: (H_1)^i_a \mapsto  U\indices{^i_j}(H_1)^j_a,\qquad U\in\SU(N_f)
+        \end{align}
+        \item $H_2$ is an $N_f\times N_c$ complex matrix with components $(H_2)^a_i$. It transforms transforming in the $\bar{\boldsymbol{N_C}}$ of $\SU(N_c)$ and in the $\bar{\boldsymbol{N_f}}$ of the global group $\SU(N_f)$:
+        \begin{align}
+            \text{gauge} &: (H_2)^a_i \mapsto (U(x)^*)\indices{^a_b} (H_2)^b_i,\qquad U\in\SU(N_c)\\
+            \text{global} &: (H_2)^a_i \mapsto  (H_2)^a_j(U^\dagger)\indices{^j_i},\qquad U\in\SU(N_f).
+        \end{align}
+        We denote by $\bar{H}_2$ the matrix who transform exactly as $H_1$, i.e. in the conjugate representation of $H_2$. Its elements are given by $(\bar{H}_2)^i_a=\bar{(H_2)^a_i}$ which transform exactly as the elements of $H_1$, as one can show.
     \end{itemize}
-    $Q$ and $\tilde{Q}$ are called the \emph{quark superfields}, $H_1$ and $H_2$ the \emph{squarks} and $\phi$ the \emph{adjoint-scalar}. The lagrangian reads
+    The lagrangian reads
     \begin{equation}
         \L^{\mN=2}_{\text{SYM}} = \frac{1}{4\pi}\Im\left[\tau\int\d^2\theta\d^2\bar{\theta}\tr\left(\Phi^\dagger e^V\Phi + Q^\dagger_i e^V Q^i + \tilde{Q}^{\dagger i}e^V \tilde{Q}_i\right)+\tau\int\d^2\theta\left(\frac{1}{2}\tr(\W^\alpha\W_\alpha)+W(\phi,H_1,H_2)\right)\right]\label{eq:lag}
     \end{equation}
-    where $W(H_1,H_2)$ is the $\mN=2$ superpotential
+    where $W$ is the $\mN=2$ superpotential
     \begin{align}
-        W(\phi,H_1,H_2) &= \sqrt{2}H_1\phi H_2 + mH_1H_2 \\
+        W(\phi,H_1,H_2) &= \sqrt{2}\tr(H_2\phi H_1) + \sqrt{2}\tr(H_1mH_2) \\
         &= \sqrt{2}(H_2)^a_i\phi^b_a (H_1)^i_b + \sqrt{2}m^i_j(H_2)^a_i(H_1)^j_a
     \end{align}
     and $\tau$ is the complexified gauge coupling
@@ -31,14 +43,14 @@
     \begin{equation}
         [m,m^\dagger]=0
     \end{equation}
-    in order to preserve $\mN=2$ supersymmetry, it is called the \emph{quark mass matrix}. This matrix can be diagonalized by an $\SU(N_f)$ transformation, i.e. a flavor rotation, to become
+    in order to preserve $\mN=2$ supersymmetry, it is called the \emph{quark mass matrix}. This matrix can be diagonalized by a flavor rotation, to become
     \begin{equation}
         m=\text{diag}(m_1,\dots,m_{N_f}).
     \end{equation}
 
-    Classically and with $m=0$ the global symmetry should be $\SU(N_f)\times\U(1)_B\times\U(2)_R$. The mass terms and instanton corrections breaks $\U(1)_R$ of the $R$-symmetry, leaving the compact component $\SU(2)_R$ unbroken. The lagrangian should be invariant under the latter, it is a necessary and sufficient condition to have $\mN=2$ supersymmetry. Under the unbroken $\SU(2)_R$, the bosonic fields of the vector multiplet, i.e. $A_\mu,\phi,D,F$ are singlets butthe fermions form a doublet $(\lambda_\alpha,\psi_\alpha)$. Similarly, for the hypermultiplets, the fermions $\psi_{1\alpha},\bar{\psi}_{2\dalpha}$ are singlets while their scalar superpartners for a doublet $(H_1,\bar{H_2})$. The $\SU(2)_R$ symmetry cannot be made manifest in terms of $\mN=1$ sueprfields but the symmetry $\U(1)_J\subset\SU(2)_R$ is manifest in \eqref{eq:lag}.
+    Classically and with $m=0$, the global symmetry should be $\SU(N_f)\times\U(1)_B\times\U(2)_R$. The mass terms and instanton corrections breaks $\U(1)_R$ of the $R$-symmetry, leaving the compact component $\SU(2)_R$ unbroken. The lagrangian should be invariant under the latter, it is a necessary and sufficient condition to have $\mN=2$ supersymmetry. Under the unbroken $\SU(2)_R$, the bosonic fields of the vector multiplet, i.e. $A_\mu,\phi,D,F$ are singlets but the fermions form a doublet $(\lambda_\alpha,\psi_\alpha)$. Similarly, for the hypermultiplets, the fermions $\psi_{1\alpha},\bar{\psi}_{2\dalpha}$ are singlets while their scalar superpartners form a doublet $(H_1,\bar{H_2})$. The $\SU(2)_R$ symmetry cannot be made manifest in terms of $\mN=1$ sueprfields but the symmetry $\U(1)_J\subset\SU(2)_R$ is manifest in \eqref{eq:lag}.
     
-    The selection rules resulting from the breaking of the classical symmetries by mass terms and instanton corrections can be describe bt assigning symmetry transformation properties to the corresponding parameters in the action. In particular, the quark mass matrix $m$ can be decomposed into a trace part $m_S$ that transforms as a singlet under $\SU(N_f)$ and a traceless part $m_A$ that transforms in the adjoint of $\SU(N_f)$. We summarize all the representations in which the fields and the parameters transform transform in table \ref{table:fieldrepr}.
+    The selection rules resulting from the breaking of the classical symmetries by mass terms and instanton corrections can be describe by assigning symmetry transformation properties to the corresponding parameters in the action. In particular, the quark mass matrix $m$ can be decomposed into a trace part $m_S$ that transforms as a singlet under $\SU(N_f)$ and a traceless part $m_A$ that transforms in the adjoint of $\SU(N_f)$. We summarize all the representations in which the fields and the parameters transform in table \ref{table:fieldrepr}.
 
     \begin{table}[H]
         \centering
@@ -53,22 +65,22 @@
             \Lambda^{2N_c-N_f} & \boldsymbol{1} & \boldsymbol{1} & 0 & 2(2N_c-N_f) & 0
         \end{array}
         $
-        \caption{Field representations.}
+        \caption{Field and parameter representations.}
         \label{table:fieldrepr}
     \end{table}
 
-    For $\mN=2$ theories, the $\beta$ function is exact at $1$-loop and $\beta_{1\text{-loop}}\propto 2N_c-N_f$. If if $N_f<2N_c$, the $\beta$-function is negative. The theory is asymptotically free and it generates a strong-coupling scale $\Lambda$. The instanton factor is proportional to $\Lambda^{2N_c-N_f}$ and the $\U(1)_R$ symmetry is anomalous. It is broken down to a discrete $\Z_{2N_f-N_c}$ symmetry. For $N_f=2N_c$, the theory is scale invariant and $\U(1)_R$ symmetry is not anomalous. No strong-coupling scale is generated and the theory is described in terms of its bare couplings.
+    For $\mN=2$ theories, the $\beta$ function is exact at $1$-loop and $\beta_{1\text{-loop}}\propto 2N_c-N_f$, meaning that if $N_f<2N_c$, the $\beta$-function is negative. The theory is then asymptotically free and it generates a strong-coupling scale $\Lambda$. The instanton factor is proportional to $\Lambda^{2N_c-N_f}$ and the $\U(1)_R$ symmetry is anomalous. It is broken down to a discrete $\Z_{2N_f-N_c}$ symmetry. For $N_f=2N_c$, the theory is scale invariant and $\U(1)_R$ symmetry is not anomalous. No strong-coupling scale is generated and the theory is described in terms of its bare couplings.
 
     $D,F,F_1$ and $F_2$ are auxiliary fields and their equations of motion are:
     \begin{align}
-        F^a_b &= \pdv{W}{\phi^b_a} = \sqrt{2}(H_2)^a_i (H_1)^i_b\\
-        (F_1)^a_i &= \pdv{W}{(H_{1})^i_a} = \sqrt{2}(H_2)^b_i\phi^a_b + \sqrt{2}m^j_i(H_2)^a_j,\\
-        (F_2)^i_a &= \pdv{W}{(H_{2})^a_i} = \sqrt{2}\phi^b_a (H_1)^i_b + \sqrt{2}m^i_j(H_1)^j_a,\\
+        (\bar{F}_{(\phi)})^a_b &= \pdv{W}{\phi^b_a} = \sqrt{2}(H_2)^a_i (H_1)^i_b,\\
+        (\bar{F}_{(H_1)})^a_i &= \pdv{W}{(H_{1})^i_a} = \sqrt{2}(H_2)^b_i\phi^a_b + \sqrt{2}m^j_i(H_2)^a_j,\\
+        (\bar{F}_{(H_2)})^i_a &= \pdv{W}{(H_{2})^a_i} = \sqrt{2}\phi^b_a (H_1)^i_b + \sqrt{2}m^i_j(H_1)^j_a,\\
         D^A &= -[\phi,\phi^\dagger]^A + \bar{H}_1T^AH_1-\bar{H}_2T^AH_2
     \end{align}
     where $T^A$ are the generators of $\SU(N_f)$ and $A=1,\dots,N^2_f-1$. Note that we can also integrate out the auxiliary fields $F_1$ and $F_2$ to recast the scalar potential for the hypermultiplets as a D-term contribution. The potential reads
     \begin{align}
-        V(\phi,H_1,H_2) &= \frac{1}{2}\tr(D^AD_A)+\bar{F}F+\bar{F_1}F_1+\bar{F_2}F_2\\
+        V(\phi,H_1,H_2) &= \frac{1}{2}\tr(D^AD_A)+\abs{F_{(\phi)}}^2+\abs{F_{(H_1)}}^2+\abs{F_{(H_2)}}^2\\
         &= \frac{1}{2}\tr([\phi,\phi^\dagger]^2)+\frac{1}{2}\abs{\bar{H}_1T^AH_1-\bar{H}_2T^AH_2}^2\\
         &\qquad+2\abs{(H_2)^b_i\phi^a_b+m^j_i(H_2)^a_j}^2+2\abs{\phi^b_a (H_1)^i_b+m^i_j(H_1)^j_a}^2
     \end{align}
@@ -369,24 +381,21 @@
                 \textbf{Branch} & \textbf{Gauge symmetry} & \textbf{Global symmetry} & \textbf{Other properties} \\ \hline
                 Origin & $\SU(N_c)$ & $\SU(N_f)\times\U(1)_B\times\SU(2)_R$ & \begin{tabular}{@{}l@{}}$\mP = 0$ \\ $\H = N_f$ \\ $\G = 0$ \\ $\V = 0$ \end{tabular} \\ \hline
                 Coulomb & $\U(1)^{N_c-1}$ & $\SU(N_f)$ & \begin{tabular}{@{}l@{}}$\mP = 2(N_c-1)$ \\ $\H = 0$ \\ $\G = 0$ \\ $\V = N_c-1$ \end{tabular} \\ \hline
-                \begin{tabular}{@{}c@{}}Baryonic \\ $N_f\geq 2N_c$\end{tabular} & $\{e\}$ & $\U(N_f-2N_c)\times\U(1)^{N_c-1}\times\SU(2)'_R$ & \begin{tabular}{@{}l@{}}$\mP = N_c+3$ \\ $\H = N_fN_c-N^2_c-1$ \\ $\G = 4N_fN_c-4N^2_c+1$ \\ $\V = 0$ \end{tabular} \\ \hline
-                \begin{tabular}{@{}c@{}}Baryonic \\ $N_c\leq N_f\leq 2N_c$\end{tabular} & $\{e\}$ & $\U(2N_c-N_f)\times\U(1)^{N_f-N_c}\times\SU(2)'_R$ & \begin{tabular}{@{}l@{}}$\mP = N_f-N_c+3$ \\ $\H = N_fN_c-N^2_c-1$ \\ $\G = 4N_fN_c-4N^2_c-N_f+N_c+1$ \\ $\V = 0$ \end{tabular} \\ \hline
+                \begin{tabular}{@{}c@{}}Baryonic \\ $N_f\geq 2N_c$\end{tabular} & $0$ & $\U(N_f-2N_c)\times\U(1)^{N_c-1}\times\SU(2)'_R$ & \begin{tabular}{@{}l@{}}$\mP = N_c+3$ \\ $\H = N_fN_c-N^2_c-1$ \\ $\G = 4N_fN_c-4N^2_c+1$ \\ $\V = 0$ \end{tabular} \\ \hline
+                \begin{tabular}{@{}c@{}}Baryonic \\ $N_c\leq N_f\leq 2N_c$\end{tabular} & $0$ & $\U(2N_c-N_f)\times\U(1)^{N_f-N_c}\times\SU(2)'_R$ & \begin{tabular}{@{}l@{}}$\mP = N_f-N_c+3$ \\ $\H = N_fN_c-N^2_c-1$ \\ $\G = 4N_fN_c-4N^2_c-N_f+N_c+1$ \\ $\V = 0$ \end{tabular} \\ \hline
                 \begin{tabular}{@{}c@{}}Non-baryonic \\ $2\leq N_f\leq 2N_c$\end{tabular} & $\SU(N_c-r)$ & $\U(N_f-2r)\times\U(1)^r\times\SU(2)'_R$ & \begin{tabular}{@{}l@{}}$\mP = r$ \\ $\H = r(N_f-r)$ \\ $\G = r(4N_f-4r-1)$ \\ $\V=N_c-1-r$ \end{tabular} \\ \hline
             \end{tabular}}
         \end{figure}
         where
         \begin{align*}
-            \mP &= \text{\# of real parameters describing the branch}\\
-            \H &= \text{\# of massless hypermultiplets}\\
-            \G &= \text{\# of real Goldstone bosons}\\
-            \V &= \text{\# of massless $\U(1)$ vector multiplets}
-        \end{align*}
-        or, more mathematical terms:
-        \begin{align*}
-            \mP &= \dim_\R\M\\
-            \H &= N_fN_c - \dim_\R(G_{\text{gauge}}/H_{\text{gauge}})=N_fN_c - \dim_\R G_{\text{gauge}} + \dim_\R H_{\text{gauge}}\\
-            \G &= \dim_\R(G_{\text{global}}/H_{\text{global}}) = \dim_\R G_{\text{global}} - \dim_\R H_{\text{global}}\\
-            \V &= 
+            \mP &= \text{\# of real parameters describing the branch} \\
+            &= \dim_\R\M \\
+            \H &= \text{\# of massless hypermultiplets} \\
+            &= ? \\
+            \G &= \text{\# of real Goldstone bosons} \\
+            &= \dim_\R(G_{\text{global}}/H_{\text{global}}) = \dim_\R G_{\text{global}} - \dim_\R H_{\text{global}} \\
+            \V &= \text{\# of massless $\U(1)$ vector multiplets} \\
+            &= ?
         \end{align*}
         where $H\subset G$ is the unbroken gauge/global group.
 
@@ -523,8 +532,8 @@
         In total, there are six different fields, whiwh are all matrices in $\u(N)$, meaning that in total their are $6N^2/2=3N^2$ independent complex parameters. The moduli space is therefore a variety embedded in $\C^{3N^2}$, defined by $\M=Z(F)/G_\C$. Its cooridnate ring is $K[\M]=K[Z(F)]^{G_\C}$ and we must find a generating set of this polynomial ring, i.e. a basis of invariant polynomials. We find the six following coordinates:
         \begin{align}
             \vp_{ij} &= \tr (A_i B_j),\\
-            \vp &= \tr(\Phi),
-            \tilde{\vp} &= \tr(\tilde{\Phi}).
+            \vp &= \tr(\Phi),\\
+            \tilde{\vp} &= \tr ( \tilde{\Phi} ).
         \end{align}
 
         \underline{Coulomb branch:} the fields $\Phi,\tilde{\Phi}$ can be diagonalized by a gauge transformation, leaving $2N$ independant complex parameters. The gauge group breaks to $(\U(1)^{N}\times S_N)\times(\U(1)^{N}\times S_n)=\U(1)^{2N}/(S_N\times S_N)$ and the geometry is
@@ -740,11 +749,19 @@
     \subsection{Cascading vacuum in the quiver gauge theory}
 
 
+    \begin{mybox}
+        The flow proceeds through a series of baryonic root transitions and it reproduces  the flow described by thesupergravity solution. At baryonic root the theory is an $\mN=2$ SQCD with $\SU(N_f-N_c)\times\U(1)^{2N_c-N_f}$ gauge group, $N_f$ fundamental hypermultiplets and $2N_c-N_f$ hypermultiplets which are singlets under the non-anelian gauge group, but each one is charged under one of the $\U(1)$ factors. The UV theory is free, the IR theory is free and the numerology of the rank of the color groups and the number of flavors is exactly the same as for Seiberg duality in $\mN=1$ SQCD.
+    \end{mybox}
 
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.3]{Pictures/RGflowcascade.png}
         \caption{RG flow of the theory at the cascading vacuum, without the $\SU$ factors for the gauge groups, to avoid clutter.}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.3]{Pictures/cascadeduality.png}
     \end{figure}
 
 

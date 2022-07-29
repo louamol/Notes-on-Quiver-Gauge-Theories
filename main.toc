@@ -1,58 +1,29 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {english}{}
-\defcounter {refsection}{0}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {part}{I\hspace {1em}Non-singular case}{2}{part.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}The model}{2}{section.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Classical moduli space}{3}{section.2}%
-\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Classical moduli space}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Coulomb branch}{4}{subsection.2.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Higgs branch}{5}{subsection.2.2}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.1}Squark VEV solutions}{5}{subsubsection.2.2.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.2}Gauge symmetry and separate branches}{7}{subsubsection.2.2.2}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.3}Flavor symmetry}{7}{subsubsection.2.2.3}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.4}Gauge-invariant description}{8}{subsubsection.2.2.4}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Mixed branches}{9}{subsection.2.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Summary}{9}{subsection.2.4}%
-\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Summary}{10}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Quantum moduli space}{11}{section.3}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Non-baryonic roots}{11}{subsection.3.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Baryonic root}{11}{subsection.3.2}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Summary}{12}{subsection.3.3}%
-\defcounter {refsection}{0}\relax 
 \contentsline {part}{II\hspace {1em}$A_1$ singularity}{12}{part.2}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}The quiver gauge theory}{12}{section.4}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Content and lagrangian}{12}{subsection.4.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Classical moduli space}{13}{subsection.4.2}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Type IIB supergravity dual solution}{14}{section.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Enhançon mehcanism, quantum Coulomb branch and SW curves}{16}{section.6}%
-\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Enhan^^c3^^a7on mehcanism, quantum Coulomb branch and SW curves}{16}{section.6}%
 \contentsline {section}{\numberline {7}RG flow}{18}{section.7}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8}Cascading vacuum}{18}{section.8}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.1}One cascade step: $\mathcal {N}=2$ SQCD}{19}{subsection.8.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Cascading vacuum in the quiver gauge theory}{19}{subsection.8.2}%
-\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}Cascading vacuum in the quiver gauge theory}{20}{subsection.8.2}%
 \contentsline {section}{\numberline {9}Generalization to $A_n$ singularity}{20}{section.9}%
-\defcounter {refsection}{0}\relax 
 \contentsline {part}{III\hspace {1em}$\mathcal {D}_4$ singularity}{20}{part.3}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}References guide}{21}{appendix.A}%
